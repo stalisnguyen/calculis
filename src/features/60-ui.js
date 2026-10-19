@@ -1,14 +1,14 @@
 /* ================= UI SHELL: groups, bottom nav / sidebar, Today, Progress, Settings, celebrations, intro ================= */
 const UI_GROUPS=[
   {k:'today',label:'Today',icon:'house',views:['home']},
-  {k:'practice',label:'Practice',icon:'target',views:['quant','verbal','di','errors']},
+  {k:'practice',label:'Practice',icon:'target',views:['quant','verbal','di','errors','mental']},
   {k:'mock',label:'Mock',icon:'clipboard-check',views:['mock']},
-  {k:'learn',label:'Learn',icon:'book-open',views:['lessons','cards','tutor']},
+  {k:'learn',label:'Learn',icon:'book-open',views:['start','lessons','glossary','cards','tutor']},
   {k:'me',label:'Me',icon:'user-round',views:['progress','friends','settings']},
 ];
 const UI_ALIAS={session:'quant',exam:'mock',diag:'mock',lesson:'lessons'};
-const UI_V={home:['Today','house'],quant:['Quant','sigma'],verbal:['Verbal','book-open'],di:['Data Insights','bar-chart'],errors:['Error log','notebook-pen'],
-  mock:['Mock exams','clipboard-check'],lessons:['Lessons','graduation-cap'],cards:['Flashcards','layers'],tutor:['Ask Max','sparkles'],
+const UI_V={home:['Today','house'],quant:['Quant','sigma'],verbal:['Verbal','book-open'],di:['Data Insights','bar-chart'],errors:['Error log','notebook-pen'],mental:['Mental math','zap'],start:['Start here','graduation-cap'],glossary:['Glossary','book-a'],
+  mock:['Mock exams','clipboard-check'],lessons:['Lessons','book-open'],cards:['Flashcards','layers'],tutor:['Ask Max','sparkles'],
   progress:['Progress','trophy'],friends:['Study group','users'],settings:['Settings','settings']};
 const uiGroupOf=v=>{v=UI_ALIAS[v]||v;return UI_GROUPS.find(g=>g.views.includes(v))||UI_GROUPS[0];};
 const UI_LAST=store.get('calculis-lastv',{});
@@ -61,7 +61,7 @@ function uiChips(){
 }
 
 /* ---------- Today ---------- */
-const UI_SHORT={quant:'Quant',verbal:'Verbal',di:'DI',cards:'Cards',lesson:'Lesson',err:'Errors',mock:'Mock'};
+const UI_SHORT={path:'Path',mm:'Mental',quant:'Quant',verbal:'Verbal',di:'DI',cards:'Cards',lesson:'Lesson',err:'Errors',mock:'Mock'};
 function uiGreet(){const h=new Date().getHours();return h<12?'Good morning':h<18?'Good afternoon':'Good evening';}
 function uiRing(pct,size){const p=Math.round(Math.min(1,pct)*100);return `<div class="ring-box" style="width:${size}px;height:${size}px"><svg class="ring ${p>=100?'full':''}" viewBox="0 0 72 72" width="${size}" height="${size}" role="img" aria-label="${p}% of goal"><circle cx="36" cy="36" r="30" class="ring-track"/><circle cx="36" cy="36" r="30" class="ring-fill" pathLength="100" style="stroke-dasharray:${p} 100;${p?'':'opacity:0'}"/></svg><span class="ring-n num">${p>=100?ic('check'):p+'%'}</span></div>`;}
 function uiWeek(){
@@ -98,7 +98,7 @@ VIEWS.home=el=>{
       <button class="btn sess-go" id="hmGo">${esc(label)} ${ic('chevron-right')}</button>
      </section>
      <div class="tasks">${tasks.map(t=>`<button class="task ${t.done?'done':''}" data-go="${t.go}" data-k="${t.k}"><span class="tk-c">${t.done?ic('check'):ic(UI_V[t.go]?UI_V[t.go][1]:'sparkles')}</span><span class="tk-t"><span><b>${esc(t.t)}</b>${t.n?` <span class="num muted small">${Math.min(t.n[0],t.n[1])}/${t.n[1]}</span>`:''}</span><span class="small muted">${esc(t.sub)}</span></span>${ic('chevron-right','tk-a')}</button>`).join('')}</div>
-     ${firstTime?mcSay('idea',`Not sure where you stand? Take the <button class="lnk" data-go="diag">15-question diagnostic</button> (about 25 minutes) so Max can pick the right level for your daily sets.`,56):''}
+     ${firstTime?mcSay('idea',`New to the GMAT? Begin with the <button class="lnk" data-go="start">Start here path</button>: short lessons, easy questions, one step at a time. Already studied before? Take the <button class="lnk" data-go="diag">15-question diagnostic</button> instead.`,56):''}
     </div>
     <div class="hm-side">
      ${scoreCard()}
@@ -119,6 +119,7 @@ VIEWS.home=el=>{
 function uiTaskGo(t){
   if(['quant','verbal','di'].includes(t.k)&&QS.length){const left=Math.max(3,(t.n?t.n[1]-t.n[0]:5));prStart(pickSet(t.k,{n:left}),{title:`${SEC_NAME[t.k]}: today's set`,sec:t.k});return;}
   if(t.k==='lesson'){const l=lessonOfDay();if(l){openLesson(l.id);return;}}
+  if(t.k==='path'&&t.step){runStep(t.step);return;}
   go(t.go);
 }
 
@@ -256,7 +257,7 @@ function uiIntro(force){
       <div class="hats">${[0,1,2,3,4,7].map(i=>foxSVG('calm',52,i)).join('')}</div><button class="btn cele-btn" id="inNext">Next</button>`,
     ()=>{const c=plCfg();return `<div class="cele-mc">${mascot('idea',96)}</div><h2>Your target score?</h2><div class="row" style="justify-content:center">${[555,605,655,705,755,805].map(n=>`<button class="chip big" data-tg="${n}" aria-pressed="${c.target===n}">${n}</button>`).join('')}</div>
       <h2 style="margin-top:8px">Minutes a day?</h2><div class="row" style="justify-content:center">${[15,30,45,60,90].map(n=>`<button class="chip big" data-mn="${n}" aria-pressed="${c.minutes===n}">${n} min</button>`).join('')}</div>
-      <h2 style="margin-top:8px">How do you want to start?</h2><div class="in-opts"><button class="btn" data-st="diag">Take the 25-minute diagnostic (recommended)</button><button class="btn" data-st="quant">Jump straight into practice</button></div>`;},
+      <h2 style="margin-top:8px">How do you want to start?</h2><div class="in-opts"><button class="btn" data-st="start">I am new to the GMAT: follow the Start here path</button><button class="btn" data-st="diag">I have studied before: take the 25-minute diagnostic</button><button class="btn" data-st="quant">Jump straight into practice</button></div>`;},
   ];
   let i=noName?0:1; const m=uiCele('','intro'+(noName?' locked':''));const box=$('.cele-in',m.el);
   const draw=()=>{box.innerHTML=steps[i]();

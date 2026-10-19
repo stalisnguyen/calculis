@@ -1,5 +1,5 @@
 /* ================= PLAN: XP, ranks, daily plan, targets, score records ================= */
-const PL_W={q:2,qok:2,card:1,cardnew:2,lesson:10,mock:60,diag:30,err:2,tutor:3};
+const PL_W={mm:0.5,path:5,q:2,qok:2,card:1,cardnew:2,lesson:10,mock:60,diag:30,err:2,tutor:3};
 const PL_RANKS=[[0,'Intern','Day one, badge on the lanyard.'],[300,'Analyst','You know where the spreadsheets live.'],[1000,'Associate','The fundamentals are solid now.'],[2500,'Manager','You run your own study sessions.'],[5000,'Director','Hard questions do not scare you any more.'],[9000,'VP','Fast, accurate and calm under the clock.'],[15000,'Partner','Rare discipline. People ask you for help.'],[25000,'CEO','The top of the ladder. Max tips his hat.']];
 const TARGETS=[505,555,605,645,675,705,735,765,805];
 function plDay(k){P.day=P.day||{};k=k||ymd(Date.now());return P.day[k]=P.day[k]||{xp:0};}
@@ -30,12 +30,16 @@ function plTasks(){
   const c=plCounts(), d=plDay(), dow=new Date().getDay();
   let due=0;try{due=cardsDue().length;}catch(e){}
   const errN=errOpen().length;
-  const t=[
+  const t=[];
+  // beginners: the next Start-here step comes first until the path is done
+  try{if(LESSONS.length){const ps=pathState();if(ps.next&&ps.done<ps.steps.length){const n=ps.next;t.push({k:'path',t:'Start here: '+(n.kind==='lesson'?n.l.title:n.title),sub:`Step ${ps.done+1} of ${ps.steps.length} on the beginner path`,done:Object.values(P.path||{}).some(r=>r.t>=today()&&!r.skip)||ps.steps.some(s=>s.kind==='lesson'&&P.lessons[s.l.id]>=today()),go:'start',step:n});}}}catch(e){}
+  t.push(
     {k:'quant',t:`Quant set: ${c.quant} questions`,sub:'Problem Solving at your level',done:secToday('quant')>=c.quant,go:'quant',n:[secToday('quant'),c.quant]},
     {k:'verbal',t:`Verbal set: ${c.verbal} questions`,sub:'Critical Reasoning and Reading Comprehension',done:secToday('verbal')>=c.verbal,go:'verbal',n:[secToday('verbal'),c.verbal]},
     {k:'di',t:`Data Insights set: ${c.di} questions`,sub:'Data Sufficiency, tables, charts, two-part, multi-source',done:secToday('di')>=c.di,go:'di',n:[secToday('di'),c.di]},
     {k:'cards',t:'Flashcards',sub:due?`${due} cards due`:'Formulas, CR patterns, DS rules',done:(d.card||0)+(d.cardnew||0)>=Math.min(c.cards,Math.max(due,5)),go:'cards',n:[(d.card||0)+(d.cardnew||0),Math.min(c.cards,Math.max(due,5))]},
-  ];
+  );
+  t.push({k:'mm',t:'Mental math sprint',sub:'2 minutes, no calculator',done:(d.mm||0)>0||(P.mm&&P.mm.last===ymd(Date.now())),go:'mental'});
   if(plCfg().minutes>=30)t.push({k:'lesson',t:'One lesson',sub:'Read, check the worked examples, mark it done',done:(d.lesson||0)>=1,go:'lessons'});
   if(errN)t.push({k:'err',t:'Error log review',sub:errN+' questions waiting',done:(d.err||0)>=Math.min(3,errN),go:'errors',n:[d.err||0,Math.min(3,errN)]});
   if(dow===6||dow===0)t.push({k:'mock',t:'Weekend mock',sub:'Full adaptive mock, or one timed section',done:(d.mock||0)>=1,go:'mock'});

@@ -996,6 +996,33 @@ mark{background:var(--orange-soft);color:inherit;border-radius:4px;padding:0 2px
 body.busy .bnav{display:none}
 body.busy #view{padding-bottom:24px}
 .hats{display:flex;justify-content:center;gap:4px;flex-wrap:wrap}
+/* start path, glossary, hints, mental math */
+.st-next{border:1.5px solid var(--orange);text-align:left;gap:4px}
+.st-stage summary{display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none}
+.st-stage summary::-webkit-details-marker{display:none}
+.st-list{display:flex;flex-direction:column;margin-top:8px}
+.st-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-top:1px dashed var(--line)}
+.st-row.cur{background:var(--orange-soft);border-radius:12px;padding:8px;border-top-color:transparent}
+.st-row.lock{opacity:.55}
+.st-ic{width:32px;height:32px;border-radius:10px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}
+.st-ic .i{width:17px;height:17px}
+.st-row.done .st-ic{background:var(--ok-soft);color:var(--ok)}
+.st-t{flex:1;display:flex;flex-direction:column;min-width:0}
+.gl-list{display:flex;flex-direction:column;gap:8px}
+.gl-row{background:var(--surface);box-shadow:var(--sh-1);border-radius:12px;padding:10px 14px;display:flex;flex-direction:column;gap:3px}
+.gl-h{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.gl-h b{font-size:16.5px}
+.gl-vi{color:var(--accent);font-weight:600}
+.gl-ex{font-family:var(--f-en);color:var(--ink)}
+.hints-box{display:flex;flex-direction:column;gap:8px}
+.hint{background:var(--orange-soft);color:var(--orange-ink);border-radius:12px;padding:10px 12px;font-size:15px;line-height:1.55}
+.expl.vi{border-left:4px solid var(--accent)}
+.expl.vi ul,.expl.vi ol{margin:0 0 8px;padding-left:20px}
+.mm-card{align-items:center;text-align:center;gap:14px;padding:28px 18px}
+.mm-q{font-size:40px;font-weight:800;font-variant-numeric:tabular-nums}
+.mm-in{font-size:24px;text-align:center;max-width:180px;font-weight:700}
+.mm-miss{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.mm-miss .pill{text-transform:none;font-size:13px;letter-spacing:0}
 
 </style>
 </head><body>
@@ -1389,7 +1416,7 @@ function mascot(state,size){if(P.settings&&P.settings.noMascot)return '';return 
 function mcSay(state,text,size){if(P.settings&&P.settings.noMascot)return `<p class="note">${text}</p>`;return `<div class="mc-say">${mascot(state,size||64)}<div class="mc-bubble">${text}</div></div>`;}
 
 /* ================= PLAN: XP, ranks, daily plan, targets, score records ================= */
-const PL_W={q:2,qok:2,card:1,cardnew:2,lesson:10,mock:60,diag:30,err:2,tutor:3};
+const PL_W={mm:0.5,path:5,q:2,qok:2,card:1,cardnew:2,lesson:10,mock:60,diag:30,err:2,tutor:3};
 const PL_RANKS=[[0,'Intern','Day one, badge on the lanyard.'],[300,'Analyst','You know where the spreadsheets live.'],[1000,'Associate','The fundamentals are solid now.'],[2500,'Manager','You run your own study sessions.'],[5000,'Director','Hard questions do not scare you any more.'],[9000,'VP','Fast, accurate and calm under the clock.'],[15000,'Partner','Rare discipline. People ask you for help.'],[25000,'CEO','The top of the ladder. Max tips his hat.']];
 const TARGETS=[505,555,605,645,675,705,735,765,805];
 function plDay(k){P.day=P.day||{};k=k||ymd(Date.now());return P.day[k]=P.day[k]||{xp:0};}
@@ -1420,12 +1447,16 @@ function plTasks(){
   const c=plCounts(), d=plDay(), dow=new Date().getDay();
   let due=0;try{due=cardsDue().length;}catch(e){}
   const errN=errOpen().length;
-  const t=[
+  const t=[];
+  // beginners: the next Start-here step comes first until the path is done
+  try{if(LESSONS.length){const ps=pathState();if(ps.next&&ps.done<ps.steps.length){const n=ps.next;t.push({k:'path',t:'Start here: '+(n.kind==='lesson'?n.l.title:n.title),sub:`Step ${ps.done+1} of ${ps.steps.length} on the beginner path`,done:Object.values(P.path||{}).some(r=>r.t>=today()&&!r.skip)||ps.steps.some(s=>s.kind==='lesson'&&P.lessons[s.l.id]>=today()),go:'start',step:n});}}}catch(e){}
+  t.push(
     {k:'quant',t:`Quant set: ${c.quant} questions`,sub:'Problem Solving at your level',done:secToday('quant')>=c.quant,go:'quant',n:[secToday('quant'),c.quant]},
     {k:'verbal',t:`Verbal set: ${c.verbal} questions`,sub:'Critical Reasoning and Reading Comprehension',done:secToday('verbal')>=c.verbal,go:'verbal',n:[secToday('verbal'),c.verbal]},
     {k:'di',t:`Data Insights set: ${c.di} questions`,sub:'Data Sufficiency, tables, charts, two-part, multi-source',done:secToday('di')>=c.di,go:'di',n:[secToday('di'),c.di]},
     {k:'cards',t:'Flashcards',sub:due?`${due} cards due`:'Formulas, CR patterns, DS rules',done:(d.card||0)+(d.cardnew||0)>=Math.min(c.cards,Math.max(due,5)),go:'cards',n:[(d.card||0)+(d.cardnew||0),Math.min(c.cards,Math.max(due,5))]},
-  ];
+  );
+  t.push({k:'mm',t:'Mental math sprint',sub:'2 minutes, no calculator',done:(d.mm||0)>0||(P.mm&&P.mm.last===ymd(Date.now())),go:'mental'});
   if(plCfg().minutes>=30)t.push({k:'lesson',t:'One lesson',sub:'Read, check the worked examples, mark it done',done:(d.lesson||0)>=1,go:'lessons'});
   if(errN)t.push({k:'err',t:'Error log review',sub:errN+' questions waiting',done:(d.err||0)>=Math.min(3,errN),go:'errors',n:[d.err||0,Math.min(3,errN)]});
   if(dow===6||dow===0)t.push({k:'mock',t:'Weekend mock',sub:'Full adaptive mock, or one timed section',done:(d.mock||0)>=1,go:'mock'});
@@ -1694,8 +1725,8 @@ VIEWS.session=el=>{
         <span class="timer-chip num" id="rnT">${ic('clock')}<span>0:00</span></span>${q.sec==='di'?`<button class="btn ghost sm" id="rnCalc" aria-label="Calculator">${ic('calculator')}</button>`:''}</div>
       <div class="q-meta"><span class="pill">${esc(TYPE_NAME[q.type])}</span>${subLabel(q)?`<span class="pill">${esc(subLabel(q))}</span>`:''}<span class="pill d${q.diff}">${DIFF_NAME[q.diff]}</span>${multi}</div>
       ${unitScreen(q,a,{reveal:rev,tab:PS.tab})}
-      <div class="run-act" id="rnAct">${rev?`${explainHTML(q,a)}<div id="rnWhy"></div><div class="row"><button class="btn primary" id="rnNext">${PS.i+1<PS.qs.length?'Next question':'See results'} ${ic('chevron-right')}</button><button class="btn need-ai" id="rnAsk" ${AI?'':'hidden'}>${ic('sparkles')} Ask Max</button><button class="btn ghost sm" id="rnRep">Report a problem</button></div>`
-        :`<div class="row"><button class="btn primary" id="rnSub" ${complete(q,a)?'':'disabled'}>Check answer</button><button class="btn ghost" id="rnSkip">Skip</button></div>`}</div>
+      <div class="run-act" id="rnAct">${rev?`${explainHTML(q,a)}<div id="viBox"></div><div class="row"><button class="btn sm" data-vi="1">${ic('languages')} Giải thích bằng tiếng Việt</button></div><div id="rnWhy"></div><div class="row"><button class="btn primary" id="rnNext">${PS.i+1<PS.qs.length?'Next question':'See results'} ${ic('chevron-right')}</button><button class="btn need-ai" id="rnAsk" ${AI?'':'hidden'}>${ic('sparkles')} Ask Max</button><button class="btn ghost sm" id="rnRep">Report a problem</button></div>`
+        :`<div id="hintBox" class="hints-box"></div><div class="row"><button class="btn primary" id="rnSub" ${complete(q,a)?'':'disabled'}>Check answer</button><button class="btn" data-hint="1">${ic('lightbulb')} Hint</button><button class="btn ghost" id="rnSkip">Skip</button></div>`}</div>
     </div>`;
     bindCtx(el);
     $$('[data-tab]',el).forEach(b=>b.addEventListener('click',()=>{PS.tab=+b.dataset.tab;}));
@@ -1714,6 +1745,7 @@ VIEWS.session=el=>{
     const rp=$('#rnRep');if(rp)rp.onclick=()=>reportQ(q);
     if(rev&&!PS.res[q.qid]){const w=$('#rnWhy');const e=P.err[q.qid]||{};w.innerHTML=`<div class="why"><span class="small"><b>Why did you miss it?</b> Tagging mistakes shows your patterns in the error log.</span><div class="row">${ERR_REASONS.map(([k,t])=>`<button class="chip sm" data-why="${k}" aria-pressed="${e.reason===k}">${t}</button>`).join('')}</div></div>`;
       $$('[data-why]',w).forEach(b=>b.onclick=()=>{if(P.err[q.qid]){P.err[q.qid].reason=b.dataset.why;touch('main');}$$('[data-why]',w).forEach(x=>x.setAttribute('aria-pressed',x===b));});}
+    bindHelp(el,q,()=>PS.ans[q.qid]);
     refreshAIBits();
   };
   const clock=()=>{const t=$('#rnT span');if(!t||!PS)return;const q=PS.qs[PS.i];
@@ -1732,13 +1764,14 @@ function prSummary(el){
       <div class="row" style="justify-content:center"><button class="btn primary" id="smAgain">Another set</button><button class="btn" id="smErr">${ic('notebook-pen')} Error log</button><button class="btn ghost" id="smHome">Today</button></div></div>
     <div class="panel"><h3>Review</h3><div class="rv-list">${qs.map((q,i)=>`<button class="rv-row" data-i="${PS.qs.indexOf(q)}"><span class="rv-ic ${PS.res[q.qid]?'ok':'bad'}">${ic(PS.res[q.qid]?'check':'x')}</span><span class="rv-t"><b>${i+1}. ${esc(TYPE_NAME[q.type])}</b><span class="small muted">${esc(subLabel(q)||q.topic)}, ${DIFF_NAME[q.diff]}</span></span><span class="small muted num">${Math.round(PS.secs[q.qid]||0)}s</span></button>`).join('')}</div></div></div>`;
   window.__busy=false; window.__guard=null;
-  $('#smAgain').onclick=()=>go(PS.sec||'quant');$('#smErr').onclick=()=>go('errors');$('#smHome').onclick=()=>go('home');
+  if(PS.onDone&&!PS.doneFired){PS.doneFired=1;PS.onDone(ok,qs.length);}
+  $('#smAgain').onclick=()=>go(PS.onDone?'start':(PS.sec||'quant'));$('#smErr').onclick=()=>go('errors');$('#smHome').onclick=()=>go('home');
   $$('[data-i]',el).forEach(b=>b.onclick=()=>reviewOne(PS.qs[+b.dataset.i],PS.ans[PS.qs[+b.dataset.i].qid]));
   uiChips();
 }
 /* read-only review of one answered question in a modal */
 function reviewOne(q,a){
-  const m=modal(`<div class="q-meta"><span class="pill">${esc(TYPE_NAME[q.type])}</span>${subLabel(q)?`<span class="pill">${esc(subLabel(q))}</span>`:''}<span class="pill d${q.diff}">${DIFF_NAME[q.diff]}</span></div>${unitScreen(q,a,{reveal:true})}${explainHTML(q,a)}<div class="row"><button class="btn need-ai" id="rvAsk" ${AI?'':'hidden'}>${ic('sparkles')} Ask Max</button></div>`);
+  const m=modal(`<div class="q-meta"><span class="pill">${esc(TYPE_NAME[q.type])}</span>${subLabel(q)?`<span class="pill">${esc(subLabel(q))}</span>`:''}<span class="pill d${q.diff}">${DIFF_NAME[q.diff]}</span></div>${unitScreen(q,a,{reveal:true})}${explainHTML(q,a)}<div id="viBox"></div><div class="row"><button class="btn sm" data-vi="1">${ic('languages')} Giải thích bằng tiếng Việt</button><button class="btn need-ai" id="rvAsk" ${AI?'':'hidden'}>${ic('sparkles')} Ask Max</button></div>`);bindHelp(m.el,q,()=>a);
   m.el.classList.add('wide');bindCtx(m.el);const b=$('#rvAsk',m.el);if(b)b.onclick=()=>{m.close();askMaxAbout(q,a);};
 }
 function reportQ(q){
@@ -1935,9 +1968,136 @@ VIEWS.mock=el=>{
 };
 VIEWS.diag=el=>{if(!QS.length){el.innerHTML=`<div class="view"><p class="note">Loading...</p></div>`;loadBank().then(()=>{if(current==='diag')route();});return;}mkNew('diag',SECS,-1);};
 
+/* ================= START HERE: guided path for beginners, glossary, mental math =================
+   Path = ordered steps. Lesson step: done when the lesson is marked learned. Drill step: 5 easy questions on the lesson topic,
+   done with >= 4/5 (or after two tries, so nobody gets stuck). Steps unlock in order; any step can be skipped. */
+let GLOSS=[];
+function loadGloss(){return GLOSS.length?Promise.resolve(GLOSS):loadJSON('glossary').then(g=>GLOSS=g).catch(()=>GLOSS);}
+function pathSteps(){
+  if(!LESSONS.length)return [];
+  const steps=[]; const by=s=>LESSONS.filter(l=>l.sec===s);
+  by('start').forEach((l,i)=>{steps.push({id:'L:'+l.id,kind:'lesson',l,stage:'Getting started'});
+    if(i===1)steps.push({id:'X:diag',kind:'diag',stage:'Getting started',title:'Take the diagnostic',sub:'15 questions, about 25 minutes, to see where you start'});});
+  const stageName={quant:'Quant foundations',verbal:'Verbal foundations',di:'Data Insights foundations',strategy:'Exam strategy'};
+  ['quant','verbal','di'].forEach(sec=>by(sec).filter(l=>l.level!=='advanced').forEach(l=>{
+    steps.push({id:'L:'+l.id,kind:'lesson',l,stage:stageName[sec]});
+    steps.push({id:'D:'+l.id,kind:'drill',l,stage:stageName[sec],title:'Practice: '+l.title,sub:'5 easy questions, 4 right to pass'});}));
+  by('strategy').forEach(l=>steps.push({id:'L:'+l.id,kind:'lesson',l,stage:stageName.strategy}));
+  steps.push({id:'X:mock',kind:'mock',stage:'Exam strategy',title:'Your first timed section',sub:'One 45-minute section, any one you like'});
+  return steps;
+}
+function stepDone(s){
+  const p=P.path||{};
+  if(p[s.id]&&(p[s.id].done||p[s.id].skip))return true;
+  if(s.kind==='lesson')return !!P.lessons[s.l.id];
+  if(s.kind==='diag')return !!P.diag;
+  if(s.kind==='mock')return (P.mocks||[]).some(m=>m.kind!=='diag');
+  return false;
+}
+function pathState(){const steps=pathSteps();const next=steps.find(s=>!stepDone(s));return {steps,next,done:steps.filter(stepDone).length};}
+function drillQs(l){
+  const pool=lessonQs(l).filter(q=>q.diff<=2&&q.unit.qs.length===1);
+  const fresh=shuffle(pool.filter(q=>!P.att[q.qid])), old=shuffle(pool.filter(q=>P.att[q.qid]));
+  let out=[...fresh,...old].slice(0,5);
+  if(!out.length&&/reading|passage|RC /i.test(l.title+' '+l.topic)){const u=UNITS.filter(u=>u.type==='rc').sort((a,b)=>(a.diff-b.diff)||((a.qs.some(q=>P.att[q.qid])?1:0)-(b.qs.some(q=>P.att[q.qid])?1:0)))[0];if(u)return u.qs.slice();}
+  if(out.length<5){const more=shuffle(lessonQs(l).filter(q=>q.diff<=3&&q.unit.qs.length===1&&!out.includes(q)));out=out.concat(more).slice(0,5);}
+  return out;
+}
+function runStep(s){
+  if(s.kind==='lesson'){PATH_FROM=true;openLesson(s.l.id);return;}
+  if(s.kind==='diag'){go('diag');return;}
+  if(s.kind==='mock'){go('mock');return;}
+  loadBank().then(()=>{const qs=drillQs(s.l);if(!qs.length){P.path=P.path||{};P.path[s.id]={done:1,t:Date.now()};touch('main');toast('No easy questions for this topic yet, step skipped.');route();return;}
+    prStart(qs,{title:s.title,sec:qs[0].sec,onDone:(ok,n)=>{P.path=P.path||{};const r=P.path[s.id]||{tries:0};r.tries=(r.tries||0)+1;r.best=Math.max(r.best||0,ok);
+      const need=n>=5?4:Math.ceil(n*0.6);if(ok>=need||r.tries>=2){r.done=1;r.t=Date.now();toast(ok>=need?'Step passed. Next one unlocked.':'Moving on. These questions stay in your error log.');}else toast(`${ok}/${n}. You need ${need} to pass. Read the explanations and try again.`,4000);
+      P.path[s.id]=r;touch('main');}});});
+}
+VIEWS.start=el=>{
+  if(!LESSONS.length){el.innerHTML='<div class="view"><p class="note">Loading...</p></div>';loadLearn().then(()=>{if(current==='start')route();});return;}
+  const {steps,next,done}=pathState();
+  const stages=[...new Set(steps.map(s=>s.stage))];
+  const nextIdx=steps.indexOf(next);
+  el.innerHTML=`<div class="view">
+    <div class="sec-hero"><div><span class="label" style="color:inherit;opacity:.85">Start here</span><h2>${done}<span class="small" style="opacity:.8"> / ${steps.length} steps</span></h2>
+      <p class="small" style="margin:0;opacity:.9">${next?'New to the GMAT? Follow the path in order: read a lesson, pass 5 easy questions, move on. Stuck on English words? Open the Glossary.':'Path complete. You know every question type. Daily sets and mocks from here.'}</p></div>${mascot(next?'idea':'yay',84)}</div>
+    ${next?`<button class="panel st-next" id="stGo"><span class="label">Next step</span><b>${esc(next.kind==='lesson'?next.l.title:next.title)}</b><span class="small muted">${esc(next.kind==='lesson'?'Lesson, about 8 minutes':next.sub)}</span><span class="btn primary sm" style="align-self:flex-start">${ic('play')} Continue</span></button>`:''}
+    <div class="row"><button class="btn sm" data-go="glossary">${ic('book-a')} Glossary</button><button class="btn sm" data-go="mental">${ic('zap')} Mental math</button></div>
+    ${stages.map(st=>{const ss=steps.filter(s=>s.stage===st);const d=ss.filter(stepDone).length;
+      return `<details class="panel st-stage" ${ss.includes(next)?'open':''}><summary><b>${esc(st)}</b><span class="small muted num">${d}/${ss.length}</span></summary><div class="st-list">${ss.map(s=>{const i=steps.indexOf(s),ok=stepDone(s),lock=!ok&&i>nextIdx;const r=(P.path||{})[s.id];
+        return `<div class="st-row ${ok?'done':''} ${s===next?'cur':''} ${lock?'lock':''}"><span class="st-ic">${ok?ic('check'):s.kind==='lesson'?ic('book-open'):s.kind==='drill'?ic('target'):ic('clipboard-check')}</span>
+          <span class="st-t"><b>${esc(s.kind==='lesson'?s.l.title:s.title)}</b><span class="small muted">${s.kind==='lesson'?'Lesson':esc(s.sub)}${r&&r.best!=null?`, best ${r.best}/5`:''}${r&&r.skip?', skipped':''}</span></span>
+          ${ok?`<button class="btn ghost sm" data-run="${i}">Again</button>`:lock?`<button class="btn ghost sm" data-skip="${i}" title="Mark as done">Skip</button>`:`<button class="btn primary sm" data-run="${i}">Go</button>`}</div>`;}).join('')}</div></details>`;}).join('')}
+  </div>`;
+  const g=$('#stGo');if(g)g.onclick=()=>runStep(next);
+  $$('[data-run]',el).forEach(b=>b.onclick=()=>runStep(steps[+b.dataset.run]));
+  $$('[data-skip]',el).forEach(b=>b.onclick=async()=>{const s=steps[+b.dataset.skip];if(!await confirmBox('Skip ahead?','Mark this step and every step before it as done. Do this only if you already know the material.','Skip','Cancel'))return;
+    P.path=P.path||{};steps.slice(0,+b.dataset.skip+1).forEach(x=>{if(!stepDone(x))P.path[x.id]={skip:1,t:Date.now()};});touch('main');VIEWS.start(el);});
+  $$('[data-go]',el).forEach(b=>b.onclick=()=>go(b.dataset.go));
+};
+
+/* ---------- glossary ---------- */
+let GL_Q='',GL_G='';
+VIEWS.glossary=el=>{
+  if(!GLOSS.length){el.innerHTML='<div class="view"><p class="note">Loading...</p></div>';loadGloss().then(()=>{if(current==='glossary'&&GLOSS.length)route();else if(current==='glossary')el.innerHTML='<div class="view"><p class="note">Glossary not available yet.</p></div>';});return;}
+  const groups=[...new Set(GLOSS.map(g=>g.group))];
+  el.innerHTML=`<div class="view">
+    <p class="note" style="margin:0">English words that trip people up in GMAT questions, with the Vietnamese meaning. They are also in Flashcards under "Terms".</p>
+    <input type="search" id="glQ" placeholder="Search English or Vietnamese" value="${esc(GL_Q)}">
+    <div class="row">${['',...groups].map(g=>`<button class="chip sm" data-g="${esc(g)}" aria-pressed="${GL_G===g}">${g?esc(g):'All'}</button>`).join('')}</div>
+    <div class="gl-list" id="glL"></div></div>`;
+  const draw=()=>{const q=fold(GL_Q.trim());const list=GLOSS.filter(g=>(!GL_G||g.group===GL_G)&&(!q||fold(g.term+' '+g.vi).includes(q)));
+    $('#glL').innerHTML=list.length?list.map(g=>`<div class="gl-row"><div class="gl-h"><b>${esc(g.term)}</b><span class="gl-vi">${esc(g.vi)}</span></div>${g.note?`<div class="small muted">${fmt(g.note)}</div>`:''}${g.ex?`<div class="small gl-ex">${fmt(g.ex)}</div>`:''}</div>`).join(''):'<p class="note">No match.</p>';};
+  $('#glQ').oninput=e=>{GL_Q=e.target.value;draw();};
+  $$('[data-g]',el).forEach(b=>b.onclick=()=>{GL_G=b.dataset.g;$$('[data-g]',el).forEach(x=>x.setAttribute('aria-pressed',x===b));draw();});
+  draw();
+};
+
+/* ---------- mental math: 2-minute sprint, no calculator ---------- */
+const MM_FR=[[1,2],[1,3],[2,3],[1,4],[3,4],[1,5],[2,5],[3,5],[4,5],[1,6],[5,6],[1,8],[3,8],[5,8],[7,8],[1,9],[1,10],[3,10],[1,12],[1,16],[1,20],[1,25],[1,40],[1,50]];
+const ri=(a,b)=>a+Math.floor(Math.random()*(b-a+1));
+function mmItem(){
+  const k=ri(0,8);
+  if(k===0){const [a,b]=pick(MM_FR);return {q:`${a}/${b} as a percent`,a:100*a/b,tol:0.4,show:(+(100*a/b).toFixed(2))+'%'};}
+  if(k===1){const n=ri(11,25);return {q:`${n}²`,a:n*n};}
+  if(k===2){const n=ri(2,10);return {q:`${n}³`,a:n**3};}
+  if(k===3){const n=ri(2,12);return {q:`2^${n}`,a:2**n};}
+  if(k===4){const p=pick([5,10,12.5,15,20,25,30,40,60,75]),n=pick([40,60,80,120,160,240,360,480]);return {q:`${p}% of ${n}`,a:p*n/100};}
+  if(k===5){const a=ri(12,49),b=ri(3,9);return {q:`${a} × ${b}`,a:a*b};}
+  if(k===6){const b=ri(3,15),c=ri(6,25);return {q:`${b*c} ÷ ${b}`,a:c};}
+  if(k===7){const n=ri(4,25);return {q:`√${n*n}`,a:n};}
+  const a=ri(11,19),b=ri(11,19);return {q:`${a} × ${b}`,a:a*b};
+}
+VIEWS.mental=el=>{
+  const mm=P.mm||{best:0,runs:0};
+  let run=null,tm=null,item=null,score=0,miss=[];
+  window.__leave=()=>{if(tm)tm.stop();};
+  const intro=()=>{el.innerHTML=`<div class="view"><div class="panel ex-intro">${mascot('idea',90)}<div><span class="label">Mental math sprint</span><h2>2 minutes, no calculator</h2>
+    <p>Fractions to percents, squares, cubes, powers of 2, quick percents and products. GMAT Quant has no calculator, so fast arithmetic buys you time for thinking.</p>
+    <p class="note">Best: <b>${mm.best}</b> correct, ${mm.runs} sprints done. Percent answers within 0.4 count (33.3 for 1/3 is fine).</p>
+    <div class="row"><button class="btn primary" id="mmGo">${ic('play')} Start</button></div></div></div></div>`;$('#mmGo').onclick=start;};
+  const start=()=>{score=0;miss=[];window.__busy=true;
+    el.innerHTML=`<div class="view mm"><div class="spread"><span class="timer-chip num" id="mmT">${ic('clock')}<span>2:00</span></span><b class="num" id="mmS">0</b></div>
+      <div class="panel mm-card"><div class="mm-q" id="mmQ"></div><form id="mmF" class="row"><input id="mmI" inputmode="decimal" autocomplete="off" class="mm-in" aria-label="Answer"><button class="btn primary">OK</button></form><div class="row"><button class="btn ghost sm" id="mmSk">Skip</button></div><div id="mmFb" class="small"></div></div></div>`;
+    tm=makeTimer(120,l=>{const t=$('#mmT span');if(t)t.textContent=fmtTime(l);},end);
+    nextQ();
+    $('#mmF').onsubmit=e=>{e.preventDefault();const v=parseFloat($('#mmI').value.replace(',','.').replace('%',''));if(isNaN(v))return;
+      const ok=Math.abs(v-item.a)<=(item.tol||1e-9);if(ok){score++;sfx('ok');$('#mmFb').textContent='';}else{sfx('bad');miss.push(item);$('#mmFb').textContent=`${item.q} = ${item.show||item.a}`;}
+      $('#mmS').textContent=score;nextQ();};
+    $('#mmSk').onclick=()=>{miss.push(item);$('#mmFb').textContent=`${item.q} = ${item.show||item.a}`;nextQ();};};
+  const nextQ=()=>{item=mmItem();$('#mmQ').textContent=item.q;const i=$('#mmI');i.value='';i.focus();};
+  const end=()=>{window.__busy=false;mm.runs++;mm.last=ymd(Date.now());const rec=score>mm.best;mm.best=Math.max(mm.best,score);P.mm=mm;touch('main');if(score)award('mm',score);sfx('end');
+    el.innerHTML=`<div class="view"><div class="panel quiz-end">${mascot(rec?'yay':'ok',96)}<h2>${score} correct</h2><p class="note">${rec?'New personal best!':`Best so far: ${mm.best}.`} ${miss.length?'Worth memorising:':''}</p>
+      ${miss.length?`<div class="mm-miss">${miss.slice(0,12).map(m=>`<span class="pill">${esc(m.q)} = ${esc(String(m.show||m.a))}</span>`).join('')}</div>`:''}
+      <div class="row" style="justify-content:center"><button class="btn primary" id="mmAg">Again</button><button class="btn ghost" id="mmH">Today</button></div></div></div>`;
+    $('#mmAg').onclick=start;$('#mmH').onclick=()=>go('home');};
+  intro();
+};
+
 /* ================= LEARN: lessons and flashcards (spaced repetition) ================= */
 let LESSONS=[], CARDS=[];
-function loadLearn(){return Promise.all([loadJSON('lessons').catch(()=>[]),loadJSON('cards').catch(()=>[])]).then(([l,c])=>{LESSONS=l;CARDS=c;return {l,c};});}
+function loadLearn(){if(LESSONS.length)return Promise.resolve({l:LESSONS,c:CARDS});return Promise.all([loadJSON('lessons').catch(()=>[]),loadJSON('cards').catch(()=>[]),loadGloss()]).then(([l,c,g])=>{LESSONS=l;
+  // glossary terms become a flashcard deck of their own
+  CARDS=c.concat((g||[]).map(x=>({id:x.id,sec:'terms',topic:x.group,front:x.term,back:x.vi+(x.ex?'\n'+x.ex:''),level:1})));return {l,c:CARDS};});}
 function bodyHTML(t){
   const out=[];let list=null,para=[];
   const flushP=()=>{if(para.length){out.push(`<p>${fmt(para.join(' '))}</p>`);para=[];}};
@@ -1950,24 +2110,25 @@ function bodyHTML(t){
     para.push(l);});
   flushP();flushL();return out.join('');
 }
-const LS_SEC=[['quant','Quant'],['verbal','Verbal'],['di','Data Insights'],['strategy','Strategy']];
-let LS_TAB='quant';
+const LS_SEC=[['start','Start here'],['quant','Quant'],['verbal','Verbal'],['di','Data Insights'],['strategy','Strategy']];
+let LS_TAB='start';
 function lessonOfDay(){
   if(!LESSONS.length)return null;
   const sc=scoreNow(); const weak=SECS.filter(s=>sc[s]!=null).sort((a,b)=>sc[a]-sc[b])[0]||'quant';
+  const st=LESSONS.find(l=>l.sec==='start'&&!P.lessons[l.id]); if(st)return st;
   return LESSONS.find(l=>l.sec===weak&&!P.lessons[l.id])||LESSONS.find(l=>!P.lessons[l.id])||null;
 }
 VIEWS.lessons=el=>{
   if(!LESSONS.length){el.innerHTML=`<div class="view"><p class="note">Loading lessons...</p></div>`;loadLearn().then(()=>{if(current==='lessons')route();});return;}
   const list=LESSONS.filter(l=>l.sec===LS_TAB), done=list.filter(l=>P.lessons[l.id]).length, lod=lessonOfDay();
   el.innerHTML=`<div class="view">
-    ${lod?`<button class="panel ls-today" data-l="${esc(lod.id)}"><span class="label">Suggested next</span><b>${esc(lod.title)}</b><span class="small muted">${esc(SEC_NAME[lod.sec]||'Strategy')}, ${esc(lod.topic)}</span></button>`:''}
+    ${lod?`<button class="panel ls-today" data-l="${esc(lod.id)}"><span class="label">Suggested next</span><b>${esc(lod.title)}</b><span class="small muted">${esc(SEC_NAME[lod.sec]||(lod.sec==='start'?'Start here':'Strategy'))}, ${esc(lod.topic)}</span></button>`:''}
     ${subTabs('lsT',LS_SEC.map(([k,t])=>[k,`${t} <span class="muted num">${LESSONS.filter(l=>l.sec===k&&P.lessons[l.id]).length}/${LESSONS.filter(l=>l.sec===k).length}</span>`]),LS_TAB,t=>{LS_TAB=t;VIEWS.lessons(el);})}
     <p class="note">${done}/${list.length} done in this group.</p>
     <div class="ls-grid">${list.map(l=>`<button class="panel ls-card ${P.lessons[l.id]?'done':''}" data-l="${esc(l.id)}"><span class="ls-c">${P.lessons[l.id]?ic('check'):ic('book-open')}</span><span><b>${esc(l.title)}</b><span class="small muted">${esc(l.topic)}${l.level==='advanced'?', advanced':''}</span></span></button>`).join('')}</div></div>`;
   $$('[data-l]',el).forEach(b=>b.onclick=()=>openLesson(b.dataset.l));
 };
-let LS_OPEN=null;
+let LS_OPEN=null, PATH_FROM=false;
 function openLesson(id){LS_OPEN=id;go('lesson');}
 function lessonQs(l){
   const words=fold(l.topic+' '+l.title).split(/[^a-z0-9]+/).filter(w=>w.length>3&&!['questions','question','basics','advanced','tactics','strategy'].includes(w));
@@ -1981,17 +2142,18 @@ VIEWS.lesson=el=>{
   const done=!!P.lessons[l.id];
   el.innerHTML=`<div class="view lesson">
     <button class="btn ghost sm" id="lsBack" style="align-self:flex-start">${ic('chevron-left')} All lessons</button>
-    <div><span class="label">${esc(SEC_NAME[l.sec]||'Strategy')}, ${esc(l.topic)}</span><h2>${esc(l.title)}</h2></div>
+    <div><span class="label">${esc(SEC_NAME[l.sec]||(l.sec==='start'?'Start here':'Strategy'))}, ${esc(l.topic)}</span><h2>${esc(l.title)}</h2></div>
     <article class="panel ls-body">${bodyHTML(l.body)}</article>
     ${(l.examples||[]).length?`<div class="panel"><h3>Worked examples</h3>${l.examples.map((x,i)=>`<div class="ls-ex"><p><b>Example ${i+1}.</b> ${fmt(x.q)}</p><details><summary>Show the solution</summary><div class="ls-sol">${bodyHTML(x.a)}</div></details></div>`).join('')}</div>`:''}
     ${(l.pitfalls||[]).length?`<div class="panel"><h3>Common mistakes</h3><ul>${l.pitfalls.map(p=>`<li>${fmt(p)}</li>`).join('')}</ul></div>`:''}
-    <div class="row"><button class="btn primary" id="lsDone" ${done?'disabled':''}>${done?ic('check')+' Learned':'Mark as learned'}</button><button class="btn" id="lsPr">${ic('target')} Practise this</button><button class="btn need-ai" id="lsAsk" ${AI?'':'hidden'}>${ic('sparkles')} Ask Max about it</button></div></div>`;
-  $('#lsBack').onclick=()=>go('lessons');
+    <div class="row"><button class="btn primary" id="lsDone" ${done?'disabled':''}>${done?ic('check')+' Learned':'Mark as learned'}</button><button class="btn" id="lsPr">${ic('target')} Practise this</button><button class="btn need-ai" id="lsAsk" ${AI?'':'hidden'}>${ic('sparkles')} Ask Max about it</button><button class="btn need-ai" id="lsVi" ${AI?'':'hidden'}>${ic('languages')} Tóm tắt bằng tiếng Việt</button></div></div>`;
+  const back=l.sec==='start'||PATH_FROM?'start':'lessons';PATH_FROM=false;$('#lsBack').onclick=()=>go(back);
   $('#lsDone').onclick=()=>{P.lessons[l.id]=Date.now();award('lesson',1);sfx('ok');VIEWS.lesson(el);};
   $('#lsPr').onclick=()=>loadBank().then(()=>{const qs=lessonQs(l);if(!qs.length){go(l.sec==='strategy'?'mock':l.sec);return;}
     const target=plDiffFor(qs[0].sec);const ranked=qs.map(q=>[(P.att[q.qid]?100:0)+Math.abs(q.diff-target)*10+Math.random()*5,q]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
     const seen=new Set(),out=[];for(const q of ranked){if(out.length>=8)break;if(seen.has(q.unit.id))continue;seen.add(q.unit.id);q.unit.qs.forEach(x=>out.push(x));}
     prStart(out.slice(0,10),{title:l.title,sec:qs[0].sec});});
+  const lv=$('#lsVi');if(lv)lv.onclick=()=>tutorOpen(`Hãy tóm tắt bài học "${l.title}" (${l.topic}) bằng tiếng Việt cho người mới học GMAT: ý chính, công thức hoặc mẹo quan trọng, và một ví dụ ngắn. Giữ thuật ngữ tiếng Anh, ghi nghĩa tiếng Việt trong ngoặc. Nội dung bài:\n\n${l.body.slice(0,3500)}`);
   const as=$('#lsAsk');if(as)as.onclick=()=>tutorOpen(`I am reading the lesson "${l.title}" (${l.topic}). Can you explain the key idea in a different way, with one fresh example?`);
 };
 
@@ -2006,7 +2168,7 @@ VIEWS.cards=el=>{
   if(!CQ.length||!CCUR)cardQueue();
   const due=cardsDue(CD_F).length, total=cardsFor(CD_F).length, learned=cardsFor(CD_F).filter(c=>known(c.id)).length;
   el.innerHTML=`<div class="view">
-    ${subTabs('cdF',[['all','All'],['quant','Quant'],['verbal','Verbal'],['di','Data Insights']],CD_F,t=>{CD_F=t;CQ=[];VIEWS.cards(el);})}
+    ${subTabs('cdF',[['all','All'],['quant','Quant'],['verbal','Verbal'],['di','Data Insights'],['terms','Terms']],CD_F,t=>{CD_F=t;CQ=[];VIEWS.cards(el);})}
     <p class="note">${due} due, ${CQ.length} in today's queue, ${learned}/${total} learned (remembered after a week or more). Done this session: ${CDONE}.</p>
     <div id="cdBox"></div>
     <details class="adv"><summary>Browse all ${total} cards</summary><div class="cd-list">${cardsFor(CD_F).map(c=>`<div class="cd-row"><b>${fmt(c.front)}</b><span class="small">${fmt(c.back)}</span></div>`).join('')}</div></details>
@@ -2018,7 +2180,7 @@ VIEWS.cards=el=>{
       $('#cdMore').onclick=()=>{CQ=cardsNew(CD_F,5);CCUR=CQ[0]||null;draw();};return;}
     const c=CCUR,isNew=!P.srs[c.id];
     box.innerHTML=`<div class="card fc ${CREV?'rev':''}" id="cdC" tabindex="0" role="button" aria-label="Flip card">
-      <div class="corner"><span class="pill">${esc(SEC_NAME[c.sec]||c.sec)}</span><span class="pill">${esc(c.topic)}</span>${isNew?'<span class="pill ai">new</span>':''}</div>
+      <div class="corner"><span class="pill">${esc(c.sec==='terms'?'Term':SEC_NAME[c.sec]||c.sec)}</span><span class="pill">${esc(c.topic)}</span>${isNew?'<span class="pill ai">new</span>':''}</div>
       <div class="fc-front">${fmt(c.front)}</div>
       ${CREV?`<div class="fc-back">${fmt(c.back)}</div>`:'<p class="note">Think of the answer, then tap to flip.</p>'}</div>
       ${CREV?`<div class="rate">${[['Again',0],['Hard',1],['Good',2],['Easy',3]].map(([t,r])=>`<button class="btn ${r===2?'primary':''} r${r}" data-r="${r}">${t}<small>${ivLabel(c.id,r)}</small></button>`).join('')}</div>`:`<div class="row"><button class="btn primary" id="cdFlip">Show answer</button></div>`}`;
@@ -2119,17 +2281,49 @@ VIEWS.tutor=el=>{
   if(TU_PENDING){const t=TU_PENDING;TU_PENDING=null;setTimeout(()=>send(t),50);}
 };
 
+/* ---------- step-by-step hints (before answering) and Vietnamese explanation (after) ----------
+   Both come from Max (Groq) and are cached on this device, so a question costs one AI call at most per level. */
+const HINT_CACHE=store.get('calculis-hints',{});
+async function hintFor(q,level){
+  const k=q.qid+'|'+level; if(HINT_CACHE[k])return HINT_CACHE[k];
+  const prev=[1,2].filter(n=>n<level).map(n=>HINT_CACHE[q.qid+'|'+n]).filter(Boolean);
+  const ask_=`${MAX_SYS}\n\nA beginner is stuck on this question and asked for hint number ${level} of 3.\n${level===1?'Hint 1: say what the question is really asking and the first thing to do. Do not compute anything for them.':level===2?'Hint 2: give the key idea or the key step, with a little working, but do NOT reveal the final answer or the answer letter.':'Hint 3: walk them almost to the end, leaving only the last small step. Still do NOT state the final answer or the letter.'}\nKeep it under 70 words. Plain English, no headings.${prev.length?`\nHints already given:\n${prev.map((h,i)=>`${i+1}. ${h}`).join('\n')}`:''}\n\n${qText(q,null).replace(/\n\nCorrect answer:[\s\S]*$/,'')}`;
+  const r=await ask(ask_,{modelTier:'quick'}); const t=r.text.trim();
+  HINT_CACHE[k]=t; const keys=Object.keys(HINT_CACHE); if(keys.length>600)delete HINT_CACHE[keys[0]]; store.set('calculis-hints',HINT_CACHE);
+  return t;
+}
+const VI_CACHE=store.get('calculis-vi',{});
+async function viExplain(q,a){
+  if(VI_CACHE[q.qid])return VI_CACHE[q.qid];
+  const p=`Bạn là Max, gia sư GMAT thân thiện. Hãy giải thích câu hỏi dưới đây bằng tiếng Việt cho một người mới học GMAT. Giữ nguyên các thuật ngữ tiếng Anh quan trọng (ví dụ remainder, sufficient, assumption) và ghi nghĩa tiếng Việt trong ngoặc ở lần đầu. Trình bày từng bước, ngắn gọn, khoảng 120-220 từ: (1) đề đang hỏi gì, (2) cách giải nhanh nhất, (3) vì sao đáp án đúng, (4) bẫy dễ mắc. Không dùng LaTeX, không dùng dấu gạch ngang dài.\n\n${qText(q,a)}`;
+  const r=await ask(p); const t=r.text.trim();
+  VI_CACHE[q.qid]=t; const keys=Object.keys(VI_CACHE); if(keys.length>300)delete VI_CACHE[keys[0]]; store.set('calculis-vi',VI_CACHE);
+  return t;
+}
+/* wire the two buttons inside a question screen */
+function bindHelp(root,q,getA){
+  const hb=$('[data-hint]',root);
+  if(hb){let lvl=0;const box=$('#hintBox',root);
+    hb.onclick=async()=>{if(!AI){toast(aiError({code:'no_ai'}));return;}if(lvl>=3)return;lvl++;hb.disabled=true;
+      box.insertAdjacentHTML('beforeend',`<div class="hint" data-l="${lvl}"><b>Hint ${lvl}</b> <span class="typing">Max is thinking...</span></div>`);
+      try{const t=await hintFor(q,lvl);$(`.hint[data-l="${lvl}"]`,box).innerHTML=`<b>Hint ${lvl}</b> ${fmt(t)}`;}catch(e){$(`.hint[data-l="${lvl}"]`,box).remove();lvl--;toast(aiError(e));}
+      hb.disabled=lvl>=3;hb.innerHTML=lvl>=3?'No more hints':`${ic('lightbulb')} Hint ${lvl+1} of 3`;};}
+  const vb=$('[data-vi]',root);
+  if(vb){vb.onclick=async()=>{if(!AI){toast(aiError({code:'no_ai'}));return;}const box=$('#viBox',root);vb.disabled=true;box.innerHTML='<div class="expl"><span class="typing">Max đang viết...</span></div>';
+    try{const t=await viExplain(q,getA());box.innerHTML=`<div class="expl vi">${mdHTML(t)}</div>`;}catch(e){box.innerHTML='';vb.disabled=false;toast(aiError(e));}};}
+}
+
 /* ================= UI SHELL: groups, bottom nav / sidebar, Today, Progress, Settings, celebrations, intro ================= */
 const UI_GROUPS=[
   {k:'today',label:'Today',icon:'house',views:['home']},
-  {k:'practice',label:'Practice',icon:'target',views:['quant','verbal','di','errors']},
+  {k:'practice',label:'Practice',icon:'target',views:['quant','verbal','di','errors','mental']},
   {k:'mock',label:'Mock',icon:'clipboard-check',views:['mock']},
-  {k:'learn',label:'Learn',icon:'book-open',views:['lessons','cards','tutor']},
+  {k:'learn',label:'Learn',icon:'book-open',views:['start','lessons','glossary','cards','tutor']},
   {k:'me',label:'Me',icon:'user-round',views:['progress','friends','settings']},
 ];
 const UI_ALIAS={session:'quant',exam:'mock',diag:'mock',lesson:'lessons'};
-const UI_V={home:['Today','house'],quant:['Quant','sigma'],verbal:['Verbal','book-open'],di:['Data Insights','bar-chart'],errors:['Error log','notebook-pen'],
-  mock:['Mock exams','clipboard-check'],lessons:['Lessons','graduation-cap'],cards:['Flashcards','layers'],tutor:['Ask Max','sparkles'],
+const UI_V={home:['Today','house'],quant:['Quant','sigma'],verbal:['Verbal','book-open'],di:['Data Insights','bar-chart'],errors:['Error log','notebook-pen'],mental:['Mental math','zap'],start:['Start here','graduation-cap'],glossary:['Glossary','book-a'],
+  mock:['Mock exams','clipboard-check'],lessons:['Lessons','book-open'],cards:['Flashcards','layers'],tutor:['Ask Max','sparkles'],
   progress:['Progress','trophy'],friends:['Study group','users'],settings:['Settings','settings']};
 const uiGroupOf=v=>{v=UI_ALIAS[v]||v;return UI_GROUPS.find(g=>g.views.includes(v))||UI_GROUPS[0];};
 const UI_LAST=store.get('calculis-lastv',{});
@@ -2182,7 +2376,7 @@ function uiChips(){
 }
 
 /* ---------- Today ---------- */
-const UI_SHORT={quant:'Quant',verbal:'Verbal',di:'DI',cards:'Cards',lesson:'Lesson',err:'Errors',mock:'Mock'};
+const UI_SHORT={path:'Path',mm:'Mental',quant:'Quant',verbal:'Verbal',di:'DI',cards:'Cards',lesson:'Lesson',err:'Errors',mock:'Mock'};
 function uiGreet(){const h=new Date().getHours();return h<12?'Good morning':h<18?'Good afternoon':'Good evening';}
 function uiRing(pct,size){const p=Math.round(Math.min(1,pct)*100);return `<div class="ring-box" style="width:${size}px;height:${size}px"><svg class="ring ${p>=100?'full':''}" viewBox="0 0 72 72" width="${size}" height="${size}" role="img" aria-label="${p}% of goal"><circle cx="36" cy="36" r="30" class="ring-track"/><circle cx="36" cy="36" r="30" class="ring-fill" pathLength="100" style="stroke-dasharray:${p} 100;${p?'':'opacity:0'}"/></svg><span class="ring-n num">${p>=100?ic('check'):p+'%'}</span></div>`;}
 function uiWeek(){
@@ -2219,7 +2413,7 @@ VIEWS.home=el=>{
       <button class="btn sess-go" id="hmGo">${esc(label)} ${ic('chevron-right')}</button>
      </section>
      <div class="tasks">${tasks.map(t=>`<button class="task ${t.done?'done':''}" data-go="${t.go}" data-k="${t.k}"><span class="tk-c">${t.done?ic('check'):ic(UI_V[t.go]?UI_V[t.go][1]:'sparkles')}</span><span class="tk-t"><span><b>${esc(t.t)}</b>${t.n?` <span class="num muted small">${Math.min(t.n[0],t.n[1])}/${t.n[1]}</span>`:''}</span><span class="small muted">${esc(t.sub)}</span></span>${ic('chevron-right','tk-a')}</button>`).join('')}</div>
-     ${firstTime?mcSay('idea',`Not sure where you stand? Take the <button class="lnk" data-go="diag">15-question diagnostic</button> (about 25 minutes) so Max can pick the right level for your daily sets.`,56):''}
+     ${firstTime?mcSay('idea',`New to the GMAT? Begin with the <button class="lnk" data-go="start">Start here path</button>: short lessons, easy questions, one step at a time. Already studied before? Take the <button class="lnk" data-go="diag">15-question diagnostic</button> instead.`,56):''}
     </div>
     <div class="hm-side">
      ${scoreCard()}
@@ -2240,6 +2434,7 @@ VIEWS.home=el=>{
 function uiTaskGo(t){
   if(['quant','verbal','di'].includes(t.k)&&QS.length){const left=Math.max(3,(t.n?t.n[1]-t.n[0]:5));prStart(pickSet(t.k,{n:left}),{title:`${SEC_NAME[t.k]}: today's set`,sec:t.k});return;}
   if(t.k==='lesson'){const l=lessonOfDay();if(l){openLesson(l.id);return;}}
+  if(t.k==='path'&&t.step){runStep(t.step);return;}
   go(t.go);
 }
 
@@ -2377,7 +2572,7 @@ function uiIntro(force){
       <div class="hats">${[0,1,2,3,4,7].map(i=>foxSVG('calm',52,i)).join('')}</div><button class="btn cele-btn" id="inNext">Next</button>`,
     ()=>{const c=plCfg();return `<div class="cele-mc">${mascot('idea',96)}</div><h2>Your target score?</h2><div class="row" style="justify-content:center">${[555,605,655,705,755,805].map(n=>`<button class="chip big" data-tg="${n}" aria-pressed="${c.target===n}">${n}</button>`).join('')}</div>
       <h2 style="margin-top:8px">Minutes a day?</h2><div class="row" style="justify-content:center">${[15,30,45,60,90].map(n=>`<button class="chip big" data-mn="${n}" aria-pressed="${c.minutes===n}">${n} min</button>`).join('')}</div>
-      <h2 style="margin-top:8px">How do you want to start?</h2><div class="in-opts"><button class="btn" data-st="diag">Take the 25-minute diagnostic (recommended)</button><button class="btn" data-st="quant">Jump straight into practice</button></div>`;},
+      <h2 style="margin-top:8px">How do you want to start?</h2><div class="in-opts"><button class="btn" data-st="start">I am new to the GMAT: follow the Start here path</button><button class="btn" data-st="diag">I have studied before: take the 25-minute diagnostic</button><button class="btn" data-st="quant">Jump straight into practice</button></div>`;},
   ];
   let i=noName?0:1; const m=uiCele('','intro'+(noName?' locked':''));const box=$('.cele-in',m.el);
   const draw=()=>{box.innerHTML=steps[i]();
@@ -2499,7 +2694,7 @@ async function boot(){
   if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('/sw.js').catch(()=>{});
 }
 /* test hook for tools/flows.py (headless checks) */
-window.__calculis={prStart,QS,UNITS,QI,mkNew,keyOf,isRight,go,state:()=>P,scoreNow,loadBank};
+window.__calculis={pathSteps:()=>pathSteps(),drillQs:l=>drillQs(l),loadLearn:()=>loadLearn(),prStart,QS,UNITS,QI,mkNew,keyOf,isRight,go,state:()=>P,scoreNow,loadBank};
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&dirty.size&&SYNC){clearTimeout(syncTimer);pushRemote();}});
 boot();
 })();

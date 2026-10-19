@@ -84,3 +84,35 @@ VIEWS.tutor=el=>{
   draw();
   if(TU_PENDING){const t=TU_PENDING;TU_PENDING=null;setTimeout(()=>send(t),50);}
 };
+
+/* ---------- step-by-step hints (before answering) and Vietnamese explanation (after) ----------
+   Both come from Max (Groq) and are cached on this device, so a question costs one AI call at most per level. */
+const HINT_CACHE=store.get('calculis-hints',{});
+async function hintFor(q,level){
+  const k=q.qid+'|'+level; if(HINT_CACHE[k])return HINT_CACHE[k];
+  const prev=[1,2].filter(n=>n<level).map(n=>HINT_CACHE[q.qid+'|'+n]).filter(Boolean);
+  const ask_=`${MAX_SYS}\n\nA beginner is stuck on this question and asked for hint number ${level} of 3.\n${level===1?'Hint 1: say what the question is really asking and the first thing to do. Do not compute anything for them.':level===2?'Hint 2: give the key idea or the key step, with a little working, but do NOT reveal the final answer or the answer letter.':'Hint 3: walk them almost to the end, leaving only the last small step. Still do NOT state the final answer or the letter.'}\nKeep it under 70 words. Plain English, no headings.${prev.length?`\nHints already given:\n${prev.map((h,i)=>`${i+1}. ${h}`).join('\n')}`:''}\n\n${qText(q,null).replace(/\n\nCorrect answer:[\s\S]*$/,'')}`;
+  const r=await ask(ask_,{modelTier:'quick'}); const t=r.text.trim();
+  HINT_CACHE[k]=t; const keys=Object.keys(HINT_CACHE); if(keys.length>600)delete HINT_CACHE[keys[0]]; store.set('calculis-hints',HINT_CACHE);
+  return t;
+}
+const VI_CACHE=store.get('calculis-vi',{});
+async function viExplain(q,a){
+  if(VI_CACHE[q.qid])return VI_CACHE[q.qid];
+  const p=`Bạn là Max, gia sư GMAT thân thiện. Hãy giải thích câu hỏi dưới đây bằng tiếng Việt cho một người mới học GMAT. Giữ nguyên các thuật ngữ tiếng Anh quan trọng (ví dụ remainder, sufficient, assumption) và ghi nghĩa tiếng Việt trong ngoặc ở lần đầu. Trình bày từng bước, ngắn gọn, khoảng 120-220 từ: (1) đề đang hỏi gì, (2) cách giải nhanh nhất, (3) vì sao đáp án đúng, (4) bẫy dễ mắc. Không dùng LaTeX, không dùng dấu gạch ngang dài.\n\n${qText(q,a)}`;
+  const r=await ask(p); const t=r.text.trim();
+  VI_CACHE[q.qid]=t; const keys=Object.keys(VI_CACHE); if(keys.length>300)delete VI_CACHE[keys[0]]; store.set('calculis-vi',VI_CACHE);
+  return t;
+}
+/* wire the two buttons inside a question screen */
+function bindHelp(root,q,getA){
+  const hb=$('[data-hint]',root);
+  if(hb){let lvl=0;const box=$('#hintBox',root);
+    hb.onclick=async()=>{if(!AI){toast(aiError({code:'no_ai'}));return;}if(lvl>=3)return;lvl++;hb.disabled=true;
+      box.insertAdjacentHTML('beforeend',`<div class="hint" data-l="${lvl}"><b>Hint ${lvl}</b> <span class="typing">Max is thinking...</span></div>`);
+      try{const t=await hintFor(q,lvl);$(`.hint[data-l="${lvl}"]`,box).innerHTML=`<b>Hint ${lvl}</b> ${fmt(t)}`;}catch(e){$(`.hint[data-l="${lvl}"]`,box).remove();lvl--;toast(aiError(e));}
+      hb.disabled=lvl>=3;hb.innerHTML=lvl>=3?'No more hints':`${ic('lightbulb')} Hint ${lvl+1} of 3`;};}
+  const vb=$('[data-vi]',root);
+  if(vb){vb.onclick=async()=>{if(!AI){toast(aiError({code:'no_ai'}));return;}const box=$('#viBox',root);vb.disabled=true;box.innerHTML='<div class="expl"><span class="typing">Max đang viết...</span></div>';
+    try{const t=await viExplain(q,getA());box.innerHTML=`<div class="expl vi">${mdHTML(t)}</div>`;}catch(e){box.innerHTML='';vb.disabled=false;toast(aiError(e));}};}
+}

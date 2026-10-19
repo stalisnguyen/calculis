@@ -91,8 +91,8 @@ VIEWS.session=el=>{
         <span class="timer-chip num" id="rnT">${ic('clock')}<span>0:00</span></span>${q.sec==='di'?`<button class="btn ghost sm" id="rnCalc" aria-label="Calculator">${ic('calculator')}</button>`:''}</div>
       <div class="q-meta"><span class="pill">${esc(TYPE_NAME[q.type])}</span>${subLabel(q)?`<span class="pill">${esc(subLabel(q))}</span>`:''}<span class="pill d${q.diff}">${DIFF_NAME[q.diff]}</span>${multi}</div>
       ${unitScreen(q,a,{reveal:rev,tab:PS.tab})}
-      <div class="run-act" id="rnAct">${rev?`${explainHTML(q,a)}<div id="rnWhy"></div><div class="row"><button class="btn primary" id="rnNext">${PS.i+1<PS.qs.length?'Next question':'See results'} ${ic('chevron-right')}</button><button class="btn need-ai" id="rnAsk" ${AI?'':'hidden'}>${ic('sparkles')} Ask Max</button><button class="btn ghost sm" id="rnRep">Report a problem</button></div>`
-        :`<div class="row"><button class="btn primary" id="rnSub" ${complete(q,a)?'':'disabled'}>Check answer</button><button class="btn ghost" id="rnSkip">Skip</button></div>`}</div>
+      <div class="run-act" id="rnAct">${rev?`${explainHTML(q,a)}<div id="viBox"></div><div class="row"><button class="btn sm" data-vi="1">${ic('languages')} Giải thích bằng tiếng Việt</button></div><div id="rnWhy"></div><div class="row"><button class="btn primary" id="rnNext">${PS.i+1<PS.qs.length?'Next question':'See results'} ${ic('chevron-right')}</button><button class="btn need-ai" id="rnAsk" ${AI?'':'hidden'}>${ic('sparkles')} Ask Max</button><button class="btn ghost sm" id="rnRep">Report a problem</button></div>`
+        :`<div id="hintBox" class="hints-box"></div><div class="row"><button class="btn primary" id="rnSub" ${complete(q,a)?'':'disabled'}>Check answer</button><button class="btn" data-hint="1">${ic('lightbulb')} Hint</button><button class="btn ghost" id="rnSkip">Skip</button></div>`}</div>
     </div>`;
     bindCtx(el);
     $$('[data-tab]',el).forEach(b=>b.addEventListener('click',()=>{PS.tab=+b.dataset.tab;}));
@@ -111,6 +111,7 @@ VIEWS.session=el=>{
     const rp=$('#rnRep');if(rp)rp.onclick=()=>reportQ(q);
     if(rev&&!PS.res[q.qid]){const w=$('#rnWhy');const e=P.err[q.qid]||{};w.innerHTML=`<div class="why"><span class="small"><b>Why did you miss it?</b> Tagging mistakes shows your patterns in the error log.</span><div class="row">${ERR_REASONS.map(([k,t])=>`<button class="chip sm" data-why="${k}" aria-pressed="${e.reason===k}">${t}</button>`).join('')}</div></div>`;
       $$('[data-why]',w).forEach(b=>b.onclick=()=>{if(P.err[q.qid]){P.err[q.qid].reason=b.dataset.why;touch('main');}$$('[data-why]',w).forEach(x=>x.setAttribute('aria-pressed',x===b));});}
+    bindHelp(el,q,()=>PS.ans[q.qid]);
     refreshAIBits();
   };
   const clock=()=>{const t=$('#rnT span');if(!t||!PS)return;const q=PS.qs[PS.i];
@@ -129,13 +130,14 @@ function prSummary(el){
       <div class="row" style="justify-content:center"><button class="btn primary" id="smAgain">Another set</button><button class="btn" id="smErr">${ic('notebook-pen')} Error log</button><button class="btn ghost" id="smHome">Today</button></div></div>
     <div class="panel"><h3>Review</h3><div class="rv-list">${qs.map((q,i)=>`<button class="rv-row" data-i="${PS.qs.indexOf(q)}"><span class="rv-ic ${PS.res[q.qid]?'ok':'bad'}">${ic(PS.res[q.qid]?'check':'x')}</span><span class="rv-t"><b>${i+1}. ${esc(TYPE_NAME[q.type])}</b><span class="small muted">${esc(subLabel(q)||q.topic)}, ${DIFF_NAME[q.diff]}</span></span><span class="small muted num">${Math.round(PS.secs[q.qid]||0)}s</span></button>`).join('')}</div></div></div>`;
   window.__busy=false; window.__guard=null;
-  $('#smAgain').onclick=()=>go(PS.sec||'quant');$('#smErr').onclick=()=>go('errors');$('#smHome').onclick=()=>go('home');
+  if(PS.onDone&&!PS.doneFired){PS.doneFired=1;PS.onDone(ok,qs.length);}
+  $('#smAgain').onclick=()=>go(PS.onDone?'start':(PS.sec||'quant'));$('#smErr').onclick=()=>go('errors');$('#smHome').onclick=()=>go('home');
   $$('[data-i]',el).forEach(b=>b.onclick=()=>reviewOne(PS.qs[+b.dataset.i],PS.ans[PS.qs[+b.dataset.i].qid]));
   uiChips();
 }
 /* read-only review of one answered question in a modal */
 function reviewOne(q,a){
-  const m=modal(`<div class="q-meta"><span class="pill">${esc(TYPE_NAME[q.type])}</span>${subLabel(q)?`<span class="pill">${esc(subLabel(q))}</span>`:''}<span class="pill d${q.diff}">${DIFF_NAME[q.diff]}</span></div>${unitScreen(q,a,{reveal:true})}${explainHTML(q,a)}<div class="row"><button class="btn need-ai" id="rvAsk" ${AI?'':'hidden'}>${ic('sparkles')} Ask Max</button></div>`);
+  const m=modal(`<div class="q-meta"><span class="pill">${esc(TYPE_NAME[q.type])}</span>${subLabel(q)?`<span class="pill">${esc(subLabel(q))}</span>`:''}<span class="pill d${q.diff}">${DIFF_NAME[q.diff]}</span></div>${unitScreen(q,a,{reveal:true})}${explainHTML(q,a)}<div id="viBox"></div><div class="row"><button class="btn sm" data-vi="1">${ic('languages')} Giải thích bằng tiếng Việt</button><button class="btn need-ai" id="rvAsk" ${AI?'':'hidden'}>${ic('sparkles')} Ask Max</button></div>`);bindHelp(m.el,q,()=>a);
   m.el.classList.add('wide');bindCtx(m.el);const b=$('#rvAsk',m.el);if(b)b.onclick=()=>{m.close();askMaxAbout(q,a);};
 }
 function reportQ(q){

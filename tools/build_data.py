@@ -18,13 +18,13 @@ def walk(x):
     if isinstance(x, list): return [walk(v) for v in x]
     if isinstance(x, dict): return {k: walk(v) for k, v in x.items()}
     return x
-groups = {'quant': [], 'ds': [], 'cr': [], 'rc': [], 'di': [], 'lessons': [], 'cards': []}
+groups = {'glossary': [], 'quant': [], 'ds': [], 'cr': [], 'rc': [], 'di': [], 'lessons': [], 'cards': []}
 for f in sorted(glob.glob(os.path.join(root, 'content/out/*.json'))):
     name = os.path.basename(f)
     data = walk(json.load(open(f, encoding='utf-8')))
     for x in data:
         t = x.get('type')
-        g = 'lessons' if name.startswith('lessons') else 'cards' if name.startswith('cards') else {'ps': 'quant', 'ds': 'ds', 'cr': 'cr', 'rc': 'rc'}.get(t, 'di')
+        g = 'lessons' if name.startswith('lessons') else 'cards' if name.startswith('cards') else 'glossary' if name.startswith('glossary') else {'ps': 'quant', 'ds': 'ds', 'cr': 'cr', 'rc': 'rc'}.get(t, 'di')
         groups[g].append(x)
 ids = set()
 for g, arr in groups.items():

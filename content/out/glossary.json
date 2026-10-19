@@ -1,0 +1,1442 @@
+[
+ {
+  "id": "g-001",
+  "term": "absolute value",
+  "group": "Numbers",
+  "vi": "giá trị tuyệt đối",
+  "note": "Distance from 0, so never negative.",
+  "ex": "|-7| = 7 and |7| = 7."
+ },
+ {
+  "id": "g-002",
+  "term": "composite number",
+  "group": "Numbers",
+  "vi": "hợp số",
+  "note": "A positive integer above 1 that is not prime.",
+  "ex": "9 is composite because 9 = 3 × 3."
+ },
+ {
+  "id": "g-003",
+  "term": "consecutive even integers",
+  "group": "Numbers",
+  "vi": "các số chẵn liên tiếp",
+  "note": "Each is 2 more than the previous one.",
+  "ex": "6, 8, 10 are consecutive even integers."
+ },
+ {
+  "id": "g-004",
+  "term": "consecutive integers",
+  "group": "Numbers",
+  "vi": "các số nguyên liên tiếp",
+  "note": "Each is 1 more than the previous one: n, n+1, n+2.",
+  "ex": "14, 15 and 16 are consecutive integers."
+ },
+ {
+  "id": "g-005",
+  "term": "denominator",
+  "group": "Numbers",
+  "vi": "mẫu số",
+  "note": "The bottom number.",
+  "ex": "In 3/4, the denominator is 4."
+ },
+ {
+  "id": "g-006",
+  "term": "digit",
+  "group": "Numbers",
+  "vi": "chữ số (0 đến 9)",
+  "note": "A number has digits; 'digit' is never a number above 9.",
+  "ex": "The number 507 has three digits: 5, 0 and 7."
+ },
+ {
+  "id": "g-007",
+  "term": "distinct",
+  "group": "Numbers",
+  "vi": "phân biệt, khác nhau",
+  "note": "No two values are equal.",
+  "ex": "a, b and c are distinct, so a ≠ b."
+ },
+ {
+  "id": "g-008",
+  "term": "divisible by",
+  "group": "Numbers",
+  "vi": "chia hết cho",
+  "note": "'a is divisible by b' means a/b is an integer.",
+  "ex": "45 is divisible by 9 because 45/9 = 5."
+ },
+ {
+  "id": "g-009",
+  "term": "divisor",
+  "group": "Numbers",
+  "vi": "ước số",
+  "note": "",
+  "ex": "5 is a divisor of 35."
+ },
+ {
+  "id": "g-010",
+  "term": "even number",
+  "group": "Numbers",
+  "vi": "số chẵn",
+  "note": "Zero is even. Negative numbers can be even.",
+  "ex": "-4, 0 and 18 are even."
+ },
+ {
+  "id": "g-011",
+  "term": "factor",
+  "group": "Numbers",
+  "vi": "ước số (thừa số)",
+  "note": "Same as divisor when talking about integers.",
+  "ex": "The factors of 12 are 1, 2, 3, 4, 6, 12."
+ },
+ {
+  "id": "g-012",
+  "term": "greatest common divisor (GCD)",
+  "group": "Numbers",
+  "vi": "ước chung lớn nhất (ƯCLN)",
+  "note": "Also called greatest common factor (GCF).",
+  "ex": "The GCD of 18 and 24 is 6."
+ },
+ {
+  "id": "g-013",
+  "term": "hundredths digit",
+  "group": "Numbers",
+  "vi": "chữ số hàng phần trăm",
+  "note": "Second digit after the decimal point.",
+  "ex": "In 2.738, the hundredths digit is 3."
+ },
+ {
+  "id": "g-014",
+  "term": "integer",
+  "group": "Numbers",
+  "vi": "số nguyên",
+  "note": "Includes negatives and zero: ..., -2, -1, 0, 1, 2, ...",
+  "ex": "-4, 0 and 9 are integers; 2.5 is not."
+ },
+ {
+  "id": "g-015",
+  "term": "irrational number",
+  "group": "Numbers",
+  "vi": "số vô tỉ",
+  "note": "",
+  "ex": "√2 and π are irrational."
+ },
+ {
+  "id": "g-016",
+  "term": "least common multiple (LCM)",
+  "group": "Numbers",
+  "vi": "bội chung nhỏ nhất (BCNN)",
+  "note": "",
+  "ex": "The LCM of 4 and 6 is 12."
+ },
+ {
+  "id": "g-017",
+  "term": "multiple",
+  "group": "Numbers",
+  "vi": "bội số",
+  "note": "Multiples of n are n, 2n, 3n, ... (0 is also a multiple).",
+  "ex": "24 is a multiple of 6."
+ },
+ {
+  "id": "g-018",
+  "term": "nonnegative",
+  "group": "Numbers",
+  "vi": "không âm (lớn hơn hoặc bằng 0)",
+  "note": "Includes zero, unlike 'positive'.",
+  "ex": "If x is nonnegative, x could be 0."
+ },
+ {
+  "id": "g-019",
+  "term": "numerator",
+  "group": "Numbers",
+  "vi": "tử số",
+  "note": "The top number.",
+  "ex": "In 3/4, the numerator is 3."
+ },
+ {
+  "id": "g-020",
+  "term": "odd number",
+  "group": "Numbers",
+  "vi": "số lẻ",
+  "note": "",
+  "ex": "7 and -3 are odd."
+ },
+ {
+  "id": "g-021",
+  "term": "perfect square",
+  "group": "Numbers",
+  "vi": "số chính phương",
+  "note": "The square of an integer.",
+  "ex": "49 is a perfect square because 49 = 7²."
+ },
+ {
+  "id": "g-022",
+  "term": "positive integer",
+  "group": "Numbers",
+  "vi": "số nguyên dương",
+  "note": "Zero is not positive.",
+  "ex": "1, 2, 3, ... are positive integers."
+ },
+ {
+  "id": "g-023",
+  "term": "prime factorization",
+  "group": "Numbers",
+  "vi": "phân tích ra thừa số nguyên tố",
+  "note": "",
+  "ex": "360 = 2³ × 3² × 5."
+ },
+ {
+  "id": "g-024",
+  "term": "prime number",
+  "group": "Numbers",
+  "vi": "số nguyên tố",
+  "note": "2 is the only even prime; 1 is not prime.",
+  "ex": "The first five primes are 2, 3, 5, 7, 11."
+ },
+ {
+  "id": "g-025",
+  "term": "rational number",
+  "group": "Numbers",
+  "vi": "số hữu tỉ",
+  "note": "Can be written as a fraction of integers.",
+  "ex": "0.75 = 3/4 is rational."
+ },
+ {
+  "id": "g-026",
+  "term": "real number",
+  "group": "Numbers",
+  "vi": "số thực",
+  "note": "On the GMAT, assume all numbers are real.",
+  "ex": "-3, 0.5 and √5 are real numbers."
+ },
+ {
+  "id": "g-027",
+  "term": "reciprocal",
+  "group": "Numbers",
+  "vi": "số nghịch đảo",
+  "note": "The reciprocal of x is 1/x; 0 has no reciprocal.",
+  "ex": "The reciprocal of 2/5 is 5/2."
+ },
+ {
+  "id": "g-028",
+  "term": "tens digit",
+  "group": "Numbers",
+  "vi": "chữ số hàng chục",
+  "note": "",
+  "ex": "The tens digit of 3,486 is 8."
+ },
+ {
+  "id": "g-029",
+  "term": "tenths digit",
+  "group": "Numbers",
+  "vi": "chữ số hàng phần mười",
+  "note": "First digit after the decimal point.",
+  "ex": "In 2.738, the tenths digit is 7."
+ },
+ {
+  "id": "g-030",
+  "term": "terminating decimal",
+  "group": "Numbers",
+  "vi": "số thập phân hữu hạn",
+  "note": "Ends after finitely many digits.",
+  "ex": "1/8 = 0.125 terminates; 1/3 does not."
+ },
+ {
+  "id": "g-031",
+  "term": "units digit",
+  "group": "Numbers",
+  "vi": "chữ số hàng đơn vị",
+  "note": "Also called the ones digit.",
+  "ex": "The units digit of 3,486 is 6."
+ },
+ {
+  "id": "g-032",
+  "term": "whole number",
+  "group": "Numbers",
+  "vi": "số tự nhiên (0, 1, 2, ...)",
+  "note": "Usually means nonnegative integers; do not confuse with 'integer'.",
+  "ex": "0, 1 and 12 are whole numbers."
+ },
+ {
+  "id": "g-033",
+  "term": "base",
+  "group": "Operations",
+  "vi": "cơ số",
+  "note": "",
+  "ex": "In 2⁵, the base is 2."
+ },
+ {
+  "id": "g-034",
+  "term": "difference",
+  "group": "Operations",
+  "vi": "hiệu",
+  "note": "Order matters: 'the difference between a and b' is usually a - b.",
+  "ex": "The difference between 10 and 3 is 7."
+ },
+ {
+  "id": "g-035",
+  "term": "dividend",
+  "group": "Operations",
+  "vi": "số bị chia",
+  "note": "",
+  "ex": "In 17 ÷ 5, the dividend is 17."
+ },
+ {
+  "id": "g-036",
+  "term": "evenly divided",
+  "group": "Operations",
+  "vi": "chia đều",
+  "note": "Implies no remainder.",
+  "ex": "24 cookies evenly divided among 6 children gives 4 each."
+ },
+ {
+  "id": "g-037",
+  "term": "exponent",
+  "group": "Operations",
+  "vi": "số mũ",
+  "note": "Also called power.",
+  "ex": "In 2⁵, the exponent is 5."
+ },
+ {
+  "id": "g-038",
+  "term": "order of operations",
+  "group": "Operations",
+  "vi": "thứ tự thực hiện phép tính",
+  "note": "Parentheses, exponents, then × and ÷, then + and -.",
+  "ex": "2 + 3 × 4 = 14, not 20."
+ },
+ {
+  "id": "g-039",
+  "term": "power",
+  "group": "Operations",
+  "vi": "lũy thừa",
+  "note": "'x to the third power' means x³.",
+  "ex": "2 to the fourth power is 16."
+ },
+ {
+  "id": "g-040",
+  "term": "product",
+  "group": "Operations",
+  "vi": "tích",
+  "note": "Result of multiplication.",
+  "ex": "The product of 4 and 9 is 36."
+ },
+ {
+  "id": "g-041",
+  "term": "quotient",
+  "group": "Operations",
+  "vi": "thương",
+  "note": "Result of division (in integer division, the whole-number part).",
+  "ex": "When 17 is divided by 5, the quotient is 3."
+ },
+ {
+  "id": "g-042",
+  "term": "remainder",
+  "group": "Operations",
+  "vi": "số dư",
+  "note": "Always 0 ≤ remainder < divisor.",
+  "ex": "When 17 is divided by 5, the remainder is 2."
+ },
+ {
+  "id": "g-043",
+  "term": "round to the nearest",
+  "group": "Operations",
+  "vi": "làm tròn đến hàng gần nhất",
+  "note": "",
+  "ex": "3.46 rounded to the nearest tenth is 3.5."
+ },
+ {
+  "id": "g-044",
+  "term": "square root",
+  "group": "Operations",
+  "vi": "căn bậc hai",
+  "note": "√ always means the nonnegative root.",
+  "ex": "√36 = 6, not -6."
+ },
+ {
+  "id": "g-045",
+  "term": "sum",
+  "group": "Operations",
+  "vi": "tổng",
+  "note": "Result of addition.",
+  "ex": "The sum of 4 and 9 is 13."
+ },
+ {
+  "id": "g-046",
+  "term": "coefficient",
+  "group": "Algebra",
+  "vi": "hệ số",
+  "note": "",
+  "ex": "In 5x², the coefficient is 5."
+ },
+ {
+  "id": "g-047",
+  "term": "coordinate plane",
+  "group": "Algebra",
+  "vi": "mặt phẳng tọa độ",
+  "note": "Coordinate geometry is tested as part of algebra.",
+  "ex": "The point (3, -2) lies in the coordinate plane."
+ },
+ {
+  "id": "g-048",
+  "term": "factor (verb)",
+  "group": "Algebra",
+  "vi": "phân tích thành nhân tử",
+  "note": "",
+  "ex": "x² - 9 factors as (x - 3)(x + 3)."
+ },
+ {
+  "id": "g-049",
+  "term": "function",
+  "group": "Algebra",
+  "vi": "hàm số",
+  "note": "",
+  "ex": "If f(x) = x² + 1, then f(3) = 10."
+ },
+ {
+  "id": "g-050",
+  "term": "in terms of",
+  "group": "Algebra",
+  "vi": "theo (biểu diễn bằng)",
+  "note": "'y in terms of x' means y = (something with x).",
+  "ex": "If 2y = x + 6, then y in terms of x is (x + 6)/2."
+ },
+ {
+  "id": "g-051",
+  "term": "inequality",
+  "group": "Algebra",
+  "vi": "bất phương trình, bất đẳng thức",
+  "note": "Flip the sign when multiplying or dividing by a negative.",
+  "ex": "-2x > 6 gives x < -3."
+ },
+ {
+  "id": "g-052",
+  "term": "linear",
+  "group": "Algebra",
+  "vi": "bậc nhất, tuyến tính",
+  "note": "",
+  "ex": "y = 3x - 1 is a linear equation."
+ },
+ {
+  "id": "g-053",
+  "term": "quadratic",
+  "group": "Algebra",
+  "vi": "bậc hai",
+  "note": "",
+  "ex": "x² - 5x + 6 = 0 is a quadratic equation."
+ },
+ {
+  "id": "g-054",
+  "term": "range of values",
+  "group": "Algebra",
+  "vi": "khoảng giá trị",
+  "note": "",
+  "ex": "If 2 < x < 5, x lies in a range of values."
+ },
+ {
+  "id": "g-055",
+  "term": "root",
+  "group": "Algebra",
+  "vi": "nghiệm",
+  "note": "A value that makes the equation true; also called solution.",
+  "ex": "The roots of x² - 5x + 6 = 0 are 2 and 3."
+ },
+ {
+  "id": "g-056",
+  "term": "sequence",
+  "group": "Algebra",
+  "vi": "dãy số",
+  "note": "",
+  "ex": "In the sequence 3, 7, 11, 15, each term is 4 more than the last."
+ },
+ {
+  "id": "g-057",
+  "term": "slope",
+  "group": "Algebra",
+  "vi": "hệ số góc",
+  "note": "Rise over run.",
+  "ex": "The line y = 2x + 5 has slope 2."
+ },
+ {
+  "id": "g-058",
+  "term": "solve for",
+  "group": "Algebra",
+  "vi": "giải tìm",
+  "note": "",
+  "ex": "Solve 2x + 1 = 9 for x: x = 4."
+ },
+ {
+  "id": "g-059",
+  "term": "system of equations",
+  "group": "Algebra",
+  "vi": "hệ phương trình",
+  "note": "",
+  "ex": "x + y = 10 and x - y = 2 form a system."
+ },
+ {
+  "id": "g-060",
+  "term": "y-intercept",
+  "group": "Algebra",
+  "vi": "giao điểm với trục tung",
+  "note": "The y-value where the line crosses the y-axis.",
+  "ex": "y = 2x + 5 has y-intercept 5."
+ },
+ {
+  "id": "g-061",
+  "term": "arrangement",
+  "group": "Statistics & Counting",
+  "vi": "cách sắp xếp",
+  "note": "",
+  "ex": "There are 6 arrangements of the letters A, B, C."
+ },
+ {
+  "id": "g-062",
+  "term": "at random",
+  "group": "Statistics & Counting",
+  "vi": "ngẫu nhiên",
+  "note": "Each option is equally likely.",
+  "ex": "A card is chosen at random from 10 cards."
+ },
+ {
+  "id": "g-063",
+  "term": "average",
+  "group": "Statistics & Counting",
+  "vi": "trung bình",
+  "note": "",
+  "ex": "Average = sum ÷ number of values."
+ },
+ {
+  "id": "g-064",
+  "term": "combinations",
+  "group": "Statistics & Counting",
+  "vi": "tổ hợp",
+  "note": "Order does not matter.",
+  "ex": "Choosing 2 of 4 people: 6 combinations."
+ },
+ {
+  "id": "g-065",
+  "term": "complement",
+  "group": "Statistics & Counting",
+  "vi": "biến cố đối",
+  "note": "P(not A) = 1 - P(A).",
+  "ex": "P(at least one head in 2 flips) = 1 - 1/4 = 3/4."
+ },
+ {
+  "id": "g-066",
+  "term": "factorial",
+  "group": "Statistics & Counting",
+  "vi": "giai thừa",
+  "note": "n! = n × (n - 1) × ... × 1; 0! = 1.",
+  "ex": "4! = 24."
+ },
+ {
+  "id": "g-067",
+  "term": "frequency",
+  "group": "Statistics & Counting",
+  "vi": "tần số",
+  "note": "How many times a value occurs.",
+  "ex": "In 1, 3, 3, 3, the value 3 has frequency 3."
+ },
+ {
+  "id": "g-068",
+  "term": "independent events",
+  "group": "Statistics & Counting",
+  "vi": "biến cố độc lập",
+  "note": "P(A and B) = P(A) × P(B).",
+  "ex": "Two separate coin flips are independent."
+ },
+ {
+  "id": "g-069",
+  "term": "mean",
+  "group": "Statistics & Counting",
+  "vi": "trung bình cộng",
+  "note": "Same as arithmetic mean or average.",
+  "ex": "The mean of 2, 4 and 9 is 5."
+ },
+ {
+  "id": "g-070",
+  "term": "median",
+  "group": "Statistics & Counting",
+  "vi": "trung vị",
+  "note": "Sort the values first; with an even count, average the middle two.",
+  "ex": "The median of 3, 8, 1, 6 is (3 + 6)/2 = 4.5."
+ },
+ {
+  "id": "g-071",
+  "term": "mode",
+  "group": "Statistics & Counting",
+  "vi": "mốt (giá trị xuất hiện nhiều nhất)",
+  "note": "A list can have more than one mode.",
+  "ex": "The mode of 2, 5, 5, 7 is 5."
+ },
+ {
+  "id": "g-072",
+  "term": "mutually exclusive",
+  "group": "Statistics & Counting",
+  "vi": "xung khắc (không thể cùng xảy ra)",
+  "note": "P(A or B) = P(A) + P(B). Not the same as independent.",
+  "ex": "Rolling a 2 and rolling a 5 on one roll are mutually exclusive."
+ },
+ {
+  "id": "g-073",
+  "term": "overlapping sets",
+  "group": "Statistics & Counting",
+  "vi": "tập hợp giao nhau",
+  "note": "Total = A + B - Both + Neither.",
+  "ex": "20 study French, 15 Spanish, 5 both: 30 study at least one."
+ },
+ {
+  "id": "g-074",
+  "term": "permutations",
+  "group": "Statistics & Counting",
+  "vi": "chỉnh hợp, hoán vị",
+  "note": "Order matters.",
+  "ex": "Arranging 3 books on a shelf: 3! = 6 permutations."
+ },
+ {
+  "id": "g-075",
+  "term": "probability",
+  "group": "Statistics & Counting",
+  "vi": "xác suất",
+  "note": "Favourable outcomes ÷ total equally likely outcomes.",
+  "ex": "The probability of rolling a 6 on a fair die is 1/6."
+ },
+ {
+  "id": "g-076",
+  "term": "range",
+  "group": "Statistics & Counting",
+  "vi": "khoảng biến thiên",
+  "note": "Largest value minus smallest value.",
+  "ex": "The range of 4, 9, 15 is 11."
+ },
+ {
+  "id": "g-077",
+  "term": "standard deviation",
+  "group": "Statistics & Counting",
+  "vi": "độ lệch chuẩn",
+  "note": "Measures spread around the mean; adding a constant to every value does not change it.",
+  "ex": "The list 5, 5, 5 has standard deviation 0."
+ },
+ {
+  "id": "g-078",
+  "term": "Venn diagram",
+  "group": "Statistics & Counting",
+  "vi": "biểu đồ Venn",
+  "note": "",
+  "ex": "Two overlapping circles show students in French, Spanish or both."
+ },
+ {
+  "id": "g-079",
+  "term": "weighted average",
+  "group": "Statistics & Counting",
+  "vi": "trung bình có trọng số",
+  "note": "Each value counts in proportion to its weight.",
+  "ex": "3 tests at 80 and 1 test at 60 average 75."
+ },
+ {
+  "id": "g-080",
+  "term": "with replacement",
+  "group": "Statistics & Counting",
+  "vi": "có hoàn lại",
+  "note": "",
+  "ex": "Draw a ball, put it back, then draw again."
+ },
+ {
+  "id": "g-081",
+  "term": "without replacement",
+  "group": "Statistics & Counting",
+  "vi": "không hoàn lại",
+  "note": "The total shrinks after each draw.",
+  "ex": "Draw 2 balls from 5 without replacement: 5 then 4 choices."
+ },
+ {
+  "id": "g-082",
+  "term": "at least",
+  "group": "Word problem phrases",
+  "vi": "ít nhất (lớn hơn hoặc bằng)",
+  "note": "≥, includes the number.",
+  "ex": "At least 3 means 3, 4, 5, ..."
+ },
+ {
+  "id": "g-083",
+  "term": "at most",
+  "group": "Word problem phrases",
+  "vi": "nhiều nhất (nhỏ hơn hoặc bằng)",
+  "note": "≤, includes the number.",
+  "ex": "At most 3 means 3 or fewer."
+ },
+ {
+  "id": "g-084",
+  "term": "average speed",
+  "group": "Word problem phrases",
+  "vi": "tốc độ trung bình",
+  "note": "Total distance ÷ total time, not the average of speeds.",
+  "ex": "60 miles at 30 mph then 60 miles at 60 mph: average 40 mph."
+ },
+ {
+  "id": "g-085",
+  "term": "commission",
+  "group": "Word problem phrases",
+  "vi": "hoa hồng",
+  "note": "",
+  "ex": "5% commission on 2,000 dollars of sales is 100 dollars."
+ },
+ {
+  "id": "g-086",
+  "term": "decreased by",
+  "group": "Word problem phrases",
+  "vi": "giảm đi",
+  "note": "",
+  "ex": "100 decreased by 25 percent is 75."
+ },
+ {
+  "id": "g-087",
+  "term": "discount",
+  "group": "Word problem phrases",
+  "vi": "giảm giá, chiết khấu",
+  "note": "",
+  "ex": "20% off 50 dollars is 40 dollars."
+ },
+ {
+  "id": "g-088",
+  "term": "exceeds",
+  "group": "Word problem phrases",
+  "vi": "vượt quá",
+  "note": "Strict >.",
+  "ex": "Sales exceed 1,000 units: sales > 1,000."
+ },
+ {
+  "id": "g-089",
+  "term": "fewer than",
+  "group": "Word problem phrases",
+  "vi": "ít hơn (thực sự)",
+  "note": "Strict <, used for countable things.",
+  "ex": "Fewer than 5 errors: 0 to 4 errors."
+ },
+ {
+  "id": "g-090",
+  "term": "how many more",
+  "group": "Word problem phrases",
+  "vi": "nhiều hơn bao nhiêu",
+  "note": "Asks for a difference, not a total.",
+  "ex": "A has 12, B has 8: A has 4 more."
+ },
+ {
+  "id": "g-091",
+  "term": "inclusive",
+  "group": "Word problem phrases",
+  "vi": "tính cả hai đầu mút",
+  "note": "",
+  "ex": "The integers from 4 to 9, inclusive, number 6."
+ },
+ {
+  "id": "g-092",
+  "term": "increased by",
+  "group": "Word problem phrases",
+  "vi": "tăng thêm",
+  "note": "Tells you the amount of change.",
+  "ex": "Price 50 increased by 10 becomes 60."
+ },
+ {
+  "id": "g-093",
+  "term": "increased to",
+  "group": "Word problem phrases",
+  "vi": "tăng lên đến",
+  "note": "Tells you the final value.",
+  "ex": "Price 50 increased to 60: the change is 10."
+ },
+ {
+  "id": "g-094",
+  "term": "interest (simple / compound)",
+  "group": "Word problem phrases",
+  "vi": "lãi (đơn / kép)",
+  "note": "Compound interest earns interest on interest.",
+  "ex": "1,000 dollars at 10% compound for 2 years becomes 1,210 dollars."
+ },
+ {
+  "id": "g-095",
+  "term": "less than (in expressions)",
+  "group": "Word problem phrases",
+  "vi": "kém, ít hơn",
+  "note": "Order flips: '3 less than x' is x - 3, not 3 - x.",
+  "ex": "3 less than y is y - 3."
+ },
+ {
+  "id": "g-096",
+  "term": "markup",
+  "group": "Word problem phrases",
+  "vi": "phần tăng giá (so với giá vốn)",
+  "note": "Usually a percent of cost.",
+  "ex": "A 25% markup on a 40-dollar cost gives 50 dollars."
+ },
+ {
+  "id": "g-097",
+  "term": "mixture",
+  "group": "Word problem phrases",
+  "vi": "hỗn hợp",
+  "note": "",
+  "ex": "Mix 2 liters of 10% salt water with 3 liters of 20% salt water."
+ },
+ {
+  "id": "g-098",
+  "term": "more than",
+  "group": "Word problem phrases",
+  "vi": "nhiều hơn",
+  "note": "Strict >. Watch the order: '5 more than x' is x + 5.",
+  "ex": "5 more than twice x is 2x + 5."
+ },
+ {
+  "id": "g-099",
+  "term": "no less than",
+  "group": "Word problem phrases",
+  "vi": "không ít hơn",
+  "note": "Same as at least (≥).",
+  "ex": "No less than 10 hours: hours ≥ 10."
+ },
+ {
+  "id": "g-100",
+  "term": "no more than",
+  "group": "Word problem phrases",
+  "vi": "không quá",
+  "note": "Same as at most (≤).",
+  "ex": "No more than 40 guests: guests ≤ 40."
+ },
+ {
+  "id": "g-101",
+  "term": "per",
+  "group": "Word problem phrases",
+  "vi": "mỗi, trên một",
+  "note": "",
+  "ex": "60 miles per hour: 60 miles in each hour."
+ },
+ {
+  "id": "g-102",
+  "term": "percent change",
+  "group": "Word problem phrases",
+  "vi": "phần trăm thay đổi",
+  "note": "(new - old) ÷ old × 100.",
+  "ex": "From 80 to 100 is a 25 percent change."
+ },
+ {
+  "id": "g-103",
+  "term": "percent greater than",
+  "group": "Word problem phrases",
+  "vi": "lớn hơn bao nhiêu phần trăm",
+  "note": "Compare to the smaller (original) value.",
+  "ex": "60 is 20 percent greater than 50."
+ },
+ {
+  "id": "g-104",
+  "term": "percent less than",
+  "group": "Word problem phrases",
+  "vi": "nhỏ hơn bao nhiêu phần trăm",
+  "note": "Compare to the original value, not the new one.",
+  "ex": "40 is 20 percent less than 50."
+ },
+ {
+  "id": "g-105",
+  "term": "percent of",
+  "group": "Word problem phrases",
+  "vi": "phần trăm của",
+  "note": "'Of' means multiply.",
+  "ex": "20 percent of 50 is 0.2 × 50 = 10."
+ },
+ {
+  "id": "g-106",
+  "term": "percentage point",
+  "group": "Word problem phrases",
+  "vi": "điểm phần trăm",
+  "note": "A difference between two percents, not a percent change.",
+  "ex": "From 10% to 12% is 2 percentage points but a 20 percent increase."
+ },
+ {
+  "id": "g-107",
+  "term": "profit",
+  "group": "Word problem phrases",
+  "vi": "lợi nhuận",
+  "note": "Revenue minus cost.",
+  "ex": "Sell for 120 dollars, cost 90 dollars: profit is 30 dollars."
+ },
+ {
+  "id": "g-108",
+  "term": "proportion",
+  "group": "Word problem phrases",
+  "vi": "tỉ lệ thức, tỷ lệ",
+  "note": "An equation stating two ratios are equal; also 'share of a whole'.",
+  "ex": "2/5 = x/20 gives x = 8."
+ },
+ {
+  "id": "g-109",
+  "term": "rate",
+  "group": "Word problem phrases",
+  "vi": "tốc độ, tỉ lệ (theo đơn vị thời gian)",
+  "note": "Distance = rate × time; work = rate × time.",
+  "ex": "At a rate of 5 pages per minute, 20 pages take 4 minutes."
+ },
+ {
+  "id": "g-110",
+  "term": "ratio",
+  "group": "Word problem phrases",
+  "vi": "tỉ số",
+  "note": "A ratio gives relative size, not actual amounts.",
+  "ex": "Boys to girls is 2:3; with 10 boys there are 15 girls."
+ },
+ {
+  "id": "g-111",
+  "term": "respectively",
+  "group": "Word problem phrases",
+  "vi": "lần lượt (theo thứ tự)",
+  "note": "Match items in the same order they are listed.",
+  "ex": "A and B earn 30 and 40 dollars, respectively: A earns 30."
+ },
+ {
+  "id": "g-112",
+  "term": "working together",
+  "group": "Word problem phrases",
+  "vi": "làm chung",
+  "note": "Add rates, not times.",
+  "ex": "One pipe fills a tank in 3 h, another in 6 h: together 2 h."
+ },
+ {
+  "id": "g-113",
+  "term": "AD/BCE",
+  "group": "Data Sufficiency",
+  "vi": "phương pháp loại trừ AD/BCE",
+  "note": "If (1) is sufficient the answer is A or D; if not, it is B, C or E.",
+  "ex": "(1) fails, (2) works alone: the answer is B."
+ },
+ {
+  "id": "g-114",
+  "term": "definite answer",
+  "group": "Data Sufficiency",
+  "vi": "câu trả lời chắc chắn",
+  "note": "",
+  "ex": "If the answer is always yes, the statement is sufficient."
+ },
+ {
+  "id": "g-115",
+  "term": "not sufficient",
+  "group": "Data Sufficiency",
+  "vi": "không đủ",
+  "note": "Two or more possible answers remain.",
+  "ex": "x² = 9 is not sufficient to find x: x could be 3 or -3."
+ },
+ {
+  "id": "g-116",
+  "term": "rephrase",
+  "group": "Data Sufficiency",
+  "vi": "diễn đạt lại",
+  "note": "Simplify the question before reading the statements.",
+  "ex": "'Is 2x > 10?' rephrases to 'Is x > 5?'."
+ },
+ {
+  "id": "g-117",
+  "term": "statement",
+  "group": "Data Sufficiency",
+  "vi": "dữ kiện (mệnh đề)",
+  "note": "Statements are always true; never doubt them.",
+  "ex": "Statement (1): x is a prime number."
+ },
+ {
+  "id": "g-118",
+  "term": "sufficient",
+  "group": "Data Sufficiency",
+  "vi": "đủ (để trả lời)",
+  "note": "Enough information to answer with ONE value or a definite yes/no.",
+  "ex": "If you can find exactly one value of x, the statement is sufficient."
+ },
+ {
+  "id": "g-119",
+  "term": "sufficient alone",
+  "group": "Data Sufficiency",
+  "vi": "riêng một mình đã đủ",
+  "note": "Each statement is first tested without the other.",
+  "ex": "(1) alone is sufficient if it fixes the answer by itself."
+ },
+ {
+  "id": "g-120",
+  "term": "test cases",
+  "group": "Data Sufficiency",
+  "vi": "thử trường hợp",
+  "note": "Plug in different numbers to find two different answers.",
+  "ex": "Try x = 2 and x = -2 to show 'Is x > 0?' is not answered."
+ },
+ {
+  "id": "g-121",
+  "term": "together",
+  "group": "Data Sufficiency",
+  "vi": "kết hợp cả hai",
+  "note": "Only tested after both fail alone (choices C or E).",
+  "ex": "Together, x + y = 7 and x - y = 1 give x = 4."
+ },
+ {
+  "id": "g-122",
+  "term": "value question",
+  "group": "Data Sufficiency",
+  "vi": "câu hỏi tìm giá trị",
+  "note": "Sufficient only if one single value results.",
+  "ex": "What is the value of y?"
+ },
+ {
+  "id": "g-123",
+  "term": "yes/no question",
+  "group": "Data Sufficiency",
+  "vi": "câu hỏi có/không",
+  "note": "A definite 'always no' is also sufficient.",
+  "ex": "Is n odd? If n must be even, the answer is a definite no: sufficient."
+ },
+ {
+  "id": "g-124",
+  "term": "alternative explanation",
+  "group": "Critical Reasoning",
+  "vi": "lời giải thích khác",
+  "note": "A common way to weaken a causal argument.",
+  "ex": "Maybe the weather, not the ad, raised sales."
+ },
+ {
+  "id": "g-125",
+  "term": "argument",
+  "group": "Critical Reasoning",
+  "vi": "lập luận",
+  "note": "Premises + conclusion.",
+  "ex": "Sales rose after the ad; so the ad caused the rise."
+ },
+ {
+  "id": "g-126",
+  "term": "assumption",
+  "group": "Critical Reasoning",
+  "vi": "giả định (tiền đề ngầm)",
+  "note": "An unstated premise the argument needs.",
+  "ex": "The plan assumes residents will actually use the new bridge."
+ },
+ {
+  "id": "g-127",
+  "term": "boldface",
+  "group": "Critical Reasoning",
+  "vi": "câu in đậm",
+  "note": "Asks what role each bold part plays.",
+  "ex": "The first bold part is a claim the argument opposes."
+ },
+ {
+  "id": "g-128",
+  "term": "bolster",
+  "group": "Critical Reasoning",
+  "vi": "củng cố (đồng nghĩa strengthen)",
+  "note": "",
+  "ex": "New data bolster the claim that the drug works."
+ },
+ {
+  "id": "g-129",
+  "term": "causal",
+  "group": "Critical Reasoning",
+  "vi": "nhân quả",
+  "note": "",
+  "ex": "The argument makes a causal claim: X causes Y."
+ },
+ {
+  "id": "g-130",
+  "term": "conclusion",
+  "group": "Critical Reasoning",
+  "vi": "kết luận",
+  "note": "The main claim the author wants you to accept.",
+  "ex": "Therefore, the city should build a second bridge."
+ },
+ {
+  "id": "g-131",
+  "term": "correlation",
+  "group": "Critical Reasoning",
+  "vi": "tương quan",
+  "note": "Two things moving together; not proof of cause.",
+  "ex": "Ice cream sales and swimming accidents both rise in summer."
+ },
+ {
+  "id": "g-132",
+  "term": "counterpremise",
+  "group": "Critical Reasoning",
+  "vi": "tiền đề phản bác",
+  "note": "A point against the conclusion that the author acknowledges.",
+  "ex": "Although costs are high, the plan is worth it."
+ },
+ {
+  "id": "g-133",
+  "term": "discrepancy",
+  "group": "Critical Reasoning",
+  "vi": "sự mâu thuẫn bề ngoài",
+  "note": "Two facts that seem to conflict; find what explains both.",
+  "ex": "Sales rose, yet profits fell."
+ },
+ {
+  "id": "g-134",
+  "term": "evaluate",
+  "group": "Critical Reasoning",
+  "vi": "đánh giá",
+  "note": "Find the question whose answer would most affect the argument.",
+  "ex": "Which would be most useful to know in evaluating the argument?"
+ },
+ {
+  "id": "g-135",
+  "term": "flaw",
+  "group": "Critical Reasoning",
+  "vi": "lỗi lập luận",
+  "note": "",
+  "ex": "The argument confuses correlation with causation: that is the flaw."
+ },
+ {
+  "id": "g-136",
+  "term": "if true",
+  "group": "Critical Reasoning",
+  "vi": "nếu điều đó là đúng",
+  "note": "Treat every answer choice as true; judge only its effect.",
+  "ex": "Which of the following, if true, ..."
+ },
+ {
+  "id": "g-137",
+  "term": "inference",
+  "group": "Critical Reasoning",
+  "vi": "suy luận (điều chắc chắn đúng)",
+  "note": "Must be true from the facts given; no outside ideas.",
+  "ex": "All A are B; x is A; so x is B."
+ },
+ {
+  "id": "g-138",
+  "term": "plausible",
+  "group": "Critical Reasoning",
+  "vi": "hợp lý, có khả năng đúng",
+  "note": "",
+  "ex": "A plausible explanation is that costs rose."
+ },
+ {
+  "id": "g-139",
+  "term": "premise",
+  "group": "Critical Reasoning",
+  "vi": "tiền đề (dữ kiện nền)",
+  "note": "Facts given in support; accept them as true.",
+  "ex": "Premise: sales rose 10 percent after the campaign."
+ },
+ {
+  "id": "g-140",
+  "term": "properly inferred",
+  "group": "Critical Reasoning",
+  "vi": "suy ra một cách hợp lý",
+  "note": "Inference question wording.",
+  "ex": "Which of the following can be properly inferred from the statements above?"
+ },
+ {
+  "id": "g-141",
+  "term": "strengthen",
+  "group": "Critical Reasoning",
+  "vi": "củng cố, làm mạnh thêm",
+  "note": "",
+  "ex": "Which of the following, if true, most strengthens the argument?"
+ },
+ {
+  "id": "g-142",
+  "term": "undermine",
+  "group": "Critical Reasoning",
+  "vi": "làm suy yếu, phá vỡ",
+  "note": "Synonym of weaken.",
+  "ex": "A rival cause would undermine the argument."
+ },
+ {
+  "id": "g-143",
+  "term": "vulnerable to criticism",
+  "group": "Critical Reasoning",
+  "vi": "dễ bị phản bác",
+  "note": "Flaw question wording.",
+  "ex": "The argument is most vulnerable to criticism on the grounds that it ignores costs."
+ },
+ {
+  "id": "g-144",
+  "term": "weaken",
+  "group": "Critical Reasoning",
+  "vi": "làm yếu đi",
+  "note": "",
+  "ex": "Which of the following most weakens the conclusion?"
+ },
+ {
+  "id": "g-145",
+  "term": "according to the passage",
+  "group": "Reading Comprehension",
+  "vi": "theo đoạn văn",
+  "note": "Detail question: the answer is stated in the text.",
+  "ex": "According to the passage, the drought began in 1930."
+ },
+ {
+  "id": "g-146",
+  "term": "ambivalent",
+  "group": "Reading Comprehension",
+  "vi": "phân vân, có cả cảm xúc trái chiều",
+  "note": "Mixed feelings, not indifference.",
+  "ex": "She is ambivalent: she praises the plan but doubts it will last."
+ },
+ {
+  "id": "g-147",
+  "term": "concede",
+  "group": "Reading Comprehension",
+  "vi": "thừa nhận (dù không muốn)",
+  "note": "",
+  "ex": "The author concedes that the data are limited."
+ },
+ {
+  "id": "g-148",
+  "term": "contend",
+  "group": "Reading Comprehension",
+  "vi": "khẳng định, cho rằng",
+  "note": "",
+  "ex": "Some economists contend that the tax will hurt growth."
+ },
+ {
+  "id": "g-149",
+  "term": "conventional view",
+  "group": "Reading Comprehension",
+  "vi": "quan điểm truyền thống",
+  "note": "Often set up to be challenged.",
+  "ex": "The conventional view held that the reef could not recover."
+ },
+ {
+  "id": "g-150",
+  "term": "in order to",
+  "group": "Reading Comprehension",
+  "vi": "để (nhằm mục đích)",
+  "note": "Function question: why the author mentions something.",
+  "ex": "The author mentions the 1930 drought in order to give an example."
+ },
+ {
+  "id": "g-151",
+  "term": "main idea",
+  "group": "Reading Comprehension",
+  "vi": "ý chính",
+  "note": "",
+  "ex": "The main idea is that small firms innovate faster."
+ },
+ {
+  "id": "g-152",
+  "term": "passage",
+  "group": "Reading Comprehension",
+  "vi": "đoạn văn, bài đọc",
+  "note": "",
+  "ex": "The passage discusses coral reef recovery."
+ },
+ {
+  "id": "g-153",
+  "term": "passage map",
+  "group": "Reading Comprehension",
+  "vi": "sơ đồ bài đọc",
+  "note": "A few words per paragraph noting its role.",
+  "ex": "P1: old view. P2: new evidence. P3: author's view."
+ },
+ {
+  "id": "g-154",
+  "term": "primary purpose",
+  "group": "Reading Comprehension",
+  "vi": "mục đích chính",
+  "note": "Usually starts with a verb: argue, explain, describe, challenge.",
+  "ex": "The primary purpose of the passage is to challenge a common view."
+ },
+ {
+  "id": "g-155",
+  "term": "qualified",
+  "group": "Reading Comprehension",
+  "vi": "có điều kiện, có giới hạn",
+  "note": "'Qualified support' means support with reservations.",
+  "ex": "The author offers qualified approval of the plan."
+ },
+ {
+  "id": "g-156",
+  "term": "skeptical",
+  "group": "Reading Comprehension",
+  "vi": "hoài nghi",
+  "note": "",
+  "ex": "The author is skeptical of the new theory."
+ },
+ {
+  "id": "g-157",
+  "term": "the author implies",
+  "group": "Reading Comprehension",
+  "vi": "tác giả ngụ ý",
+  "note": "Not stated directly but must follow from the text.",
+  "ex": "The author implies that the earlier study was flawed."
+ },
+ {
+  "id": "g-158",
+  "term": "tone",
+  "group": "Reading Comprehension",
+  "vi": "giọng điệu",
+  "note": "",
+  "ex": "The author's tone is cautiously optimistic."
+ },
+ {
+  "id": "g-159",
+  "term": "undermine (RC)",
+  "group": "Reading Comprehension",
+  "vi": "làm lung lay (một quan điểm)",
+  "note": "",
+  "ex": "The new fossil undermines the older theory."
+ },
+ {
+  "id": "g-160",
+  "term": "underscore",
+  "group": "Reading Comprehension",
+  "vi": "nhấn mạnh",
+  "note": "",
+  "ex": "The example underscores the cost of delay."
+ },
+ {
+  "id": "g-161",
+  "term": "can be inferred",
+  "group": "Data Insights",
+  "vi": "có thể suy ra",
+  "note": "Must be true based on the data.",
+  "ex": "It can be inferred that sales in Q2 exceeded Q1."
+ },
+ {
+  "id": "g-162",
+  "term": "closest to",
+  "group": "Data Insights",
+  "vi": "gần nhất với",
+  "note": "Pick the option nearest your estimate.",
+  "ex": "The ratio is closest to 3:1."
+ },
+ {
+  "id": "g-163",
+  "term": "compound annual growth",
+  "group": "Data Insights",
+  "vi": "tăng trưởng kép hằng năm",
+  "note": "Growth that builds on the previous year's value.",
+  "ex": "10% compound growth for 2 years: 100 becomes 121."
+ },
+ {
+  "id": "g-164",
+  "term": "correlation (positive / negative)",
+  "group": "Data Insights",
+  "vi": "tương quan (thuận / nghịch)",
+  "note": "Positive: both rise together. Negative: one rises as the other falls.",
+  "ex": "Study time and score show a positive correlation."
+ },
+ {
+  "id": "g-165",
+  "term": "cumulative",
+  "group": "Data Insights",
+  "vi": "lũy kế, cộng dồn",
+  "note": "Running total up to that point.",
+  "ex": "Cumulative sales by March = Jan + Feb + Mar."
+ },
+ {
+  "id": "g-166",
+  "term": "Graphics Interpretation",
+  "group": "Data Insights",
+  "vi": "dạng Đọc biểu đồ",
+  "note": "",
+  "ex": "Complete a sentence about a chart using drop-down menus."
+ },
+ {
+  "id": "g-167",
+  "term": "is consistent with",
+  "group": "Data Insights",
+  "vi": "phù hợp với, không mâu thuẫn với",
+  "note": "Does not need to be proven; just not contradicted.",
+  "ex": "The data are consistent with a rise in demand."
+ },
+ {
+  "id": "g-168",
+  "term": "legend",
+  "group": "Data Insights",
+  "vi": "chú thích",
+  "note": "Tells which colour or symbol is which series.",
+  "ex": "The legend shows blue bars for 2024."
+ },
+ {
+  "id": "g-169",
+  "term": "median value",
+  "group": "Data Insights",
+  "vi": "giá trị trung vị",
+  "note": "Sort the column first.",
+  "ex": "Sort the table by price to find the median value."
+ },
+ {
+  "id": "g-170",
+  "term": "Multi-Source Reasoning",
+  "group": "Data Insights",
+  "vi": "dạng Suy luận nhiều nguồn",
+  "note": "Information is spread across 2-3 tabs.",
+  "ex": "Combine an email tab and a table tab to answer."
+ },
+ {
+  "id": "g-171",
+  "term": "on-screen calculator",
+  "group": "Data Insights",
+  "vi": "máy tính trên màn hình",
+  "note": "Only available in Data Insights.",
+  "ex": "Use the calculator for 1,284 × 0.17."
+ },
+ {
+  "id": "g-172",
+  "term": "outlier",
+  "group": "Data Insights",
+  "vi": "giá trị ngoại lai",
+  "note": "",
+  "ex": "One store with 10 times the sales of the others is an outlier."
+ },
+ {
+  "id": "g-173",
+  "term": "select Yes if",
+  "group": "Data Insights",
+  "vi": "chọn Yes nếu",
+  "note": "Each statement is judged separately.",
+  "ex": "Select Yes if the statement is supported by the information."
+ },
+ {
+  "id": "g-174",
+  "term": "sort (a table)",
+  "group": "Data Insights",
+  "vi": "sắp xếp (bảng)",
+  "note": "Table Analysis lets you sort any column.",
+  "ex": "Sort by population to find the third-largest city."
+ },
+ {
+  "id": "g-175",
+  "term": "stacked bar chart",
+  "group": "Data Insights",
+  "vi": "biểu đồ cột chồng",
+  "note": "Each bar's segments add to the total.",
+  "ex": "The 2024 bar is split into online and store sales."
+ },
+ {
+  "id": "g-176",
+  "term": "Table Analysis",
+  "group": "Data Insights",
+  "vi": "dạng Phân tích bảng",
+  "note": "",
+  "ex": "Decide whether each statement about the table is true or false."
+ },
+ {
+  "id": "g-177",
+  "term": "Two-Part Analysis",
+  "group": "Data Insights",
+  "vi": "dạng Phân tích hai phần",
+  "note": "One answer per column; the two can be the same option.",
+  "ex": "Choose a value for x and a value for y that satisfy both conditions."
+ },
+ {
+  "id": "g-178",
+  "term": "x-axis",
+  "group": "Data Insights",
+  "vi": "trục hoành",
+  "note": "The horizontal axis.",
+  "ex": "Years are shown on the x-axis."
+ },
+ {
+  "id": "g-179",
+  "term": "y-axis",
+  "group": "Data Insights",
+  "vi": "trục tung",
+  "note": "The vertical axis; check its units and starting value.",
+  "ex": "Revenue in millions of dollars is on the y-axis."
+ },
+ {
+  "id": "g-180",
+  "term": "year-over-year",
+  "group": "Data Insights",
+  "vi": "so với cùng kỳ năm trước",
+  "note": "",
+  "ex": "Sales rose 8% year-over-year."
+ }
+]

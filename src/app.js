@@ -333,7 +333,7 @@ async function boot(){
   if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('/sw.js').catch(()=>{});
 }
 /* test hook for tools/flows.py (headless checks) */
-window.__calculis={prStart,QS,UNITS,QI,mkNew,keyOf,isRight,go,state:()=>P,scoreNow,loadBank};
+window.__calculis={pathSteps:()=>pathSteps(),drillQs:l=>drillQs(l),loadLearn:()=>loadLearn(),prStart,QS,UNITS,QI,mkNew,keyOf,isRight,go,state:()=>P,scoreNow,loadBank};
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&dirty.size&&SYNC){clearTimeout(syncTimer);pushRemote();}});
 boot();
 })();

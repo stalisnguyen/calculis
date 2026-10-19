@@ -1,0 +1,170 @@
+[
+ {
+  "id": "l-start-01",
+  "sec": "start",
+  "topic": "Getting Started",
+  "title": "What the GMAT Is and Who Uses It",
+  "level": "core",
+  "body": "The GMAT (Graduate Management Admission Test) is a computer-based exam that business schools use to compare applicants from very different backgrounds. A finance graduate from Ho Chi Minh City and an engineer from Berlin have different transcripts, but they sit the same test. Schools use it mainly for MBA programmes, and also for master's degrees in finance, management, business analytics and accounting.\n\nThe current version is called the GMAT Focus Edition. It has three sections, each 45 minutes long:\n- Quantitative Reasoning: 21 questions on arithmetic, algebra, word problems, number properties, statistics and probability. No calculator, no geometry.\n- Verbal Reasoning: 23 questions, all Critical Reasoning and Reading Comprehension. No grammar questions.\n- Data Insights: 20 questions that mix numbers, tables, charts and text. An on-screen calculator is available here only.\n\nThe whole exam takes about 2 hours 15 minutes, plus one optional 10-minute break. You choose the order of the three sections before you start, so you can begin with your strongest section or save it for last.\n\nHow scores look:\nTotal score: 205 to 805\nEach section score: 60 to 90\nThe total is not a simple sum of the three section scores. It is calculated from them, and all three sections count equally. You will also see a percentile rank, which tells you what share of recent test takers scored below you.\n\nWhat score do you need? It depends on the school. The most competitive global programmes usually report class averages well above the middle of the scale, while many strong regional and part-time programmes admit students with lower scores. Do not guess from forums. Open the class profile page of each school on your list, note its average or middle-80% range, and set your target a little above it.\n\nPractical facts:\n- Scores are valid for five years.\n- You can retake the test, with a limit on attempts per year and in your lifetime. Check the current rules on the official site before you book.\n- You choose which scores to send to schools.\n- You can sit the exam at a test centre or online at home. The content and scoring are the same. Online, you use a digital whiteboard instead of paper, and you need a quiet room and a reliable connection.",
+  "examples": [
+   {
+    "q": "Minh scores 80 in Quant, 82 in Verbal and 79 in Data Insights. Can he add these to get his total?",
+    "a": "No. 80 + 82 + 79 = 241, which is not on the 205-805 scale. The total is converted from the three section scores by GMAC's own scale. Use the official score report for the total, and use section scores to see which part needs work."
+   },
+   {
+    "q": "Lan's three target schools list average scores of roughly 615, 645 and 675. What target should she set?",
+    "a": "Aim at the hardest school on the list and add a small buffer, so a target near 685 is sensible. A higher score keeps all three options open and can also help with scholarships."
+   },
+   {
+    "q": "Is the online exam easier than the test centre exam?",
+    "a": "No. Both versions use the same questions, timing and scoring. Choose based on comfort: at home you avoid travel, while at a centre you get physical scratch paper and fewer technical risks."
+   }
+  ],
+  "pitfalls": [
+   "Treating the total score as the sum of the three section scores.",
+   "Copying a score target from a forum instead of checking each school's class profile.",
+   "Preparing for geometry or grammar, which are not in the Focus Edition.",
+   "Booking the online exam without first testing your room, camera and internet connection."
+  ]
+ },
+ {
+  "id": "l-start-02",
+  "sec": "start",
+  "topic": "Getting Started",
+  "title": "How the Test Adapts and How Scoring Works",
+  "level": "core",
+  "body": "The Quant and Verbal sections are computer adaptive at the question level. The first question is of medium difficulty. If you answer correctly, the next question tends to be harder; if you miss it, the next one tends to be easier. The computer keeps adjusting to find the level at which you answer about half the questions correctly. Data Insights works in a similar way.\n\nYour score depends on three things:\n- how many questions you answer correctly,\n- how difficult those questions were,\n- whether you finished the section.\n\nThis means you will feel challenged on almost every question, even when you are doing well. If questions feel hard, that is often a good sign. Do not try to judge your performance during the test.\n\nUnanswered questions hurt. If time runs out before you reach the last question, you receive a penalty that is larger than the cost of simply getting those questions wrong. Always answer every question, even with a quick guess.\n\nReview and edit. In each section you can bookmark questions. After you answer the final question, if time remains, you can go back, review any question and change up to three answers per section. This is a safety net, not a plan. Save time for it only when you have answered everything and still have a few minutes.\n\nPacing. Each section is 45 minutes:\nQuant: 45 ÷ 21 ≈ 2 minutes 8 seconds per question\nVerbal: 45 ÷ 23 ≈ 1 minute 57 seconds per question\nData Insights: 45 ÷ 20 = 2 minutes 15 seconds per question\nA simple rule: about 2 minutes per question, with checkpoints. In Quant, aim to be near question 11 when about 22 minutes have passed.\n\nGuessing strategy. Every question has the same weight in your mind, but not the same cost in time. If you have spent 3 minutes and still have no clear path, eliminate any choices you can, pick one, and move on. Spending 6 minutes on one question can force you to rush three easier ones later. Plan to guess on one or two very hard questions per section so you have time for the rest.",
+  "examples": [
+   {
+    "q": "In Quant, 30 minutes have passed and you are starting question 12. Are you on pace?",
+    "a": "No. At about 2 minutes 8 seconds per question, 30 minutes should take you to roughly question 14. You are about 2 questions behind. Speed up a little and be ready to make a quick guess on the next very hard question."
+   },
+   {
+    "q": "With 4 minutes left in Verbal, you still have 5 questions to answer. What should you do?",
+    "a": "Make sure all 5 get an answer. Spend about 40 seconds each on the ones that look quick, and guess immediately on any long or difficult one. An unanswered question costs more than a wrong one."
+   },
+   {
+    "q": "You finished Data Insights with 3 minutes left and bookmarked two questions. Can you change both answers?",
+    "a": "Yes. You may edit up to three answers in the section. Revisit the bookmarked question you were least sure about first, and change an answer only if you find a clear reason."
+   }
+  ],
+  "pitfalls": [
+   "Spending 5 or more minutes on a single question and running out of time at the end.",
+   "Leaving questions unanswered, which costs more than wrong answers.",
+   "Assuming hard questions mean you are doing badly, and losing confidence.",
+   "Planning to fix many answers in the review screen, when only three edits are allowed per section."
+  ]
+ },
+ {
+  "id": "l-start-03",
+  "sec": "start",
+  "topic": "Quant",
+  "title": "Quant for Beginners: Reading Word Problems",
+  "level": "core",
+  "body": "The Quantitative Reasoning section has 21 Problem Solving questions in 45 minutes. Each question has five answer choices and exactly one is correct. There is no calculator and no plane geometry (no triangles, circles or areas). Coordinate geometry, such as slopes and lines, can appear as part of algebra.\n\nThe six topic areas:\n- Arithmetic: fractions, decimals, percents, ratios, exponents and roots.\n- Algebra: linear and quadratic equations, inequalities, absolute value, functions, lines.\n- Word Problems: rates, work, mixtures, interest, profit, overlapping groups.\n- Number Properties: integers, primes, factors, multiples, remainders, even and odd.\n- Statistics: mean, median, mode, range, standard deviation, weighted average.\n- Counting & Probability: combinations, permutations, probability.\n\nThe math itself is mostly at secondary-school level. What makes it hard is the English and the speed. Many questions are written as short stories, so the first skill is translation: turning English words into an equation.\n\nA translation table:\n\"is\", \"was\", \"will be\" -> =\n\"of\" (with fractions or percents) -> ×\n\"more than\", \"increased by\" -> +\n\"less than\", \"decreased by\" -> subtract (watch the order)\n\"per\", \"for each\" -> ÷ or a rate\n\"what number\", \"how many\" -> a variable such as x\n\nA four-step method:\n- Read the last sentence first, so you know what you are solving for.\n- Name variables with letters that remind you of their meaning, such as p for price.\n- Translate one sentence at a time into an equation.\n- Solve, then check that your answer is what the question asked for (for example, the largest number, not the smallest).\n\nBefore you calculate, glance at the answer choices. If they are far apart, you can estimate. If they are close, calculate exactly. Since you have no calculator, simplify fractions early and avoid long multiplication.\n\nTwo more tools help beginners. First, picking numbers: when a question uses variables or percents with no actual values, choose easy numbers such as 100 for a price or 2 and 3 for x and y, then test the choices. Second, working backwards: when the choices are numbers, start with the middle choice and plug it into the story to see whether it fits.",
+  "examples": [
+   {
+    "q": "After a 20% discount, a jacket costs 40 dollars. What was the original price?",
+    "a": "Let p be the original price. A 20% discount leaves 80% of the price, so 0.8p = 40. Then p = 40 ÷ 0.8 = 50. The original price was 50 dollars. Check: 20% of 50 is 10, and 50 - 10 = 40."
+   },
+   {
+    "q": "The sum of three consecutive integers is 72. What is the largest of the three?",
+    "a": "Call the integers n, n + 1 and n + 2. Then 3n + 3 = 72, so 3n = 69 and n = 23. The integers are 23, 24 and 25, and the largest is 25. Faster: the middle one is the average, 72 ÷ 3 = 24, so the largest is 25."
+   },
+   {
+    "q": "Ana has 5 more than twice as many books as Ben. Together they have 41 books. How many books does Ben have?",
+    "a": "Let b be Ben's books. 'Twice as many as Ben' is 2b, and '5 more than' that is 2b + 5. Together: b + 2b + 5 = 41, so 3b = 36 and b = 12. Ben has 12 books and Ana has 29."
+   }
+  ],
+  "pitfalls": [
+   "Translating '5 less than x' as 5 - x instead of x - 5.",
+   "Solving for the wrong quantity, such as the smallest number when the question asks for the largest.",
+   "Computing a percent of the new value when the question refers to the original value.",
+   "Doing long calculations when the answer choices are far enough apart to estimate."
+  ]
+ },
+ {
+  "id": "l-start-04",
+  "sec": "start",
+  "topic": "Verbal",
+  "title": "Verbal for Beginners: Critical Reasoning and Reading",
+  "level": "core",
+  "body": "The Verbal Reasoning section has 23 questions in 45 minutes. There are only two question types: Critical Reasoning (CR) and Reading Comprehension (RC). There is no grammar or sentence correction. You do not need to know rules about commas or verb tenses. You need to read carefully and think logically.\n\nCritical Reasoning. Each CR question gives a short argument of about 40 to 100 words, then a question. Every argument has two parts:\nArgument = premises + conclusion\nThe conclusion is the main claim. The premises are the facts used to support it. Words such as \"therefore\", \"so\" and \"thus\" often point to the conclusion. Words such as \"because\", \"since\" and \"for example\" often point to premises. Between them there is usually a gap: an assumption the author did not state.\n\nThe main question families:\n- Assumption: what must be true for the argument to work?\n- Strengthen and Weaken: which new fact makes the conclusion more or less likely?\n- Evaluate: which information would help us judge the argument?\n- Flaw: what is wrong with the reasoning?\n- Inference: what must be true based only on the facts given?\n- Explain a discrepancy: what makes two surprising facts fit together?\n- Boldface: what role does each bold sentence play?\n\nReading Comprehension. RC gives a passage of about 200 to 400 words, often on business, science or social science, followed by three or four questions. You will not know the topic, and you do not need to. The goal is to understand the structure, not every detail.\n\nMake a passage map as you read: one short note per paragraph about its role. For example: \"P1: old theory. P2: new evidence against it. P3: author's view.\" Then note the author's main point and tone. When you answer a detail question, go back to the passage and find the exact lines. Do not answer from memory.\n\nThe correct RC answer is almost always supported by specific words in the passage. Choices that are too extreme (\"always\", \"never\", \"proves\") or that add outside knowledge are usually wrong.",
+  "examples": [
+   {
+    "q": "Identify the parts: 'Our cafe's sales rose 15% after we added outdoor seating. So the outdoor seating caused the increase.'",
+    "a": "Premise: sales rose 15% after the seating was added. Conclusion: the seating caused the increase. Assumption: nothing else, such as warmer weather or a new office nearby, explains the rise. A Weaken answer could point to such an alternative cause."
+   },
+   {
+    "q": "Weaken: 'City A cut its bus fares and ridership rose. So City B should cut fares to raise ridership.' Which fact weakens this?",
+    "a": "A fact showing City B is different in a relevant way, for example: 'Most residents of City B say buses there are too slow and unreliable, not too expensive.' Then lower fares may not attract riders in City B."
+   },
+   {
+    "q": "A passage has three paragraphs: the first describes a widely held belief about bees, the second presents a new study that contradicts it, the third explains why the study may still be limited. What is the primary purpose?",
+    "a": "To present evidence that challenges a common view while noting its limits. A good passage map (P1: belief, P2: challenge, P3: caution) gives you this answer in seconds."
+   }
+  ],
+  "pitfalls": [
+   "Studying grammar rules, which are not tested in the Focus Edition.",
+   "Choosing an answer because it is true in real life, even though the passage or argument does not support it.",
+   "Picking extreme answer choices with words like always, never or proves.",
+   "Rereading the whole passage for every question instead of using a passage map."
+  ]
+ },
+ {
+  "id": "l-start-05",
+  "sec": "start",
+  "topic": "Data Insights",
+  "title": "Data Insights for Beginners and the DS Method",
+  "level": "core",
+  "body": "The Data Insights section has 20 questions in 45 minutes. It tests whether you can use numbers, tables, charts and short texts together, the way you would at work. An on-screen calculator is allowed, but it is slow, so use it only for awkward numbers.\n\nThe five question types:\n- Data Sufficiency (DS): decide whether the information given is enough to answer a question.\n- Table Analysis: a sortable table with three true/false (or yes/no) statements.\n- Graphics Interpretation: a chart or graph with sentences to complete using drop-down menus.\n- Two-Part Analysis: choose one answer for each of two related columns.\n- Multi-Source Reasoning: two or three tabs of text, tables or emails, followed by questions.\nIn multi-part questions you must get every part right to receive credit.\n\nData Sufficiency explained. You get a question and two statements, (1) and (2). You do not need to solve the problem. You only decide whether you could solve it. The answer choices are always the same:\nA: Statement (1) alone is sufficient, but (2) alone is not.\nB: Statement (2) alone is sufficient, but (1) alone is not.\nC: Both statements together are sufficient, but neither alone is.\nD: Each statement alone is sufficient.\nE: The statements together are still not sufficient.\n\n\"Sufficient\" means the information gives one answer: one value for a value question, or a definite yes or a definite no for a yes/no question. A definite \"no\" is still sufficient.\n\nThe AD/BCE method:\n- Check statement (1) alone. If sufficient, the answer is A or D. If not, it is B, C or E.\n- Check statement (2) alone, forgetting (1). In the AD group, sufficient means D, otherwise A. In the BCE group, sufficient means B, otherwise move on.\n- Only if both fail alone, combine them: sufficient means C, otherwise E.\n\nAlways treat the statements as true, and never carry information from (1) into your check of (2).",
+  "examples": [
+   {
+    "q": "DS: What is the value of x + y? (1) 2x + 2y = 10 (2) x - y = 1",
+    "a": "Statement (1): divide by 2 to get x + y = 5. One value, so sufficient: answer A or D. Statement (2): x - y = 1 allows x = 1, y = 0 (sum 1) or x = 3, y = 2 (sum 5). Not sufficient. The answer is A. Notice that we never needed the separate values of x and y."
+   },
+   {
+    "q": "DS: Is x > 0? (1) x² = 9 (2) x³ = 27",
+    "a": "Statement (1): x could be 3 or -3, so the answer could be yes or no. Not sufficient: answer B, C or E. Statement (2): the only real cube root of 27 is 3, so x = 3 and the answer is a definite yes. Sufficient. The answer is B."
+   },
+   {
+    "q": "Table Analysis: a table lists 8 stores with their monthly sales. A statement says 'The median monthly sales figure is greater than 50,000.' How do you check it?",
+    "a": "Sort the table by sales. With 8 stores, the median is the average of the 4th and 5th values. If both are above 50,000, the statement is true. If they straddle 50,000, compute their average. Sorting turns a long task into a 20-second one."
+   }
+  ],
+  "pitfalls": [
+   "Solving the whole problem in DS when you only need to know whether it can be solved.",
+   "Thinking a definite 'no' is not sufficient on a yes/no question.",
+   "Using information from statement (1) while judging statement (2) alone.",
+   "Relying on the slow on-screen calculator for simple arithmetic."
+  ]
+ },
+ {
+  "id": "l-start-06",
+  "sec": "start",
+  "topic": "Study Plan",
+  "title": "How to Study from Zero: A 12-Week Plan",
+  "level": "core",
+  "body": "If you have never studied for the GMAT, a plan of about 12 weeks with 10 to 15 hours per week works for many people. Adjust the length to your starting level and target score, but keep the order of the phases.\n\nWeeks 1-3: Foundations.\n- Learn the format and take one short diagnostic set per section, untimed, just to see where you stand.\n- Rebuild basic math: fractions, percents, exponents, number properties, simple equations.\n- Learn the CR argument structure and practise passage mapping on short texts.\n- Learn the Data Sufficiency answer choices until you can recite them.\n\nWeeks 4-7: Topic practice.\n- Work one topic at a time: for example, ratios on Monday, CR assumption questions on Tuesday.\n- Start untimed for accuracy, then add a soft time limit of about 2 minutes per question.\n- Read the explanation for every question, including the ones you got right.\n\nWeeks 8-10: Mixed sets.\n- Practise sets of 10 to 20 mixed questions under real timing.\n- Practise pacing checkpoints and the habit of guessing on very hard questions.\n\nWeeks 11-12: Mocks and review.\n- Take a full-length practice test each week, in your chosen section order, with the optional break.\n- Spend at least as long reviewing the mock as taking it.\n\nWhen to take the first mock. Take one full mock at the end of week 3, after the foundations. Taking it on day one usually just measures unfamiliarity with the format. The week-3 mock gives you a real baseline and shows which sections need the most hours.\n\nThe error log. Keep a simple table of every question you miss or guess on. Record: the question source, the topic, why you missed it (concept gap, careless error, misread, timing), and the lesson in one sentence. Each week, sort the log by reason. If most errors are careless, slow down and write cleaner steps. If they are concept gaps, go back to the lesson.\n\nSpaced repetition. Memory fades unless you review at growing intervals. Turn each lesson from your error log into a flashcard, then review it after 1 day, 3 days, 1 week and 2 weeks. A few minutes of cards each day keeps formulas, CR patterns and DS tricks fresh.",
+  "examples": [
+   {
+    "q": "Write an error log entry for this miss: the question asked 'A rate rose from 10% to 13%. By what percent did the rate increase?' You answered 3%, but the correct answer is 30%.",
+    "a": "Topic: percent change. Reason: concept confusion between percentage points and percent change. Lesson: from 10% to 13% is 3 percentage points but (13 - 10) ÷ 10 = 30% percent change. Make a flashcard of this rule."
+   },
+   {
+    "q": "You can study 12 hours a week. How could you split a week in the topic-practice phase?",
+    "a": "For example: Quant 5 hours (three topics), Verbal 4 hours (two CR types and two RC passages), Data Insights 2 hours (DS plus one other type), and 1 hour for the error log and flashcards. Shift hours toward your weakest section after each mock."
+   },
+   {
+    "q": "After your week-3 mock, your error log shows 12 careless errors and 4 concept gaps in Quant. What should you change?",
+    "a": "Most points are lost to carelessness, not knowledge. Write each step clearly, reread the last sentence of the question before choosing an answer, and check the answer against the question asked. Keep studying concepts, but the quick gains are in accuracy habits."
+   }
+  ],
+  "pitfalls": [
+   "Doing hundreds of questions without reviewing why each one was missed.",
+   "Taking full mocks every few days instead of reviewing them deeply.",
+   "Practising only untimed, then being shocked by the pace on test day.",
+   "Studying favourite topics and avoiding the weakest section."
+  ]
+ }
+]
