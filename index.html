@@ -2624,7 +2624,7 @@ async function setProfile(name,pin,key){
   route();return true;
 }
 function profileForm(fresh){
-  return `<div class="pf"><label class="pf-l">Your name<input type="text" id="pfN" maxlength="30" placeholder="e.g. Thy" value="${fresh?'':esc(WHO?WHO.name:'')}"></label>
+  return `<div class="pf"><label class="pf-l">Your name<input type="text" id="pfN" maxlength="30" placeholder="e.g. Stalis" value="${fresh?'':esc(WHO?WHO.name:'')}"></label>
     <label class="pf-l">Personal PIN (4 to 6 digits)<input type="password" inputmode="numeric" id="pfP" maxlength="6" placeholder="Keeps your progress yours"></label>
     ${getKey()?'':`<label class="pf-l">Group password (to sync across devices)<input type="password" id="pfK" autocomplete="current-password" placeholder="Shared by the group"></label>`}
     <p class="pf-n">Use the same name, PIN and group password on another device to pick up exactly where you left off.</p></div>`;
