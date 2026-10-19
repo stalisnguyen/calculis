@@ -1,0 +1,1602 @@
+[
+ {
+  "id": "cr2-001",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "boldface",
+  "diff": 1,
+  "stimulus": "A regional courier plans to replace the diesel vans on its city routes with electric vans. **Electric vans cost about 40 percent more to buy than comparable diesel vans.** Even so, the switch is likely to save the courier money, because **over a typical eight-year service life, an electric van's charging and maintenance costs are far lower than a diesel van's fuel and maintenance costs**, more than offsetting the higher purchase price.",
+  "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+  "choices": [
+   "The first is a consideration that weighs against the argument's conclusion; the second is evidence offered in support of that conclusion.",
+   "The first is a claim that the argument rejects as false; the second is evidence offered in support of the argument's conclusion.",
+   "The first is evidence offered in support of the argument's conclusion; the second is that conclusion.",
+   "Both are considerations that weigh against the argument's conclusion.",
+   "The first is the argument's conclusion; the second is evidence offered in support of that conclusion."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. The conclusion is that switching will save money. The higher purchase price counts against that conclusion ('Even so' signals the concession), and the lower running costs are the reason given for it. (B) The argument accepts the higher purchase price as true and simply argues that it is outweighed. (C) The purchase price works against the savings claim, and the second portion is a premise introduced by 'because', not the conclusion. (D) The lower running costs are exactly what supports the predicted savings. (E) The conclusion is that the switch will save money, not that electric vans cost more to buy.",
+  "trap": "(B) is tempting because the argument pushes back after the first portion, but it concedes the price gap rather than denying it.",
+  "time": 90
+ },
+ {
+  "id": "cr2-002",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "boldface",
+  "diff": 2,
+  "stimulus": "Excavators at a coastal site found abundant fish bones in layers dated to 3000 BCE, and some researchers concluded that **the site's early inhabitants relied mainly on fishing for food**. But fish bones survive well in the site's alkaline sand, while plant remains decay quickly there, so the bone count may exaggerate the role of fishing. Moreover, **grinding stones bearing residues of wild grain occur throughout the same layers**. A mixed diet is the more likely picture.",
+  "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+  "choices": [
+   "The first is a conclusion that the argument opposes; the second is evidence offered in support of the argument's own conclusion.",
+   "The first is a position the argument accepts with some qualification; the second is a consideration that the argument regards as irrelevant.",
+   "The first is the argument's main conclusion; the second is evidence that weighs against that conclusion.",
+   "Both are evidence offered in support of the argument's main conclusion.",
+   "The first is evidence the argument uses to support its conclusion; the second is that conclusion."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. The argument concludes that a mixed diet is more likely, which opposes the researchers' fishing conclusion. The grinding stones with grain residue support the mixed-diet view. (B) The argument rejects reliance mainly on fishing, and it relies on the grinding stones. (C) The argument's conclusion is the mixed-diet claim, not reliance on fishing. (D) The first is the view the argument argues against, so it cannot support the mixed-diet conclusion. (E) The first is a conclusion others drew, and the second is a finding, not a conclusion.",
+  "trap": "(B) tempts readers who see that fishing remains part of the mixed diet, but the argument rejects the claim that fishing was the main food source.",
+  "time": 105
+ },
+ {
+  "id": "cr2-003",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "boldface",
+  "diff": 2,
+  "stimulus": "A grocery chain that installed self-checkout kiosks saw average checkout waiting times fall by a third over the following year. **The chain's managers credit the kiosks for the improvement.** However, **during the same year the chain extended its opening hours by two hours a day, spreading customer traffic more evenly across the day.** Thus the kiosks probably deserve less credit than the managers believe.",
+  "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+  "choices": [
+   "The first states the argument's main conclusion; the second is an objection that the argument goes on to rebut.",
+   "The first is the argument's main conclusion; the second is evidence offered in support of it.",
+   "The first is evidence supporting the managers' view; the second is the argument's main conclusion.",
+   "The first is a position that the argument calls into question; the second is evidence offered to support the argument's challenge to that position.",
+   "Both are positions that the argument opposes."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. The conclusion is that the kiosks deserve less credit than managers think. The managers' view is the position challenged, and the longer opening hours provide an alternative explanation that backs the challenge. (A) The argument uses the opening-hours fact; it does not rebut it. (B) The argument does not conclude that the kiosks deserve the credit; it concludes the opposite. (C) The first is the managers' view itself, and the second is a fact, while the conclusion comes in the final sentence. (E) The argument relies on the second portion as evidence; it does not oppose it.",
+  "trap": "(B) attracts readers who expect the first claim in a passage to be the conclusion, but the 'However' and 'Thus' show the argument moves against the managers' view.",
+  "time": 105
+ },
+ {
+  "id": "cr2-004",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "boldface",
+  "diff": 3,
+  "stimulus": "Some analysts predict that default rates at the buy-now-pay-later firm Lentora will rise sharply as interest rates climb, since **its customers are disproportionately young borrowers with thin credit files**. This prediction is probably mistaken. **Lentora caps each customer's outstanding balance at a low level that rises only after a record of on-time repayment**, so customers with thin files cannot build up large debts. In addition, the firm's loans last only six weeks, which lets it tighten approval rules quickly if conditions worsen.",
+  "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+  "choices": [
+   "The first is evidence that the argument accepts as decisive; the second is an intermediate conclusion drawn from that evidence.",
+   "The first is evidence offered in support of a prediction that the argument rejects; the second is evidence offered in support of the argument's main conclusion.",
+   "The first is the argument's main conclusion; the second is evidence against that conclusion.",
+   "The first is a prediction that the argument rejects; the second is a consideration that supports that prediction.",
+   "The first is evidence the argument uses to support its main conclusion; the second is that conclusion."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. The analysts cite the young, thin-file customer base to support their prediction of rising defaults. The argument's conclusion is that this prediction is probably mistaken, and the balance cap supports that conclusion. (A) The argument does not treat the customer profile as decisive, and the balance cap is a stated fact, not something inferred from the first portion. (C) The main conclusion is 'This prediction is probably mistaken.' (D) The first is evidence for the prediction rather than the prediction itself, and the second undermines the prediction. (E) The first supports the analysts' prediction, not the argument's conclusion, and the second is a premise.",
+  "trap": "(D) is tempting because the first portion is closely tied to the prediction, but it is the analysts' reason for the prediction, and the second portion counts against the prediction, not for it.",
+  "time": 120
+ },
+ {
+  "id": "cr2-005",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "boldface",
+  "diff": 3,
+  "stimulus": "Planners in Varno propose converting two of Mill Avenue's four car lanes into a protected bus lane. Opponents point out that **car traffic in the remaining lanes will slow considerably**. Yet the proposal deserves support. Buses already carry 70 percent of the people who travel the corridor at rush hour, so faster buses will help far more commuters than slower cars will hurt. Moreover, **some current drivers are likely to switch to the faster buses**, which would ease congestion in the remaining car lanes.",
+  "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+  "choices": [
+   "The first is evidence that the argument uses to support its conclusion; the second is that conclusion.",
+   "The first is the argument's main conclusion; the second is a consideration that weighs against it.",
+   "Both are considerations that the argument presents against the proposal.",
+   "The first is an objection that the argument dismisses as false; the second is the argument's main conclusion.",
+   "The first is an objection to a proposal that the argument supports; the second is a prediction offered in part to reduce the force of that objection."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. The argument supports the bus lane. The slowing of car traffic is the opponents' objection, and drivers switching to buses would ease that very congestion, softening the objection. (A) Slower car traffic is raised against the proposal, and the conclusion is that the proposal deserves support. (B) The first is the opponents' point, and the second helps the proposal. (C) The second portion favours the proposal. (D) The argument never denies that car traffic will slow; it argues that the benefits outweigh this, and the main conclusion is that the proposal deserves support.",
+  "trap": "(D) is tempting because the second portion pushes back on the objection, but the argument only reduces the objection's force and never claims car traffic will not slow.",
+  "time": 120
+ },
+ {
+  "id": "cr2-006",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "boldface",
+  "diff": 3,
+  "stimulus": "**In seasons with adequate rain, a drought-tolerant sorghum variety yields about 20 percent less grain per hectare than the maize most Kesra valley farmers now plant.** Rainfall in the valley has become increasingly erratic, however, and maize there now fails completely in roughly one season in four, whereas the sorghum has not failed in any season on record. Since a single failed season costs far more than the sorghum's yield gap, **valley farmers would, over a decade, harvest more grain by switching to sorghum**.",
+  "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+  "choices": [
+   "The first is evidence offered in support of the main conclusion; the second is that conclusion.",
+   "The first is the argument's main conclusion; the second is a consideration that weighs against it.",
+   "The first describes a disadvantage of a course of action; the second is the argument's main conclusion, which favours that course of action despite the disadvantage.",
+   "The first describes a disadvantage of a course of action; the second is a premise offered in support of an intermediate conclusion.",
+   "The first is a claim that the argument rejects as inaccurate; the second is the argument's main conclusion."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. The lower yield in good seasons is a drawback of switching. The final claim, introduced by the reasoning about failed seasons, is the conclusion and recommends switching anyway. (A) The yield gap counts against switching; the argument has to overcome it. (B) The roles are reversed: the second is the conclusion, and it is not opposed to the first in that way. (D) Nothing is drawn from the second portion; it is the final conclusion. (E) The argument accepts the yield gap as accurate and argues it is outweighed.",
+  "trap": "(D) is tempting for those who see the first portion's role correctly, but the second portion is the end point of the reasoning, not a premise.",
+  "time": 120
+ },
+ {
+  "id": "cr2-007",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "boldface",
+  "diff": 4,
+  "stimulus": "Pharmaceutical firm Corvane argues that **the high price of its new hepatitis drug reflects the cost of the research that produced it**. Critics reply that this cannot be the whole story: **the drug's price in wealthy countries is roughly forty times its price in middle-income countries, even though the research cost is the same wherever the drug is sold**. That gap is better explained by what each market will bear. Still, the critics go too far in calling the research rationale a mere pretext, since the lower-priced markets alone could never have repaid the research.",
+  "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+  "choices": [
+   "The first is evidence for the critics' view; the second is the critics' conclusion.",
+   "The first is the argument's main conclusion; the second is evidence against it that the argument goes on to discredit.",
+   "The first is a position that the argument accepts in full; the second is evidence that the argument dismisses as irrelevant.",
+   "The first is a position that the argument partly accepts; the second is evidence that the argument accepts as showing that position to be incomplete.",
+   "The first is a position that the argument rejects entirely; the second is evidence the argument uses to support that rejection."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. The author agrees with the critics that market tolerance explains the price gap, yet insists research costs still matter. So Corvane's claim is partly accepted, and the forty-fold gap is accepted as showing research cost is not the whole story. (A) The first is Corvane's claim, which the critics dispute, and the second is the critics' evidence, not their conclusion. (B) The main conclusion is that the critics go too far, and the author never disputes the price data. (C) The author agrees the gap is explained by what markets will bear, so the evidence is not dismissed. (E) The final sentence defends the research rationale against being called a pretext, so the rejection is not total.",
+  "trap": "(E) is tempting because the critics reject Corvane's claim, but the author's final sentence restores part of it.",
+  "time": 135
+ },
+ {
+  "id": "cr2-008",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "boldface",
+  "diff": 4,
+  "stimulus": "When the province of Halden raised its minimum wage by 15 percent, some economists predicted that **restaurant employment there would fall**. A year later, restaurant employment in Halden had instead risen by 3 percent, and some commentators took this as proof that the economists were wrong. That inference is premature. **In neighbouring provinces with no wage increase, restaurant employment rose by 9 percent over the same period**, which suggests that the higher wage may have held Halden's job growth below what it would otherwise have been.",
+  "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+  "choices": [
+   "The first is the argument's main conclusion; the second is evidence for it.",
+   "The first is a prediction that the argument shows to have been accurate; the second is evidence supporting that prediction.",
+   "The first is a prediction that the argument rejects; the second is evidence presented in favour of that rejection.",
+   "The first is a prediction whose apparent failure some have taken as decisive; the second is evidence offered to show that this apparent failure does not settle the matter.",
+   "The first is evidence offered for a conclusion that the argument opposes; the second is the argument's main conclusion."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. Commentators treat the rise in employment as refuting the prediction. The argument says that inference is premature and cites the 9 percent growth next door to show the wage may still have had a negative effect. (A) The main conclusion is that the commentators' inference is premature. (B) Employment did not fall, so the literal prediction was not accurate; the argument only suggests the wage may have slowed growth. (C) The commentators reject the prediction; the argument resists that rejection. (E) The first is a prediction, not evidence, and the second is evidence, not the conclusion.",
+  "trap": "(B) attracts readers who notice the argument sides partly with the economists, but employment actually rose, so the prediction as stated was not borne out.",
+  "time": 135
+ },
+ {
+  "id": "cr2-009",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "boldface",
+  "diff": 4,
+  "stimulus": "Consultants have urged the port of Meravo to deepen its main channel so that the largest container ships can dock. **Dredging the channel would cost roughly 900 million dollars.** Port officials argue that the investment would pay for itself because larger ships would bring more cargo. But **the shipping lines that operate the largest vessels have recently concentrated their routes on just three regional hubs, none of them Meravo**, and have shown no interest in adding stops. Without commitments from those lines, deepening the channel is likely to be a costly mistake.",
+  "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+  "choices": [
+   "The first is evidence against the proposal; the second is a consideration that the argument acknowledges weakens its own conclusion.",
+   "Both are considerations offered in support of the argument's conclusion that a proposed project is unwise.",
+   "The first is a consideration that the argument concedes weighs in favour of the proposal; the second is the main conclusion.",
+   "The first is the argument's main conclusion; the second is evidence supporting it.",
+   "The first is evidence supporting the port officials' position; the second is evidence against it."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. The conclusion is that deepening the channel is likely to be a costly mistake. The high price makes any mistake costly, and the lines' hub strategy suggests the larger ships will not come. (A) The hub concentration strengthens, rather than weakens, the case against dredging. (C) Cost weighs against the proposal, and the main conclusion is the final sentence. (D) The cost figure is a premise; the conclusion is that the project is likely a costly mistake. (E) A price of 900 million dollars does nothing to show the investment will pay for itself.",
+  "trap": "(A) tempts readers who correctly see the first portion's role but misread the second, which is the argument's strongest support, not a concession.",
+  "time": 135
+ },
+ {
+  "id": "cr2-010",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "boldface",
+  "diff": 5,
+  "stimulus": "Radiocarbon dates from charcoal in the lowest hearth at Tell Barun place the site's first occupation around 6200 BCE, and **most specialists accept that date**. Yet charcoal can come from wood that was already centuries old when burned, as when settlers use driftwood or the long-dead heartwood of slow-growing trees. **Charred seeds from the same hearth, which could not have been old when burned, date to around 5900 BCE.** It is therefore likely that the site was first occupied later than the accepted date, although the seed sample is too small for the question to be considered settled.",
+  "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+  "choices": [
+   "The first reports a view that the argument contends is probably mistaken; the second is the argument's main conclusion.",
+   "The first reports a view that the argument regards as definitively refuted; the second is evidence offered to refute it.",
+   "The first is evidence that the argument uses to support its main conclusion; the second is a finding that the argument regards as unreliable.",
+   "The first reports a view that the argument contends is probably mistaken; the second provides evidence for the argument's main conclusion, though the argument acknowledges a limitation of that evidence.",
+   "The first reports a view that the argument accepts; the second is evidence that the argument considers consistent with that view."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. The argument concludes that occupation was likely later than the accepted 6200 BCE date. The seed dates are its key evidence, and the final clause admits the seed sample is small. (A) The seed date is evidence; the conclusion is that the site was probably first occupied later than accepted. (B) The argument says only that the accepted date is likely wrong and that the question is not settled. (C) The specialists' acceptance is what the argument challenges, and the argument relies on the seed finding while noting a limitation. (E) The argument argues against the accepted date, and a 5900 BCE seed date conflicts with it.",
+  "trap": "(B) is the strongest trap because the seeds do count against the accepted date, but the closing concession means the argument stops short of calling it refuted.",
+  "time": 150
+ },
+ {
+  "id": "cr2-011",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "boldface",
+  "diff": 5,
+  "stimulus": "Regulators in Ostrava have proposed capping the fees that card networks charge merchants, arguing that **merchants would pass the savings on to shoppers through lower prices**. The card networks object that when a similar cap was imposed in another country, consumer prices there did not measurably fall. That comparison tells us little, however, because **retail prices in that country rose sharply during those years for reasons unrelated to card fees, such as a currency devaluation**. What the foreign experience does clearly show is that the networks responded by cutting cardholder rewards, so shoppers may lose more through reduced rewards than they gain through prices.",
+  "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+  "choices": [
+   "The first is a prediction that the argument neither accepts nor rejects; the second is the main conclusion of the argument.",
+   "The first is a prediction that the argument rejects; the second is evidence that supports that rejection.",
+   "The first is a prediction that the argument defends; the second is evidence offered in support of that prediction.",
+   "The first is the argument's main conclusion; the second is evidence that the argument discounts.",
+   "The first is a prediction that the argument neither accepts nor rejects; the second is offered to show that certain evidence against that prediction is inconclusive."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. The argument says the networks' foreign comparison tells us little because the devaluation masked any price effect. It never decides whether merchants would pass on savings, and it ends by raising a different concern about rewards. (A) The devaluation is a fact used to discredit a comparison; the main conclusion concerns lost rewards. (B) The second portion neutralises the case against the prediction rather than supporting its rejection. (C) Showing that evidence against the prediction is weak is not the same as defending it, and the argument goes on to doubt the policy's benefit to shoppers. (D) The argument's conclusion is that shoppers may lose more than they gain, and it relies on the devaluation point.",
+  "trap": "(C) is tempting because the argument rescues the prediction from the networks' objection, but it then argues shoppers may be worse off, so it does not defend the regulators' prediction.",
+  "time": 150
+ },
+ {
+  "id": "cr2-012",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "boldface",
+  "diff": 5,
+  "stimulus": "Hospital pharmacists in Lunde have noticed that patients prescribed the generic version of an anticoagulant return for dose adjustments more often than patients on the branded version, and **some physicians have concluded that the generic is less consistent in potency**. Laboratory testing, however, has found the potency of the two versions indistinguishable. A better explanation lies elsewhere: **the generic is mostly prescribed to patients who are just starting therapy, whereas long-term patients, whose doses were settled years ago, tend to remain on the brand**. Patients starting therapy need frequent adjustments whichever version they take.",
+  "stem": "In the argument above, the two portions in boldface play which of the following roles?",
+  "choices": [
+   "The first is an explanation of an observed pattern that the argument rejects; the second is part of an alternative explanation that the argument advances.",
+   "The first is an explanation that the argument rejects; the second is evidence that the argument cites to show that the observed pattern does not actually exist.",
+   "The first is an explanation that the argument rejects; the second is the laboratory evidence on which that rejection mainly rests.",
+   "The first is the argument's main conclusion; the second is evidence offered in support of it.",
+   "The first is a hypothesis that the argument accepts; the second is a consideration that supports it."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. The pattern is more frequent dose adjustments on the generic. The physicians explain it by inconsistent potency, which the argument rejects; the argument explains it instead by who is prescribed the generic, and the second portion is the core of that explanation. (B) The argument accepts that generic patients return more often and explains why; it does not deny the pattern. (C) The laboratory finding is a separate sentence; the second portion concerns prescribing patterns. (D) The argument rejects the physicians' conclusion rather than adopting it. (E) The argument says a better explanation lies elsewhere, so it does not accept the potency hypothesis.",
+  "trap": "(C) is tempting because the laboratory result does help reject the potency explanation, but that result is not the boldface text, which is the alternative explanation.",
+  "time": 150
+ },
+ {
+  "id": "cr2-013",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "plan",
+  "diff": 1,
+  "stimulus": "An electronics retailer loses thousands of dollars a month to theft of headphones and smartwatches from open shelves. To reduce these losses without cutting its electronics revenue, the retailer plans to move the items into locked display cases that a sales associate must open for each customer who wants one.",
+  "stem": "Which of the following, if true, most strongly suggests that the plan could undermine the retailer's goal?",
+  "choices": [
+   "Locked display cases cost less to install than hiring additional security guards.",
+   "Competing retailers in the area report theft rates similar to this retailer's.",
+   "Many customers who have to wait for an associate to unlock a case leave the store without buying anything.",
+   "Most of the stolen items were taken from shelves near the store's entrance.",
+   "Thieves in the store rarely target low-priced accessories such as cables."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. The goal has two parts: less theft and no loss of revenue. If waiting drives customers away, the plan cuts revenue, undermining the goal even if theft falls. (A) This makes the plan look cheaper than an alternative; it does not suggest failure. (B) Other stores' theft rates say nothing about whether this plan will work. (D) This describes where theft happens and, if anything, suggests locking the items up will reduce theft. (E) The plan concerns headphones and smartwatches, so the targeting of cheap items is irrelevant.",
+  "trap": "(D) is tempting because it is about theft, but it actually suggests the locked cases will protect the most stolen items.",
+  "time": 90
+ },
+ {
+  "id": "cr2-014",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "plan",
+  "diff": 2,
+  "stimulus": "To reduce the amount of water its members draw from a shrinking aquifer, a farming cooperative plans to subsidise drip-irrigation systems, which deliver water directly to plant roots and use about 40 percent less water than flood irrigation to grow the same crop on the same land.",
+  "stem": "Which of the following, if true, most seriously calls into question whether the plan will reduce the cooperative's total water use?",
+  "choices": [
+   "Some crops grown by members respond especially well to drip irrigation.",
+   "Water prices in the region have risen steadily over the past decade.",
+   "Drip-irrigation systems require more maintenance than flood irrigation.",
+   "Farmers elsewhere who adopted drip irrigation typically used the water they saved to expand the area they cultivate.",
+   "The cooperative can pay for the subsidy out of its existing reserves."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. If saved water simply irrigates new fields, total use may not fall at all. The 40 percent saving is per hectare, not for the farm as a whole. (A) Better crop response makes adoption more attractive; it does not raise water use. (B) Rising prices would, if anything, encourage farmers to conserve water. (C) Maintenance effort does not determine how much water is used. (E) This makes the plan more feasible, not less effective.",
+  "trap": "(C) is tempting because it names a drawback of drip irrigation, but extra maintenance does not affect the quantity of water drawn.",
+  "time": 105
+ },
+ {
+  "id": "cr2-015",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "plan",
+  "diff": 2,
+  "stimulus": "Westbrook's city council wants to reduce downtown parking congestion. It plans to double meter rates on downtown streets during peak hours, while keeping rates unchanged at a municipal parking garage two blocks from the main shopping street, expecting many drivers to park in the garage instead.",
+  "stem": "Which of the following, if true, most strongly supports the prediction that the plan will succeed?",
+  "choices": [
+   "Most visitors to downtown Westbrook arrive by car.",
+   "Revenue from the meters is used to pay for street maintenance.",
+   "Meter rates in Westbrook are lower than in nearby cities of similar size.",
+   "Several downtown shop owners have complained that customers cannot find parking.",
+   "The municipal garage is currently less than half full during peak hours."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. The plan depends on drivers being able to move into the garage. Ample spare capacity means the displaced cars have somewhere to go. (A) This explains why congestion exists but does not show that drivers will switch to the garage. (B) Where the money goes is irrelevant to whether congestion falls. (C) A comparison with other cities does not show how Westbrook drivers will respond. (D) This confirms the problem but gives no reason to think the plan will solve it.",
+  "trap": "(D) is tempting because it confirms the congestion is real, but evidence of a problem is not evidence that this solution will work.",
+  "time": 105
+ },
+ {
+  "id": "cr2-016",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "plan",
+  "diff": 3,
+  "stimulus": "A furniture retailer that delivers bulky items has a high rate of failed deliveries, in which no one is home to receive the goods. To cut the failure rate, it plans to send each customer a text message the evening before delivery giving a four-hour arrival window.",
+  "stem": "Which of the following, if true, most strongly suggests that the plan will NOT substantially reduce failed deliveries?",
+  "choices": [
+   "Each failed delivery costs the retailer an average of 80 dollars.",
+   "A few of the retailer's customers do not own mobile phones.",
+   "Some competing retailers offer two-hour delivery windows.",
+   "Text messages are cheaper to send than phone calls.",
+   "Customers already learn the delivery date when they order, and most customers who miss deliveries say they cannot be at home for any four-hour weekday window."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. The text adds only a four-hour window to information customers already have. If the real obstacle is being home for four weekday hours at all, the message does not address it. (A) This shows why the problem matters, not whether the plan will fix it. (B) A few customers missing the message would limit the plan only slightly. (C) What competitors offer says nothing about how this plan will affect this retailer's failures. (D) Cost of the message does not affect whether customers are home.",
+  "trap": "(B) is tempting because customers without phones cannot receive texts, but 'a few' cannot prevent a substantial reduction.",
+  "time": 120
+ },
+ {
+  "id": "cr2-017",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "plan",
+  "diff": 3,
+  "stimulus": "Customers who close their accounts at the mobile bank Nuvo within three months of opening them cost the bank money, because onboarding each customer costs more than such short-lived accounts earn. Nuvo therefore plans to offer new customers a 25-dollar bonus paid only once an account has been open for 90 days.",
+  "stem": "Which of the following, if true, most strongly suggests that the plan will fail to improve Nuvo's profitability, even if it reduces the number of accounts closed within three months?",
+  "choices": [
+   "Customers attracted by such bonuses typically close their accounts soon after receiving the bonus and rarely use a bank's fee-earning services.",
+   "Most customers who keep a Nuvo account beyond three months stay with the bank for years.",
+   "The 25-dollar bonus is less than Nuvo's onboarding cost per customer.",
+   "Several rival banks offer larger sign-up bonuses that are paid immediately.",
+   "Customers who close accounts early often cite slow customer service."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. If bonus-seekers stay just past 90 days and then leave, Nuvo pays onboarding costs plus the 25-dollar bonus without earning revenue, so profitability does not improve even though early closures fall. (B) This suggests that getting customers past 90 days pays off, supporting the plan. (C) This makes the bonus look affordable relative to the losses it is meant to prevent. (D) Rivals' offers might affect how many people sign up, but not whether the plan improves the profitability of those who do. (E) This names a cause of early closures but says nothing about the bonus's effect on profits.",
+  "trap": "(D) is tempting because competition seems threatening, but the question is whether retained customers will be profitable, and this choice does not address that.",
+  "time": 120
+ },
+ {
+  "id": "cr2-018",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "plan",
+  "diff": 3,
+  "stimulus": "To reduce costly emergency-room visits by members with asthma, a health insurer plans to waive the co-payment for daily preventer inhalers, which greatly lower the risk of severe attacks when used every day.",
+  "stem": "Which of the following, if true, most strongly supports the prediction that the plan will succeed?",
+  "choices": [
+   "Preventer inhalers cost more than the reliever inhalers used during attacks.",
+   "Some of the insurer's members with asthma already use preventer inhalers daily.",
+   "Among the insurer's members with asthma, the most common reason given for not using a preventer inhaler daily is its out-of-pocket cost.",
+   "The insurer's main competitors have not adopted similar policies.",
+   "Emergency visits for asthma are more common in winter than in summer."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. If cost is the main barrier, removing the co-payment should increase daily use, which lowers severe attacks and emergency visits. (A) The relative price of the two inhalers does not show whether members will use preventers more. (B) Members already using the inhaler will not change behaviour, so this does not support success. (D) Competitors' choices say nothing about the plan's effect on emergency visits. (E) Seasonal patterns do not bear on whether the plan will work.",
+  "trap": "(B) is tempting because it shows the inhalers are in use, but the plan succeeds only if it changes the behaviour of members who are not yet using them.",
+  "time": 120
+ },
+ {
+  "id": "cr2-019",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "plan",
+  "diff": 4,
+  "stimulus": "Facing a shortage of long-haul truck drivers, the trucking firm Ostler plans to raise its per-mile pay by 12 percent. It expects the higher pay to draw licensed drivers who currently work in other industries into long-haul trucking.",
+  "stem": "Which of the following, if true, most strongly suggests that the plan will not ease Ostler's shortage?",
+  "choices": [
+   "Surveys of licensed drivers working in other industries find that weeks away from home, not pay, is their main reason for avoiding long-haul trucking.",
+   "Ostler's current per-mile pay is below the industry average.",
+   "The pay increase will raise Ostler's operating costs by about 5 percent.",
+   "Many of Ostler's current drivers are close to retirement age.",
+   "Short-haul drivers earn less per mile than long-haul drivers."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. The plan targets precisely this group. If pay is not what keeps them away, a pay rise is unlikely to bring them in. (B) This suggests a raise could make Ostler more competitive, supporting the plan. (C) Higher costs are a drawback, but the question is whether the plan eases the shortage. (D) This may make the shortage worse but says nothing about whether the pay rise attracts new drivers. (E) This suggests long-haul pay is already relatively attractive but does not show the raise will fail.",
+  "trap": "(D) is tempting because retirements deepen the shortage, but the plan could still bring in new drivers, so it does not show the plan itself will fail.",
+  "time": 135
+ },
+ {
+  "id": "cr2-020",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "plan",
+  "diff": 4,
+  "stimulus": "To increase its stock of affordable housing, the city of Tarrow plans to require that every new residential building with more than 50 units set aside 15 percent of those units to be rented at below-market rates.",
+  "stem": "Which of the following, if true, most seriously undermines the likelihood that the plan will achieve its goal?",
+  "choices": [
+   "Some developers have said they might build fewer projects in Tarrow if the rule is adopted.",
+   "Below-market units in other cities attract long waiting lists.",
+   "Construction costs in Tarrow have risen faster than rents over the past five years.",
+   "In a neighbouring city that adopted an identical rule, nearly all residential buildings proposed since then have had 50 or fewer units.",
+   "Many of Tarrow's low-income residents work in the city centre."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. The rule applies only to buildings above 50 units. If developers respond by staying at 50 or below, no below-market units are created and the plan adds little or nothing to affordable housing. (A) Statements by some developers are weak evidence; the neighbouring city's actual outcome is far stronger. (B) This shows demand for such units, not that the plan will fail to supply them. (C) This general cost trend does not show how developers will respond to the specific rule. (E) Where residents work does not affect whether the rule produces affordable units.",
+  "trap": "(A) is tempting because it hints at developer resistance, but a few developers' vague threats are much weaker than evidence that a similar rule produced almost no qualifying buildings.",
+  "time": 135
+ },
+ {
+  "id": "cr2-021",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "plan",
+  "diff": 5,
+  "stimulus": "Coffee growers in the Ardea highlands sell their beans to exporters at low world-market prices. A growers' association plans to raise members' incomes by obtaining a protected designation, 'Ardea Highland', that only beans grown in the region may carry, expecting roasters to pay a premium for labelled beans.",
+  "stem": "Which of the following, if true, most seriously calls into question whether the plan will raise members' incomes?",
+  "choices": [
+   "Some coffee drinkers cannot tell Ardea beans from other beans in blind tastings.",
+   "Some growers outside the association also farm in the Ardea highlands.",
+   "Coffees from several other regions with protected designations sell at substantial premiums.",
+   "Obtaining the designation is expected to take about three years.",
+   "The growers sell to a handful of exporters, who negotiate all prices with roasters and are the growers' only buyers."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. Even if roasters pay a premium, it is paid to the exporters. With no alternative buyers, growers have no leverage to claim a share, so their incomes may not rise. (A) Premiums for designations often rest on origin and reputation, so a blind-tasting result does not show roasters will refuse to pay. (B) Non-members could also use the label, but that does not stop members from earning a premium. (C) This suggests a label can earn a premium, which supports the plan. (D) Delay postpones benefits but does not show the plan will not raise incomes.",
+  "trap": "(A) is tempting because it questions whether the beans are special, but roasters can pay for a label regardless of blind-tasting results, while the exporters' position directly blocks the income gain.",
+  "time": 150
+ },
+ {
+  "id": "cr2-022",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "plan",
+  "diff": 5,
+  "stimulus": "The payments company Kestrel flags 2 percent of the transactions it processes as possibly fraudulent and holds them for manual review, and merchants complain about the delays. Kestrel plans to raise its risk-score threshold so that only the riskiest 1 percent of transactions are held, expecting that its fraud losses will rise only slightly.",
+  "stem": "Which of the following, if true, most strongly supports Kestrel's expectation?",
+  "choices": [
+   "Fraudsters frequently test a platform with small transactions before attempting large ones.",
+   "Among transactions currently held for review, those in the lower-scoring half have turned out on review to be fraudulent far less often than those in the higher-scoring half.",
+   "The cost of manual review makes up a large share of Kestrel's operating expenses.",
+   "Merchants who experience payment delays often move their business to rival processors.",
+   "Most fraudulent transactions that Kestrel detects are caught by manual review."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. The plan releases exactly the lower-scoring half of held transactions. If those rarely prove fraudulent, letting them through adds little fraud, which is what Kestrel expects. (A) Small test transactions might be the low-scoring ones released, which could raise later losses. (C) Saving on review costs is a benefit of the plan, not evidence about fraud losses. (D) This explains why Kestrel wants to reduce holds, but it says nothing about how much fraud losses will rise. (E) This shows review matters, which, if anything, suggests reducing reviews could raise losses.",
+  "trap": "(D) is tempting because it supports doing the plan, but the expectation in question concerns fraud losses, which this choice does not address.",
+  "time": 150
+ },
+ {
+  "id": "cr2-023",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "complete",
+  "diff": 1,
+  "stimulus": "A clothing retailer found that shoppers who used its fitting rooms bought far more items than shoppers who did not. Managers have proposed adding more fitting rooms to increase sales. This proposal may not have the intended effect, however, since ______.",
+  "stem": "Which of the following most logically completes the argument?",
+  "choices": [
+   "shoppers who already intend to buy are much more likely than other shoppers to use fitting rooms",
+   "fitting rooms are cleaned several times a day",
+   "the retailer sells more items online than in its stores",
+   "fitting rooms are inexpensive to install",
+   "most shoppers who use a fitting room try on more than one item"
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. The link between fitting rooms and purchases may run the other way: intent to buy leads to using fitting rooms. If so, more rooms would not create more buyers. (B) Cleaning schedules have nothing to do with whether more rooms raise sales. (C) The proposal concerns store sales; the online share does not show it would fail. (D) Low cost makes the proposal more attractive rather than less effective. (E) This describes fitting-room use but gives no reason the proposal would fail.",
+  "trap": "(E) may tempt those who sense a link between trying on and buying, but it does not explain why adding rooms would fail to raise sales.",
+  "time": 90
+ },
+ {
+  "id": "cr2-024",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "complete",
+  "diff": 2,
+  "stimulus": "Pottery found at a hilltop settlement is decorated in a style typical of a lowland culture 200 kilometres away. Some researchers infer that the hilltop's settlers migrated from the lowlands. That inference is weak, however, because ______.",
+  "stem": "Which of the following most logically completes the argument?",
+  "choices": [
+   "the hilltop settlers also built stone houses of the kind found in the lowlands",
+   "lowland pottery was often decorated with geometric patterns",
+   "few pots from the hilltop site have survived intact",
+   "pots in that style were widely traded across the region, so their presence shows contact between the two areas rather than the origin of the people who used them",
+   "the hilltop settlement was occupied for several centuries"
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. Trade offers another way for lowland-style pots to reach the hilltop without anyone migrating, which is exactly what would make the inference weak. (A) This would support migration, not weaken the inference. (B) Describing the style does not weaken the migration inference. (C) Broken pots can still show their decorative style, so this does not undercut the inference. (E) How long the site was occupied does not bear on where its settlers came from.",
+  "trap": "(A) is tempting because it is about the same two cultures, but it adds a second similarity and so strengthens the migration view.",
+  "time": 105
+ },
+ {
+  "id": "cr2-025",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "complete",
+  "diff": 2,
+  "stimulus": "Companies that let employees work from home two days a week report lower staff turnover than companies that require full-time office attendance. It would be premature, however, to conclude that hybrid working reduces turnover, since ______.",
+  "stem": "Which of the following most logically completes the argument?",
+  "choices": [
+   "some employees prefer to work in the office every day",
+   "hybrid policies reduce companies' spending on office space",
+   "many companies that require office attendance are considering hybrid policies",
+   "staff turnover is costly for most companies",
+   "the companies that adopted hybrid policies are concentrated in industries that have had low turnover for decades"
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. If hybrid firms were low-turnover firms long before they adopted the policy, the policy cannot be credited with the difference. (A) Individual preferences do not explain why the observed difference might not be caused by hybrid policies. (B) This is another benefit of hybrid working, unrelated to turnover. (C) Plans to adopt the policy do not cast doubt on whether it reduces turnover. (D) This explains why turnover matters, not why the conclusion is premature.",
+  "trap": "(A) is tempting because it suggests not everyone likes hybrid work, but it does not offer an alternative explanation for the turnover difference.",
+  "time": 105
+ },
+ {
+  "id": "cr2-026",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "complete",
+  "diff": 3,
+  "stimulus": "In a trial of a new migraine drug, patients had 40 percent fewer migraines during treatment than in the month before they enrolled. The manufacturer says this shows the drug is highly effective. The trial does not justify that claim, however, because ______.",
+  "stem": "Which of the following most logically completes the argument?",
+  "choices": [
+   "a 40 percent reduction is larger than the reductions reported for older migraine drugs",
+   "people tend to enrol in such trials when their migraines are at their worst, so their migraine frequency usually falls in the following months even without effective treatment",
+   "the new drug costs more than existing migraine treatments",
+   "the trial was paid for by the manufacturer",
+   "some patients in the trial experienced mild side effects"
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. Without a comparison group, a natural decline from an unusually bad starting point would look like a drug effect. This is the gap that makes the claim unjustified. (A) This would support the manufacturer's claim rather than undermine it. (C) Price says nothing about effectiveness. (D) Funding may invite scrutiny, but it does not show that the trial's results fail to support effectiveness. (E) Side effects bear on safety, not on whether the drug reduced migraines.",
+  "trap": "(D) tempts readers who distrust industry-funded research, but funding alone does not reveal any flaw in what the trial shows.",
+  "time": 120
+ },
+ {
+  "id": "cr2-027",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "complete",
+  "diff": 3,
+  "stimulus": "Shipping components by air costs about five times as much per kilogram as shipping them by sea, yet many electronics makers ship components by air. This practice is not necessarily wasteful, since ______.",
+  "stem": "Which of the following most logically completes the argument?",
+  "choices": [
+   "sea-freight volumes have grown faster than air-freight volumes in recent years",
+   "some components are too large to fit in cargo aircraft",
+   "electronic components lose value quickly as newer models appear, so the weeks saved in transit can be worth more than the extra freight cost",
+   "air freight produces more carbon emissions per kilogram than sea freight",
+   "most electronics makers ship their finished products by sea"
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. This gives a benefit of air freight that can outweigh its higher cost, which is what the claim 'not wasteful' needs. (A) Industry trends do not show that air freight is worth its price. (B) This explains why some goods go by sea, not why choosing air is sensible. (D) This is another drawback of air freight, making the practice look more wasteful. (E) How finished products are shipped does not justify shipping components by air.",
+  "trap": "(B) is tempting because it involves the air-versus-sea choice, but it concerns goods that cannot fly, not the reason for flying the ones that can.",
+  "time": 120
+ },
+ {
+  "id": "cr2-028",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "complete",
+  "diff": 3,
+  "stimulus": "When the city of Lorne widened its main highway from four lanes to six, average rush-hour travel times on the highway were almost unchanged two years later. This outcome does not show that the widening failed to benefit commuters, since ______.",
+  "stem": "Which of the following most logically completes the argument?",
+  "choices": [
+   "the number of people using the highway at rush hour rose by about 40 percent, many of whom had previously travelled at less convenient times or on slower roads",
+   "the widening cost more than the city had originally planned",
+   "construction caused delays on the highway for eighteen months",
+   "most commuters in Lorne drive alone rather than sharing cars",
+   "travel times on other roads in Lorne also stayed roughly the same"
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. Unchanged travel times now apply to many more travellers, some of whom gained a faster or more convenient trip. The widening can therefore benefit commuters even if average times did not fall. (B) Cost overruns are a drawback, not a benefit to commuters. (C) This is a cost of the project, not evidence of a benefit. (D) Car occupancy does not show that commuters benefited. (E) If anything, unchanged times elsewhere fail to show any benefit from the widening.",
+  "trap": "(E) is tempting because it mentions other roads, but stable times there provide no sign that the widening helped anyone.",
+  "time": 120
+ },
+ {
+  "id": "cr2-029",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "complete",
+  "diff": 4,
+  "stimulus": "In a dairy region, farms that use robotic milking machines produce more milk per cow than farms where cows are milked by hand twice a day. Some conclude that the robots' gentler handling is what raises milk yields. A more likely explanation, however, is that ______.",
+  "stem": "Which of the following most logically completes the argument?",
+  "choices": [
+   "some cows are nervous around milking machines when first introduced to them",
+   "milk from robotic farms is tested for quality as often as milk from other farms",
+   "robotic systems let cows be milked whenever they choose, typically three or more times a day, and cows milked more often produce more milk however they are handled",
+   "farmers who use robots spend less of their own time on milking",
+   "robotic milking machines are expensive to install"
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. This identifies a different feature of robotic milking, frequency, that would raise yields regardless of handling, offering a competing explanation. (A) This suggests robots might be less gentle at first, but it does not explain higher yields. (B) Equal testing has no bearing on yield. (D) Saved labour does not explain higher milk output per cow. (E) Cost does not explain why yields per cow are higher.",
+  "trap": "(A) is tempting because it concerns how cows react to robots, but it argues about gentleness without supplying any cause of higher yields.",
+  "time": 135
+ },
+ {
+  "id": "cr2-030",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "complete",
+  "diff": 4,
+  "stimulus": "The peer-to-peer lending platform Fundwell advertises that only 1.5 percent of its loans have ever defaulted, a far lower rate than at traditional consumer lenders. Investors should not treat this figure as evidence that Fundwell's loans are unusually safe, however, because ______.",
+  "stem": "Which of the following most logically completes the argument?",
+  "choices": [
+   "Fundwell rejects about half of the applications it receives",
+   "most of Fundwell's borrowers use their loans to pay off credit card debt",
+   "Fundwell's lending volume has tripled in the past year, and consumer loans seldom default until they have been outstanding for more than a year",
+   "investors on Fundwell can spread their money across many small loans",
+   "traditional lenders charge higher fees than Fundwell does"
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. Most of Fundwell's loans are too new to have reached the age at which defaults usually occur, so its low lifetime default rate is inflated by the platform's rapid growth. (A) Selective approval would tend to support the claim that its loans are safe. (B) Loan purpose alone does not show the default figure is misleading. (D) Diversification is a separate benefit; it does not cast doubt on the default figure. (E) Fees do not explain why the default figure would be misleading.",
+  "trap": "(A) is tempting because it is about Fundwell's lending standards, but strict approval supports, rather than undermines, the safety claim.",
+  "time": 135
+ },
+ {
+  "id": "cr2-031",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "complete",
+  "diff": 5,
+  "stimulus": "In Calvia, the unemployment rate fell from 8 percent to 5 percent over three years, and the government credits its job-training programme, which was designed to place unemployed people in jobs. Yet the number of employed people in Calvia barely changed during that time. The fall in the unemployment rate therefore probably owes little to the programme, since ______.",
+  "stem": "Which of the following most logically completes the argument?",
+  "choices": [
+   "the programme was expanded in its second year",
+   "graduates of the programme earn higher wages than workers who did not attend it",
+   "a fall in the unemployment rate without a rise in employment means that people mostly left the labour force rather than moved into jobs",
+   "unemployment rose in some neighbouring countries during the same period",
+   "Calvia's population grew during the three years"
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. The rate counts only people seeking work. If employment was flat, the fall came from people ceasing to look, which is not what a job-placement programme does. (A) Expansion, if anything, suggests the programme had a larger role. (B) Wage gains for graduates do not explain why the fall in unemployment would owe little to the programme. (D) That would make Calvia's fall look more impressive, not less attributable to the programme. (E) Population growth alone does not establish what caused the fall in the rate.",
+  "trap": "(E) is tempting because it seems relevant to labour statistics, but population growth by itself does not show where the change in the rate came from; the flat employment figure is what matters.",
+  "time": 150
+ },
+ {
+  "id": "cr2-032",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "complete",
+  "diff": 5,
+  "stimulus": "When the patent on a widely used blood-pressure drug expired, cheaper generic versions entered the market and the average price paid for the drug fell by 80 percent. During the same period, however, the original manufacturer slightly raised the price of its branded version. This is not as puzzling as it may seem, since ______.",
+  "stem": "Which of the following most logically completes the argument?",
+  "choices": [
+   "the fall in the average price was due mainly to the generics' much lower prices",
+   "before the patent expired, some pharmacies stocked only the branded version",
+   "the manufacturer spent heavily on research to develop the drug",
+   "once generics were available, the buyers who stayed with the brand were mostly those willing to pay extra for a familiar name, so the manufacturer could earn more by charging that smaller group a higher price",
+   "generic drugs must be shown to be equivalent to the original before they can be sold"
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. The brand lost price-sensitive buyers to generics. The remaining buyers care little about price, so raising the price to them can be the profit-maximising response, resolving the apparent puzzle. (A) This restates part of the situation without explaining the brand's price rise. (B) This concerns the period before generics and does not explain the later price increase. (C) Research costs were already sunk and do not explain a price increase after patent expiry. (E) Equivalence would make it harder, not easier, to explain a higher brand price.",
+  "trap": "(C) is tempting because research costs are often cited to justify drug prices, but those costs were fixed long before and cannot explain raising the price now.",
+  "time": 150
+ },
+ {
+  "id": "cr2-033",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 1,
+  "stimulus": "A hardware store plans to stop stocking its slowest-selling paint brands and use the freed shelf space for additional garden tools. The owner reasons that this will raise the store's profits, because garden tools earn a higher profit per square metre of shelf space than the paints being dropped.",
+  "stem": "The argument depends on which of the following assumptions?",
+  "choices": [
+   "The store's paint sales have declined over the past year.",
+   "Garden tools cost less to keep in stock than paint does.",
+   "The store will continue to stock its best-selling paint brands.",
+   "Demand for garden tools at the store is high enough that the additional tools will actually sell.",
+   "Garden tools are more popular than paint across the country."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. Profit per square metre is earned only on tools that sell. If the extra tools sit unsold, the swap cannot raise profits, so the argument needs this. (A) The argument does not depend on any trend in paint sales. (B) The profit-per-square-metre figure already accounts for profitability; lower stocking cost is not required. (C) Keeping the best-sellers is not required for the swap of slow sellers to raise profits. (E) National popularity is not needed; only demand at this store matters.",
+  "trap": "(B) is tempting because it would help the plan, but the argument already relies on higher profit per square metre and does not need lower stocking costs as well.",
+  "time": 90
+ },
+ {
+  "id": "cr2-034",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 1,
+  "stimulus": "Hail damaged most of farmer Osei's tomato crop last season. This season, Osei has stretched hail nets over all of his tomato fields, so he concludes that his tomatoes will not be damaged by hail this season.",
+  "stem": "Which of the following is an assumption on which the argument relies?",
+  "choices": [
+   "Other farmers in the area also use hail nets.",
+   "The hail nets are strong enough to stop the hailstones likely to fall on his fields.",
+   "Hail is the only kind of weather that damages tomatoes.",
+   "Hail nets are the most cost-effective protection against hail.",
+   "Hail will fall on Osei's fields this season."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. If hail can tear through or overload the nets, the crop could still be damaged. The conclusion requires the nets to withstand the hail that falls. (A) What other farmers do does not affect Osei's crop. (C) The conclusion concerns hail damage only; other weather risks are irrelevant. (D) Cost-effectiveness is irrelevant to whether the nets will prevent damage. (E) The conclusion holds whether or not hail falls, so this is not required.",
+  "trap": "(E) is tempting because the nets matter only if hail falls, but the claim that there will be no hail damage remains true even in a hail-free season.",
+  "time": 90
+ },
+ {
+  "id": "cr2-035",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 2,
+  "stimulus": "Planners in Rexford propose a daily charge on private cars entering the city centre, arguing that it will improve air quality there, since most of the centre's air pollution comes from car exhaust.",
+  "stem": "The argument depends on which of the following assumptions?",
+  "choices": [
+   "Most drivers who enter the centre live outside the city.",
+   "Air quality in Rexford's centre is worse than in comparable cities.",
+   "A substantial number of drivers will respond to the charge by driving into the centre less often.",
+   "Pollution from other sources in the centre will also decline.",
+   "The charge will raise enough revenue to fund new bus routes."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. The charge improves air quality only if it reduces car traffic. If drivers simply pay and keep driving, exhaust levels stay the same. (A) Where drivers live does not matter to whether exhaust falls. (B) The argument is about improvement, not about how Rexford compares. (D) Since most pollution comes from cars, cutting car traffic can improve air quality even if other sources stay constant. (E) Revenue use is not part of the reasoning about air quality.",
+  "trap": "(D) is tempting because more reductions would help, but the argument needs only that car exhaust falls, not that every source declines.",
+  "time": 105
+ },
+ {
+  "id": "cr2-036",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 2,
+  "stimulus": "A software firm found that employees who took its optional leadership course were promoted at twice the rate of employees who did not. To increase the number of internal candidates ready for promotion, the firm will now require all employees to take the course.",
+  "stem": "Which of the following is an assumption on which the argument relies?",
+  "choices": [
+   "The leadership course is the most effective training the firm offers.",
+   "Most employees at the firm want to be promoted.",
+   "Making the course mandatory will not raise its cost per employee.",
+   "Employees who are promoted are more likely to stay with the firm.",
+   "The higher promotion rate among course-takers resulted at least partly from the course itself, rather than entirely from the kind of employees who chose to take it."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. If ambitious, already-strong employees chose the course and would have been promoted anyway, requiring it for everyone would not create more promotable candidates. (A) The plan requires the course to help, not to be the best training available. (B) The goal is more ready candidates; this does not require that most employees want promotion. (C) Cost does not affect whether the course increases readiness for promotion. (D) Retention is irrelevant to whether the course prepares candidates.",
+  "trap": "(B) is tempting because the plan seems aimed at ambitious staff, but the course could increase readiness even if many employees are not seeking promotion.",
+  "time": 105
+ },
+ {
+  "id": "cr2-037",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 3,
+  "stimulus": "A grocery delivery company plans to replace its single central warehouse with six small 'dark stores' spread across the city. Because each dark store will be much closer to the customers it serves, the company expects its average delivery time to fall from 90 minutes to under 30.",
+  "stem": "The argument depends on which of the following assumptions?",
+  "choices": [
+   "Renting six small stores will cost less than renting one large warehouse.",
+   "Customers value fast delivery more than low prices.",
+   "Delivery drivers will be paid more under the new system.",
+   "Each dark store will stock, or quickly receive, most of the items its customers typically order.",
+   "None of the company's competitors operates dark stores."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. If many orders included items that only another location carries, those orders would wait for transfers, and proximity would not cut times this much. (A) Cost is irrelevant to the delivery-time prediction. (B) Customer preferences do not affect how fast deliveries will be. (C) Pay is unrelated to the predicted time savings. (E) Competitors' strategies do not affect this company's delivery times.",
+  "trap": "(B) is tempting because it explains why speed matters, but the argument concerns whether deliveries will be faster, not whether customers want them to be.",
+  "time": 120
+ },
+ {
+  "id": "cr2-038",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 3,
+  "stimulus": "A credit-scoring startup claims that its model, which uses applicants' mobile phone payment histories, predicts loan repayment better than traditional credit scores. As evidence, it notes that loans it approved in a pilot programme defaulted half as often as loans approved by banks in the same city using traditional scores.",
+  "stem": "The argument depends on which of the following assumptions?",
+  "choices": [
+   "Banks in the city will adopt the startup's model.",
+   "The startup's loans carried higher interest rates than the banks' loans.",
+   "The applicants in the startup's pilot were not, for reasons unrelated to the model, a lower-risk group than the banks' borrowers.",
+   "Mobile phone payment data are available for most loan applicants in the city.",
+   "The startup's process makes no use of traditional credit scores."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. If the pilot's applicants were safer to begin with, for example salaried professionals, the lower default rate would reflect the applicant pool rather than better prediction. (A) Future adoption is irrelevant to the comparison. (B) Higher rates would, if anything, tend to raise defaults; the argument does not require them. (D) Availability affects how widely the model can be used, not whether it predicts better. (E) The claim is about the model's predictive power; the argument does not need credit scores to be absent.",
+  "trap": "(D) is tempting because the model needs phone data to work, but the argument is about how well it predicts where data exist, not how widely it can be applied.",
+  "time": 120
+ },
+ {
+  "id": "cr2-039",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 4,
+  "stimulus": "At a medieval village site, archaeologists found that houses built after 1350 were on average about a third smaller than those built before. Since the Black Death killed much of the population around 1350, the archaeologists conclude that post-plague households were smaller and so needed less living space.",
+  "stem": "The argument depends on which of the following assumptions?",
+  "choices": [
+   "The plague killed a larger share of children than of adults.",
+   "After 1350, a single household did not typically occupy two or more of the smaller houses.",
+   "All the houses at the site were built using the same methods.",
+   "Building materials were cheaper after 1350 than before.",
+   "The village's population never returned to its pre-plague level."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. If households spread across several small houses, smaller houses would not mean smaller households. The conclusion fails if this assumption is false. (A) Households could be smaller without this particular pattern of deaths. (C) Construction methods are irrelevant to household size. (D) Cheaper materials would, if anything, favour larger houses; the argument does not need this. (E) The argument concerns houses built after 1350, not whether the population later recovered.",
+  "trap": "(E) is tempting because a lasting population decline seems to fit the story, but household size, not total population, is what the argument needs.",
+  "time": 135
+ },
+ {
+  "id": "cr2-040",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 4,
+  "stimulus": "A pharmacy chain plans to cut costs by having pharmacists at a central office counsel evening customers about new prescriptions by video link, instead of employing a pharmacist at each branch in the evening. The chain says customers' health will not suffer, because studies show patients understand medication instructions equally well whether counselled in person or by video.",
+  "stem": "The argument depends on which of the following assumptions?",
+  "choices": [
+   "The video link costs less than the evening wages of branch pharmacists.",
+   "Video counselling sessions take less time than in-person sessions.",
+   "Most prescriptions at the chain are filled during the day.",
+   "Pharmacists prefer working at a central office to working in branches.",
+   "Evening customers are not disproportionately people, such as those with poor eyesight or hearing, for whom video counselling works less well than it did for the patients in the studies."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. The studies apply to the chain's customers only if those customers resemble the studied patients. If evening customers struggle more with video, outcomes could suffer. (A) This bears on the cost goal, but the argument in question is about health outcomes. (B) Session length does not matter to whether understanding is equal. (C) The share of evening prescriptions affects the plan's scale, not whether health will suffer. (D) Staff preferences are irrelevant to customers' health.",
+  "trap": "(A) is tempting because the plan exists to save money, but the argument being evaluated is the claim that health will not suffer.",
+  "time": 135
+ },
+ {
+  "id": "cr2-041",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 5,
+  "stimulus": "Over twenty years, wheat yields per hectare in the province of Dravia rose by 30 percent, while the amount of nitrogen fertiliser applied per hectare stayed roughly constant. An agronomist concludes that the yield gains must have come from factors other than fertiliser, such as improved seed varieties.",
+  "stem": "The argument depends on which of the following assumptions?",
+  "choices": [
+   "The effect of each kilogram of nitrogen fertiliser on yields did not rise substantially during the period, for instance through better timing of application.",
+   "The total area planted with wheat in Dravia did not change during the period.",
+   "Wheat yields in neighbouring provinces rose by less than 30 percent.",
+   "Improved seed varieties were widely adopted in Dravia during the period.",
+   "Nitrogen is the only kind of fertiliser that Dravian farmers use."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. If the same quantity of fertiliser became more effective, fertiliser could account for the gains even though the amount used was constant. The conclusion needs this possibility ruled out. (B) If area changed, that would itself be a factor other than fertiliser, consistent with the conclusion. (C) Comparisons with other provinces are not needed to rule out fertiliser. (D) Seeds are given only as an example; the conclusion is that the cause was something other than fertiliser, whatever it was. (E) Too strong: farmers could use other fertilisers in constant amounts without hurting the argument.",
+  "trap": "(E) is tempting because extra non-nitrogen fertiliser would undermine the conclusion, but the argument requires only that other fertiliser use did not rise, not that none is used.",
+  "time": 150
+ },
+ {
+  "id": "cr2-042",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 5,
+  "stimulus": "A national retailer converted some of its stores to accept only cashless payments. In the following year, sales at those stores were 8 percent lower than in the year before, while sales at its other stores were unchanged. The retailer's head of strategy concludes that going cashless cost the converted stores sales by turning away customers who prefer to pay in cash.",
+  "stem": "The argument depends on which of the following assumptions?",
+  "choices": [
+   "Sales at the converted stores will continue to decline.",
+   "The stores chosen for conversion were not selected because they were already expected to face falling sales, for example from new competitors nearby.",
+   "Most customers at the converted stores had previously paid by card.",
+   "Customers turned away from the converted stores did not shop at the retailer's other stores instead.",
+   "Card-processing fees at the converted stores did not exceed the cost of handling cash."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. If the converted stores were picked because a decline was coming anyway, the 8 percent drop could have nothing to do with cash. The conclusion requires that no such selection effect explains the difference. (A) The conclusion concerns the past year only. (C) The argument does not depend on what share of customers used cards. (D) Whether lost customers went to sister stores affects company totals, not the claim that the converted stores lost sales. (E) Fees affect profit, not the sales figures the argument is about.",
+  "trap": "(D) is tempting because sister stores' unchanged sales seem relevant, but the conclusion is about sales at the converted stores, which fell whether or not lost customers went elsewhere.",
+  "time": 150
+ },
+ {
+  "id": "cr2-043",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 1,
+  "stimulus": "Since a neighbourhood bakery began posting photos of its pastries on social media six months ago, its weekday sales have risen by 20 percent. The owner concludes that the social media posts caused the increase.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "Photos of pastries attract more engagement on social media than most food photos.",
+   "The bakery's weekend sales also rose over the six months.",
+   "The bakery raised its prices slightly last year.",
+   "Six months ago, a large office building opened across the street from the bakery, bringing hundreds of workers to the block on weekdays.",
+   "Many bakeries post photos of their products on social media."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. This offers another cause that fits the timing and the weekday pattern exactly, making the posts a less likely explanation. (A) This, if anything, supports the idea that the posts drew customers. (B) A rise in weekend sales is consistent with the posts working and does not weaken the argument. (C) A price rise before the period does not explain a later sales increase. (E) Other bakeries' habits do not bear on what caused this bakery's increase.",
+  "trap": "(B) may seem to point to a general rise unrelated to the posts, but the posts could boost weekend sales too, so it does not weaken the owner's conclusion.",
+  "time": 90
+ },
+ {
+  "id": "cr2-044",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 1,
+  "stimulus": "A haulage company found that its trucks fitted with speed limiters used 10 percent less fuel per kilometre than its trucks without them. It concludes that fitting limiters to all of its trucks will cut its fuel use per kilometre by about 10 percent.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "The trucks already fitted with limiters mostly run on motorways, where limiting speed saves the most fuel, while the rest mostly make slow urban deliveries.",
+   "Some of the trucks without limiters are newer models.",
+   "Speed limiters are inexpensive to install.",
+   "Some drivers dislike driving trucks with speed limiters.",
+   "Fuel prices have risen sharply this year."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. Urban trucks rarely reach the limited speed, so a limiter would save them little. The 10 percent figure would therefore overstate the savings from fitting all trucks. (B) If newer models are more efficient, the limiter effect may even be understated. (C) Cost has no bearing on how much fuel will be saved. (D) Driver attitudes do not show the fuel savings will be smaller. (E) Prices affect the value of savings, not the amount of fuel saved.",
+  "trap": "(D) is tempting because driver resistance sounds like a problem, but disliking the limiters does not change how much fuel they save.",
+  "time": 90
+ },
+ {
+  "id": "cr2-045",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 2,
+  "stimulus": "In a survey, people who took a daily vitamin D supplement reported having fewer colds last winter than people who took no supplement. A supplement maker concludes that vitamin D helps prevent colds.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "The survey included people from several different countries.",
+   "People who take daily supplements are more likely than others to exercise regularly, sleep well and wash their hands often, all of which reduce the risk of colds.",
+   "The body produces vitamin D when skin is exposed to sunlight.",
+   "Colds are more common in winter than in summer.",
+   "Some people who took the supplement still caught colds."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. These habits could explain the difference in colds without any effect from vitamin D. (A) A varied sample does not undermine the comparison. (C) This is a fact about vitamin D, not evidence against its effect on colds. (D) Both groups were surveyed about the same winter, so this does not affect the comparison. (E) The claim is that vitamin D helps prevent colds, not that it prevents every cold.",
+  "trap": "(E) is tempting because it shows the supplement is not perfect, but 'helps prevent' allows for some colds among users.",
+  "time": 105
+ },
+ {
+  "id": "cr2-046",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 2,
+  "stimulus": "Two years after the city of Ashby planted 5,000 street trees in its eastern district, average summer surface temperatures there were 2°C lower than before the planting. The city's environment office concludes that the trees cooled the district.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "Street trees also improve air quality.",
+   "Most residents of the eastern district supported the planting.",
+   "Over the same two years, average summer surface temperatures across the entire Ashby region, including districts where no trees were planted, also fell by about 2°C.",
+   "The eastern district has more paved surfaces than other districts.",
+   "The trees planted were species native to the region."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. If areas without new trees cooled just as much, the trees are not needed to explain the drop. (A) A further benefit of trees does not bear on the cooling claim. (B) Residents' opinions are irrelevant to the cause of cooling. (D) This might explain why the district was hot, not why it became cooler. (E) Species choice does not weaken the link between planting and cooling.",
+  "trap": "(D) is tempting because paving affects surface temperatures, but it describes a constant condition and so cannot explain the change.",
+  "time": 105
+ },
+ {
+  "id": "cr2-047",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 2,
+  "stimulus": "After the city of Brelle introduced a four-day working week for its municipal employees, sick days taken by those employees fell by 25 percent in the first year. The mayor argues that the shorter week improved employees' health.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "Sick days among municipal employees had been rising for five years before the change.",
+   "In the same year, the city began requiring a doctor's note for every sick day, which it had not previously required.",
+   "Private employers in Brelle did not adopt a four-day week.",
+   "The city's overtime spending fell during the same year.",
+   "Most municipal employees supported the change."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. A stricter rule could reduce recorded sick days without any change in health, providing an alternative explanation. (A) A reversal of a rising trend makes the policy look more effective, not less. (C) This does not show that the fall among municipal employees had another cause. (D) Lower overtime spending does not explain fewer sick days. (E) Support for the policy does not bear on why sick days fell.",
+  "trap": "(A) might look like evidence of a statistical quirk, but a reversal after years of increases actually strengthens the case for the policy.",
+  "time": 105
+ },
+ {
+  "id": "cr2-048",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 3,
+  "stimulus": "Cardova Bank reports that since it introduced fingerprint login for its mobile app, reports of fraudulent access to customer accounts have fallen by 60 percent. The bank concludes that fingerprint login has made its customers' money much safer.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "Several other banks have also introduced fingerprint login.",
+   "Most fraud against the bank's customers now takes the form of phone scams in which customers are persuaded to transfer money themselves, which the bank does not record as fraudulent access.",
+   "Fingerprint login is faster for customers than typing a password.",
+   "Reports of fraudulent access had been stable for several years before the change.",
+   "Customers who use fingerprint login use the app more often than other customers."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. If fraud has simply shifted to a form the statistic does not count, customers' money may be no safer, even though unauthorised logins fell. (A) Other banks' choices do not affect what happened at Cardova. (C) Convenience does not bear on safety. (D) A sudden drop after a stable period supports the bank's conclusion. (E) Usage frequency does not show that money is less safe.",
+  "trap": "(D) is tempting because it mentions the fraud figures, but stable earlier figures make the drop look caused by the new login, strengthening the bank's case.",
+  "time": 120
+ },
+ {
+  "id": "cr2-049",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 3,
+  "stimulus": "Farmers in the Lussa basin who switched from conventional ploughing to no-till farming have seen the organic carbon content of their soil rise. Environmental groups conclude that widespread adoption of no-till farming would substantially reduce the amount of carbon in the atmosphere.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "Studies of no-till fields find that the extra carbon builds up only in the top few centimetres of soil, while carbon in deeper layers falls by a similar amount.",
+   "No-till farming is more common in dry regions than in wet ones.",
+   "Higher soil organic carbon improves the soil's ability to retain water.",
+   "No-till farming reduces the fuel used by tractors.",
+   "Some farmers find that no-till farming increases weed problems."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. If carbon is merely redistributed within the soil, the total stored does not rise, so no-till would not pull carbon out of the atmosphere. (B) Where it is common does not bear on its carbon effect. (C) This is another benefit and does not weaken the climate claim. (D) Less fuel burned would, if anything, also reduce atmospheric carbon, so this strengthens the case. (E) Weed problems may discourage adoption, but the conclusion is about what widespread adoption would achieve.",
+  "trap": "(E) is tempting because it questions the practice, but the conclusion is conditional on adoption and concerns its effect, not its popularity.",
+  "time": 120
+ },
+ {
+  "id": "cr2-050",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 3,
+  "stimulus": "A wooden boat found in a peat bog has been dated by tree-ring analysis of its planks to about 1100 BCE. Since boats of its design are otherwise known only from sites dating to after 800 BCE, researchers conclude that the design was developed about three centuries earlier than was previously believed.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "Boats of other designs dating from 1100 BCE have been found in the same region.",
+   "Very few boats of any design from before 800 BCE have survived.",
+   "Peat bogs preserve wood unusually well.",
+   "Tree-ring analysis dates when the timber was felled, and boats of this kind were often built with planks salvaged from much older structures.",
+   "Tree-ring dating is generally accurate to within a few years."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. If the planks were reused, the boat could have been built well after 1100 BCE, possibly after 800 BCE, so the design need not be older than thought. (A) Other designs from that era do not show this design is later. (B) This explains why earlier examples might be missing, which fits the conclusion. (C) Good preservation explains the boat's survival but does not challenge its date. (E) This supports the date and so the conclusion.",
+  "trap": "(B) is tempting because it raises doubts about the record, but it actually explains why the design could be older without leaving earlier examples, supporting the researchers.",
+  "time": 120
+ },
+ {
+  "id": "cr2-051",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 4,
+  "stimulus": "An online retailer offered free return shipping to a randomly selected half of its customers for three months. During that time, those customers bought 18 percent more, by value, than the other customers. The retailer concludes that offering free returns to all customers would increase its profits.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "Customers offered free returns gave the retailer higher satisfaction ratings.",
+   "Several of the retailer's competitors already offer free returns.",
+   "Customers offered free returns sent back a much larger share of their purchases, and the cost of processing the returns exceeded the profit on the additional sales.",
+   "Most of the retailer's sales are of clothing and shoes.",
+   "The three-month test took place during the holiday shopping season."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. The conclusion is about profit, not sales. If returns cost more than the extra sales earned, free returns would reduce profit. (A) Higher satisfaction, if anything, supports the policy. (B) Competitors' policies do not show the policy would fail to raise this retailer's profit. (D) Product mix alone does not show that profits would fall. (E) Because customers were assigned at random, both groups shopped in the same season, so the comparison remains fair.",
+  "trap": "(E) is tempting because holiday shopping is unusual, but random assignment means the season affected both groups equally, so it cannot explain the 18 percent difference.",
+  "time": 135
+ },
+ {
+  "id": "cr2-052",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 4,
+  "stimulus": "After a parcel company introduced route-planning software at one of its depots, the average number of parcels each driver delivered per day rose from 140 to 165. The company concludes that the software made drivers more productive and plans to install it at every depot.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "The software also reduced the fuel used on each route.",
+   "Some drivers found the software's suggested routes confusing at first.",
+   "Drivers at the company's other depots also deliver about 140 parcels a day.",
+   "The software cost less than the wages it would save if it worked as claimed.",
+   "The software was introduced at the start of the pre-holiday months, when customers order more items at once, so each stop involves delivering more parcels."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. Parcels per day can rise because each address receives more parcels, without drivers making their rounds any more efficiently, so the rise may be seasonal rather than due to the software. (A) This is a further benefit that fits the claim that the software improved routing. (B) Initial confusion would, if anything, make the observed gain harder to achieve, not explain it away. (C) This matches the pre-software baseline and does not explain the rise. (D) Cost-effectiveness does not bear on whether the software caused the rise.",
+  "trap": "(B) is tempting because it reports a problem with the software, but early confusion does not provide another cause for the rise in deliveries.",
+  "time": 135
+ },
+ {
+  "id": "cr2-053",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 5,
+  "stimulus": "A study following 20,000 adults for ten years found that those who took statins, cholesterol-lowering drugs, developed dementia at a 30 percent lower rate than those who did not. The researchers concluded that statins protect against dementia.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "Statins cause muscle pain in some patients.",
+   "Some statin users in the study stopped taking the drug before the study ended.",
+   "Doctors are less likely to prescribe statins to patients who show early signs of cognitive decline, since such patients often have trouble taking daily medication reliably.",
+   "High cholesterol is a known risk factor for dementia.",
+   "Statin users in the study were, on average, slightly older than non-users."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. This means people already on the path to dementia were steered away from statins, so the non-user group would have more dementia regardless of any drug effect. (A) Side effects are irrelevant to whether statins prevent dementia. (B) Including people who stopped would tend to dilute any benefit, so the true effect might be even larger. (D) This offers a mechanism by which statins could protect, strengthening the conclusion. (E) Older people are at greater risk of dementia, so this makes the users' lower rate more impressive.",
+  "trap": "(E) is tempting because it reveals a difference between the groups, but that difference favours the non-users, so it strengthens rather than weakens the conclusion.",
+  "time": 150
+ },
+ {
+  "id": "cr2-054",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 5,
+  "stimulus": "In cities that opened light-rail lines in the past twenty years, property values within 500 metres of the new stations rose, on average, 15 percent more than property values elsewhere in those cities. Planners in Kerrow cite this as evidence that building light rail creates new economic value for a city.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "The cities that built light rail mostly had growing populations.",
+   "Construction of the light-rail lines often took longer than planned.",
+   "Property taxes in Kerrow are lower than in most of the cities studied.",
+   "Ridership on the light-rail lines grew steadily after they opened.",
+   "The faster rise near stations was matched by slower growth in other parts of those cities, as households and businesses moved toward the stations rather than new activity arising."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. If value merely shifted from one part of the city to another, the lines redistributed value rather than creating it, which is the conclusion at issue. (A) Population growth affects all parts of a city, so it does not explain the gap between areas near and far from stations. (B) Delays are a cost of building but do not undermine the evidence of value created. (C) Tax levels do not bear on whether light rail creates value. (D) Growing use supports the idea that the lines provided value.",
+  "trap": "(A) is tempting because growing cities might see rising property values anyway, but that growth would affect both groups of property and so cannot explain the 15 percent difference.",
+  "time": 150
+ },
+ {
+  "id": "cr2-055",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 1,
+  "stimulus": "A vineyard owner noticed that vines in rows where she had sown clover between the rows produced more grapes than vines in rows without clover. She concludes that the clover, which adds nitrogen to the soil, increased the vines' yield.",
+  "stem": "Which of the following, if true, most strongly supports the conclusion?",
+  "choices": [
+   "The rows with and without clover alternated across the same slope and received identical care.",
+   "Grape prices rose this year.",
+   "Some of the vines in the clover rows are older than the others.",
+   "Clover flowers attract bees to the vineyard.",
+   "Few other vineyards in the region sow clover."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. This rules out differences in location or care as causes, leaving the clover as the likeliest explanation. (B) Prices have no bearing on what caused higher yields. (C) This suggests vine age, not clover, might explain the difference, which weakens the conclusion. (D) Grapevines do not need bees, and this does not support the nitrogen explanation. (E) Other vineyards' practices do not bear on this comparison.",
+  "trap": "(D) is tempting because it names a benefit of clover, but it does not explain higher grape yields.",
+  "time": 90
+ },
+ {
+  "id": "cr2-056",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 2,
+  "stimulus": "A shoe retailer redesigned its website so that product pages show customers' photos of the shoes being worn. In the month after the redesign, the share of site visitors who made a purchase rose from 2.1 to 2.8 percent. The retailer attributes the rise to the customer photos.",
+  "stem": "Which of the following, if true, most strongly supports the conclusion?",
+  "choices": [
+   "Many other online retailers display customer photos.",
+   "The retailer obtains customer photos at no cost.",
+   "The month after the redesign included a national holiday sale.",
+   "The number of visitors to the website rose in the same month.",
+   "Purchase rates rose only on product pages that displayed customer photos and stayed flat on pages for shoes that had no customer photos yet."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. This links the increase directly to the photos within the same site and month, ruling out site-wide causes. (A) Others' practices do not show that the photos caused this rise. (B) Cost is irrelevant to what caused the increase. (C) This offers an alternative explanation and weakens the conclusion. (D) The figure in question is a rate, so more visitors do not explain it or support the photo explanation.",
+  "trap": "(D) is tempting because more traffic sounds like good news, but the evidence is a conversion rate, which more visitors would not raise.",
+  "time": 105
+ },
+ {
+  "id": "cr2-057",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 2,
+  "stimulus": "A logistics firm began offering on-site childcare at its main depot. Over the next year, the share of employees there who quit within a year of being hired fell from 30 percent to 18 percent. Management believes the childcare explains the improvement.",
+  "stem": "Which of the following, if true, most strongly supports the conclusion?",
+  "choices": [
+   "Most of the main depot's employees are over 50 and have no young children.",
+   "At the firm's other depots, which did not offer childcare, quit rates stayed near 30 percent over the same year.",
+   "The firm pays its depot workers above the regional average.",
+   "The firm opened a new depot in the same year.",
+   "Some employees used the childcare only occasionally."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. If conditions at the firm otherwise stayed the same, as the unchanged rates elsewhere suggest, the childcare is the likeliest cause of the change at the main depot. (A) If few employees could use childcare, it is less likely to explain the drop; this weakens the conclusion. (C) If pay was already high, it does not explain the change. (D) A new depot does not bear on quit rates at the main depot. (E) Occasional use does not show that childcare affected quitting.",
+  "trap": "(C) is tempting because pay affects quitting, but a long-standing pay level cannot explain a change in quit rates.",
+  "time": 105
+ },
+ {
+  "id": "cr2-058",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 3,
+  "stimulus": "After a hospital began requiring a pharmacist to review every prescription for patients over 75, adverse drug reactions among those patients fell by 40 percent. Administrators conclude that the reviews prevented many reactions.",
+  "stem": "Which of the following, if true, most strongly supports the conclusion?",
+  "choices": [
+   "The hospital hired additional pharmacists to carry out the reviews.",
+   "Review records show that pharmacists changed or cancelled about one prescription in eight, mostly drug combinations known to cause adverse reactions in elderly patients.",
+   "Adverse drug reactions also fell among patients under 75 during the same period.",
+   "Adverse drug reactions are more common among elderly patients than among younger ones.",
+   "Some patients over 75 stayed in the hospital for only a day."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. This shows the reviews actually intervened on exactly the prescriptions most likely to cause reactions, giving a mechanism for the decline. (A) Staffing details do not show that the reviews worked. (C) A similar fall in the unreviewed group suggests some other cause, weakening the conclusion. (D) This explains why the policy targeted older patients, not whether it succeeded. (E) Length of stay does not bear on whether the reviews prevented reactions.",
+  "trap": "(D) is tempting because it supports the choice of target group, but it does not show the reviews reduced reactions.",
+  "time": 120
+ },
+ {
+  "id": "cr2-059",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 3,
+  "stimulus": "In a Bronze Age cemetery, women's graves contain far more imported amber beads than men's graves. One researcher argues that this shows women controlled the community's long-distance amber trade.",
+  "stem": "Which of the following, if true, most strongly supports the conclusion?",
+  "choices": [
+   "Amber was highly valued throughout Bronze Age Europe.",
+   "The nearest sources of amber were hundreds of kilometres away.",
+   "Women's graves that contain amber also often contain balance scales and standardised weights of the kind used in long-distance trade, items absent from men's graves.",
+   "Men's graves contain more weapons than women's graves.",
+   "Amber beads were commonly given as wedding gifts to brides."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. Trading equipment buried with women links them to the trade itself, not merely to owning amber. (A) Value explains why amber was traded, not who controlled the trade. (B) This only confirms the amber was imported, which the argument already states. (D) Weapons in men's graves do not show women controlled trade. (E) This explains women's amber without any role in trade, weakening the argument.",
+  "trap": "(B) is tempting because distance makes amber a trade good, but the argument already grants that; the question is who controlled the trade.",
+  "time": 120
+ },
+ {
+  "id": "cr2-060",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 3,
+  "stimulus": "A port authority attributes a 25 percent fall in average container dwell time, the time containers wait in the port before being collected, to its new online system for booking truck pick-up slots.",
+  "stem": "Which of the following, if true, most strongly supports the port authority's view?",
+  "choices": [
+   "Some trucking firms complained that booking slots were hard to obtain.",
+   "Most containers handled at the port hold consumer goods.",
+   "Nearby ports have longer average dwell times.",
+   "Dwell time fell sharply for containers collected by trucking firms that used the booking system but hardly changed for those collected by firms that kept arriving without bookings.",
+   "The booking system was developed by an outside software company."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. The fall occurred where the system was used and not where it was not, which ties the improvement to the system. (A) Complaints suggest friction, if anything, not that the system reduced dwell time. (B) The type of cargo does not bear on the cause of the fall. (C) A comparison with other ports does not show why this port's dwell time fell. (E) Who built the system is irrelevant to its effect.",
+  "trap": "(C) is tempting because it makes the port look efficient, but it does not connect the fall in dwell time to the booking system.",
+  "time": 120
+ },
+ {
+  "id": "cr2-061",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 4,
+  "stimulus": "A digital lender stopped using credit scores and began approving loans with a model based on applicants' bank-account cash flows. Since then, its default rate has fallen from 6 percent to 4 percent, even though it now approves more applicants. The lender concludes that the cash-flow model identifies creditworthy borrowers better than credit scores did.",
+  "stem": "Which of the following, if true, most strongly supports the conclusion?",
+  "choices": [
+   "The lender's competitors still rely on credit scores.",
+   "Interest rates fell during the period, making loans easier to repay.",
+   "Many of the newly approved applicants had no credit score at all.",
+   "Cash-flow data cost more to collect than credit scores.",
+   "When the model was applied to loans the lender made in earlier years, the loans it would have rejected had defaulted at three times the rate of those it would have approved, a wider gap than credit scores produced."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. Testing both methods on the same past loans removes changes in economic conditions as an explanation and shows directly that the model sorts borrowers better. (A) What competitors do does not show which method predicts better. (B) This offers another explanation for fewer defaults, weakening the conclusion. (C) This explains how approvals rose but does not show these borrowers repay well. (D) Cost is irrelevant to predictive accuracy.",
+  "trap": "(C) is tempting because it explains the higher approval count, but it says nothing about whether those borrowers repay, which is the point at issue.",
+  "time": 135
+ },
+ {
+  "id": "cr2-062",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 4,
+  "stimulus": "Ranchers in a dry region claim that reintroducing beavers to local streams has raised the water table, because beaver dams slow the flow of water and allow more of it to soak into the ground. Critics point out that the region has had above-average rainfall in the years since the beavers returned.",
+  "stem": "Which of the following, if true, most strongly supports the ranchers' claim against the critics' objection?",
+  "choices": [
+   "Water levels in wells near streams with beaver dams rose substantially more over those years than levels in wells near similar streams without beavers.",
+   "Floods sometimes destroy beaver dams.",
+   "Rainfall in the region was below average for most of the past century.",
+   "Beaver ponds provide habitat for many species of birds.",
+   "Ranchers in the region depend on groundwater to water their cattle."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. Both sets of wells received the same extra rainfall, so the larger rise near beaver dams points to the beavers as a cause beyond the rain. (B) This would, if anything, limit the beavers' effect. (C) Long-run averages do not separate the effect of beavers from recent rainfall. (D) An ecological benefit does not bear on the water table. (E) This explains the ranchers' interest, not whether their claim is correct.",
+  "trap": "(C) is tempting because it concerns rainfall, but it does not distinguish between the rain and the beavers as causes of the recent rise.",
+  "time": 135
+ },
+ {
+  "id": "cr2-063",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 5,
+  "stimulus": "When Corvia lowered the age at which workers can claim a full state pension from 67 to 65, employment among 65- and 66-year-olds fell sharply. Some economists argue that this shows many older people keep working mainly because they cannot yet afford to retire, not because they want to.",
+  "stem": "Which of the following, if true, most strongly supports the economists' argument?",
+  "choices": [
+   "The fall in employment was concentrated among 65- and 66-year-olds with little savings, while employment among those with substantial private savings barely changed.",
+   "The reform was announced five years before it took effect.",
+   "Some 65-year-olds who left paid work took up volunteer positions.",
+   "Employment among people aged 60 to 64 did not change after the reform.",
+   "Corvia's state pension payments are lower than those of most neighbouring countries."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. People with savings could already afford to retire, so the pension change made little difference to them. That the change mattered only for those without savings points to affordability as the reason they had been working. (B) Advance notice does not bear on the motive for working. (C) Volunteering says little about whether they worked earlier from need. (D) This confirms the reform affected only the eligible ages but does not show why people had been working. (E) A low pension would make it harder to retire on it, which does not explain why so many retired once eligible.",
+  "trap": "(D) is tempting because it ties the fall to the reform itself, but the argument concerns why people worked, and only the savings pattern addresses that.",
+  "time": 150
+ },
+ {
+  "id": "cr2-064",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 5,
+  "stimulus": "Sales of a pharmacy's own-brand painkiller rose 50 percent after it was moved to the shelf directly beside a branded painkiller with the same active ingredient, which costs twice as much. The manager concludes that many shoppers, once they can easily compare the two, choose the cheaper product with identical ingredients.",
+  "stem": "Which of the following, if true, most strongly supports the conclusion?",
+  "choices": [
+   "After the move, sales of the branded painkiller fell by about as many units as own-brand sales gained, while total painkiller sales stayed the same.",
+   "The branded painkiller is heavily advertised on television.",
+   "Before the move, the own-brand painkiller was on a low shelf in a little-visited aisle.",
+   "Own-brand products earn the pharmacy higher profit margins than branded products.",
+   "Shoppers who buy painkillers usually want to use them right away."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. Shoppers shifted from the brand to the own brand rather than new demand appearing, which is exactly what side-by-side comparison would produce. (B) Advertising does not show that shoppers switched after comparing. (C) This suggests the gain came simply from better visibility, not comparison, weakening the conclusion. (D) Margins explain the pharmacy's interest, not shoppers' behaviour. (E) Urgency does not bear on whether comparison drove the switch.",
+  "trap": "(C) is tempting because it explains the sales jump, but it does so through visibility rather than comparison, so it undercuts the manager's explanation.",
+  "time": 150
+ },
+ {
+  "id": "cr2-065",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 1,
+  "stimulus": "A coffee chain found that its stores with outdoor seating earn 15 percent more revenue than its stores without it. The chain therefore plans to add outdoor seating to all its stores, expecting revenue at those stores to rise.",
+  "stem": "Which of the following would be most useful to establish in order to evaluate the argument?",
+  "choices": [
+   "In what year the chain opened its first store",
+   "Whether the chain's employees prefer to work in stores with outdoor seating",
+   "Whether outdoor seating is popular in other countries",
+   "Whether the stores with outdoor seating are in locations with more foot traffic than the stores without it",
+   "Whether the chain's coffee is more expensive than its competitors'"
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. If busy locations explain both the seating and the revenue, adding seating elsewhere may not raise revenue. If the locations are similar, the seating is more likely the cause. (A) The chain's history is irrelevant. (B) Staff preferences do not bear on revenue. (C) Other countries' habits do not show whether seating raises this chain's revenue. (E) Price levels apply to all the chain's stores and do not explain the difference.",
+  "trap": "(E) is tempting because price affects revenue, but it does not distinguish stores with seating from those without.",
+  "time": 90
+ },
+ {
+  "id": "cr2-066",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 2,
+  "stimulus": "Farms that control crop pests by releasing wasps that prey on them use 60 percent less insecticide than farms that do not. Regional officials conclude that subsidising the wasps for all farms would greatly reduce insecticide use in the region.",
+  "stem": "Which of the following would be most useful to establish in order to evaluate the argument?",
+  "choices": [
+   "Whether insecticide prices have risen recently",
+   "How much it costs to produce the wasps",
+   "Whether consumers prefer produce grown with less insecticide",
+   "Whether the farms that adopted the wasps were already using much less insecticide before they adopted them",
+   "Whether the wasps are native to the region"
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. If the adopters were low-insecticide farms anyway, the 60 percent gap reflects who chose wasps, not what wasps do, and the subsidy may achieve little. (A) Prices do not reveal whether the wasps reduce insecticide use. (B) Cost bears on the budget, not on whether insecticide use would fall. (C) Consumer preferences are irrelevant to the effect of the wasps. (E) Origin may matter for other reasons, but it does not test whether the wasps cut insecticide use.",
+  "trap": "(E) is tempting because releasing non-native insects raises concerns, but those concerns do not bear on whether the subsidy would cut insecticide use.",
+  "time": 105
+ },
+ {
+  "id": "cr2-067",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 3,
+  "stimulus": "Users of a payments app who turned on a feature that rounds up each purchase and invests the spare change have saved an average of 40 dollars a month through the feature. The app's maker claims the feature has substantially increased these users' total savings.",
+  "stem": "Which of the following would be most useful to establish in order to evaluate the argument?",
+  "choices": [
+   "Whether users who turned on the feature reduced the amounts they saved in other ways, such as through bank savings accounts",
+   "How many of the app's users have turned on the feature",
+   "Whether users' average purchase size on the app has changed",
+   "Whether other apps offer similar features",
+   "Whether the invested spare change has earned positive returns"
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. If users cut other savings by about 40 dollars, total savings did not rise. If other savings stayed the same, the claim holds. (B) The claim concerns the users who turned it on, however many there are. (C) Purchase size affects how much is rounded up, not whether the result is additional saving. (D) Competitors do not bear on this feature's effect. (E) Returns affect the value of the money, but the 40 dollars are put aside regardless; the question is whether it is extra saving.",
+  "trap": "(E) is tempting because returns affect wealth, but the claim is about the amount saved, which depends on whether other saving fell.",
+  "time": 120
+ },
+ {
+  "id": "cr2-068",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 3,
+  "stimulus": "Excavations show that the grain storehouses inside an ancient city's walls were roughly tripled in capacity around 400 BCE, after centuries with little change. The archaeologists leading the excavation conclude that the city's population must have grown sharply at about that time, since more residents would have needed more stored grain.",
+  "stem": "Which of the following would be most useful to establish in order to evaluate the argument?",
+  "choices": [
+   "Whether other cities in the region had similar storehouses",
+   "Whether, around 400 BCE, the city began storing grain for export or for military campaigns rather than only for its own residents",
+   "Whether the storehouses were eventually destroyed",
+   "What kind of grain was stored in the storehouses",
+   "Whether the city's later storehouses were built of stone"
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. If grain was now stored for trade or armies, bigger storehouses would not indicate more residents. If not, population growth remains the likely reason. (A) Other cities' storehouses do not test this city's population growth. (C) Later destruction does not bear on why they were enlarged. (D) The type of grain does not show how many people the storage served. (E) Building materials are irrelevant to population.",
+  "trap": "(A) is tempting because a regional pattern seems informative, but it cannot tell us whether this city's enlargement reflects more residents or another use for the grain.",
+  "time": 120
+ },
+ {
+  "id": "cr2-069",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 4,
+  "stimulus": "A drug maker plans to cut the price of its asthma inhaler in low-income countries by 70 percent. It predicts that the resulting increase in the number of inhalers sold will leave its revenue in those countries unchanged.",
+  "stem": "Which of the following would be most useful to know in evaluating the drug maker's prediction?",
+  "choices": [
+   "Whether competing inhalers sell at similar prices in high-income countries",
+   "How many years remain on the inhaler's patent",
+   "Whether the drug maker sells other products in those countries",
+   "Whether the reduced price will still exceed the cost of producing each inhaler",
+   "Whether most people in those countries who need the inhaler but do not use it lack access to a doctor who can diagnose asthma and prescribe it"
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. Revenue stays level only if sales more than triple. If lack of diagnosis rather than price keeps people from the inhaler, a price cut will not raise sales enough. (A) Prices in high-income countries do not affect demand in low-income ones. (B) Patent life does not determine how sales will respond to the price cut. (C) Other products are outside the prediction about inhaler revenue. (D) This bears on profit, but the prediction concerns revenue.",
+  "trap": "(D) is tempting because companies care about margins, but revenue can stay level whether or not each sale is profitable.",
+  "time": 135
+ },
+ {
+  "id": "cr2-070",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 4,
+  "stimulus": "In Garrow, firms that began publishing salary ranges for every role saw the gap between men's and women's average pay narrow by a third within three years. A policy group argues that requiring all firms nationwide to publish salary ranges would substantially narrow the national gender pay gap.",
+  "stem": "Which of the following would be most useful to establish in order to evaluate the argument?",
+  "choices": [
+   "Whether Garrow firms pay more than the national average",
+   "Whether employees at the Garrow firms like having salary ranges published",
+   "Whether the Garrow firms that published salary ranges did so as part of broader programmes, such as promoting more women into senior roles",
+   "Whether publishing salary ranges raises firms' recruitment costs",
+   "What the national gender pay gap was ten years ago"
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. If other measures adopted at the same time narrowed the gap, the effect of publishing salary ranges alone, which is all the policy would require, may be small. (A) Pay levels do not bear on how the gender gap would respond. (B) Employees' views do not show whether the policy narrows the gap. (D) Costs are a separate issue from the policy's effect on the pay gap. (E) Past national levels do not test the effect of publishing salaries.",
+  "trap": "(D) is tempting because it concerns a consequence of the policy, but costs do not tell us whether the policy narrows the gap.",
+  "time": 135
+ },
+ {
+  "id": "cr2-071",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 5,
+  "stimulus": "Since the city of Brask made bus travel free, bus ridership has risen by 35 percent. The city's transport chief claims the policy has reduced car traffic, reasoning that many of the new riders must previously have driven.",
+  "stem": "Which of the following would be most useful to establish in order to evaluate the argument?",
+  "choices": [
+   "Whether Brask's buses run on electricity",
+   "Whether bus drivers' working hours have increased",
+   "Whether bus ridership also rose in cities that kept charging fares",
+   "How much fare revenue the city gave up by making buses free",
+   "What share of the new bus trips are made by people who previously walked, cycled, or did not make the trip at all"
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. The claim depends on new riders having left their cars. If most new trips replace walking or cycling, or are new trips, car traffic may be unchanged. (A) The type of bus does not determine whether car traffic fell. (B) Drivers' hours do not bear on car traffic. (C) This tests whether free fares caused the ridership rise, but the disputed claim is about where new riders came from and whether car traffic fell. (D) Lost revenue bears on cost, not on car traffic.",
+  "trap": "(C) is tempting because it checks whether free fares caused the ridership rise, but even granting that, the claim about car traffic depends on who the new riders are.",
+  "time": 150
+ },
+ {
+  "id": "cr2-072",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 5,
+  "stimulus": "Customers of an e-commerce firm who choose its free, slower 'eco delivery' option, which groups orders into fewer van trips, generate 30 percent lower delivery emissions per order than customers who choose standard delivery. The firm concludes that making eco delivery the default option for all customers would cut its total delivery emissions by nearly 30 percent.",
+  "stem": "Which of the following would be most useful to establish in order to evaluate the argument?",
+  "choices": [
+   "Whether delivery emissions are a large share of the firm's total emissions",
+   "Whether eco delivery reduces the firm's delivery costs",
+   "Whether customers who currently choose eco delivery differ from other customers in ways, such as living in dense urban areas, that affect how much grouping orders reduces emissions",
+   "Whether the firm's delivery vans are leased or owned",
+   "Whether competitors offer an eco delivery option"
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. If current eco customers live where grouping saves the most, the 30 percent figure will not carry over to everyone; if they are typical, it is more likely to. (A) The conclusion concerns delivery emissions, so their share of total emissions is irrelevant to its accuracy. (B) Costs are not emissions; the conclusion concerns emissions only. (D) Ownership has no bearing on emissions per order. (E) Competitors' offerings do not affect this firm's emissions.",
+  "trap": "(A) is tempting because it seems to assess the policy's importance, but the claim is a percentage cut in delivery emissions, which does not depend on their share of the firm's total.",
+  "time": 150
+ },
+ {
+  "id": "cr2-073",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 1,
+  "stimulus": "Every store in the Halvo chain that opened in the past five years is located in a shopping mall. None of Halvo's stores located in shopping malls sells furniture. The Halvo store in Linton sells furniture.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "The Halvo store in Linton opened more than ten years ago.",
+   "The Halvo store in Linton did not open in the past five years.",
+   "Some Halvo stores in shopping malls opened more than five years ago.",
+   "No Halvo store outside a shopping mall sells clothing.",
+   "Most Halvo stores sell furniture."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. The Linton store sells furniture, so it is not in a mall. Every store opened in the past five years is in a mall, so the Linton store must be older. (A) We know only that it opened more than five years ago. (C) Possible, but not required; all mall stores might be recent. (D) Nothing is said about clothing. (E) Nothing indicates how many stores sell furniture.",
+  "trap": "(A) is tempting because the store is clearly not new, but the statements fix only a five-year cut-off.",
+  "time": 90
+ },
+ {
+  "id": "cr2-074",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 2,
+  "stimulus": "In the city of Tarn, the number of people with jobs rose last year, and so did the unemployment rate. The unemployment rate is the number of unemployed people divided by the labour force, which consists of everyone who either has a job or is unemployed and looking for work.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "More people in Tarn found jobs last year than lost them.",
+   "Tarn's labour force shrank last year.",
+   "The number of unemployed people in Tarn increased last year.",
+   "Tarn's population grew last year.",
+   "The unemployment rate rose because people lost their jobs."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct. If employment rose while the number of unemployed stayed the same or fell, unemployed people would make up a smaller share of the labour force. For the rate to rise, the number of unemployed must have risen. (A) Only the net change in employment is known; flows of hiring and job loss are not. (B) Both employment and unemployment rose, so the labour force grew. (D) The labour force grew, but that could happen through more residents looking for work without any population growth. (E) The increase may have come from people newly entering the labour force without jobs.",
+  "trap": "(E) is tempting because rising unemployment usually suggests layoffs, but newcomers searching for work can raise the count without anyone losing a job.",
+  "time": 105
+ },
+ {
+  "id": "cr2-075",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 2,
+  "stimulus": "In Velmar, every drug approved under the fast-track programme must undergo additional safety studies after approval. No drug that requires additional post-approval studies may be advertised directly to consumers until those studies are complete. Lirozen is currently advertised directly to consumers in Velmar.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "Lirozen was not approved under the fast-track programme.",
+   "Lirozen has never been required to undergo additional safety studies.",
+   "All drugs advertised to consumers in Velmar were approved under standard procedures.",
+   "If Lirozen was approved under the fast-track programme, its post-approval safety studies have been completed.",
+   "Most fast-track drugs in Velmar are not advertised to consumers."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct. A fast-track drug requires post-approval studies, and a drug requiring them cannot be advertised until they are complete. Since Lirozen is advertised, any such studies must be finished. (A) It could be a fast-track drug whose studies are complete. (B) It may have been required to and completed them. (C) Fast-track drugs with completed studies can be advertised. (E) Nothing indicates how many fast-track drugs are advertised.",
+  "trap": "(A) is tempting for those who forget the 'until those studies are complete' condition, which allows fast-track drugs to be advertised later.",
+  "time": 105
+ },
+ {
+  "id": "cr2-076",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 3,
+  "stimulus": "Almond trees in the Merel region depend on bees for pollination, and nearly all bees available there come from hives that commercial beekeepers rent to almond growers; these rented hives are used only for almonds. Over the past five years, the number of rented hives in Merel has stayed constant while the area planted with almonds has doubled. Almond yields per hectare in Merel have nevertheless remained unchanged.",
+  "stem": "The statements above, if true, most strongly support which of the following?",
+  "choices": [
+   "Bees are no longer needed to pollinate almonds in Merel.",
+   "Commercial beekeepers in Merel have raised their rental prices.",
+   "Most of Merel's new almond orchards were planted on unusually fertile land.",
+   "Almond growers in Merel have become more profitable.",
+   "Almond yields per hectare in Merel do not depend solely on the number of rented hives per hectare."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. Hives per hectare have roughly halved, yet yields per hectare are the same. So something other than hive density, such as earlier surplus hives or more effective pollination, must also affect yields. (A) This contradicts the statement that almonds depend on bees. (B) Prices are not mentioned and cannot be inferred. (C) This is one possible explanation, but nothing points to it specifically. (D) No information is given about costs or prices.",
+  "trap": "(C) is tempting because it would explain the stable yields, but it is only one of several possible explanations and is not supported over the others.",
+  "time": 120
+ },
+ {
+  "id": "cr2-077",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 4,
+  "stimulus": "In Sorra, a bank customer who disputes a card charge receives a provisional refund within two days, and the bank then investigates. If the investigation finds the charge was valid, the provisional refund is reversed; otherwise it stands. Last year, the number of disputed charges at Sorra's banks rose by 50 percent, but the total value of provisional refunds that were later reversed fell.",
+  "stem": "The statements above, if true, most strongly support which of the following?",
+  "choices": [
+   "Most disputed charges last year were found to be invalid.",
+   "Compared with the year before, either a smaller proportion of disputed charges were found valid last year, or the charges found valid were of lower average value, or both.",
+   "Banks in Sorra investigated fewer disputes last year than the year before.",
+   "The total value of provisional refunds paid last year fell.",
+   "Fraudulent card charges in Sorra rose by about 50 percent last year."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. The reversed total equals the number of disputes found valid times their average value. With 50 percent more disputes and a smaller total, the valid share or the average value of valid charges, or both, must have fallen. (A) A fall in the valid share does not mean most were invalid. (C) Every dispute is investigated, so investigations rose with disputes. (D) With more disputes, total refunds paid could easily have risen. (E) Disputes rose by 50 percent, but not all disputes involve fraud.",
+  "trap": "(D) is tempting because the reversed total fell, but total refunds paid depend on all disputes, which rose by half.",
+  "time": 135
+ },
+ {
+  "id": "cr2-078",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 4,
+  "stimulus": "Every ceramic vessel recovered from the shipwreck at Cape Orun was made in one of two workshops, Kestral or Ambry. All Ambry vessels ever found date from after 250 BCE. The ship sank before 260 BCE, and some vessels from the wreck carry inscriptions in a style associated with the Ambry workshop.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "Some vessels made at the Kestral workshop carry inscriptions in the style associated with Ambry.",
+   "The Ambry workshop copied its inscription style from Kestral.",
+   "No Kestral vessel dates from after 250 BCE.",
+   "The ship was carrying its cargo to the Ambry workshop.",
+   "Some Ambry vessels were recovered from the wreck."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct. A ship that sank before 260 BCE cannot hold Ambry vessels, which all date after 250 BCE. So every vessel on board is from Kestral, including those with Ambry-style inscriptions. (B) The statements show Kestral used the style, not who originated it. (C) Nothing limits when Kestral operated. (D) The ship's destination cannot be inferred. (E) Ambry vessels all post-date the sinking, so none can be on board.",
+  "trap": "(B) is tempting because Ambry appears later, but a later workshop could have borrowed the style or both could have taken it from a third source.",
+  "time": 135
+ },
+ {
+  "id": "cr2-079",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 4,
+  "stimulus": "In Halbury, every new building taller than 20 storeys must include a public open space at ground level. Since this rule took effect, developers have proposed many buildings of exactly 20 storeys but almost none taller. Before the rule, about a third of proposed towers were taller than 20 storeys.",
+  "stem": "The statements above, if true, most strongly support which of the following?",
+  "choices": [
+   "Buildings of exactly 20 storeys are cheaper per storey than buildings of 19 storeys.",
+   "The rule has reduced the total amount of public open space in Halbury.",
+   "Most Halbury residents support the rule.",
+   "Demand for office space in Halbury has fallen since the rule took effect.",
+   "Many developers regard the cost of providing public ground-level space as greater than the benefit of building above 20 storeys."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct. Developers who once proposed taller towers now stop exactly at the threshold, which suggests the requirement outweighs the value of extra storeys for them. (A) Nothing compares 19- and 20-storey costs. (B) There is no information about the total amount of open space. (C) Residents' opinions are not mentioned. (D) Many 20-storey buildings are still being proposed, which does not suggest falling demand.",
+  "trap": "(D) is tempting because fewer tall towers might signal weak demand, but the many 20-storey proposals point to the rule's threshold instead.",
+  "time": 135
+ },
+ {
+  "id": "cr2-080",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 5,
+  "stimulus": "At Pellam Pharmacy, only customers who fill a prescription are offered a flu vaccination, and every such customer is offered one; other customers may request a vaccination. Last month, 40 percent of the customers offered a vaccination accepted it. Of all the customers vaccinated at Pellam last month, 70 percent had filled a prescription there that month.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "Most customers who declined the offer were vaccinated elsewhere.",
+   "More customers declined the vaccination offer last month than were vaccinated at Pellam.",
+   "Last month, 30 percent of Pellam's customers requested a vaccination without being offered one.",
+   "Customers who filled a prescription were more likely to be vaccinated than customers who did not.",
+   "The number of customers vaccinated last month exceeded the number who filled a prescription."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct. Let P be the number of prescription customers. Then 0.4P were vaccinated after an offer, which is 70 percent of all vaccinations, so total vaccinations were 0.4P / 0.7, about 0.57P. Declines were 0.6P, which is larger. (A) Nothing is said about vaccinations at other places. (C) The 30 percent is a share of vaccinations, not of all customers. (D) This would require knowing how many customers did not fill a prescription, which is not given. (E) Vaccinations totalled about 0.57P, less than P.",
+  "trap": "(D) is tempting because 40 percent of prescription customers accepted, but without the number of other customers, no comparison of rates is possible.",
+  "time": 150
+ }
+]

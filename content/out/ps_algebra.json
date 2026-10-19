@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ps-al-001",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Linear Equations & Systems",
+  "diff": 1,
+  "stem": "If 3x - 7 = 11, what is the value of x?",
+  "choices": [
+   "4/3",
+   "4",
+   "6",
+   "18",
+   "54"
+  ],
+  "answer": 2,
+  "explanation": "Undo the operations in reverse order. Add 7 to both sides: 3x = 18. Divide both sides by 3: x = 6. Check: 3(6) - 7 = 18 - 7 = 11, which matches the equation. On test day, plugging the answer choices back in also works quickly here, but solving directly takes only two steps and avoids arithmetic slips.",
+  "trap": "Choice 18 is the value of 3x, not x; stopping one step early is the classic slip.",
+  "time": 90
+ },
+ {
+  "id": "ps-al-002",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Linear Equations & Systems",
+  "diff": 1,
+  "stem": "If x + y = 12 and x - y = 4, what is the value of xy?",
+  "choices": [
+   "16",
+   "24",
+   "28",
+   "32",
+   "36"
+  ],
+  "answer": 3,
+  "explanation": "Add the two equations: 2x = 16, so x = 8. Substitute into x + y = 12 to get y = 4. Then xy = 8 × 4 = 32. Shortcut: xy = ((x + y)² - (x - y)²)/4 = (144 - 16)/4 = 32. Either route takes under a minute.",
+  "trap": "36 is (12/2)², the product you would get if x and y were equal, which ignores the second equation.",
+  "time": 90
+ },
+ {
+  "id": "ps-al-003",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Quadratics & Factoring",
+  "diff": 1,
+  "stem": "If x² = 49 and x < 0, what is the value of x - 3?",
+  "choices": [
+   "-10",
+   "-4",
+   "4",
+   "10",
+   "46"
+  ],
+  "answer": 0,
+  "explanation": "x² = 49 gives x = 7 or x = -7. The condition x < 0 rules out 7, so x = -7. Then x - 3 = -7 - 3 = -10. Whenever you take a square root of both sides, remember that a positive number has two square roots, and then use any stated condition (here x < 0) to pick the right one.",
+  "trap": "Choice 4 comes from using x = 7 and ignoring the condition that x is negative.",
+  "time": 90
+ },
+ {
+  "id": "ps-al-004",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Inequalities",
+  "diff": 1,
+  "stem": "What is the greatest integer x for which 2x + 5 < 17?",
+  "choices": [
+   "1",
+   "2",
+   "3",
+   "5",
+   "6"
+  ],
+  "answer": 3,
+  "explanation": "Subtract 5 from both sides: 2x < 12. Divide by 2: x < 6. The inequality is strict, so 6 itself does not work (2(6) + 5 = 17, which is not less than 17). The greatest integer below 6 is 5. Always test the boundary value itself when the inequality is strict.",
+  "trap": "Choice 6 treats the strict inequality as if it were ≤.",
+  "time": 90
+ },
+ {
+  "id": "ps-al-005",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Functions & Custom Operations",
+  "diff": 1,
+  "stem": "If f(x) = 2x² - 3x, what is the value of f(-2)?",
+  "choices": [
+   "-14",
+   "-2",
+   "2",
+   "10",
+   "14"
+  ],
+  "answer": 4,
+  "explanation": "Substitute x = -2 carefully with parentheses: f(-2) = 2(-2)² - 3(-2) = 2(4) + 6 = 8 + 6 = 14. Squaring a negative number gives a positive result, and subtracting a negative adds. A common habit that prevents sign errors: write the substituted value in parentheses every time it appears, then simplify powers before multiplying.",
+  "trap": "Choice 2 comes from treating -3(-2) as -6 instead of +6.",
+  "time": 90
+ },
+ {
+  "id": "ps-al-006",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Exponential Equations",
+  "diff": 1,
+  "stem": "If 2^(x + 1) = 32, what is the value of x?",
+  "choices": [
+   "4",
+   "5",
+   "8",
+   "15",
+   "16"
+  ],
+  "answer": 0,
+  "explanation": "Write 32 as a power of 2: 32 = 2⁵. Then 2^(x + 1) = 2⁵, so the exponents are equal: x + 1 = 5, and x = 4. To make this kind of problem fast, memorise the powers of 2 up to 2¹⁰ = 1,024 and the powers of 3 up to 3⁵ = 243, so you can rewrite numbers in a common base instantly.",
+  "trap": "Choice 5 is the exponent x + 1, not x itself.",
+  "time": 90
+ },
+ {
+  "id": "ps-al-007",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Sequences",
+  "diff": 1,
+  "stem": "In an arithmetic sequence, the first term is 5 and each term after the first is 3 greater than the term before it. What is the 20th term?",
+  "choices": [
+   "57",
+   "60",
+   "62",
+   "65",
+   "68"
+  ],
+  "answer": 2,
+  "explanation": "The nth term of an arithmetic sequence is a₁ + (n - 1)d. Here a₁ = 5 and d = 3, so the 20th term is 5 + 19 × 3 = 5 + 57 = 62. A quick sanity check: the 2nd term is 5 + 3 = 8, which matches 5 + (2 - 1)3, so the formula is being applied correctly.",
+  "trap": "Choice 65 uses 20 × 3 instead of 19 × 3; only 19 steps separate the 1st and 20th terms.",
+  "time": 90
+ },
+ {
+  "id": "ps-al-008",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Coordinate Geometry",
+  "diff": 1,
+  "stem": "What is the slope of the line that passes through the points (1, 2) and (4, 11)?",
+  "choices": [
+   "-3",
+   "-1/3",
+   "1/3",
+   "2",
+   "3"
+  ],
+  "answer": 4,
+  "explanation": "Slope is the change in y divided by the change in x: (11 - 2)/(4 - 1) = 9/3 = 3. A positive slope means the line rises from left to right, which fits since both coordinates increase. It does not matter which point you call first, as long as you subtract in the same order on top and bottom.",
+  "trap": "Choice 1/3 divides the change in x by the change in y, which inverts the slope.",
+  "time": 90
+ },
+ {
+  "id": "ps-al-009",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Functions & Custom Operations",
+  "diff": 1,
+  "stem": "For all numbers a and b, the operation ★ is defined by a ★ b = a² - b. What is the value of 3 ★ 4?",
+  "choices": [
+   "5",
+   "7",
+   "9",
+   "13",
+   "21"
+  ],
+  "answer": 0,
+  "explanation": "Replace a with 3 and b with 4 in the definition: 3 ★ 4 = 3² - 4 = 9 - 4 = 5. Keep the order: the first number is squared, the second is subtracted. With any custom operation, write out the definition with the letters replaced one at a time, and keep the input order exactly as given.",
+  "trap": "Choice 13 swaps the roles of the inputs, computing 4² - 3.",
+  "time": 90
+ },
+ {
+  "id": "ps-al-010",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Coordinate Geometry",
+  "diff": 1,
+  "stem": "In the xy-plane, what is the y-intercept of the line 2x + 4y = 12?",
+  "choices": [
+   "-3",
+   "1",
+   "2",
+   "3",
+   "6"
+  ],
+  "answer": 3,
+  "explanation": "The y-intercept is where x = 0. Substitute: 2(0) + 4y = 12, so y = 3. (Alternatively, rewrite as y = -x/2 + 3; the constant term is the y-intercept.) Remember the general rule: to find any intercept, set the other variable equal to 0, because the y-axis is where x = 0 and the x-axis is where y = 0.",
+  "trap": "Choice 6 is the x-intercept (set y = 0), not the y-intercept.",
+  "time": 90
+ },
+ {
+  "id": "ps-al-011",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Linear Equations & Systems",
+  "diff": 2,
+  "stem": "The sum of three consecutive odd integers is 87. What is the largest of the three integers?",
+  "choices": [
+   "23",
+   "25",
+   "27",
+   "29",
+   "31"
+  ],
+  "answer": 4,
+  "explanation": "Let the integers be n, n + 2 and n + 4. Then 3n + 6 = 87, so 3n = 81 and n = 27. The integers are 27, 29 and 31, and the largest is 31. Faster: the middle integer is the average, 87/3 = 29, so the largest is 29 + 2 = 31.",
+  "trap": "Choice 29 is the middle integer (the average), not the largest.",
+  "time": 105
+ },
+ {
+  "id": "ps-al-012",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Linear Equations & Systems",
+  "diff": 2,
+  "stem": "If 2a + 3b = 19 and 4a - b = 3, what is the value of a + b?",
+  "choices": [
+   "3",
+   "4",
+   "5",
+   "6",
+   "7"
+  ],
+  "answer": 4,
+  "explanation": "From the second equation, b = 4a - 3. Substitute into the first: 2a + 3(4a - 3) = 19, so 14a - 9 = 19, 14a = 28 and a = 2. Then b = 4(2) - 3 = 5, and a + b = 7. Check: 2(2) + 3(5) = 19.",
+  "trap": "Choice 5 is the value of b alone; the question asks for the sum a + b.",
+  "time": 105
+ },
+ {
+  "id": "ps-al-013",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Quadratics & Factoring",
+  "diff": 2,
+  "stem": "The equation x² - 5x - 24 = 0 has one positive root and one negative root. What is the positive root minus the negative root?",
+  "choices": [
+   "3",
+   "5",
+   "8",
+   "10",
+   "11"
+  ],
+  "answer": 4,
+  "explanation": "Factor: find two numbers with product -24 and sum -5. These are -8 and 3, so x² - 5x - 24 = (x - 8)(x + 3). The roots are 8 and -3. The positive root minus the negative root is 8 - (-3) = 11. Vieta's formulas confirm it: the roots sum to 5 and multiply to -24.",
+  "trap": "Choice 5 is the sum of the roots, 8 + (-3); subtracting a negative number adds its size.",
+  "time": 105
+ },
+ {
+  "id": "ps-al-014",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Quadratics & Factoring",
+  "diff": 2,
+  "stem": "If a + b = 9 and a - b = 3, what is the value of a² - b²?",
+  "choices": [
+   "27",
+   "36",
+   "45",
+   "54",
+   "81"
+  ],
+  "answer": 0,
+  "explanation": "Use the difference of squares: a² - b² = (a + b)(a - b) = 9 × 3 = 27. There is no need to solve for a and b (which are 6 and 3; 36 - 9 = 27 confirms it). Spotting this identity saves real time on the exam.",
+  "trap": "Choice 81 is (a + b)², which is not the same as a² - b².",
+  "time": 105
+ },
+ {
+  "id": "ps-al-015",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Inequalities",
+  "diff": 2,
+  "stem": "How many integers x satisfy -3 < 2x - 1 ≤ 7?",
+  "choices": [
+   "5",
+   "6",
+   "7",
+   "8",
+   "9"
+  ],
+  "answer": 0,
+  "explanation": "Add 1 to every part: -2 < 2x ≤ 8. Divide every part by 2: -1 < x ≤ 4. The integers are 0, 1, 2, 3 and 4, which is 5 integers. Note that -1 is excluded (strict inequality) while 4 is included. Whatever you do to one part of a compound inequality, do to all three parts.",
+  "trap": "Choice 6 counts -1, which the strict inequality excludes.",
+  "time": 105
+ },
+ {
+  "id": "ps-al-016",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Inequalities",
+  "diff": 2,
+  "stem": "What is the sum of all values of x for which |x - 4| = 9?",
+  "choices": [
+   "8",
+   "9",
+   "13",
+   "18",
+   "26"
+  ],
+  "answer": 0,
+  "explanation": "|x - 4| = 9 means x - 4 = 9 or x - 4 = -9. So x = 13 or x = -5, and the sum is 13 + (-5) = 8. Shortcut: the two solutions are symmetric about 4, so their sum is 2 × 4 = 8.",
+  "trap": "Choice 13 forgets the negative case of the absolute value.",
+  "time": 105
+ },
+ {
+  "id": "ps-al-017",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Functions & Custom Operations",
+  "diff": 2,
+  "stem": "If f(x) = 3x - 2 and g(x) = x² + 1, what is the value of f(g(2))?",
+  "choices": [
+   "13",
+   "17",
+   "25",
+   "26",
+   "50"
+  ],
+  "answer": 0,
+  "explanation": "Work from the inside out. First g(2) = 2² + 1 = 5. Then f(5) = 3(5) - 2 = 13. So f(g(2)) = 13. Composition is read right to left: f(g(2)) means apply g first and then apply f to the result. Writing the inner value down before moving on avoids mixing up the order, which is exactly what the wrong answers exploit.",
+  "trap": "Choice 17 is g(f(2)) = g(4) = 17; the functions were applied in the wrong order.",
+  "time": 105
+ },
+ {
+  "id": "ps-al-018",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Exponential Equations",
+  "diff": 2,
+  "stem": "If 9^x = 27^(x - 1), what is the value of x?",
+  "choices": [
+   "-3",
+   "1",
+   "2",
+   "3",
+   "6"
+  ],
+  "answer": 3,
+  "explanation": "Write both sides as powers of 3: 9^x = 3^(2x) and 27^(x - 1) = 3^(3x - 3). Equal bases mean equal exponents: 2x = 3x - 3, so x = 3. Check: 9³ = 729 and 27² = 729. Rewriting both sides in the same base is the standard first move for any exponential equation like this one.",
+  "trap": "Choice -3 comes from a sign slip when moving 3x across, giving -x = 3.",
+  "time": 105
+ },
+ {
+  "id": "ps-al-019",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Exponential Equations",
+  "diff": 2,
+  "stem": "What is the value of (2⁵ × 4³)/8²?",
+  "choices": [
+   "2",
+   "4",
+   "8",
+   "16",
+   "32"
+  ],
+  "answer": 4,
+  "explanation": "Rewrite everything in base 2: 4³ = (2²)³ = 2⁶ and 8² = (2³)² = 2⁶. The expression becomes (2⁵ × 2⁶)/2⁶ = 2⁵ = 32. The key rules used are (aᵐ)ⁿ = a^(mn), aᵐ × aⁿ = a^(m + n) and aᵐ/aⁿ = a^(m - n). Converting everything to the smallest common base first makes the cancellation obvious and avoids large multiplications.",
+  "trap": "Choice 16 comes from writing 4³ as 2⁵ or similar exponent mistakes; (2²)³ is 2⁶ because exponents multiply.",
+  "time": 105
+ },
+ {
+  "id": "ps-al-020",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Sequences",
+  "diff": 2,
+  "stem": "In a geometric sequence, the first term is 3 and the fourth term is 81. What is the sixth term?",
+  "choices": [
+   "81",
+   "162",
+   "243",
+   "486",
+   "729"
+  ],
+  "answer": 4,
+  "explanation": "In a geometric sequence aₙ = a₁ × r^(n - 1). So 81 = 3r³, giving r³ = 27 and r = 3. The sixth term is 3 × 3⁵ = 3 × 243 = 729. (Listing: 3, 9, 27, 81, 243, 729.) Listing terms is safe here because the sequence is short.",
+  "trap": "Choice 243 is the fifth term; it is easy to stop one term early.",
+  "time": 105
+ },
+ {
+  "id": "ps-al-021",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Coordinate Geometry",
+  "diff": 2,
+  "stem": "A line in the xy-plane passes through the point (2, -1) and has slope -3. What is the x-intercept of the line?",
+  "choices": [
+   "-5/3",
+   "1/3",
+   "5/3",
+   "3",
+   "5"
+  ],
+  "answer": 2,
+  "explanation": "Point-slope form: y + 1 = -3(x - 2), so y = -3x + 5. The x-intercept is where y = 0: 0 = -3x + 5, so x = 5/3. Remember: the x-intercept is found by setting y = 0, and the y-intercept by setting x = 0. A quick check: at x = 5/3, y = -3(5/3) + 5 = 0.",
+  "trap": "Choice 5 is the y-intercept of the line, not the x-intercept.",
+  "time": 105
+ },
+ {
+  "id": "ps-al-022",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Coordinate Geometry",
+  "diff": 2,
+  "stem": "Line k passes through the point (4, 1) and is perpendicular to the line y = 2x + 7. What is the y-intercept of line k?",
+  "choices": [
+   "-7",
+   "-1",
+   "1",
+   "3",
+   "9"
+  ],
+  "answer": 3,
+  "explanation": "Perpendicular slopes are negative reciprocals, so line k has slope -1/2. Using y = mx + b with the point (4, 1): 1 = (-1/2)(4) + b = -2 + b, so b = 3. Check: the product of the two slopes is 2 × (-1/2) = -1, which confirms the lines are perpendicular, and the point (4, 1) lies on y = -x/2 + 3.",
+  "trap": "Choice -7 uses slope 2 (a parallel line): 1 = 2(4) + b gives b = -7.",
+  "time": 105
+ },
+ {
+  "id": "ps-al-023",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Functions & Custom Operations",
+  "diff": 2,
+  "stem": "For all numbers x and y with x ≠ y, the operation # is defined by x # y = (x + y)/(x - y). What is the value of (4 # 2) # 1?",
+  "choices": [
+   "1",
+   "3/2",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": 2,
+  "explanation": "Evaluate the parentheses first: 4 # 2 = (4 + 2)/(4 - 2) = 6/2 = 3. Then 3 # 1 = (3 + 1)/(3 - 1) = 4/2 = 2. With nested custom operations, always evaluate the innermost parentheses first and write that result down before applying the definition a second time.",
+  "trap": "Choice 3 is the value of 4 # 2 only; the second operation is still needed.",
+  "time": 105
+ },
+ {
+  "id": "ps-al-024",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Linear Equations & Systems",
+  "diff": 2,
+  "stem": "If (x + 3)/4 = (2x - 1)/3, what is the value of x?",
+  "choices": [
+   "1",
+   "7/5",
+   "2",
+   "13/5",
+   "15/2"
+  ],
+  "answer": 3,
+  "explanation": "Cross-multiply: 3(x + 3) = 4(2x - 1), so 3x + 9 = 8x - 4. Then 13 = 5x and x = 13/5. Check: (13/5 + 3)/4 = (28/5)/4 = 7/5, and (26/5 - 1)/3 = (21/5)/3 = 7/5. Distribute the multiplier to every term in each numerator before simplifying.",
+  "trap": "Choice 15/2 comes from cross-multiplying the wrong way, 4(x + 3) = 3(2x - 1), which pairs each numerator with its own denominator.",
+  "time": 105
+ },
+ {
+  "id": "ps-al-025",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Linear Equations & Systems",
+  "diff": 3,
+  "stem": "If 3x + 2y = 17 and 2x + 3y = 13, what is the value of x - y?",
+  "choices": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "6"
+  ],
+  "answer": 3,
+  "explanation": "Subtract the second equation from the first: (3x - 2x) + (2y - 3y) = 17 - 13, so x - y = 4 directly. (Solving fully gives x = 5 and y = 1.) Looking for a combination of the equations that produces the target expression is much faster than solving for each variable.",
+  "trap": "Choice 6 is x + y (add the equations and divide by 5), not x - y.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-026",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Quadratics & Factoring",
+  "diff": 3,
+  "stem": "One solution of the equation 2x² + bx - 12 = 0 is x = -4, where b is a constant. What is the other solution?",
+  "choices": [
+   "-3/2",
+   "1",
+   "3/2",
+   "3",
+   "6"
+  ],
+  "answer": 2,
+  "explanation": "For ax² + bx + c = 0, the product of the roots is c/a = -12/2 = -6. If one root is -4, the other is -6/(-4) = 3/2. Check by finding b: 2(16) - 4b - 12 = 0 gives b = 5, and 2x² + 5x - 12 = (2x - 3)(x + 4), whose roots are 3/2 and -4.",
+  "trap": "Choice 3 uses product = c = -12 and forgets to divide by the leading coefficient 2.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-027",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Quadratics & Factoring",
+  "diff": 3,
+  "stem": "If x² - y² = 48 and x + y = 12, what is the value of x?",
+  "choices": [
+   "2",
+   "4",
+   "6",
+   "7",
+   "8"
+  ],
+  "answer": 4,
+  "explanation": "Factor: x² - y² = (x + y)(x - y), so 48 = 12(x - y) and x - y = 4. Adding x + y = 12 and x - y = 4 gives 2x = 16, so x = 8 (and y = 4). Notice that you never needed y separately.",
+  "trap": "Choice 4 is the value of x - y (or y), not x.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-028",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Inequalities",
+  "diff": 3,
+  "stem": "How many integers x satisfy x² < 4x + 21?",
+  "choices": [
+   "9",
+   "10",
+   "11",
+   "12",
+   "13"
+  ],
+  "answer": 0,
+  "explanation": "Move everything to one side: x² - 4x - 21 < 0, which factors as (x - 7)(x + 3) < 0. A product of two factors is negative when they have opposite signs, which happens strictly between the roots: -3 < x < 7. The integers are -2, -1, 0, 1, 2, 3, 4, 5, 6, which is 9 integers.",
+  "trap": "Choice 11 includes the endpoints -3 and 7, where the expression equals 0 rather than being negative.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-029",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Inequalities",
+  "diff": 3,
+  "stem": "What is the sum of all integers x that satisfy |2x - 3| ≤ 7?",
+  "choices": [
+   "9",
+   "12",
+   "14",
+   "15",
+   "18"
+  ],
+  "answer": 1,
+  "explanation": "Rewrite without absolute value: -7 ≤ 2x - 3 ≤ 7. Add 3: -4 ≤ 2x ≤ 10. Divide by 2: -2 ≤ x ≤ 5. The integers are -2 through 5. The pairs -2 and 2, -1 and 1 cancel, leaving 0 + 3 + 4 + 5 = 12.",
+  "trap": "Choice 15 adds only 0 through 5, forgetting the negative integers -2 and -1 (whose sum is -3).",
+  "time": 120
+ },
+ {
+  "id": "ps-al-030",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Functions & Custom Operations",
+  "diff": 3,
+  "stem": "The function f is defined by f(x) = ax + b, where a and b are constants. If f(2) = 7 and f(5) = 16, what is the value of f(10)?",
+  "choices": [
+   "28",
+   "30",
+   "31",
+   "32",
+   "35"
+  ],
+  "answer": 2,
+  "explanation": "Subtract: f(5) - f(2) = 3a = 16 - 7 = 9, so a = 3. Then 2(3) + b = 7 gives b = 1, so f(x) = 3x + 1 and f(10) = 31. Alternatively, each increase of 1 in x adds 3, so going from x = 5 to x = 10 adds 15: 16 + 15 = 31.",
+  "trap": "Choice 32 assumes f(10) = 2 × f(5), which holds only for lines through the origin (b = 0).",
+  "time": 120
+ },
+ {
+  "id": "ps-al-031",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Functions & Custom Operations",
+  "diff": 3,
+  "stem": "If f(x) = x/(x + 1) for all x ≠ -1, what is the value of f(f(1))?",
+  "choices": [
+   "1/4",
+   "1/3",
+   "1/2",
+   "2/3",
+   "1"
+  ],
+  "answer": 1,
+  "explanation": "First f(1) = 1/(1 + 1) = 1/2. Then f(1/2) = (1/2)/(1/2 + 1) = (1/2)/(3/2) = 1/3. So f(f(1)) = 1/3. Nested function questions are solved from the inside out: compute the inner value exactly as a fraction, then substitute it into the outer function. Keeping the fractions exact (rather than converting to decimals) avoids rounding errors and makes the final match with the choices clean.",
+  "trap": "Choice 1/2 is only f(1); the function must be applied a second time.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-032",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Exponential Equations",
+  "diff": 3,
+  "stem": "If 2^x + 2^(x + 2) = 80, what is the value of x?",
+  "choices": [
+   "-1",
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": 4,
+  "explanation": "Factor out the smaller power: 2^x + 2^(x + 2) = 2^x(1 + 2²) = 5 × 2^x. So 5 × 2^x = 80, which gives 2^x = 16 and x = 4. Check: 16 + 64 = 80. The same factoring trick works for any sum of powers with the same base: pull out the smallest power and the rest becomes a plain number.",
+  "trap": "Choice 2 treats the sum as a product, 2^(2x + 2), and matches it to 64 = 2⁶; exponents add only when powers are multiplied, not added.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-033",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Exponential Equations",
+  "diff": 3,
+  "stem": "If (1/5)^(x - 2) = 125^x, what is the value of x?",
+  "choices": [
+   "-1",
+   "-1/2",
+   "1/4",
+   "1/2",
+   "1"
+  ],
+  "answer": 3,
+  "explanation": "Use base 5. (1/5)^(x - 2) = 5^(-(x - 2)) = 5^(2 - x), and 125^x = (5³)^x = 5^(3x). Set the exponents equal: 2 - x = 3x, so 4x = 2 and x = 1/2. Check: (1/5)^(-3/2) = 5^(3/2) and 125^(1/2) = 5^(3/2), so both sides agree. Converting a fraction like 1/5 into a negative power is the step most people skip.",
+  "trap": "Choice -1 forgets that 1/5 = 5^(-1) and sets x - 2 = 3x.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-034",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Sequences",
+  "diff": 3,
+  "stem": "The first term of an arithmetic sequence is 6, and the sum of the first 20 terms is 500. What is the common difference of the sequence?",
+  "choices": [
+   "-2",
+   "-1",
+   "1/2",
+   "1",
+   "2"
+  ],
+  "answer": 4,
+  "explanation": "The sum of n terms is (n/2)(2a₁ + (n - 1)d). So 500 = 10(12 + 19d), giving 12 + 19d = 50, 19d = 38 and d = 2. Check: the 20th term is 6 + 38 = 44, and the sum is 20 × (6 + 44)/2 = 500.",
+  "trap": "Choice 1 treats the average term, 500/20 = 25, as the 20th term; the 20th term is actually 2 × 25 - 6 = 44.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-035",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Sequences",
+  "diff": 3,
+  "stem": "A sequence is defined by a₁ = 5 and aₙ = 2aₙ₋₁ - 3 for n ≥ 2. What is the value of a₅?",
+  "choices": [
+   "29",
+   "33",
+   "35",
+   "37",
+   "67"
+  ],
+  "answer": 2,
+  "explanation": "Build the terms one at a time: a₂ = 2(5) - 3 = 7, a₃ = 2(7) - 3 = 11, a₄ = 2(11) - 3 = 19, a₅ = 2(19) - 3 = 35. Pattern check: each term is 3 more than a power of 2 (2 + 3, 4 + 3, 8 + 3, 16 + 3, 32 + 3).",
+  "trap": "Choice 67 is a₆; it is easy to compute one term too many when counting from a₁.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-036",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Coordinate Geometry",
+  "diff": 3,
+  "stem": "The lines y = 2x - 3 and y = -x + 9 intersect at the point (a, b). What is the value of a + b?",
+  "choices": [
+   "1",
+   "5",
+   "8",
+   "9",
+   "13"
+  ],
+  "answer": 3,
+  "explanation": "At the intersection the y-values are equal: 2x - 3 = -x + 9, so 3x = 12 and x = 4. Then y = -4 + 9 = 5. The point is (4, 5), so a + b = 9. Check in the other equation: 2(4) - 3 = 5.",
+  "trap": "Choice 5 is only the y-coordinate b.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-037",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Coordinate Geometry",
+  "diff": 3,
+  "stem": "A line in the xy-plane passes through the points (-2, 5) and (4, -7). At what x-value does the line cross the x-axis?",
+  "choices": [
+   "-1/2",
+   "1/2",
+   "1",
+   "2",
+   "3"
+  ],
+  "answer": 1,
+  "explanation": "Slope = (-7 - 5)/(4 - (-2)) = -12/6 = -2. Using (-2, 5): y - 5 = -2(x + 2), so y = -2x + 1. Setting y = 0 gives x = 1/2. Check with the second point: y = -2(4) + 1 = -7, which matches (4, -7), so the equation is correct.",
+  "trap": "Choice 1 is the y-intercept of the line, not where it meets the x-axis.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-038",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Functions & Custom Operations",
+  "diff": 3,
+  "stem": "For all numbers a and b, a Δ b = ab - a + b. If 3 Δ k = 13, what is the value of k?",
+  "choices": [
+   "4",
+   "13/3",
+   "5",
+   "16/3",
+   "6"
+  ],
+  "answer": 0,
+  "explanation": "Substitute a = 3 and b = k: 3k - 3 + k = 13. Combine like terms: 4k - 3 = 13, so 4k = 16 and k = 4. Check: 3(4) - 3 + 4 = 13. With custom operations, substitute carefully and collect like terms before solving.",
+  "trap": "Choice 16/3 drops the final + b term and solves 3k - 3 = 13.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-039",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Inequalities",
+  "diff": 3,
+  "stem": "If -1 < x < 0, which of the following must be true?\nI. x³ < x\nII. x² < |x|\nIII. 1/x < x",
+  "choices": [
+   "I only",
+   "II only",
+   "III only",
+   "II and III only",
+   "I, II and III"
+  ],
+  "answer": 3,
+  "explanation": "Test x = -1/2. I: x³ = -1/8, which is greater than -1/2, so I is false. II: x² = 1/4 < 1/2 = |x|, true; in general, for 0 < |x| < 1, squaring makes the size smaller. III: 1/x = -2 < -1/2, true; for any x between -1 and 0, 1/x is less than -1, which is less than x. So II and III must be true.",
+  "trap": "Choice E assumes cubing makes a number smaller, which holds for fractions between 0 and 1 but reverses for negative fractions.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-040",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Quadratics & Factoring",
+  "diff": 3,
+  "stem": "What is the sum of all values of x that satisfy (x - 3)² = 2x - 6?",
+  "choices": [
+   "3",
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "answer": 4,
+  "explanation": "Write the right side as 2(x - 3) and move it over: (x - 3)² - 2(x - 3) = 0. Factor: (x - 3)(x - 3 - 2) = (x - 3)(x - 5) = 0. So x = 3 or x = 5, and the sum is 8. Both values check: 0 = 0 and 4 = 4.",
+  "trap": "Choice 5 comes from dividing both sides by (x - 3), which silently discards the solution x = 3.",
+  "time": 120
+ },
+ {
+  "id": "ps-al-041",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Quadratics & Factoring",
+  "diff": 4,
+  "stem": "If x + 1/x = 5, what is the value of x² + 1/x²?",
+  "choices": [
+   "23",
+   "24",
+   "25",
+   "27",
+   "29"
+  ],
+  "answer": 0,
+  "explanation": "Square both sides: (x + 1/x)² = x² + 2(x)(1/x) + 1/x² = x² + 2 + 1/x². So x² + 2 + 1/x² = 25, and x² + 1/x² = 23. Solving for x directly (x = (5 ± √21)/2) works but is far slower. This identity appears often on the GMAT.",
+  "trap": "Choice 25 assumes (x + 1/x)² = x² + 1/x², forgetting the middle term 2.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-042",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Quadratics & Factoring",
+  "diff": 4,
+  "stem": "If a and b are positive numbers such that a² + b² = 34 and ab = 15, what is the value of a + b?",
+  "choices": [
+   "4",
+   "6",
+   "7",
+   "8",
+   "49"
+  ],
+  "answer": 3,
+  "explanation": "Use (a + b)² = a² + 2ab + b² = 34 + 2(15) = 64. Since a and b are positive, a + b = 8 (not -8). Indeed a and b are 3 and 5. Here the identity approach takes seconds, while guessing pairs that satisfy ab = 15 also works if you notice 3 and 5.",
+  "trap": "Choice 49 is 34 + 15, which adds ab once instead of 2ab and also forgets to take the square root.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-043",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Linear Equations & Systems",
+  "diff": 4,
+  "stem": "For which value of the constant k does the system of equations kx + 3y = 5 and 4x + 6y = 12 have no solution?",
+  "choices": [
+   "2",
+   "3",
+   "4",
+   "6",
+   "8"
+  ],
+  "answer": 0,
+  "explanation": "A system of two linear equations has no solution when the lines are parallel but distinct: the x- and y-coefficients are proportional but the constants are not. Here 3/6 = 1/2, so we need k/4 = 1/2, giving k = 2. Then the first equation is 2x + 3y = 5 while the second is equivalent to 2x + 3y = 6, so the lines are parallel and never meet.",
+  "trap": "Choice 4 makes the x-coefficients equal (k = 4) but then the y-coefficients 3 and 6 are not in the same ratio, so the lines intersect.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-044",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Inequalities",
+  "diff": 4,
+  "stem": "If -4 < x < 2 and -1 < y < 3, how many different integer values can x - y take?",
+  "choices": [
+   "7",
+   "8",
+   "9",
+   "10",
+   "11"
+  ],
+  "answer": 2,
+  "explanation": "To get the extremes of x - y, pair the largest x with the smallest y and vice versa. Upper bound: x - y < 2 - (-1) = 3. Lower bound: x - y > -4 - 3 = -7. So -7 < x - y < 3, and every value in between is reachable. The integers are -6 through 2, which is 9 values.",
+  "trap": "Choice 11 includes -7 and 3, but the strict inequalities make those endpoints unreachable.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-045",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Inequalities",
+  "diff": 4,
+  "stem": "How many integers x satisfy 1 < |x - 3| < 6?",
+  "choices": [
+   "6",
+   "7",
+   "8",
+   "9",
+   "10"
+  ],
+  "answer": 2,
+  "explanation": "|x - 3| is the distance from x to 3. The distance must be 2, 3, 4 or 5. Each distance gives two integers, one on each side of 3: 5 and 1, 6 and 0, 7 and -1, 8 and -2. That is 8 integers. Thinking of absolute value as distance makes counting quick.",
+  "trap": "Choice 10 also counts distance 1 (x = 2 and x = 4), but the inequality 1 < |x - 3| is strict.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-046",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Functions & Custom Operations",
+  "diff": 4,
+  "stem": "The function f(x) = x² - 4x + c, where c is a constant, has a minimum value of 6. What is the value of f(5)?",
+  "choices": [
+   "5",
+   "9",
+   "11",
+   "13",
+   "15"
+  ],
+  "answer": 4,
+  "explanation": "A parabola x² + bx + c with a positive leading coefficient has its minimum at x = -b/2 = 2. So f(2) = 4 - 8 + c = 6, giving c = 10. Then f(5) = 25 - 20 + 10 = 15. Completing the square shows the same thing: f(x) = (x - 2)² + (c - 4).",
+  "trap": "Choice 11 uses c = 6, treating the minimum value as the constant term, which is true only when the vertex is at x = 0.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-047",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Functions & Custom Operations",
+  "diff": 4,
+  "stem": "A function f satisfies f(2x + 1) = 6x - 5 for all x. What is the value of f(7)?",
+  "choices": [
+   "9",
+   "13",
+   "19",
+   "23",
+   "37"
+  ],
+  "answer": 1,
+  "explanation": "Find the x that makes the input 7: 2x + 1 = 7 gives x = 3. Then f(7) = 6(3) - 5 = 13. Alternatively, let u = 2x + 1, so x = (u - 1)/2 and f(u) = 3(u - 1) - 5 = 3u - 8; then f(7) = 21 - 8 = 13.",
+  "trap": "Choice 37 plugs 7 straight into 6x - 5, but that expression is in terms of x, not the input 2x + 1.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-048",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Functions & Custom Operations",
+  "diff": 4,
+  "stem": "For all numbers x and y, x ⊗ y = x² - xy + y. If 2 ⊗ k = k ⊗ 2 and k ≠ 2, what is the value of k?",
+  "choices": [
+   "-2",
+   "-1",
+   "1",
+   "2",
+   "3"
+  ],
+  "answer": 1,
+  "explanation": "Compute both sides. 2 ⊗ k = 4 - 2k + k = 4 - k. k ⊗ 2 = k² - 2k + 2. Set them equal: 4 - k = k² - 2k + 2, so k² - k - 2 = 0, which factors as (k - 2)(k + 1) = 0. Since k ≠ 2, k = -1. Check: 2 ⊗ (-1) = 5 and (-1) ⊗ 2 = 1 + 2 + 2 = 5.",
+  "trap": "Choice 2 makes both sides equal trivially (any operation gives a ⊗ a = a ⊗ a), but the question excludes it.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-049",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Exponential Equations",
+  "diff": 4,
+  "stem": "If 4^x - 2^(x + 1) = 48, what is the value of x?",
+  "choices": [
+   "2",
+   "3",
+   "4",
+   "6",
+   "8"
+  ],
+  "answer": 1,
+  "explanation": "Let t = 2^x. Then 4^x = t² and 2^(x + 1) = 2t, so t² - 2t - 48 = 0, which factors as (t - 8)(t + 6) = 0. Since 2^x is always positive, t = 8, so 2^x = 8 and x = 3. Check: 64 - 16 = 48.",
+  "trap": "Choice 8 is the value of t = 2^x, not x itself.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-050",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Exponential Equations",
+  "diff": 4,
+  "stem": "If 2^a × 4^b = 1,024 and 3^a ÷ 27^b = 1/243, what is the value of ab?",
+  "choices": [
+   "8",
+   "12",
+   "15",
+   "18",
+   "20"
+  ],
+  "answer": 1,
+  "explanation": "Convert to common bases. 2^a × 4^b = 2^(a + 2b) and 1,024 = 2¹⁰, so a + 2b = 10. Also 3^a ÷ 27^b = 3^(a - 3b) and 1/243 = 3^(-5), so a - 3b = -5. Subtract: 5b = 15, so b = 3 and a = 4. Thus ab = 12.",
+  "trap": "Choice 8 comes from reading 1/243 as 3⁵ instead of 3^(-5): then a - 3b = 5, giving b = 1, a = 8 and ab = 8.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-051",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Sequences",
+  "diff": 4,
+  "stem": "In a sequence, each term after the second is the sum of the two terms immediately before it. If the third term is 7 and the sixth term is 37, what is the fifth term?",
+  "choices": [
+   "8",
+   "13",
+   "15",
+   "18",
+   "22"
+  ],
+  "answer": 4,
+  "explanation": "Call the first two terms p and q. Then the terms are p, q, p + q, p + 2q, 2p + 3q, 3p + 5q. So p + q = 7 and 3p + 5q = 37. Substituting p = 7 - q: 21 + 2q = 37, so q = 8 and p = -1. The fifth term is 2(-1) + 3(8) = 22. Check: -1, 8, 7, 15, 22, 37.",
+  "trap": "Choice 15 is the fourth term; label the terms carefully when building the sequence.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-052",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Sequences",
+  "diff": 4,
+  "stem": "In an arithmetic sequence, the sum of the 4th term and the 12th term is 50. What is the sum of the first 15 terms?",
+  "choices": [
+   "300",
+   "350",
+   "375",
+   "400",
+   "750"
+  ],
+  "answer": 2,
+  "explanation": "In an arithmetic sequence, terms equally spaced around a middle term average to it: the 4th and 12th terms are each 4 steps from the 8th, so 2a₈ = 50 and a₈ = 25. The 8th term is also the middle of the first 15 terms, so their average is 25 and their sum is 15 × 25 = 375. You cannot find a₁ or d individually, and you do not need to.",
+  "trap": "Choice 750 multiplies 15 by 50 instead of by the average term 25.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-053",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Coordinate Geometry",
+  "diff": 4,
+  "stem": "Line ℓ passes through the point (3, 4). Its x-intercept and y-intercept are both positive, and the x-intercept is twice the y-intercept. What is the y-intercept of line ℓ?",
+  "choices": [
+   "3",
+   "4",
+   "5",
+   "11/2",
+   "11"
+  ],
+  "answer": 3,
+  "explanation": "Let the y-intercept be b, so the x-intercept is 2b. The intercept form of the line is x/(2b) + y/b = 1. Substituting (3, 4): 3/(2b) + 4/b = 1, so 3/(2b) + 8/(2b) = 11/(2b) = 1 and b = 11/2. Check: the slope is -1/2, and y = -x/2 + 11/2 gives y = 4 at x = 3.",
+  "trap": "Choice 11 is the x-intercept 2b, not the y-intercept.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-054",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Coordinate Geometry",
+  "diff": 4,
+  "stem": "Line k is perpendicular to the line 3x - 4y = 12 and passes through the y-intercept of that line. What is the x-intercept of line k?",
+  "choices": [
+   "-4",
+   "-9/4",
+   "-3/4",
+   "9/4",
+   "4"
+  ],
+  "answer": 1,
+  "explanation": "Rewrite 3x - 4y = 12 as y = (3/4)x - 3: slope 3/4, y-intercept (0, -3). Line k has slope -4/3 (negative reciprocal) and y-intercept -3, so y = (-4/3)x - 3. Set y = 0: (4/3)x = -3, so x = -9/4. Check: the slopes 3/4 and -4/3 multiply to -1, and y = 0 at x = -9/4.",
+  "trap": "Choice 9/4 drops the negative sign when solving (4/3)x = -3.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-055",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Linear Equations & Systems",
+  "diff": 4,
+  "stem": "If 1/x + 1/y = 5/6 and xy = 6, what is the value of x² + y²?",
+  "choices": [
+   "13",
+   "19",
+   "23",
+   "25",
+   "36"
+  ],
+  "answer": 0,
+  "explanation": "Combine the fractions: 1/x + 1/y = (x + y)/(xy). So (x + y)/6 = 5/6, which gives x + y = 5. Then x² + y² = (x + y)² - 2xy = 25 - 12 = 13. (The numbers are 2 and 3, and 4 + 9 = 13.)",
+  "trap": "Choice 25 is (x + y)², which still contains the 2xy term.",
+  "time": 135
+ },
+ {
+  "id": "ps-al-056",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Quadratics & Factoring",
+  "diff": 4,
+  "stem": "The equation x² - 6x + k = 0 has two roots whose difference is 4. What is the value of the constant k?",
+  "choices": [
+   "2",
+   "5",
+   "8",
+   "9",
+   "20"
+  ],
+  "answer": 1,
+  "explanation": "Let the roots be r and s. Then r + s = 6 and rs = k. Use (r - s)² = (r + s)² - 4rs: 16 = 36 - 4k, so k = 5. Check: x² - 6x + 5 = (x - 1)(x - 5), with roots 1 and 5, which differ by 4. Quicker: roots that sum to 6 and differ by 4 are 5 and 1, product 5.",
+  "trap": "Choice 9 is the value of k that gives a double root (difference 0).",
+  "time": 135
+ },
+ {
+  "id": "ps-al-057",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Quadratics & Factoring",
+  "diff": 5,
+  "stem": "If r and s are the roots of 2x² - 7x + 4 = 0, what is the value of 1/r² + 1/s²?",
+  "choices": [
+   "7/4",
+   "33/16",
+   "41/16",
+   "49/16",
+   "33/4"
+  ],
+  "answer": 1,
+  "explanation": "By Vieta, r + s = 7/2 and rs = 4/2 = 2. Write 1/r² + 1/s² = (r² + s²)/(rs)². Next r² + s² = (r + s)² - 2rs = 49/4 - 4 = 33/4. Divide by (rs)² = 4: (33/4)/4 = 33/16. The roots themselves, (7 ± √17)/4, are messy, so the symmetric-function route is far faster.",
+  "trap": "Choice 33/4 is r² + s²; the division by (rs)² = 4 was forgotten.",
+  "time": 150
+ },
+ {
+  "id": "ps-al-058",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Linear Equations & Systems",
+  "diff": 5,
+  "stem": "For which value of k does the system 2x - ky = 3 and kx - 8y = 6 have no solution?",
+  "choices": [
+   "-4",
+   "-2",
+   "2",
+   "4",
+   "There is no such value of k."
+  ],
+  "answer": 0,
+  "explanation": "No solution needs proportional coefficients with non-proportional constants. Proportional coefficients: 2/k = (-k)/(-8), so k² = 16 and k = 4 or k = -4. For k = 4 the ratio of the constants is 3/6 = 1/2, which matches 2/4, so the equations are the same line (infinitely many solutions). For k = -4 the coefficient ratio is 2/(-4) = -1/2, but 3/6 = 1/2, so the lines are parallel and distinct: no solution.",
+  "trap": "Choice 4 makes the coefficients proportional, but it also makes the constants proportional, giving the same line, not parallel lines.",
+  "time": 150
+ },
+ {
+  "id": "ps-al-059",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Inequalities",
+  "diff": 5,
+  "stem": "How many integers n with |n| < 10 satisfy (n - 3)(n + 2)(n - 7) < 0?",
+  "choices": [
+   "7",
+   "8",
+   "10",
+   "12",
+   "13"
+  ],
+  "answer": 2,
+  "explanation": "The critical points are -2, 3 and 7. For large n all three factors are positive, and the sign flips at each critical point. So the product is negative when n < -2 or 3 < n < 7. With |n| < 10, the first region gives -9, -8, ..., -3 (7 integers) and the second gives 4, 5, 6 (3 integers). Total: 10.",
+  "trap": "Choice 13 counts the region -2 < n < 3 (where the product is positive) instead of 3 < n < 7, or includes the roots, where the product is 0.",
+  "time": 150
+ },
+ {
+  "id": "ps-al-060",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Functions & Custom Operations",
+  "diff": 5,
+  "stem": "A function f satisfies f(x) + 2f(1 - x) = 3x for all real numbers x. What is the value of f(3)?",
+  "choices": [
+   "-7",
+   "-3",
+   "1",
+   "3",
+   "9"
+  ],
+  "answer": 0,
+  "explanation": "Plug in two values of x that swap 3 and 1 - 3 = -2. With x = 3: f(3) + 2f(-2) = 9. With x = -2: f(-2) + 2f(3) = -6. Let A = f(3) and B = f(-2): A + 2B = 9 and 2A + B = -6. Multiply the second by 2 and subtract the first: 3A = -21, so A = -7. (Doing the same with a general x gives f(x) = 2 - 3x, and indeed f(3) = 2 - 9 = -7.)",
+  "trap": "Choice 9 assumes f(x) = 3x, ignoring the 2f(1 - x) term.",
+  "time": 150
+ },
+ {
+  "id": "ps-al-061",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Functions & Custom Operations",
+  "diff": 5,
+  "stem": "For all positive numbers a and b, a ◇ b = (a + b)/(1 + ab). If (1/2 ◇ 1/3) ◇ k = 3/4, what is the value of k?",
+  "choices": [
+   "1/28",
+   "1/13",
+   "1/7",
+   "1/5",
+   "1/2"
+  ],
+  "answer": 1,
+  "explanation": "First 1/2 ◇ 1/3 = (5/6)/(1 + 1/6) = (5/6)/(7/6) = 5/7. Then 5/7 ◇ k = (5/7 + k)/(1 + 5k/7). Multiply top and bottom by 7: (5 + 7k)/(7 + 5k) = 3/4. Cross-multiply: 20 + 28k = 21 + 15k, so 13k = 1 and k = 1/13. Check: (5 + 7/13)/(7 + 5/13) = (72/13)/(96/13) = 3/4.",
+  "trap": "Choice 1/28 ignores the denominator 1 + ab in the second step and solves 5/7 + k = 3/4.",
+  "time": 150
+ },
+ {
+  "id": "ps-al-062",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Exponential Equations",
+  "diff": 5,
+  "stem": "If 2^x = 3^y = 6^z, where x, y and z are nonzero numbers, which of the following expresses z in terms of x and y?",
+  "choices": [
+   "x + y",
+   "xy",
+   "(x + y)/(xy)",
+   "√(xy)",
+   "xy/(x + y)"
+  ],
+  "answer": 4,
+  "explanation": "Let the common value be t. Then 2 = t^(1/x), 3 = t^(1/y) and 6 = t^(1/z). Since 6 = 2 × 3, t^(1/z) = t^(1/x) × t^(1/y) = t^(1/x + 1/y), so 1/z = 1/x + 1/y = (x + y)/(xy). Therefore z = xy/(x + y). Check with numbers: if t = 6, then z = 1, x = log₂6 ≈ 2.585 and y = log₃6 ≈ 1.631; xy/(x + y) ≈ 4.216/4.216 = 1.",
+  "trap": "Choice x + y comes from treating 6 = 2 × 3 as if the exponents add, when it is the reciprocals of the exponents that add.",
+  "time": 150
+ },
+ {
+  "id": "ps-al-063",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Exponential Equations",
+  "diff": 5,
+  "stem": "What is the sum of all values of x for which 2^(x²) ÷ 4^x = 256?",
+  "choices": [
+   "-8",
+   "-2",
+   "2",
+   "4",
+   "6"
+  ],
+  "answer": 2,
+  "explanation": "Write everything in base 2: 4^x = 2^(2x) and 256 = 2⁸. So 2^(x² - 2x) = 2⁸ and x² - 2x = 8, that is x² - 2x - 8 = 0 = (x - 4)(x + 2). The solutions are 4 and -2, with sum 2. By Vieta you can read the sum directly as -(-2)/1 = 2.",
+  "trap": "Choice 4 reports only the positive solution, but x = -2 also works: 2⁴ ÷ 4^(-2) = 16 × 16 = 256.",
+  "time": 150
+ },
+ {
+  "id": "ps-al-064",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Sequences",
+  "diff": 5,
+  "stem": "The nth term of a sequence is 1/(n(n + 1)). What is the sum of the first 50 terms?",
+  "choices": [
+   "49/50",
+   "50/51",
+   "1",
+   "51/50",
+   "51/52"
+  ],
+  "answer": 1,
+  "explanation": "Split each term: 1/(n(n + 1)) = 1/n - 1/(n + 1). The sum becomes (1 - 1/2) + (1/2 - 1/3) + ... + (1/50 - 1/51). Every middle term cancels (telescoping), leaving 1 - 1/51 = 50/51. Small cases confirm the pattern: the first 2 terms sum to 2/3, the first 3 to 3/4.",
+  "trap": "Choice 1 is the limit of the sum as the number of terms grows without bound; any finite sum falls short of 1.",
+  "time": 150
+ },
+ {
+  "id": "ps-al-065",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Sequences",
+  "diff": 5,
+  "stem": "A sequence is defined by a₁ = 2 and aₙ₊₁ = aₙ + 2n for all n ≥ 1. What is the value of a₃₀?",
+  "choices": [
+   "812",
+   "842",
+   "870",
+   "872",
+   "902"
+  ],
+  "answer": 3,
+  "explanation": "Each step adds 2n, so a₃₀ = a₁ + 2(1 + 2 + ... + 29) = 2 + 2 × (29 × 30/2) = 2 + 870 = 872. A small check: a₂ = 4, a₃ = 8, a₄ = 14, which fit the formula aₙ = 2 + n(n - 1).",
+  "trap": "Choice 870 is only the total amount added, 2(1 + 2 + ... + 29); the starting value a₁ = 2 must be included.",
+  "time": 150
+ },
+ {
+  "id": "ps-al-066",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Coordinate Geometry",
+  "diff": 5,
+  "stem": "For how many integer values of k does the line y = kx + 6 cross the x-axis at a point whose x-coordinate is a positive integer?",
+  "choices": [
+   "2",
+   "3",
+   "4",
+   "6",
+   "8"
+  ],
+  "answer": 2,
+  "explanation": "Set y = 0: kx = -6, so x = -6/k (k ≠ 0, since k = 0 gives a horizontal line that never meets the x-axis). For x to be a positive integer, k must be negative and -k must divide 6. So -k ∈ {1, 2, 3, 6}, giving k = -1, -2, -3, -6: four values.",
+  "trap": "Choice 8 counts all divisors of 6 with both signs, but positive k gives a negative x-intercept.",
+  "time": 150
+ },
+ {
+  "id": "ps-al-067",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Coordinate Geometry",
+  "diff": 5,
+  "stem": "Line ℓ passes through the point (3, -2) and contains no point (x, y) for which both x and y are positive. Which of the following could be the slope of ℓ?",
+  "choices": [
+   "-1",
+   "-3/4",
+   "-1/2",
+   "1/4",
+   "2/3"
+  ],
+  "answer": 2,
+  "explanation": "Write ℓ as y = m(x - 3) - 2. If m > 0, y grows without bound as x grows, so ℓ enters the first quadrant; rule out 1/4 and 2/3. If m < 0, the highest point of ℓ over x > 0 is near the y-axis, so ℓ avoids the first quadrant exactly when its y-intercept is at most 0: -3m - 2 ≤ 0, so m ≥ -2/3. Among -1, -3/4 and -1/2, only -1/2 satisfies this (y-intercept -1/2). For m = -3/4 the y-intercept is +1/4, so points just to the right of the y-axis have both coordinates positive.",
+  "trap": "Choice -1 feels safe because the line slopes down, but a steep negative slope lifts the y-intercept to 1, putting part of the line in the first quadrant.",
+  "time": 150
+ },
+ {
+  "id": "ps-al-068",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Linear Equations & Systems",
+  "diff": 5,
+  "stem": "How many ordered pairs of positive integers (x, y), with x < 50 and y < 50, satisfy 4x - 3y = 2?",
+  "choices": [
+   "11",
+   "12",
+   "13",
+   "16",
+   "17"
+  ],
+  "answer": 1,
+  "explanation": "Find one solution: (2, 2). The general solution adds 3 to x and 4 to y each time: (2, 2), (5, 6), (8, 10), ... so x = 2 + 3t and y = 2 + 4t for t ≥ 0. The binding limit is y < 50: 2 + 4t ≤ 49 gives t ≤ 11, so t = 0 to 11, which is 12 pairs. The largest pair, (35, 46), keeps x below 50 as well.",
+  "trap": "Choice 16 applies only the x < 50 limit (2 + 3t ≤ 49 gives t ≤ 15), ignoring that y reaches 50 first.",
+  "time": 150
+ },
+ {
+  "id": "ps-al-069",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Quadratics & Factoring",
+  "diff": 5,
+  "stem": "For how many integer values of c does the equation x² + 6x + c = 0 have two distinct negative roots?",
+  "choices": [
+   "7",
+   "8",
+   "9",
+   "10",
+   "Infinitely many"
+  ],
+  "answer": 1,
+  "explanation": "Three conditions are needed. Distinct real roots: the discriminant 36 - 4c > 0, so c < 9. Both roots negative: their sum, -6, is negative (always true), and their product, c, must be positive, so c > 0. Together 0 < c < 9, giving c = 1, 2, ..., 8: 8 integer values.",
+  "trap": "Choice 9 includes c = 9, which gives a repeated root -3, not two distinct roots (or includes c = 0, which gives a root of 0).",
+  "time": 150
+ },
+ {
+  "id": "ps-al-070",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Algebra",
+  "sub": "Functions & Custom Operations",
+  "diff": 5,
+  "stem": "If f(x) = |x - 2| + |x + 4|, for how many integers x is f(x) ≤ 10?",
+  "choices": [
+   "6",
+   "7",
+   "10",
+   "11",
+   "12"
+  ],
+  "answer": 3,
+  "explanation": "f(x) is the distance from x to 2 plus the distance from x to -4. Between -4 and 2 the sum is always 6. Outside that interval it grows by 2 for each unit you move away. To reach 10 you can go 2 units beyond either end: down to -6 or up to 4. So f(x) ≤ 10 exactly when -6 ≤ x ≤ 4, which contains 11 integers.",
+  "trap": "Choice 7 counts only the integers from -4 to 2, where f is at its minimum of 6.",
+  "time": 150
+ }
+]

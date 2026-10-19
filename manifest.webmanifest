@@ -1,0 +1,15 @@
+{
+  "name": "Calculis - Stalis's GMAT",
+  "short_name": "Calculis",
+  "description": "GMAT Focus Edition practice with Max the fox",
+  "lang": "en",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F5F7",
+  "theme_color": "#5A1F4E",
+  "icons": [
+    {"src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "/icons/mask-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

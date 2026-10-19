@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ps-stat-001",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Mean/Median/Mode",
+  "diff": 1,
+  "stem": "A student's scores on five quizzes were 72, 85, 90, 64 and 89. What was the student's average (arithmetic mean) score?",
+  "choices": [
+   "76",
+   "78",
+   "80",
+   "82",
+   "84"
+  ],
+  "answer": 2,
+  "explanation": "Add the five scores: 72 + 85 + 90 + 64 + 89 = 400. Divide by the number of scores: 400 ÷ 5 = 80. A quick check: using 80 as a baseline, the deviations are -8, +5, +10, -16 and +9, which sum to 0, so 80 is the mean.",
+  "trap": "Picking 78 or 82 usually comes from an addition slip; the deviations-from-80 check catches this instantly.",
+  "time": 90
+ },
+ {
+  "id": "ps-stat-002",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Mean/Median/Mode",
+  "diff": 1,
+  "stem": "What is the median of the numbers 13, 7, 22, 9, 15 and 30?",
+  "choices": [
+   "13",
+   "14",
+   "15",
+   "15.5",
+   "16"
+  ],
+  "answer": 1,
+  "explanation": "First put the numbers in order: 7, 9, 13, 15, 22, 30. There are 6 numbers, an even count, so the median is the average of the 3rd and 4th values: (13 + 15) ÷ 2 = 14. Note that 14 is not itself in the list, which is perfectly fine for a median of an even-sized set.",
+  "trap": "15.5 is the average of the two middle numbers of the unsorted list (22 and 9); always sort first.",
+  "time": 90
+ },
+ {
+  "id": "ps-stat-003",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Range & Standard Deviation",
+  "diff": 1,
+  "stem": "The low temperatures, in degrees Celsius, recorded in a town on five days were 12, -3, 8, 17 and 5. What is the range of these temperatures?",
+  "choices": [
+   "9",
+   "14",
+   "15",
+   "17",
+   "20"
+  ],
+  "answer": 4,
+  "explanation": "Range = greatest value minus least value. The greatest temperature is 17 and the least is -3. Range = 17 - (-3) = 17 + 3 = 20. Subtracting a negative number adds its size, so the spread between -3 and 17 covers 3 degrees below zero plus 17 above. Range questions often hide a negative value, so scan carefully for the smallest number.",
+  "trap": "14 comes from computing 17 - 3 and ignoring the negative sign of the lowest value.",
+  "time": 90
+ },
+ {
+  "id": "ps-stat-004",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Weighted Averages",
+  "diff": 1,
+  "stem": "In a class, 20 students have an average test score of 70 and the other 30 students have an average score of 80. What is the average score of all 50 students?",
+  "choices": [
+   "72",
+   "73",
+   "75",
+   "76",
+   "78"
+  ],
+  "answer": 3,
+  "explanation": "Total points = 20 × 70 + 30 × 80 = 1,400 + 2,400 = 3,800. Average = 3,800 ÷ 50 = 76. Faster: the overall average lies between 70 and 80, closer to 80 because that group is larger. The 10-point gap splits in the ratio 30 : 20, so the average is 70 + 10 × (30/50) = 76.",
+  "trap": "75 is the simple average of 70 and 80, which ignores that the two groups have different sizes.",
+  "time": 90
+ },
+ {
+  "id": "ps-stat-005",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Data Interpretation",
+  "diff": 1,
+  "stem": "A store sold 120 units of a product in January, 150 in February, 90 in March and 140 in April. By what percent did April sales exceed the average monthly sales for the four months?",
+  "choices": [
+   "12%",
+   "15%",
+   "16.7%",
+   "20%",
+   "25%"
+  ],
+  "answer": 0,
+  "explanation": "Average monthly sales = (120 + 150 + 90 + 140) ÷ 4 = 500 ÷ 4 = 125. April exceeded this by 140 - 125 = 15 units. Percent above average = 15 ÷ 125 × 100% = 12%. Note that the question compares April with the four-month average, not with March or January. Always identify the base before dividing: percent above = (value - base) ÷ base.",
+  "trap": "16.7% comes from dividing the 15-unit difference by March sales (90) instead of by the four-month average (125).",
+  "time": 90
+ },
+ {
+  "id": "ps-stat-006",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Mean/Median/Mode",
+  "diff": 2,
+  "stem": "The average (arithmetic mean) of six numbers is 15. When one of the numbers is removed, the average of the remaining five numbers is 13. What number was removed?",
+  "choices": [
+   "2",
+   "13",
+   "15",
+   "25",
+   "28"
+  ],
+  "answer": 3,
+  "explanation": "Work with totals, not averages. Sum of six numbers = 6 × 15 = 90. Sum of the remaining five = 5 × 13 = 65. The removed number = 90 - 65 = 25. Sanity check: removing a number above the average pulls the average down, and 25 is well above 15. This 'total = average × count' move is the core of almost every mean question.",
+  "trap": "2 is the difference between the two averages; averages cannot simply be subtracted when the counts differ.",
+  "time": 105
+ },
+ {
+  "id": "ps-stat-007",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Mean/Median/Mode",
+  "diff": 2,
+  "stem": "For the data set 2, 3, 3, 5, 7, 8, 8, 8, 10, 11, what is the mean minus the median?",
+  "choices": [
+   "-2",
+   "-1",
+   "0",
+   "1",
+   "1.5"
+  ],
+  "answer": 1,
+  "explanation": "Sum = 2 + 3 + 3 + 5 + 7 + 8 + 8 + 8 + 10 + 11 = 65, so the mean is 65 ÷ 10 = 6.5. The list is already sorted and has 10 values, so the median is the average of the 5th and 6th values: (7 + 8) ÷ 2 = 7.5. Mean - median = 6.5 - 7.5 = -1.",
+  "trap": "Using the mode (8) or the 5th value (7) as the median leads to -1.5 or -0.5 style errors; for 10 values the median averages two middle terms.",
+  "time": 105
+ },
+ {
+  "id": "ps-stat-008",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Weighted Averages",
+  "diff": 2,
+  "stem": "A grocer mixes 3 kilograms of rice costing 4 dollars per kilogram, 5 kilograms costing 6 dollars per kilogram and 2 kilograms costing 9 dollars per kilogram. What is the cost per kilogram of the mixture?",
+  "choices": [
+   "5.50 dollars",
+   "6.00 dollars",
+   "6.25 dollars",
+   "6.33 dollars",
+   "6.50 dollars"
+  ],
+  "answer": 1,
+  "explanation": "Total cost = 3 × 4 + 5 × 6 + 2 × 9 = 12 + 30 + 18 = 60 dollars. Total weight = 3 + 5 + 2 = 10 kg. Cost per kilogram = 60 ÷ 10 = 6.00 dollars. The weights matter: the largest quantity is priced at 6 dollars, and the small expensive portion is balanced by the cheaper rice.",
+  "trap": "6.33 dollars is the plain average of 4, 6 and 9, which ignores the different quantities.",
+  "time": 105
+ },
+ {
+  "id": "ps-stat-009",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Range & Standard Deviation",
+  "diff": 2,
+  "stem": "Each value in the data set 3, 8, 1, 9, 4 is increased by 5. Which of the following must change?\nI. The mean\nII. The median\nIII. The standard deviation",
+  "choices": [
+   "I only",
+   "III only",
+   "I and II only",
+   "II and III only",
+   "I, II and III"
+  ],
+  "answer": 2,
+  "explanation": "Adding the same constant to every value shifts the whole data set to the right. Measures of centre move with it: the mean rises by 5 (from 5 to 10) and the median rises by 5 (from 4 to 9). Measures of spread depend only on distances between values, and those distances do not change, so the standard deviation stays the same. Hence I and II only.",
+  "trap": "Choosing I, II and III assumes every statistic changes; spread measures such as standard deviation and range are unaffected by adding a constant.",
+  "time": 105
+ },
+ {
+  "id": "ps-stat-010",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Data Interpretation",
+  "diff": 2,
+  "stem": "A company's revenue was 2.4 million dollars in 2021. Revenue increased by 25% in 2022 and then decreased by 10% in 2023. What was the company's revenue in 2023?",
+  "choices": [
+   "2.52 million dollars",
+   "2.64 million dollars",
+   "2.70 million dollars",
+   "2.76 million dollars",
+   "2.88 million dollars"
+  ],
+  "answer": 2,
+  "explanation": "Apply the changes one after the other. 2022: 2.4 × 1.25 = 3.0 million. 2023: 3.0 × 0.90 = 2.70 million. The two changes combine as 1.25 × 0.9 = 1.125, a net increase of 12.5%, and 2.4 × 1.125 = 2.7.",
+  "trap": "2.76 million dollars comes from adding the percents (25% - 10% = 15%); successive percent changes multiply, they do not add.",
+  "time": 105
+ },
+ {
+  "id": "ps-stat-011",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Mean/Median/Mode",
+  "diff": 2,
+  "stem": "The average (arithmetic mean) of seven consecutive even integers is 36. What is the largest of these integers?",
+  "choices": [
+   "36",
+   "38",
+   "39",
+   "40",
+   "42"
+  ],
+  "answer": 4,
+  "explanation": "In an evenly spaced list the mean equals the middle term. With seven terms, 36 is the 4th term. The terms above it are 38, 40 and 42, so the largest is 42. The full list is 30, 32, 34, 36, 38, 40, 42. There is no need to write the whole list: just step up from the middle term.",
+  "trap": "40 comes from counting up only two steps, or from treating the integers as consecutive integers rather than consecutive even integers (which would give 39).",
+  "time": 105
+ },
+ {
+  "id": "ps-stat-012",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Weighted Averages",
+  "diff": 2,
+  "stem": "In a class of 40 students, the boys' average score was 72 and the girls' average score was 82. If the average score for the whole class was 78, how many boys are in the class?",
+  "choices": [
+   "16",
+   "18",
+   "20",
+   "22",
+   "24"
+  ],
+  "answer": 0,
+  "explanation": "Use the distances from the overall average. Boys are 6 below (78 - 72) and girls are 4 above (82 - 78). The group sizes are in the inverse ratio of these distances: boys : girls = 4 : 6 = 2 : 3. So boys are 2/5 of 40 = 16. Check: 16 × 72 + 24 × 82 = 1,152 + 1,968 = 3,120 = 40 × 78.",
+  "trap": "24 is the number of girls; the group farther from the overall average is the smaller one.",
+  "time": 105
+ },
+ {
+  "id": "ps-stat-013",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Mean/Median/Mode",
+  "diff": 3,
+  "stem": "The average of x, y and z is 18. The average of x and y is 15, and the average of y and z is 21. What is the value of x?",
+  "choices": [
+   "12",
+   "15",
+   "18",
+   "21",
+   "24"
+  ],
+  "answer": 0,
+  "explanation": "Turn each average into a sum. x + y + z = 54, x + y = 30 and y + z = 42. Subtract the third equation from the first: x = 54 - 42 = 12. (Similarly z = 54 - 30 = 24 and y = 18.) Converting averages to sums first is almost always fastest, because sums can be added and subtracted while averages of different-sized groups cannot.",
+  "trap": "18 is the value of y, the shared variable; read which variable the question asks for.",
+  "time": 120
+ },
+ {
+  "id": "ps-stat-014",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Mean/Median/Mode",
+  "diff": 3,
+  "stem": "The average (arithmetic mean) of 10 numbers is 24. If 4 of the numbers are each increased by 6 and the other 6 numbers are each decreased by 2, what is the new average?",
+  "choices": [
+   "24.4",
+   "25.2",
+   "26",
+   "26.4",
+   "28"
+  ],
+  "answer": 1,
+  "explanation": "Original total = 10 × 24 = 240. The changes add 4 × 6 = 24 and subtract 6 × 2 = 12, a net change of +12. New total = 252, so the new average = 252 ÷ 10 = 25.2. Shortcut: the average changes by the net change divided by the count, 12 ÷ 10 = 1.2.",
+  "trap": "26 comes from adding the two per-number changes (+6 and -2) as if each applied to every number.",
+  "time": 120
+ },
+ {
+  "id": "ps-stat-015",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Weighted Averages",
+  "diff": 3,
+  "stem": "Solution A is 20% alcohol and solution B is 50% alcohol. How many litres of solution B must be added to 12 litres of solution A to produce a mixture that is 30% alcohol?",
+  "choices": [
+   "6",
+   "8",
+   "9",
+   "12",
+   "24"
+  ],
+  "answer": 0,
+  "explanation": "Use the weighted-average balance. A is 10 points below the target (30 - 20) and B is 20 points above (50 - 30). The amounts must be in the inverse ratio, A : B = 20 : 10 = 2 : 1. With 12 litres of A, we need 6 litres of B. Check: 0.2 × 12 + 0.5 × 6 = 2.4 + 3 = 5.4, and 5.4 ÷ 18 = 30%.",
+  "trap": "24 or 12 litres come from using the ratio the wrong way round; the solution closer to the target needs the larger volume.",
+  "time": 120
+ },
+ {
+  "id": "ps-stat-016",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Range & Standard Deviation",
+  "diff": 3,
+  "stem": "Which of the following sets of numbers has the greatest standard deviation?",
+  "choices": [
+   "{4, 4, 4, 4, 4}",
+   "{3, 5, 7}",
+   "{2, 4, 6, 8, 10}",
+   "{0, 5, 5, 5, 10}",
+   "{1, 5, 9}"
+  ],
+  "answer": 4,
+  "explanation": "Standard deviation measures typical distance from the mean, so compare average squared deviations. {4,4,4,4,4}: 0. {3,5,7}: (4+0+4)/3 ≈ 2.7. {2,...,10}: (16+4+0+4+16)/5 = 8. {0,5,5,5,10}: (25+0+0+0+25)/5 = 10. {1,5,9}: (16+0+16)/3 ≈ 10.7. The set {1, 5, 9} is largest because two of its three values are 4 from the mean, while {0, 5, 5, 5, 10} has three values sitting exactly on the mean.",
+  "trap": "{0, 5, 5, 5, 10} has the greatest range, but its three middle values at the mean pull its standard deviation below that of {1, 5, 9}.",
+  "time": 120
+ },
+ {
+  "id": "ps-stat-017",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Data Interpretation",
+  "diff": 3,
+  "stem": "In 2019 a firm had 80 employees, 25% of whom worked in sales. In 2020 the firm hired 20 additional employees, all of whom work in sales, and no one left. What percent of the firm's employees in 2020 worked in sales?",
+  "choices": [
+   "30%",
+   "35%",
+   "40%",
+   "45%",
+   "50%"
+  ],
+  "answer": 2,
+  "explanation": "Sales staff in 2019 = 25% of 80 = 20. In 2020 sales = 20 + 20 = 40 and total staff = 80 + 20 = 100. Percent in sales = 40 ÷ 100 = 40%. The share of sales staff rises from 25% to 40%, a change of 15 percentage points. Always recompute the new whole rather than adjusting the old percent.",
+  "trap": "45% comes from adding the 20 new hires as 20 percentage points to 25%; the total also grows, so percents cannot be added this way.",
+  "time": 120
+ },
+ {
+  "id": "ps-stat-018",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Mean/Median/Mode",
+  "diff": 3,
+  "stem": "The average weight of a group of 8 people increases by 1.5 kilograms when one person, who weighs 62 kilograms, is replaced by a new person. What is the weight of the new person, in kilograms?",
+  "choices": [
+   "63.5",
+   "68",
+   "72",
+   "74",
+   "75.5"
+  ],
+  "answer": 3,
+  "explanation": "If the average of 8 people rises by 1.5 kg, the total weight rises by 8 × 1.5 = 12 kg. The only change in the group is the swap, so the new person weighs 12 kg more than the person replaced: 62 + 12 = 74 kg.",
+  "trap": "63.5 adds the 1.5 kg change in the average directly to 62, forgetting that the change in the total is 8 times as large.",
+  "time": 120
+ },
+ {
+  "id": "ps-stat-019",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Range & Standard Deviation",
+  "diff": 3,
+  "stem": "A set of 5 different positive integers has an average (arithmetic mean) of 12. What is the greatest possible range of the set?",
+  "choices": [
+   "45",
+   "46",
+   "48",
+   "49",
+   "55"
+  ],
+  "answer": 3,
+  "explanation": "The sum is 5 × 12 = 60. To maximise the range, make the smallest value as small as possible and the largest as large as possible. Make the four smallest values 1, 2, 3 and 4 (they must be different positive integers), totalling 10. The largest is then 60 - 10 = 50. Range = 50 - 1 = 49.",
+  "trap": "55 assumes the four smaller values can all be 1, but the integers must be different.",
+  "time": 120
+ },
+ {
+  "id": "ps-stat-020",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Data Interpretation",
+  "diff": 3,
+  "stem": "Over five years, a city's population grew from 200,000 to 250,000, while the number of registered cars grew from 50,000 to 75,000. By what percent did the number of registered cars per 1,000 residents increase?",
+  "choices": [
+   "10%",
+   "20%",
+   "25%",
+   "30%",
+   "50%"
+  ],
+  "answer": 1,
+  "explanation": "Cars per 1,000 residents at the start: 50,000 ÷ 200 = 250. At the end: 75,000 ÷ 250 = 300. Percent increase = (300 - 250) ÷ 250 = 20%. Equivalently, cars grew by a factor of 1.5 and population by 1.25, and 1.5 ÷ 1.25 = 1.2.",
+  "trap": "25% is the subtraction of the two growth rates (50% - 25%); ratios of growth factors must be divided, not subtracted.",
+  "time": 120
+ },
+ {
+  "id": "ps-stat-021",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Mean/Median/Mode",
+  "diff": 4,
+  "stem": "For the set {3, 9, 12, 15, x}, where x is an integer, the mean of the set equals its median. What is the sum of all possible values of x?",
+  "choices": [
+   "21",
+   "27",
+   "30",
+   "36",
+   "45"
+  ],
+  "answer": 1,
+  "explanation": "The mean is (39 + x)/5. The median depends on where x falls. If x ≤ 9, the median is 9: (39 + x)/5 = 9 gives x = 6, which works. If 9 ≤ x ≤ 12, the median is x: 39 + x = 5x gives x = 9.75, not an integer. If x ≥ 12, the median is 12: 39 + x = 60 gives x = 21, which works. Possible values: 6 and 21, sum 27.",
+  "trap": "21 alone assumes x is the largest value; x could also sit below 9, which gives the second solution x = 6.",
+  "time": 135
+ },
+ {
+  "id": "ps-stat-022",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Mean/Median/Mode",
+  "diff": 4,
+  "stem": "A list of 9 positive integers has an average (arithmetic mean) of 7 and a median of 5. What is the greatest possible value of the largest integer in the list?",
+  "choices": [
+   "39",
+   "41",
+   "43",
+   "45",
+   "47"
+  ],
+  "answer": 0,
+  "explanation": "The total is 9 × 7 = 63. To make the largest number as big as possible, make the other eight as small as possible. The four values below the median can each be 1 (sum 4). The 5th value, the median, is 5. The 6th, 7th and 8th values must be at least 5, so make them 5 each (sum 15). Remaining for the largest: 63 - 4 - 5 - 15 = 39.",
+  "trap": "47 would leave only 16 for the other eight values, but they must total at least 4 + 5 + 15 = 24, because the three values between the median and the largest cannot be less than 5.",
+  "time": 135
+ },
+ {
+  "id": "ps-stat-023",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Weighted Averages",
+  "diff": 4,
+  "stem": "Groups A, B and C have average ages of 60, 80 and 90, respectively. The combined average age of groups A and B is 72, and the combined average age of groups B and C is 85. What is the combined average age of all three groups?",
+  "choices": [
+   "75",
+   "76.67",
+   "77.5",
+   "78",
+   "78.75"
+  ],
+  "answer": 4,
+  "explanation": "Find the size ratios with the balance method. A and B: A is 12 below 72, B is 8 above, so A : B = 8 : 12 = 2 : 3. B and C: B is 5 below 85, C is 5 above, so B : C = 1 : 1 = 3 : 3. Hence A : B : C = 2 : 3 : 3. Combined average = (2 × 60 + 3 × 80 + 3 × 90) ÷ 8 = (120 + 240 + 270) ÷ 8 = 630 ÷ 8 = 78.75.",
+  "trap": "76.67 is the unweighted average of 60, 80 and 90, which ignores that the three groups have different sizes.",
+  "time": 135
+ },
+ {
+  "id": "ps-stat-024",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Range & Standard Deviation",
+  "diff": 4,
+  "stem": "A set of 10 numbers has a mean of 50, a standard deviation of 8 and a range of 16. Two more numbers, each equal to 50, are added to the set. Which of the following must be true of the new set of 12 numbers?\nI. Its mean is 50.\nII. Its standard deviation is less than 8.\nIII. Its range is 16.",
+  "choices": [
+   "I only",
+   "II only",
+   "I and II only",
+   "I and III only",
+   "I, II and III"
+  ],
+  "answer": 4,
+  "explanation": "I: the new total is 500 + 100 = 600 for 12 numbers, so the mean stays 50. II: the two new values have zero deviation from the mean, so the sum of squared deviations is unchanged while the count grows from 10 to 12; the standard deviation falls. III: 50 lies between the old minimum and maximum (the mean is always within the range), so neither extreme changes and the range stays 16. All three are true.",
+  "trap": "Choosing I and II only overlooks that values equal to the mean can never lie outside the existing minimum and maximum, so the range cannot change.",
+  "time": 135
+ },
+ {
+  "id": "ps-stat-025",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Data Interpretation",
+  "diff": 4,
+  "stem": "In 2022, 60% of a company's revenue came from product A and the rest from product B. In 2023, revenue from product A rose by 10% and revenue from product B fell by 20%. How did the company's total revenue change from 2022 to 2023?",
+  "choices": [
+   "It decreased by 10%.",
+   "It decreased by 5%.",
+   "It decreased by 2%.",
+   "It did not change.",
+   "It increased by 2%."
+  ],
+  "answer": 2,
+  "explanation": "Pick numbers: let 2022 revenue be 100, with A = 60 and B = 40. In 2023, A = 60 × 1.1 = 66 and B = 40 × 0.8 = 32. Total = 98, a 2% decrease. As a weighted average: 0.6 × (+10%) + 0.4 × (-20%) = 6% - 8% = -2%. Picking 100 as the starting total is the cleanest way to handle percent-of-percent questions like this one.",
+  "trap": "'Decreased by 5%' averages +10% and -20% equally, ignoring that A is a larger share of revenue.",
+  "time": 135
+ },
+ {
+  "id": "ps-stat-026",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Mean/Median/Mode",
+  "diff": 4,
+  "stem": "The average (arithmetic mean) of a list of consecutive integers is 20.5, and the largest integer in the list is 31. How many integers are in the list?",
+  "choices": [
+   "18",
+   "20",
+   "21",
+   "22",
+   "24"
+  ],
+  "answer": 3,
+  "explanation": "For consecutive integers the mean equals the average of the smallest and largest. So (smallest + 31) ÷ 2 = 20.5, which gives smallest = 41 - 31 = 10. Count from 10 to 31 inclusive = 31 - 10 + 1 = 22. For any evenly spaced list, mean = (first + last) ÷ 2 is the key shortcut.",
+  "trap": "21 forgets to add 1 when counting inclusively from 10 to 31.",
+  "time": 135
+ },
+ {
+  "id": "ps-stat-027",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Weighted Averages",
+  "diff": 4,
+  "stem": "A trader sold 40% of his stock at a profit of 25% and the remaining stock at a loss of x%. If his overall result was a profit of 4%, what is the value of x?",
+  "choices": [
+   "5",
+   "6",
+   "8",
+   "10",
+   "12"
+  ],
+  "answer": 3,
+  "explanation": "Treat the overall profit as a weighted average of the two rates, weighted by the share of stock (assume equal cost per unit). 0.4 × 25 + 0.6 × (-x) = 4. So 10 - 0.6x = 4, giving 0.6x = 6 and x = 10. Check with cost 100: profit 40 × 0.25 = 10, loss 60 × 0.10 = 6, net 4. Weighted-average thinking skips the cost set-up: the overall rate is the average of the individual rates, weighted by how much of the stock each covers.",
+  "trap": "6 is the size of the loss in money on a cost of 100, not the loss percent on the 60 units sold at a loss.",
+  "time": 135
+ },
+ {
+  "id": "ps-stat-028",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Range & Standard Deviation",
+  "diff": 4,
+  "stem": "A list of 7 integers has an average (arithmetic mean) of 10 and a median of 12. What is the least possible range of the list?",
+  "choices": [
+   "4",
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "answer": 1,
+  "explanation": "The sum is 70 and the 4th value is 12. The three values above the median are at least 12, so they total at least 36, leaving at most 70 - 12 - 36 = 22 for the three smallest values. Their minimum is therefore at most 7 (if the smallest were 8, the three would total at least 24). Range ≥ 12 - 7 = 5. This is achieved by 7, 7, 8, 12, 12, 12, 12 (sum 70). So the least range is 5.",
+  "trap": "4 assumes the three smallest can average 22/3 ≈ 7.33 and rounds up to 8; integers force the smallest to be 7 or less.",
+  "time": 135
+ },
+ {
+  "id": "ps-stat-029",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Mean/Median/Mode",
+  "diff": 5,
+  "stem": "A list of 5 different positive integers has an average (arithmetic mean) of 20 and a median of 18. What is the greatest possible difference between the largest and the second-largest integers in the list?",
+  "choices": [
+   "41",
+   "42",
+   "45",
+   "58",
+   "60"
+  ],
+  "answer": 0,
+  "explanation": "The sum is 100, and the middle value is 18. To maximise (largest - second largest), make the second largest as small as possible and push everything else into the largest. The two smallest values must be different positive integers below 18: use 1 and 2. The 4th value must exceed 18: use 19. Largest = 100 - 1 - 2 - 18 - 19 = 60. Difference = 60 - 19 = 41.",
+  "trap": "60 is the largest value itself, not its difference from the second-largest value.",
+  "time": 150
+ },
+ {
+  "id": "ps-stat-030",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Weighted Averages",
+  "diff": 5,
+  "stem": "Group X has 20 people with an average age of 30, and group Y has 30 people with an average age of 40. How many people, each aged 24, must join group Y so that the average age of the enlarged group Y equals the original combined average age of groups X and Y?",
+  "choices": [
+   "4",
+   "6",
+   "7",
+   "8",
+   "10"
+  ],
+  "answer": 4,
+  "explanation": "Original combined average = (20 × 30 + 30 × 40) ÷ 50 = 1,800 ÷ 50 = 36. Group Y must fall from 40 to 36. Balance method: the original 30 people are 4 above 36 and each newcomer is 12 below 36. So 30 × 4 = n × 12, giving n = 10. Check: (1,200 + 240) ÷ 40 = 36.",
+  "trap": "Measuring each newcomer's pull from 40 (a gap of 16) instead of from the target 36 (a gap of 12) gives 120 ÷ 16 = 7.5 and tempts a nearby choice such as 8.",
+  "time": 150
+ },
+ {
+  "id": "ps-stat-031",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Range & Standard Deviation",
+  "diff": 5,
+  "stem": "The set S = {11, 13, 15, 17, 19} has a standard deviation of about 2.83. If one of the following numbers is added to S, which one would increase the standard deviation?",
+  "choices": [
+   "13",
+   "14",
+   "16",
+   "18",
+   "19"
+  ],
+  "answer": 4,
+  "explanation": "Adding a value x to a set of n values with mean m and variance V gives a new variance [nV + (n/(n+1))(x - m)²]/(n + 1). This exceeds V only when (x - m)² > V(n + 1)/n. Here m = 15, V = 8, n = 5, so we need (x - 15)² > 9.6, i.e. |x - 15| > 3.1. Only 19 (distance 4) qualifies. For 18, the new variance is (40 + 7.5)/6 ≈ 7.92, slightly below 8. Direct check: adding 19 gives variance 56/6 ≈ 9.33.",
+  "trap": "18 is more than one standard deviation (2.83) from the mean, but a new value must be noticeably farther than that, about 3.1 here, to raise the standard deviation.",
+  "time": 150
+ },
+ {
+  "id": "ps-stat-032",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Data Interpretation",
+  "diff": 5,
+  "stem": "A firm has 500 employees, 60% of whom are full-time. Full-time employees earn an average salary of 60,000 dollars. If 50 part-time employees are converted to full-time status at a salary of 46,000 dollars each, and nothing else changes, what will be the new average salary of the firm's full-time employees?",
+  "choices": [
+   "53,000 dollars",
+   "55,000 dollars",
+   "56,500 dollars",
+   "58,000 dollars",
+   "59,000 dollars"
+  ],
+  "answer": 3,
+  "explanation": "Full-time staff = 60% of 500 = 300, with total pay 300 × 60,000 = 18,000,000 dollars. The 50 converts add 50 × 46,000 = 2,300,000 dollars. New full-time total = 20,300,000 dollars for 350 people, so the average = 20,300,000 ÷ 350 = 58,000 dollars. Balance check: the newcomers are 14,000 below 60,000, and spreading 50 × 14,000 over 350 people lowers the average by 2,000.",
+  "trap": "53,000 dollars averages 60,000 and 46,000 equally, ignoring that there are six times as many existing full-time staff.",
+  "time": 150
+ },
+ {
+  "id": "ps-stat-033",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Mean/Median/Mode",
+  "diff": 5,
+  "stem": "A list of 6 positive integers has an average (arithmetic mean) of 6, a median of 5 and a unique mode of 3. What is the greatest possible value of the largest integer in the list?",
+  "choices": [
+   "10",
+   "11",
+   "12",
+   "13",
+   "14"
+  ],
+  "answer": 4,
+  "explanation": "The sum is 36 and the 3rd and 4th values average 5. The list needs at least two 3s, and no other value may appear as often. Option 1: 3rd and 4th values 3 and 7, with list 1, 3, 3, 7, 8, x (the 5th value cannot be 7, or 7 would tie 3). Sum 22, so x = 14. Option 2: 3rd and 4th values 5 and 5 forces 3, 3, 5, 5, 6, x, also 22 and x = 14. Other splits such as 4 and 6 give 23 and x = 13. Greatest: 14.",
+  "trap": "13 comes from splitting the middle pair as 4 and 6, which makes the first five values total 23; the split 3 and 7 (or 5 and 5) keeps that total at 22.",
+  "time": 150
+ },
+ {
+  "id": "ps-stat-034",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Weighted Averages",
+  "diff": 5,
+  "stem": "A 20-pound mixture of cashews, peanuts and almonds costs 8.80 dollars per pound. Cashews cost 12 dollars per pound, peanuts 4 dollars per pound and almonds 10 dollars per pound. If the mixture contains equal weights of cashews and peanuts, how many pounds of almonds does it contain?",
+  "choices": [
+   "4",
+   "5",
+   "6",
+   "8",
+   "10"
+  ],
+  "answer": 3,
+  "explanation": "Equal weights of cashews (12 dollars) and peanuts (4 dollars) act like a single ingredient at 8 dollars per pound. Now mix that blend at 8 dollars per pound with almonds at 10 dollars per pound to reach 8.80 dollars per pound. Balance: the blend is 0.80 below, almonds are 1.20 above, so blend : almonds = 1.20 : 0.80 = 3 : 2. Almonds = 2/5 of 20 = 8 pounds. Check: 6 × 12 + 6 × 4 + 8 × 10 = 72 + 24 + 80 = 176 = 20 × 8.80.",
+  "trap": "6 is the weight of the cashews (and of the peanuts), not of the almonds the question asks about.",
+  "time": 150
+ },
+ {
+  "id": "ps-stat-035",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Statistics",
+  "sub": "Data Interpretation",
+  "diff": 5,
+  "stem": "At a store, members spend on average 50% more per visit than non-members. If members accounted for 60% of the store's revenue, and every customer made the same number of visits, what percent of the store's customers were members?",
+  "choices": [
+   "50%",
+   "55%",
+   "60%",
+   "64%",
+   "75%"
+  ],
+  "answer": 0,
+  "explanation": "Let m be the fraction of customers who are members, and let a non-member spend 1 per visit, so a member spends 1.5. Revenue share of members = 1.5m ÷ (1.5m + (1 - m)) = 0.6. Then 1.5m = 0.6 + 0.3m, so 1.2m = 0.6 and m = 0.5, or 50%. Check: 50 members × 1.5 = 75, 50 non-members × 1 = 50, and 75 ÷ 125 = 60%.",
+  "trap": "60% confuses the share of revenue with the share of customers; members spend more, so they are a smaller share of customers than of revenue.",
+  "time": 150
+ },
+ {
+  "id": "ps-cp-001",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Permutations",
+  "diff": 1,
+  "stem": "In how many different orders can 4 different books be arranged on a shelf?",
+  "choices": [
+   "4",
+   "12",
+   "16",
+   "24",
+   "256"
+  ],
+  "answer": 3,
+  "explanation": "There are 4 choices for the first position, 3 for the second, 2 for the third and 1 for the last: 4 × 3 × 2 × 1 = 4! = 24. This is a permutation of all 4 books, because swapping two books gives a different arrangement. In general, n distinct objects can be lined up in n! ways.",
+  "trap": "256 = 4⁴ allows the same book to be used in more than one position, which is impossible on a shelf.",
+  "time": 90
+ },
+ {
+  "id": "ps-cp-002",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Combinations",
+  "diff": 1,
+  "stem": "A committee of 2 people is to be chosen from a group of 6 people. How many different committees are possible?",
+  "choices": [
+   "15",
+   "18",
+   "20",
+   "30",
+   "36"
+  ],
+  "answer": 0,
+  "explanation": "Order does not matter in a committee, so use combinations: 6C2 = (6 × 5) ÷ (2 × 1) = 15. There are 6 × 5 = 30 ordered picks, but each committee is counted twice (AB and BA), so divide by 2. In general nCk = n! ÷ (k!(n - k)!), the number of ordered selections divided by the k! orders of each group.",
+  "trap": "30 counts ordered pairs; choosing Ann then Ben gives the same committee as Ben then Ann.",
+  "time": 90
+ },
+ {
+  "id": "ps-cp-003",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Probability Basics",
+  "diff": 1,
+  "stem": "A bag contains 5 red marbles, 3 blue marbles and 2 green marbles. If one marble is drawn at random, what is the probability that it is green?",
+  "choices": [
+   "1/5",
+   "1/4",
+   "2/5",
+   "1/2",
+   "3/5"
+  ],
+  "answer": 0,
+  "explanation": "There are 5 + 3 + 2 = 10 marbles, 2 of which are green. Probability = 2/10 = 1/5. Probability = favourable outcomes ÷ total equally likely outcomes. Each marble is equally likely, so count marbles: 2 favourable, 10 in total. Always use the whole bag as the denominator, not just the other colours.",
+  "trap": "1/4 comes from comparing green to non-green marbles (2 : 8) instead of green to all marbles.",
+  "time": 90
+ },
+ {
+  "id": "ps-cp-004",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Independent & Dependent Events",
+  "diff": 1,
+  "stem": "A fair coin is tossed 3 times. What is the probability that all 3 tosses land heads?",
+  "choices": [
+   "1/16",
+   "1/8",
+   "1/6",
+   "1/4",
+   "3/8"
+  ],
+  "answer": 1,
+  "explanation": "The tosses are independent, so multiply: (1/2) × (1/2) × (1/2) = 1/8. Equivalently, there are 2³ = 8 equally likely sequences and only HHH works. The 8 sequences are HHH, HHT, HTH, HTT, THH, THT, TTH and TTT. For independent events, P(A and B and C) = P(A) × P(B) × P(C).",
+  "trap": "3/8 is the probability of exactly two heads (or exactly one), not three heads.",
+  "time": 90
+ },
+ {
+  "id": "ps-cp-005",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Probability Basics",
+  "diff": 1,
+  "stem": "A fair six-sided die is rolled once. What is the probability that the number rolled is greater than 4?",
+  "choices": [
+   "1/6",
+   "1/4",
+   "1/3",
+   "1/2",
+   "2/3"
+  ],
+  "answer": 2,
+  "explanation": "The outcomes greater than 4 are 5 and 6, which is 2 of the 6 equally likely outcomes. Probability = 2/6 = 1/3. Read the inequality carefully: 'greater than 4' excludes 4, while 'at least 4' would include it and give 3/6 = 1/2. Listing outcomes is the safest method on small sample spaces.",
+  "trap": "1/2 comes from counting 4, 5 and 6; 'greater than 4' does not include 4.",
+  "time": 90
+ },
+ {
+  "id": "ps-cp-006",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Permutations",
+  "diff": 2,
+  "stem": "How many different 3-letter codes can be formed from the letters A, B, C, D and E if no letter may be repeated within a code?",
+  "choices": [
+   "10",
+   "15",
+   "60",
+   "120",
+   "125"
+  ],
+  "answer": 2,
+  "explanation": "Order matters in a code (ABC differs from CBA). Choices: 5 for the first letter, 4 for the second, 3 for the third: 5 × 4 × 3 = 60. This is 5P3 = 5! ÷ 2!. Use permutations when the positions are different (first, second, third letter) and combinations only when order is irrelevant.",
+  "trap": "10 = 5C3 counts groups of letters and ignores order; 125 = 5³ allows repetition.",
+  "time": 105
+ },
+ {
+  "id": "ps-cp-007",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Combinations",
+  "diff": 2,
+  "stem": "A committee of 4 is to be formed from 5 men and 4 women. If the committee must contain exactly 2 men and 2 women, how many different committees are possible?",
+  "choices": [
+   "60",
+   "72",
+   "90",
+   "126",
+   "180"
+  ],
+  "answer": 0,
+  "explanation": "Choose the men and the women separately and multiply. Men: 5C2 = 10. Women: 4C2 = 6. Committees = 10 × 6 = 60. Multiply because each choice of men can be combined with each choice of women: 5C2 = (5 × 4) ÷ 2 = 10 and 4C2 = (4 × 3) ÷ 2 = 6. Two independent selections joined by 'and' signal multiplication.",
+  "trap": "126 = 9C4 counts all 4-person committees and ignores the 2 men and 2 women requirement.",
+  "time": 105
+ },
+ {
+  "id": "ps-cp-008",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "At Least One",
+  "diff": 2,
+  "stem": "A fair coin is tossed 4 times. What is the probability of getting at least one head?",
+  "choices": [
+   "1/16",
+   "1/2",
+   "3/4",
+   "7/8",
+   "15/16"
+  ],
+  "answer": 4,
+  "explanation": "Use the complement. The only way to get no heads is TTTT, with probability (1/2)⁴ = 1/16. So P(at least one head) = 1 - 1/16 = 15/16. 'At least one' is almost always fastest through the complement, because 'none' is a single case, while counting 1, 2, 3 or 4 heads directly needs four cases (4 + 6 + 4 + 1 = 15 of 16).",
+  "trap": "1/16 is the probability of no heads, the complement, not the event asked about.",
+  "time": 105
+ },
+ {
+  "id": "ps-cp-009",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Independent & Dependent Events",
+  "diff": 2,
+  "stem": "A box contains 4 red cards and 6 black cards. Two cards are drawn at random without replacement. What is the probability that both cards are red?",
+  "choices": [
+   "2/15",
+   "4/25",
+   "1/5",
+   "4/15",
+   "2/5"
+  ],
+  "answer": 0,
+  "explanation": "The draws are dependent. P(first red) = 4/10. After a red card is removed, 3 red remain among 9 cards, so P(second red) = 3/9. Multiply: (4/10) × (3/9) = 12/90 = 2/15. Check with combinations: 4C2 ÷ 10C2 = 6/45 = 2/15.",
+  "trap": "4/25 = (4/10)² treats the draws as if the first card were put back.",
+  "time": 105
+ },
+ {
+  "id": "ps-cp-010",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Arrangements with Restrictions",
+  "diff": 2,
+  "stem": "Five people, including Alex, are to stand in a row for a photo. If Alex must stand at the left end, how many different arrangements are possible?",
+  "choices": [
+   "20",
+   "24",
+   "48",
+   "60",
+   "120"
+  ],
+  "answer": 1,
+  "explanation": "Fix Alex in the left-end position; there is only one way to do this. The other 4 people fill the remaining 4 positions in 4! = 24 ways. When a person's position is fixed, place them first and then arrange everyone else freely. If Alex could stand at either end, the answer would double to 48.",
+  "trap": "48 assumes Alex can be at either end; the question specifies the left end only.",
+  "time": 105
+ },
+ {
+  "id": "ps-cp-011",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Probability Basics",
+  "diff": 2,
+  "stem": "Two fair six-sided dice are rolled. What is the probability that the sum of the numbers rolled is 7?",
+  "choices": [
+   "1/12",
+   "1/9",
+   "1/6",
+   "7/36",
+   "1/4"
+  ],
+  "answer": 2,
+  "explanation": "There are 6 × 6 = 36 equally likely outcomes. A sum of 7 comes from (1,6), (2,5), (3,4), (4,3), (5,2) and (6,1): 6 outcomes. Probability = 6/36 = 1/6. Seven is the most likely sum of two dice because it can be made in the most ways. Always count ordered outcomes for two distinguishable dice.",
+  "trap": "1/12 counts only the 3 unordered pairs; (1,6) and (6,1) are different outcomes on two distinct dice.",
+  "time": 105
+ },
+ {
+  "id": "ps-cp-012",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Combinations",
+  "diff": 2,
+  "stem": "A pizzeria offers 7 different toppings. How many different pizzas with exactly 3 different toppings can be ordered?",
+  "choices": [
+   "21",
+   "35",
+   "42",
+   "210",
+   "343"
+  ],
+  "answer": 1,
+  "explanation": "The order in which toppings are added does not matter, so count combinations: 7C3 = (7 × 6 × 5) ÷ (3 × 2 × 1) = 210 ÷ 6 = 35. A pizza with mushrooms, olives and ham is the same pizza whatever order the toppings are listed in, so this is a combination. Dividing the ordered count by 3! removes the repeats.",
+  "trap": "210 is the number of ordered selections (7 × 6 × 5); each pizza is counted 3! = 6 times there.",
+  "time": 105
+ },
+ {
+  "id": "ps-cp-013",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Permutations",
+  "diff": 3,
+  "stem": "How many distinct arrangements of the letters in the word LEVEL are possible?",
+  "choices": [
+   "20",
+   "24",
+   "30",
+   "60",
+   "120"
+  ],
+  "answer": 2,
+  "explanation": "LEVEL has 5 letters: L twice, E twice and V once. Arrangements of letters with repeats = 5! ÷ (2! × 2!) = 120 ÷ 4 = 30. Dividing by 2! for each repeated letter removes the duplicates created by swapping identical letters. In general, n objects that include groups of identical items of sizes a, b, ... can be arranged in n! ÷ (a! × b! × ...) ways.",
+  "trap": "60 divides by only one 2!, accounting for the repeated L but forgetting the repeated E.",
+  "time": 120
+ },
+ {
+  "id": "ps-cp-014",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Combinations",
+  "diff": 3,
+  "stem": "A 4-person committee is to be chosen from 6 men and 5 women. How many different committees contain at least 3 women?",
+  "choices": [
+   "50",
+   "55",
+   "60",
+   "64",
+   "65"
+  ],
+  "answer": 4,
+  "explanation": "Split into cases. Exactly 3 women and 1 man: 5C3 × 6C1 = 10 × 6 = 60. Exactly 4 women: 5C4 = 5. Total = 60 + 5 = 65. For 'at least' conditions with few cases, list the cases and add; the complement (0, 1 or 2 women) would need three cases. The total number of committees, 11C4 = 330, is a useful sanity check.",
+  "trap": "60 counts only the 'exactly 3 women' case and forgets the all-women committees.",
+  "time": 120
+ },
+ {
+  "id": "ps-cp-015",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Probability Basics",
+  "diff": 3,
+  "stem": "An integer is chosen at random from the integers 1 to 60, inclusive. What is the probability that it is divisible by 4 or by 6?",
+  "choices": [
+   "1/4",
+   "3/10",
+   "1/3",
+   "5/12",
+   "2/5"
+  ],
+  "answer": 2,
+  "explanation": "Multiples of 4 up to 60: 15. Multiples of 6: 10. Numbers divisible by both are multiples of 12 (the least common multiple): 5. By inclusion-exclusion, 15 + 10 - 5 = 20 numbers qualify. Probability = 20/60 = 1/3. In general P(A or B) = P(A) + P(B) - P(A and B). The overlap here is the multiples of 12, since 12 is the LCM of 4 and 6.",
+  "trap": "5/12 = 25/60 adds the two counts without removing the multiples of 12, which were counted twice.",
+  "time": 120
+ },
+ {
+  "id": "ps-cp-016",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Independent & Dependent Events",
+  "diff": 3,
+  "stem": "Archer A hits a target with probability 0.7 and archer B hits it with probability 0.6. If they each shoot once, independently, what is the probability that exactly one of them hits the target?",
+  "choices": [
+   "0.18",
+   "0.28",
+   "0.42",
+   "0.46",
+   "0.58"
+  ],
+  "answer": 3,
+  "explanation": "Exactly one hit happens in two separate ways. A hits and B misses: 0.7 × 0.4 = 0.28. A misses and B hits: 0.3 × 0.6 = 0.18. Add the disjoint cases: 0.28 + 0.18 = 0.46. Whenever 'exactly' appears, list the cases: independence lets you multiply within each case, and the cases cannot happen together, so you add them.",
+  "trap": "0.28 counts only the case where A is the one who hits.",
+  "time": 120
+ },
+ {
+  "id": "ps-cp-017",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "At Least One",
+  "diff": 3,
+  "stem": "Three fair six-sided dice are rolled. What is the probability that at least one die shows a 6?",
+  "choices": [
+   "1/6",
+   "25/72",
+   "91/216",
+   "1/2",
+   "125/216"
+  ],
+  "answer": 2,
+  "explanation": "Complement: P(no 6 on any die) = (5/6)³ = 125/216. So P(at least one 6) = 1 - 125/216 = 91/216, a little under 1/2. Whenever 'at least one' appears, the complement 'none' is usually one simple product. Here 91/216 ≈ 0.42.",
+  "trap": "1/2 = 3 × (1/6) adds the single-die probabilities, which double-counts outcomes with more than one 6.",
+  "time": 120
+ },
+ {
+  "id": "ps-cp-018",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Arrangements with Restrictions",
+  "diff": 3,
+  "stem": "Six people, including Ana and Ben, are to be seated in a row of 6 chairs. In how many arrangements do Ana and Ben sit next to each other?",
+  "choices": [
+   "120",
+   "240",
+   "360",
+   "480",
+   "720"
+  ],
+  "answer": 1,
+  "explanation": "Glue Ana and Ben into one block. Now arrange 5 units (the block plus 4 people): 5! = 120 ways. Inside the block, Ana and Ben can be in 2 orders. Total = 120 × 2 = 240. The block method works for any 'must be together' condition: treat the group as one unit, arrange the units, then multiply by the internal orders. The complement, 720 - 240 = 480, counts the arrangements where they are apart.",
+  "trap": "120 forgets that the block can be Ana-Ben or Ben-Ana.",
+  "time": 120
+ },
+ {
+  "id": "ps-cp-019",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Independent & Dependent Events",
+  "diff": 3,
+  "stem": "An urn contains 3 red balls and 5 white balls. Two balls are drawn at random without replacement. What is the probability that one ball is red and the other is white?",
+  "choices": [
+   "15/64",
+   "15/56",
+   "3/7",
+   "15/32",
+   "15/28"
+  ],
+  "answer": 4,
+  "explanation": "Use combinations: favourable pairs = 3C1 × 5C1 = 15; total pairs = 8C2 = 28. Probability = 15/28. Sequentially: P(red then white) = (3/8)(5/7) = 15/56 and P(white then red) = (5/8)(3/7) = 15/56; add them to get 30/56 = 15/28. Whenever the colours can appear in either order, count both orders.",
+  "trap": "15/56 counts only one order (red first); the red ball could also be drawn second.",
+  "time": 120
+ },
+ {
+  "id": "ps-cp-020",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Combinations",
+  "diff": 3,
+  "stem": "In a league, each of 10 teams plays every other team exactly twice. How many games are played in total?",
+  "choices": [
+   "20",
+   "45",
+   "90",
+   "100",
+   "180"
+  ],
+  "answer": 2,
+  "explanation": "Each pair of teams meets twice. The number of pairs is 10C2 = (10 × 9) ÷ 2 = 45. Total games = 45 × 2 = 90. Alternatively, each team plays 9 opponents twice (18 games), and 10 × 18 = 180 counts each game twice, giving 90. Pair-counting problems such as handshakes and round-robin games all use nC2.",
+  "trap": "180 counts every game once for each of the two teams involved.",
+  "time": 120
+ },
+ {
+  "id": "ps-cp-021",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Permutations",
+  "diff": 4,
+  "stem": "How many 4-digit positive integers have four different digits and are even?",
+  "choices": [
+   "2,016",
+   "2,240",
+   "2,296",
+   "2,520",
+   "4,500"
+  ],
+  "answer": 2,
+  "explanation": "Split on the units digit, since 0 restricts the thousands digit. Units digit 0: thousands 9 choices, hundreds 8, tens 7: 504. Units digit 2, 4, 6 or 8 (4 choices): thousands cannot be 0 or the units digit, so 8 choices; hundreds 8; tens 7: 4 × 8 × 8 × 7 = 1,792. Total = 504 + 1,792 = 2,296.",
+  "trap": "2,240 = 5 × 8 × 8 × 7 treats 0 like the other even digits, but when the units digit is 0 the thousands digit has 9 options, not 8.",
+  "time": 135
+ },
+ {
+  "id": "ps-cp-022",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Combinations",
+  "diff": 4,
+  "stem": "In how many different ways can 6 people be divided into 3 pairs, if the pairs are not labelled?",
+  "choices": [
+   "15",
+   "20",
+   "30",
+   "45",
+   "90"
+  ],
+  "answer": 0,
+  "explanation": "Take any person; they can be paired with 5 others. From the 4 remaining, take any person; 3 partner choices. The last 2 form a pair. Total = 5 × 3 × 1 = 15. Check: 6C2 × 4C2 × 2C2 = 90 counts labelled pairs (first, second, third); dividing by 3! = 6 for the order of the pairs gives 15.",
+  "trap": "90 treats the three pairs as if they were labelled, such as Team 1, Team 2 and Team 3.",
+  "time": 135
+ },
+ {
+  "id": "ps-cp-023",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Probability Basics",
+  "diff": 4,
+  "stem": "Two different integers are chosen at random from the integers 1 to 10, inclusive. What is the probability that their product is even?",
+  "choices": [
+   "1/2",
+   "5/9",
+   "2/3",
+   "7/9",
+   "3/4"
+  ],
+  "answer": 3,
+  "explanation": "The product is odd only when both numbers are odd. There are 5 odd numbers, so odd pairs = 5C2 = 10, out of 10C2 = 45 pairs. P(odd product) = 10/45 = 2/9, so P(even product) = 1 - 2/9 = 7/9. The complement is quicker because only one case (odd × odd) gives an odd product.",
+  "trap": "3/4 uses 1 - (1/2)(1/2), which treats the choices as independent; without replacement the second pick is odd with probability 4/9, not 1/2.",
+  "time": 135
+ },
+ {
+  "id": "ps-cp-024",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Independent & Dependent Events",
+  "diff": 4,
+  "stem": "A batch of 10 items contains exactly 2 defective items. Items are tested one at a time, in random order and without replacement, until both defective items have been found. What is the probability that exactly 4 tests are needed?",
+  "choices": [
+   "1/45",
+   "1/15",
+   "4/45",
+   "1/10",
+   "2/15"
+  ],
+  "answer": 1,
+  "explanation": "Exactly 4 tests means the 4th item tested is defective and exactly one of the first 3 is defective. The positions of the 2 defectives among the 10 test slots are equally likely: 10C2 = 45 possibilities. Favourable: one defective in slot 4 and the other in slot 1, 2 or 3: 3 ways. Probability = 3/45 = 1/15. Sequential check: 3 × (2/10)(8/9)(7/8)(1/7) = 1/15.",
+  "trap": "1/45 counts only one specific arrangement of the first defective and forgets it can be in any of the first three slots.",
+  "time": 135
+ },
+ {
+  "id": "ps-cp-025",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "At Least One",
+  "diff": 4,
+  "stem": "A committee of 3 is chosen at random from 5 men and 4 women. What is the probability that the committee includes at least one woman?",
+  "choices": [
+   "5/42",
+   "4/9",
+   "2/3",
+   "37/42",
+   "20/21"
+  ],
+  "answer": 3,
+  "explanation": "Complement: the committee has no women, meaning all 3 are men: 5C3 = 10 ways, out of 9C3 = 84 committees. P(no women) = 10/84 = 5/42. P(at least one woman) = 1 - 5/42 = 37/42. Counting directly needs three cases (1, 2 or 3 women: 40 + 30 + 4 = 74 committees); the complement needs one, and 74/84 = 37/42 confirms it.",
+  "trap": "5/42 is the probability of an all-male committee, the complement of what is asked.",
+  "time": 135
+ },
+ {
+  "id": "ps-cp-026",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Arrangements with Restrictions",
+  "diff": 4,
+  "stem": "Five boys and three girls are to stand in a row. In how many arrangements are no two girls standing next to each other?",
+  "choices": [
+   "2,880",
+   "4,320",
+   "7,200",
+   "12,000",
+   "14,400"
+  ],
+  "answer": 4,
+  "explanation": "Place the boys first: 5! = 120 orders. They create 6 gaps (one before each boy and one at the end). Choose 3 different gaps for the girls, in order since the girls are distinct: 6 × 5 × 4 = 120. Total = 120 × 120 = 14,400. The gap method is the standard tool for 'no two together' conditions.",
+  "trap": "2,880 uses only the 4 gaps between boys and ignores the two end positions.",
+  "time": 135
+ },
+ {
+  "id": "ps-cp-027",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Combinations",
+  "diff": 4,
+  "stem": "On a street grid, a courier walks from corner P to corner Q, which is 4 blocks east and 3 blocks north of P, moving only east or north along the streets. How many different shortest routes pass through the corner R that is 2 blocks east and 1 block north of P?",
+  "choices": [
+   "18",
+   "20",
+   "24",
+   "30",
+   "35"
+  ],
+  "answer": 0,
+  "explanation": "Split the trip at R. From P to R: 2 east and 1 north moves in some order, 3C1 = 3 routes. From R to Q: 2 east and 2 north, 4C2 = 6 routes. Multiply: 3 × 6 = 18. Each shortest route is a sequence of E and N moves, so routes are counted by choosing the positions of the N moves. Splitting at a required corner and multiplying is the key step.",
+  "trap": "35 = 7C3 counts all shortest routes from P to Q, including those that avoid R.",
+  "time": 135
+ },
+ {
+  "id": "ps-cp-028",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "At Least One",
+  "diff": 4,
+  "stem": "Four fair six-sided dice are rolled. What is the probability that at least two of the dice show the same number?",
+  "choices": [
+   "5/18",
+   "1/2",
+   "5/9",
+   "2/3",
+   "13/18"
+  ],
+  "answer": 4,
+  "explanation": "Complement: all four dice show different numbers. Count: 6 × 5 × 4 × 3 = 360 out of 6⁴ = 1,296 outcomes, so P(all different) = 360/1,296 = 5/18. P(at least two match) = 1 - 5/18 = 13/18. This is the dice version of the birthday problem: the complement 'all different' is a simple product of decreasing factors.",
+  "trap": "5/18 is the probability that all four numbers are different, the complement.",
+  "time": 135
+ },
+ {
+  "id": "ps-cp-029",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Arrangements with Restrictions",
+  "diff": 5,
+  "stem": "How many distinct arrangements of the letters of BANANA have no two A's next to each other?",
+  "choices": [
+   "12",
+   "24",
+   "36",
+   "40",
+   "60"
+  ],
+  "answer": 0,
+  "explanation": "Arrange the non-A letters first: B, N, N can be ordered in 3!/2! = 3 ways. These 3 letters create 4 gaps (_B_N_N_). Put the three identical A's into 3 different gaps: 4C3 = 4 ways. Total = 3 × 4 = 12. For example, ABANAN, ANABAN and ANANAB are three of them.",
+  "trap": "60 is the total number of arrangements of BANANA (6!/(3!2!)) without the restriction.",
+  "time": 150
+ },
+ {
+  "id": "ps-cp-030",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Probability Basics",
+  "diff": 5,
+  "stem": "Four fair six-sided dice are rolled. What is the probability that exactly two of the dice show the same number and the other two dice show two other, different numbers?",
+  "choices": [
+   "5/18",
+   "5/12",
+   "4/9",
+   "5/9",
+   "2/3"
+  ],
+  "answer": 3,
+  "explanation": "Count outcomes of the form (pair, single, single). Choose the number for the pair: 6. Choose which 2 of the 4 dice show it: 4C2 = 6. The other two dice show different numbers, both unlike the pair, in order: 5 × 4 = 20. Favourable = 6 × 6 × 20 = 720 out of 1,296, so the probability is 720/1,296 = 5/9.",
+  "trap": "5/18 is the probability that all four dice differ; exactly one pair also needs a factor of 4C2 = 6 for which two dice match.",
+  "time": 150
+ },
+ {
+  "id": "ps-cp-031",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "At Least One",
+  "diff": 5,
+  "stem": "A fair coin is tossed 6 times. What is the probability that at least two consecutive tosses both land heads?",
+  "choices": [
+   "21/64",
+   "1/2",
+   "9/16",
+   "5/8",
+   "43/64"
+  ],
+  "answer": 4,
+  "explanation": "Count the complement: sequences of length 6 with no two consecutive heads. If a(n) is that count, a(1) = 2, a(2) = 3 and a(n) = a(n-1) + a(n-2) (a sequence ends in T after any valid n-1 sequence, or in TH after any valid n-2 sequence). So a(3) = 5, a(4) = 8, a(5) = 13, a(6) = 21. P(no HH) = 21/64, so P(at least one HH) = 1 - 21/64 = 43/64.",
+  "trap": "21/64 is the probability of no two consecutive heads, the complement of the event asked about.",
+  "time": 150
+ },
+ {
+  "id": "ps-cp-032",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Combinations",
+  "diff": 5,
+  "stem": "In how many ways can 8 identical candies be distributed among 3 children if each child may receive any number of candies from 0 to 4?",
+  "choices": [
+   "10",
+   "15",
+   "21",
+   "30",
+   "45"
+  ],
+  "answer": 1,
+  "explanation": "Without the upper limit, solutions of a + b + c = 8 in non-negative integers number 10C2 = 45 (stars and bars). Remove distributions where some child gets 5 or more: give that child 5 first, then share the remaining 3 freely, 5C2 = 10 ways, for each of 3 children, 30 in all. Two children cannot both get 5 or more. Valid = 45 - 30 = 15.",
+  "trap": "45 ignores the limit of 4 candies per child.",
+  "time": 150
+ },
+ {
+  "id": "ps-cp-033",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Independent & Dependent Events",
+  "diff": 5,
+  "stem": "Players A and B take turns rolling a fair six-sided die, with A rolling first. The first player to roll a 6 wins. What is the probability that A wins?",
+  "choices": [
+   "1/2",
+   "6/11",
+   "5/9",
+   "7/12",
+   "2/3"
+  ],
+  "answer": 1,
+  "explanation": "A wins on the first roll with probability 1/6. If neither player rolls a 6 in a full round (probability 5/6 × 5/6 = 25/36), the game restarts with A to roll. So P = 1/6 + (25/36)P, giving P(11/36) = 1/6 and P = 6/11. Check: B's chance is (5/6)P = 5/11, and 6/11 + 5/11 = 1.",
+  "trap": "1/2 assumes the game is fair; rolling first gives A a built-in advantage.",
+  "time": 150
+ },
+ {
+  "id": "ps-cp-034",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Arrangements with Restrictions",
+  "diff": 5,
+  "stem": "Six people, including Kim and Lee, are to be seated around a round table with six identical seats. Arrangements that differ only by a rotation are considered the same. In how many arrangements do Kim and Lee not sit next to each other?",
+  "choices": [
+   "48",
+   "72",
+   "96",
+   "120",
+   "144"
+  ],
+  "answer": 1,
+  "explanation": "Total arrangements of 6 people around a round table: (6 - 1)! = 120. Arrangements with Kim and Lee together: treat them as one block, giving 5 units around the table, (5 - 1)! = 24 arrangements, times 2 for their internal order = 48. Not together = 120 - 48 = 72. Direct check: seat Kim; Lee has 5 seats, 3 of which are not adjacent, and the other 4 people fill in 4! ways: 3 × 24 = 72.",
+  "trap": "48 is the number of arrangements in which Kim and Lee do sit together.",
+  "time": 150
+ },
+ {
+  "id": "ps-cp-035",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Counting & Probability",
+  "sub": "Independent & Dependent Events",
+  "diff": 5,
+  "stem": "A committee of 4 is chosen at random from 6 married couples (12 people). What is the probability that the committee contains no married couple?",
+  "choices": [
+   "8/33",
+   "32/99",
+   "4/11",
+   "16/33",
+   "1/2"
+  ],
+  "answer": 3,
+  "explanation": "Total committees: 12C4 = 495. For no couple, the 4 members must come from 4 different couples: choose the couples, 6C4 = 15, then one spouse from each, 2⁴ = 16. Favourable = 240. Probability = 240/495 = 16/33. Sequential check: 1 × (10/11) × (8/10) × (6/9) = 16/33.",
+  "trap": "8/33 picks a spouse in only 2³ ways; each of the 4 chosen couples offers 2 options, so the factor is 2⁴ = 16.",
+  "time": 150
+ }
+]

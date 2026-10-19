@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ps-wp-001",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 1,
+  "stem": "A delivery van travels 150 miles in 2.5 hours. At the same average speed, how many miles will it travel in 4 hours?",
+  "choices": [
+   "240",
+   "250",
+   "270",
+   "280",
+   "300"
+  ],
+  "answer": 0,
+  "explanation": "Find the unit rate first. Speed = 150 ÷ 2.5 = 60 miles per hour. In 4 hours the van covers 60 × 4 = 240 miles. A quick check by proportion: 4 hours is 4/2.5 = 1.6 times as long as 2.5 hours, and 150 × 1.6 = 240. Unit rates are the most reliable starting point for any constant-speed question, because every later step is a single multiplication.",
+  "trap": "Choosing 300 comes from doubling 150 as if 4 hours were twice 2.5 hours, which ignores the actual ratio of 1.6.",
+  "time": 90
+ },
+ {
+  "id": "ps-wp-002",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Profit & Cost",
+  "diff": 1,
+  "stem": "A retailer buys a jacket for USD 80 and prices it with a 25% markup on cost. What is the selling price of the jacket?",
+  "choices": [
+   "USD 100",
+   "USD 105",
+   "USD 110",
+   "USD 115",
+   "USD 120"
+  ],
+  "answer": 0,
+  "explanation": "A markup on cost is a percent of the purchase price. Markup = 25% of USD 80 = USD 20, so the selling price is USD 80 + USD 20 = USD 100. In one step: USD 80 × 1.25 = USD 100. Writing the price as cost × (1 + markup rate) is the habit that pays off later, when markups and discounts are stacked and you need to multiply several factors together.",
+  "trap": "USD 105 adds USD 25 as if the 25% were a dollar amount, rather than 25% of the USD 80 cost.",
+  "time": 90
+ },
+ {
+  "id": "ps-wp-003",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Unit Conversion",
+  "diff": 1,
+  "stem": "An office printer prints 45 pages per minute. How many pages can it print in 2 hours if it runs without stopping?",
+  "choices": [
+   "90",
+   "450",
+   "2,700",
+   "4,500",
+   "5,400"
+  ],
+  "answer": 4,
+  "explanation": "Convert the time into the unit used by the rate. 2 hours = 2 × 60 = 120 minutes. Pages = 45 pages per minute × 120 minutes = 5,400 pages. A fast way to multiply: 45 × 120 = 45 × 12 × 10 = 540 × 10 = 5,400. Always line the units up so that \"minutes\" cancels and only \"pages\" is left.",
+  "trap": "2,700 uses only 60 minutes, which is the output for one hour rather than two.",
+  "time": 90
+ },
+ {
+  "id": "ps-wp-004",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Interest & Growth",
+  "diff": 1,
+  "stem": "An investor deposits USD 2,000 in an account that pays 5% simple annual interest. How much interest does the account earn in 3 years?",
+  "choices": [
+   "USD 300",
+   "USD 315.25",
+   "USD 330",
+   "USD 350",
+   "USD 600"
+  ],
+  "answer": 0,
+  "explanation": "Simple interest is earned only on the original principal. Interest = principal × rate × time = USD 2,000 × 0.05 × 3 = USD 300. Each year adds the same USD 100, and three years give USD 300. Compound interest would add interest on interest, but the word \"simple\" tells you not to do that here.",
+  "trap": "USD 315.25 is the compound-interest result, USD 2,000 × (1.05³ − 1), which the question does not ask for.",
+  "time": 90
+ },
+ {
+  "id": "ps-wp-005",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Overlapping Sets",
+  "diff": 1,
+  "stem": "Of the 50 employees in a sales office, 30 speak Spanish, 25 speak French and 10 speak both languages. How many of the employees speak neither language?",
+  "choices": [
+   "0",
+   "5",
+   "10",
+   "15",
+   "20"
+  ],
+  "answer": 1,
+  "explanation": "Use the two-set formula: Total = Spanish + French − Both + Neither. So 50 = 30 + 25 − 10 + Neither, which gives 50 = 45 + Neither, and Neither = 5. The 10 people who speak both were counted twice in 30 + 25, which is why they are subtracted once. A quick sanity check: 20 speak only Spanish, 15 only French, 10 both and 5 neither, and 20 + 15 + 10 + 5 = 50.",
+  "trap": "0 comes from adding 30 + 25 = 55 and assuming everyone speaks at least one language without removing the double count.",
+  "time": 90
+ },
+ {
+  "id": "ps-wp-006",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Ages & Digits",
+  "diff": 1,
+  "stem": "Maria is 4 years older than Tom. The sum of their ages is 36. How old is Maria?",
+  "choices": [
+   "8",
+   "12",
+   "16",
+   "18",
+   "20"
+  ],
+  "answer": 4,
+  "explanation": "Let Tom be t, so Maria is t + 4. Then t + (t + 4) = 36, so 2t = 32 and t = 16. Maria is 16 + 4 = 20. A shortcut: if two numbers add to 36 and differ by 4, the larger is (36 + 4) ÷ 2 = 20 and the smaller is (36 − 4) ÷ 2 = 16. Check: 20 + 16 = 36 and 20 − 16 = 4.",
+  "trap": "16 is Tom's age, the answer to the wrong half of the question.",
+  "time": 90
+ },
+ {
+  "id": "ps-wp-007",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Mixtures",
+  "diff": 1,
+  "stem": "A lab mixes 20 litres of a 15% salt solution with 30 litres of a 10% salt solution. What is the salt concentration of the resulting mixture?",
+  "choices": [
+   "11%",
+   "12%",
+   "12.5%",
+   "13%",
+   "25%"
+  ],
+  "answer": 1,
+  "explanation": "Track the amount of salt, not the percents. Salt in the first solution = 0.15 × 20 = 3 litres. Salt in the second = 0.10 × 30 = 3 litres. The mixture has 6 litres of salt in 50 litres, so the concentration is 6/50 = 12%. As a check, the answer must sit between 10% and 15%, and closer to 10% because there is more of the 10% solution.",
+  "trap": "12.5% is the simple average of 15% and 10%, which would only be correct if the two volumes were equal.",
+  "time": 90
+ },
+ {
+  "id": "ps-wp-008",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Optimisation/Max-Min",
+  "diff": 1,
+  "stem": "A stationery shop sells pens in packs of 6 for USD 4.00 or individually for USD 0.80 each. What is the least amount a customer can spend to buy at least 20 pens?",
+  "choices": [
+   "USD 12.00",
+   "USD 13.20",
+   "USD 13.40",
+   "USD 13.60",
+   "USD 16.00"
+  ],
+  "answer": 3,
+  "explanation": "A pack costs USD 4.00 ÷ 6 ≈ USD 0.67 per pen, cheaper than USD 0.80, so use as many packs as is sensible. Three packs give 18 pens for USD 12.00, and 2 more single pens cost USD 1.60, for a total of USD 13.60. The alternatives are worse: 4 packs give 24 pens for USD 16.00, and 20 single pens also cost USD 16.00. So the minimum is USD 13.60.",
+  "trap": "USD 12.00 is the cost of only 18 pens, which falls short of the 20 required.",
+  "time": 90
+ },
+ {
+  "id": "ps-wp-009",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Ages & Digits",
+  "diff": 1,
+  "stem": "The tens digit of a two-digit number is twice its units digit, and the sum of its digits is 9. What is the number?",
+  "choices": [
+   "36",
+   "54",
+   "63",
+   "72",
+   "81"
+  ],
+  "answer": 2,
+  "explanation": "Let the units digit be u, so the tens digit is 2u. The digit sum is 2u + u = 3u = 9, so u = 3 and the tens digit is 6. The number is 63. Check: 6 is twice 3, and 6 + 3 = 9. Alternatively, test the choices: only 36 and 63 have digit sum 9 with one digit twice the other, and in 36 the tens digit is the smaller one.",
+  "trap": "36 reverses the roles of the digits, making the units digit twice the tens digit.",
+  "time": 90
+ },
+ {
+  "id": "ps-wp-010",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Unit Conversion",
+  "diff": 1,
+  "stem": "A runner covers 400 metres in 80 seconds. What is the runner's average speed in kilometres per hour?",
+  "choices": [
+   "5",
+   "10",
+   "12",
+   "15",
+   "18"
+  ],
+  "answer": 4,
+  "explanation": "Speed in metres per second = 400 ÷ 80 = 5 m/s. To convert to km/h, multiply by 3,600 seconds per hour and divide by 1,000 metres per kilometre, which is the same as multiplying by 3.6. So 5 × 3.6 = 18 km/h. Check another way: in one hour the runner would cover 5 × 3,600 = 18,000 metres, which is 18 km.",
+  "trap": "5 is the speed in metres per second, left unconverted.",
+  "time": 90
+ },
+ {
+  "id": "ps-wp-011",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 2,
+  "stem": "Working alone, Ana can paint an office in 6 hours, and Ben can paint the same office in 3 hours. How many hours will it take them to paint the office working together at these rates?",
+  "choices": [
+   "1.5",
+   "2",
+   "2.5",
+   "3",
+   "4.5"
+  ],
+  "answer": 1,
+  "explanation": "Add rates, not times. Ana paints 1/6 of the office per hour and Ben paints 1/3 = 2/6 per hour. Together they paint 3/6 = 1/2 of the office per hour, so the whole office takes 2 hours. Shortcut for two workers: time together = (a × b)/(a + b) = (6 × 3)/(6 + 3) = 18/9 = 2. The answer must be less than Ben's 3 hours, which rules out 3 and 4.5 at once.",
+  "trap": "4.5 averages the two times, but working together must be faster than either person alone.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-012",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Profit & Cost",
+  "diff": 2,
+  "stem": "A wholesaler buys a box of components for USD 60 and sells it for USD 72. What is the profit as a percent of the cost?",
+  "choices": [
+   "12%",
+   "16⅔%",
+   "20%",
+   "25%",
+   "30%"
+  ],
+  "answer": 2,
+  "explanation": "Profit = USD 72 − USD 60 = USD 12. As a percent of cost: 12/60 = 1/5 = 20%. The question names the base (\"of the cost\"), so divide by USD 60, not by the selling price. Keep the base in mind on every percent question: the same USD 12 is 16⅔% of the USD 72 selling price, which is a different quantity (the profit margin).",
+  "trap": "16⅔% divides the USD 12 profit by the USD 72 selling price, which gives the margin on price, not the percent of cost.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-013",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Interest & Growth",
+  "diff": 2,
+  "stem": "A company invests USD 5,000 at 4% annual interest, compounded annually. How much interest has the investment earned after 2 years?",
+  "choices": [
+   "USD 400",
+   "USD 408",
+   "USD 412",
+   "USD 416",
+   "USD 432"
+  ],
+  "answer": 1,
+  "explanation": "After year 1 the balance is USD 5,000 × 1.04 = USD 5,200. After year 2 it is USD 5,200 × 1.04 = USD 5,408. Interest earned = USD 5,408 − USD 5,000 = USD 408. The extra USD 8 compared with simple interest is the 4% earned in year 2 on the USD 200 of year-1 interest. In one line: 5,000 × (1.04² − 1) = 5,000 × 0.0816 = USD 408.",
+  "trap": "USD 400 treats the interest as simple, ignoring the interest earned on the first year's interest.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-014",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Overlapping Sets",
+  "diff": 2,
+  "stem": "In a survey of 200 customers, 120 use a bank's mobile app, 90 use its website, and 40 use neither. How many customers use both the app and the website?",
+  "choices": [
+   "10",
+   "30",
+   "40",
+   "50",
+   "70"
+  ],
+  "answer": 3,
+  "explanation": "Customers who use at least one channel = 200 − 40 = 160. By the two-set formula, App + Website − Both = 160, so 120 + 90 − Both = 160 and Both = 50. Check: only app = 70, only website = 40, both = 50, neither = 40, and 70 + 40 + 50 + 40 = 200.",
+  "trap": "10 comes from 120 + 90 − 200 and forgets to remove the 40 customers who use neither channel.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-015",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Ages & Digits",
+  "diff": 2,
+  "stem": "A father is now three times as old as his son. In 12 years, the father will be twice as old as the son. How old is the son now?",
+  "choices": [
+   "6",
+   "8",
+   "10",
+   "12",
+   "24"
+  ],
+  "answer": 3,
+  "explanation": "Let the son be s, so the father is 3s. In 12 years: 3s + 12 = 2(s + 12) = 2s + 24, so s = 12. The father is 36 now; in 12 years they will be 48 and 24, and 48 is twice 24. Note that both ages increase by the same 12 years, which is the key fact in every age problem.",
+  "trap": "24 comes from adding 12 years to the son only (3s = 2(s + 12)), forgetting that the father also ages 12 years.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-016",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Mixtures",
+  "diff": 2,
+  "stem": "How many litres of water must be added to 12 litres of a 25% alcohol solution to reduce the concentration to 20%?",
+  "choices": [
+   "2.4",
+   "3",
+   "3.6",
+   "4",
+   "6"
+  ],
+  "answer": 1,
+  "explanation": "Adding water does not change the amount of alcohol. Alcohol = 0.25 × 12 = 3 litres. For 3 litres to be 20% of the new total, the total must be 3 ÷ 0.20 = 15 litres. Water added = 15 − 12 = 3 litres. Check: 3/15 = 20%.",
+  "trap": "2.4 is 20% of 12 litres, a number that plays no role once you track the fixed 3 litres of alcohol.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-017",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Unit Conversion",
+  "diff": 2,
+  "stem": "A bottling line fills 2,400 bottles during an 8-hour shift. On average, how many bottles does it fill per minute?",
+  "choices": [
+   "5",
+   "6",
+   "8",
+   "12",
+   "300"
+  ],
+  "answer": 0,
+  "explanation": "Bottles per hour = 2,400 ÷ 8 = 300. Bottles per minute = 300 ÷ 60 = 5. Or in one step: 2,400 ÷ (8 × 60) = 2,400 ÷ 480 = 5. When converting a rate to a smaller time unit, the number gets smaller, which is a quick check.",
+  "trap": "300 is the rate per hour; it still has to be divided by 60 to get the rate per minute.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-018",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 2,
+  "stem": "A sales rep drives 60 km to a client at 30 km/h and then drives a further 60 km to a second client at 60 km/h. What is her average speed for the whole 120 km?",
+  "choices": [
+   "40 km/h",
+   "42 km/h",
+   "45 km/h",
+   "48 km/h",
+   "50 km/h"
+  ],
+  "answer": 0,
+  "explanation": "Average speed = total distance ÷ total time. The first leg takes 60 ÷ 30 = 2 hours, the second 60 ÷ 60 = 1 hour. Total: 120 km in 3 hours = 40 km/h. Because she spends more time at the slower speed, the average is pulled below the simple average of 45.",
+  "trap": "45 km/h is the simple average of the two speeds, which ignores that more time was spent at 30 km/h.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-019",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Optimisation/Max-Min",
+  "diff": 2,
+  "stem": "A start-up estimates that its weekly profit, in hundreds of dollars, is P = −2x² + 40x − 50, where x is the price of its product in dollars. What is the greatest possible weekly profit, in hundreds of dollars?",
+  "choices": [
+   "100",
+   "150",
+   "200",
+   "250",
+   "350"
+  ],
+  "answer": 1,
+  "explanation": "A quadratic with a negative x² coefficient has its maximum at the vertex, x = −b/(2a) = −40/(2 × −2) = 10. Then P = −2(100) + 40(10) − 50 = −200 + 400 − 50 = 150. Alternatively complete the square: P = −2(x − 10)² + 150, which can never exceed 150 and equals 150 at x = 10.",
+  "trap": "200 leaves out the −50 constant, using only −2x² + 40x at the vertex.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-020",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Ages & Digits",
+  "diff": 2,
+  "stem": "The digits of a two-digit number add up to 7. When the digits are reversed, the new number is 27 greater than the original. What is the original number?",
+  "choices": [
+   "16",
+   "25",
+   "34",
+   "43",
+   "52"
+  ],
+  "answer": 1,
+  "explanation": "Write the number as 10t + u. Reversing gives 10u + t, and the difference is (10u + t) − (10t + u) = 9(u − t) = 27, so u − t = 3. With t + u = 7, we get u = 5 and t = 2, so the number is 25. Check: 52 − 25 = 27. Useful fact: reversing a two-digit number always changes it by 9 times the difference of its digits.",
+  "trap": "52 is the reversed number, which is larger, not the original.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-021",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Profit & Cost",
+  "diff": 2,
+  "stem": "A small manufacturer has fixed costs of USD 12,000 per month. Each unit costs USD 15 to make and sells for USD 23. How many units must it sell in a month to break even?",
+  "choices": [
+   "522",
+   "800",
+   "1,000",
+   "1,200",
+   "1,500"
+  ],
+  "answer": 4,
+  "explanation": "Each unit contributes USD 23 − USD 15 = USD 8 toward fixed costs. Break-even units = fixed costs ÷ contribution per unit = USD 12,000 ÷ USD 8 = 1,500. Check: revenue 1,500 × USD 23 = USD 34,500 and total cost USD 12,000 + 1,500 × USD 15 = USD 34,500, so profit is exactly zero. Selling one more unit adds USD 8 of profit.",
+  "trap": "800 divides USD 12,000 by the USD 15 cost, which ignores that each sale also brings in revenue.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-022",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Interest & Growth",
+  "diff": 2,
+  "stem": "The balance of an account grew by 10% in each of two consecutive years, reaching USD 6,050 at the end of the second year. What was the balance at the start of the first year?",
+  "choices": [
+   "USD 4,500",
+   "USD 4,840",
+   "USD 4,900",
+   "USD 4,950",
+   "USD 5,000"
+  ],
+  "answer": 4,
+  "explanation": "Two 10% increases multiply the starting balance by 1.1 × 1.1 = 1.21. So start × 1.21 = USD 6,050, and start = 6,050 ÷ 1.21 = USD 5,000. Check forwards: USD 5,000 -> USD 5,500 -> USD 6,050. To undo two or more a percent increase, divide by the growth factor rather than subtracting the percents, because each increase was applied to a different base.",
+  "trap": "USD 4,840 subtracts 20% from USD 6,050, but a 21% total increase is undone by dividing by 1.21, not by taking 80%.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-023",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 2,
+  "stem": "An inlet pipe can fill a storage tank in 4 hours, and a drain can empty the full tank in 6 hours. If the tank starts empty and both are open, how many hours will it take to fill the tank?",
+  "choices": [
+   "2.4",
+   "5",
+   "10",
+   "12",
+   "24"
+  ],
+  "answer": 3,
+  "explanation": "The inlet adds 1/4 of the tank per hour and the drain removes 1/6 per hour. The net rate is 1/4 − 1/6 = 3/12 − 2/12 = 1/12 of the tank per hour, so it takes 12 hours to fill. The answer must be longer than 4 hours, since the drain works against the inlet.",
+  "trap": "2.4 hours adds the two rates as if the drain were helping to fill the tank.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-024",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Overlapping Sets",
+  "diff": 2,
+  "stem": "In a group of trainees, 60% passed the finance exam, 70% passed the marketing exam, and 10% failed both. What percent of the trainees passed both exams?",
+  "choices": [
+   "20%",
+   "25%",
+   "30%",
+   "35%",
+   "40%"
+  ],
+  "answer": 4,
+  "explanation": "Work with percents as if the group had 100 people. Passed at least one = 100 − 10 = 90. By the two-set formula, 60 + 70 − Both = 90, so Both = 40%. Check: only finance = 20, only marketing = 30, both = 40, neither = 10, total 100.",
+  "trap": "30% is 60 + 70 − 100, which forgets the 10% who failed both and so belongs to neither set.",
+  "time": 105
+ },
+ {
+  "id": "ps-wp-025",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 3,
+  "stem": "Working together, Kim and Lee can complete an audit in 12 days. Kim alone would need 20 days. Kim works alone for the first 5 days, and then Lee finishes the audit alone. How many days does Lee work?",
+  "choices": [
+   "15",
+   "18",
+   "20",
+   "22.5",
+   "25"
+  ],
+  "answer": 3,
+  "explanation": "First find Lee's rate. Combined rate = 1/12, Kim's rate = 1/20, so Lee's rate = 1/12 − 1/20 = 5/60 − 3/60 = 2/60 = 1/30 of the audit per day. In 5 days Kim completes 5/20 = 1/4 of the audit, leaving 3/4. At 1/30 per day, Lee needs (3/4) ÷ (1/30) = 22.5 days. Check: 5/20 + 22.5/30 = 0.25 + 0.75 = 1.",
+  "trap": "30 would be Lee's time for the whole audit; 15 forgets that Lee works more slowly than Kim and assumes the remaining 3/4 takes 3/4 of 20 days.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-026",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Mixtures",
+  "diff": 3,
+  "stem": "A roaster blends beans costing USD 8 per kg with beans costing USD 14 per kg to make 30 kg of a blend costing USD 10 per kg. How many kilograms of the USD 14 beans are used?",
+  "choices": [
+   "10",
+   "12",
+   "15",
+   "18",
+   "20"
+  ],
+  "answer": 0,
+  "explanation": "Let x kg be the USD 14 beans, so 30 − x kg are the USD 8 beans. Total cost: 8(30 − x) + 14x = 10 × 30, so 240 + 6x = 300 and x = 10. Weighted-average shortcut: USD 10 is 2 away from USD 8 and 4 away from USD 14, so the quantities are in the inverse ratio 4 : 2 = 2 : 1 for the USD 8 beans versus the USD 14 beans. One third of 30 kg is 10 kg.",
+  "trap": "20 is the amount of the cheaper USD 8 beans, the other part of the blend.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-027",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Interest & Growth",
+  "diff": 3,
+  "stem": "A firm deposits USD 10,000 for one year at an annual interest rate of 8%. How much more interest does it earn if interest is compounded semi-annually rather than annually?",
+  "choices": [
+   "USD 0",
+   "USD 8",
+   "USD 16",
+   "USD 32",
+   "USD 80"
+  ],
+  "answer": 2,
+  "explanation": "Annual compounding gives USD 10,000 × 0.08 = USD 800 of interest. Semi-annual compounding applies 4% twice: USD 10,000 × 1.04 = USD 10,400 after six months, then USD 10,400 × 1.04 = USD 10,816. Interest = USD 816. The difference is USD 816 − USD 800 = USD 16, which is the 4% earned in the second half on the first half's USD 400 of interest (0.04 × 400 = 16).",
+  "trap": "USD 0 assumes the compounding frequency does not matter, but interest earned in the first half-year itself earns interest in the second.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-028",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Profit & Cost",
+  "diff": 3,
+  "stem": "A boutique marks up a dress 40% above cost and later sells it at a 25% discount off the marked price. The final selling price is what percent above the cost?",
+  "choices": [
+   "5%",
+   "10%",
+   "12%",
+   "15%",
+   "20%"
+  ],
+  "answer": 0,
+  "explanation": "Successive percent changes multiply. Pick cost = USD 100. Marked price = USD 140. A 25% discount leaves 75% of USD 140 = USD 105. So the selling price is 5% above cost. In factors: 1.40 × 0.75 = 1.05. The order of the two changes does not matter, since multiplication is commutative, but the percents cannot simply be added or subtracted.",
+  "trap": "15% subtracts the percents (40 − 25), but the 25% discount is taken on the larger marked price, not on the cost.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-029",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Overlapping Sets",
+  "diff": 3,
+  "stem": "Of 100 finance managers, 45 hold an MBA, 40 hold a CFA and 30 hold a CPA. Exactly 15 hold both an MBA and a CFA, 10 hold both an MBA and a CPA, and 8 hold both a CFA and a CPA; these figures include the 5 managers who hold all three. How many of the managers hold none of the three?",
+  "choices": [
+   "8",
+   "13",
+   "18",
+   "20",
+   "23"
+  ],
+  "answer": 1,
+  "explanation": "Use inclusion-exclusion for three sets: at least one = 45 + 40 + 30 − 15 − 10 − 8 + 5 = 87. The pairwise counts already include the 5 who hold all three, which is why the triple is added back once. None = 100 − 87 = 13. You can confirm with a Venn diagram: only MBA = 25, only CFA = 22, only CPA = 17, MBA and CFA only = 10, MBA and CPA only = 5, CFA and CPA only = 3, all three = 5; these add to 87.",
+  "trap": "18 forgets to add back the 5 managers in all three groups after subtracting them three times.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-030",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Ages & Digits",
+  "diff": 3,
+  "stem": "Five years ago, Priya was three times as old as her nephew. In five years, she will be twice as old as he will be. How old is Priya now?",
+  "choices": [
+   "15",
+   "20",
+   "25",
+   "30",
+   "35"
+  ],
+  "answer": 4,
+  "explanation": "Let Priya be P and her nephew N now. Five years ago: P − 5 = 3(N − 5), so P = 3N − 10. In five years: P + 5 = 2(N + 5), so P = 2N + 5. Setting these equal: 3N − 10 = 2N + 5, so N = 15 and P = 35. Check: five years ago 30 and 10 (ratio 3), in five years 40 and 20 (ratio 2).",
+  "trap": "15 is the nephew's current age, not Priya's.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-031",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Ages & Digits",
+  "diff": 3,
+  "stem": "A three-digit product code has digits that add up to 15. Its hundreds digit is twice its units digit, and its tens digit is 3 more than its units digit. What is the code?",
+  "choices": [
+   "366",
+   "474",
+   "636",
+   "663",
+   "852"
+  ],
+  "answer": 3,
+  "explanation": "Let the units digit be u. Then the hundreds digit is 2u and the tens digit is u + 3. The sum is 2u + (u + 3) + u = 4u + 3 = 15, so u = 3. Hundreds = 6, tens = 6, units = 3: the code is 663. Check against the choices: 636 has the right digits in the wrong places (its tens digit 3 is not 3 more than its units digit 6).",
+  "trap": "636 uses the same three digits but swaps the tens and units, breaking the \"tens is 3 more than units\" condition.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-032",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Optimisation/Max-Min",
+  "diff": 3,
+  "stem": "A theatre sells 500 tickets per show at USD 20 each. Market research shows that each USD 1 increase in the ticket price reduces sales by 20 tickets, and the relationship holds for fractional increases too. Which ticket price maximises revenue per show?",
+  "choices": [
+   "USD 20.00",
+   "USD 22.50",
+   "USD 25.00",
+   "USD 27.50",
+   "USD 30.00"
+  ],
+  "answer": 1,
+  "explanation": "Let the increase be x dollars. Revenue R = (20 + x)(500 − 20x). The two factors equal zero at x = −20 and x = 25, and a downward parabola peaks halfway between its roots: x = (−20 + 25)/2 = 2.5. So the best price is USD 22.50, selling 450 tickets for revenue of USD 10,125. Compare: at USD 20 revenue is USD 10,000 and at USD 25 it is USD 10,000, which confirms the peak is in between.",
+  "trap": "USD 25.00 is the price at which revenue returns to USD 10,000; the maximum lies halfway between the roots of the revenue equation, not at a root.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-033",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Unit Conversion",
+  "diff": 3,
+  "stem": "A delivery truck uses 12 litres of diesel per 100 kilometres, and diesel costs USD 1.50 per litre. If 1 mile = 1.6 kilometres, what is the fuel cost per mile driven?",
+  "choices": [
+   "USD 0.1125",
+   "USD 0.18",
+   "USD 0.288",
+   "USD 0.32",
+   "USD 0.45"
+  ],
+  "answer": 2,
+  "explanation": "Fuel per kilometre = 12 ÷ 100 = 0.12 litres. One mile is 1.6 km, so fuel per mile = 0.12 × 1.6 = 0.192 litres. Cost per mile = 0.192 × USD 1.50 = USD 0.288. Check the direction of the conversion: a mile is longer than a kilometre, so the cost per mile must be higher than the cost per kilometre (USD 0.18).",
+  "trap": "USD 0.18 is the cost per kilometre; USD 0.1125 divides by 1.6 instead of multiplying.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-034",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 3,
+  "stem": "Courier A leaves a depot at 9:00 a.m. driving at 40 km/h. Courier B leaves the same depot at 10:00 a.m. on the same route at 60 km/h. At what time does B catch up with A?",
+  "choices": [
+   "11:00 a.m.",
+   "11:30 a.m.",
+   "12:00 noon",
+   "12:30 p.m.",
+   "1:00 p.m."
+  ],
+  "answer": 2,
+  "explanation": "By 10:00 a.m., A has a 40 km head start. B closes the gap at 60 − 40 = 20 km/h, so it takes 40 ÷ 20 = 2 hours. B catches A at 12:00 noon. Check: at noon A has driven 3 hours × 40 = 120 km and B has driven 2 hours × 60 = 120 km.",
+  "trap": "11:00 a.m. assumes B needs only one hour to make up A's one-hour head start, ignoring that B gains just 20 km each hour.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-035",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Profit & Cost",
+  "diff": 3,
+  "stem": "A company has two product lines. Line A earned USD 40,000 in revenue at a profit margin of 30%, and line B earned USD 60,000 in revenue at a profit margin of 20%. What was the company's overall profit margin on the two lines combined?",
+  "choices": [
+   "22%",
+   "24%",
+   "25%",
+   "26%",
+   "50%"
+  ],
+  "answer": 1,
+  "explanation": "Profit margin = profit ÷ revenue. Profit from A = 0.30 × USD 40,000 = USD 12,000; from B = 0.20 × USD 60,000 = USD 12,000. Total profit USD 24,000 on total revenue USD 100,000 gives 24%. This is a weighted average of 30% and 20% with weights 0.4 and 0.6, so it sits closer to 20%.",
+  "trap": "25% is the simple average of 30% and 20%, which ignores that line B brings in more revenue.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-036",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Interest & Growth",
+  "diff": 3,
+  "stem": "A startup's monthly active users grew by 20% in January, fell by 20% in February and grew by 25% in March. What was the net percent change over the three months?",
+  "choices": [
+   "−4%",
+   "0%",
+   "16%",
+   "20%",
+   "25%"
+  ],
+  "answer": 3,
+  "explanation": "Multiply the growth factors: 1.20 × 0.80 × 1.25. Group them conveniently: 0.80 × 1.25 = 1.00, so the product is 1.20. The net change is +20%. With picking numbers, 100 users -> 120 -> 96 -> 120, a gain of 20 users on the original 100. Note that the 20% rise and 20% fall alone would leave a 4% net loss.",
+  "trap": "25% adds the percents (20 − 20 + 25), which ignores that each change applies to a different base.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-037",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 3,
+  "stem": "A ferry travels 24 km downstream in 2 hours and returns the same 24 km upstream in 3 hours. If the ferry's speed in still water is constant, what is the speed of the current, in km/h?",
+  "choices": [
+   "0.5",
+   "1",
+   "1.5",
+   "2",
+   "4"
+  ],
+  "answer": 3,
+  "explanation": "Downstream speed = 24 ÷ 2 = 12 km/h = boat + current. Upstream speed = 24 ÷ 3 = 8 km/h = boat − current. Subtracting: 2 × current = 4, so the current is 2 km/h (and the boat is 10 km/h in still water). The current is always half the difference between the downstream and upstream speeds.",
+  "trap": "4 is the difference between the two speeds, which equals twice the current, not the current itself.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-038",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Ages & Digits",
+  "diff": 3,
+  "stem": "The digits of a two-digit number add up to 11. When 45 is added to the number, the result is the number with its digits reversed. What is the number?",
+  "choices": [
+   "29",
+   "38",
+   "47",
+   "56",
+   "83"
+  ],
+  "answer": 1,
+  "explanation": "Let the number be 10t + u. Reversing changes it by 9(u − t), so 9(u − t) = 45 and u − t = 5. With t + u = 11, we get u = 8 and t = 3, so the number is 38. Check: 38 + 45 = 83. Testing choices also works: 29 + 45 = 74, not 92.",
+  "trap": "83 is the reversed result, not the original number.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-039",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 3,
+  "stem": "Six identical machines produce 270 units in 5 hours. At the same rate per machine, how many machines are needed to produce 720 units in 4 hours?",
+  "choices": [
+   "12",
+   "15",
+   "16",
+   "18",
+   "20"
+  ],
+  "answer": 4,
+  "explanation": "Find the rate of one machine: 270 units ÷ (6 machines × 5 hours) = 9 units per machine-hour. The new job needs 720 units in 4 hours, which is 180 units per hour. Machines needed = 180 ÷ 9 = 20. Proportion check: units are multiplied by 720/270 = 8/3 and hours by 4/5, so machines scale by (8/3) ÷ (4/5) = 10/3, and 6 × 10/3 = 20.",
+  "trap": "16 scales machines by the unit ratio 8/3 alone, ignoring that there is less time available.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-040",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Mixtures",
+  "diff": 3,
+  "stem": "Alloy X is 30% copper and alloy Y is 70% copper by weight. How many kilograms of alloy Y must be melted with 20 kg of alloy X to produce an alloy that is 45% copper?",
+  "choices": [
+   "8",
+   "10",
+   "12",
+   "15",
+   "20"
+  ],
+  "answer": 2,
+  "explanation": "Copper balance: 0.30(20) + 0.70y = 0.45(20 + y). So 6 + 0.70y = 9 + 0.45y, giving 0.25y = 3 and y = 12. Weighted-average check: 45% is 15 points above 30% and 25 points below 70%, so X : Y = 25 : 15 = 5 : 3. With 20 kg of X, Y = 20 × 3/5 = 12 kg.",
+  "trap": "20 kg would give a 50% alloy, the simple average, rather than the required 45%.",
+  "time": 120
+ },
+ {
+  "id": "ps-wp-041",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 4,
+  "stem": "Analysts A and B together can finish a report in 10 days, B and C together in 15 days, and A and C together in 12 days. How many days would A, B and C need working together?",
+  "choices": [
+   "6",
+   "7.5",
+   "8",
+   "9",
+   "12⅓"
+  ],
+  "answer": 2,
+  "explanation": "Add the three pair rates: (A + B) + (B + C) + (A + C) = 1/10 + 1/15 + 1/12 = 6/60 + 4/60 + 5/60 = 15/60 = 1/4. This counts each analyst twice, so A + B + C = 1/8 of the report per day, and together they need 8 days. The answer must be less than 10, the fastest pair, which rules out 12⅓.",
+  "trap": "12⅓ averages the three pair times, but three people working together must be faster than any pair.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-042",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Mixtures",
+  "diff": 4,
+  "stem": "A 40-litre tank holds juice concentrate that is 30% fruit. A worker removes 10 litres and replaces them with water, and then repeats this once more. What is the fruit percentage of the final mixture?",
+  "choices": [
+   "10%",
+   "15%",
+   "16.875%",
+   "18%",
+   "20%"
+  ],
+  "answer": 2,
+  "explanation": "Each replacement keeps (40 − 10)/40 = 3/4 of the fruit. After two replacements the concentration is 30% × (3/4)² = 30% × 9/16 = 16.875%. Step by step: fruit starts at 12 L; removing 10 L takes out 3 L, leaving 9 L (22.5%); removing 10 L again takes 2.25 L, leaving 6.75 L, and 6.75/40 = 16.875%.",
+  "trap": "15% subtracts the same 3 litres of fruit twice, but the second draw contains less fruit because the mixture is already diluted.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-043",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Optimisation/Max-Min",
+  "diff": 4,
+  "stem": "A café sells 300 coffees a day at USD 4.00 each. For every USD 0.25 reduction in price, it sells 30 more coffees a day. Each coffee costs the café USD 1.00 to make. Which price maximises the café's daily profit from coffee?",
+  "choices": [
+   "USD 3.75",
+   "USD 4.00",
+   "USD 4.25",
+   "USD 4.50",
+   "USD 4.75"
+  ],
+  "answer": 0,
+  "explanation": "Let k be the number of USD 0.25 cuts. Profit per cup = 3 − 0.25k and cups = 300 + 30k, so profit = (3 − 0.25k)(300 + 30k) = 900 + 15k − 7.5k². This is a downward parabola with vertex at k = 15/(2 × 7.5) = 1, so one cut is best: price USD 3.75, 330 cups, profit USD 907.50. Check neighbours: k = 0 gives USD 900 and k = 2 gives USD 900.",
+  "trap": "USD 4.00 assumes cutting the price can only lower profit, but the extra 30 cups at a USD 2.75 margin outweigh the lost USD 0.25 on 300 cups.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-044",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Interest & Growth",
+  "diff": 4,
+  "stem": "A business deposits USD 1,000 at the start of each year for 3 years into an account paying 10% interest compounded annually. What is the balance at the end of the third year?",
+  "choices": [
+   "USD 3,300",
+   "USD 3,310",
+   "USD 3,600",
+   "USD 3,641",
+   "USD 3,993"
+  ],
+  "answer": 3,
+  "explanation": "Each deposit grows for a different number of years. The first deposit earns 3 years: 1,000 × 1.1³ = 1,331. The second earns 2 years: 1,000 × 1.1² = 1,210. The third earns 1 year: 1,000 × 1.1 = 1,100. Total = 1,331 + 1,210 + 1,100 = USD 3,641. Tracking year by year gives the same: 1,100 -> (1,100 + 1,000) × 1.1 = 2,310 -> (2,310 + 1,000) × 1.1 = 3,641.",
+  "trap": "USD 3,310 is the balance if the deposits are made at the end of each year, so the last one earns no interest.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-045",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Interest & Growth",
+  "diff": 4,
+  "stem": "An investment earns 8% interest compounded annually. After how many complete years will its value first be more than double the original amount?",
+  "choices": [
+   "8",
+   "9",
+   "10",
+   "12",
+   "13"
+  ],
+  "answer": 2,
+  "explanation": "The rule of 72 estimates 72 ÷ 8 = 9 years, but it is only an estimate, so check near 9. 1.08² = 1.1664, 1.08⁴ ≈ 1.3605, 1.08⁸ ≈ 1.8509, 1.08⁹ ≈ 1.9990, which is just under 2. 1.08¹⁰ ≈ 2.1589, which is over 2. So the value first exceeds double after 10 years. Squaring repeatedly (1.08 -> 1.1664 -> 1.3605 -> 1.8509) keeps the arithmetic manageable.",
+  "trap": "9 is the rule-of-72 estimate, but 1.08⁹ ≈ 1.999 falls just short of doubling.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-046",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Overlapping Sets",
+  "diff": 4,
+  "stem": "A company runs three volunteer committees. Its 50 volunteers each sit on at least one committee. The committees have 30, 25 and 20 members, and 5 volunteers sit on all three. How many volunteers sit on exactly two committees?",
+  "choices": [
+   "5",
+   "10",
+   "15",
+   "20",
+   "25"
+  ],
+  "answer": 2,
+  "explanation": "Count seats. The committees have 30 + 25 + 20 = 75 seats in total. A volunteer on one committee fills 1 seat, on exactly two fills 2, on all three fills 3. With s, d and t people in each group: s + d + t = 50 and s + 2d + 3t = 75, where t = 5. So s + d = 45 and s + 2d = 60. Subtracting, d = 15 (and s = 30).",
+  "trap": "10 uses the inclusion-exclusion shortcut 75 − 50 = 25 and then subtracts 3 × 5, which double-handles the triple overlap.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-047",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Overlapping Sets",
+  "diff": 4,
+  "stem": "In a test panel of 120 shoppers, 90 bought product A, 85 bought product B and 80 bought product C. What is the least possible number of shoppers who bought all three products?",
+  "choices": [
+   "0",
+   "15",
+   "35",
+   "45",
+   "80"
+  ],
+  "answer": 1,
+  "explanation": "Count purchases. There are 90 + 85 + 80 = 255 purchases among 120 shoppers. To keep the \"all three\" group small, let every shopper buy at least two products: that accounts for 2 × 120 = 240 purchases. The remaining 255 − 240 = 15 purchases must be third products, so at least 15 shoppers bought all three. This is achievable: 15 buy all three and the other 105 buy exactly two (for example, 40 buy A and B, 35 buy A and C, 30 buy B and C).",
+  "trap": "0 assumes the groups can be arranged to avoid a triple overlap, but 255 purchases cannot fit into 120 shoppers at two each.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-048",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Ages & Digits",
+  "diff": 4,
+  "stem": "The ratio of the ages of two business partners is now 5 : 3. In 8 years the ratio will be 7 : 5. How old will the older partner be in 8 years?",
+  "choices": [
+   "12",
+   "16",
+   "20",
+   "24",
+   "28"
+  ],
+  "answer": 4,
+  "explanation": "Let the ages be 5k and 3k. In 8 years: (5k + 8)/(3k + 8) = 7/5. Cross-multiplying: 25k + 40 = 21k + 56, so 4k = 16 and k = 4. The partners are 20 and 12 now, and 28 and 20 in 8 years; 28 : 20 = 7 : 5. The question asks for the older partner's age in 8 years, which is 28.",
+  "trap": "20 is the older partner's current age, not the age in 8 years that the question asks for.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-049",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 4,
+  "stem": "Two employees start jogging at the same moment from the same point on a 400-metre loop, running in opposite directions at constant speeds of 5 m/s and 3 m/s. How many times do they pass each other during the first 9 minutes, not counting the start?",
+  "choices": [
+   "8",
+   "9",
+   "10",
+   "11",
+   "12"
+  ],
+  "answer": 2,
+  "explanation": "Running in opposite directions, they close the gap at 5 + 3 = 8 m/s, so they meet each time they have jointly covered another 400 m: every 400 ÷ 8 = 50 seconds. Nine minutes is 540 seconds. Meetings occur at 50, 100, ..., 500 seconds; the next would be at 550 s, after the 9 minutes. So they pass 10 times.",
+  "trap": "12 counts a meeting every 45 seconds or uses 10 minutes, but at 8 m/s combined they meet every 50 seconds, and only 10 meetings fit in 540 seconds.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-050",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Profit & Cost",
+  "diff": 4,
+  "stem": "A dealer sells two used machines for USD 1,200 each. On one he makes a 20% profit on cost, and on the other he takes a 20% loss on cost. What is his overall result on the two sales?",
+  "choices": [
+   "A loss of USD 100",
+   "A loss of USD 48",
+   "No gain or loss",
+   "A gain of USD 48",
+   "A gain of USD 100"
+  ],
+  "answer": 0,
+  "explanation": "Find each cost from the selling price. Profit machine: cost × 1.2 = 1,200, so cost = USD 1,000. Loss machine: cost × 0.8 = 1,200, so cost = USD 1,500. Total cost USD 2,500, total revenue USD 2,400, so he loses USD 100. The 20% loss is taken on a larger base (USD 1,500) than the 20% gain (USD 1,000), so the loss outweighs the gain.",
+  "trap": "\"No gain or loss\" assumes the equal percents cancel, but they apply to different cost bases.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-051",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Mixtures",
+  "diff": 4,
+  "stem": "A chemical supplier mixes 2 parts of a 10% solution and 3 parts of a 25% solution with x parts of a 40% solution, all by volume. If the final mixture is 25%, what is x?",
+  "choices": [
+   "0.5",
+   "1",
+   "1.5",
+   "2",
+   "3"
+  ],
+  "answer": 3,
+  "explanation": "Solute balance in \"parts\": 0.10(2) + 0.25(3) + 0.40x = 0.25(5 + x). So 0.20 + 0.75 + 0.40x = 1.25 + 0.25x, which gives 0.15x = 0.30 and x = 2. Faster: measure each solution against the 25% target. The 25% part is neutral. The 10% solution is 15 points short on 2 parts (−30), so the 40% solution, 15 points over, must supply +30: 15x = 30, x = 2.",
+  "trap": "3 matches the parts of the 25% solution, but that solution is already at the target and does not need balancing.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-052",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Interest & Growth",
+  "diff": 4,
+  "stem": "A savings account pays a nominal annual rate of 12%, compounded quarterly. To the nearest hundredth of a percent, what is the effective annual rate?",
+  "choices": [
+   "12.00%",
+   "12.36%",
+   "12.55%",
+   "12.68%",
+   "13.00%"
+  ],
+  "answer": 2,
+  "explanation": "Quarterly compounding pays 12% ÷ 4 = 3% four times. The effective annual rate is 1.03⁴ − 1. Square twice: 1.03² = 1.0609, and 1.0609² = 1.12550881. So the effective rate ≈ 12.55%. For comparison, semi-annual compounding gives 1.06² − 1 = 12.36% and monthly gives about 12.68%; more frequent compounding always raises the effective rate.",
+  "trap": "12.36% is the semi-annual result (6% twice), not the quarterly one.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-053",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Optimisation/Max-Min",
+  "diff": 4,
+  "stem": "A workshop makes chairs and tables. A chair needs 2 labour hours and earns USD 20 profit; a table needs 6 labour hours and earns USD 50 profit. The workshop has 120 labour hours available and must make at least 5 tables. What is the greatest possible total profit?",
+  "choices": [
+   "USD 1,150",
+   "USD 1,200",
+   "USD 1,250",
+   "USD 1,300",
+   "USD 1,400"
+  ],
+  "answer": 0,
+  "explanation": "Compare profit per labour hour: chairs earn USD 20 ÷ 2 = USD 10 per hour, tables USD 50 ÷ 6 ≈ USD 8.33 per hour. So make only the required minimum of 5 tables (30 hours, USD 250) and put the remaining 90 hours into chairs: 45 chairs, USD 900. Total = USD 1,150. Each extra table would replace 3 chairs, giving up USD 60 for USD 50.",
+  "trap": "USD 1,200 comes from making only chairs (60 chairs), which ignores the requirement of at least 5 tables.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-054",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 4,
+  "stem": "At an airport, Ana walks the full 120-metre length of a moving walkway in 40 seconds when walking in the direction it moves. Walking against its motion at the same pace, she needs 120 seconds. How many seconds would the trip take if she simply stood still on the walkway?",
+  "choices": [
+   "60",
+   "80",
+   "90",
+   "100",
+   "120"
+  ],
+  "answer": 4,
+  "explanation": "With the walkway, her ground speed is 120 ÷ 40 = 3 m/s = walk + belt. Against it, 120 ÷ 120 = 1 m/s = walk − belt. Adding and halving: walk = 2 m/s and belt = 1 m/s. Standing still, she moves at the belt speed of 1 m/s, so the trip takes 120 seconds.",
+  "trap": "80 seconds averages 40 and 120, but times do not average; speeds combine and must be found first.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-055",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Unit Conversion",
+  "diff": 4,
+  "stem": "A filling machine dispenses 1.5 litres of liquid detergent per second, and the detergent weighs 0.8 kg per litre. The detergent is packed into 25 kg drums, and 12 full drums make a pallet. How many complete pallets are produced in an 8-hour shift?",
+  "choices": [
+   "96",
+   "115",
+   "116",
+   "138",
+   "1,382"
+  ],
+  "answer": 1,
+  "explanation": "Mass per second = 1.5 × 0.8 = 1.2 kg. An 8-hour shift has 8 × 3,600 = 28,800 seconds, so the machine dispenses 1.2 × 28,800 = 34,560 kg. Full drums = 34,560 ÷ 25 = 1,382.4, so 1,382 full drums. Complete pallets = 1,382 ÷ 12 = 115.17, so 115 complete pallets.",
+  "trap": "116 rounds 115.2 up, but only complete pallets count.",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-056",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Unit Conversion",
+  "diff": 4,
+  "stem": "A consultant converts USD 500 to euros at 0.90 euros per dollar, and the exchange office keeps a 2% fee from the euros. She spends 300 euros on the trip and converts the remaining euros back to dollars at 1.15 dollars per euro, with no fee. How many dollars does she get back?",
+  "choices": [
+   "USD 162.15",
+   "USD 165.00",
+   "USD 167.40",
+   "USD 172.50",
+   "USD 180.00"
+  ],
+  "answer": 0,
+  "explanation": "USD 500 × 0.90 = 450 euros before the fee. The 2% fee removes 9 euros, leaving 441 euros. After spending 300 euros she has 141 euros. Converting back: 141 × 1.15 = USD 162.15 (141 + 0.15 × 141 = 141 + 21.15). Apply the fee to the euros before spending, since the fee is deducted at the moment of exchange.",
+  "trap": "USD 172.50 ignores the 2% fee and converts 150 euros back (150 × 1.15).",
+  "time": 135
+ },
+ {
+  "id": "ps-wp-057",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 5,
+  "stem": "Working together, pumps P and Q can fill a reservoir in 6 hours. Working alone, P takes 5 hours less than Q to fill it. How many hours would Q take working alone?",
+  "choices": [
+   "10",
+   "12",
+   "15",
+   "18",
+   "20"
+  ],
+  "answer": 2,
+  "explanation": "Let Q take q hours, so P takes q − 5. Rates: 1/q + 1/(q − 5) = 1/6. Multiply by 6q(q − 5): 6(q − 5) + 6q = q(q − 5), so q² − 17q + 30 = 0, which factors as (q − 15)(q − 2) = 0. q = 2 is impossible (P would take −3 hours), so q = 15. Check: 1/15 + 1/10 = 2/30 + 3/30 = 1/6. Testing choices is also fast: try q = 15, then 1/15 + 1/10 = 1/6 works at once.",
+  "trap": "10 is P's time alone, not Q's.",
+  "time": 150
+ },
+ {
+  "id": "ps-wp-058",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 5,
+  "stem": "Two contractors share a job by working on alternate days, starting with Ari on day 1. Ari alone would take 10 days to do the whole job, and Beth alone would take 15 days. On which day is the job completed?",
+  "choices": [
+   "Day 6",
+   "Day 10",
+   "Day 11",
+   "Day 12",
+   "Day 13"
+  ],
+  "answer": 3,
+  "explanation": "A two-day cycle (Ari then Beth) completes 1/10 + 1/15 = 1/6 of the job. After 5 cycles, 10 days, 5/6 is done and 1/6 remains. Day 11 is Ari's: he does 1/10, leaving 1/6 − 1/10 = 1/15. Day 12 is Beth's, and 1/15 is exactly one day of her work. So the job is completed at the end of day 12.",
+  "trap": "Day 6 treats the 1/6 completed per two-day cycle as if it were done each day, giving the time for working together rather than alternating.",
+  "time": 150
+ },
+ {
+  "id": "ps-wp-059",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Mixtures",
+  "diff": 5,
+  "stem": "A 60-litre drum holds a cleaning fluid made of concentrate and water in the ratio 3 : 1. How many litres of the fluid must be drained and replaced with water so that the ratio of concentrate to water becomes 1 : 1?",
+  "choices": [
+   "10",
+   "12",
+   "15",
+   "18",
+   "20"
+  ],
+  "answer": 4,
+  "explanation": "The drum starts with 45 L of concentrate and 15 L of water. After drawing off x litres of fluid, the concentrate left is 45(1 − x/60), and the volume returns to 60 L when water is added. For a 1 : 1 ratio the concentrate must be 30 L: 45(1 − x/60) = 30, so 1 − x/60 = 2/3 and x = 20. Check: removing 20 L removes 15 L of concentrate and 5 L of water; adding 20 L of water gives 30 L and 30 L.",
+  "trap": "15 assumes the drained 15 litres are pure concentrate, but drained fluid is a 3 : 1 mixture and contains water too.",
+  "time": 150
+ },
+ {
+  "id": "ps-wp-060",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Interest & Growth",
+  "diff": 5,
+  "stem": "A company borrows USD 10,000 at 10% annual interest, compounded annually. It repays the loan with two equal payments, one at the end of year 1 and one at the end of year 2, and the second payment clears the loan exactly. To the nearest cent, what is each payment?",
+  "choices": [
+   "USD 5,000.00",
+   "USD 5,500.00",
+   "USD 5,761.90",
+   "USD 6,050.00",
+   "USD 6,100.00"
+  ],
+  "answer": 2,
+  "explanation": "Track the balance. After year 1 the debt is USD 11,000; paying P leaves 11,000 − P. After year 2 that grows to 1.1(11,000 − P), and the second payment P clears it: 1.1(11,000 − P) = P, so 12,100 = 2.1P and P = 12,100 ÷ 2.1 ≈ USD 5,761.90. Equivalently, the present values of the payments sum to the loan: P/1.1 + P/1.21 = 10,000.",
+  "trap": "USD 5,500 assumes interest is charged only on the original USD 10,000 and split evenly, ignoring that the balance shrinks after the first payment while interest compounds on what remains.",
+  "time": 150
+ },
+ {
+  "id": "ps-wp-061",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Interest & Growth",
+  "diff": 5,
+  "stem": "A firm's revenue grew by r% in its first year and by 2r% in its second year. Over the two years revenue grew by 32% in total. What is r?",
+  "choices": [
+   "8",
+   "10",
+   "10⅔",
+   "11",
+   "12"
+  ],
+  "answer": 1,
+  "explanation": "Write the growth as factors: (1 + r)(1 + 2r) = 1.32 with r as a decimal. Expanding: 1 + 3r + 2r² = 1.32, so 2r² + 3r − 0.32 = 0. The quadratic formula gives r = (−3 + √(9 + 2.56))/4 = (−3 + 3.4)/4 = 0.1, so r = 10. Plugging in is quicker: 1.10 × 1.20 = 1.32 confirms it.",
+  "trap": "10⅔ solves 3r = 32, treating the growth as additive (r + 2r) and ignoring compounding.",
+  "time": 150
+ },
+ {
+  "id": "ps-wp-062",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Profit & Cost",
+  "diff": 5,
+  "stem": "A distributor buys 500 units at USD 36 each. 20% of the units turn out to be damaged and cannot be sold. She sells three-quarters of the remaining units at price p and the rest at 40% off p. If her overall profit is 25% of her total purchase cost, what is p?",
+  "choices": [
+   "USD 50.00",
+   "USD 54.00",
+   "USD 56.25",
+   "USD 62.50",
+   "USD 67.50"
+  ],
+  "answer": 3,
+  "explanation": "Total cost = 500 × USD 36 = USD 18,000, so revenue must be 1.25 × 18,000 = USD 22,500. Sellable units = 80% of 500 = 400: 300 sell at p and 100 at 0.6p. Revenue = 300p + 60p = 360p = 22,500, so p = USD 62.50. Check: 300 × 62.50 = 18,750 and 100 × 37.50 = 3,750, total USD 22,500.",
+  "trap": "USD 50.00 forgets the damaged units and spreads the revenue over all 500 (375p + 75p = 450p).",
+  "time": 150
+ },
+ {
+  "id": "ps-wp-063",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Overlapping Sets",
+  "diff": 5,
+  "stem": "Of a firm's 200 employees, 95 completed a data course, 90 a leadership course and 80 a compliance course. Exactly 40 employees completed exactly two of the courses, and 15 completed all three. How many employees completed none of the courses?",
+  "choices": [
+   "5",
+   "10",
+   "15",
+   "20",
+   "35"
+  ],
+  "answer": 0,
+  "explanation": "Count completions: 95 + 90 + 80 = 265. Employees with exactly one course account for 1 each, exactly two for 2 each, all three for 3 each. So singles = 265 − 2(40) − 3(15) = 265 − 80 − 45 = 140. Employees with at least one course = 140 + 40 + 15 = 195, leaving 200 − 195 = 5 with none. Equivalent formula: at least one = total completions − (exactly two) − 2 × (all three) = 265 − 40 − 30 = 195.",
+  "trap": "20 finds the 140 single-course employees and the 40 with two courses but forgets to add the 15 who completed all three.",
+  "time": 150
+ },
+ {
+  "id": "ps-wp-064",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Overlapping Sets",
+  "diff": 5,
+  "stem": "At a conference of 100 delegates, 72 attended the keynote, 65 attended the workshop and 58 attended the networking dinner. What is the least possible number of delegates who attended at least two of the three events?",
+  "choices": [
+   "37",
+   "45",
+   "48",
+   "58",
+   "95"
+  ],
+  "answer": 2,
+  "explanation": "There are 72 + 65 + 58 = 195 attendances. To minimise multi-event delegates, let every delegate attend at least one event and pack the extra attendances into as few people as possible: each all-three delegate absorbs 2 extra attendances. If d attend exactly two and t attend all three, 100 + d + 2t = 195, so d + 2t = 95. To make d + t small, make t large: d must be odd, so d = 1, t = 47, giving 48. This is achievable: 47 attend all three, 1 attends the keynote and workshop, and the remaining 52 attend one event each (24 keynote, 17 workshop, 11 dinner).",
+  "trap": "95 counts the extra attendances (195 − 100) as people, but one delegate at all three events absorbs two of them.",
+  "time": 150
+ },
+ {
+  "id": "ps-wp-065",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Ages & Digits",
+  "diff": 5,
+  "stem": "Ana is twice as old as Ben was when Ana was as old as Ben is now. The sum of their present ages is 63. How old is Ana now?",
+  "choices": [
+   "27",
+   "30",
+   "32",
+   "36",
+   "42"
+  ],
+  "answer": 3,
+  "explanation": "Let Ana be A and Ben be B now, with d = A − B. Ana was Ben's current age d years ago, when Ben was B − d = B − (A − B) = 2B − A. The condition says A = 2(2B − A), so 3A = 4B and A : B = 4 : 3. With A + B = 63, A = 36 and B = 27. Check: 9 years ago Ana was 27 (Ben's age now) and Ben was 18; Ana now is 36 = 2 × 18.",
+  "trap": "42 comes from A = 2B, reading the sentence as \"Ana is twice Ben's current age\".",
+  "time": 150
+ },
+ {
+  "id": "ps-wp-066",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Ages & Digits",
+  "diff": 5,
+  "stem": "For how many two-digit numbers is the sum of the number and the number formed by reversing its digits a perfect square? (A number such as 10 reverses to 01 = 1.)",
+  "choices": [
+   "4",
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "answer": 4,
+  "explanation": "Write the number as 10t + u. The number plus its reversal is (10t + u) + (10u + t) = 11(t + u). For 11(t + u) to be a perfect square, t + u must be 11 times a square; since 1 ≤ t + u ≤ 18, t + u = 11. Two-digit numbers with digit sum 11: 29, 38, 47, 56, 65, 74, 83, 92. That is 8 numbers (each gives 121 = 11²).",
+  "trap": "4 counts only the pairs, treating 29 and 92 as the same number, but each is a separate two-digit number.",
+  "time": 150
+ },
+ {
+  "id": "ps-wp-067",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Optimisation/Max-Min",
+  "diff": 5,
+  "stem": "A courier ships goods in two crate sizes: small crates hold 7 kg and cost USD 9 each, and large crates hold 11 kg and cost USD 13 each. What is the least it can cost to buy crates with a total capacity of at least 100 kg?",
+  "choices": [
+   "USD 117",
+   "USD 122",
+   "USD 124",
+   "USD 126",
+   "USD 130"
+  ],
+  "answer": 1,
+  "explanation": "Large crates are cheaper per kg (USD 13/11 ≈ USD 1.18 vs USD 9/7 ≈ USD 1.29), so start with as many large crates as possible and adjust. 9 large crates hold 99 kg, just short. Options: 10 large = 110 kg for USD 130; 9 large + 1 small = 106 kg for USD 126; 8 large + 2 small = 102 kg for USD 104 + USD 18 = USD 122; 7 large + 3 small = 98 kg, too little; 6 large + 5 small = 101 kg for USD 123; 4 large + 8 small = 100 kg for USD 124. Fewer large crates only raise the cost, so the minimum is USD 122.",
+  "trap": "USD 117 buys 9 large crates, but they hold only 99 kg, which misses the 100 kg requirement.",
+  "time": 150
+ },
+ {
+  "id": "ps-wp-068",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Optimisation/Max-Min",
+  "diff": 5,
+  "stem": "A training firm charges each client USD 500 for a workshop when 20 clients attend, and lowers the fee for every client by USD 10 for each client beyond 20 (up to 40 clients). Each client costs the firm USD 160 in materials, and the workshop has a fixed cost of USD 2,000. What is the greatest profit the firm can make from one workshop?",
+  "choices": [
+   "USD 5,290",
+   "USD 5,400",
+   "USD 5,500",
+   "USD 6,250",
+   "USD 7,290"
+  ],
+  "answer": 0,
+  "explanation": "With n clients (n ≥ 20), the fee is 500 − 10(n − 20) = 700 − 10n. Profit = n(700 − 10n) − 160n − 2,000 = −10n² + 540n − 2,000. The vertex is at n = 540/20 = 27, a whole number, so 27 clients is optimal. Profit = −10(729) + 540(27) − 2,000 = −7,290 + 14,580 − 2,000 = USD 5,290. Check neighbours: n = 26 and n = 28 both give USD 5,280.",
+  "trap": "USD 7,290 leaves out the USD 2,000 fixed cost.",
+  "time": 150
+ },
+ {
+  "id": "ps-wp-069",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Rates & Work",
+  "diff": 5,
+  "stem": "Two vans leave towns P and Q, 360 km apart, at the same time and drive towards each other at constant speeds. After they pass each other, the van from P needs 4 more hours to reach Q, and the van from Q needs 9 more hours to reach P. What is the speed of the van from P, in km/h?",
+  "choices": [
+   "18",
+   "24",
+   "27",
+   "30",
+   "36"
+  ],
+  "answer": 4,
+  "explanation": "Let the vans meet after t hours, with speeds a (from P) and b (from Q). After the meeting, van P covers the distance van Q drove before meeting: 4a = bt. Likewise 9b = at. Dividing, 4a/(9b) = b/a, so 4a² = 9b² and a/b = 3/2. Then t = 4a/b = 6 hours. Van P drives a total of 6 + 4 = 10 hours to cover 360 km, so a = 36 km/h (and b = 24). Check: in 6 hours they cover 216 + 144 = 360 km.",
+  "trap": "24 is the speed of the van from Q, the slower van, which takes 15 hours in total.",
+  "time": 150
+ },
+ {
+  "id": "ps-wp-070",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Word Problems",
+  "sub": "Profit & Cost",
+  "diff": 5,
+  "stem": "A firm sells 3,000 units a month at USD 50 each. Variable cost is USD 30 per unit and fixed costs are USD 40,000 per month. If the firm cuts its price by 10%, by what percent must monthly unit sales rise for profit to stay the same?",
+  "choices": [
+   "10%",
+   "25%",
+   "30%",
+   "33⅓%",
+   "50%"
+  ],
+  "answer": 3,
+  "explanation": "Current profit = 3,000 × (USD 50 − USD 30) − USD 40,000 = USD 60,000 − USD 40,000 = USD 20,000. After a 10% cut the price is USD 45, so the contribution per unit falls from USD 20 to USD 15. To keep USD 20,000 profit, the units must contribute USD 60,000 again: 60,000 ÷ 15 = 4,000 units. That is a rise of 1,000/3,000 = 33⅓%. Fixed costs do not change, so only total contribution matters.",
+  "trap": "10% assumes sales need to rise by the same percent as the price cut, but the cut removes 25% of each unit's contribution (USD 5 of USD 20).",
+  "time": 150
+ }
+]

@@ -1,0 +1,4854 @@
+[
+ {
+  "id": "ta-001",
+  "sec": "di",
+  "type": "ta",
+  "diff": 1,
+  "title": "Coffee chain store results, last fiscal year",
+  "intro": "A regional coffee chain reports annual revenue, customer visits and staff headcount for its six stores.",
+  "cols": [
+   "Store",
+   "Revenue (USD thousands)",
+   "Customers (000)",
+   "Staff"
+  ],
+  "rows": [
+   [
+    "Harbor",
+    612,
+    48,
+    14
+   ],
+   [
+    "Midtown",
+    745,
+    55,
+    18
+   ],
+   [
+    "Riverside",
+    488,
+    41,
+    11
+   ],
+   [
+    "Oakfield",
+    530,
+    39,
+    12
+   ],
+   [
+    "Westgate",
+    402,
+    30,
+    9
+   ],
+   [
+    "Lakeside",
+    571,
+    44,
+    15
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "The store with the highest revenue also has the largest staff.",
+    "answer": 0
+   },
+   {
+    "text": "The median staff count of the six stores is greater than 13.",
+    "answer": 1
+   },
+   {
+    "text": "At least four of the six stores had revenue above USD 500,000.",
+    "answer": 0
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Sort by revenue: Midtown is first with USD 745k. Sort by staff: Midtown is first with 18 staff. Same store, so the statement is True. Statement 2: Staff sorted: 9, 11, 12, 14, 15, 18. With six values the median is the mean of the 3rd and 4th, (12+14)/2 = 13.0, which is not greater than 13. The statement is False. Statement 3: Revenues above 500 (in USD 000): 612, 745, 530, 571, that is 4 stores. The statement is True.",
+  "time": 120
+ },
+ {
+  "id": "ta-002",
+  "sec": "di",
+  "type": "ta",
+  "diff": 1,
+  "title": "Selected statistics for seven countries",
+  "intro": "The table shows population, land area, coastline length and capital-city population for seven countries.",
+  "cols": [
+   "Country",
+   "Population (millions)",
+   "Land area (000 km²)",
+   "Coastline (km)",
+   "Capital population (millions)"
+  ],
+  "rows": [
+   [
+    "Arvenia",
+    12.4,
+    88,
+    1200,
+    2.1
+   ],
+   [
+    "Belmora",
+    5.8,
+    41,
+    0,
+    1.3
+   ],
+   [
+    "Corvalia",
+    31.2,
+    240,
+    3400,
+    4.6
+   ],
+   [
+    "Dravon",
+    8.9,
+    77,
+    560,
+    0.9
+   ],
+   [
+    "Estmark",
+    19.5,
+    130,
+    0,
+    3.8
+   ],
+   [
+    "Fenlow",
+    3.1,
+    26,
+    410,
+    0.7
+   ],
+   [
+    "Galtria",
+    22.7,
+    198,
+    2100,
+    2.9
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "Exactly two of the seven countries have no coastline.",
+    "answer": 0
+   },
+   {
+    "text": "Corvalia has the highest population density (people per km²) of the seven countries.",
+    "answer": 1
+   },
+   {
+    "text": "The country with the longest coastline also has the largest land area.",
+    "answer": 0
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Countries with 0 km of coastline: Belmora, Estmark. That is exactly 2, so the statement is True. Statement 2: Divide population by land area. Corvalia: 31.2/240 = 0.130 million per thousand km². Belmora: 5.8/41 = 0.141 and Estmark: 19.5/130 = 0.150 are both higher; the highest is Estmark. The statement is False. Statement 3: Longest coastline: Corvalia (3400 km). Largest area: Corvalia (240 thousand km²). The statement is True.",
+  "time": 120
+ },
+ {
+  "id": "ta-003",
+  "sec": "di",
+  "type": "ta",
+  "diff": 1,
+  "title": "Online store: home-office products, Q2",
+  "intro": "An online retailer lists second-quarter unit sales, price, number of returned units and average customer rating for six products.",
+  "cols": [
+   "Product",
+   "Units sold",
+   "Price (USD)",
+   "Returns",
+   "Rating"
+  ],
+  "rows": [
+   [
+    "Desk lamp",
+    1840,
+    34,
+    46,
+    4.3
+   ],
+   [
+    "Office chair",
+    620,
+    189,
+    31,
+    4.1
+   ],
+   [
+    "Monitor arm",
+    910,
+    72,
+    18,
+    4.6
+   ],
+   [
+    "Keyboard",
+    2350,
+    49,
+    94,
+    4.0
+   ],
+   [
+    "Mouse pad",
+    3120,
+    12,
+    25,
+    4.4
+   ],
+   [
+    "Webcam",
+    1180,
+    65,
+    59,
+    3.8
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "The product with the most units sold also has the lowest price.",
+    "answer": 0
+   },
+   {
+    "text": "The webcam's return rate (returns as a percent of units sold) is greater than 5%.",
+    "answer": 1
+   },
+   {
+    "text": "More than half of the six products have a rating of at least 4.3.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Mouse pad has the most units (3,120) and the lowest price (USD 12). The statement is True. Statement 2: 59/1,180 = 5.0%, which is exactly 5%, not greater than 5%. The statement is False. Statement 3: Ratings of 4.3 or more: 4.3, 4.6, 4.4, which is 3 products, exactly half and not more than half. The statement is False.",
+  "time": 120
+ },
+ {
+  "id": "ta-004",
+  "sec": "di",
+  "type": "ta",
+  "diff": 1,
+  "title": "Monthly climate record, coastal city",
+  "intro": "A weather station reports eight months of averaged climate data.",
+  "cols": [
+   "Month",
+   "Rainfall (mm)",
+   "Avg high (°C)",
+   "Avg low (°C)",
+   "Sunny days"
+  ],
+  "rows": [
+   [
+    "Jan",
+    112,
+    8,
+    1,
+    7
+   ],
+   [
+    "Feb",
+    94,
+    10,
+    2,
+    9
+   ],
+   [
+    "Mar",
+    81,
+    14,
+    5,
+    12
+   ],
+   [
+    "Apr",
+    63,
+    18,
+    8,
+    15
+   ],
+   [
+    "May",
+    47,
+    22,
+    12,
+    19
+   ],
+   [
+    "Jun",
+    29,
+    27,
+    16,
+    23
+   ],
+   [
+    "Jul",
+    18,
+    30,
+    19,
+    26
+   ],
+   [
+    "Aug",
+    24,
+    29,
+    18,
+    24
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "The month with the least rainfall is also the month with the most sunny days.",
+    "answer": 0
+   },
+   {
+    "text": "In every month shown, the average high exceeds the average low by at least 8°C.",
+    "answer": 1
+   },
+   {
+    "text": "Total rainfall from May through August is less than the rainfall in January alone.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: July has both the least rain (18 mm) and the most sunny days (26). The statement is True. Statement 2: Differences high minus low: 7, 8, 9, 10, 10, 11, 11, 11. The smallest is 7°C in January, below 8. The statement is False. Statement 3: May to August: 47+29+18+24 = 118 mm, which is more than January's 112 mm. The statement is False.",
+  "time": 120
+ },
+ {
+  "id": "ta-005",
+  "sec": "di",
+  "type": "ta",
+  "diff": 2,
+  "title": "Domestic airline performance, March",
+  "intro": "A transport regulator publishes monthly figures for seven domestic airlines.",
+  "cols": [
+   "Airline",
+   "Flights",
+   "On-time (%)",
+   "Cancelled",
+   "Complaints"
+  ],
+  "rows": [
+   [
+    "SkyAxis",
+    4200,
+    82.5,
+    63,
+    118
+   ],
+   [
+    "Nordair",
+    2950,
+    88.1,
+    21,
+    47
+   ],
+   [
+    "Pelican",
+    6100,
+    76.4,
+    142,
+    260
+   ],
+   [
+    "Tropic",
+    1880,
+    91.2,
+    9,
+    22
+   ],
+   [
+    "Coastal",
+    3470,
+    79.8,
+    55,
+    96
+   ],
+   [
+    "Vireo",
+    5230,
+    84.0,
+    74,
+    131
+   ],
+   [
+    "Altura",
+    2610,
+    86.7,
+    30,
+    58
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "Pelican had more on-time flights than any other airline.",
+    "answer": 0
+   },
+   {
+    "text": "The median on-time percentage of the seven airlines is above 85%.",
+    "answer": 1
+   },
+   {
+    "text": "Tropic had the fewest complaints per 1,000 flights.",
+    "answer": 0
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: On-time flights = flights × on-time rate. Pelican: 6,100 × 0.764 ≈ 4660. Vireo: 5,230 × 0.840 ≈ 4393. Pelican is highest. The statement is True. Statement 2: Sorted on-time rates: 76.4, 79.8, 82.5, 84.0, 86.7, 88.1, 91.2. The 4th value is 84.0%, below 85. The statement is False. Statement 3: Tropic: 22/1,880 × 1,000 ≈ 11.7. Nordair: 15.9, Altura: 22.2, the others are higher. Tropic is lowest. The statement is True.",
+  "time": 135
+ },
+ {
+  "id": "ta-006",
+  "sec": "di",
+  "type": "ta",
+  "diff": 2,
+  "title": "Sales by region, 2023 and 2024",
+  "intro": "A software distributor compares annual sales by region with the size of each regional sales team.",
+  "cols": [
+   "Region",
+   "2023 sales (USD millions)",
+   "2024 sales (USD millions)",
+   "Sales reps",
+   "New clients"
+  ],
+  "rows": [
+   [
+    "North",
+    48.2,
+    53.0,
+    22,
+    140
+   ],
+   [
+    "South",
+    36.5,
+    35.1,
+    18,
+    96
+   ],
+   [
+    "East",
+    61.0,
+    67.7,
+    27,
+    175
+   ],
+   [
+    "West",
+    29.4,
+    34.8,
+    15,
+    121
+   ],
+   [
+    "Central",
+    42.7,
+    44.0,
+    20,
+    104
+   ],
+   [
+    "Pacific",
+    25.1,
+    27.6,
+    12,
+    88
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "West had the largest percent increase in sales from 2023 to 2024.",
+    "answer": 0
+   },
+   {
+    "text": "Every region had higher sales in 2024 than in 2023.",
+    "answer": 1
+   },
+   {
+    "text": "In 2024, East had the highest sales per sales rep.",
+    "answer": 0
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: West: (34.8 - 29.4)/29.4 ≈ 18.4%. Next highest are East 11.0% and North 10.0%. West is largest. The statement is True. Statement 2: South fell from 36.5 to 35.1, so not every region grew. The statement is False. Statement 3: East: 67.7/27 ≈ 2.51. North: 53.0/22 ≈ 2.41, which is lower; Pacific: 27.6/12 = 2.30, also lower. The highest is East. The statement is True.",
+  "time": 135
+ },
+ {
+  "id": "ta-007",
+  "sec": "di",
+  "type": "ta",
+  "diff": 2,
+  "title": "Regional hospital indicators",
+  "intro": "A health authority compares six hospitals on capacity, volume and outcomes over one year.",
+  "cols": [
+   "Hospital",
+   "Beds",
+   "Admissions",
+   "Avg stay (days)",
+   "Nurses",
+   "Readmission (%)"
+  ],
+  "rows": [
+   [
+    "St. Clare",
+    420,
+    18900,
+    5.2,
+    610,
+    11.4
+   ],
+   [
+    "Mercy Park",
+    310,
+    14100,
+    4.8,
+    455,
+    9.7
+   ],
+   [
+    "County General",
+    560,
+    22800,
+    6.1,
+    790,
+    13.2
+   ],
+   [
+    "Lakeview",
+    240,
+    11600,
+    4.3,
+    350,
+    8.9
+   ],
+   [
+    "Northside",
+    380,
+    15200,
+    5.6,
+    505,
+    12.1
+   ],
+   [
+    "Eastbrook",
+    290,
+    13300,
+    4.9,
+    400,
+    10.3
+   ]
+  ],
+  "prompt": "For each of the following statements, select Yes if the condition described is met according to the information in the table. Otherwise select No.",
+  "labels": [
+   "Yes",
+   "No"
+  ],
+  "statements": [
+   {
+    "text": "Lakeview has more admissions per bed than any other hospital.",
+    "answer": 0
+   },
+   {
+    "text": "Ranking the hospitals by average stay gives exactly the same order as ranking them by readmission rate.",
+    "answer": 0
+   },
+   {
+    "text": "Every hospital has at least 1.5 nurses per bed.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Admissions/beds: Lakeview 48.3, Eastbrook 45.9, Mercy Park 45.5, St. Clare 45.0, County General 40.7, Northside 40.0. Lakeview is highest. Answer: Yes. Statement 2: Sorting either column from low to high gives Lakeview, Mercy Park, Eastbrook, St. Clare, Northside, County General in both cases. Answer: Yes. Statement 3: Nurses/beds ranges from 1.33 (Northside) to 1.47. Northside: 505/380 ≈ 1.33, below 1.5. Answer: No.",
+  "time": 135
+ },
+ {
+  "id": "ta-008",
+  "sec": "di",
+  "type": "ta",
+  "diff": 2,
+  "title": "Mutual fund snapshot",
+  "intro": "An investment platform lists returns, costs and size for eight of its mutual funds.",
+  "cols": [
+   "Fund",
+   "1-yr return (%)",
+   "5-yr avg return (%)",
+   "Expense ratio (%)",
+   "Assets (USD billions)"
+  ],
+  "rows": [
+   [
+    "Atlas Growth",
+    14.2,
+    9.8,
+    0.65,
+    12.4
+   ],
+   [
+    "Beacon Value",
+    8.7,
+    7.9,
+    0.48,
+    8.1
+   ],
+   [
+    "Cedar Income",
+    4.1,
+    5.2,
+    0.32,
+    15.7
+   ],
+   [
+    "Delta Tech",
+    21.5,
+    12.6,
+    0.9,
+    6.3
+   ],
+   [
+    "Ember Small Cap",
+    11.9,
+    8.4,
+    0.75,
+    3.9
+   ],
+   [
+    "Fjord Global",
+    9.6,
+    8.8,
+    0.55,
+    10.2
+   ],
+   [
+    "Granite Index",
+    12.3,
+    9.5,
+    0.05,
+    24.6
+   ],
+   [
+    "Harbor Bond",
+    2.8,
+    3.9,
+    0.28,
+    9.4
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "The three largest funds by assets together hold more than half of the eight funds' total assets.",
+    "answer": 0
+   },
+   {
+    "text": "Granite Index has the third-highest 1-year return after subtracting its expense ratio.",
+    "answer": 0
+   },
+   {
+    "text": "Every fund's 1-year return is higher than its 5-year average return.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Largest three: Granite Index, Cedar Income, Atlas Growth with 52.7 of 90.6 billion, about 58.2%. The statement is True. Statement 2: Net returns: Delta 20.60, Atlas 13.55, Granite 12.25, Ember 11.15. Granite ranks third. The statement is True. Statement 3: Cedar Income (4.1 vs 5.2) and Harbor Bond (2.8 vs 3.9) are below their 5-year averages. The statement is False.",
+  "time": 135
+ },
+ {
+  "id": "ta-009",
+  "sec": "di",
+  "type": "ta",
+  "diff": 2,
+  "title": "Crop statistics, one farming province",
+  "intro": "An agriculture ministry reports the main crops in one province for the most recent season.",
+  "cols": [
+   "Crop",
+   "Area planted (000 ha)",
+   "Yield (t/ha)",
+   "Price (USD/t)",
+   "Water use (mm)"
+  ],
+  "rows": [
+   [
+    "Wheat",
+    820,
+    3.4,
+    245,
+    450
+   ],
+   [
+    "Maize",
+    610,
+    6.1,
+    190,
+    600
+   ],
+   [
+    "Rice",
+    340,
+    4.8,
+    410,
+    1200
+   ],
+   [
+    "Soybean",
+    450,
+    2.7,
+    455,
+    500
+   ],
+   [
+    "Barley",
+    290,
+    3.1,
+    210,
+    400
+   ],
+   [
+    "Sorghum",
+    180,
+    2.9,
+    175,
+    380
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "Maize had the largest total production (area × yield) of the six crops.",
+    "answer": 0
+   },
+   {
+    "text": "Rice earned the highest revenue per hectare.",
+    "answer": 0
+   },
+   {
+    "text": "Rice produced more tonnes per hectare per millimetre of water than wheat did.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Maize: 610 × 6.1 = 3721 thousand t. Wheat: 820 × 3.4 = 2788. Maize is largest. The statement is True. Statement 2: Revenue per ha = yield × price. Rice: 4.8 × 410 = USD 1968; Soybean 1228; Maize 1159. Rice is highest. The statement is True. Statement 3: Rice: 4.8/1,200 = 0.0040; Wheat: 3.4/450 ≈ 0.0076. Rice is lower. The statement is False.",
+  "time": 135
+ },
+ {
+  "id": "ta-010",
+  "sec": "di",
+  "type": "ta",
+  "diff": 2,
+  "title": "Power plants in a regional grid, 2024",
+  "intro": "A grid operator lists capacity, annual output, capacity factor and carbon intensity for seven plants.",
+  "cols": [
+   "Plant",
+   "Capacity (MW)",
+   "Output (GWh)",
+   "Capacity factor (%)",
+   "CO₂ (kg/MWh)"
+  ],
+  "rows": [
+   [
+    "Ridge Wind",
+    240,
+    650,
+    30.9,
+    11
+   ],
+   [
+    "Solar Flats",
+    180,
+    410,
+    26.0,
+    41
+   ],
+   [
+    "Bay Gas",
+    520,
+    3150,
+    69.2,
+    410
+   ],
+   [
+    "Old Mill Coal",
+    600,
+    3420,
+    65.1,
+    960
+   ],
+   [
+    "Falls Hydro",
+    310,
+    1520,
+    56.0,
+    24
+   ],
+   [
+    "Mesa Solar",
+    150,
+    355,
+    27.0,
+    41
+   ],
+   [
+    "Point Nuclear",
+    900,
+    7330,
+    93.0,
+    12
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "Plants with carbon intensity below 50 kg/MWh produced more than 60% of the total output.",
+    "answer": 0
+   },
+   {
+    "text": "Old Mill Coal emitted more CO₂ in total than all the other plants combined.",
+    "answer": 0
+   },
+   {
+    "text": "The median capacity factor of the seven plants is greater than 60%.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Low-carbon plants: Ridge Wind, Solar Flats, Falls Hydro, Mesa Solar, Point Nuclear, with 10265 of 16835 GWh, about 61.0%. The statement is True. Statement 2: Emissions = output × intensity. Old Mill: 3,420 × 960 ≈ 3283 thousand t. All others combined ≈ 1454 thousand t, mostly Bay Gas. The statement is True. Statement 3: Sorted factors: 26.0, 27.0, 30.9, 56.0, 65.1, 69.2, 93.0. The 4th value is 56.0%. The statement is False.",
+  "time": 135
+ },
+ {
+  "id": "ta-011",
+  "sec": "di",
+  "type": "ta",
+  "diff": 3,
+  "title": "Email campaign funnel, last quarter",
+  "intro": "A retailer's CRM team tracks each email campaign from send to purchase.",
+  "cols": [
+   "Campaign",
+   "Emails sent",
+   "Opens",
+   "Clicks",
+   "Purchases",
+   "Revenue (USD)"
+  ],
+  "rows": [
+   [
+    "Spring launch",
+    42000,
+    11340,
+    2268,
+    341,
+    23870
+   ],
+   [
+    "Loyalty bonus",
+    18500,
+    7400,
+    1850,
+    296,
+    17760
+   ],
+   [
+    "Flash sale",
+    61000,
+    13420,
+    2952,
+    502,
+    30120
+   ],
+   [
+    "Win-back",
+    25000,
+    4250,
+    595,
+    71,
+    6390
+   ],
+   [
+    "New arrivals",
+    38000,
+    9880,
+    1680,
+    235,
+    18800
+   ],
+   [
+    "Holiday guide",
+    54000,
+    15660,
+    3445,
+    517,
+    41360
+   ],
+   [
+    "Survey invite",
+    12000,
+    3480,
+    418,
+    25,
+    1250
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "The campaign with the highest open rate (opens ÷ emails sent) also had the highest click rate among those who opened (clicks ÷ opens).",
+    "answer": 0
+   },
+   {
+    "text": "Holiday guide generated more revenue per email sent than Loyalty bonus did.",
+    "answer": 1
+   },
+   {
+    "text": "Exactly two campaigns had an average order value (revenue ÷ purchases) above USD 75.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Open rates: Loyalty bonus 40% is highest. Clicks ÷ opens: Loyalty bonus 25%, Holiday guide 22.0%, Flash sale 22%. Loyalty bonus leads both. The statement is True. Statement 2: Holiday guide: 41,360/54,000 ≈ USD 0.77. Loyalty bonus: 17,760/18,500 = USD 0.96. Holiday guide is lower. The statement is False. Statement 3: Average order values: Spring launch 70, Loyalty bonus 60, Flash sale 60, Win-back 90, New arrivals 80, Holiday guide 80, Survey invite 50. Above 75: Win-back (90), New arrivals (80) and Holiday guide (80), so 3 campaigns, not two. The statement is False.",
+  "time": 150
+ },
+ {
+  "id": "ta-012",
+  "sec": "di",
+  "type": "ta",
+  "diff": 3,
+  "title": "Admissions data for eight universities",
+  "intro": "A college guide reports one admissions cycle for eight private universities, with annual tuition and six-year graduation rate.",
+  "cols": [
+   "University",
+   "Applicants",
+   "Admitted",
+   "Enrolled",
+   "Tuition (USD thousands)",
+   "Grad rate (%)"
+  ],
+  "rows": [
+   [
+    "Ashford",
+    18200,
+    5460,
+    2130,
+    38,
+    84
+   ],
+   [
+    "Brookline",
+    9600,
+    4320,
+    1820,
+    24,
+    71
+   ],
+   [
+    "Calder",
+    26400,
+    3960,
+    1980,
+    52,
+    93
+   ],
+   [
+    "Dunmore",
+    7400,
+    5180,
+    2480,
+    18,
+    62
+   ],
+   [
+    "Elmhurst",
+    14100,
+    4935,
+    1630,
+    41,
+    88
+   ],
+   [
+    "Fairview",
+    11300,
+    6215,
+    2240,
+    21,
+    67
+   ],
+   [
+    "Glenrock",
+    21800,
+    4360,
+    1700,
+    47,
+    90
+   ],
+   [
+    "Halden",
+    8900,
+    3115,
+    1430,
+    29,
+    76
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "The three universities with the lowest admission rates (admitted ÷ applicants) are also the three with the highest graduation rates.",
+    "answer": 1
+   },
+   {
+    "text": "Dunmore has the highest yield (enrolled ÷ admitted).",
+    "answer": 1
+   },
+   {
+    "text": "The median tuition of the eight universities is between USD 30,000 and USD 40,000.",
+    "answer": 0
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Admission rates: Calder 15%, Glenrock 20%, Ashford 30%, then Elmhurst 35%. Top graduation rates: Calder 93, Glenrock 90, Elmhurst 88. Ashford (84) is not in the top three. The statement is False. Statement 2: Yields: Calder 50%, Dunmore 48%, Halden 45.9%, Brookline 42.1%. Calder is highest. The statement is False. Statement 3: Sorted tuition: 18, 21, 24, 29, 38, 41, 47, 52. Median = (29+38)/2 = 33.5 thousand, which lies between 30 and 40. The statement is True.",
+  "time": 150
+ },
+ {
+  "id": "ta-013",
+  "sec": "di",
+  "type": "ta",
+  "diff": 3,
+  "title": "Rental market indicators, nine metro areas",
+  "intro": "A housing research group compares rents, incomes and transit access across nine metro areas.",
+  "cols": [
+   "City",
+   "Median rent (USD)",
+   "Median income (USD thousands)",
+   "Vacancy (%)",
+   "Rent change 1 yr (%)",
+   "Transit score"
+  ],
+  "rows": [
+   [
+    "Aldport",
+    1850,
+    72,
+    4.1,
+    6.2,
+    68
+   ],
+   [
+    "Brennan",
+    1320,
+    58,
+    6.8,
+    2.1,
+    41
+   ],
+   [
+    "Castile",
+    2410,
+    96,
+    3.2,
+    8.5,
+    82
+   ],
+   [
+    "Dorset",
+    1190,
+    49,
+    7.5,
+    -0.8,
+    35
+   ],
+   [
+    "Everly",
+    1680,
+    63,
+    5.0,
+    4.4,
+    57
+   ],
+   [
+    "Fulton",
+    2050,
+    81,
+    3.9,
+    7.1,
+    74
+   ],
+   [
+    "Grayson",
+    1470,
+    55,
+    6.1,
+    3.0,
+    49
+   ],
+   [
+    "Hollis",
+    1760,
+    77,
+    4.6,
+    5.3,
+    63
+   ],
+   [
+    "Irvine Bay",
+    2280,
+    88,
+    2.7,
+    9.2,
+    71
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "In every city, annual median rent is less than 30% of median income.",
+    "answer": 1
+   },
+   {
+    "text": "A year ago, Irvine Bay's median rent was lower than Castile's is now by more than USD 300.",
+    "answer": 0
+   },
+   {
+    "text": "The two cities with the lowest vacancy rates are also the two cities with the largest one-year rent increases.",
+    "answer": 0
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Annual rent ÷ income: highest is Grayson: 1,470 × 12 / 55,000 ≈ 32.1%, which exceeds 30. Castile is 30.1%. The statement is False. Statement 2: Irvine Bay a year ago: 2,280/1.092 ≈ USD 2088. Castile now: USD 2,410. Difference ≈ USD 322, more than 300. The statement is True. Statement 3: Lowest vacancy: Irvine Bay (2.7) and Castile (3.2). Largest increases: Irvine Bay (9.2) and Castile (8.5). Same pair. The statement is True.",
+  "time": 150
+ },
+ {
+  "id": "ta-014",
+  "sec": "di",
+  "type": "ta",
+  "diff": 3,
+  "title": "Supplier comparison for a molded part",
+  "intro": "A purchasing team compares seven suppliers that can make the same plastic part. Rating is an internal audit grade.",
+  "cols": [
+   "Supplier",
+   "Unit cost (USD)",
+   "Lead time (days)",
+   "Defect rate (%)",
+   "Min order",
+   "Rating"
+  ],
+  "rows": [
+   [
+    "Kestrel",
+    4.2,
+    12,
+    1.8,
+    500,
+    "A"
+   ],
+   [
+    "Lumen",
+    3.85,
+    21,
+    2.6,
+    2000,
+    "B"
+   ],
+   [
+    "Marlow",
+    4.55,
+    7,
+    0.9,
+    250,
+    "A"
+   ],
+   [
+    "Nexa",
+    3.7,
+    28,
+    3.4,
+    5000,
+    "C"
+   ],
+   [
+    "Orbis",
+    4.05,
+    14,
+    1.5,
+    1000,
+    "A"
+   ],
+   [
+    "Pallas",
+    3.95,
+    18,
+    2.2,
+    1500,
+    "B"
+   ],
+   [
+    "Quill",
+    4.4,
+    9,
+    1.1,
+    300,
+    "A"
+   ]
+  ],
+  "prompt": "For each of the following statements, select Yes if the condition described is met according to the information in the table. Otherwise select No.",
+  "labels": [
+   "Yes",
+   "No"
+  ],
+  "statements": [
+   {
+    "text": "Among suppliers with a lead time of at most 14 days and a minimum order of at most 1,000 units, Orbis has the lowest unit cost.",
+    "answer": 0
+   },
+   {
+    "text": "Every supplier rated A has a defect rate below the median defect rate of all seven suppliers.",
+    "answer": 1
+   },
+   {
+    "text": "After adjusting for defects (cost per good unit = unit cost ÷ (1 - defect rate)), Nexa is still the cheapest supplier.",
+    "answer": 0
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Qualifying suppliers: Kestrel, Marlow, Orbis, Quill. Their unit costs: Kestrel 4.20, Marlow 4.55, Orbis 4.05, Quill 4.40. Orbis is cheapest. Answer: Yes. Statement 2: Median defect rate = 1.8% (sorted: 0.9, 1.1, 1.5, 1.8, 2.2, 2.6, 3.4). A-rated suppliers: Marlow 0.9, Orbis 1.5 and Quill 1.1 are below, but Kestrel's 1.8 equals the median, so it is not below. Answer: No. Statement 3: Cost per good unit: Nexa 3.70/0.966 ≈ 3.830, Lumen ≈ 3.953, Pallas ≈ 4.039. Nexa remains lowest. Answer: Yes.",
+  "time": 150
+ },
+ {
+  "id": "ta-015",
+  "sec": "di",
+  "type": "ta",
+  "diff": 3,
+  "title": "Multi-site clinical trial results",
+  "intro": "A drug trial ran at seven sites. Responders are counted among patients who completed the trial.",
+  "cols": [
+   "Trial site",
+   "Enrolled",
+   "Completed",
+   "Responders",
+   "Adverse events",
+   "Median age"
+  ],
+  "rows": [
+   [
+    "Site 1",
+    84,
+    76,
+    41,
+    9,
+    54
+   ],
+   [
+    "Site 2",
+    120,
+    102,
+    58,
+    17,
+    61
+   ],
+   [
+    "Site 3",
+    66,
+    63,
+    30,
+    5,
+    49
+   ],
+   [
+    "Site 4",
+    95,
+    81,
+    47,
+    14,
+    58
+   ],
+   [
+    "Site 5",
+    150,
+    129,
+    62,
+    21,
+    63
+   ],
+   [
+    "Site 6",
+    72,
+    70,
+    39,
+    6,
+    47
+   ],
+   [
+    "Site 7",
+    108,
+    90,
+    52,
+    11,
+    56
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "Site 6 had both the highest completion rate and the highest response rate among completers.",
+    "answer": 1
+   },
+   {
+    "text": "Across all seven sites combined, more than 52% of completers were responders.",
+    "answer": 0
+   },
+   {
+    "text": "Each of the sites with a median patient age of 56 or older had an adverse-event rate (events ÷ enrolled) above 12%.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Completion: Site 6 97.2%, Site 3 95.5%. Response: Site 6 55.7%, but Site 4 has 58.0%, so Site 6 does not lead on response. The statement is False. Statement 2: Total responders 329 out of 611 completers ≈ 53.8%, which is above 52. The statement is True. Statement 3: Sites aged 56+: Site 2, Site 4, Site 5, Site 7. Rates: Site 2 14.2%, Site 4 14.7%, Site 5 14.0%, Site 7 10.2%. Site 7 is only 10.2%. The statement is False.",
+  "time": 150
+ },
+ {
+  "id": "ta-016",
+  "sec": "di",
+  "type": "ta",
+  "diff": 3,
+  "title": "Customer support performance, September",
+  "intro": "A software company's support desk reports one month of ticket data by team.",
+  "cols": [
+   "Team",
+   "Tickets opened",
+   "Tickets closed",
+   "Avg first reply (h)",
+   "CSAT (%)",
+   "Agents"
+  ],
+  "rows": [
+   [
+    "Billing",
+    1240,
+    1185,
+    3.2,
+    88,
+    9
+   ],
+   [
+    "Technical",
+    2310,
+    2050,
+    6.8,
+    79,
+    14
+   ],
+   [
+    "Onboarding",
+    780,
+    802,
+    2.1,
+    93,
+    5
+   ],
+   [
+    "Accounts",
+    960,
+    921,
+    4.5,
+    85,
+    7
+   ],
+   [
+    "Shipping",
+    1650,
+    1590,
+    5.1,
+    81,
+    10
+   ],
+   [
+    "Returns",
+    1120,
+    1146,
+    3.9,
+    86,
+    8
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "Exactly two teams closed more tickets than they opened.",
+    "answer": 0
+   },
+   {
+    "text": "Sorting teams from fastest to slowest first reply gives the same order as sorting them from highest to lowest CSAT.",
+    "answer": 0
+   },
+   {
+    "text": "Technical closed more tickets per agent than Shipping did.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Closed minus opened: Onboarding +22, Returns +26; every other team closed fewer. Exactly two. The statement is True. Statement 2: Fastest reply order: Onboarding, Billing, Returns, Accounts, Shipping, Technical. CSAT order: Onboarding, Billing, Returns, Accounts, Shipping, Technical. The two orders match. The statement is True. Statement 3: Technical: 2,050/14 ≈ 146.4. Shipping: 1,590/10 = 159.0. Technical is lower. The statement is False.",
+  "time": 150
+ },
+ {
+  "id": "ta-017",
+  "sec": "di",
+  "type": "ta",
+  "diff": 3,
+  "title": "Bird survey, river valley reserve",
+  "intro": "Volunteers surveyed the same 40 sites in 2019 and 2024. Status is the reserve's conservation category.",
+  "cols": [
+   "Species",
+   "Sites surveyed",
+   "Sites present",
+   "Count 2019",
+   "Count 2024",
+   "Status"
+  ],
+  "rows": [
+   [
+    "Marsh warbler",
+    40,
+    22,
+    310,
+    268,
+    "Watch"
+   ],
+   [
+    "Red kite",
+    40,
+    31,
+    145,
+    212,
+    "Stable"
+   ],
+   [
+    "Barn owl",
+    40,
+    18,
+    96,
+    81,
+    "Watch"
+   ],
+   [
+    "Lapwing",
+    40,
+    14,
+    420,
+    302,
+    "At risk"
+   ],
+   [
+    "Skylark",
+    40,
+    27,
+    690,
+    612,
+    "Watch"
+   ],
+   [
+    "Kingfisher",
+    40,
+    12,
+    58,
+    64,
+    "Stable"
+   ],
+   [
+    "Curlew",
+    40,
+    9,
+    210,
+    131,
+    "At risk"
+   ],
+   [
+    "Goldfinch",
+    40,
+    35,
+    880,
+    951,
+    "Stable"
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "Every species classed At risk declined by more than 25% between 2019 and 2024.",
+    "answer": 0
+   },
+   {
+    "text": "Red kite had the largest percent increase in count of any species.",
+    "answer": 0
+   },
+   {
+    "text": "The median 2024 count of species present at more than half of the surveyed sites is greater than 500.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Lapwing: (302-420)/420 ≈ -28.1%. Curlew: (131-210)/210 ≈ -37.6%. Both declines exceed 25%. The statement is True. Statement 2: Increases: Red kite 46.2%, Kingfisher 10.3%, Goldfinch 8.1%. Red kite is largest. The statement is True. Statement 3: Present at more than 20 sites: Marsh warbler 268, Red kite 212, Skylark 612, Goldfinch 951. Median = (268+612)/2 = 440.0, below 500. The statement is False.",
+  "time": 150
+ },
+ {
+  "id": "ta-018",
+  "sec": "di",
+  "type": "ta",
+  "diff": 3,
+  "title": "Macroeconomic indicators, eight economies",
+  "intro": "An economic briefing summarizes 2024 data. GDP growth is the change from 2023 to 2024.",
+  "cols": [
+   "Country",
+   "GDP 2024 (USD billions)",
+   "GDP growth (%)",
+   "Inflation (%)",
+   "Unemployment (%)",
+   "Debt (% of GDP)"
+  ],
+  "rows": [
+   [
+    "Norland",
+    512,
+    2.4,
+    3.1,
+    4.8,
+    61
+   ],
+   [
+    "Ostria",
+    238,
+    3.9,
+    5.6,
+    6.2,
+    48
+   ],
+   [
+    "Pavonia",
+    1310,
+    1.1,
+    2.4,
+    5.5,
+    104
+   ],
+   [
+    "Quessa",
+    87,
+    5.2,
+    8.9,
+    9.7,
+    37
+   ],
+   [
+    "Rovia",
+    674,
+    1.8,
+    2.9,
+    3.9,
+    72
+   ],
+   [
+    "Sardin",
+    145,
+    4.6,
+    6.8,
+    7.4,
+    55
+   ],
+   [
+    "Tellas",
+    402,
+    2.9,
+    3.6,
+    5.1,
+    66
+   ],
+   [
+    "Umbria Nova",
+    960,
+    0.6,
+    1.9,
+    6.6,
+    118
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "The sum of inflation and unemployment is above 10 percentage points for exactly three countries.",
+    "answer": 0
+   },
+   {
+    "text": "Umbria Nova's government debt in dollars is greater than Pavonia's.",
+    "answer": 1
+   },
+   {
+    "text": "The country with the highest GDP growth rate also added the most dollars of GDP from 2023 to 2024.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Inflation + unemployment: Quessa 18.6, Sardin 14.2, Ostria 11.8; the next highest is Tellas 8.7. Exactly three. The statement is True. Statement 2: Debt = GDP × ratio. Umbria Nova: 960 × 1.18 ≈ 1133bn. Pavonia: 1,310 × 1.04 ≈ 1362bn. Umbria Nova is smaller. The statement is False. Statement 3: Quessa grew fastest (5.2%) but added only about 4.3bn. Pavonia added about 14.3bn and Rovia about 11.9bn. The statement is False.",
+  "time": 150
+ },
+ {
+  "id": "ta-019",
+  "sec": "di",
+  "type": "ta",
+  "diff": 4,
+  "title": "Branch lending performance, 2024",
+  "intro": "A community bank compares lending at eight branches. Loan volume equals loans issued times average loan size.",
+  "cols": [
+   "Branch",
+   "Loans issued",
+   "Avg loan (USD thousands)",
+   "Default rate (%)",
+   "Staff",
+   "Satisfaction"
+  ],
+  "rows": [
+   [
+    "Alder St",
+    412,
+    18.5,
+    2.4,
+    11,
+    4.2
+   ],
+   [
+    "Bay Rd",
+    298,
+    24.0,
+    1.7,
+    9,
+    4.5
+   ],
+   [
+    "Canal",
+    530,
+    15.2,
+    3.9,
+    14,
+    3.8
+   ],
+   [
+    "Dune Ave",
+    365,
+    21.7,
+    2.1,
+    10,
+    4.4
+   ],
+   [
+    "Elm Park",
+    447,
+    19.9,
+    3.1,
+    12,
+    4.0
+   ],
+   [
+    "Ferry",
+    260,
+    27.3,
+    1.2,
+    8,
+    4.6
+   ],
+   [
+    "Grove",
+    389,
+    16.8,
+    2.8,
+    10,
+    4.1
+   ],
+   [
+    "Hilltop",
+    318,
+    22.6,
+    2.5,
+    9,
+    4.3
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "Canal has the largest total loan volume of the eight branches.",
+    "answer": 1
+   },
+   {
+    "text": "Ferry has the highest loan volume per staff member.",
+    "answer": 0
+   },
+   {
+    "text": "The branch with the lowest satisfaction score has more than twice the dollar value of defaulted loans of the branch with the highest satisfaction score.",
+    "answer": 0
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Volumes (in USD 000): Elm Park 447 × 19.9 ≈ 8895; Canal 530 × 15.2 ≈ 8056; Dune Ave 7920; Alder St 7622. Elm Park, not Canal, is largest. The statement is False. Statement 2: Per staff: Ferry 260 × 27.3 / 8 ≈ 887; Hilltop ≈ 799; Dune Ave ≈ 792; Bay Rd ≈ 795. Ferry is highest. The statement is True. Statement 3: Lowest satisfaction: Canal, defaults ≈ 8,056 × 0.039 ≈ 314. Highest: Ferry, ≈ 7,098 × 0.012 ≈ 85. Ratio ≈ 3.7. The statement is True.",
+  "time": 165
+ },
+ {
+  "id": "ta-020",
+  "sec": "di",
+  "type": "ta",
+  "diff": 4,
+  "title": "Electric car models on sale, 2024",
+  "intro": "An automotive magazine compares nine electric models. Efficiency is range per kWh of battery.",
+  "cols": [
+   "Model",
+   "Price (USD thousands)",
+   "Range (km)",
+   "Battery (kWh)",
+   "0-100 km/h (s)",
+   "Sales 2024"
+  ],
+  "rows": [
+   [
+    "Volt One",
+    34.5,
+    410,
+    62,
+    7.9,
+    18400
+   ],
+   [
+    "Arc S",
+    47.9,
+    520,
+    82,
+    5.6,
+    9600
+   ],
+   [
+    "Breeze",
+    28.2,
+    330,
+    51,
+    9.1,
+    22300
+   ],
+   [
+    "Cirrus LR",
+    55.0,
+    610,
+    95,
+    4.8,
+    6100
+   ],
+   [
+    "Drift",
+    39.8,
+    450,
+    70,
+    6.7,
+    12800
+   ],
+   [
+    "Ember X",
+    62.4,
+    580,
+    100,
+    3.9,
+    3900
+   ],
+   [
+    "Flux City",
+    24.9,
+    280,
+    44,
+    10.2,
+    15700
+   ],
+   [
+    "Glide",
+    43.1,
+    495,
+    78,
+    6.1,
+    10900
+   ],
+   [
+    "Halo",
+    51.6,
+    540,
+    88,
+    5.2,
+    7400
+   ]
+  ],
+  "prompt": "For each of the following statements, select Yes if the condition described is met according to the information in the table. Otherwise select No.",
+  "labels": [
+   "Yes",
+   "No"
+  ],
+  "statements": [
+   {
+    "text": "Breeze has the highest efficiency (km per kWh) of all nine models.",
+    "answer": 1
+   },
+   {
+    "text": "Among models priced under USD 45,000, the one with the lowest price per km of range is also the best-selling model overall.",
+    "answer": 1
+   },
+   {
+    "text": "Breeze generated more sales revenue (price × units) than Ember X and Cirrus LR combined.",
+    "answer": 0
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Efficiency: Glide 6.35, Drift 6.43, Breeze 6.47, Volt One 6.61, Cirrus LR 6.42. Volt One leads. Answer: No. Statement 2: Price per km for models under 45k: Breeze USD 85.45, Glide USD 87.07, Drift USD 88.44, Volt One USD 84.15, Flux City USD 88.93. Lowest is Volt One. Best seller is Breeze. Answer: No. Statement 3: Breeze: 28.2 × 22,300 ≈ USD 628.9m. Ember X ≈ 243.4m plus Cirrus LR ≈ 335.5m = 578.9m. Breeze is higher. Answer: Yes.",
+  "time": 165
+ },
+ {
+  "id": "ta-021",
+  "sec": "di",
+  "type": "ta",
+  "diff": 4,
+  "title": "Home-improvement stores, annual results",
+  "intro": "A retail chain compares eight stores. Sales growth is the change from the prior year.",
+  "cols": [
+   "Store",
+   "Sq ft (000)",
+   "Sales (USD millions)",
+   "Sales growth (%)",
+   "Gross margin (%)",
+   "Employees"
+  ],
+  "rows": [
+   [
+    "Store A",
+    42,
+    31.5,
+    4.2,
+    28.4,
+    96
+   ],
+   [
+    "Store B",
+    35,
+    29.8,
+    6.8,
+    26.1,
+    84
+   ],
+   [
+    "Store C",
+    58,
+    38.3,
+    1.5,
+    30.2,
+    121
+   ],
+   [
+    "Store D",
+    27,
+    22.4,
+    9.1,
+    24.7,
+    63
+   ],
+   [
+    "Store E",
+    49,
+    33.8,
+    -2.3,
+    29.5,
+    108
+   ],
+   [
+    "Store F",
+    31,
+    27.6,
+    7.4,
+    25.8,
+    71
+   ],
+   [
+    "Store G",
+    46,
+    30.4,
+    3.0,
+    27.9,
+    99
+   ],
+   [
+    "Store H",
+    38,
+    26.6,
+    5.5,
+    31.0,
+    88
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "Store H generated more gross profit (sales × gross margin) than Store B.",
+    "answer": 0
+   },
+   {
+    "text": "Every store with above-median sales per thousand square feet had sales growth above 5%.",
+    "answer": 1
+   },
+   {
+    "text": "Last year, Store E had higher sales than Store C has this year.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Store H: 26.6 × 0.310 ≈ 8.25m. Store B: 29.8 × 0.261 ≈ 7.78m. Store H is higher. The statement is True. Statement 2: Sales per 000 sq ft: D 0.830, F 0.890, B 0.851, A 0.750; median ≈ 0.725. Above median: Store A, Store B, Store D, Store F. Store A grew only 4.2%. The statement is False. Statement 3: Store E last year: 33.8/0.977 ≈ 34.60m, below Store C's 38.3m. The statement is False.",
+  "time": 165
+ },
+ {
+  "id": "ta-022",
+  "sec": "di",
+  "type": "ta",
+  "diff": 4,
+  "title": "Antibiotic comparison study",
+  "intro": "Six antibiotics were each given to a separate group of patients with the same infection.",
+  "cols": [
+   "Drug",
+   "Patients",
+   "Cured",
+   "Mild side effects",
+   "Severe side effects",
+   "Course cost (USD)"
+  ],
+  "rows": [
+   [
+    "Axolin",
+    240,
+    168,
+    62,
+    7,
+    410
+   ],
+   [
+    "Bervatin",
+    310,
+    233,
+    95,
+    12,
+    520
+   ],
+   [
+    "Cyrapex",
+    180,
+    117,
+    31,
+    3,
+    290
+   ],
+   [
+    "Dolvane",
+    275,
+    220,
+    88,
+    16,
+    780
+   ],
+   [
+    "Eprizol",
+    205,
+    148,
+    47,
+    4,
+    350
+   ],
+   [
+    "Fenomac",
+    150,
+    96,
+    22,
+    2,
+    240
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "Ranking the drugs by cure rate (highest first) gives the same order as ranking them by severe side-effect rate (highest first).",
+    "answer": 1
+   },
+   {
+    "text": "Fenomac has the lowest treatment cost per patient cured.",
+    "answer": 0
+   },
+   {
+    "text": "More than half of the drugs have a cure rate above 70%.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Cure rates: Dolvane 80.0, Bervatin 75.2, Eprizol 72.2, Axolin 70.0, Cyrapex 65.0, Fenomac 64.0. Severe rates: Dolvane 5.82, Bervatin 3.87, Axolin 2.92, Eprizol 1.95, Cyrapex 1.67, Fenomac 1.33. Axolin and Eprizol switch places, so the orders differ. The statement is False. Statement 2: Cost per cure = cost × patients ÷ cured. Fenomac 240/0.64 = USD 375; Cyrapex ≈ 446; Eprizol ≈ 485. Fenomac is lowest. The statement is True. Statement 3: Above 70%: Dolvane 80.0, Bervatin 75.2, Eprizol 72.2. Axolin is exactly 70.0. That is 3 of 6, not more than half. The statement is False.",
+  "time": 165
+ },
+ {
+  "id": "ta-023",
+  "sec": "di",
+  "type": "ta",
+  "diff": 4,
+  "title": "Fulfilment network, third quarter",
+  "intro": "An e-commerce firm reports quarterly shipping metrics for ten warehouses in three regions.",
+  "cols": [
+   "Warehouse",
+   "Orders shipped",
+   "Late (%)",
+   "Damaged (%)",
+   "Cost per order (USD)",
+   "Region"
+  ],
+  "rows": [
+   [
+    "W1",
+    48200,
+    3.1,
+    0.8,
+    6.4,
+    "East"
+   ],
+   [
+    "W2",
+    31500,
+    5.4,
+    1.2,
+    5.85,
+    "East"
+   ],
+   [
+    "W3",
+    56800,
+    2.6,
+    0.6,
+    7.1,
+    "West"
+   ],
+   [
+    "W4",
+    22900,
+    6.9,
+    1.5,
+    5.2,
+    "South"
+   ],
+   [
+    "W5",
+    40100,
+    4.2,
+    0.9,
+    6.05,
+    "West"
+   ],
+   [
+    "W6",
+    35600,
+    3.8,
+    1.1,
+    6.3,
+    "South"
+   ],
+   [
+    "W7",
+    27300,
+    4.9,
+    0.7,
+    5.95,
+    "East"
+   ],
+   [
+    "W8",
+    51400,
+    2.9,
+    1.0,
+    6.75,
+    "West"
+   ],
+   [
+    "W9",
+    19800,
+    7.6,
+    1.8,
+    4.9,
+    "South"
+   ],
+   [
+    "W10",
+    44700,
+    3.5,
+    0.5,
+    6.6,
+    "East"
+   ]
+  ],
+  "prompt": "For each of the following statements, select Yes if the condition described is met according to the information in the table. Otherwise select No.",
+  "labels": [
+   "Yes",
+   "No"
+  ],
+  "statements": [
+   {
+    "text": "The West region, taken as a whole, had a lower late-delivery rate than the East region as a whole.",
+    "answer": 0
+   },
+   {
+    "text": "W3 had the highest total shipping cost of the ten warehouses.",
+    "answer": 0
+   },
+   {
+    "text": "The median damaged rate of the ten warehouses is greater than the damaged rate of every West warehouse.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Weight by orders. West: 4652 late of 148300 ≈ 3.14%. East: 6097 of 151700 ≈ 4.02%. West is lower. Answer: Yes. Statement 2: Total cost = orders × cost per order. W3: 56,800 × 7.10 ≈ USD 403,280. W8: ≈ USD 346,950. W3 is highest. Answer: Yes. Statement 3: Sorted damaged rates: 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.5, 1.8; median = (0.9+1.0)/2 = 0.95. West: W3 0.6, W5 0.9, W8 1.0. W8 exceeds 0.95. Answer: No.",
+  "time": 165
+ },
+ {
+  "id": "ta-024",
+  "sec": "di",
+  "type": "ta",
+  "diff": 4,
+  "title": "Seed-to-Series B startup portfolio",
+  "intro": "A venture fund tracks seven portfolio companies. Assume each company's revenue growth rate continues for one more year.",
+  "cols": [
+   "Startup",
+   "Funding (USD millions)",
+   "Revenue (USD millions)",
+   "Revenue growth (%)",
+   "Employees",
+   "Burn (USD millions/yr)"
+  ],
+  "rows": [
+   [
+    "Quanta",
+    42,
+    11.6,
+    140,
+    85,
+    14.0
+   ],
+   [
+    "Ribbon",
+    18,
+    6.2,
+    85,
+    41,
+    5.5
+   ],
+   [
+    "Sable",
+    75,
+    23.4,
+    62,
+    190,
+    21.0
+   ],
+   [
+    "Tinker",
+    9,
+    2.1,
+    210,
+    22,
+    3.6
+   ],
+   [
+    "Umber",
+    33,
+    14.8,
+    48,
+    96,
+    7.2
+   ],
+   [
+    "Vesper",
+    56,
+    9.7,
+    175,
+    120,
+    19.5
+   ],
+   [
+    "Wren",
+    24,
+    8.9,
+    95,
+    58,
+    6.0
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "If revenue growth rates hold for one more year, Vesper's revenue will exceed Umber's.",
+    "answer": 0
+   },
+   {
+    "text": "Ribbon has the second-highest revenue per employee of the seven startups.",
+    "answer": 1
+   },
+   {
+    "text": "Every startup whose funding exceeds four times its revenue has a runway (funding ÷ burn) of less than 3.5 years.",
+    "answer": 0
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Vesper: 9.7 × 2.75 ≈ 26.67m. Umber: 14.8 × 1.48 ≈ 21.90m. Vesper is higher. The statement is True. Statement 2: Revenue per employee (USD thousands): Umber 154, Ribbon 151, Wren 153, Quanta 136, Sable 123. Wren, not Ribbon, is second. The statement is False. Statement 3: Funding/revenue above 4: Tinker (4.29) and Vesper (5.77). Runways: Tinker 2.5 yrs, Vesper 2.9 yrs, both below 3.5. The statement is True.",
+  "time": 165
+ },
+ {
+  "id": "ta-025",
+  "sec": "di",
+  "type": "ta",
+  "diff": 4,
+  "title": "City bus routes, weekday averages",
+  "intro": "A transit authority reports average weekday figures for eight routes. Fare recovery is fare revenue as a percent of operating cost.",
+  "cols": [
+   "Route",
+   "Distance (km)",
+   "Daily riders",
+   "Fare (USD)",
+   "Op. cost/day (USD)",
+   "Buses"
+  ],
+  "rows": [
+   [
+    "R1 Central",
+    14,
+    9200,
+    2.25,
+    15400,
+    12
+   ],
+   [
+    "R2 Harbor",
+    22,
+    6100,
+    2.75,
+    14800,
+    11
+   ],
+   [
+    "R3 College",
+    9,
+    7800,
+    1.75,
+    9100,
+    8
+   ],
+   [
+    "R4 Airport",
+    31,
+    3900,
+    4.5,
+    16900,
+    10
+   ],
+   [
+    "R5 Industrial",
+    18,
+    4500,
+    2.5,
+    11600,
+    9
+   ],
+   [
+    "R6 Ring",
+    26,
+    5600,
+    2.25,
+    13900,
+    12
+   ],
+   [
+    "R7 Hills",
+    12,
+    2800,
+    2.0,
+    6300,
+    5
+   ],
+   [
+    "R8 Market",
+    7,
+    5100,
+    1.5,
+    5600,
+    5
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "Exactly three routes have a fare recovery above 130%.",
+    "answer": 0
+   },
+   {
+    "text": "R8 Market carries more daily riders per km of route than any other route.",
+    "answer": 1
+   },
+   {
+    "text": "On every route, the fare revenue covers the operating cost.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Recovery: R3 150%, R8 137%, R1 134%, then R4 104%. Exactly three exceed 130. The statement is True. Statement 2: Riders per km: R3 7,800/9 ≈ 867; R8 5,100/7 ≈ 729; R1 ≈ 657. R3 is higher than R8. The statement is False. Statement 3: R2 Harbor: 6,100 × 2.75 = USD 16,775, above its USD 14,800 cost. R6 Ring: 5,600 × 2.25 = USD 12,600, below its USD 13,900 cost. The statement is False.",
+  "time": 165
+ },
+ {
+  "id": "ta-026",
+  "sec": "di",
+  "type": "ta",
+  "diff": 5,
+  "title": "SaaS customer segments, monthly metrics",
+  "intro": "A subscription software firm reports monthly churn and revenue per user by segment. Use lifetime value (LTV) = ARPU × gross margin ÷ monthly churn rate.",
+  "cols": [
+   "Segment",
+   "Customers",
+   "Churn (%)",
+   "ARPU (USD/mo)",
+   "Acq. cost (USD)",
+   "Gross margin (%)"
+  ],
+  "rows": [
+   [
+    "Starter",
+    48000,
+    6.5,
+    12,
+    38,
+    72
+   ],
+   [
+    "Plus",
+    21500,
+    3.8,
+    29,
+    95,
+    78
+   ],
+   [
+    "Pro",
+    9400,
+    2.4,
+    64,
+    260,
+    81
+   ],
+   [
+    "Team",
+    3800,
+    1.9,
+    145,
+    610,
+    83
+   ],
+   [
+    "Enterprise",
+    520,
+    0.9,
+    1850,
+    9400,
+    76
+   ],
+   [
+    "Education",
+    6200,
+    4.6,
+    18,
+    55,
+    69
+   ],
+   [
+    "Nonprofit",
+    2100,
+    3.1,
+    22,
+    70,
+    70
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "Enterprise has the highest ratio of LTV to acquisition cost of the seven segments.",
+    "answer": 0
+   },
+   {
+    "text": "Enterprise and Team together account for more than 40% of total monthly recurring revenue (customers × ARPU).",
+    "answer": 0
+   },
+   {
+    "text": "Starter loses more monthly recurring revenue to churn each month than Team, Plus and Pro combined.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: LTV/CAC: Enterprise 1,850 × 0.76 / 0.009 ≈ 156,222, ÷ 9,400 ≈ 16.6. Pro: 2,160/260 ≈ 8.3. Plus ≈ 6.3. Enterprise is highest. The statement is True. Statement 2: MRR: Enterprise USD 962,000, Team USD 551,000; total USD 3,471,900. Share ≈ 43.6%, above 40. The statement is True. Statement 3: Lost MRR = customers × churn × ARPU. Starter: 48,000 × 0.065 × 12 = USD 37,440. Team ≈ USD 10,469, Plus ≈ USD 23,693, Pro ≈ USD 14,438, combined ≈ USD 48,600. Starter is lower. The statement is False.",
+  "time": 180
+ },
+ {
+  "id": "ta-027",
+  "sec": "di",
+  "type": "ta",
+  "diff": 5,
+  "title": "Engineering materials comparison",
+  "intro": "An engineering team screens materials for a lightweight bracket. Specific strength is tensile strength ÷ density; composites (CFRP, GFRP) do not melt and are marked n/a.",
+  "cols": [
+   "Material",
+   "Density (g/cm³)",
+   "Tensile strength (MPa)",
+   "Cost (USD/kg)",
+   "Melting point (°C)",
+   "Recyclable"
+  ],
+  "rows": [
+   [
+    "Al 6061",
+    2.7,
+    310,
+    3.1,
+    652,
+    "Yes"
+   ],
+   [
+    "Ti-6Al-4V",
+    4.43,
+    950,
+    28.0,
+    1660,
+    "Yes"
+   ],
+   [
+    "Steel 4140",
+    7.85,
+    655,
+    1.4,
+    1416,
+    "Yes"
+   ],
+   [
+    "Mg AZ31",
+    1.77,
+    260,
+    4.8,
+    630,
+    "Yes"
+   ],
+   [
+    "CFRP",
+    1.6,
+    1500,
+    32.0,
+    "n/a",
+    "No"
+   ],
+   [
+    "GFRP",
+    1.9,
+    480,
+    6.5,
+    "n/a",
+    "No"
+   ],
+   [
+    "Nylon 66",
+    1.14,
+    82,
+    3.6,
+    263,
+    "Yes"
+   ],
+   [
+    "PEEK",
+    1.32,
+    100,
+    95.0,
+    343,
+    "Yes"
+   ]
+  ],
+  "prompt": "For each of the following statements, select Yes if the condition described is met according to the information in the table. Otherwise select No.",
+  "labels": [
+   "Yes",
+   "No"
+  ],
+  "statements": [
+   {
+    "text": "Among recyclable materials, Ti-6Al-4V has the highest specific strength, and Al 6061 has the second highest.",
+    "answer": 1
+   },
+   {
+    "text": "For a part of fixed volume that must carry a fixed load, cost is proportional to (cost per kg × density ÷ tensile strength); on this measure Steel 4140 is the cheapest of all eight materials.",
+    "answer": 0
+   },
+   {
+    "text": "The median specific strength of the recyclable materials with a melting point above 600°C is greater than 150.",
+    "answer": 1
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Specific strength of recyclable materials: Ti 214, Mg 147, Al 115, Steel 83, PEEK 76, Nylon 72. Mg AZ31 is second, not Al. Answer: No. Statement 2: Cost × density ÷ strength: Steel 0.0168, Al 0.0270, Nylon 0.0500, Mg 0.0327, GFRP 0.0257, CFRP 0.0341. Steel is lowest. Answer: Yes. Statement 3: Recyclable and melting above 600°C: Al 6061, Ti-6Al-4V, Steel 4140, Mg AZ31, specific strengths 83, 115, 147, 214. Median = (114.8 + 146.9)/2 ≈ 130.9. Answer: No.",
+  "time": 180
+ },
+ {
+  "id": "ta-028",
+  "sec": "di",
+  "type": "ta",
+  "diff": 5,
+  "title": "Rental property shortlist",
+  "intro": "An investor compares eight single-family rentals. Net operating income (NOI) = annual rent × (52 - vacancy weeks)/52 - annual costs. Net yield = NOI ÷ price.",
+  "cols": [
+   "Property",
+   "Price (USD thousands)",
+   "Rent (USD/mo)",
+   "Annual costs (USD thousands)",
+   "Vacancy (wks/yr)",
+   "Built"
+  ],
+  "rows": [
+   [
+    "Maple Ct",
+    420,
+    2300,
+    7.8,
+    3,
+    1998
+   ],
+   [
+    "Birch Ln",
+    365,
+    2050,
+    6.9,
+    2,
+    2005
+   ],
+   [
+    "Cedar Row",
+    510,
+    2850,
+    9.6,
+    4,
+    2012
+   ],
+   [
+    "Aspen Way",
+    298,
+    1750,
+    5.2,
+    5,
+    1986
+   ],
+   [
+    "Willow Pl",
+    455,
+    2480,
+    8.4,
+    2,
+    2016
+   ],
+   [
+    "Spruce Dr",
+    335,
+    1980,
+    6.1,
+    6,
+    1979
+   ],
+   [
+    "Linden Sq",
+    580,
+    3150,
+    11.2,
+    3,
+    2020
+   ],
+   [
+    "Poplar St",
+    389,
+    2150,
+    7.0,
+    4,
+    1994
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "The property with the highest gross yield (annual rent ÷ price) also has the highest net yield.",
+    "answer": 1
+   },
+   {
+    "text": "Every property built in 2000 or later has a higher net yield than every property built before 2000.",
+    "answer": 1
+   },
+   {
+    "text": "The total NOI of the three cheapest properties exceeds the NOI of Linden Sq and Willow Pl combined.",
+    "answer": 0
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Gross yield: Spruce Dr 7.09% is highest, Aspen 7.05%. Net yield: Birch 4.59%, Aspen 4.62%, Spruce 4.45%. Spruce's 6 vacancy weeks pull its net yield below Aspen's and Birch's. The statement is False. Statement 2: Post-2000 lowest net yield: Linden Sq 4.21%. Pre-2000 highest: Aspen Way 4.62%. Aspen beats Linden. The statement is False. Statement 3: Cheapest three: Aspen (13.78k), Spruce (14.92k), Birch (16.75k), total ≈ 45.45k. Linden (24.42k) + Willow (20.22k) ≈ 44.63k. The statement is True.",
+  "time": 180
+ },
+ {
+  "id": "ta-029",
+  "sec": "di",
+  "type": "ta",
+  "diff": 5,
+  "title": "Diagnostic lab audit",
+  "intro": "An auditor sent known samples to six labs. Sensitivity = TP ÷ (TP + FN); specificity = true negatives ÷ all actual negatives, where actual negatives = samples - TP - FN; precision = TP ÷ (TP + FP).",
+  "cols": [
+   "Lab",
+   "Samples",
+   "False positives",
+   "False negatives",
+   "True positives",
+   "Cost/test (USD)"
+  ],
+  "rows": [
+   [
+    "Lab A",
+    5200,
+    104,
+    18,
+    412,
+    42
+   ],
+   [
+    "Lab B",
+    3800,
+    46,
+    31,
+    298,
+    38
+   ],
+   [
+    "Lab C",
+    6100,
+    183,
+    12,
+    505,
+    35
+   ],
+   [
+    "Lab D",
+    2900,
+    29,
+    22,
+    231,
+    51
+   ],
+   [
+    "Lab E",
+    4500,
+    72,
+    27,
+    366,
+    40
+   ],
+   [
+    "Lab F",
+    3300,
+    40,
+    9,
+    264,
+    47
+   ]
+  ],
+  "prompt": "For each of the following statements, select Yes if the condition described is met according to the information in the table. Otherwise select No.",
+  "labels": [
+   "Yes",
+   "No"
+  ],
+  "statements": [
+   {
+    "text": "Lab F has the highest sensitivity of the six labs.",
+    "answer": 1
+   },
+   {
+    "text": "Every lab has a specificity above 97%.",
+    "answer": 1
+   },
+   {
+    "text": "The lab with the lowest precision also has the lowest testing cost per true positive found.",
+    "answer": 0
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Sensitivity: F 264/273 ≈ 96.70%, C 505/517 ≈ 97.68%, A 95.81%. Lab C is highest. Answer: No. Statement 2: Lowest specificity is Lab C: negatives = 6,100 - 517 = 5583, (5,583 - 183)/5,583 ≈ 96.72%. All others are higher (Lab A 97.82%). Answer: No. Statement 3: Precision: C 73.4% is lowest. Cost per TP = samples × cost ÷ TP: C ≈ USD 423, A ≈ USD 530, E ≈ USD 492, F ≈ USD 588. C is lowest on cost too. Answer: Yes.",
+  "time": 180
+ },
+ {
+  "id": "ta-030",
+  "sec": "di",
+  "type": "ta",
+  "diff": 5,
+  "title": "Trade profile of nine economies",
+  "intro": "A trade bulletin summarizes 2024 goods trade. Export growth is the change from 2023. Commodity share is the percent of exports that are raw commodities.",
+  "cols": [
+   "Country",
+   "Exports (USD billions)",
+   "Imports (USD billions)",
+   "Exports growth (%)",
+   "Top partner share (%)",
+   "Commodity share (%)"
+  ],
+  "rows": [
+   [
+    "Valoria",
+    182,
+    164,
+    6.5,
+    22,
+    18
+   ],
+   [
+    "Westria",
+    96,
+    121,
+    -3.2,
+    41,
+    63
+   ],
+   [
+    "Xandor",
+    254,
+    238,
+    2.1,
+    19,
+    12
+   ],
+   [
+    "Yarrow",
+    61,
+    58,
+    11.8,
+    35,
+    71
+   ],
+   [
+    "Zeltia",
+    138,
+    152,
+    4.4,
+    28,
+    34
+   ],
+   [
+    "Amaran",
+    77,
+    69,
+    8.9,
+    47,
+    55
+   ],
+   [
+    "Brisa",
+    210,
+    197,
+    -1.4,
+    24,
+    21
+   ],
+   [
+    "Corim",
+    44,
+    50,
+    14.6,
+    52,
+    82
+   ],
+   [
+    "Dalvik",
+    119,
+    104,
+    0.8,
+    31,
+    29
+   ]
+  ],
+  "prompt": "For each of the following statements, select True if the statement is true based on the information provided. Otherwise select False.",
+  "labels": [
+   "True",
+   "False"
+  ],
+  "statements": [
+   {
+    "text": "Among countries whose commodity share exceeds 50%, the one with the largest trade surplus as a percent of imports is Amaran.",
+    "answer": 0
+   },
+   {
+    "text": "Valoria added more dollars of exports from 2023 to 2024 than Yarrow, Amaran and Corim combined.",
+    "answer": 1
+   },
+   {
+    "text": "The dollar value of Westria's commodity exports is greater than the dollar value of Brisa's commodity exports.",
+    "answer": 0
+   }
+  ],
+  "explanation": "Check each statement separately against the table, sorting or computing only the column it needs. Statement 1: Commodity share over 50%: Westria, Yarrow, Amaran, Corim. Exports ÷ imports: Amaran 1.116, Yarrow 1.052, Westria 0.793, Corim 0.880. Amaran is highest. The statement is True. Statement 2: Added = exports - exports/(1+g). Valoria ≈ 11.11bn. Yarrow ≈ 6.44, Amaran ≈ 6.29, Corim ≈ 5.61, sum ≈ 18.34bn. Valoria is lower. The statement is False. Statement 3: Westria: 96 × 0.63 ≈ 60.5bn. Brisa: 210 × 0.21 = 44.1bn. Westria is higher. The statement is True.",
+  "time": 180
+ },
+ {
+  "id": "gi-001",
+  "sec": "di",
+  "type": "gi",
+  "diff": 1,
+  "chart": {
+   "kind": "bar",
+   "title": "Quarterly revenue, Kettle & Co., 2024",
+   "xlabel": "Quarter",
+   "ylabel": "Revenue (USD millions)",
+   "x": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+   ],
+   "series": [
+    {
+     "name": "Revenue",
+     "values": [
+      4.2,
+      5.1,
+      4.7,
+      6.3
+     ]
+    }
+   ]
+  },
+  "intro": "The bar chart shows the quarterly revenue of a small kitchenware company in 2024.",
+  "text": "Revenue was highest in [[1]], and Q4 revenue was [[2]] million dollars greater than Q1 revenue.",
+  "blanks": [
+   {
+    "options": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4"
+    ],
+    "answer": 3
+   },
+   {
+    "options": [
+     "1.2",
+     "1.6",
+     "2.1",
+     "2.5",
+     "6.3"
+    ],
+    "answer": 2
+   }
+  ],
+  "explanation": "Read each bar. The tallest bar is Q4 at USD 6.3 million, so blank 1 is Q4. For blank 2, subtract the Q1 value from the Q4 value: 6.3 - 4.2 = 2.1, so Q4 was USD 2.1 million higher. Do not confuse the difference with Q4's own level of 6.3 or with the gap between neighbouring quarters such as Q4 - Q3 = 1.6.",
+  "time": 120
+ },
+ {
+  "id": "gi-002",
+  "sec": "di",
+  "type": "gi",
+  "diff": 1,
+  "chart": {
+   "kind": "line",
+   "title": "Monthly website visitors",
+   "xlabel": "Month",
+   "ylabel": "Visitors (thousands)",
+   "x": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun"
+   ],
+   "series": [
+    {
+     "name": "Visitors",
+     "values": [
+      42,
+      47,
+      45,
+      58,
+      61,
+      66
+     ]
+    }
+   ]
+  },
+  "intro": "A travel blog tracked its monthly visitors for the first half of the year.",
+  "text": "The largest month-over-month increase in visitors occurred in [[1]], and the blog had about [[2]] thousand visitors in May.",
+  "blanks": [
+   {
+    "options": [
+     "February",
+     "April",
+     "May",
+     "June"
+    ],
+    "answer": 1
+   },
+   {
+    "options": [
+     "61",
+     "66",
+     "72",
+     "78"
+    ],
+    "answer": 0
+   }
+  ],
+  "explanation": "Compute each monthly change: Feb +5, Mar -2, Apr +13, May +3, Jun +5. The biggest jump, 13 thousand, is from March to April, so blank 1 is April. For blank 2 read the May point directly: 61 thousand visitors. A common slip is to pick June because it has the highest level, but the question asks about the largest increase, not the highest value.",
+  "time": 120
+ },
+ {
+  "id": "gi-003",
+  "sec": "di",
+  "type": "gi",
+  "diff": 1,
+  "chart": {
+   "kind": "bar",
+   "title": "Headcount by department",
+   "xlabel": "Department",
+   "ylabel": "Employees",
+   "x": [
+    "Sales",
+    "Engineering",
+    "Support",
+    "Finance",
+    "Marketing",
+    "Legal"
+   ],
+   "series": [
+    {
+     "name": "Employees",
+     "values": [
+      64,
+      112,
+      48,
+      28,
+      52,
+      14
+     ]
+    }
+   ]
+  },
+  "intro": "The chart shows the number of employees in each department of a mid-sized software firm.",
+  "text": "The largest department has [[1]] times as many employees as the smallest, and [[2]] departments have more than 50 employees.",
+  "blanks": [
+   {
+    "options": [
+     "2",
+     "4",
+     "6",
+     "8"
+    ],
+    "answer": 3
+   },
+   {
+    "options": [
+     "2",
+     "3",
+     "4",
+     "5"
+    ],
+    "answer": 1
+   }
+  ],
+  "explanation": "Both blanks depend on exact bar heights, so read each value from the axis first. The largest department is Engineering with 112 employees and the smallest is Legal with 14. Their ratio is 112 ÷ 14 = 8, so blank 1 is 8. For blank 2, count the bars above 50: Sales (64), Engineering (112) and Marketing (52). Support is 48, just below the line. That gives 3 departments. Watch the bars that sit close to the threshold.",
+  "time": 120
+ },
+ {
+  "id": "gi-004",
+  "sec": "di",
+  "type": "gi",
+  "diff": 1,
+  "chart": {
+   "kind": "stacked",
+   "title": "Units sold by region and product, March",
+   "xlabel": "Region",
+   "ylabel": "Units (hundreds)",
+   "x": [
+    "North",
+    "South",
+    "West"
+   ],
+   "series": [
+    {
+     "name": "Laptops",
+     "values": [
+      120,
+      85,
+      140
+     ]
+    },
+    {
+     "name": "Tablets",
+     "values": [
+      60,
+      95,
+      70
+     ]
+    },
+    {
+     "name": "Phones",
+     "values": [
+      90,
+      70,
+      110
+     ]
+    }
+   ]
+  },
+  "intro": "A consumer electronics retailer stacks its monthly unit sales by product line in each region.",
+  "text": "Total units sold in the North region were [[1]] hundred, and in the South region the product line with the most units sold was [[2]].",
+  "blanks": [
+   {
+    "options": [
+     "180",
+     "210",
+     "240",
+     "270"
+    ],
+    "answer": 3
+   },
+   {
+    "options": [
+     "Laptops",
+     "Tablets",
+     "Phones"
+    ],
+    "answer": 1
+   }
+  ],
+  "explanation": "For blank 1, add the North segments: 120 + 60 + 90 = 270 hundred units. For blank 2, compare the three segments of the South bar: Laptops 85, Tablets 95, Phones 70. Tablets is the largest segment, so blank 2 is Tablets. In a stacked chart, read each segment as the difference between its top and bottom edges rather than reading the top edge alone.",
+  "time": 120
+ },
+ {
+  "id": "gi-005",
+  "sec": "di",
+  "type": "gi",
+  "diff": 2,
+  "chart": {
+   "kind": "line",
+   "title": "Average daily high temperature",
+   "xlabel": "Month",
+   "ylabel": "Temperature (°C)",
+   "x": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug"
+   ],
+   "series": [
+    {
+     "name": "Inland city",
+     "values": [
+      4,
+      6,
+      10,
+      15,
+      19,
+      23,
+      26,
+      25
+     ]
+    },
+    {
+     "name": "Coastal city",
+     "values": [
+      9,
+      10,
+      12,
+      14,
+      17,
+      20,
+      22,
+      23
+     ]
+    }
+   ]
+  },
+  "intro": "The chart compares average daily high temperatures in an inland city and a coastal city in the same country.",
+  "text": "The inland city was warmer than the coastal city in [[1]] of the eight months, and the largest gap between the two cities in any month was [[2]]°C.",
+  "blanks": [
+   {
+    "options": [
+     "5",
+     "6",
+     "7",
+     "8"
+    ],
+    "answer": 0
+   },
+   {
+    "options": [
+     "3",
+     "4",
+     "5",
+     "6"
+    ],
+    "answer": 2
+   }
+  ],
+  "explanation": "Compare month by month. Inland minus coastal: Jan -5, Feb -4, Mar -2, Apr +1, May +2, Jun +3, Jul +4, Aug +2. The inland city is warmer in April through August, which is 5 months. The largest absolute gap is 5°C in January, when the coastal city is warmer. If you only look at months where inland is warmer, you get 4°C, which is the trap. Blank 2 is 5.",
+  "time": 135
+ },
+ {
+  "id": "gi-006",
+  "sec": "di",
+  "type": "gi",
+  "diff": 2,
+  "chart": {
+   "kind": "scatter",
+   "title": "Advertising spend vs. sales, 10 stores",
+   "xlabel": "Monthly ad spend (USD thousands)",
+   "ylabel": "Monthly sales (USD thousands)",
+   "x": [
+    5,
+    8,
+    10,
+    12,
+    15,
+    18,
+    20,
+    24,
+    27,
+    30
+   ],
+   "series": [
+    {
+     "name": "Stores",
+     "values": [
+      62,
+      70,
+      74,
+      85,
+      88,
+      101,
+      104,
+      118,
+      121,
+      135
+     ]
+    }
+   ]
+  },
+  "intro": "Each point represents one store in a franchise network.",
+  "text": "The relationship between ad spend and sales is [[1]], and the store that spent USD 18,000 on advertising had sales of about [[2]] thousand dollars.",
+  "blanks": [
+   {
+    "options": [
+     "strongly positive",
+     "weakly positive",
+     "close to zero",
+     "negative"
+    ],
+    "answer": 0
+   },
+   {
+    "options": [
+     "74",
+     "88",
+     "95",
+     "101"
+    ],
+    "answer": 3
+   }
+  ],
+  "explanation": "The points rise steadily from lower left to upper right with little scatter around a straight line, so the relationship is strongly positive (the correlation coefficient is about 0.996). For blank 2, find x = 18 on the horizontal axis and read the point above it: about 101 thousand dollars. Note that a positive association does not show that advertising caused the sales.",
+  "time": 135
+ },
+ {
+  "id": "gi-007",
+  "sec": "di",
+  "type": "gi",
+  "diff": 2,
+  "chart": {
+   "kind": "bar",
+   "title": "Average price of copper wire",
+   "xlabel": "Year",
+   "ylabel": "Price (USD per 100 m)",
+   "x": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Price",
+     "values": [
+      48,
+      56,
+      71,
+      64,
+      60
+     ]
+    }
+   ]
+  },
+  "intro": "A construction supplier tracks the average price it paid for a standard spool of copper wire.",
+  "text": "From 2020 to 2024 the price rose by [[1]]%, and the average price over the five years was [[2]] dollars.",
+  "blanks": [
+   {
+    "options": [
+     "12",
+     "20",
+     "25",
+     "48"
+    ],
+    "answer": 2
+   },
+   {
+    "options": [
+     "59.8",
+     "61.0",
+     "62.5",
+     "71.0"
+    ],
+    "answer": 0
+   }
+  ],
+  "explanation": "Blank 1 is a percent change, so the starting year is the base; blank 2 is a simple mean. Percent change = (new - old) ÷ old × 100 = (60 - 48) ÷ 48 × 100 = 25%. The trap is 20%, which uses 2024 as the base. For blank 2, add the five prices: 48 + 56 + 71 + 64 + 60 = 299, and divide by 5 to get 59.8 dollars. Even though the price peaked at 71 in 2022, it ended the period 25% above its starting level.",
+  "time": 135
+ },
+ {
+  "id": "gi-008",
+  "sec": "di",
+  "type": "gi",
+  "diff": 2,
+  "chart": {
+   "kind": "stacked",
+   "title": "Electricity generation by source",
+   "xlabel": "Year",
+   "ylabel": "Generation (TWh)",
+   "x": [
+    "2016",
+    "2018",
+    "2020",
+    "2022",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Coal",
+     "values": [
+      52,
+      47,
+      40,
+      34,
+      27
+     ]
+    },
+    {
+     "name": "Gas",
+     "values": [
+      28,
+      30,
+      31,
+      32,
+      31
+     ]
+    },
+    {
+     "name": "Renewables",
+     "values": [
+      12,
+      15,
+      21,
+      26,
+      34
+     ]
+    },
+    {
+     "name": "Nuclear",
+     "values": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ]
+    }
+   ]
+  },
+  "intro": "The stacked bars show a country's electricity generation by source every two years.",
+  "text": "In 2020, renewables supplied [[1]]% of total generation, and renewable generation in 2024 was about [[2]] times its 2016 level.",
+  "blanks": [
+   {
+    "options": [
+     "18",
+     "21",
+     "25",
+     "30"
+    ],
+    "answer": 1
+   },
+   {
+    "options": [
+     "1.4",
+     "1.8",
+     "2.2",
+     "2.8"
+    ],
+    "answer": 3
+   }
+  ],
+  "explanation": "In a stacked chart, each segment is one source and the full bar is the total. In 2020 total generation is 40 + 31 + 21 + 8 = 100 TWh, so the renewable share is 21 ÷ 100 = 21%. Because the total happens to be 100, the segment height equals the percent. For blank 2, divide 2024 renewables by 2016 renewables: 34 ÷ 12 ≈ 2.83, about 2.8 times. Reading 34 - 12 = 22 as the answer confuses an absolute difference with a ratio.",
+  "time": 135
+ },
+ {
+  "id": "gi-009",
+  "sec": "di",
+  "type": "gi",
+  "diff": 2,
+  "chart": {
+   "kind": "line",
+   "title": "Unemployment rate",
+   "xlabel": "Year",
+   "ylabel": "Unemployment (%)",
+   "x": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Rate",
+     "values": [
+      4.0,
+      7.5,
+      6.2,
+      5.0,
+      4.4,
+      4.2
+     ]
+    }
+   ]
+  },
+  "intro": "The chart shows a region's annual unemployment rate before and after an economic shock.",
+  "text": "From 2019 to 2020 the unemployment rate rose by [[1]] percentage points, and from 2020 to 2024 it fell by about [[2]]%.",
+  "blanks": [
+   {
+    "options": [
+     "3.5",
+     "4.4",
+     "7.5",
+     "87.5"
+    ],
+    "answer": 0
+   },
+   {
+    "options": [
+     "33",
+     "44",
+     "56",
+     "79"
+    ],
+    "answer": 1
+   }
+  ],
+  "explanation": "Rates expressed in percent can change in two different ways, and the blanks test both. A percentage-point change is a simple difference: 7.5 - 4.0 = 3.5 points. (The relative change, 87.5%, is the trap for blank 1.) For blank 2 the question asks for a percent change in the rate itself: (4.2 - 7.5) ÷ 7.5 × 100 ≈ -44%, a fall of about 44%. Subtracting 7.5 - 4.2 = 3.3 points and calling that 33% mixes the two ideas.",
+  "time": 135
+ },
+ {
+  "id": "gi-010",
+  "sec": "di",
+  "type": "gi",
+  "diff": 2,
+  "chart": {
+   "kind": "bar",
+   "title": "First-year enrolment by program and gender",
+   "xlabel": "Program",
+   "ylabel": "Students",
+   "x": [
+    "Biology",
+    "Business",
+    "Computing",
+    "History",
+    "Nursing"
+   ],
+   "series": [
+    {
+     "name": "Male",
+     "values": [
+      180,
+      310,
+      420,
+      140,
+      60
+     ]
+    },
+    {
+     "name": "Female",
+     "values": [
+      260,
+      290,
+      150,
+      160,
+      340
+     ]
+    }
+   ]
+  },
+  "intro": "A university reports first-year enrolment in five programs, split by gender.",
+  "text": "The program with the largest gap between male and female enrolment is [[1]], and female students make up about [[2]]% of first-year enrolment across the five programs.",
+  "blanks": [
+   {
+    "options": [
+     "Business",
+     "Computing",
+     "History",
+     "Nursing"
+    ],
+    "answer": 3
+   },
+   {
+    "options": [
+     "48",
+     "52",
+     "55",
+     "58"
+    ],
+    "answer": 1
+   }
+  ],
+  "explanation": "Read both bars for every program before comparing, since the gap is what matters for blank 1. Gaps: Biology 80, Business 20, Computing 270, History 20, Nursing 280. Nursing (340 vs 60) edges out Computing (420 vs 150), so blank 1 is Nursing. For blank 2, total female = 1200 and total male = 1110, a combined 2310. Female share = 1200 ÷ 2310 ≈ 51.9%, about 52%. Averaging the five program percentages would weight small programs too heavily.",
+  "time": 135
+ },
+ {
+  "id": "gi-011",
+  "sec": "di",
+  "type": "gi",
+  "diff": 3,
+  "chart": {
+   "kind": "line",
+   "title": "Closing share price, first half",
+   "xlabel": "Month-end",
+   "ylabel": "Share price (USD)",
+   "x": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun"
+   ],
+   "series": [
+    {
+     "name": "Alder Corp",
+     "values": [
+      40,
+      44,
+      39,
+      48,
+      52,
+      50
+     ]
+    },
+    {
+     "name": "Birchway Inc",
+     "values": [
+      120,
+      114,
+      126,
+      132,
+      129,
+      138
+     ]
+    }
+   ]
+  },
+  "intro": "The chart shows the month-end share prices of two listed companies.",
+  "text": "From January to June, Alder's share price rose by [[1]]% while Birchway's rose by 15%; Alder's largest one-month percent gain came in [[2]].",
+  "blanks": [
+   {
+    "options": [
+     "10",
+     "15",
+     "20",
+     "25",
+     "30"
+    ],
+    "answer": 3
+   },
+   {
+    "options": [
+     "February",
+     "April",
+     "May",
+     "June"
+    ],
+    "answer": 1
+   }
+  ],
+  "explanation": "Percent change compares each move with its own starting price, so the cheaper share can win even with a smaller dollar gain. Alder: (50 - 40) ÷ 40 = 25%. Birchway: (138 - 120) ÷ 120 = 15%, so although Birchway gained more dollars (18 vs 10), Alder gained more in percent terms. For blank 2, monthly gains for Alder are Feb 10.0%, Mar -11.4%, Apr 23.1%, May 8.3%, Jun -3.8%. The April gain from 39 to 48 is the largest, about 23%.",
+  "time": 150
+ },
+ {
+  "id": "gi-012",
+  "sec": "di",
+  "type": "gi",
+  "diff": 3,
+  "chart": {
+   "kind": "scatter",
+   "title": "Study hours vs. practice-test score",
+   "xlabel": "Hours studied per week",
+   "ylabel": "Score",
+   "x": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "series": [
+    {
+     "name": "Students",
+     "values": [
+      55,
+      60,
+      72,
+      58,
+      81,
+      66,
+      70,
+      84,
+      77,
+      90,
+      75,
+      88,
+      93,
+      86
+     ]
+    }
+   ]
+  },
+  "intro": "Each point shows one student in a test-prep class.",
+  "text": "The scatter plot shows a [[1]] association between hours studied and score, and [[2]] students scored above 80 while studying fewer than 12 hours per week.",
+  "blanks": [
+   {
+    "options": [
+     "strong negative",
+     "moderate positive",
+     "perfect positive",
+     "no clear"
+    ],
+    "answer": 1
+   },
+   {
+    "options": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "answer": 1
+   }
+  ],
+  "explanation": "Scores generally rise with hours but with plenty of spread (for example 6 hours gives 58 and 5 hours gives 72), so the association is positive but only moderate; the correlation is about 0.84. For blank 2, look left of 12 hours and above 80: the points at 7 hours (81) and 10 hours (84). The 12-hour point at 90 is not fewer than 12. So blank 2 is 2.",
+  "time": 150
+ },
+ {
+  "id": "gi-013",
+  "sec": "di",
+  "type": "gi",
+  "diff": 3,
+  "chart": {
+   "kind": "stacked",
+   "title": "Annual budget of a nonprofit",
+   "xlabel": "Fiscal year",
+   "ylabel": "Spending (USD thousands)",
+   "x": [
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Salaries",
+     "values": [
+      540,
+      575,
+      610
+     ]
+    },
+    {
+     "name": "Facilities",
+     "values": [
+      180,
+      170,
+      175
+     ]
+    },
+    {
+     "name": "Programs",
+     "values": [
+      210,
+      255,
+      300
+     ]
+    },
+    {
+     "name": "Admin",
+     "values": [
+      70,
+      75,
+      85
+     ]
+    }
+   ]
+  },
+  "intro": "A nonprofit's annual spending is stacked by category.",
+  "text": "Programs accounted for about [[1]]% of total spending in 2024, and total spending grew by about [[2]]% from 2022 to 2024.",
+  "blanks": [
+   {
+    "options": [
+     "21",
+     "25",
+     "30",
+     "35"
+    ],
+    "answer": 1
+   },
+   {
+    "options": [
+     "17",
+     "20",
+     "26",
+     "43"
+    ],
+    "answer": 0
+   }
+  ],
+  "explanation": "Shares and growth both require the full bar totals, so add the segments of each bar first, then divide; the Programs segment alone cannot answer either blank. 2024 total = 610 + 175 + 300 + 85 = 1170. Program share = 300 ÷ 1170 ≈ 25.6%, so about 25%. 2022 total = 540 + 180 + 210 + 70 = 1000. Growth = (1170 - 1000) ÷ 1000 ≈ 17.0%, about 17%. A tempting error is to report the growth of Programs alone (about 43%) or to compare segment heights without totals.",
+  "time": 150
+ },
+ {
+  "id": "gi-014",
+  "sec": "di",
+  "type": "gi",
+  "diff": 3,
+  "chart": {
+   "kind": "bar",
+   "title": "Population by age group",
+   "xlabel": "Age group",
+   "ylabel": "Population (thousands)",
+   "x": [
+    "0-14",
+    "15-24",
+    "25-34",
+    "35-44",
+    "45-54",
+    "55-64",
+    "65+"
+   ],
+   "series": [
+    {
+     "name": "Population",
+     "values": [
+      17,
+      12,
+      14,
+      15,
+      13,
+      12,
+      17
+     ]
+    }
+   ]
+  },
+  "intro": "The chart shows the age distribution of a mid-sized town of 100,000 people.",
+  "text": "The median resident falls in the [[1]] age group, and residents aged 55 and over make up [[2]]% of the population.",
+  "blanks": [
+   {
+    "options": [
+     "15-24",
+     "25-34",
+     "35-44",
+     "45-54"
+    ],
+    "answer": 2
+   },
+   {
+    "options": [
+     "12",
+     "17",
+     "23",
+     "29"
+    ],
+    "answer": 3
+   }
+  ],
+  "explanation": "For a median from grouped data, accumulate the groups from the youngest until you pass half the total. The total is 100 thousand, so the median is the 50th thousand resident counted from the youngest. Running totals: 17, 29, 43, 58. The 50th thousand falls in the 35-44 group. For blank 2, 55-64 has 12 thousand and 65+ has 17 thousand, so 29 thousand out of 100 thousand, which is 29%. Picking 17% counts only the 65+ group.",
+  "time": 150
+ },
+ {
+  "id": "gi-015",
+  "sec": "di",
+  "type": "gi",
+  "diff": 3,
+  "chart": {
+   "kind": "line",
+   "title": "Cumulative app downloads",
+   "xlabel": "Month-end",
+   "ylabel": "Total downloads (thousands)",
+   "x": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul"
+   ],
+   "series": [
+    {
+     "name": "Cumulative downloads",
+     "values": [
+      12,
+      20,
+      31,
+      39,
+      52,
+      61,
+      68
+     ]
+    }
+   ]
+  },
+  "intro": "A startup plots the cumulative number of downloads of its app at the end of each month since launch week.",
+  "text": "From the end of January to the end of July the app averaged about [[1]] thousand new downloads per month, and the most new downloads in a single month occurred in [[2]].",
+  "blanks": [
+   {
+    "options": [
+     "8.7",
+     "9.3",
+     "11.3",
+     "12.0"
+    ],
+    "answer": 1
+   },
+   {
+    "options": [
+     "March",
+     "May",
+     "June",
+     "July"
+    ],
+    "answer": 1
+   }
+  ],
+  "explanation": "A cumulative line never falls, so the useful information is in the size of each step up. On a cumulative chart, new downloads are the differences between points. Average monthly new downloads = (68 - 12) ÷ 6 = 9.3 thousand. Monthly new downloads are Feb 8, Mar 11, Apr 8, May 13, Jun 9, Jul 7, so the peak month is May. Choosing July because it has the highest cumulative total confuses the level with the change.",
+  "time": 150
+ },
+ {
+  "id": "gi-016",
+  "sec": "di",
+  "type": "gi",
+  "diff": 3,
+  "chart": {
+   "kind": "bar",
+   "title": "Goods exports and imports",
+   "xlabel": "Year",
+   "ylabel": "Value (USD billions)",
+   "x": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Exports",
+     "values": [
+      84,
+      76,
+      92,
+      105,
+      110,
+      118
+     ]
+    },
+    {
+     "name": "Imports",
+     "values": [
+      96,
+      80,
+      108,
+      128,
+      121,
+      125
+     ]
+    }
+   ]
+  },
+  "intro": "The chart compares a country's annual goods exports and imports.",
+  "text": "The trade deficit (imports minus exports) was largest in [[1]], and in 2024 exports covered about [[2]]% of imports.",
+  "blanks": [
+   {
+    "options": [
+     "2021",
+     "2022",
+     "2023",
+     "2024"
+    ],
+    "answer": 1
+   },
+   {
+    "options": [
+     "94",
+     "97",
+     "100",
+     "106"
+    ],
+    "answer": 0
+   }
+  ],
+  "explanation": "The deficit is the vertical gap between the paired bars in each year, not the height of either bar, so compute it year by year. Deficits by year: 2019 12, 2020 4, 2021 16, 2022 23, 2023 11, 2024 7. The largest is 23 billion in 2022. Note that 2024 has the highest imports but a smaller gap. For blank 2, export coverage = 118 ÷ 125 × 100 = 94.4%, about 94%. The trap 106% inverts the ratio (imports ÷ exports).",
+  "time": 150
+ },
+ {
+  "id": "gi-017",
+  "sec": "di",
+  "type": "gi",
+  "diff": 3,
+  "chart": {
+   "kind": "scatter",
+   "title": "Ticket price vs. weekly tickets sold",
+   "xlabel": "Ticket price (USD)",
+   "ylabel": "Tickets sold per week",
+   "x": [
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22
+   ],
+   "series": [
+    {
+     "name": "Weeks",
+     "values": [
+      940,
+      860,
+      800,
+      710,
+      650,
+      560,
+      500,
+      410
+     ]
+    }
+   ]
+  },
+  "intro": "A cinema tested a different ticket price each week for eight weeks.",
+  "text": "On average, each USD 1 increase in price reduced weekly tickets sold by about [[1]], and of the prices tested, weekly ticket revenue was highest at a price of [[2]] dollars.",
+  "blanks": [
+   {
+    "options": [
+     "24",
+     "30",
+     "38",
+     "45"
+    ],
+    "answer": 2
+   },
+   {
+    "options": [
+     "10",
+     "12",
+     "14",
+     "16"
+    ],
+    "answer": 3
+   }
+  ],
+  "explanation": "Use the two end points to estimate the slope, then test revenue at each tested price. From USD 8 to USD 22 tickets fall from 940 to 410, a drop of 530 over USD 14, about 38 per dollar (the best-fit slope is -37.4). For blank 2, compute price × tickets: 12 × 800 = 9,600; 14 × 710 = 9,940; 16 × 650 = 10,400; 18 × 560 = 10,080; 20 × 500 = 10,000. The maximum, 10,400, occurs at USD 16. The lowest price sells the most tickets but does not maximize revenue.",
+  "time": 150
+ },
+ {
+  "id": "gi-018",
+  "sec": "di",
+  "type": "gi",
+  "diff": 3,
+  "chart": {
+   "kind": "stacked",
+   "title": "Smartphone market share",
+   "xlabel": "Year",
+   "ylabel": "Market share (%)",
+   "x": [
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Firm A",
+     "values": [
+      44,
+      41,
+      38,
+      35
+     ]
+    },
+    {
+     "name": "Firm B",
+     "values": [
+      30,
+      31,
+      33,
+      34
+     ]
+    },
+    {
+     "name": "Firm C",
+     "values": [
+      16,
+      19,
+      21,
+      24
+     ]
+    },
+    {
+     "name": "Others",
+     "values": [
+      10,
+      9,
+      8,
+      7
+     ]
+    }
+   ]
+  },
+  "intro": "The stacked bars show the share of a national smartphone market held by three firms and all others. Each bar totals 100%.",
+  "text": "Between 2021 and 2024, Firm C's share grew at an average compound rate of about [[1]]% per year, and by 2024 Firm C's share was [[2]] percentage points behind Firm B's.",
+  "blanks": [
+   {
+    "options": [
+     "8",
+     "12",
+     "14",
+     "17"
+    ],
+    "answer": 2
+   },
+   {
+    "options": [
+     "4",
+     "10",
+     "14",
+     "18"
+    ],
+    "answer": 1
+   }
+  ],
+  "explanation": "Each bar totals 100%, so segment heights can be read directly as market shares. Firm C rose from 16% to 24%, a factor of 1.5 over three years. The compound annual rate r solves (1 + r)³ = 1.5, so r ≈ 14.5%, about 14%. Dividing the 50% total gain by 3 gives about 17%, which ignores compounding. For blank 2, in 2024 Firm B holds 34% and Firm C holds 24%, a gap of 10 percentage points.",
+  "time": 150
+ },
+ {
+  "id": "gi-019",
+  "sec": "di",
+  "type": "gi",
+  "diff": 4,
+  "chart": {
+   "kind": "line",
+   "title": "Revenue and operating cost",
+   "xlabel": "Year",
+   "ylabel": "USD millions",
+   "x": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Revenue",
+     "values": [
+      50,
+      46,
+      58,
+      66,
+      72,
+      80
+     ]
+    },
+    {
+     "name": "Operating cost",
+     "values": [
+      42,
+      41,
+      47,
+      55,
+      58,
+      66
+     ]
+    }
+   ]
+  },
+  "intro": "A logistics company plots annual revenue and operating cost. Operating profit = revenue - operating cost; margin = profit ÷ revenue.",
+  "text": "The operating margin was highest in [[1]], and operating profit in 2024 was [[2]]% higher than in 2019.",
+  "blanks": [
+   {
+    "options": [
+     "2021",
+     "2022",
+     "2023",
+     "2024"
+    ],
+    "answer": 2
+   },
+   {
+    "options": [
+     "14",
+     "60",
+     "75",
+     "175"
+    ],
+    "answer": 2
+   }
+  ],
+  "explanation": "First turn the two lines into a profit for each year. Margin is a ratio, so the year with the most profit is not necessarily the year with the best margin. Profits: 2019 8, 2020 5, 2021 11, 2022 11, 2023 14, 2024 14. Margins: 2021 19.0%, 2022 16.7%, 2023 19.4%, 2024 17.5%. The highest margin is 2023, even though 2024 has the highest revenue. Profit grew from 8 to 14, so (14 - 8) ÷ 8 = 75%. The trap 60% is the revenue growth over the same period.",
+  "time": 165
+ },
+ {
+  "id": "gi-020",
+  "sec": "di",
+  "type": "gi",
+  "diff": 4,
+  "chart": {
+   "kind": "scatter",
+   "title": "Income per person vs. life expectancy, 12 countries",
+   "xlabel": "GDP per capita (USD thousands)",
+   "ylabel": "Life expectancy (years)",
+   "x": [
+    4,
+    7,
+    10,
+    14,
+    18,
+    23,
+    28,
+    33,
+    39,
+    45,
+    52,
+    60
+   ],
+   "series": [
+    {
+     "name": "Countries",
+     "values": [
+      61,
+      66,
+      70,
+      72,
+      71,
+      76,
+      78,
+      74,
+      81,
+      82,
+      83,
+      84
+     ]
+    }
+   ]
+  },
+  "intro": "Each point represents one country in a regional health report.",
+  "text": "Life expectancy shows a [[1]] relationship with income, and [[2]] of the countries with GDP per capita above USD 25,000 have a life expectancy below 80 years.",
+  "blanks": [
+   {
+    "options": [
+     "positive, flattening at higher incomes",
+     "positive and accelerating",
+     "negative",
+     "no clear"
+    ],
+    "answer": 0
+   },
+   {
+    "options": [
+     "2",
+     "3",
+     "4",
+     "5"
+    ],
+    "answer": 0
+   }
+  ],
+  "explanation": "Look at the overall shape of the cloud first, then count only the points that satisfy both conditions. Life expectancy rises quickly from 61 to about 72 as income moves from 4 to 14, then gains only about 12 more years over the next 46 thousand dollars, so the relationship is positive but flattening (diminishing returns). For blank 2, countries above 25 are at 28 (78), 33 (74), 39 (81), 45 (82), 52 (83) and 60 (84). Only 28 and 33 are below 80, so the count is 2.",
+  "time": 165
+ },
+ {
+  "id": "gi-021",
+  "sec": "di",
+  "type": "gi",
+  "diff": 4,
+  "chart": {
+   "kind": "stacked",
+   "title": "Streaming subscribers by plan",
+   "xlabel": "Year-end",
+   "ylabel": "Subscribers (thousands)",
+   "x": [
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Basic",
+     "values": [
+      520,
+      560,
+      580
+     ]
+    },
+    {
+     "name": "Standard",
+     "values": [
+      310,
+      380,
+      450
+     ]
+    },
+    {
+     "name": "Premium",
+     "values": [
+      90,
+      130,
+      190
+     ]
+    }
+   ]
+  },
+  "intro": "A streaming service reports year-end subscribers stacked by plan.",
+  "text": "From 2022 to 2024 the plan whose share of total subscribers rose by the most percentage points was [[1]], and total subscribers grew by about [[2]]%.",
+  "blanks": [
+   {
+    "options": [
+     "Basic",
+     "Standard",
+     "Premium"
+    ],
+    "answer": 2
+   },
+   {
+    "options": [
+     "21",
+     "33",
+     "45",
+     "111"
+    ],
+    "answer": 1
+   }
+  ],
+  "explanation": "A share change compares each plan with the total in the same year, so compute the totals for both years first. Totals: 2022 920, 2024 1220. Shares 2022 -> 2024: Basic 56.5% -> 47.5%, Standard 33.7% -> 36.9%, Premium 9.8% -> 15.6%. Standard gains 3.2 points versus Premium's 5.8, so blank 1 is Premium. Basic gained 60 thousand subscribers yet lost share, because the total grew faster than Basic did. Total growth = (1220 - 920) ÷ 920 ≈ 32.6%.",
+  "time": 165
+ },
+ {
+  "id": "gi-022",
+  "sec": "di",
+  "type": "gi",
+  "diff": 4,
+  "chart": {
+   "kind": "bar",
+   "title": "Monthly sales of a regional bakery chain",
+   "xlabel": "Month",
+   "ylabel": "Sales (USD thousands)",
+   "x": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep"
+   ],
+   "series": [
+    {
+     "name": "Sales",
+     "values": [
+      210,
+      198,
+      236,
+      245,
+      230,
+      262,
+      255,
+      281,
+      290
+     ]
+    }
+   ]
+  },
+  "intro": "The chart shows monthly sales for the first nine months of the year.",
+  "text": "[[1]] of the nine months had sales above the nine-month average, and sales grew at an average compound monthly rate of about [[2]]% from January to September.",
+  "blanks": [
+   {
+    "options": [
+     "3",
+     "4",
+     "5",
+     "6"
+    ],
+    "answer": 1
+   },
+   {
+    "options": [
+     "3.6",
+     "4.1",
+     "4.8",
+     "38.1"
+    ],
+    "answer": 1
+   }
+  ],
+  "explanation": "Blank 1 needs the mean of all nine bars; blank 2 needs a compound rate over the eight steps between them. The sum is 2207, so the average is 245.2 thousand. Months above it: Jun 262, Jul 255, Aug 281, Sep 290, which is 4. April (245) is just below. From January to September there are 8 monthly steps: (290 ÷ 210)^(1/8) - 1 ≈ 4.12%. Dividing the total 38.1% gain by 8 without compounding gives about 4.8%, which is the trap.",
+  "time": 165
+ },
+ {
+  "id": "gi-023",
+  "sec": "di",
+  "type": "gi",
+  "diff": 4,
+  "chart": {
+   "kind": "line",
+   "title": "Price index for two housing markets (2015 = 100)",
+   "xlabel": "Year",
+   "ylabel": "Index",
+   "x": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Market A",
+     "values": [
+      100,
+      108,
+      117,
+      126,
+      137,
+      148,
+      160,
+      173,
+      186,
+      201
+     ]
+    },
+    {
+     "name": "Market B",
+     "values": [
+      100,
+      112,
+      124,
+      133,
+      145,
+      160,
+      178,
+      196,
+      212,
+      230
+     ]
+    }
+   ]
+  },
+  "intro": "Both indexes are set to 100 in 2015, so each value shows prices relative to that year.",
+  "text": "Market B's prices first reached double their 2015 level in [[1]], and between 2020 and 2024 Market A's prices rose by about [[2]]%.",
+  "blanks": [
+   {
+    "options": [
+     "2021",
+     "2022",
+     "2023",
+     "2024"
+    ],
+    "answer": 2
+   },
+   {
+    "options": [
+     "36",
+     "41",
+     "53",
+     "101"
+    ],
+    "answer": 0
+   }
+  ],
+  "explanation": "An index of 200 means double the base. Market B is 196 in 2022 and 212 in 2023, so it first reaches 200 in 2023; Market A reaches 201 only in 2024. For blank 2, compute the percent change between two index values rather than subtracting: (201 - 148) ÷ 148 ≈ 35.8%, about 36%. Reading the 53-point difference as 53% is the trap, valid only when the base is 100.",
+  "time": 165
+ },
+ {
+  "id": "gi-024",
+  "sec": "di",
+  "type": "gi",
+  "diff": 4,
+  "chart": {
+   "kind": "bar",
+   "title": "Customer satisfaction by channel",
+   "xlabel": "Response",
+   "ylabel": "Percent of channel respondents",
+   "x": [
+    "Very satisfied",
+    "Satisfied",
+    "Neutral",
+    "Dissatisfied"
+   ],
+   "series": [
+    {
+     "name": "Store",
+     "values": [
+      42,
+      33,
+      15,
+      10
+     ]
+    },
+    {
+     "name": "Online",
+     "values": [
+      28,
+      40,
+      20,
+      12
+     ]
+    },
+    {
+     "name": "Phone",
+     "values": [
+      18,
+      32,
+      26,
+      24
+     ]
+    }
+   ]
+  },
+  "intro": "A bank surveyed 900 store customers, 400 online customers and 200 phone customers. Each channel's bars sum to 100%.",
+  "text": "Across all 1,500 respondents, about [[1]]% were very satisfied, and the share of phone respondents who were satisfied or very satisfied is [[2]] percentage points lower than the share for store respondents.",
+  "blanks": [
+   {
+    "options": [
+     "29",
+     "32",
+     "35",
+     "38"
+    ],
+    "answer": 2
+   },
+   {
+    "options": [
+     "25",
+     "30",
+     "33",
+     "50"
+    ],
+    "answer": 0
+   }
+  ],
+  "explanation": "When groups differ in size, an overall percentage must be weighted by the number of respondents in each group. Weight by channel size: very satisfied = 900 × 0.42 + 400 × 0.28 + 200 × 0.18 = 378 + 112 + 36 = 526; 526 ÷ 1,500 = 35.1%, about 35%. The simple average of 42, 28 and 18 is about 29%, which ignores the different sample sizes. For blank 2, store satisfied-or-better = 42 + 33 = 75%, phone = 18 + 32 = 50%, a difference of 25 points.",
+  "time": 165
+ },
+ {
+  "id": "gi-025",
+  "sec": "di",
+  "type": "gi",
+  "diff": 4,
+  "chart": {
+   "kind": "scatter",
+   "title": "Fertilizer dose vs. crop yield, test plots",
+   "xlabel": "Fertilizer (units per plot)",
+   "ylabel": "Yield (kg per plot)",
+   "x": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "series": [
+    {
+     "name": "Plots",
+     "values": [
+      3.1,
+      4.0,
+      4.6,
+      5.9,
+      6.4,
+      7.8,
+      8.1,
+      9.4,
+      9.8,
+      11.2
+     ]
+    }
+   ]
+  },
+  "intro": "An agronomist applied a different fertilizer dose to each of ten test plots.",
+  "text": "Each additional unit of fertilizer is associated with roughly [[1]] kg more yield, and if the linear trend continued, a dose of 12 units would yield about [[2]] kg.",
+  "blanks": [
+   {
+    "options": [
+     "0.5",
+     "0.9",
+     "1.3",
+     "1.7"
+    ],
+    "answer": 1
+   },
+   {
+    "options": [
+     "11.0",
+     "11.6",
+     "12.0",
+     "13.0"
+    ],
+    "answer": 3
+   }
+  ],
+  "explanation": "The points rise almost in a straight line from 3.1 at dose 1 to 11.2 at dose 10, a gain of 8.1 over 9 units, about 0.9 kg per unit (best-fit slope 0.88). Extending the line two more units from about 11.2: 11.2 + 2 × 0.9 ≈ 13.0 (the fitted line gives 12.76). Extrapolating beyond tested doses is risky in practice, but the question asks only about the trend.",
+  "time": 165
+ },
+ {
+  "id": "gi-026",
+  "sec": "di",
+  "type": "gi",
+  "diff": 5,
+  "chart": {
+   "kind": "line",
+   "title": "Annual recurring revenue of a software firm",
+   "xlabel": "Year",
+   "ylabel": "ARR (USD millions)",
+   "x": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "ARR",
+     "values": [
+      2.0,
+      2.6,
+      3.4,
+      4.4,
+      5.7,
+      7.4
+     ]
+    }
+   ]
+  },
+  "intro": "The chart shows a company's annual recurring revenue at year-end.",
+  "text": "From 2019 to 2024 ARR grew at a compound annual rate of about [[1]]%, and if that rate continued, ARR at the end of 2026 would be about [[2]] million dollars.",
+  "blanks": [
+   {
+    "options": [
+     "27",
+     "30",
+     "35",
+     "54"
+    ],
+    "answer": 1
+   },
+   {
+    "options": [
+     "9.6",
+     "11.2",
+     "12.5",
+     "14.8"
+    ],
+    "answer": 2
+   }
+  ],
+  "explanation": "Steadily rising increments on a line chart usually signal a constant percent growth rate rather than constant dollar growth. Growth factor over five years = 7.4 ÷ 2.0 = 3.7. The annual rate solves (1 + r)⁵ = 3.7, giving r ≈ 29.9%, about 30%. Check: 1.3⁵ ≈ 3.71. The trap 54% divides the 270% total gain by 5. Two more years at 1.3 each: 7.4 × 1.69 ≈ 12.5 million. Adding the 2023 to 2024 dollar increase twice (7.4 + 2 × 1.7 = 10.8) underestimates compound growth.",
+  "time": 180
+ },
+ {
+  "id": "gi-027",
+  "sec": "di",
+  "type": "gi",
+  "diff": 5,
+  "chart": {
+   "kind": "stacked",
+   "title": "Production cost per unit",
+   "xlabel": "Year",
+   "ylabel": "Cost per unit (USD)",
+   "x": [
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Materials",
+     "values": [
+      14.0,
+      15.4,
+      17.2
+     ]
+    },
+    {
+     "name": "Labour",
+     "values": [
+      9.0,
+      9.5,
+      9.8
+     ]
+    },
+    {
+     "name": "Energy",
+     "values": [
+      3.0,
+      4.6,
+      4.2
+     ]
+    },
+    {
+     "name": "Overhead",
+     "values": [
+      4.0,
+      4.0,
+      4.1
+     ]
+    }
+   ]
+  },
+  "intro": "A furniture maker breaks down the cost of producing one chair.",
+  "text": "From 2022 to 2024, unit cost rose by about [[1]]%, and materials accounted for about [[2]]% of that increase.",
+  "blanks": [
+   {
+    "options": [
+     "18",
+     "21",
+     "24",
+     "30"
+    ],
+    "answer": 0
+   },
+   {
+    "options": [
+     "23",
+     "46",
+     "60",
+     "70"
+    ],
+    "answer": 2
+   }
+  ],
+  "explanation": "Add the four segments to get each year's unit cost. Separate the share of the increase from each component's own growth rate; they answer different questions. Totals: 2022 = 14.0 + 9.0 + 3.0 + 4.0 = 30.0; 2024 = 17.2 + 9.8 + 4.2 + 4.1 = 35.3. Percent rise = 5.3 ÷ 30 ≈ 17.7%. Materials rose by 3.2 of the 5.3-dollar total increase, so 3.2 ÷ 5.3 ≈ 60%. The trap 23% is materials' own growth rate (3.2 ÷ 14). Energy spiked in 2023 but contributes only 1.2 dollars over the full period.",
+  "time": 180
+ },
+ {
+  "id": "gi-028",
+  "sec": "di",
+  "type": "gi",
+  "diff": 5,
+  "chart": {
+   "kind": "scatter",
+   "title": "Outdoor temperature vs. daily heating gas use",
+   "xlabel": "Average outdoor temperature (°F)",
+   "ylabel": "Gas used (therms)",
+   "x": [
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60
+   ],
+   "series": [
+    {
+     "name": "Days",
+     "values": [
+      118,
+      112,
+      109,
+      98,
+      96,
+      87,
+      84,
+      76,
+      72
+     ]
+    }
+   ]
+  },
+  "intro": "A building manager recorded gas use on nine days with different average outdoor temperatures.",
+  "text": "The correlation between temperature and gas use is closest to [[1]], and extending the linear trend, a day averaging 70°F would use about [[2]] therms.",
+  "blanks": [
+   {
+    "options": [
+     "-0.99",
+     "-0.6",
+     "0",
+     "0.6",
+     "0.99"
+    ],
+    "answer": 0
+   },
+   {
+    "options": [
+     "44",
+     "50",
+     "58",
+     "66"
+    ],
+    "answer": 2
+   }
+  ],
+  "explanation": "The points fall in a tight, nearly straight downward line, so the correlation is strongly negative, about -0.995, closest to -0.99. The best-fit slope is about -1.18 therms per degree: across 40 degrees use falls by 46, about 1.15 per degree. From 72 therms at 60°F, ten more degrees gives about 72 - 11.5 ≈ 60; the fitted line gives 59.4, closest to 58. Real heating use cannot fall below zero, so long extrapolations would eventually fail.",
+  "time": 180
+ },
+ {
+  "id": "gi-029",
+  "sec": "di",
+  "type": "gi",
+  "diff": 5,
+  "chart": {
+   "kind": "bar",
+   "title": "Department budget vs. actual spending",
+   "xlabel": "Department",
+   "ylabel": "Spending (USD thousands)",
+   "x": [
+    "Ops",
+    "IT",
+    "HR",
+    "Marketing",
+    "R&D",
+    "Facilities"
+   ],
+   "series": [
+    {
+     "name": "Budget",
+     "values": [
+      820,
+      640,
+      210,
+      450,
+      1100,
+      380
+     ]
+    },
+    {
+     "name": "Actual",
+     "values": [
+      865,
+      742,
+      198,
+      512,
+      1180,
+      371
+     ]
+    }
+   ]
+  },
+  "intro": "A company compares each department's annual budget with actual spending.",
+  "text": "[[1]] departments overspent their budget by more than 10%, and company-wide actual spending exceeded the total budget by about [[2]]%.",
+  "blanks": [
+   {
+    "options": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "answer": 2
+   },
+   {
+    "options": [
+     "3.6",
+     "5.0",
+     "5.7",
+     "7.4"
+    ],
+    "answer": 3
+   }
+  ],
+  "explanation": "Compare actual with budget for each department as a percent of that department's budget. Variance = (actual - budget) ÷ budget: Ops 5.5%, IT 15.9%, HR -5.7%, Marketing 13.8%, R&D 7.3%, Facilities -2.4%. Only IT and Marketing exceed 10%, so blank 1 is 2. R&D has the largest dollar overrun (80) but only 7.3%. Totals: budget 3,600, actual 3,868; overrun 268 ÷ 3,600 ≈ 7.4%. Averaging the six percentages (about 5.7%) would be wrong, because departments differ in size.",
+  "time": 180
+ },
+ {
+  "id": "gi-030",
+  "sec": "di",
+  "type": "gi",
+  "diff": 5,
+  "chart": {
+   "kind": "line",
+   "title": "Population of two neighbouring cities",
+   "xlabel": "Year",
+   "ylabel": "Population (thousands)",
+   "x": [
+    "2016",
+    "2018",
+    "2020",
+    "2022",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Eastport",
+     "values": [
+      480,
+      499,
+      519,
+      540,
+      562
+     ]
+    },
+    {
+     "name": "Westfield",
+     "values": [
+      300,
+      333,
+      370,
+      410,
+      455
+     ]
+    }
+   ]
+  },
+  "intro": "Both cities have grown at a nearly constant percent rate since 2016.",
+  "text": "Over 2016-2024 Westfield grew at about [[1]]% per year, and if both cities keep their 2016-2024 compound growth rates, Westfield's population will first exceed Eastport's in about [[2]].",
+  "blanks": [
+   {
+    "options": [
+     "5.3",
+     "6.5",
+     "7.2",
+     "8.0"
+    ],
+    "answer": 0
+   },
+   {
+    "options": [
+     "2028",
+     "2031",
+     "2034",
+     "2038"
+    ],
+    "answer": 1
+   }
+  ],
+  "explanation": "Westfield: 455 ÷ 300 ≈ 1.517 over 8 years, so r = 1.517^(1/8) - 1 ≈ 5.34%. Eastport: 562 ÷ 480 ≈ 1.171, r ≈ 1.99%. The gap ratio 562 ÷ 455 ≈ 1.235 closes by a factor of about 1.0535 ÷ 1.0199 ≈ 1.033 per year, and ln 1.235 ÷ ln 1.033 ≈ 6.5 years, so Westfield first exceeds Eastport about 6.5 years after 2024, in 2031 (year-by-year compounding confirms it). Extending the straight-line gains (about 10 and 19 thousand per year) would wrongly give about 2036, since it ignores compounding.",
+  "time": 180
+ }
+]

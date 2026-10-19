@@ -1,0 +1,1202 @@
+[
+ {
+  "id": "ps-ar-001",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Fractions & Decimals",
+  "diff": 1,
+  "stem": "What is the value of 3/4 + 5/6 − 1/3?",
+  "choices": [
+   "5/4",
+   "1",
+   "3/4",
+   "2/3",
+   "7/12"
+  ],
+  "answer": 0,
+  "explanation": "Use the least common denominator of 4, 6 and 3, which is 12. Rewrite each fraction: 3/4 = 9/12, 5/6 = 10/12 and 1/3 = 4/12. Now combine the numerators: 9 + 10 − 4 = 15, so the result is 15/12. Divide the numerator and denominator by 3 to simplify: 15/12 = 5/4. As a quick sense check, 3/4 + 5/6 is a little more than 1.5, and subtracting about 0.33 leaves about 1.25, which matches 5/4.",
+  "trap": "Adding numerators and denominators separately gives (3 + 5 − 1)/(4 + 6 − 3) = 7/7 = 1, but fractions can only be combined after converting to a common denominator.",
+  "time": 90
+ },
+ {
+  "id": "ps-ar-002",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Fractions & Decimals",
+  "diff": 1,
+  "stem": "What is the value of 0.24 ÷ 0.008?",
+  "choices": [
+   "0.03",
+   "0.3",
+   "3",
+   "30",
+   "300"
+  ],
+  "answer": 3,
+  "explanation": "Make the divisor a whole number by moving the decimal point in both numbers the same number of places. Moving it three places to the right turns 0.008 into 8 and 0.24 into 240. The problem becomes 240 ÷ 8 = 30. You can check the answer by multiplying back: 30 × 0.008 = 0.24, which is correct. Shifting both decimal points by the same amount does not change the quotient, because it multiplies the numerator and the denominator by the same power of 10.",
+  "trap": "Choosing 3 comes from moving the decimal point in 0.24 only two places (to 24) while moving it three places in 0.008.",
+  "time": 90
+ },
+ {
+  "id": "ps-ar-003",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Fractions & Decimals",
+  "diff": 2,
+  "stem": "Which of the following fractions is greatest?",
+  "choices": [
+   "5/8",
+   "7/11",
+   "11/17",
+   "3/5",
+   "9/14"
+  ],
+  "answer": 2,
+  "explanation": "Each fraction is a little less than 1, so compare how far each one falls short of 1. The gaps are 1 − 5/8 = 3/8, 1 − 7/11 = 4/11, 1 − 11/17 = 6/17, 1 − 3/5 = 2/5 and 1 − 9/14 = 5/14. The greatest fraction has the smallest gap. 3/8 and 2/5 are clearly larger than the others. Compare the rest by cross-multiplying: 6/17 vs 5/14 gives 6 × 14 = 84 vs 5 × 17 = 85, so 6/17 is smaller; 6/17 vs 4/11 gives 66 vs 68, so 6/17 is smaller again. The smallest gap belongs to 11/17, so 11/17 is greatest (about 0.647).",
+  "trap": "9/14 is tempting because it looks close to 2/3, but 9/14 ≈ 0.643 is slightly less than 11/17 ≈ 0.647.",
+  "time": 105
+ },
+ {
+  "id": "ps-ar-004",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Fractions & Decimals",
+  "diff": 2,
+  "stem": "A recipe calls for 2 3/4 cups of flour per batch. A baker has 20 cups of flour and makes as many complete batches as possible. How many cups of flour are left over?",
+  "choices": [
+   "1/4",
+   "3/4",
+   "1",
+   "1 1/4",
+   "1 3/4"
+  ],
+  "answer": 1,
+  "explanation": "Convert 2 3/4 to an improper fraction: 11/4 cups per batch. The number of batches is 20 ÷ 11/4 = 80/11 ≈ 7.27, so the baker can make 7 complete batches. Those 7 batches use 7 × 11/4 = 77/4 = 19 1/4 cups. The flour left over is 20 − 19 1/4 = 3/4 cup. Note that an eighth batch would need 22 cups in total, which is more than the 20 cups available, confirming that 7 is the maximum.",
+  "trap": "Reading the 0.27 from 7.27 batches as the leftover amount gives about 1/4, but that decimal is a fraction of a batch, not of a cup.",
+  "time": 105
+ },
+ {
+  "id": "ps-ar-005",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Fractions & Decimals",
+  "diff": 3,
+  "stem": "What is the value of 0.363636... + 0.0454545... , where in each decimal the final two digits shown repeat forever?",
+  "choices": [
+   "4/11",
+   "9/22",
+   "41/99",
+   "9/20",
+   "9/11"
+  ],
+  "answer": 1,
+  "explanation": "Convert each repeating decimal to a fraction. A two-digit block repeating right after the decimal point equals that block over 99, so 0.363636... = 36/99 = 4/11. The second decimal is 0.0454545..., which is one tenth of 0.454545... = 45/99 = 5/11, so it equals 5/110 = 1/22. Add: 4/11 + 1/22 = 8/22 + 1/22 = 9/22. Check: 9/22 = 0.40909..., and 0.3636... + 0.0454... ≈ 0.409, which matches.",
+  "trap": "Treating 0.0454545... as 45/99 = 5/11 ignores the extra 0 after the decimal point and leads to 4/11 + 5/11 = 9/11.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-006",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Fractions & Decimals",
+  "diff": 3,
+  "stem": "What is the value of 1/(1 + 1/(1 + 1/(1 + 1/2)))?",
+  "choices": [
+   "1/2",
+   "3/5",
+   "8/13",
+   "5/8",
+   "8/5"
+  ],
+  "answer": 3,
+  "explanation": "Work from the innermost expression outward. First, 1 + 1/2 = 3/2. Next, 1 + 1/(3/2) = 1 + 2/3 = 5/3. Then 1 + 1/(5/3) = 1 + 3/5 = 8/5. Finally, the whole expression is 1/(8/5) = 5/8. A useful pattern: each layer of the form 1 + 1/(a/b) becomes (a + b)/a, so the values move through 3/2, 5/3, 8/5 (ratios of consecutive Fibonacci numbers), and the last step takes the reciprocal.",
+  "trap": "8/5 is the value just before the final step; forgetting the outermost reciprocal leaves 8/5 instead of 5/8.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-007",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Fractions & Decimals",
+  "diff": 4,
+  "stem": "What is the value of (1 − 1/4)(1 − 1/9)(1 − 1/16) ... (1 − 1/100), where the denominators are the squares of the integers from 2 to 10?",
+  "choices": [
+   "1/100",
+   "1/10",
+   "9/20",
+   "1/2",
+   "11/20"
+  ],
+  "answer": 4,
+  "explanation": "Factor each term as a difference of squares: 1 − 1/k² = (k − 1)(k + 1)/k² = [(k − 1)/k] × [(k + 1)/k]. The product then splits into two telescoping products. The first is (1/2)(2/3)(3/4)...(9/10) = 1/10. The second is (3/2)(4/3)(5/4)...(11/10) = 11/2. Multiply: (1/10)(11/2) = 11/20. Check with a small case: (1 − 1/4)(1 − 1/9) = (3/4)(8/9) = 2/3, and the formula (n + 1)/(2n) with n = 3 also gives 4/6 = 2/3.",
+  "trap": "1/10 comes from telescoping only the (k − 1)/k factors and forgetting the (k + 1)/k factors, which contribute 11/2.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-008",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Fractions & Decimals",
+  "diff": 4,
+  "stem": "For how many integers n with 1 ≤ n ≤ 100 is n/120 a terminating decimal?",
+  "choices": [
+   "33",
+   "25",
+   "20",
+   "10",
+   "6"
+  ],
+  "answer": 0,
+  "explanation": "A fraction in lowest terms is a terminating decimal exactly when its denominator has no prime factors other than 2 and 5. Since 120 = 2³ × 3 × 5, the factor 3 must cancel, which happens exactly when n is a multiple of 3. Once the 3 cancels, the remaining denominator divides 2³ × 5 and the decimal terminates. The multiples of 3 from 1 to 100 are 3, 6, ..., 99, and there are 99/3 = 33 of them.",
+  "trap": "6 counts only multiples of 15, as if both the 3 and the 5 had to cancel, but a leftover factor of 5 still gives a terminating decimal.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-009",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Fractions & Decimals",
+  "diff": 4,
+  "stem": "What is the value of 1/(1 × 3) + 1/(3 × 5) + 1/(5 × 7) + ... + 1/(99 × 101)?",
+  "choices": [
+   "49/101",
+   "50/101",
+   "1/2",
+   "101/200",
+   "100/101"
+  ],
+  "answer": 1,
+  "explanation": "Split each term with partial fractions: 1/(k(k + 2)) = (1/2)(1/k − 1/(k + 2)). The sum becomes (1/2)[(1 − 1/3) + (1/3 − 1/5) + ... + (1/99 − 1/101)]. Every middle term cancels, leaving (1/2)(1 − 1/101) = (1/2)(100/101) = 50/101. Check the pattern with two terms: 1/3 + 1/15 = 6/15 = 2/5, and (1/2)(1 − 1/5) = 2/5. As an estimate, the total must be just under 1/2, which rules out 1/2 itself and anything larger.",
+  "trap": "100/101 is the telescoped sum without the factor 1/2; since 1/k − 1/(k + 2) = 2/(k(k + 2)), each term must be halved.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-010",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Fractions & Decimals",
+  "diff": 5,
+  "stem": "For how many positive integers n is 1/n a terminating decimal with exactly 3 digits after the decimal point?",
+  "choices": [
+   "3",
+   "4",
+   "6",
+   "7",
+   "9"
+  ],
+  "answer": 3,
+  "explanation": "1/n terminates only when n = 2^a × 5^b. Then the number of digits after the decimal point is the larger of a and b, because 1/(2^a × 5^b) can be rewritten with denominator 10^max(a, b). We need max(a, b) = 3. The pairs (a, b) with both values from 0 to 3 number 4 × 4 = 16; remove the 3 × 3 = 9 pairs with both values at most 2, leaving 7. They are n = 8, 40, 200, 1000, 125, 250 and 500, for example 1/40 = 0.025 and 1/250 = 0.004.",
+  "trap": "4 or 3 comes from listing only obvious cases such as 8, 125 and 1000 and missing mixed values like 40, 200, 250 and 500.",
+  "time": 150
+ },
+ {
+  "id": "ps-ar-011",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Percents",
+  "diff": 1,
+  "stem": "What is 35% of 240?",
+  "choices": [
+   "84",
+   "96",
+   "112",
+   "120",
+   "156"
+  ],
+  "answer": 0,
+  "explanation": "Split 35% into pieces that are easy to find. 10% of 240 is 24, so 30% is 3 × 24 = 72. 5% is half of 10%, which is 12. Add them: 72 + 12 = 84. Alternatively, multiply directly: 0.35 × 240 = 84. A quick check: 35% is a little more than one third, and one third of 240 is 80, so an answer slightly above 80 makes sense.",
+  "trap": "156 is 65% of 240, the amount that remains after taking away 35%, not 35% itself.",
+  "time": 90
+ },
+ {
+  "id": "ps-ar-012",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Percents",
+  "diff": 1,
+  "stem": "The price of a book increased from 80 dollars to 100 dollars. By what percent did the price increase?",
+  "choices": [
+   "20%",
+   "25%",
+   "80%",
+   "120%",
+   "125%"
+  ],
+  "answer": 1,
+  "explanation": "Percent change is always the change divided by the original value. The change is 100 − 80 = 20 dollars and the original price is 80 dollars. So the percent increase is 20/80 = 1/4 = 25%. You can check by working forward: 25% of 80 is 20, and 80 + 20 = 100, which is the new price. Note that the new price is 125% of the original, which means an increase of 25%, not 125%.",
+  "trap": "20% divides the change by the new price (20/100) instead of by the original price.",
+  "time": 90
+ },
+ {
+  "id": "ps-ar-013",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Percents",
+  "diff": 2,
+  "stem": "The price of a jacket is increased by 20%, and then the new price is decreased by 20%. The final price is what percent different from the original price?",
+  "choices": [
+   "4% higher",
+   "2% higher",
+   "The same",
+   "2% lower",
+   "4% lower"
+  ],
+  "answer": 4,
+  "explanation": "Use multipliers. A 20% increase multiplies the price by 1.2 and a 20% decrease multiplies it by 0.8. The combined effect is 1.2 × 0.8 = 0.96, so the final price is 96% of the original, which is 4% lower. With numbers: a 100 dollars jacket rises to 120 dollars, and 20% of 120 dollars is 24 dollars, so it falls to 96 dollars. The decrease is taken from a larger base than the increase, which is why the changes do not cancel.",
+  "trap": "The same price is tempting because +20% and −20% look as if they cancel, but the 20% decrease applies to the higher price.",
+  "time": 105
+ },
+ {
+  "id": "ps-ar-014",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Percents",
+  "diff": 2,
+  "stem": "After a 15% discount, a pair of shoes sells for 68 dollars. What was the price, in dollars, before the discount?",
+  "choices": [
+   "57.80",
+   "78.20",
+   "80.00",
+   "83.00",
+   "85.00"
+  ],
+  "answer": 2,
+  "explanation": "A 15% discount leaves 85% of the original price. So 0.85 × P = 68, and P = 68/0.85. To divide easily, write 68/0.85 = 6800/85 = 80. Check: 15% of 80 dollars is 12 dollars, and 80 dollars − 12 dollars = 68 dollars, which matches the sale price. The key idea is to divide the sale price by the remaining percentage rather than adding 15% back on.",
+  "trap": "78.20 dollars adds 15% of 68 dollars to the sale price, but the discount was 15% of the original price, which is larger than 68 dollars.",
+  "time": 105
+ },
+ {
+  "id": "ps-ar-015",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Percents",
+  "diff": 3,
+  "stem": "If x is 40% of y, and y is 25% greater than z, then x is what percent of z?",
+  "choices": [
+   "15%",
+   "30%",
+   "32%",
+   "50%",
+   "65%"
+  ],
+  "answer": 3,
+  "explanation": "Write each relationship as a multiplier. x = 0.4y and y = 1.25z. Substitute: x = 0.4 × 1.25z = 0.5z, so x is 50% of z. Picking numbers confirms it: let z = 100. Then y is 25% greater, so y = 125, and x = 40% of 125 = 50. Since z = 100, x is 50% of z. Chained percents always combine by multiplying the multipliers.",
+  "trap": "65% adds the two percentages (40 + 25), but percent relationships in a chain combine by multiplication, not addition.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-016",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Percents",
+  "diff": 3,
+  "stem": "A retailer prices an item 60% above its cost and later sells it at 25% off that marked price. The retailer's profit is what percent of the cost?",
+  "choices": [
+   "20%",
+   "25%",
+   "30%",
+   "35%",
+   "40%"
+  ],
+  "answer": 0,
+  "explanation": "Let the cost be 100 dollars. The marked price is 60% higher, so it is 160 dollars. A 25% discount takes off 0.25 × 160 = 40 dollars, so the selling price is 120 dollars. The profit is 120 − 100 = 20 dollars, which is 20% of the cost. With multipliers: 1.6 × 0.75 = 1.2, which means the item sells for 120% of cost, a 20% profit.",
+  "trap": "35% subtracts the percentages (60 − 25), ignoring that the 25% discount is taken from the higher marked price.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-017",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Percents",
+  "diff": 3,
+  "stem": "A container holds 20 liters of a solution that is 30% acid. How many liters of water must be added to make a solution that is 12% acid?",
+  "choices": [
+   "10",
+   "18",
+   "24",
+   "30",
+   "50"
+  ],
+  "answer": 3,
+  "explanation": "Adding water does not change the amount of acid. The container has 0.30 × 20 = 6 liters of acid. In the new solution, those 6 liters must be 12% of the total, so the total volume is 6/0.12 = 50 liters. The solution already has 20 liters, so the water added is 50 − 20 = 30 liters. Check: 6/50 = 0.12, which is 12%.",
+  "trap": "50 is the total volume of the new solution; the question asks how much water to add, which is 50 − 20 = 30.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-018",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Percents",
+  "diff": 4,
+  "stem": "A is 25% greater than B, and B is 40% less than C. C is what percent greater than A?",
+  "choices": [
+   "15%",
+   "25%",
+   "33 1/3%",
+   "40%",
+   "50%"
+  ],
+  "answer": 2,
+  "explanation": "Express A in terms of C. B = 0.6C and A = 1.25B = 1.25 × 0.6C = 0.75C. So A is 25% less than C. The question asks how much greater C is than A, so A is the base: C/A = 1/0.75 = 4/3, which means C is 1/3 greater than A, or 33 1/3%. With numbers: C = 100, B = 60, A = 75; C exceeds A by 25, and 25/75 = 1/3.",
+  "trap": "25% is how much less A is than C (measured from C), but the question measures the difference from A, the smaller base.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-019",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Percents",
+  "diff": 4,
+  "stem": "The price of tea rose by 25%. By what percent must a household cut the amount of tea it buys so that its spending on tea rises by only 10%?",
+  "choices": [
+   "25%",
+   "20%",
+   "15%",
+   "14%",
+   "12%"
+  ],
+  "answer": 4,
+  "explanation": "Spending = price × quantity. The price multiplier is 1.25 and the target spending multiplier is 1.10, so the quantity multiplier must be 1.10/1.25 = 0.88. A multiplier of 0.88 means buying 12% less tea. Check with numbers: if tea cost 4 dollars per kg and the household bought 10 kg, it spent 40 dollars. Now tea costs 5 dollars per kg; 8.8 kg costs 44 dollars, which is 10% more than 40 dollars, and 8.8 kg is 12% less than 10 kg.",
+  "trap": "15% subtracts the percentages (25 − 10), but percent changes in a product combine by multiplying multipliers, not by subtraction.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-020",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Percents",
+  "diff": 5,
+  "stem": "A store sells a product at price P per unit, and each unit costs the store 0.7P. The store then cuts the price by 20%, and the number of units sold rises by 50%. The cost per unit does not change. By what percent does the store's total profit change?",
+  "choices": [
+   "It falls by 60%",
+   "It falls by 50%",
+   "It falls by 20%",
+   "It does not change",
+   "It rises by 20%"
+  ],
+  "answer": 1,
+  "explanation": "Profit per unit is price minus cost. Before the cut: P − 0.7P = 0.3P. After the cut the price is 0.8P, so the profit per unit is 0.8P − 0.7P = 0.1P, one third of what it was. Volume rises by the factor 1.5. Total profit changes by the factor (0.1/0.3) × 1.5 = 0.5, so profit falls by 50%. With numbers: P = 10 dollars, 100 units, profit = 100 × 3 dollars = 300 dollars; afterwards 150 units at 1 dollar of profit each = 150 dollars, which is half.",
+  "trap": "It rises by 20% is the change in revenue (0.8 × 1.5 = 1.2); profit falls because the margin shrinks from 0.3P to 0.1P.",
+  "time": 150
+ },
+ {
+  "id": "ps-ar-021",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Ratios & Proportions",
+  "diff": 1,
+  "stem": "In a class of 40 students, the ratio of boys to girls is 3 to 5. How many boys are in the class?",
+  "choices": [
+   "15",
+   "16",
+   "24",
+   "25",
+   "30"
+  ],
+  "answer": 0,
+  "explanation": "A ratio of 3 to 5 means the class splits into 3 + 5 = 8 equal parts, with 3 parts boys and 5 parts girls. Each part is 40/8 = 5 students. So there are 3 × 5 = 15 boys and 5 × 5 = 25 girls. Check: 15 + 25 = 40, and 15:25 simplifies to 3:5. Always add the ratio terms to find the number of parts in the whole.",
+  "trap": "24 treats 3/5 as the boys' share of the whole class (3/5 × 40), but 3/5 compares boys to girls, so the boys' share is 3/8.",
+  "time": 90
+ },
+ {
+  "id": "ps-ar-022",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Ratios & Proportions",
+  "diff": 1,
+  "stem": "If 4 pens cost 6 dollars, how many dollars do 14 pens cost at the same price per pen?",
+  "choices": [
+   "15.00",
+   "17.50",
+   "18.00",
+   "21.00",
+   "24.00"
+  ],
+  "answer": 3,
+  "explanation": "Find the unit price first: 6 dollars ÷ 4 = 1.50 dollars per pen. Then 14 pens cost 14 × 1.50 dollars = 21.00 dollars. Alternatively, set up a proportion: 4/6 = 14/x, so 4x = 84 and x = 21. A rough check: 14 pens is 3.5 times 4 pens, and 3.5 × 6 dollars = 21 dollars. Proportions work as long as the price per item stays the same.",
+  "trap": "24.00 dollars is 4 times the price of 4 pens, which would buy 16 pens, not 14.",
+  "time": 90
+ },
+ {
+  "id": "ps-ar-023",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Ratios & Proportions",
+  "diff": 2,
+  "stem": "If a:b = 2:3 and b:c = 4:5, what is a:c?",
+  "choices": [
+   "2:5",
+   "1:2",
+   "8:15",
+   "2:3",
+   "15:8"
+  ],
+  "answer": 2,
+  "explanation": "Use the shared term b. Since a/b = 2/3 and b/c = 4/5, multiply: a/c = (a/b)(b/c) = (2/3)(4/5) = 8/15. Another way is to make b the same in both ratios: a:b = 2:3 = 8:12 and b:c = 4:5 = 12:15, so a:b:c = 8:12:15 and a:c = 8:15. Check with numbers: a = 8, b = 12, c = 15 satisfies both given ratios.",
+  "trap": "2:5 joins the outer numbers of the two ratios directly, which only works if the b terms are already equal.",
+  "time": 105
+ },
+ {
+  "id": "ps-ar-024",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Ratios & Proportions",
+  "diff": 2,
+  "stem": "On a map, 1 centimeter represents 2.5 kilometers. Two towns are 7.2 centimeters apart on the map. What is the actual distance between them, in kilometers?",
+  "choices": [
+   "25",
+   "18",
+   "14.4",
+   "9.7",
+   "2.88"
+  ],
+  "answer": 1,
+  "explanation": "The scale tells you that every centimeter on the map stands for 2.5 kilometers. So 7.2 centimeters stands for 7.2 × 2.5 kilometers. Compute: 7 × 2.5 = 17.5 and 0.2 × 2.5 = 0.5, so the total is 18 kilometers. As a check, 2.5 km per cm means 4 cm cover 10 km, and 7.2 cm is 1.8 times 4 cm, giving 1.8 × 10 = 18 km.",
+  "trap": "2.88 divides 7.2 by 2.5, which would apply only if 2.5 centimeters stood for 1 kilometer.",
+  "time": 105
+ },
+ {
+  "id": "ps-ar-025",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Ratios & Proportions",
+  "diff": 3,
+  "stem": "Twelve identical machines working together produce 720 units in 5 hours. At the same rate per machine, how many hours will 8 such machines need to produce 960 units?",
+  "choices": [
+   "6",
+   "7.5",
+   "8",
+   "9",
+   "10"
+  ],
+  "answer": 4,
+  "explanation": "Find the rate of one machine. Twelve machines make 720 units in 5 hours, so together they make 144 units per hour, and one machine makes 144/12 = 12 units per hour. Eight machines make 8 × 12 = 96 units per hour. To make 960 units they need 960/96 = 10 hours. A proportion check: fewer machines (8/12) and more output (960/720) give 5 × (12/8) × (960/720) = 5 × 1.5 × 4/3 = 10.",
+  "trap": "6 comes from adjusting only for the larger output and ignoring that fewer machines are working, or treating the machine count as directly rather than inversely proportional to time.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-026",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Ratios & Proportions",
+  "diff": 3,
+  "stem": "The ratio of red marbles to blue marbles in a bag is 5:3. After 12 red marbles are removed and 8 blue marbles are added, the bag holds equal numbers of red and blue marbles. How many marbles were in the bag originally?",
+  "choices": [
+   "32",
+   "48",
+   "64",
+   "72",
+   "80"
+  ],
+  "answer": 4,
+  "explanation": "Let the original counts be 5k red and 3k blue. After the changes there are 5k − 12 red and 3k + 8 blue, and these are equal: 5k − 12 = 3k + 8, so 2k = 20 and k = 10. The bag originally held 50 red and 30 blue marbles, for a total of 8k = 80. Check: 50 − 12 = 38 and 30 + 8 = 38, which are equal.",
+  "trap": "Some solvers set the red removed equal to the blue added in ratio terms or forget to total both colors, landing on a value such as 64; the question asks for all 8k = 80 marbles.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-027",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Ratios & Proportions",
+  "diff": 4,
+  "stem": "Container A holds milk and water in the ratio 3:1, and container B holds milk and water in the ratio 1:1. How many liters from container A must be combined with liters from container B to make 12 liters of a mixture with milk and water in the ratio 2:1?",
+  "choices": [
+   "3",
+   "4",
+   "6",
+   "8",
+   "9"
+  ],
+  "answer": 3,
+  "explanation": "Track the milk. A is 3/4 milk, B is 1/2 milk, and the target is 2/3 milk, so 12 liters of the target contain 8 liters of milk. If a liters come from A, then (3/4)a + (1/2)(12 − a) = 8. This gives 6 + a/4 = 8, so a = 8. Check: 8 liters of A contain 6 liters of milk, 4 liters of B contain 2 liters, and 6 + 2 = 8 liters of milk in 12 liters, a 2:1 ratio. The weighted-average method agrees: the distances from 2/3 to 1/2 and to 3/4 are 1/6 and 1/12, so A and B are used in the ratio 2:1.",
+  "trap": "4 liters of A reverses the weighted-average ratio; the mixture must use more of the container whose concentration is closer to the target.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-028",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Ratios & Proportions",
+  "diff": 4,
+  "stem": "In a class, the ratio of students who passed a test to students who failed was 7:3. If 6 of the students who failed had passed instead, the ratio would have been 4:1. How many students are in the class?",
+  "choices": [
+   "60",
+   "75",
+   "80",
+   "90",
+   "120"
+  ],
+  "answer": 0,
+  "explanation": "Let the numbers be 7k passed and 3k failed, so the class has 10k students. Moving 6 students from failed to passed gives 7k + 6 passed and 3k − 6 failed, with ratio 4:1. So 7k + 6 = 4(3k − 6) = 12k − 24, which gives 5k = 30 and k = 6. The class has 10 × 6 = 60 students. Check: 42 passed and 18 failed (7:3); after the change, 48 passed and 12 failed, which is 4:1.",
+  "trap": "75 or 80 can come from adding 6 to the failed group instead of subtracting it; the total stays fixed, so one group gains 6 and the other loses 6.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-029",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Ratios & Proportions",
+  "diff": 5,
+  "stem": "If x/(y + z) = y/(x + z) = z/(x + y) = k, where x + y + z ≠ 0 and none of the denominators is 0, what is the value of k?",
+  "choices": [
+   "−1",
+   "1/3",
+   "1/2",
+   "1",
+   "2"
+  ],
+  "answer": 2,
+  "explanation": "From the three equations, x = k(y + z), y = k(x + z) and z = k(x + y). Add them: x + y + z = k(2x + 2y + 2z) = 2k(x + y + z). Because x + y + z ≠ 0, divide both sides by it to get 1 = 2k, so k = 1/2. Picking numbers confirms it: x = y = z = 1 gives 1/2 for each fraction. The condition x + y + z ≠ 0 matters, since without it values such as x = 1, y = 1, z = −2 would give k = −1.",
+  "trap": "−1 is the value in the excluded case x + y + z = 0, where every fraction equals −1; the given condition rules it out.",
+  "time": 150
+ },
+ {
+  "id": "ps-ar-030",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Exponents & Roots",
+  "diff": 1,
+  "stem": "What is the value of 2³ × 2⁵ ÷ 2⁴?",
+  "choices": [
+   "32",
+   "16",
+   "8",
+   "4",
+   "2"
+  ],
+  "answer": 1,
+  "explanation": "When powers have the same base, add exponents to multiply and subtract exponents to divide. So 2³ × 2⁵ = 2⁸, and 2⁸ ÷ 2⁴ = 2⁴ = 16. Check by direct computation: 8 × 32 = 256, and 256 ÷ 16 = 16. Working with exponents first keeps the numbers small and avoids arithmetic errors, which matters on an exam without a calculator.",
+  "trap": "32 comes from multiplying 2³ × 2⁵ correctly but then dividing by 2⁴ as if it were 2³; the exponent is 3 + 5 − 4 = 4.",
+  "time": 90
+ },
+ {
+  "id": "ps-ar-031",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Exponents & Roots",
+  "diff": 1,
+  "stem": "What is the value of √50 + √18?",
+  "choices": [
+   "5√2",
+   "2√17",
+   "6√2",
+   "7√2",
+   "8√2"
+  ],
+  "answer": 4,
+  "explanation": "Simplify each root by pulling out perfect-square factors. √50 = √(25 × 2) = 5√2 and √18 = √(9 × 2) = 3√2. Both are multiples of √2, so they combine like like terms: 5√2 + 3√2 = 8√2. As an estimate, √50 ≈ 7.07 and √18 ≈ 4.24, totaling about 11.3, and 8√2 ≈ 8 × 1.414 ≈ 11.3.",
+  "trap": "2√17 equals √68, which comes from adding the numbers under the roots; √a + √b is not equal to √(a + b).",
+  "time": 90
+ },
+ {
+  "id": "ps-ar-032",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Exponents & Roots",
+  "diff": 2,
+  "stem": "What is the value of (3⁴ + 3⁴ + 3⁴)/3³?",
+  "choices": [
+   "1",
+   "3",
+   "9",
+   "27",
+   "3⁹"
+  ],
+  "answer": 2,
+  "explanation": "Adding three equal terms is the same as multiplying by 3: 3⁴ + 3⁴ + 3⁴ = 3 × 3⁴ = 3⁵. Then 3⁵/3³ = 3² = 9. Direct check: 3⁴ = 81, so the numerator is 243, and 243/27 = 9. The key step is to factor the repeated term rather than trying to add exponents, which is not a valid rule for sums.",
+  "trap": "3 comes from treating 3⁴ + 3⁴ + 3⁴ as 3⁴ and dividing by 3³; the three equal terms multiply 3⁴ by 3.",
+  "time": 105
+ },
+ {
+  "id": "ps-ar-033",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Exponents & Roots",
+  "diff": 2,
+  "stem": "What is the value of 16^(3/4)?",
+  "choices": [
+   "8",
+   "12",
+   "16",
+   "32",
+   "64"
+  ],
+  "answer": 0,
+  "explanation": "A fractional exponent m/n means take the n-th root, then raise it to the power m. The fourth root of 16 is 2, because 2⁴ = 16. Then 2³ = 8. So 16^(3/4) = 8. Another way: 16 = 2⁴, so 16^(3/4) = 2^(4 × 3/4) = 2³ = 8. Taking the root first keeps the numbers small.",
+  "trap": "12 multiplies 16 by 3/4, but a fractional exponent signals a root and a power, not multiplication.",
+  "time": 105
+ },
+ {
+  "id": "ps-ar-034",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Exponents & Roots",
+  "diff": 3,
+  "stem": "What is the value of (2²⁰ − 2¹⁸)/2¹⁷?",
+  "choices": [
+   "6",
+   "8",
+   "12",
+   "16",
+   "24"
+  ],
+  "answer": 0,
+  "explanation": "Factor out the smaller power in the numerator: 2²⁰ − 2¹⁸ = 2¹⁸(2² − 1) = 2¹⁸ × 3. Divide by 2¹⁷: 2¹⁸ × 3/2¹⁷ = 2 × 3 = 6. Alternatively, divide each term separately: 2²⁰/2¹⁷ − 2¹⁸/2¹⁷ = 2³ − 2 = 8 − 2 = 6. Both methods avoid large numbers.",
+  "trap": "8 comes from dividing only the first term (2²⁰/2¹⁷ = 2³) and ignoring the subtracted 2¹⁸.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-035",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Exponents & Roots",
+  "diff": 3,
+  "stem": "Which of the following is equal to 1/(√5 − 2)?",
+  "choices": [
+   "√5 − 2",
+   "(√5 + 2)/3",
+   "√5 + 1",
+   "√5 + 2",
+   "2√5 + 4"
+  ],
+  "answer": 3,
+  "explanation": "Rationalize the denominator by multiplying the top and bottom by the conjugate √5 + 2. The denominator becomes (√5 − 2)(√5 + 2) = 5 − 4 = 1. The numerator becomes √5 + 2. So 1/(√5 − 2) = (√5 + 2)/1 = √5 + 2. Estimate check: √5 ≈ 2.236, so √5 − 2 ≈ 0.236 and its reciprocal is about 4.24, which matches √5 + 2 ≈ 4.236.",
+  "trap": "(√5 + 2)/3 uses 5 − 2 = 3 for the denominator, but the conjugate product is (√5)² − 2² = 5 − 4 = 1.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-036",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Exponents & Roots",
+  "diff": 4,
+  "stem": "If 9^x − 9^(x − 1) = 216, what is the value of 4^x?",
+  "choices": [
+   "8",
+   "16",
+   "24",
+   "27",
+   "32"
+  ],
+  "answer": 4,
+  "explanation": "Factor out the smaller power: 9^x − 9^(x − 1) = 9^(x − 1)(9 − 1) = 8 × 9^(x − 1). So 8 × 9^(x − 1) = 216, which gives 9^(x − 1) = 27. Write both sides with base 3: 3^(2x − 2) = 3³, so 2x − 2 = 3 and x = 5/2. Then 4^x = 4^(5/2) = (√4)⁵ = 2⁵ = 32. Check: 9^(5/2) = 243 and 9^(3/2) = 27, and 243 − 27 = 216.",
+  "trap": "16 results from guessing x = 2 because 9² = 81 looks close; x is not an integer here, and 4^(5/2) = 32.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-037",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Exponents & Roots",
+  "diff": 5,
+  "stem": "Which of the following is greatest?",
+  "choices": [
+   "2⁹⁰",
+   "5⁴⁰",
+   "7³⁰",
+   "10²⁵",
+   "3⁶⁰"
+  ],
+  "answer": 4,
+  "explanation": "Rewrite every number as a power with the same exponent, 10, so only the bases need comparing. 2⁹⁰ = (2⁹)¹⁰ = 512¹⁰, 5⁴⁰ = (5⁴)¹⁰ = 625¹⁰, 7³⁰ = (7³)¹⁰ = 343¹⁰, 10²⁵ = (10^2.5)¹⁰ ≈ 316¹⁰ and 3⁶⁰ = (3⁶)¹⁰ = 729¹⁰. The largest base is 729, so 3⁶⁰ is greatest. The exponent 10 works because it divides 90, 40, 30 and 60; 10²⁵ needs a non-integer exponent, but 10^2.5 = 100√10 ≈ 316 is clearly the smallest base.",
+  "trap": "2⁹⁰ is tempting because it has the largest exponent, but a larger exponent does not guarantee a larger number when the base is much smaller.",
+  "time": 150
+ },
+ {
+  "id": "ps-ar-038",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Exponents & Roots",
+  "diff": 4,
+  "stem": "How many digits does the integer 4¹² × 5²⁰ have?",
+  "choices": [
+   "16",
+   "18",
+   "20",
+   "21",
+   "22"
+  ],
+  "answer": 4,
+  "explanation": "Rewrite 4¹² as 2²⁴. Then 2²⁴ × 5²⁰ = 2⁴ × (2²⁰ × 5²⁰) = 16 × 10²⁰. Multiplying 16 by 10²⁰ writes 16 followed by 20 zeros, which is 2 + 20 = 22 digits. The trick is to pair each 2 with a 5 to form a 10; the unpaired factors (here 2⁴ = 16) give the leading digits.",
+  "trap": "20 counts only the zeros from 10²⁰ and forgets the two digits of the leading 16.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-039",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Exponents & Roots",
+  "diff": 5,
+  "stem": "If x > 0 and √x + 1/√x = 3, what is the value of x² + 1/x²?",
+  "choices": [
+   "49",
+   "47",
+   "45",
+   "9",
+   "7"
+  ],
+  "answer": 1,
+  "explanation": "Square the given equation: (√x + 1/√x)² = x + 2 + 1/x = 9, so x + 1/x = 7. Square again: (x + 1/x)² = x² + 2 + 1/x² = 49, so x² + 1/x² = 47. Each squaring creates a middle term of 2 because the product of a number and its reciprocal is 1. Solving for x directly is possible (x = (7 + 3√5)/2) but much slower.",
+  "trap": "49 is (x + 1/x)², which still includes the middle term 2; subtracting it gives 47.",
+  "time": 150
+ },
+ {
+  "id": "ps-ar-040",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Exponents & Roots",
+  "diff": 5,
+  "stem": "√(7 + 4√3) is equal to which of the following?",
+  "choices": [
+   "1 + √3",
+   "2 + √3",
+   "1 + 2√3",
+   "√7 + 2",
+   "√7 + 2√3"
+  ],
+  "answer": 1,
+  "explanation": "Look for a and b with (a + b√3)² = 7 + 4√3. Expanding gives a² + 3b² + 2ab√3, so we need a² + 3b² = 7 and 2ab = 4. Try a = 2, b = 1: 4 + 3 = 7 and 2 × 2 × 1 = 4. So 7 + 4√3 = (2 + √3)², and since 2 + √3 is positive, √(7 + 4√3) = 2 + √3. Estimate check: 7 + 4(1.732) ≈ 13.93, whose root is about 3.73, matching 2 + 1.732.",
+  "trap": "√7 + 2 takes the root of each piece separately, but the square root of a sum is not the sum of the square roots.",
+  "time": 150
+ },
+ {
+  "id": "ps-ar-041",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Order of Operations & Estimation",
+  "diff": 1,
+  "stem": "What is the value of 18 − 6 ÷ 3 × 2 + 4?",
+  "choices": [
+   "6",
+   "12",
+   "14",
+   "18",
+   "21"
+  ],
+  "answer": 3,
+  "explanation": "Do multiplication and division before addition and subtraction, working from left to right within each level. First 6 ÷ 3 = 2, then 2 × 2 = 4. The expression becomes 18 − 4 + 4. Now add and subtract from left to right: 18 − 4 = 14, and 14 + 4 = 18. Multiplication and division have equal priority, so neither one automatically goes first; the left-to-right rule decides.",
+  "trap": "21 comes from computing 3 × 2 before the division, giving 6 ÷ 6 = 1 and 18 − 1 + 4 = 21; division and multiplication are done left to right.",
+  "time": 90
+ },
+ {
+  "id": "ps-ar-042",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Order of Operations & Estimation",
+  "diff": 2,
+  "stem": "What is the value of [12 − (5 − 8)²] ÷ 3 − 2³?",
+  "choices": [
+   "−15",
+   "−7",
+   "−1",
+   "1",
+   "3"
+  ],
+  "answer": 1,
+  "explanation": "Start inside the innermost parentheses: 5 − 8 = −3. Square it: (−3)² = 9. Inside the brackets: 12 − 9 = 3. Divide: 3 ÷ 3 = 1. Evaluate the exponent: 2³ = 8. Finally, 1 − 8 = −7. The order is parentheses, exponents, multiplication and division, then addition and subtraction, and the square of a negative number in parentheses is positive.",
+  "trap": "−1 comes from treating (−3)² as −9, which gives (12 + 9) ÷ 3 − 8 = −1; a negative number squared inside parentheses is positive.",
+  "time": 105
+ },
+ {
+  "id": "ps-ar-043",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Order of Operations & Estimation",
+  "diff": 2,
+  "stem": "Which of the following is closest to (49.8 × 0.402)/1.98?",
+  "choices": [
+   "0.4",
+   "1",
+   "4",
+   "10",
+   "40"
+  ],
+  "answer": 3,
+  "explanation": "Round each number to a convenient value: 49.8 ≈ 50, 0.402 ≈ 0.4 and 1.98 ≈ 2. Then the expression is about (50 × 0.4)/2 = 20/2 = 10. The rounding errors are tiny and partly cancel (50 and 0.4 are slightly larger than the originals, and 2 is also slightly larger), so the exact value, about 10.1, is very close to 10. With answer choices spread by factors of about 2.5 to 4, this level of rounding is more than enough.",
+  "trap": "40 multiplies by 2 instead of dividing, or misplaces the decimal in 0.402; keep track of whether each rounded number is in the numerator or the denominator.",
+  "time": 105
+ },
+ {
+  "id": "ps-ar-044",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Order of Operations & Estimation",
+  "diff": 3,
+  "stem": "Which of the following is closest to (0.0039 × 81,000)/(0.0062 × 49)?",
+  "choices": [
+   "10",
+   "100",
+   "1,000",
+   "10,000",
+   "100,000"
+  ],
+  "answer": 2,
+  "explanation": "Round to one significant figure and use powers of 10. Numerator: 0.0039 × 81,000 ≈ 0.004 × 80,000 = 320. Denominator: 0.0062 × 49 ≈ 0.006 × 50 = 0.3. The quotient is about 320/0.3 ≈ 1,070, which is closest to 1,000. The exact value is about 1,040. Because the choices differ by factors of 10, only the order of magnitude matters, so careful decimal placement is the main task.",
+  "trap": "100 or 10,000 comes from losing a power of 10 when moving decimals, typically by treating 0.0039 or 0.0062 as having one more or one fewer zero.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-045",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Order of Operations & Estimation",
+  "diff": 3,
+  "stem": "What is the value of 1 − (1 − (1 − (1 − 1/2)⁻¹)⁻¹)⁻¹?",
+  "choices": [
+   "−1",
+   "0",
+   "1/2",
+   "1",
+   "2"
+  ],
+  "answer": 2,
+  "explanation": "Work from the innermost parentheses outward, remembering that a⁻¹ = 1/a. First, 1 − 1/2 = 1/2, and (1/2)⁻¹ = 2. Next, 1 − 2 = −1, and (−1)⁻¹ = −1. Next, 1 − (−1) = 2, and 2⁻¹ = 1/2. Finally, 1 − 1/2 = 1/2. Each step alternates between subtracting from 1 and taking a reciprocal, so writing down each intermediate value keeps the signs under control.",
+  "trap": "0 or 2 usually comes from a sign error at 1 − (−1), which equals 2, not 0.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-046",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Order of Operations & Estimation",
+  "diff": 3,
+  "stem": "What is the value of (2⁻¹ + 3⁻¹)⁻¹ ÷ (2⁻¹ − 3⁻¹)⁻¹?",
+  "choices": [
+   "1/6",
+   "1/5",
+   "5/6",
+   "5",
+   "6"
+  ],
+  "answer": 1,
+  "explanation": "Evaluate each bracket. 2⁻¹ + 3⁻¹ = 1/2 + 1/3 = 5/6, so its reciprocal is 6/5. 2⁻¹ − 3⁻¹ = 1/2 − 1/3 = 1/6, so its reciprocal is 6. Divide: (6/5) ÷ 6 = 6/5 × 1/6 = 1/5. A shortcut: dividing by (1/6)⁻¹ is the same as multiplying by 1/6, so the expression equals (1/6)/(5/6) = 1/5.",
+  "trap": "5 is the reciprocal of the correct answer; it comes from dividing the second quantity by the first instead of the first by the second.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-047",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Order of Operations & Estimation",
+  "diff": 4,
+  "stem": "Which of the following is closest to (3.01)⁴ − (2.99)⁴?",
+  "choices": [
+   "0.08",
+   "0.36",
+   "1.08",
+   "2.16",
+   "4.32"
+  ],
+  "answer": 3,
+  "explanation": "Factor as a difference of squares twice: a⁴ − b⁴ = (a − b)(a + b)(a² + b²). Here a − b = 0.02, a + b = 6 and a² + b² ≈ 9 + 9 = 18. The product is 0.02 × 6 × 18 = 2.16. The exact value is 2.160024, so 2.16 is the closest choice. Alternative: the change in x⁴ near x = 3 is about 4x³ × (change in x) = 4 × 27 × 0.02 = 2.16.",
+  "trap": "1.08 uses only half the gap (0.01 instead of 0.02), as if measuring from 3 to 3.01 rather than from 2.99 to 3.01.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-048",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Order of Operations & Estimation",
+  "diff": 5,
+  "stem": "Which of the following is closest to √1,000,001 − √999,999?",
+  "choices": [
+   "0.001",
+   "0.0005",
+   "0.0001",
+   "0.00001",
+   "0.000005"
+  ],
+  "answer": 0,
+  "explanation": "Multiply and divide by the conjugate: √a − √b = (a − b)/(√a + √b). Here a − b = 1,000,001 − 999,999 = 2, and √a + √b is just about 1,000 + 1,000 = 2,000. So the difference is about 2/2,000 = 0.001. Both roots are within 0.0005 of 1,000, so the denominator is essentially exactly 2,000, and the estimate is extremely accurate.",
+  "trap": "0.0005 is the gap between √1,000,001 and 1,000 alone; the question asks for the gap between two roots that sit on opposite sides of 1,000.",
+  "time": 150
+ },
+ {
+  "id": "ps-ar-049",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Order of Operations & Estimation",
+  "diff": 5,
+  "stem": "Let S = 1/101 + 1/102 + 1/103 + ... + 1/200. Which of the following is true?",
+  "choices": [
+   "S < 0.4",
+   "0.4 < S < 0.6",
+   "0.6 < S < 0.8",
+   "0.8 < S < 1.0",
+   "S > 1.0"
+  ],
+  "answer": 2,
+  "explanation": "S has 100 terms. Splitting into two halves gives bounds that are too loose, so split into four groups of 25 terms. In each group, every term is at most the first term and at least the last term. Upper bound: 25/101 + 25/126 + 25/151 + 25/176 ≈ 0.248 + 0.198 + 0.166 + 0.142 ≈ 0.754. Lower bound: 25/125 + 25/150 + 25/175 + 25/200 = 0.2 + 0.167 + 0.143 + 0.125 ≈ 0.635. So 0.635 < S < 0.754, which means 0.6 < S < 0.8. (The actual value is about 0.69.)",
+  "trap": "0.4 < S < 0.6 is tempting if one estimates every term as 1/200 (giving 0.5), which badly understates the early terms near 1/100.",
+  "time": 150
+ },
+ {
+  "id": "ps-ar-050",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Absolute Value",
+  "diff": 1,
+  "stem": "What is the value of |−7| − |3 − 10| + |−2|?",
+  "choices": [
+   "−16",
+   "−12",
+   "−2",
+   "2",
+   "16"
+  ],
+  "answer": 3,
+  "explanation": "Evaluate each absolute value first. |−7| = 7. For |3 − 10|, compute inside first: 3 − 10 = −7, and |−7| = 7. |−2| = 2. Now combine: 7 − 7 + 2 = 2. Absolute value bars act like parentheses, so always simplify the expression inside before taking the absolute value, then apply the signs outside the bars.",
+  "trap": "16 comes from treating − |3 − 10| as − (−7) = +7; the absolute value is 7, and the minus sign outside makes it −7.",
+  "time": 90
+ },
+ {
+  "id": "ps-ar-051",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Absolute Value",
+  "diff": 2,
+  "stem": "What is the sum of all values of x for which |x − 3| = 5?",
+  "choices": [
+   "8",
+   "6",
+   "2",
+   "0",
+   "−6"
+  ],
+  "answer": 1,
+  "explanation": "|x − 3| = 5 means x is 5 units away from 3 on the number line. So x − 3 = 5, giving x = 8, or x − 3 = −5, giving x = −2. The sum is 8 + (−2) = 6. Shortcut: the two solutions are symmetric around 3, so their sum is always 2 × 3 = 6, no matter what positive number is on the right side.",
+  "trap": "8 is only the positive solution; the equation also has the solution x = −2.",
+  "time": 105
+ },
+ {
+  "id": "ps-ar-052",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Absolute Value",
+  "diff": 2,
+  "stem": "How many integers x satisfy |x − 4| ≤ 3?",
+  "choices": [
+   "3",
+   "4",
+   "5",
+   "6",
+   "7"
+  ],
+  "answer": 4,
+  "explanation": "|x − 4| ≤ 3 means x is at most 3 units from 4, so −3 ≤ x − 4 ≤ 3, which gives 1 ≤ x ≤ 7. The integers from 1 to 7 inclusive number 7 − 1 + 1 = 7. Listing them confirms: 1, 2, 3, 4, 5, 6, 7. With a non-strict inequality (≤), both endpoints are included.",
+  "trap": "6 comes from computing 7 − 1 and forgetting to add 1 for the inclusive count.",
+  "time": 105
+ },
+ {
+  "id": "ps-ar-053",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Absolute Value",
+  "diff": 3,
+  "stem": "What is the sum of all solutions of |2x + 1| = |x − 5|?",
+  "choices": [
+   "−6",
+   "−14/3",
+   "−4/3",
+   "4/3",
+   "22/3"
+  ],
+  "answer": 1,
+  "explanation": "Two absolute values are equal when the expressions inside are equal or are opposites. Case 1: 2x + 1 = x − 5 gives x = −6. Case 2: 2x + 1 = −(x − 5) = −x + 5 gives 3x = 4, so x = 4/3. Check: x = −6 gives |−11| = |−11|, and x = 4/3 gives |11/3| = |−11/3|. The sum is −6 + 4/3 = −18/3 + 4/3 = −14/3.",
+  "trap": "−6 or 4/3 alone comes from solving only one case; both cases give valid solutions here.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-054",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Absolute Value",
+  "diff": 3,
+  "stem": "If x and y are integers with |x + 2| < 5 and |y − 1| < 3, what is the greatest possible value of x − y?",
+  "choices": [
+   "3",
+   "4",
+   "5",
+   "6",
+   "8"
+  ],
+  "answer": 0,
+  "explanation": "Solve each inequality. |x + 2| < 5 gives −7 < x < 3, so the integer x is at most 2. |y − 1| < 3 gives −2 < y < 4, so the integer y is at least −1. To make x − y as large as possible, take the largest x and the smallest y: 2 − (−1) = 3. The strict inequalities exclude the endpoints 3 and −2.",
+  "trap": "5 uses the endpoints x = 3 and y = −2, but the strict inequalities exclude both values.",
+  "time": 120
+ },
+ {
+  "id": "ps-ar-055",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Absolute Value",
+  "diff": 4,
+  "stem": "What is the product of all values of x that satisfy |x| + |x − 4| = 10?",
+  "choices": [
+   "−21",
+   "−12",
+   "−3",
+   "10",
+   "21"
+  ],
+  "answer": 0,
+  "explanation": "Split the number line at 0 and 4. For x ≥ 4: x + x − 4 = 10, so x = 7. For 0 ≤ x < 4: x + 4 − x = 4, which never equals 10, so there is no solution there. For x < 0: −x + 4 − x = 10, so x = −3. The solutions are 7 and −3, and their product is −21. Geometrically, the sum of the distances from x to 0 and to 4 is 10, so x must be 3 units outside the segment on either side.",
+  "trap": "21 drops the negative sign of the solution x = −3.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-056",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Absolute Value",
+  "diff": 4,
+  "stem": "What is the minimum value of |x − 1| + |x − 3| + |x − 8| over all real numbers x?",
+  "choices": [
+   "0",
+   "5",
+   "7",
+   "8",
+   "9"
+  ],
+  "answer": 2,
+  "explanation": "The expression is the total distance from x to the points 1, 3 and 8. A sum of distances to an odd number of points is smallest at the middle point, the median, which is 3. At x = 3 the total is 2 + 0 + 5 = 7. Moving x either way from 3 moves it farther from two of the points and closer to only one, so the total increases. For comparison, x = 4 (the mean) gives 3 + 1 + 4 = 8.",
+  "trap": "8 is the value at the mean, x = 4; a sum of absolute deviations is minimized at the median, not the mean.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-057",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Absolute Value",
+  "diff": 4,
+  "stem": "If |x − 3| = 3 − x and |x + 2| = x + 2, how many integer values can x take?",
+  "choices": [
+   "Infinitely many",
+   "8",
+   "7",
+   "6",
+   "5"
+  ],
+  "answer": 3,
+  "explanation": "|a| = −a exactly when a ≤ 0, and |a| = a exactly when a ≥ 0. The first equation says |x − 3| = −(x − 3), so x − 3 ≤ 0 and x ≤ 3. The second says x + 2 ≥ 0, so x ≥ −2. Together, −2 ≤ x ≤ 3. The integers in this range are −2, −1, 0, 1, 2 and 3, which is 6 values. Both endpoints are allowed because |0| = 0 = −0.",
+  "trap": "5 excludes one endpoint, usually x = 3 or x = −2, but the expression inside can equal 0 in both conditions.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-058",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Absolute Value",
+  "diff": 4,
+  "stem": "How many ordered pairs of integers (x, y) satisfy |x| + |y| = 5?",
+  "choices": [
+   "11",
+   "16",
+   "20",
+   "21",
+   "25"
+  ],
+  "answer": 2,
+  "explanation": "Count by the value of |x|. If |x| = 0, then |y| = 5, giving 2 pairs. If |x| = 5, then y = 0, giving 2 pairs. For |x| = 1, 2, 3 or 4, x has 2 choices and y has 2 choices (since |y| is 4, 3, 2 or 1), giving 4 pairs each, or 16 in total. The total is 2 + 2 + 16 = 20. In general |x| + |y| = n has 4n integer solutions for n ≥ 1.",
+  "trap": "21 counts the pair with x = 0 and the pair with y = 0 as if they each had an extra sign option; 0 has only one sign.",
+  "time": 135
+ },
+ {
+  "id": "ps-ar-059",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Absolute Value",
+  "diff": 5,
+  "stem": "How many integers x satisfy |x² − 5x| < 6?",
+  "choices": [
+   "2",
+   "4",
+   "5",
+   "6",
+   "7"
+  ],
+  "answer": 1,
+  "explanation": "Rewrite as −6 < x² − 5x < 6. Right side: x² − 5x − 6 < 0 factors as (x − 6)(x + 1) < 0, so −1 < x < 6, giving integers 0 to 5. Left side: x² − 5x + 6 > 0 factors as (x − 2)(x − 3) > 0, so x < 2 or x > 3, which removes x = 2 and x = 3. The integers that remain are 0, 1, 4 and 5, which is 4. Quick check: x = 2 gives |4 − 10| = 6, which is not less than 6.",
+  "trap": "6 counts all integers from 0 to 5 and forgets that x = 2 and x = 3 make x² − 5x = −6, which fails the strict inequality.",
+  "time": 150
+ },
+ {
+  "id": "ps-ar-060",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Arithmetic",
+  "sub": "Absolute Value",
+  "diff": 5,
+  "stem": "For how many integer values of k does the equation |x + 3| − |x − 2| = k have at least one real solution x?",
+  "choices": [
+   "6",
+   "10",
+   "11",
+   "12",
+   "Infinitely many"
+  ],
+  "answer": 2,
+  "explanation": "Let f(x) = |x + 3| − |x − 2|. For x ≤ −3, f(x) = −(x + 3) + (x − 2) = −5. For x ≥ 2, f(x) = (x + 3) − (x − 2) = 5. For −3 < x < 2, f(x) = (x + 3) + (x − 2) = 2x + 1, which rises steadily from −5 to 5. So f takes every value from −5 to 5 and no others. The integers k from −5 to 5 number 11. Geometrically, the difference of the distances from x to −3 and to 2 can never exceed the distance between those points, which is 5.",
+  "trap": "10 forgets k = 0 or one endpoint; the values −5 and 5 are reached for all x ≤ −3 and x ≥ 2, and 0 occurs at x = −1/2.",
+  "time": 150
+ }
+]

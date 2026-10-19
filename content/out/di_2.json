@@ -1,0 +1,2677 @@
+[
+ {
+  "id": "tpa-001",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 1,
+  "stem": "A stationery shop sells pens for USD 3 each and notebooks for USD 5 each. A customer bought 11 items in total, some pens and some notebooks, and paid exactly USD 41. In the table, select the number of pens the customer bought and the number of notebooks the customer bought. Make only two selections, one in each column.",
+  "cols": [
+   "Pens",
+   "Notebooks"
+  ],
+  "options": [
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "answer": [
+   4,
+   1
+  ],
+  "explanation": "Let p be the number of pens and n the number of notebooks. Then p + n = 11 and 3p + 5n = 41. Substitute n = 11 - p: 3p + 55 - 5p = 41, so -2p = -14 and p = 7. Then n = 11 - 7 = 4. Check: 7 × 3 + 4 × 5 = 21 + 20 = 41. A quick alternative is to start with all 11 items as pens (USD 33); each swap of a pen for a notebook adds USD 2, and you need USD 8 more, so make 4 swaps: 4 notebooks and 7 pens.",
+  "trap": "Choosing 4 pens and 7 notebooks reverses the roles; that combination costs 12 + 35 = USD 47, not USD 41.",
+  "time": 150
+ },
+ {
+  "id": "tpa-002",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 1,
+  "stem": "A café chain reports: \"In the three months after we installed self-order kiosks in our downtown store, the store's average order value was 12 percent higher than in the three months before installation. The kiosks therefore raised average order value.\" In the table, select the statement that would most strengthen the chain's conclusion and the statement that would most weaken it. Make only two selections, one in each column.",
+  "cols": [
+   "Most strengthens",
+   "Most weakens"
+  ],
+  "options": [
+   "The chain plans to install kiosks in its suburban stores next year.",
+   "Average order value at the chain's other downtown stores, none of which has kiosks, did not change over the same six months.",
+   "Several customers said that they found the kiosks easy to use.",
+   "The kiosks were installed in the same week that the chain raised its menu prices by about 12 percent.",
+   "The number of customers served each day at the downtown store rose slightly after the kiosks were installed."
+  ],
+  "answer": [
+   1,
+   3
+  ],
+  "explanation": "The argument infers cause from a before-and-after change at one store. A strengthener rules out other explanations for the rise: if comparable downtown stores without kiosks saw no change over the same period, general trends such as seasonality or a downtown boom are less likely to explain the 12 percent rise. A weakener offers another cause: a menu price increase of about 12 percent, made at the same time, could by itself produce a 12 percent higher order value with no help from the kiosks. The customer count concerns how many people ordered, not how much each order was worth. Ease of use and expansion plans do not bear on whether the kiosks caused the rise.",
+  "trap": "The rise in daily customers looks relevant, but the conclusion is about value per order, not number of orders.",
+  "time": 120
+ },
+ {
+  "id": "tpa-003",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 1,
+  "stem": "A community theater sold 20 tickets for a matinee. Adult tickets cost USD 12 and child tickets cost USD 7, and ticket revenue for the matinee was USD 190. In the table, select the number of adult tickets sold and the number of child tickets sold. Make only two selections, one in each column.",
+  "cols": [
+   "Adult tickets",
+   "Child tickets"
+  ],
+  "options": [
+   "6",
+   "8",
+   "10",
+   "12",
+   "14"
+  ],
+  "answer": [
+   2,
+   2
+  ],
+  "explanation": "Let a be adult tickets and c child tickets. Then a + c = 20 and 12a + 7c = 190. If all 20 tickets were child tickets, revenue would be 20 × 7 = USD 140. Each adult ticket adds USD 5 more than a child ticket, and the actual revenue is USD 50 higher, so a = 50 ÷ 5 = 10. Then c = 20 - 10 = 10. Check: 120 + 70 = 190. Both columns take the same value, which is allowed in Two-Part Analysis.",
+  "trap": "Test-takers often assume the two answers must differ and pick 12 and 8, which gives 144 + 56 = USD 200.",
+  "time": 150
+ },
+ {
+  "id": "tpa-004",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 1,
+  "stem": "A library board member wrote: \"Riverside Library should extend its weekend opening hours. Over the past two years, weekend visits have grown by 30 percent while weekday visits have declined. A staff survey also found that most employees would accept weekend shifts in exchange for a free weekday.\" In the table, select the statement that is the main conclusion of the argument and the statement that is offered as evidence for that conclusion. Make only two selections, one in each column.",
+  "cols": [
+   "Main conclusion",
+   "Evidence offered"
+  ],
+  "options": [
+   "Weekday visits to the library will continue to decline.",
+   "Most library employees prefer weekday shifts to weekend shifts.",
+   "Weekend visits to the library have grown by 30 percent over the past two years.",
+   "Extending weekend hours will cost less than the board expects.",
+   "Riverside Library should extend its weekend opening hours."
+  ],
+  "answer": [
+   4,
+   2
+  ],
+  "explanation": "The main conclusion is the claim the rest of the passage is meant to support: the library should extend its weekend hours. The growth in weekend visits is stated as a fact and is given as a reason for the change, so it is evidence. The claim that weekday visits will continue to decline is a prediction the author never makes; the passage reports only a past decline. The statement about staff preferring weekday shifts goes beyond the survey, which says only that staff would accept weekend shifts for a trade. Nothing in the passage mentions costs.",
+  "trap": "The prediction about weekday visits sounds like part of the reasoning, but the author describes only what has already happened.",
+  "time": 105
+ },
+ {
+  "id": "tpa-005",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 1,
+  "stem": "A company's combined quarterly budget for its Marketing and Operations departments is USD 30,000. The Marketing budget is USD 8,000 more than the Operations budget. In the table, select the Marketing budget and the Operations budget, in thousands of dollars. Make only two selections, one in each column.",
+  "cols": [
+   "Marketing (USD thousands)",
+   "Operations (USD thousands)"
+  ],
+  "options": [
+   "9",
+   "11",
+   "15",
+   "19",
+   "22"
+  ],
+  "answer": [
+   3,
+   1
+  ],
+  "explanation": "Let M and O be the budgets in thousands. M + O = 30 and M - O = 8. Adding the two equations gives 2M = 38, so M = 19. Then O = 30 - 19 = 11. Check: 19 - 11 = 8. A fast mental route: split the total evenly (15 each), then move half of the difference (4) from one side to the other: 15 + 4 = 19 and 15 - 4 = 11.",
+  "trap": "Selecting 22 and 8 uses the difference as one of the budgets; 8 is not even an option, and 22 + 8 is 30 but 22 - 8 is 14, not 8.",
+  "time": 150
+ },
+ {
+  "id": "tpa-006",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 2,
+  "stem": "A plant has two machines. Machine A produces 45 units per hour and Machine B produces 30 units per hour. For one order, the two machines together ran for a total of 13 machine-hours (hours of A plus hours of B) and produced exactly 465 units. In the table, select the number of hours Machine A ran and the number of hours Machine B ran. Make only two selections, one in each column.",
+  "cols": [
+   "Hours for Machine A",
+   "Hours for Machine B"
+  ],
+  "options": [
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9"
+  ],
+  "answer": [
+   1,
+   4
+  ],
+  "explanation": "Let a and b be the hours for A and B. Then a + b = 13 and 45a + 30b = 465. If B ran all 13 hours, output would be 13 × 30 = 390 units. Each hour shifted from B to A adds 15 units, and 465 - 390 = 75 extra units are needed, so a = 75 ÷ 15 = 5. Then b = 13 - 5 = 8. Check: 45 × 5 + 30 × 8 = 225 + 240 = 465.",
+  "trap": "Picking 8 hours for A and 5 for B swaps the machines and gives 360 + 150 = 510 units.",
+  "time": 150
+ },
+ {
+  "id": "tpa-007",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 2,
+  "stem": "A software company's chief operating officer argues: \"Last quarter, a pilot group of 40 engineers moved to a four-day, 32-hour week and shipped as many product features as they had in the previous quarter. Therefore, moving the entire 600-person company to a four-day week will not reduce our output.\" In the table, select the assumption on which the argument depends and the finding that would most weaken the argument. Make only two selections, one in each column.",
+  "cols": [
+   "Assumption required",
+   "Most weakens"
+  ],
+  "options": [
+   "The pilot group shipped more features than any other engineering team last quarter.",
+   "The engineers in the pilot were chosen at random from across the engineering department.",
+   "Most employees outside the pilot group would prefer a four-day week.",
+   "The way the pilot engineers' output responded to fewer hours is representative of how output across the rest of the company would respond.",
+   "During the pilot, other teams quietly took over the pilot group's support and maintenance work.",
+   "None of the company's main competitors has adopted a four-day week."
+  ],
+  "answer": [
+   3,
+   4
+  ],
+  "explanation": "The argument generalises from 40 engineers to all 600 staff, many of whom do different kinds of work. It must therefore assume that the pilot group's response to fewer hours is typical of the company; if it is not, the pilot result tells us little. The weakener reveals that the pilot result itself is misleading: if other teams absorbed the pilot group's support work, the engineers had more time for features, and company-wide output did not really hold steady. Random selection within engineering would slightly support the argument, not undermine it. Employee preferences, the group's relative productivity and competitors' policies do not affect whether output would fall.",
+  "trap": "Random selection of pilot engineers sounds like the needed assumption, but it is not required, and it covers only engineers rather than the whole company.",
+  "time": 150
+ },
+ {
+  "id": "tpa-008",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 2,
+  "stem": "A roaster blends a house coffee costing USD 8 per pound with a premium coffee costing USD 14 per pound to make 30 pounds of a blend whose ingredient cost averages exactly USD 10 per pound. In the table, select the number of pounds of house coffee and the number of pounds of premium coffee used. Make only two selections, one in each column.",
+  "cols": [
+   "House coffee (lb)",
+   "Premium coffee (lb)"
+  ],
+  "options": [
+   "5",
+   "10",
+   "15",
+   "20",
+   "25"
+  ],
+  "answer": [
+   3,
+   1
+  ],
+  "explanation": "Use the weighted-average idea. The target USD 10 is USD 2 above the house price and USD 4 below the premium price, so the amounts are in the inverse ratio 4 : 2, that is, house : premium = 2 : 1. Of 30 pounds, house coffee is 20 and premium is 10. Algebra check: 8h + 14p = 30 × 10 = 300 and h + p = 30, so 8h + 420 - 14h = 300, giving h = 20 and p = 10.",
+  "trap": "Choosing 10 pounds of house and 20 of premium applies the distances directly instead of inversely, which gives an average of USD 12 per pound.",
+  "time": 150
+ },
+ {
+  "id": "tpa-009",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 2,
+  "stem": "Last year a regional grocery chain's revenue rose 15 percent, but its net profit fell 10 percent. In the table, select the statement that would best help explain the rise in revenue and the statement that would best help explain the fall in profit. Make only two selections, one in each column.",
+  "cols": [
+   "Explains rise in revenue",
+   "Explains fall in profit"
+  ],
+  "options": [
+   "The number of members in the chain's loyalty programme did not change during the year.",
+   "Several customers praised the chain's new in-store bakery.",
+   "The chain operated the same number of stores at the end of the year as at the start.",
+   "The chain's electricity and refrigeration costs more than doubled after a fixed-price energy contract expired.",
+   "The chain raised shelf prices by about 14 percent during the year, in line with regional food inflation.",
+   "The chain moved its head office to a smaller building with lower rent."
+  ],
+  "answer": [
+   4,
+   3
+  ],
+  "explanation": "Revenue is price times volume, so a roughly 14 percent rise in shelf prices accounts for most of a 15 percent revenue increase even if the number of items sold was flat. Profit is revenue minus costs, so profit can fall while revenue rises only if costs rose faster; a more than doubling of energy and refrigeration costs, a major expense for a grocer, explains that. Lower office rent would raise profit, the opposite of what needs explaining. Unchanged loyalty membership and an unchanged store count explain neither change. Praise for the bakery is too vague to account for a 15 percent revenue jump.",
+  "trap": "The lower head-office rent concerns costs, but it would push profit up, not down.",
+  "time": 120
+ },
+ {
+  "id": "tpa-010",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 2,
+  "stem": "A cloud storage plan charges a fixed monthly fee plus a constant charge per gigabyte (GB) stored. A client stored 120 GB in March and was billed USD 410; the client stored 200 GB in April and was billed USD 570. In the table, select the fixed monthly fee, in dollars, and the charge per GB, in dollars. Make only two selections, one in each column.",
+  "cols": [
+   "Fixed monthly fee (USD)",
+   "Charge per GB (USD)"
+  ],
+  "options": [
+   "2",
+   "2.5",
+   "3",
+   "150",
+   "170",
+   "190"
+  ],
+  "answer": [
+   4,
+   0
+  ],
+  "explanation": "The fixed fee is the same both months, so the change in the bill comes only from the extra storage. April used 200 - 120 = 80 more GB and cost 570 - 410 = USD 160 more, so the rate is 160 ÷ 80 = USD 2 per GB. Then the fixed fee is 410 - 120 × 2 = 410 - 240 = USD 170. Check with April: 170 + 200 × 2 = 570.",
+  "trap": "Dividing a single bill by its storage (410 ÷ 120, about 3.4) ignores the fixed fee and suggests the USD 3 rate.",
+  "time": 150
+ },
+ {
+  "id": "tpa-011",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 2,
+  "stem": "At Halvorsen Logistics, every driver who completed the advanced safety course last year received a bonus. No driver who had an accident last year received a bonus. Some drivers who received a bonus work night shifts. In the table, select the statement that must be true if the information above is true and the statement that cannot be true if the information above is true. Make only two selections, one in each column.",
+  "cols": [
+   "Must be true",
+   "Cannot be true"
+  ],
+  "options": [
+   "One driver both completed the advanced safety course and had an accident last year.",
+   "Every driver who received a bonus completed the advanced safety course.",
+   "Some night-shift drivers had accidents last year.",
+   "All night-shift drivers received a bonus.",
+   "Some night-shift drivers did not complete the advanced safety course.",
+   "No driver who completed the advanced safety course had an accident last year."
+  ],
+  "answer": [
+   5,
+   0
+  ],
+  "explanation": "Chain the two rules. Course completed -> bonus, and accident -> no bonus, which is equivalent to bonus -> no accident. So course completed -> bonus -> no accident: no course completer had an accident. That must be true, and its direct contradiction, a driver who completed the course and had an accident, cannot be true. The claim that every bonus recipient completed the course reverses the first rule, so it might be false but could also be true. The statements about night-shift drivers are all possible: the information says only that some bonus recipients work nights, which leaves room for other night-shift drivers to have had accidents, to have skipped the course, or even for all of them to have received bonuses.",
+  "trap": "Every bonus recipient completing the course feels required, but the rule runs only from course to bonus, not from bonus to course.",
+  "time": 135
+ },
+ {
+  "id": "tpa-012",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 2,
+  "stem": "Two board members of a regional airline disagree about replacing its 50-seat turboprop aircraft with 120-seat jets. Ms. Ortiz argues that the switch will raise profit because larger jets have a lower operating cost per seat. Mr. Bell argues that the switch will lower profit on most of the airline's routes. In the table, select the finding that would most support Ms. Ortiz's position and the finding that would most support Mr. Bell's position. Make only two selections, one in each column.",
+  "cols": [
+   "Most supports Ortiz",
+   "Most supports Bell"
+  ],
+  "options": [
+   "On most of the airline's routes, the turboprops fly about half full even at peak times.",
+   "Fuel prices have been stable for the past two years.",
+   "On most of the airline's routes, the turboprops already fly with over 90 percent of seats filled, and passengers are regularly turned away.",
+   "The airline's pilots would need several weeks of training to fly the jets.",
+   "The airline's main airport plans to raise landing fees by the same percentage for all aircraft."
+  ],
+  "answer": [
+   2,
+   0
+  ],
+  "explanation": "A lower cost per seat helps only if the extra seats are sold. If the turboprops are almost always full and passengers are turned away, there is unmet demand that larger jets could capture, so Ortiz's cost advantage would turn into higher profit. If the turboprops fly half full, a 120-seat jet would fly mostly empty, so the cost per passenger, not per seat, would rise and profit would fall, which supports Bell. Stable fuel prices affect both aircraft types similarly. A few weeks of training is a one-time cost that does not decide the long-run question. Equal percentage fee rises affect both options in the same proportion.",
+  "trap": "Pilot retraining is a cost of switching, but it is small and temporary next to the route-by-route load factors.",
+  "time": 120
+ },
+ {
+  "id": "tpa-013",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 3,
+  "stem": "A retailer marks up the cost of a jacket by m percent to set its list price and later sells it at a discount of d percent off the list price. The final selling price is exactly 20 percent above the retailer's cost, and the discount percent d is exactly 30 less than the markup percent m. In the table, select the markup percent and the discount percent. Make only two selections, one in each column.",
+  "cols": [
+   "Markup percent (m)",
+   "Discount percent (d)"
+  ],
+  "options": [
+   "10",
+   "20",
+   "25",
+   "40",
+   "50",
+   "60"
+  ],
+  "answer": [
+   4,
+   1
+  ],
+  "explanation": "The price multipliers must satisfy (1 + m/100)(1 - d/100) = 1.2 with d = m - 30. Test the options in pairs that differ by 30: (40, 10) gives 1.4 × 0.9 = 1.26; (50, 20) gives 1.5 × 0.8 = 1.20, which works. Algebraically, with m as a decimal, (1 + m)(1.3 - m) = 1.2 simplifies to m² - 0.3m - 0.1 = 0, whose only positive root is m = 0.5. So the markup is 50 percent and the discount 20 percent.",
+  "trap": "The pair 60 and 25 also gives a 20 percent gain (1.6 × 0.75 = 1.2), but the two percents differ by 35, not 30.",
+  "time": 150
+ },
+ {
+  "id": "tpa-014",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 3,
+  "stem": "A workplace study found that office workers who used standing desks reported 20 percent fewer back complaints over a year than workers who used conventional desks. The researchers concluded that using a standing desk reduces back problems. In the table, select the statement that would most strengthen the researchers' conclusion and the statement that would most weaken it. Make only two selections, one in each column.",
+  "cols": [
+   "Most strengthens",
+   "Most weakens"
+  ],
+  "options": [
+   "The study included workers from several different companies.",
+   "Standing desks cost about twice as much as conventional desks.",
+   "Many workers who used standing desks reported more leg fatigue than other workers.",
+   "Workers in the study chose their own desks, and those who already had back pain mostly avoided standing desks because standing was uncomfortable for them.",
+   "Back complaints were measured by the same questionnaire for all participants.",
+   "In a follow-up, workers assigned at random to switch to standing desks reported fewer back complaints over the next year than colleagues who kept conventional desks."
+  ],
+  "answer": [
+   5,
+   3
+  ],
+  "explanation": "The study compares self-selected groups, so the key alternative explanation is that people with healthier backs chose standing desks. A randomised follow-up removes that self-selection: if randomly assigned standing-desk users still report fewer complaints, the desk itself is the most plausible cause. The weakener supplies exactly the self-selection story: if people with back pain avoided standing desks, the conventional-desk group started with more back problems, which could produce the 20 percent gap without any effect from the desks. Cost and leg fatigue are irrelevant to whether back problems fall. Using the same questionnaire and including several companies offer only minor support, much weaker than random assignment.",
+  "trap": "Including several companies sounds like support, but it addresses how widely the result applies, not whether the desks caused it.",
+  "time": 150
+ },
+ {
+  "id": "tpa-015",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 3,
+  "stem": "An event planner will seat exactly 100 guests using round tables that seat 8 and square tables that seat 6, with every seat at every table filled. The planner wants to use the smallest possible total number of tables. In the table, select the number of 8-seat tables and the number of 6-seat tables in the planner's arrangement. Make only two selections, one in each column.",
+  "cols": [
+   "8-seat tables",
+   "6-seat tables"
+  ],
+  "options": [
+   "2",
+   "4",
+   "6",
+   "8",
+   "11",
+   "14"
+  ],
+  "answer": [
+   4,
+   0
+  ],
+  "explanation": "Solve 8x + 6y = 100, or 4x + 3y = 50, in non-negative integers. Then 50 - 4x must be divisible by 3, so x = 2, 5, 8 or 11, giving y = 14, 10, 6 or 2. The totals are 16, 15, 14 and 13 tables. Because larger tables reduce the count, the minimum uses as many 8-seat tables as possible: 11 tables of 8 and 2 tables of 6, for 13 tables. Check: 88 + 12 = 100.",
+  "trap": "The pair 8 and 6 also seats exactly 100 guests, but it uses 14 tables rather than the minimum 13.",
+  "time": 150
+ },
+ {
+  "id": "tpa-016",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 3,
+  "stem": "The city accepts bids for its transit maintenance contract only from vendors that hold a national safety certification. Only firms with at least five years of operating history hold this certification. The city has accepted a bid from Ferrovia Services. In the table, select the statement that must be true if the information above is true and the statement that, if true, would show that at least one statement above is false. Make only two selections, one in each column.",
+  "cols": [
+   "Must be true",
+   "Would show a statement above is false"
+  ],
+  "options": [
+   "Ferrovia Services submitted the lowest bid the city received.",
+   "The city has rejected at least one bid for the contract.",
+   "Every firm with at least five years of operating history holds the certification.",
+   "Ferrovia Services has at least five years of operating history.",
+   "Some certified firms did not bid for the contract.",
+   "Ferrovia Services has been operating for only three years."
+  ],
+  "answer": [
+   3,
+   5
+  ],
+  "explanation": "Follow the chain: the bid was accepted -> Ferrovia holds the certification (only certified vendors' bids are accepted) -> Ferrovia has at least five years of operating history (only such firms hold it). So the five-year statement must be true. A statement that Ferrovia has been operating for only three years is incompatible with that result, so if it were true, one of the three original statements would have to be false. The claim that every five-year firm is certified reverses the second rule and is not guaranteed. The lowest-bid claim, uncertified non-bidders and rejected bids are all consistent with the information but not required by it.",
+  "trap": "The claim that every five-year firm holds the certification reverses the second rule, which says only that certification requires five years.",
+  "time": 150
+ },
+ {
+  "id": "tpa-017",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 3,
+  "stem": "Working together at their constant rates, Pump A and Pump B can drain a reservoir in 6 hours. Working alone, Pump A takes 5 fewer hours than Pump B to drain the reservoir. In the table, select the number of hours Pump A takes alone and the number of hours Pump B takes alone. Make only two selections, one in each column.",
+  "cols": [
+   "Pump A alone (hours)",
+   "Pump B alone (hours)"
+  ],
+  "options": [
+   "6",
+   "10",
+   "12",
+   "15",
+   "18",
+   "20"
+  ],
+  "answer": [
+   1,
+   3
+  ],
+  "explanation": "Only one pair of options differs by exactly 5 hours: 10 and 15. Check the combined rate: 1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6, so together they take 6 hours, as required. Algebraically, 1/a + 1/(a + 5) = 1/6 leads to a² - 7a - 30 = 0, or (a - 10)(a + 3) = 0, so a = 10 and b = 15.",
+  "trap": "Picking 12 and 12 treats the pumps as equal (each half of the work doubles 6 hours), ignoring that A is 5 hours faster.",
+  "time": 150
+ },
+ {
+  "id": "tpa-018",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 3,
+  "stem": "An analyst wrote: \"Some investors expect Taluna's share price to fall because its largest customer is switching suppliers. They point out that 'losing that customer will cut Taluna's revenue by about a fifth.' This view overlooks Taluna's new contract with a national retailer, which alone should replace the lost revenue within a year. So 'Taluna's revenue outlook does not justify a lower share price.'\" In the table, select the role played in the analyst's argument by the first quoted claim and the role played by the second quoted claim. Make only two selections, one in each column.",
+  "cols": [
+   "First quoted claim",
+   "Second quoted claim"
+  ],
+  "options": [
+   "It is an intermediate conclusion that the analyst supports with further evidence and then uses to support the main conclusion.",
+   "It is evidence the analyst uses to support the main conclusion.",
+   "It is a consideration offered in support of a position that the analyst rejects.",
+   "It is the main conclusion of the analyst's argument.",
+   "It is a finding that the analyst argues is inaccurate."
+  ],
+  "answer": [
+   2,
+   3
+  ],
+  "explanation": "The investors' position is that the share price will fall, and the first quoted claim, the expected one-fifth revenue cut, is their reason. The analyst does not dispute the revenue cut; the analyst argues that it will be offset by the new retail contract. So the first claim supports a position the analyst rejects, but it is not itself argued to be inaccurate. The second quoted claim follows from the offset argument and is introduced by 'So', with nothing further built on it; it is the main conclusion. It is not merely evidence, and it is not an intermediate step toward some further claim.",
+  "trap": "Calling the first claim a finding the analyst argues is inaccurate is tempting, but the analyst accepts the revenue cut and disputes only what it implies for the share price.",
+  "time": 165
+ },
+ {
+  "id": "tpa-019",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 3,
+  "stem": "An investor divided USD 10,000 between a savings account paying 4 percent simple annual interest and a bond fund paying 7 percent simple annual interest. After one year the two investments together earned USD 580 in interest. In the table, select the amount invested in the savings account and the amount invested in the bond fund. Make only two selections, one in each column.",
+  "cols": [
+   "Savings account (USD)",
+   "Bond fund (USD)"
+  ],
+  "options": [
+   "3,000",
+   "4,000",
+   "5,000",
+   "6,000",
+   "7,000"
+  ],
+  "answer": [
+   1,
+   3
+  ],
+  "explanation": "The blended return is 580 ÷ 10,000 = 5.8 percent. That is 1.8 points above 4 percent and 1.2 points below 7 percent, so the amounts are in the inverse ratio savings : bond = 1.2 : 1.8 = 2 : 3. Split USD 10,000 in the ratio 2 : 3 to get USD 4,000 in savings and USD 6,000 in the bond fund. Check: 160 + 420 = 580.",
+  "trap": "Choosing USD 6,000 in savings and USD 4,000 in bonds reverses the inverse ratio and earns only 240 + 280 = USD 520.",
+  "time": 150
+ },
+ {
+  "id": "tpa-020",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 3,
+  "stem": "A marine biologist hypothesises that the recent decline in parrotfish on Kerrin Reef has been caused mainly by increased sediment runoff from a new coastal resort rather than by fishing. In the table, select the finding that would most support the biologist's hypothesis and the finding that would most undermine it. Make only two selections, one in each column.",
+  "cols": [
+   "Most supports",
+   "Most undermines"
+  ],
+  "options": [
+   "Parrotfish numbers fell by a similar amount over the same period at a distant reef where sediment levels have not changed and no development has occurred.",
+   "Several other fish species on Kerrin Reef have had stable populations.",
+   "The resort employs a marine biologist to monitor the reef.",
+   "The parrotfish decline has been sharpest on the sections of the reef nearest the resort's drainage outlets and mildest on the sections farthest from them.",
+   "The resort opened two years ago."
+  ],
+  "answer": [
+   3,
+   0
+  ],
+  "explanation": "A causal hypothesis is supported when the effect tracks the proposed cause. If the decline is steepest near the drainage outlets and weakest far from them, the pattern matches the spread of sediment, which supports the runoff explanation. It is undermined when the effect appears without the cause: a similar decline on a distant reef with no new sediment suggests that some wider factor, such as fishing or water temperature, is at work. The opening date, the stability of other species and the resort's monitoring staff do not distinguish runoff from other causes.",
+  "trap": "Stable populations of other species can look like evidence against sediment, but sediment may affect parrotfish and their food without harming every species.",
+  "time": 120
+ },
+ {
+  "id": "tpa-021",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 3,
+  "stem": "A training center books its seminar room only in blocks of 45 minutes or 75 minutes. Last week the room was booked for exactly 600 minutes in total, using at least one block of each length. Among all combinations that satisfy these conditions, the number of 75-minute blocks was as large as possible. In the table, select the number of 45-minute blocks and the number of 75-minute blocks booked. Make only two selections, one in each column.",
+  "cols": [
+   "45-minute blocks",
+   "75-minute blocks"
+  ],
+  "options": [
+   "2",
+   "4",
+   "5",
+   "8",
+   "10"
+  ],
+  "answer": [
+   2,
+   2
+  ],
+  "explanation": "Divide 45a + 75b = 600 by 15 to get 3a + 5b = 40. Then 40 - 5b must be a positive multiple of 3. b = 2 gives a = 10; b = 5 gives a = 5; b = 8 gives a = 0, which is not allowed because at least one 45-minute block was used. So the largest possible b is 5, with a = 5. Both columns take the value 5.",
+  "trap": "Choosing 0 and 8 maximises the 75-minute blocks but breaks the at-least-one-of-each condition, and 0 is not offered; 10 and 2 satisfy the total but do not maximise the 75-minute blocks.",
+  "time": 165
+ },
+ {
+  "id": "tpa-022",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 4,
+  "stem": "Each day a bakery makes only cakes and pies. A cake earns USD 12 profit and uses 3 oven-hours and 1 labor-hour. A pie earns USD 8 profit and uses 1 oven-hour and 2 labor-hours. The bakery has at most 30 oven-hours and 28 labor-hours per day and makes only whole items. In the table, select the number of cakes and the number of pies that give the greatest possible daily profit. Make only two selections, one in each column.",
+  "cols": [
+   "Cakes",
+   "Pies"
+  ],
+  "options": [
+   "5",
+   "6",
+   "7",
+   "9",
+   "10",
+   "11"
+  ],
+  "answer": [
+   1,
+   5
+  ],
+  "explanation": "Profit peaks where both limits are nearly used. Solving 3c + p = 30 and c + 2p = 28 gives c = 6.4 and p = 10.8, so check whole numbers nearby. (6, 11): oven 18 + 11 = 29, labor 6 + 22 = 28, profit 72 + 88 = USD 160. (7, 9): oven 30, labor 25, profit 84 + 72 = USD 156. (6, 10): profit USD 152. (7, 10) needs 31 oven-hours, too many. (5, 11) earns only USD 148 and (5, 12) needs 29 labor-hours. The maximum is 6 cakes and 11 pies.",
+  "trap": "Rounding the corner point to 7 cakes and 9 pies feels natural, but it earns USD 156, less than the USD 160 from 6 cakes and 11 pies.",
+  "time": 180
+ },
+ {
+  "id": "tpa-023",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 4,
+  "stem": "Manager: \"Customer cancellations rose sharply in the quarter after we cut our support team by a third. Restoring the support team to its former size will bring cancellations back down.\" Analyst: \"Cancellations rose because a cheaper competitor launched that same quarter. Restoring the support team will not reduce cancellations.\" In the table, select the assumption on which the manager's argument depends and the assumption on which the analyst's argument depends. Make only two selections, one in each column.",
+  "cols": [
+   "Manager's assumption",
+   "Analyst's assumption"
+  ],
+  "options": [
+   "The competitor will soon raise its prices.",
+   "The competitor's product is cheaper than the company's product.",
+   "The support team was cut by more than half.",
+   "Customers who cancelled would have left even if support had remained as good as it was before the cuts.",
+   "At least some of the customers who cancelled did so partly because support became slower or worse after the cuts.",
+   "Cancellations will keep rising next year unless the company acts."
+  ],
+  "answer": [
+   4,
+   3
+  ],
+  "explanation": "The manager infers from timing that the support cuts caused the rise and that reversing them will reverse it. That requires that worse support drove at least some cancellations; if no one left because of support, restoring the team cannot help. The analyst claims restoring the team will not reduce cancellations at all, which requires that the departing customers would have left anyway even with the old level of support. Negating that assumption, so that better support would have kept some customers, destroys the analyst's claim. The competitor being cheaper is stated by the analyst, not assumed. The size of the cut (a third, not more than half), future trends and competitor pricing are not needed by either argument.",
+  "trap": "The competitor being cheaper looks central to the analyst's case, but the analyst states it outright, so it is a premise rather than an unstated assumption.",
+  "time": 165
+ },
+ {
+  "id": "tpa-024",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 4,
+  "stem": "A firm's analytics staff is split into Group A, whose average annual salary is USD 55,000, and Group B, whose average annual salary is USD 70,000. The average salary of all analytics staff is USD 62,000, and the total annual payroll for analytics staff is USD 1.86 million. In the table, select the number of staff in Group A and the number in Group B. Make only two selections, one in each column.",
+  "cols": [
+   "Group A staff",
+   "Group B staff"
+  ],
+  "options": [
+   "12",
+   "14",
+   "15",
+   "16",
+   "18",
+   "30"
+  ],
+  "answer": [
+   3,
+   1
+  ],
+  "explanation": "First find the headcount: 1,860,000 ÷ 62,000 = 30 staff. Next use the weighted average. The overall USD 62,000 is 7 thousand above Group A and 8 thousand below Group B, so A : B = 8 : 7 (inverse ratio). With 30 staff, A = 30 × 8/15 = 16 and B = 14. Check: 16 × 55 + 14 × 70 = 880 + 980 = 1,860 thousand.",
+  "trap": "Using the distances directly gives A : B = 7 : 8, or 14 and 16, which would put the average above USD 62,500.",
+  "time": 150
+ },
+ {
+  "id": "tpa-025",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 4,
+  "stem": "In the twelve months after Harbor City introduced a charge for driving into its central zone, the number of cars entering the zone fell 18 percent compared with the previous twelve months. The mayor concluded that the charge reduced traffic into the zone. In the table, select the statement that would most strengthen the mayor's conclusion and the statement that would most weaken it. Make only two selections, one in each column.",
+  "cols": [
+   "Most strengthens",
+   "Most weakens"
+  ],
+  "options": [
+   "Over the same two years, car entries into the central zones of three comparable cities without such charges were essentially unchanged.",
+   "The city's population grew slightly over the two years.",
+   "The charge took effect in the same month that the zone's largest office complex, employing about a fifth of the zone's workers, closed for two years of renovation.",
+   "The charge is higher on weekdays than at weekends.",
+   "Surveys show that many drivers dislike the charge.",
+   "Revenue from the charge is being used to build new bus lanes outside the zone."
+  ],
+  "answer": [
+   0,
+   2
+  ],
+  "explanation": "The mayor attributes an 18 percent fall to the charge, so the key question is whether something else could explain it. Comparable cities without the charge showing no change make broad causes, such as fuel prices or a regional slowdown, unlikely, which strengthens the conclusion. Closing an office complex that employed about a fifth of the zone's workers at the same moment would by itself cut commuter trips into the zone by a large amount, offering a strong rival explanation. Slight population growth would, if anything, make the fall more impressive, but its effect is small and indirect. Bus lanes outside the zone, driver attitudes and weekday pricing do not test whether the charge caused the fall.",
+  "trap": "Population growth seems to strengthen the conclusion, but a slight rise is a much weaker control than the comparison with cities that had no charge.",
+  "time": 150
+ },
+ {
+  "id": "tpa-026",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 4,
+  "stem": "A courier drove 120 kilometres from a depot to a client at a constant speed and returned along the same route at a different constant speed that was 20 kilometres per hour faster. The average speed for the whole round trip was 48 kilometres per hour. In the table, select the speed on the outbound trip and the speed on the return trip, in kilometres per hour. Make only two selections, one in each column.",
+  "cols": [
+   "Outbound speed (km/h)",
+   "Return speed (km/h)"
+  ],
+  "options": [
+   "30",
+   "36",
+   "40",
+   "48",
+   "54",
+   "60"
+  ],
+  "answer": [
+   2,
+   5
+  ],
+  "explanation": "The round trip is 240 km at an average of 48 km/h, so it took 5 hours. Only one option pair differs by exactly 20, namely (40, 60), so test it: 120/40 + 120/60 = 3 + 2 = 5 hours. That works. Algebraically, 120/u + 120/(u + 20) = 5 gives u² - 28u - 480 = 0, or (u - 40)(u + 12) = 0, so u = 40 and the return speed is 60.",
+  "trap": "Averaging the speeds simply, (u + u + 20)/2 = 48, gives 38 and 58; the arithmetic mean is wrong because more time is spent at the slower speed.",
+  "time": 150
+ },
+ {
+  "id": "tpa-027",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 4,
+  "stem": "Argument 1: \"Seventy percent of the five-star reviews of our app mention the new dark mode, so dark mode is the feature most of our users value most.\" Argument 2: \"Sales regions where we ran podcast advertising last year grew faster than regions where we did not, so podcast advertising caused the faster growth.\" In the table, select the flaw that most accurately describes Argument 1 and the flaw that most accurately describes Argument 2. Make only two selections, one in each column.",
+  "cols": [
+   "Flaw in Argument 1",
+   "Flaw in Argument 2"
+  ],
+  "options": [
+   "It relies on a key term that is used in two different senses.",
+   "It treats the absence of evidence against a claim as proof that the claim is true.",
+   "It draws a conclusion about a whole population from a sample that may not be representative of it.",
+   "It assumes that what is true of a group as a whole must be true of each member of the group.",
+   "It presents a conclusion that merely restates one of its premises.",
+   "It assumes that because two things occurred together, one must have caused the other."
+  ],
+  "answer": [
+   2,
+   5
+  ],
+  "explanation": "Argument 1 moves from five-star reviewers to most users. People who post five-star reviews are a self-selected, enthusiastic subset, so their comments may not reflect what typical users value: an unrepresentative-sample flaw. Argument 2 observes that podcast regions grew faster and concludes that the podcasts caused it, without ruling out other differences, such as the company having chosen regions that were already growing for the campaign: a correlation-to-causation flaw. Neither argument shifts the meaning of a term, relies on missing counter-evidence, reasons from a group to its members, or simply restates a premise.",
+  "trap": "Argument 1 can look like a group-to-member error, but it actually reasons from a part (reviewers) to the whole user base, which is a sampling problem.",
+  "time": 135
+ },
+ {
+  "id": "tpa-028",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 4,
+  "stem": "A company's revenue rose by p percent in 2024 and then fell by q percent in 2025, so that revenue at the end of 2025 was exactly equal to revenue at the start of 2024. The percent increase p was 5 points larger than the percent decrease q. In the table, select the value of p and the value of q. Make only two selections, one in each column.",
+  "cols": [
+   "p (percent increase)",
+   "q (percent decrease)"
+  ],
+  "options": [
+   "15",
+   "20",
+   "25",
+   "30",
+   "33⅓"
+  ],
+  "answer": [
+   2,
+   1
+  ],
+  "explanation": "Returning to the start requires (1 + p/100)(1 - q/100) = 1. Pairs that differ by 5: (20, 15) gives 1.2 × 0.85 = 1.02, too high; (25, 20) gives 1.25 × 0.8 = 1.00, exact; (30, 25) is not available. So p = 25 and q = 20. Note the general rule: undoing an increase of p percent needs a decrease of p/(100 + p) × 100 percent, here 25/125 = 20 percent.",
+  "trap": "The pair 33⅓ and 25 also restores the original revenue (4/3 × 3/4 = 1), but the two values differ by 8⅓, not 5.",
+  "time": 150
+ },
+ {
+  "id": "tpa-029",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 4,
+  "stem": "Select for blank (1) and blank (2) the options that best complete the passage. \"In a trial, a bank sent a text reminder three days before the due date to a randomly chosen half of its credit-card customers and sent no reminder to the other half. Customers in the reminded group paid late 40 percent less often than those in the other group. The trial therefore supports the conclusion that ___(1)___. However, extending the reminders to all customers would be justified on financial grounds only if ___(2)___.\" Make only two selections, one in each column.",
+  "cols": [
+   "Blank (1)",
+   "Blank (2)"
+  ],
+  "options": [
+   "text reminders reduce the likelihood of late payment among customers like those in the trial",
+   "the savings to the bank from fewer late payments exceed the cost of sending the reminders, including any late fees the bank would no longer collect",
+   "late fees are the bank's largest single source of profit",
+   "customers prefer text messages to e-mail reminders",
+   "customers who pay late do so because they forget the due date",
+   "the reminded group contained more high-income customers than the other group"
+  ],
+  "answer": [
+   0,
+   1
+  ],
+  "explanation": "Because customers were assigned at random, the two groups should be alike except for the reminder, so the trial supports a causal conclusion limited to similar customers: reminders reduce late payment. 'Customers who pay late do so because they forget' overstates the finding; reminders could work for other reasons and need not explain every late payment. Random assignment makes it unlikely that one group had more high-income customers. For the second blank, a financial justification needs benefits that exceed costs; the correct option also recognises that the bank loses some late-fee income, which is a real cost of the plan. Saying that late fees are the bank's largest profit source is a point against the rollout, not a condition for it.",
+  "trap": "The forgetting option sounds like a natural explanation, but the trial shows only that reminders reduce late payment, not why every customer pays late.",
+  "time": 165
+ },
+ {
+  "id": "tpa-030",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 5,
+  "stem": "A theater currently charges USD 20 per ticket and sells 400 tickets per show. Market research shows that for every USD 1 increase in price, 10 fewer tickets are sold, and for every USD 1 decrease, 10 more are sold. Each ticket sold also carries a USD 4 cost for staffing and programs. Prices are whole dollars. In the table, select the ticket price that maximises profit per show and the number of tickets sold at that price. Make only two selections, one in each column.",
+  "cols": [
+   "Profit-maximising price (USD)",
+   "Tickets sold at that price"
+  ],
+  "options": [
+   "28",
+   "30",
+   "32",
+   "280",
+   "300",
+   "320"
+  ],
+  "answer": [
+   2,
+   3
+  ],
+  "explanation": "Let k be the price increase in dollars. Profit = (20 + k - 4)(400 - 10k) = (16 + k)(400 - 10k). This is a downward parabola with roots k = -16 and k = 40, so its maximum is midway, at k = (-16 + 40)/2 = 12. The price is 20 + 12 = USD 32 and tickets sold are 400 - 120 = 280. Profit is 28 × 280 = USD 7,840; compare k = 10: 26 × 300 = USD 7,800, and k = 14: 30 × 260 = USD 7,800.",
+  "trap": "Maximising revenue instead of profit gives k = 10, a price of USD 30 and 300 tickets; the USD 4 per-ticket cost pushes the best price higher.",
+  "time": 180
+ },
+ {
+  "id": "tpa-031",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 5,
+  "stem": "Lena: \"Our startup should hire a head of sales now. The product is ready, and as long as the founders do all the selling, growth will be capped at the few deals we can close ourselves.\" Omar: \"Hiring a head of sales now is premature. Until we know which customer segment buys fastest, a sales leader would build a team around the wrong customers.\" In the table, select the statement that Lena and Omar would most likely both agree with and the statement that is the point on which they disagree. Make only two selections, one in each column.",
+  "cols": [
+   "Both would agree",
+   "Point of disagreement"
+  ],
+  "options": [
+   "Choices about which customers to target shape how a sales team is built.",
+   "The startup should hire a head of sales at its current stage.",
+   "Selling done only by the founders will limit the company's growth indefinitely.",
+   "The startup will at some point need a head of sales.",
+   "The startup already knows which customer segment buys fastest.",
+   "The product is not yet ready to sell."
+  ],
+  "answer": [
+   3,
+   1
+  ],
+  "explanation": "Omar calls the hire 'premature', which implies that it will be appropriate later, and Lena wants it now; so both accept that a head of sales will eventually be needed. Their disagreement is about timing: Lena says hire now and Omar says not yet. Omar never disputes that the product is ready, so that is not their point of disagreement. The indefinite limit from founder-led selling and the claim about how targeting shapes a team are each asserted by only one speaker, with the other silent. Omar implies the startup does not yet know its fastest segment, but Lena says nothing about it, so it is not a clear point of agreement or disagreement.",
+  "trap": "The claim about targeting shaping a sales team is plausible to both, but only Omar commits to it; agreement questions need evidence from both speakers.",
+  "time": 165
+ },
+ {
+  "id": "tpa-032",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 5,
+  "stem": "A bag contains only red and blue chips. When two chips are drawn at random without replacement, the probability that both are red is 1/3 and the probability that both are blue is 2/15. In the table, select the number of red chips and the number of blue chips in the bag. Make only two selections, one in each column.",
+  "cols": [
+   "Red chips",
+   "Blue chips"
+  ],
+  "options": [
+   "4",
+   "5",
+   "6",
+   "8",
+   "10",
+   "15"
+  ],
+  "answer": [
+   2,
+   0
+  ],
+  "explanation": "With n chips, P(both red) = r(r - 1)/[n(n - 1)] = 1/3 and P(both blue) = b(b - 1)/[n(n - 1)] = 2/15. The denominator n(n - 1) must be a multiple of 15 and of 3; try n = 10, so n(n - 1) = 90. Then r(r - 1) = 30, giving r = 6, and b(b - 1) = 12, giving b = 4. Indeed 6 + 4 = 10. Check: 30/90 = 1/3 and 12/90 = 2/15. Testing option pairs directly also works: only (6, 4) satisfies both probabilities.",
+  "trap": "Choosing 15 blue chips comes from a 36-chip bag with 21 red, which meets the red condition but makes both-blue 1/6, not 2/15.",
+  "time": 180
+ },
+ {
+  "id": "tpa-033",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 5,
+  "stem": "A retailer's marketing director notes that members of its loyalty programme spend, on average, 35 percent more per year at its stores than non-members do. She concludes that the programme causes customers to spend more. In the table, select the statement that would most strengthen her conclusion and the statement that would most weaken it. Make only two selections, one in each column.",
+  "cols": [
+   "Most strengthens",
+   "Most weakens"
+  ],
+  "options": [
+   "Customers who joined the programme increased their annual spending by about 30 percent in the year after joining, while the spending of otherwise similar non-members was flat over the same period.",
+   "Members are more likely than non-members to shop on the retailer's website.",
+   "The programme has more members this year than it had last year.",
+   "The average member has belonged to the programme for four years.",
+   "Members receive a 5 percent discount on all purchases.",
+   "Before joining, customers who later became members already spent about 35 percent more per year than customers who never joined."
+  ],
+  "answer": [
+   0,
+   5
+  ],
+  "explanation": "The comparison between members and non-members could reflect who joins rather than what the programme does. The best strengthener tracks the same customers before and after joining against a similar group that did not join: a 30 percent jump among joiners with flat spending among comparable non-members points to the programme as the cause. The best weakener shows that the whole 35 percent gap existed before anyone joined, which means heavy spenders select into the programme and the programme itself adds little. A 5 percent discount, growth in membership, online shopping habits and average tenure describe the programme or its members but do not separate cause from selection.",
+  "trap": "The 5 percent discount seems to explain extra spending, but a discount lowers the price of each purchase and says nothing about whether members buy more because of it.",
+  "time": 165
+ },
+ {
+  "id": "tpa-034",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 5,
+  "stem": "A lab needs at least 50 litres of an acid solution that is at least 30 percent acid. It can buy only whole litres of Solution X, which is 20 percent acid and costs USD 2 per litre, and Solution Y, which is 50 percent acid and costs USD 5 per litre, and it will mix them. In the table, select the number of litres of X and the number of litres of Y in the cheapest purchase that meets both requirements. Make only two selections, one in each column.",
+  "cols": [
+   "Litres of X",
+   "Litres of Y"
+  ],
+  "options": [
+   "16",
+   "17",
+   "33",
+   "34",
+   "35",
+   "50"
+  ],
+  "answer": [
+   2,
+   1
+  ],
+  "explanation": "The concentration condition is 0.2x + 0.5y ≥ 0.3(x + y), which simplifies to 0.2y ≥ 0.1x, or x ≤ 2y. X is cheaper, so use as much X as allowed and no more total than needed. With x + y = 50 and x ≤ 2y, y ≥ 16⅔, so y = 17 and x = 33 (33 ≤ 34). Cost: 66 + 85 = USD 151. Alternatives: (34, 17) costs USD 153 and (34, 16) violates x ≤ 2y. So 33 litres of X and 17 of Y.",
+  "trap": "Solving x = 2y and x + y = 50 exactly gives fractions; rounding to 34 and 17 meets the requirements but costs USD 2 more than 33 and 17.",
+  "time": 180
+ },
+ {
+  "id": "tpa-035",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 5,
+  "stem": "In a recent hiring round at a consultancy, 60 percent of applicants who had an employee referral reached the interview stage, compared with 20 percent of applicants who had no referral. Applicants with a referral made up 10 percent of all applicants. In the table, select the statement that must be true based on this information and the statement that cannot be true based on this information. Make only two selections, one in each column.",
+  "cols": [
+   "Must be true",
+   "Cannot be true"
+  ],
+  "options": [
+   "Some applicants who reached the interview stage were later rejected.",
+   "Referred applicants were, on average, better qualified than non-referred applicants.",
+   "Most applicants who reached the interview stage had a referral.",
+   "The consultancy will hire more referred applicants than non-referred applicants.",
+   "The consultancy received more applications this round than in the previous round.",
+   "Applicants with a referral made up exactly one quarter of the applicants who reached the interview stage."
+  ],
+  "answer": [
+   5,
+   2
+  ],
+  "explanation": "Pick 100 applicants. Ten had a referral, and 60 percent of them, 6 people, were interviewed. Ninety had no referral, and 20 percent of them, 18 people, were interviewed. So 24 people reached interviews, of whom 6 ÷ 24 = 25 percent were referred: exactly one quarter, which must be true for any total. Because referred applicants are only a quarter of interviewees, the claim that most interviewees were referred cannot be true. The information says nothing about hiring decisions, qualifications, later rejections or previous rounds, so those statements could be true or false.",
+  "trap": "A 60 percent versus 20 percent pass rate makes 'most interviewees were referred' feel right, but referred applicants were only 10 percent of the pool.",
+  "time": 150
+ },
+ {
+  "id": "tpa-036",
+  "sec": "di",
+  "type": "tpa",
+  "diff": 5,
+  "stem": "A commentator wrote: \"Ministry economists predicted that 'cutting the fuel tax would raise fuel consumption sharply.' Yet in the year after the cut, consumption barely changed. Some have taken this as proof that drivers do not respond to fuel prices. That inference is mistaken: 'the cut coincided with a sharp rise in world oil prices, so pump prices hardly fell,' and drivers had little to respond to.\" In the table, select the role played in the argument by the first quoted claim and the role played by the second quoted claim. Make only two selections, one in each column.",
+  "cols": [
+   "First quoted claim",
+   "Second quoted claim"
+  ],
+  "options": [
+   "It is evidence offered to undermine an inference drawn from a particular outcome.",
+   "It is the main conclusion of the argument.",
+   "It is a prediction whose apparent failure the commentator explains without giving up the view that drivers respond to price.",
+   "It is a generalisation that the commentator uses to support the main conclusion.",
+   "It is the claim that some people offer as proof that drivers ignore fuel prices.",
+   "It is an assumption on which the economists' prediction depended."
+  ],
+  "answer": [
+   2,
+   0
+  ],
+  "explanation": "The commentator's main conclusion is 'That inference is mistaken', meaning the flat consumption does not prove drivers ignore prices. The first quoted claim is the economists' prediction; it apparently failed, and the commentator explains that failure in a way that keeps the idea that drivers respond to price. The second quoted claim, that pump prices hardly fell, is the evidence against the inference: drivers did not face lower prices, so their flat consumption says nothing about price sensitivity. Neither quote is the main conclusion. The proof offered by others is the flat consumption figure, not either quote. The second claim is a specific fact about one year, not a generalisation or the economists' assumption.",
+  "trap": "Calling the second claim the main conclusion is tempting because it ends the argument, but it supports the earlier sentence 'That inference is mistaken'.",
+  "time": 180
+ },
+ {
+  "id": "msr-01",
+  "sec": "di",
+  "type": "msr",
+  "diff": 2,
+  "tabs": [
+   {
+    "title": "Procurement e-mail",
+    "text": "From: Dana Whitfield, Procurement Lead\nTo: Operations team\n\nWe need a supplier of replacement filter cartridges for our water-treatment units. Our annual requirement is 2,400 cartridges. Under company policy, a vendor qualifies only if its defect rate is below 1.5 percent and it can deliver within 10 business days of an order. Among qualifying vendors, we choose the one with the lowest first-year cost, defined as the unit price times 2,400 plus any one-time setup fee."
+   },
+   {
+    "title": "Vendor quotes",
+    "table": {
+     "cols": [
+      "Vendor",
+      "Unit price (USD)",
+      "One-time setup fee (USD)",
+      "Delivery time (business days)",
+      "Defect rate (%)"
+     ],
+     "rows": [
+      [
+       "Aqualine",
+       11.5,
+       1800,
+       7,
+       1.2
+      ],
+      [
+       "ClearPath",
+       10.9,
+       3500,
+       9,
+       1.4
+      ],
+      [
+       "Purus",
+       10.4,
+       2000,
+       12,
+       0.9
+      ],
+      [
+       "Vantex",
+       11.2,
+       900,
+       8,
+       1.6
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Finance memo",
+    "text": "Vendors that offer 60-day payment terms receive a credit of 2 percent of their first-year cost when vendors are compared. Of the four vendors quoted, only ClearPath and Purus offer 60-day terms. Finance also asks that the chosen vendor's first-year cost, before any credit, not exceed USD 30,000."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "If the procurement policy is applied and the finance memo is ignored, which vendor will be chosen?",
+    "choices": [
+     "Aqualine",
+     "ClearPath",
+     "Purus",
+     "Vantex",
+     "No vendor qualifies"
+    ],
+    "answer": 0,
+    "explanation": "Purus fails the delivery rule (12 days) and Vantex fails the defect rule (1.6 percent), so only Aqualine and ClearPath qualify. First-year cost: Aqualine 2,400 × 11.50 + 1,800 = USD 29,400; ClearPath 2,400 × 10.90 + 3,500 = 26,160 + 3,500 = USD 29,660. Aqualine is cheaper by USD 260, so Aqualine is chosen. Purus has the lowest cost overall (USD 26,960), which is the trap; it does not qualify."
+   },
+   {
+    "kind": "mcq",
+    "stem": "If the 2 percent credit in the finance memo is applied when comparing qualifying vendors, the chosen vendor's credited first-year cost will be lower than Aqualine's first-year cost by approximately how much?",
+    "choices": [
+     "USD 93",
+     "USD 260",
+     "USD 333",
+     "USD 593",
+     "USD 640"
+    ],
+    "answer": 2,
+    "explanation": "With the credit, ClearPath's comparison cost is 0.98 × 29,660 = USD 29,066.80. Aqualine has no credit and stays at USD 29,400, so ClearPath becomes the cheapest qualifying vendor. The difference is 29,400 - 29,066.80 = USD 333.20, about USD 333. The USD 260 option is the gap before the credit, in Aqualine's favour."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "Purus meets the delivery-time requirement.",
+      "answer": 1
+     },
+     {
+      "text": "Vantex's first-year cost, before any credit, is below Finance's USD 30,000 limit.",
+      "answer": 0
+     },
+     {
+      "text": "If Vantex lowered its defect rate to 1.4 percent, its first-year cost would be lower than ClearPath's credited cost.",
+      "answer": 0
+     }
+    ],
+    "explanation": "Purus needs 12 business days, more than the 10 allowed: No. Vantex's first-year cost is 2,400 × 11.20 + 900 = 26,880 + 900 = USD 27,780, below USD 30,000: Yes. With a 1.4 percent defect rate Vantex would qualify, and USD 27,780 is below ClearPath's credited USD 29,066.80 (Vantex gets no credit): Yes."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-02",
+  "sec": "di",
+  "type": "msr",
+  "diff": 2,
+  "tabs": [
+   {
+    "title": "Project charter",
+    "text": "The CRM migration project has an approved budget of USD 480,000 for the fiscal year, divided into four categories: vendor licences, contractor fees, internal staff time and contingency. Contingency is 10 percent of the approved budget and may be spent only with the project sponsor's written approval. Any category whose total spending (actual plus forecast) exceeds its allocation by more than 15 percent must be reported to the steering committee."
+   },
+   {
+    "title": "Budget tracker",
+    "table": {
+     "cols": [
+      "Category",
+      "Allocation (USD)",
+      "Spent Q1-Q3 (USD)",
+      "Forecast Q4 (USD)"
+     ],
+     "rows": [
+      [
+       "Vendor licences",
+       150000,
+       150000,
+       0
+      ],
+      [
+       "Contractor fees",
+       180000,
+       162000,
+       54000
+      ],
+      [
+       "Internal staff time",
+       102000,
+       70000,
+       28000
+      ],
+      [
+       "Contingency",
+       48000,
+       0,
+       0
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Project manager's e-mail",
+    "text": "The contractor overrun comes from a data-cleansing workstream that was not in the original plan. I propose to cover it from contingency. The sponsor has approved, in writing, the use of up to USD 30,000 of contingency for this purpose and nothing else."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "By what percent is total spending on contractor fees expected to exceed the contractor fees allocation?",
+    "choices": [
+     "10%",
+     "15%",
+     "18%",
+     "20%",
+     "36%"
+    ],
+    "answer": 3,
+    "explanation": "Total contractor spending is 162,000 + 54,000 = USD 216,000 against an allocation of USD 180,000. The overrun is USD 36,000, and 36,000 ÷ 180,000 = 0.20, or 20 percent. Dividing the overrun by total spending instead (36,000 ÷ 216,000) gives only about 16.7 percent, and 36 percent mistakes the overrun in thousands of dollars for a percent."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "The contractor fees category must be reported to the steering committee.",
+      "answer": 0
+     },
+     {
+      "text": "The approved contingency is enough, on its own, to cover the whole contractor overrun.",
+      "answer": 1
+     },
+     {
+      "text": "Internal staff time is expected to exceed its allocation.",
+      "answer": 1
+     }
+    ],
+    "explanation": "The 20 percent overrun is more than 15 percent, so it must be reported: Yes. The sponsor approved only USD 30,000 of contingency, less than the USD 36,000 overrun: No. Internal staff time totals 70,000 + 28,000 = USD 98,000, below its USD 102,000 allocation: No."
+   },
+   {
+    "kind": "mcq",
+    "stem": "Suppose the USD 30,000 of approved contingency is applied to the contractor overrun and the expected underspend in internal staff time is also moved to contractor fees. How much of the contractor overrun would remain uncovered?",
+    "choices": [
+     "USD 0",
+     "USD 2,000",
+     "USD 4,000",
+     "USD 6,000",
+     "USD 10,000"
+    ],
+    "answer": 1,
+    "explanation": "The overrun is USD 36,000. Approved contingency covers USD 30,000, leaving USD 6,000. Internal staff time is expected to come in USD 4,000 under its allocation (102,000 - 98,000), which reduces the gap to 6,000 - 4,000 = USD 2,000. Choosing USD 6,000 forgets the staff-time underspend."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-03",
+  "sec": "di",
+  "type": "msr",
+  "diff": 2,
+  "tabs": [
+   {
+    "title": "HR planning memo",
+    "text": "Next year the company will grow its total headcount by 12 percent from the current 250 employees. At year end, Engineering must make up at least 40 percent of total headcount. Voluntary attrition is expected to equal 8 percent of each department's current headcount, and every departure will be backfilled with a new hire in addition to the planned net additions."
+   },
+   {
+    "title": "Headcount plan",
+    "table": {
+     "cols": [
+      "Department",
+      "Current headcount",
+      "Planned net additions"
+     ],
+     "rows": [
+      [
+       "Engineering",
+       100,
+       16
+      ],
+      [
+       "Sales",
+       50,
+       6
+      ],
+      [
+       "Customer Success",
+       50,
+       5
+      ],
+      [
+       "Operations",
+       25,
+       2
+      ],
+      [
+       "G&A",
+       25,
+       1
+      ]
+     ]
+    }
+   },
+   {
+    "title": "CFO e-mail",
+    "text": "For budgeting, assume recruiting costs (agency fees and interview time) of USD 9,000 per Engineering hire and USD 5,000 per hire in every other department. Total recruiting cost for the year must stay below USD 500,000."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "How many people in total will the company need to hire next year under the plan?",
+    "choices": [
+     "30",
+     "40",
+     "44",
+     "50",
+     "54"
+    ],
+    "answer": 3,
+    "explanation": "Hires = backfills + net additions. Backfills are 8 percent of current headcount: 8 + 4 + 4 + 2 + 2 = 20 (8 percent of 250). Net additions total 30 (12 percent of 250). So the company hires 20 + 30 = 50 people. Choosing 30 counts only growth and ignores attrition."
+   },
+   {
+    "kind": "mcq",
+    "stem": "If total net additions stay at 30, what is the smallest number of net additions in Engineering that satisfies the 40 percent requirement?",
+    "choices": [
+     "8",
+     "10",
+     "12",
+     "14",
+     "16"
+    ],
+    "answer": 2,
+    "explanation": "Year-end headcount is 250 + 30 = 280, and 40 percent of 280 is 112. Engineering has 100 people now, and backfills only replace departures, so it needs at least 112 - 100 = 12 net additions. The planned 16 exceeds this minimum."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "Total recruiting cost under the plan will be below the CFO's limit.",
+      "answer": 0
+     },
+     {
+      "text": "Recruiting cost for Engineering alone will be more than half of the CFO's limit.",
+      "answer": 1
+     },
+     {
+      "text": "If Sales' net additions rose by 12 and all other plans were unchanged, Engineering would still make up at least 40 percent of year-end headcount.",
+      "answer": 1
+     }
+    ],
+    "explanation": "Engineering hires = 8 + 16 = 24, costing 24 × 9,000 = USD 216,000; the other departments hire 26 people at USD 5,000, or USD 130,000. The total, USD 346,000, is below USD 500,000: Yes. USD 216,000 is less than half of USD 500,000 (USD 250,000): No. With 12 more Sales additions, year-end headcount is 292 and Engineering is 116; 116 ÷ 292 is about 39.7 percent, below 40 percent: No."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-04",
+  "sec": "di",
+  "type": "msr",
+  "diff": 2,
+  "tabs": [
+   {
+    "title": "Event lead's e-mail",
+    "text": "We are booking a venue for our two-day partner summit. Expected attendance is 180 people on day one and 140 on day two. The venue must (1) have a capacity at least 10 percent above the larger day's expected attendance, (2) be within 30 minutes of the airport and (3) provide on-site audio-visual (AV) equipment, either included or for an extra fee. Venue hire for both days, including any AV fee, must not exceed USD 16,000."
+   },
+   {
+    "title": "Venue options",
+    "table": {
+     "cols": [
+      "Venue",
+      "Capacity",
+      "Daily hire (USD)",
+      "AV fee per day (USD)",
+      "Minutes from airport",
+      "Catering per person per day (USD)"
+     ],
+     "rows": [
+      [
+       "Harbourview",
+       220,
+       7200,
+       0,
+       25,
+       48
+      ],
+      [
+       "The Foundry",
+       200,
+       6500,
+       1200,
+       20,
+       42
+      ],
+      [
+       "Linden Hall",
+       190,
+       5800,
+       0,
+       35,
+       39
+      ],
+      [
+       "Meridian Centre",
+       260,
+       8400,
+       0,
+       15,
+       45
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Finance reply",
+    "text": "Catering is billed separately from venue hire and is charged per person per day for the expected attendance. Among venues that meet all of the event lead's requirements, please book the one with the lowest combined cost of venue hire, AV and catering for both days."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "Which of the venues meet all of the event lead's requirements?",
+    "choices": [
+     "Harbourview only",
+     "The Foundry and Meridian Centre only",
+     "Harbourview, The Foundry and Meridian Centre only",
+     "All four venues",
+     "Harbourview and The Foundry only"
+    ],
+    "answer": 4,
+    "explanation": "Required capacity is 1.10 × 180 = 198, which rules out Linden Hall (190); Linden Hall is also 35 minutes from the airport. Two-day venue cost: Harbourview 2 × 7,200 = USD 14,400; The Foundry 2 × (6,500 + 1,200) = USD 15,400; Meridian Centre 2 × 8,400 = USD 16,800, over the USD 16,000 limit. So only Harbourview and The Foundry qualify."
+   },
+   {
+    "kind": "mcq",
+    "stem": "What is the combined two-day cost of venue hire, AV and catering at the venue Finance would book?",
+    "choices": [
+     "USD 26,440",
+     "USD 27,280",
+     "USD 28,840",
+     "USD 29,760",
+     "USD 31,240"
+    ],
+    "answer": 2,
+    "explanation": "Catering covers 180 + 140 = 320 person-days. Harbourview: 14,400 + 320 × 48 = 14,400 + 15,360 = USD 29,760. The Foundry: 15,400 + 320 × 42 = 15,400 + 13,440 = USD 28,840. The Foundry is cheaper, so the answer is USD 28,840. Leaving out The Foundry's AV fee gives USD 26,440."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "If expected day-one attendance rose to 190, The Foundry would no longer meet the capacity requirement.",
+      "answer": 0
+     },
+     {
+      "text": "Linden Hall fails only the airport-distance requirement.",
+      "answer": 1
+     },
+     {
+      "text": "Meridian Centre's two-day venue hire exceeds the venue budget by more than USD 1,000.",
+      "answer": 1
+     }
+    ],
+    "explanation": "With 190 attendees the required capacity is 209, above The Foundry's 200: Yes. Linden Hall also fails the capacity rule (190 < 198): No. Meridian's two days cost USD 16,800, which is USD 800 over budget, not more than USD 1,000: No."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-05",
+  "sec": "di",
+  "type": "msr",
+  "diff": 3,
+  "tabs": [
+   {
+    "title": "Protocol summary",
+    "text": "Study KT-204 compares an investigational drug, Delvorin, with placebo in adults with moderate plaque psoriasis. Patients are randomly assigned in a 2 : 1 ratio to Delvorin or placebo. The primary endpoint is the proportion of patients reaching PASI-75, a 75 percent improvement in skin-severity score, at week 16. Patients who stop treatment before week 16 are counted as non-responders. A site must pause enrolment if more than 5 percent of its enrolled patients have had a serious adverse event (SAE)."
+   },
+   {
+    "title": "Site data, week 16",
+    "table": {
+     "cols": [
+      "Site",
+      "Enrolled on Delvorin",
+      "Enrolled on placebo",
+      "PASI-75 responders, Delvorin",
+      "PASI-75 responders, placebo",
+      "Discontinued before week 16 (both arms)",
+      "Patients with an SAE (both arms)"
+     ],
+     "rows": [
+      [
+       "A (Lyon)",
+       40,
+       20,
+       26,
+       4,
+       3,
+       2
+      ],
+      [
+       "B (Leeds)",
+       36,
+       18,
+       22,
+       3,
+       5,
+       4
+      ],
+      [
+       "C (Porto)",
+       24,
+       12,
+       15,
+       2,
+       1,
+       1
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Monitor's e-mail",
+    "text": "Two points from my visit. First, at Site B, 2 of the 4 patients with an SAE were on placebo. Second, Site C enrolled 6 patients (4 on Delvorin, 2 on placebo) who did not meet the inclusion criterion for affected body surface area. The sponsor has decided to exclude these 6 patients from the efficacy analysis. None of the 6 reached PASI-75 and none discontinued."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "Before any exclusions, what was the PASI-75 response rate among all patients enrolled on Delvorin across the three sites?",
+    "choices": [
+     "63%",
+     "66%",
+     "68%",
+     "70%",
+     "75%"
+    ],
+    "answer": 0,
+    "explanation": "Responders on Delvorin: 26 + 22 + 15 = 63. Enrolled on Delvorin: 40 + 36 + 24 = 100. Because discontinued patients count as non-responders, the denominator is everyone enrolled, so the rate is 63 ÷ 100 = 63 percent. The 66 percent option is the rate after the Site C exclusion (63 ÷ 96), which this question does not ask for."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "Site B must pause enrolment under the protocol.",
+      "answer": 0
+     },
+     {
+      "text": "Site A must pause enrolment under the protocol.",
+      "answer": 1
+     },
+     {
+      "text": "After the exclusion described by the monitor, Site C's Delvorin response rate is above 70 percent.",
+      "answer": 0
+     }
+    ],
+    "explanation": "Site B has 4 patients with an SAE among 36 + 18 = 54 enrolled, about 7.4 percent, above 5 percent; the arm in which the SAEs occurred does not matter under the rule: Yes. Site A has 2 of 60, about 3.3 percent: No. After removing 4 non-responding Delvorin patients, Site C has 15 responders out of 20, or 75 percent: Yes."
+   },
+   {
+    "kind": "mcq",
+    "stem": "After the 6 Site C patients are excluded, the Delvorin response rate across all three sites exceeds the placebo response rate by approximately how many percentage points?",
+    "choices": [
+     "42",
+     "44",
+     "47",
+     "50",
+     "53"
+    ],
+    "answer": 2,
+    "explanation": "Delvorin: 63 responders out of 100 - 4 = 96, about 65.6 percent. Placebo: 4 + 3 + 2 = 9 responders out of 20 + 18 + 12 - 2 = 48, which is 18.75 percent. The difference is about 65.6 - 18.75 = 46.9, or approximately 47 points. Without the exclusion the gap would be 63 - 18 = 45 points."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-06",
+  "sec": "di",
+  "type": "msr",
+  "diff": 3,
+  "tabs": [
+   {
+    "title": "COO memo",
+    "text": "We are evaluating whether to move regional distribution from our current Riverton warehouse to Eastgate or Millbrook, or to stay. The decision criterion is five-year total cost: the one-time relocation cost plus five years of annual operating cost (rent plus transport). We will not choose any site whose average outbound delivery time is more than 2.0 days."
+   },
+   {
+    "title": "Site comparison",
+    "table": {
+     "cols": [
+      "Site",
+      "One-time relocation cost (USD thousands)",
+      "Annual rent (USD thousands)",
+      "Annual transport (USD thousands)",
+      "Average delivery time (days)"
+     ],
+     "rows": [
+      [
+       "Riverton (current)",
+       0,
+       820,
+       1140,
+       1.8
+      ],
+      [
+       "Eastgate",
+       950,
+       610,
+       1050,
+       1.9
+      ],
+      [
+       "Millbrook",
+       600,
+       540,
+       1260,
+       2.1
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Logistics e-mail",
+    "text": "Two updates. First, the transport figures assume current fuel prices; if fuel prices rise 20 percent, annual transport cost at every site rises 8 percent. Second, Millbrook's landlord will cut annual rent by USD 60 thousand if we sign a ten-year lease, and adding a second carrier at Millbrook would bring its average delivery time down to 1.9 days but raise its annual transport cost by USD 90 thousand."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "Based on the COO's criterion and the table, the chosen option's five-year total cost is lower than that of staying at Riverton by how much?",
+    "choices": [
+     "USD 200 thousand",
+     "USD 300 thousand",
+     "USD 550 thousand",
+     "USD 950 thousand",
+     "USD 1,500 thousand"
+    ],
+    "answer": 2,
+    "explanation": "Five-year totals: Riverton 5 × (820 + 1,140) = 9,800; Eastgate 950 + 5 × (610 + 1,050) = 950 + 8,300 = 9,250; Millbrook 600 + 5 × 1,800 = 9,600, but Millbrook is excluded by its 2.1-day delivery time. Eastgate is chosen and saves 9,800 - 9,250 = USD 550 thousand. USD 1,500 thousand ignores the relocation cost; USD 200 thousand compares Millbrook with Riverton."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "If fuel prices rose 20 percent, Eastgate's five-year total cost would still be lower than Riverton's.",
+      "answer": 0
+     },
+     {
+      "text": "If Millbrook added the second carrier and signed the ten-year lease, its five-year total cost would be lower than Eastgate's.",
+      "answer": 1
+     },
+     {
+      "text": "If Millbrook added the second carrier but did not sign the ten-year lease, its five-year total cost would exceed Riverton's.",
+      "answer": 0
+     }
+    ],
+    "explanation": "With 8 percent higher transport, Eastgate is 950 + 5 × (610 + 1,134) = 9,670 and Riverton is 5 × (820 + 1,231.2) = 10,256: Yes. Millbrook with both changes: 600 + 5 × (480 + 1,350) = 600 + 9,150 = 9,750, above Eastgate's 9,250: No. With the carrier only: 600 + 5 × (540 + 1,350) = 10,050, above Riverton's 9,800: Yes."
+   },
+   {
+    "kind": "mcq",
+    "stem": "At current fuel prices, approximately how many years of Eastgate's annual operating savings over Riverton would it take to equal Eastgate's one-time relocation cost?",
+    "choices": [
+     "2.5",
+     "3.2",
+     "3.6",
+     "4.0",
+     "5.0"
+    ],
+    "answer": 1,
+    "explanation": "Annual operating cost is 820 + 1,140 = 1,960 at Riverton and 610 + 1,050 = 1,660 at Eastgate, so Eastgate saves USD 300 thousand per year. The relocation cost of USD 950 thousand is recovered after 950 ÷ 300, about 3.2 years. Using only the rent difference (210) would give about 4.5 years, which is not offered."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-07",
+  "sec": "di",
+  "type": "msr",
+  "diff": 3,
+  "tabs": [
+   {
+    "title": "Growth lead's e-mail",
+    "text": "In March we ran a four-week acquisition test across four paid channels. A customer counts as acquired if he or she makes a first purchase within 14 days of clicking one of our ads. The metric we care about is cost per acquired customer (CPA), which is channel spend divided by acquired customers. For next quarter, any channel whose CPA is more than 25 percent above the blended CPA (total spend divided by total acquired customers) will be cut."
+   },
+   {
+    "title": "Test results",
+    "table": {
+     "cols": [
+      "Channel",
+      "Spend (USD)",
+      "Clicks",
+      "Acquired customers",
+      "Average first order (USD)"
+     ],
+     "rows": [
+      [
+       "Search",
+       45000,
+       30000,
+       900,
+       62
+      ],
+      [
+       "Social",
+       30000,
+       40000,
+       500,
+       48
+      ],
+      [
+       "Affiliates",
+       25000,
+       8000,
+       400,
+       70
+      ],
+      [
+       "Video",
+       20000,
+       25000,
+       200,
+       55
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Analytics memo",
+    "text": "The acquired-customer figure for Affiliates comes from the partners' own reports, which use a 30-day window rather than our 14-day window. Our audit found that 25 percent of the acquisitions the partners reported happened between day 15 and day 30 after the click. All other channels' figures use our 14-day window."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "Based on the e-mail and the table only, which channel or channels will be cut?",
+    "choices": [
+     "Video only",
+     "Affiliates only",
+     "Social and Video only",
+     "Affiliates and Video only",
+     "No channel"
+    ],
+    "answer": 0,
+    "explanation": "Blended CPA is 120,000 ÷ 2,000 = USD 60, so the cut-off is 1.25 × 60 = USD 75. Channel CPAs: Search 45,000 ÷ 900 = USD 50; Social 30,000 ÷ 500 = USD 60; Affiliates 25,000 ÷ 400 = USD 62.50; Video 20,000 ÷ 200 = USD 100. Only Video is above USD 75."
+   },
+   {
+    "kind": "mcq",
+    "stem": "If the Affiliates figure is corrected to our 14-day window as described in the memo, what is the Affiliates CPA, to the nearest dollar?",
+    "choices": [
+     "USD 60",
+     "USD 63",
+     "USD 70",
+     "USD 78",
+     "USD 83"
+    ],
+    "answer": 4,
+    "explanation": "Removing the 25 percent of acquisitions that fall outside 14 days leaves 0.75 × 400 = 300 Affiliates customers. CPA = 25,000 ÷ 300, about USD 83.33, or USD 83. The USD 78 option is close to the new cut-off rather than the CPA."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "After the correction in the memo, Affiliates would also be cut.",
+      "answer": 0
+     },
+     {
+      "text": "Search had the lowest cost per click of the four channels.",
+      "answer": 1
+     },
+     {
+      "text": "Before the correction, total first-order revenue from Search customers exceeded Search spend.",
+      "answer": 0
+     }
+    ],
+    "explanation": "After the correction, total acquisitions are 1,900, so blended CPA is 120,000 ÷ 1,900, about USD 63.16, and the cut-off is about USD 78.95. Affiliates at about USD 83.33 is above it: Yes. Cost per click: Search USD 1.50, Social USD 0.75, Affiliates USD 3.13, Video USD 0.80, so Social is lowest: No. Search revenue is 900 × 62 = USD 55,800, above USD 45,000: Yes."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-08",
+  "sec": "di",
+  "type": "msr",
+  "diff": 3,
+  "tabs": [
+   {
+    "title": "Vendor price sheet",
+    "text": "Basic plan: USD 18 per user per month; up to 50 GB of storage per user; no single sign-on (SSO).\nPro plan: USD 27 per user per month; unlimited storage; includes SSO; no audit logs.\nEnterprise plan: a flat USD 9,000 per month covering up to 400 users, plus USD 15 per user per month for each user above 400; unlimited storage; includes SSO and audit logs.\nPaying a full year in advance reduces the price of any plan by 10 percent. All of a customer's users must be on the same plan."
+   },
+   {
+    "title": "Current users",
+    "table": {
+     "cols": [
+      "Department",
+      "Users",
+      "Average storage per user (GB)"
+     ],
+     "rows": [
+      [
+       "Sales",
+       120,
+       20
+      ],
+      [
+       "Engineering",
+       150,
+       85
+      ],
+      [
+       "Support",
+       90,
+       15
+      ],
+      [
+       "Finance",
+       40,
+       30
+      ],
+      [
+       "Legal",
+       20,
+       60
+      ]
+     ]
+    }
+   },
+   {
+    "title": "IT director's e-mail",
+    "text": "Security policy requires SSO for every user. Compliance requires audit logs only for Finance and Legal users, but because all users must be on one plan, the plan we choose must include audit logs. We will pay annually in advance."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "What will the company pay for one year of service on the plan that meets IT's requirements, paying in advance?",
+    "choices": [
+     "USD 97,200",
+     "USD 100,440",
+     "USD 108,000",
+     "USD 111,600",
+     "USD 122,472"
+    ],
+    "answer": 1,
+    "explanation": "Only Enterprise includes both SSO and audit logs. With 420 users the monthly price is 9,000 + 20 × 15 = USD 9,300. A year costs 12 × 9,300 = USD 111,600, and the 10 percent prepayment discount brings it to USD 100,440. USD 97,200 ignores the 20 users above 400; USD 111,600 forgets the discount; USD 122,472 is the Pro plan with the discount."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "If the audit-log requirement were dropped, the Pro plan paid in advance would cost less per year than the Enterprise plan paid in advance.",
+      "answer": 1
+     },
+     {
+      "text": "Ignoring the SSO and audit-log requirements, the Basic plan's storage limit would meet every department's average storage need.",
+      "answer": 1
+     },
+     {
+      "text": "If the company grew to 500 users, the Enterprise plan's monthly price before any discount would be USD 10,500.",
+      "answer": 0
+     }
+    ],
+    "explanation": "Pro for 420 users paid in advance is 420 × 27 × 12 × 0.9 = USD 122,472, more than Enterprise's USD 100,440: No. Engineering (85 GB) and Legal (60 GB) average above the 50 GB Basic limit: No. At 500 users Enterprise costs 9,000 + 100 × 15 = USD 10,500 per month: Yes."
+   },
+   {
+    "kind": "mcq",
+    "stem": "Before discounts, what is the smallest number of users at which the Pro plan's monthly price is greater than the Enterprise plan's monthly price?",
+    "choices": [
+     "250",
+     "300",
+     "320",
+     "333",
+     "334"
+    ],
+    "answer": 4,
+    "explanation": "Up to 400 users, Enterprise costs a flat USD 9,000, so Pro is more expensive once 27n > 9,000, that is, n > 333.3. The smallest whole number is 334 (27 × 334 = USD 9,018). Above 400 users Pro adds USD 27 per user against Enterprise's USD 15, so Pro stays more expensive. 333 users cost USD 8,991 on Pro, still below USD 9,000."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-09",
+  "sec": "di",
+  "type": "msr",
+  "diff": 4,
+  "tabs": [
+   {
+    "title": "Fleet policy",
+    "text": "A delivery van is replaced as soon as either (a) its odometer reaches 200,000 km or (b) its maintenance cost over the past 12 months is more than 35 percent of the price of a new diesel van. A new diesel van costs USD 42,000 and a new electric van costs USD 55,000. Electric vans qualify for a government rebate of 15 percent of their purchase price, which is received at the time of purchase."
+   },
+   {
+    "title": "Van records",
+    "table": {
+     "cols": [
+      "Van",
+      "Odometer (km)",
+      "Maintenance, past 12 months (USD)",
+      "Typical annual distance (km)"
+     ],
+     "rows": [
+      [
+       "V-101",
+       188000,
+       16100,
+       40000
+      ],
+      [
+       "V-102",
+       204500,
+       9800,
+       35000
+      ],
+      [
+       "V-103",
+       152000,
+       14200,
+       30000
+      ],
+      [
+       "V-104",
+       199000,
+       12500,
+       45000
+      ],
+      [
+       "V-105",
+       120000,
+       15000,
+       25000
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Fleet manager's e-mail",
+    "text": "For replacement decisions, use these running costs. Energy: USD 0.14 per km for diesel and USD 0.05 per km for electric. Maintenance: USD 0.06 per km for diesel and USD 0.03 per km for electric. We keep each new van for five years. When comparing options, total cost means net purchase price (after any rebate) plus energy and maintenance over the van's life."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "Which vans meet the replacement policy right now?",
+    "choices": [
+     "V-102 only",
+     "V-101 and V-102 only",
+     "V-101, V-102, V-104 and V-105 only",
+     "V-101, V-102, V-103 and V-105 only",
+     "V-101, V-102 and V-105 only"
+    ],
+    "answer": 4,
+    "explanation": "The maintenance threshold is 0.35 × 42,000 = USD 14,700. V-101 (USD 16,100) and V-105 (USD 15,000) exceed it; V-103 (USD 14,200) and V-104 (USD 12,500) do not. On the odometer test only V-102 (204,500 km) has reached 200,000; V-104 is at 199,000, just short. So V-101, V-102 and V-105 qualify."
+   },
+   {
+    "kind": "mcq",
+    "stem": "For a replacement van driven 25,000 km per year and kept five years, how much lower is the total cost of an electric van than that of a diesel van?",
+    "choices": [
+     "USD 4,750",
+     "USD 5,250",
+     "USD 8,000",
+     "USD 10,250",
+     "USD 15,000"
+    ],
+    "answer": 3,
+    "explanation": "Five years at 25,000 km is 125,000 km. Diesel: 42,000 + 125,000 × (0.14 + 0.06) = 42,000 + 25,000 = USD 67,000. Electric: net price 0.85 × 55,000 = USD 46,750, plus 125,000 × (0.05 + 0.03) = USD 10,000, for USD 56,750. The difference is USD 10,250. USD 15,000 counts only running-cost savings (125,000 × 0.12) and ignores the higher net price."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "If V-104 is driven at its typical annual rate, it will reach the odometer threshold within the next month.",
+      "answer": 0
+     },
+     {
+      "text": "An electric van's total cost falls below a diesel van's total cost before the van has been driven 40,000 km.",
+      "answer": 0
+     },
+     {
+      "text": "If the maintenance threshold were raised to 40 percent of a new diesel van's price, V-101 would still meet the replacement policy.",
+      "answer": 1
+     }
+    ],
+    "explanation": "V-104 drives about 45,000 ÷ 12 = 3,750 km a month, taking it from 199,000 to about 202,750 km: Yes. The electric van costs 46,750 - 42,000 = USD 4,750 more up front and saves USD 0.12 per km, so it breaks even after 4,750 ÷ 0.12, about 39,583 km: Yes. A 40 percent threshold is USD 16,800; V-101's USD 16,100 is below it and its odometer is under 200,000: No."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-10",
+  "sec": "di",
+  "type": "msr",
+  "diff": 4,
+  "tabs": [
+   {
+    "title": "Supplier terms",
+    "text": "Price per tonne of recycled PET flake depends on the total tonnes a customer orders in a calendar quarter: fewer than 200 tonnes, USD 820 per tonne; 200 to 399 tonnes, USD 780 per tonne; 400 tonnes or more, USD 750 per tonne. The tier price applies to every tonne in that quarter's order, not only to the tonnes above a threshold. Freight is USD 35 per tonne at every volume. Orders are in whole tonnes and are delivered in the quarter they are placed."
+   },
+   {
+    "title": "Plant forecasts (tonnes)",
+    "table": {
+     "cols": [
+      "Plant",
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+     ],
+     "rows": [
+      [
+       "North",
+       120,
+       140,
+       150,
+       130
+      ],
+      [
+       "South",
+       90,
+       110,
+       100,
+       80
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Procurement memo",
+    "text": "North and South currently order separately, so each plant's order is priced on its own volume. If the plants order jointly, their quantities are combined for tier purposes. Flake bought early can be stored at the South plant for USD 12 per tonne for each quarter it is held."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "If the plants order jointly each quarter for exactly that quarter's needs, what is the total annual cost of flake including freight?",
+    "choices": [
+     "USD 717,600",
+     "USD 732,400",
+     "USD 745,000",
+     "USD 749,800",
+     "USD 786,600"
+    ],
+    "answer": 3,
+    "explanation": "Joint quarterly volumes are 210, 250, 250 and 210 tonnes, all in the 200-399 tier, so every tonne costs 780 + 35 = USD 815. Total volume is 920 tonnes, and 920 × 815 = USD 749,800. USD 717,600 leaves out freight, and USD 786,600 is the cost of ordering separately (every plant order is under 200 tonnes, so 920 × 855)."
+   },
+   {
+    "kind": "mcq",
+    "stem": "Suppose the plants order jointly and, in Q2, buy enough flake to cover both Q2 and Q3 needs, storing the Q3 portion for one quarter. Compared with ordering jointly in each of Q2 and Q3, how much lower is the combined cost of flake, freight and storage for those two quarters?",
+    "choices": [
+     "USD 7,500",
+     "USD 12,000",
+     "USD 15,000",
+     "USD 18,000",
+     "USD 27,000"
+    ],
+    "answer": 1,
+    "explanation": "Q2 plus Q3 need is 250 + 250 = 500 tonnes, which reaches the USD 750 tier. Flake savings: 500 × (780 - 750) = USD 15,000. Freight is the same per tonne either way. Storing the Q3 portion costs 250 × 12 = USD 3,000. Net saving: 15,000 - 3,000 = USD 12,000. Choosing USD 15,000 ignores storage."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "Joint ordering each quarter saves the plants more than USD 35,000 per year compared with ordering separately.",
+      "answer": 0
+     },
+     {
+      "text": "Ordering jointly for each quarter's needs, without buying ahead, would qualify for the USD 750 price in at least one quarter.",
+      "answer": 1
+     },
+     {
+      "text": "If South's Q1 need rose by 30 tonnes and the plants ordered separately, South's Q1 price per tonne would change.",
+      "answer": 1
+     }
+    ],
+    "explanation": "Every separate order is below 200 tonnes (USD 820) and every joint order is in the USD 780 tier, so each of the 920 tonnes saves USD 40: 920 × 40 = USD 36,800: Yes. The largest joint quarter is 250 tonnes, below 400: No. South's Q1 order would be 120 tonnes, still under 200, so the price stays USD 820: No."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-11",
+  "sec": "di",
+  "type": "msr",
+  "diff": 4,
+  "tabs": [
+   {
+    "title": "Protocol",
+    "text": "This phase II study tests three doses of Ambrexil (25 mg, 50 mg and 100 mg) against placebo for preventing migraine. The primary endpoint is the reduction in mean monthly migraine days from baseline to week 12. A dose may be taken into phase III only if (1) its mean reduction exceeds the placebo arm's mean reduction by at least 1.5 days and (2) no more than 8 percent of its patients discontinued because of a treatment-related adverse event (AE)."
+   },
+   {
+    "title": "Week-12 results",
+    "table": {
+     "cols": [
+      "Arm",
+      "Patients",
+      "Mean migraine days per month, baseline",
+      "Mean migraine days per month, week 12",
+      "Discontinuations for treatment-related AEs"
+     ],
+     "rows": [
+      [
+       "Placebo",
+       80,
+       9.4,
+       8.1,
+       2
+      ],
+      [
+       "25 mg",
+       80,
+       9.6,
+       7.6,
+       3
+      ],
+      [
+       "50 mg",
+       78,
+       9.2,
+       6.1,
+       5
+      ],
+      [
+       "100 mg",
+       82,
+       9.5,
+       5.6,
+       9
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Medical lead's e-mail",
+    "text": "The safety committee has reviewed the 50 mg arm and reclassified two discontinuations, previously recorded as unrelated to treatment, as treatment-related. Separately, our licensing partner has said it would accept, for phase III, a dose whose treatment-related AE discontinuation rate is as high as 10 percent, provided its mean reduction exceeds placebo's by at least 2.5 days."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "Based on the protocol and the table only, which doses may be taken into phase III?",
+    "choices": [
+     "25 mg only",
+     "50 mg only",
+     "100 mg only",
+     "50 mg and 100 mg only",
+     "None of the doses"
+    ],
+    "answer": 1,
+    "explanation": "Mean reductions: placebo 9.4 - 8.1 = 1.3; 25 mg 2.0; 50 mg 3.1; 100 mg 3.9. Advantages over placebo: 0.7, 1.8 and 2.6 days, so 25 mg fails the efficacy test. AE discontinuation rates: 50 mg 5 ÷ 78, about 6.4 percent, passes; 100 mg 9 ÷ 82, about 11.0 percent, fails. Only 50 mg qualifies."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "After the reclassification in the e-mail, the 50 mg dose still meets the protocol's AE criterion.",
+      "answer": 1
+     },
+     {
+      "text": "The 100 mg dose would meet the licensing partner's alternative standard.",
+      "answer": 1
+     },
+     {
+      "text": "The 100 mg arm's mean reduction exceeds placebo's by more than 2.5 days.",
+      "answer": 0
+     }
+    ],
+    "explanation": "With two more treatment-related discontinuations, 50 mg has 7 of 78, about 9.0 percent, above 8 percent: No. The 100 mg dose has the required 2.6-day advantage, but its AE rate of about 11.0 percent exceeds the partner's 10 percent ceiling: No. Its advantage is 3.9 - 1.3 = 2.6 days, more than 2.5: Yes."
+   },
+   {
+    "kind": "mcq",
+    "stem": "What is the greatest number of treatment-related AE discontinuations the 100 mg arm could have had and still met the licensing partner's alternative standard?",
+    "choices": [
+     "8",
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "answer": 0,
+    "explanation": "The partner allows a rate of at most 10 percent. With 82 patients, 10 percent is 8.2, so at most 8 discontinuations (8 ÷ 82, about 9.8 percent) are allowed; 9 gives about 11.0 percent. The efficacy condition (2.6 days ≥ 2.5) is already met, so the answer is 8."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-12",
+  "sec": "di",
+  "type": "msr",
+  "diff": 4,
+  "tabs": [
+   {
+    "title": "Strategy memo",
+    "text": "We will open at most two new stores next year. A candidate location qualifies only if its payback period, defined as fit-out cost divided by projected annual operating profit, is under 3 years. Projected annual operating profit is projected annual revenue times the operating margin. Among qualifying locations we will choose the two with the highest combined projected annual operating profit, except that the two new stores may not be in the same metro area."
+   },
+   {
+    "title": "Candidate locations",
+    "table": {
+     "cols": [
+      "Location",
+      "Metro area",
+      "Fit-out cost (USD thousands)",
+      "Projected annual revenue (USD thousands)",
+      "Operating margin (%)"
+     ],
+     "rows": [
+      [
+       "Alder Park",
+       "Northvale",
+       1200,
+       3600,
+       12
+      ],
+      [
+       "Bay Street",
+       "Northvale",
+       1500,
+       4800,
+       11
+      ],
+      [
+       "Cedar Point",
+       "Southport",
+       900,
+       2400,
+       13
+      ],
+      [
+       "Dune Road",
+       "Southport",
+       1100,
+       3000,
+       12
+      ],
+      [
+       "Elm Square",
+       "Westbury",
+       1300,
+       3500,
+       14
+      ]
+     ]
+    }
+   },
+   {
+    "title": "CFO e-mail",
+    "text": "One constraint the memo leaves out: our capital budget for store fit-outs next year is USD 2.6 million in total, so the combined fit-out cost of the two new stores cannot exceed that. Separately, our negotiations with the Dune Road landlord may reduce Dune Road's fit-out cost by USD 100 thousand."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "Based on the strategy memo and the table only, which two locations would be chosen?",
+    "choices": [
+     "Alder Park and Bay Street",
+     "Alder Park and Elm Square",
+     "Bay Street and Cedar Point",
+     "Elm Square and Dune Road",
+     "Bay Street and Elm Square"
+    ],
+    "answer": 4,
+    "explanation": "Annual profits (USD thousands): Alder 432, Bay 528, Cedar 312, Dune 360, Elm 490. Paybacks: Alder 2.78, Bay 2.84, Cedar 2.88, Dune 3.06 (fails), Elm 2.65. The two highest qualifying profits are Bay (528) and Elm (490), in different metros, so Bay Street and Elm Square. Alder and Bay are both in Northvale, so that pair is not allowed."
+   },
+   {
+    "kind": "mcq",
+    "stem": "Once the CFO's capital budget is taken into account, what is the combined projected annual operating profit of the pair chosen?",
+    "choices": [
+     "USD 802 thousand",
+     "USD 840 thousand",
+     "USD 888 thousand",
+     "USD 922 thousand",
+     "USD 1,018 thousand"
+    ],
+    "answer": 3,
+    "explanation": "Bay and Elm need 1,500 + 1,300 = 2,800, over the 2,600 budget. Check allowed pairs in different metros within budget: Alder + Elm (2,500) gives 432 + 490 = 922; Bay + Cedar (2,400) gives 840; Elm + Cedar (2,200) gives 802; Alder + Cedar gives 744. The best is Alder Park and Elm Square at USD 922 thousand. USD 1,018 thousand is Bay plus Elm, which breaks the budget."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "Dune Road qualifies under the payback rule at its current fit-out cost.",
+      "answer": 1
+     },
+     {
+      "text": "If Dune Road's fit-out cost fell by USD 100 thousand, Dune Road would qualify under the payback rule.",
+      "answer": 0
+     },
+     {
+      "text": "If Dune Road's fit-out cost fell by USD 100 thousand, the best pair within the CFO's budget would include Dune Road.",
+      "answer": 1
+     }
+    ],
+    "explanation": "Dune Road's profit is 0.12 × 3,000 = 360, so its payback is 1,100 ÷ 360, about 3.06 years: No. At 1,000 the payback is about 2.78 years: Yes. The best Dune pairs would be Dune + Bay (2,500; 888) and Dune + Elm (2,300; 850), both below Alder + Elm's 922: No."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-13",
+  "sec": "di",
+  "type": "msr",
+  "diff": 5,
+  "tabs": [
+   {
+    "title": "Pricing team e-mail",
+    "text": "We tested three monthly prices for our meal-planning subscription. For four weeks, visitors to the sign-up page were randomly assigned to see one price, and each price was shown to 12,000 visitors. Monthly contribution per subscriber is the price minus a variable cost of USD 3.50 (payment fees and support). We will choose the price that maximises expected contribution per visitor over a subscriber's first six months, calculated as (sign-ups ÷ visitors) × average months subscribed in the first six months × monthly contribution."
+   },
+   {
+    "title": "Test results",
+    "table": {
+     "cols": [
+      "Monthly price (USD)",
+      "Visitors",
+      "Sign-ups",
+      "Average months subscribed in first six months"
+     ],
+     "rows": [
+      [
+       9.99,
+       12000,
+       720,
+       4.5
+      ],
+      [
+       12.99,
+       12000,
+       540,
+       4.8
+      ],
+      [
+       14.99,
+       12000,
+       450,
+       5.0
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Finance memo",
+    "text": "From next month our payment processor raises its fees, so variable cost will be USD 4.50 per subscriber per month instead of USD 3.50. Marketing is also considering a 20 percent discount on the first month only, at whichever price is chosen. Analysts expect the discount to raise sign-ups by 15 percent without changing average months subscribed; the discount reduces first-month revenue only."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "Using the pricing team's method and the original USD 3.50 variable cost, the expected contribution per visitor at USD 14.99 is closest to which of the following?",
+    "choices": [
+     "USD 1.75",
+     "USD 1.97",
+     "USD 2.05",
+     "USD 2.15",
+     "USD 2.30"
+    ],
+    "answer": 3,
+    "explanation": "Sign-up rate at USD 14.99 is 450 ÷ 12,000 = 0.0375. Monthly contribution is 14.99 - 3.50 = USD 11.49, over an average of 5.0 months, or USD 57.45 per subscriber. Per visitor: 0.0375 × 57.45, about USD 2.154, closest to USD 2.15. For comparison, USD 9.99 gives 0.06 × 4.5 × 6.49, about USD 1.75, and USD 12.99 gives 0.045 × 4.8 × 9.49, about USD 2.05."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "At the original variable cost, USD 12.99 yields more expected contribution per visitor than USD 9.99.",
+      "answer": 0
+     },
+     {
+      "text": "After the variable-cost increase in the memo, the price that maximises expected contribution per visitor changes.",
+      "answer": 1
+     },
+     {
+      "text": "At the higher variable cost, offering the first-month discount at USD 14.99 would raise expected contribution per visitor at that price.",
+      "answer": 0
+     }
+    ],
+    "explanation": "At USD 3.50: USD 9.99 gives about USD 1.75 and USD 12.99 about USD 2.05: Yes. At USD 4.50: USD 9.99 gives 0.06 × 4.5 × 5.49, about USD 1.48; USD 12.99 gives 0.045 × 4.8 × 8.49, about USD 1.83; USD 14.99 gives 0.0375 × 5 × 10.49, about USD 1.97, so USD 14.99 still wins: No. With the discount, sign-ups rise to 517.5 (rate 0.043125) and each subscriber contributes 5 × 10.49 - 0.2 × 14.99, about USD 49.45, giving about USD 2.13 per visitor, above USD 1.97: Yes."
+   },
+   {
+    "kind": "mcq",
+    "stem": "At the original variable cost, by approximately what percent would sign-ups at USD 9.99 have had to be higher for USD 9.99 to match the expected contribution per visitor at USD 14.99?",
+    "choices": [
+     "9%",
+     "12%",
+     "15%",
+     "19%",
+     "23%"
+    ],
+    "answer": 4,
+    "explanation": "Contribution per visitor is proportional to sign-ups when price and retention are fixed. USD 14.99 yields about USD 2.154 and USD 9.99 about USD 1.752 per visitor. The ratio 2.154 ÷ 1.752 is about 1.23, so sign-ups at USD 9.99 would need to be about 23 percent higher, roughly 885 instead of 720. A quick estimate: 57.45 ÷ 29.2 (contribution per subscriber) is about 1.97, and 450 × 1.97 ≈ 885."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-14",
+  "sec": "di",
+  "type": "msr",
+  "diff": 5,
+  "tabs": [
+   {
+    "title": "Fund rules",
+    "text": "The Halden Foundation's innovation fund has USD 1.2 million to award this year. Each proposal receives either its full requested amount or nothing. Any set of awards must satisfy three rules: (1) the total awarded may not exceed the fund; (2) at least 40 percent of the total awarded must go to proposals led by small organisations; (3) no single region may receive more than half of the total awarded. Among all sets of awards that satisfy the rules, the committee chooses the one that awards the largest total amount; if two or more sets tie on total amount, it chooses the one with the highest combined review score."
+   },
+   {
+    "title": "Shortlisted proposals",
+    "table": {
+     "cols": [
+      "Proposal",
+      "Region",
+      "Organisation size",
+      "Request (USD thousands)",
+      "Review score"
+     ],
+     "rows": [
+      [
+       "P1",
+       "North",
+       "Large",
+       450,
+       92
+      ],
+      [
+       "P2",
+       "South",
+       "Small",
+       300,
+       88
+      ],
+      [
+       "P3",
+       "North",
+       "Small",
+       250,
+       85
+      ],
+      [
+       "P4",
+       "East",
+       "Large",
+       400,
+       83
+      ],
+      [
+       "P5",
+       "South",
+       "Large",
+       350,
+       80
+      ],
+      [
+       "P6",
+       "East",
+       "Small",
+       200,
+       74
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Programme officer's e-mail",
+    "text": "Late update: the applicant behind P4 has revised its budget and reduced its request from USD 400 thousand to USD 300 thousand. Nothing else about P4 has changed. Please rerun the allocation with the revised figure."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "Using the original requests, which proposals will be funded?",
+    "choices": [
+     "P1, P2 and P6",
+     "P2, P3 and P4",
+     "P2, P3 and P6",
+     "P3, P5 and P6",
+     "P1, P2, P3 and P6"
+    ],
+    "answer": 1,
+    "explanation": "Four proposals always break a rule: any four requests total at least USD 1,100 thousand, and the only four-proposal sets within USD 1.2 million either give small organisations under 40 percent or give one region more than half. The largest valid totals are USD 950 thousand, reached by P2, P3, P4 (small share 550 of 950; regions 300, 250, 400, none above 475) and by P1, P2, P6 (small 500 of 950; North 450, South 300, East 200). Both total USD 950 thousand, so the tie goes to the higher score: 88 + 85 + 83 = 256 beats 92 + 88 + 74 = 254. P1, P2, P3 and P6 totals 1,200 but North gets 700, more than half."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "No set of awards that satisfies the rules funds both P1 and P4.",
+      "answer": 0
+     },
+     {
+      "text": "Under the original requests, more than half of the total awarded goes to small organisations.",
+      "answer": 0
+     },
+     {
+      "text": "If the fund were only USD 900 thousand, the same proposals would be funded.",
+      "answer": 1
+     }
+    ],
+    "explanation": "P1 and P4 together are USD 850 thousand from large organisations. If small awards total s, rule 2 needs s ≥ 0.4(850 + s), so s ≥ about 567, but then the total would exceed USD 1.2 million: Yes. Small organisations receive 300 + 250 = 550 of 950, about 58 percent: Yes. The chosen set totals USD 950 thousand, which a USD 900 thousand fund could not cover: No."
+   },
+   {
+    "kind": "mcq",
+    "stem": "After P4's request is reduced as described in the e-mail, which proposal that was funded under the original requests would no longer be funded?",
+    "choices": [
+     "P1",
+     "P2",
+     "P3",
+     "P4",
+     "None of them; P2, P3 and P4 are all still funded"
+    ],
+    "answer": 1,
+    "explanation": "With P4 at USD 300 thousand, the set P3, P4, P5, P6 totals 250 + 300 + 350 + 200 = USD 1,100 thousand. Small share: 450 of 1,100, about 41 percent. Regions: North 250, East 500, South 350, none above 550. No valid set awards more (P2, P3, P4, P6 totals only 1,050). So the new allocation is P3, P4, P5 and P6, and P2, despite its high score, drops out, because the rule favours the largest total awarded before the review score."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-15",
+  "sec": "di",
+  "type": "msr",
+  "diff": 5,
+  "tabs": [
+   {
+    "title": "Nurse manager's memo",
+    "text": "Ward 6 requires the following minimum number of registered nurses on duty at every moment of each day: 06:00-14:00, at least 6; 14:00-22:00, at least 5; 22:00-06:00, at least 3. Nurses work one of five shift types. Eight-hour shifts start at 06:00, 14:00 or 22:00. Twelve-hour shifts run 06:00-18:00 (day) or 18:00-06:00 (night). We want the lowest-cost daily schedule that meets these minimums."
+   },
+   {
+    "title": "Shift costs",
+    "table": {
+     "cols": [
+      "Shift type",
+      "Hours",
+      "Cost per shift (USD)"
+     ],
+     "rows": [
+      [
+       "8-hour day (06:00-14:00)",
+       8,
+       400
+      ],
+      [
+       "8-hour evening (14:00-22:00)",
+       8,
+       440
+      ],
+      [
+       "8-hour night (22:00-06:00)",
+       8,
+       480
+      ],
+      [
+       "12-hour day (06:00-18:00)",
+       12,
+       560
+      ],
+      [
+       "12-hour night (18:00-06:00)",
+       12,
+       680
+      ]
+     ]
+    }
+   },
+   {
+    "title": "HR e-mail",
+    "text": "Please note the union agreement that takes effect next month. Each day, at least half of all shifts scheduled must be 8-hour shifts, and no more than 4 shifts in total may be 12-hour shifts."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "Using only 8-hour shifts, what is the lowest possible daily cost of meeting the minimums?",
+    "choices": [
+     "USD 5,800",
+     "USD 5,880",
+     "USD 6,040",
+     "USD 6,270",
+     "USD 6,480"
+    ],
+    "answer": 2,
+    "explanation": "With only 8-hour shifts, each block is covered by its own shift type, so the cheapest schedule uses exactly the minimum in each: 6 day shifts, 5 evening shifts and 3 night shifts. Cost: 6 × 400 + 5 × 440 + 3 × 480 = 2,400 + 2,200 + 1,440 = USD 6,040."
+   },
+   {
+    "kind": "mcq",
+    "stem": "Ignoring the union agreement, what is the lowest possible daily cost of meeting the minimums?",
+    "choices": [
+     "USD 5,800",
+     "USD 5,880",
+     "USD 5,960",
+     "USD 6,040",
+     "USD 6,130"
+    ],
+    "answer": 0,
+    "explanation": "A 12-hour day shift covers 06:00-14:00 and 14:00-18:00, and a 12-hour night shift covers 18:00-22:00 and 22:00-06:00. One of each (USD 1,240) replaces one 8-hour day, evening and night shift (USD 1,320), saving USD 80 per pair. Pairs can replace up to 3 night shifts, giving 3 day, 2 evening, 0 night, 3 twelve-hour day and 3 twelve-hour night shifts: 1,200 + 880 + 1,680 + 2,040 = USD 5,800. Checking all combinations confirms nothing cheaper meets every block."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "Under the union agreement, the lowest possible daily cost is USD 5,880.",
+      "answer": 0
+     },
+     {
+      "text": "The lowest-cost schedule when the union agreement is ignored breaks the agreement's limit on 12-hour shifts.",
+      "answer": 0
+     },
+     {
+      "text": "Under the union agreement, the lowest-cost schedule includes no 8-hour night shift.",
+      "answer": 1
+     }
+    ],
+    "explanation": "The agreement allows at most 4 twelve-hour shifts, so at most 2 of the USD 80-saving pairs: 4 day, 3 evening, 1 night, 2 twelve-hour day and 2 twelve-hour night shifts cost 1,600 + 1,320 + 480 + 1,120 + 1,360 = USD 5,880, and 8 of the 12 shifts are 8-hour shifts: Yes. The unrestricted optimum uses 6 twelve-hour shifts, more than 4: Yes. The union-compliant optimum has 2 twelve-hour night shifts covering 22:00-06:00, so it still needs 1 eight-hour night shift to reach 3 nurses: No."
+   }
+  ],
+  "time": 420
+ },
+ {
+  "id": "msr-16",
+  "sec": "di",
+  "type": "msr",
+  "diff": 5,
+  "tabs": [
+   {
+    "title": "Integration memo",
+    "text": "After acquiring Brightline, we will review the two companies' offices in each of three cities. In each city we either keep both offices or close one and move all of its staff into the other. Because of hybrid working, a receiving office must have at least 0.8 desks per person for the combined staff of both offices. Closing an office saves its annual lease, but in the first year it also incurs a one-time exit fee equal to 50 percent of that office's annual lease, plus moving costs of USD 2,500 per person moved. First-year net savings equal lease savings minus exit fees and moving costs."
+   },
+   {
+    "title": "Office data",
+    "table": {
+     "cols": [
+      "City",
+      "Office",
+      "Staff",
+      "Desks",
+      "Annual lease (USD thousands)"
+     ],
+     "rows": [
+      [
+       "Denver",
+       "Ours",
+       220,
+       300,
+       2400
+      ],
+      [
+       "Denver",
+       "Brightline",
+       140,
+       160,
+       1600
+      ],
+      [
+       "Austin",
+       "Ours",
+       90,
+       170,
+       1100
+      ],
+      [
+       "Austin",
+       "Brightline",
+       110,
+       140,
+       1300
+      ],
+      [
+       "Raleigh",
+       "Ours",
+       60,
+       90,
+       700
+      ],
+      [
+       "Raleigh",
+       "Brightline",
+       50,
+       40,
+       500
+      ]
+     ]
+    }
+   },
+   {
+    "title": "CFO e-mail",
+    "text": "Good news on Denver: the Brightline Denver lease has a break clause, so if we close that office we will pay no exit fee there. All other exit fees stand. The board wants first-year net savings of at least USD 1.5 million, achieved with as few office closures as possible."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "mcq",
+    "stem": "Under the desk rule in the memo, which offices could be closed?",
+    "choices": [
+     "Only the Brightline office in Denver",
+     "Only our offices in Austin and Raleigh",
+     "The Brightline offices in Austin and Raleigh only",
+     "Our offices in all three cities",
+     "The Brightline offices in all three cities"
+    ],
+    "answer": 4,
+    "explanation": "Required desks are 0.8 × combined staff. Denver: 0.8 × 360 = 288; our office has 300 desks, Brightline 160, so only Brightline can close. Austin: 0.8 × 200 = 160; ours has 170, Brightline 140, so only Brightline can close. Raleigh: 0.8 × 110 = 88; ours has 90, Brightline 40, so only Brightline can close. Hence the Brightline office in each of the three cities can be closed, and none of ours can."
+   },
+   {
+    "kind": "yesno",
+    "prompt": "For each of the following statements, select Yes if the statement is true based on the information provided. Otherwise select No.",
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "statements": [
+     {
+      "text": "Before the CFO's update, closing all three Brightline offices would give first-year net savings of less than USD 1 million.",
+      "answer": 0
+     },
+     {
+      "text": "With the Denver exit fee waived, closing all three Brightline offices would give first-year net savings above USD 1.7 million.",
+      "answer": 0
+     },
+     {
+      "text": "Moving the staff of our Raleigh office into the Brightline Raleigh office would satisfy the desk rule.",
+      "answer": 1
+     }
+    ],
+    "explanation": "First-year net savings (in USD thousands): Denver 1,600 - 800 - 140 × 2.5 = 450; Austin 1,300 - 650 - 275 = 375; Raleigh 500 - 250 - 125 = 125; total 950, under 1,000: Yes. Waiving Denver's USD 800 thousand fee raises the total to 1,750: Yes. The Brightline Raleigh office has 40 desks, far below the 88 needed: No."
+   },
+   {
+    "kind": "mcq",
+    "stem": "Taking the CFO's update into account, which closures meet the board's target with as few closures as possible?",
+    "choices": [
+     "Brightline Denver and Brightline Austin",
+     "Brightline Denver only",
+     "Brightline Denver and Brightline Raleigh",
+     "Brightline Austin and Brightline Raleigh",
+     "All three Brightline offices"
+    ],
+    "answer": 0,
+    "explanation": "With no exit fee, closing Brightline Denver saves 1,600 - 350 = USD 1,250 thousand, short of 1,500, so one closure is not enough. Two-closure options: Denver + Austin = 1,250 + 375 = 1,625, which meets the target; Denver + Raleigh = 1,375, which does not; Austin + Raleigh = 500, which does not. So the board should close Brightline Denver and Brightline Austin. Closing all three also works but uses an extra closure."
+   }
+  ],
+  "time": 420
+ }
+]

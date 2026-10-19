@@ -1,0 +1,1003 @@
+[
+ {
+  "id": "rc2-01",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "business",
+  "diff": 4,
+  "title": "Reverse Factoring",
+  "paras": [
+   "In a reverse factoring arrangement, a large buyer invites its suppliers to sell their invoices to a bank that the buyer has selected. Because the bank is relying on the buyer's promise to pay rather than on the supplier's creditworthiness, it can advance cash to the supplier at a discount that reflects the buyer's lower borrowing cost. A supplier that would otherwise wait ninety days for payment can thus be paid within a week, and at a cheaper rate than it could obtain from its own lender. Proponents present the scheme as a rare case in which everyone gains: suppliers get liquidity, banks get low-risk assets, and buyers strengthen the firms on which their production depends.",
+   "The buyer's gain, however, is usually less altruistic than this account suggests. Once suppliers can be paid early through the programme, the buyer is free to lengthen its own payment terms, from sixty days to one hundred and twenty, say, without pushing suppliers into distress. The extended terms leave cash in the buyer's accounts for longer, improving a metric that analysts watch closely. In effect, the buyer is borrowing from the bank, but the obligation continues to appear on its balance sheet as trade payables, an operating item, rather than as debt.",
+   "That classification matters most when conditions deteriorate. Because rating agencies and investors have traditionally treated payables as a routine feature of operations, a company that relied heavily on supply-chain finance could appear less leveraged than a rival with identical economics that had simply borrowed from a bank. The concealment becomes dangerous if the bank withdraws the facility: suppliers who have grown used to early payment suddenly revert to waiting four months, and the buyer may face demands for cash that it had never disclosed as a liability.",
+   "Standard-setters have responded with disclosure rather than prohibition. Recent amendments to accounting rules require companies to report the terms of such programmes and the amounts outstanding under them, leaving the classification itself largely intact. Whether disclosure suffices depends on a question the rules do not settle: will analysts actually adjust their leverage figures, or will a footnote prove as easy to overlook as the absence of one?"
+  ],
+  "questions": [
+   {
+    "id": "rc2-01-q1",
+    "qtype": "main idea",
+    "diff": 3,
+    "stem": "The primary purpose of the passage is to",
+    "choices": [
+     "argue that reverse factoring should be prohibited because it harms suppliers",
+     "explain why banks prefer lending to large buyers rather than to their suppliers",
+     "compare the accounting treatment of trade payables in different countries",
+     "describe the steps by which a supplier joins a reverse factoring programme",
+     "examine how a financing arrangement presented as mutually beneficial can also obscure a company's true indebtedness"
+    ],
+    "answer": 4,
+    "explanation": "Paragraph 1 gives the 'everyone gains' view; paragraphs 2-3 show that the buyer is 'in effect... borrowing from the bank' while the obligation appears 'as trade payables... rather than as debt', and paragraph 4 weighs the disclosure response. The passage never calls for a ban (paragraph 4 notes disclosure 'rather than prohibition' without endorsing a ban), and supplier enrolment steps and country comparisons are not discussed.",
+    "time": 105
+   },
+   {
+    "id": "rc2-01-q2",
+    "qtype": "detail",
+    "diff": 3,
+    "stem": "According to the passage, the bank in a reverse factoring arrangement can offer suppliers a relatively low rate because",
+    "choices": [
+     "the supplier agrees to accept longer payment terms in exchange",
+     "the buyer guarantees the bank a share of its operating profits",
+     "its repayment depends on the buyer's promise to pay rather than on the supplier's creditworthiness",
+     "the invoices are classified as debt on the supplier's balance sheet",
+     "the bank is selected by the supplier through competitive bidding"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 1 states that 'the bank is relying on the buyer's promise to pay rather than on the supplier's creditworthiness', so the discount 'reflects the buyer's lower borrowing cost'. Longer terms are something the buyer imposes later (paragraph 2), and the bank is selected by the buyer, not the supplier.",
+    "time": 105
+   },
+   {
+    "id": "rc2-01-q3",
+    "qtype": "inference",
+    "diff": 4,
+    "stem": "It can be inferred that the author regards the recent accounting amendments described in the last paragraph as",
+    "choices": [
+     "a decisive solution to the problem of concealed leverage",
+     "harmful to suppliers because they discourage buyers from offering such programmes",
+     "unnecessary, because rating agencies already treat payables as debt",
+     "an improvement mainly because they reclassify payables as borrowing",
+     "potentially insufficient, since their effect depends on whether analysts act on the information disclosed"
+    ],
+    "answer": 4,
+    "explanation": "Paragraph 4 says the rules leave 'the classification itself largely intact' and that whether disclosure suffices 'depends on a question the rules do not settle': whether analysts 'will actually adjust their leverage figures'. That is doubt, not confidence. The amendments do not reclassify anything, and paragraph 3 says agencies 'traditionally treated payables as a routine feature of operations'.",
+    "time": 115
+   },
+   {
+    "id": "rc2-01-q4",
+    "qtype": "function",
+    "diff": 5,
+    "stem": "The author mentions 'a rival with identical economics that had simply borrowed from a bank' primarily in order to",
+    "choices": [
+     "show how a difference in classification can make two economically equivalent firms appear differently leveraged",
+     "suggest that bank borrowing is a cheaper source of funds than supply-chain finance",
+     "identify the type of company most likely to withdraw from a reverse factoring programme",
+     "argue that investors should prefer firms that borrow directly from banks",
+     "explain why suppliers prefer to deal with buyers that have little bank debt"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 3: a firm using supply-chain finance 'could appear less leveraged than a rival with identical economics'. The phrase 'identical economics' signals that the only difference is presentation, which is the author's point about classification. Nothing in the passage compares the cost of the two funding sources or recommends one type of firm to investors.",
+    "time": 125
+   }
+  ]
+ },
+ {
+  "id": "rc2-02",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "science",
+  "diff": 2,
+  "title": "The Wood Wide Web Revisited",
+  "paras": [
+   "Most land plants form partnerships with mycorrhizal fungi, whose threadlike hyphae extend far into the soil and trade water and mineral nutrients for sugars the plant produces through photosynthesis. Because a single fungus can colonise the roots of several plants at once, researchers have long suspected that these shared networks might do more than feed their individual hosts. In the late 1990s, field experiments using carbon isotopes suggested that carbon could move from one tree to another through fungal links, and the idea of a \"wood wide web\" quickly spread beyond the laboratory.",
+   "In popular accounts, the claim grew considerably. Mother trees were said to nourish their seedlings, warn neighbours of insect attack and even favour their own kin. A recent review of the field literature, however, found that the evidence for such claims is thinner than their popularity implies. Many experiments could not rule out that carbon had travelled through the soil rather than through the fungus, and few had shown that the amounts transferred were large enough to affect whether a seedling survived.",
+   "None of this means the networks are unimportant; their role in nutrient uptake is well established. The reviewers' point is narrower: a plausible mechanism, repeated often enough, had come to be treated as a demonstrated one."
+  ],
+  "questions": [
+   {
+    "id": "rc2-02-q1",
+    "qtype": "main idea",
+    "diff": 2,
+    "stem": "The passage is primarily concerned with",
+    "choices": [
+     "describing how a scientific hypothesis was extended in popular accounts beyond what the evidence supports",
+     "proving that carbon cannot move between trees through fungal networks",
+     "explaining how mycorrhizal fungi obtain sugars from plants",
+     "arguing that mycorrhizal networks play no role in forest ecology",
+     "comparing the survival rates of seedlings in different types of forest"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 2 says popular claims 'grew considerably' and that the evidence 'is thinner than their popularity implies'; paragraph 3 sums up that a 'plausible mechanism' had been 'treated as a demonstrated one'. The passage does not prove transfer impossible, and paragraph 3 explicitly says the networks are not unimportant.",
+    "time": 95
+   },
+   {
+    "id": "rc2-02-q2",
+    "qtype": "detail",
+    "diff": 2,
+    "stem": "According to the passage, one weakness of many experiments on carbon transfer was that they",
+    "choices": [
+     "used carbon isotopes that are unstable in forest soil",
+     "studied only seedlings that were unrelated to nearby trees",
+     "could not exclude the possibility that carbon moved through the soil instead of the fungus",
+     "measured nutrient uptake rather than carbon movement",
+     "were conducted in laboratories rather than in the field"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 2: 'Many experiments could not rule out that carbon had travelled through the soil rather than through the fungus.' The other choices are not mentioned; paragraph 1 in fact describes field experiments.",
+    "time": 95
+   },
+   {
+    "id": "rc2-02-q3",
+    "qtype": "tone",
+    "diff": 3,
+    "stem": "The author's attitude toward the popular claims about mother trees can best be described as",
+    "choices": [
+     "enthusiastic endorsement",
+     "measured scepticism",
+     "complete dismissal",
+     "amused indifference",
+     "reluctant acceptance"
+    ],
+    "answer": 1,
+    "explanation": "The author reports that the evidence is 'thinner than their popularity implies' (paragraph 2) yet adds that 'none of this means the networks are unimportant' and calls the reviewers' point 'narrower' (paragraph 3). That is doubt held in proportion, not dismissal or endorsement.",
+    "time": 105
+   }
+  ]
+ },
+ {
+  "id": "rc2-03",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "social science",
+  "diff": 3,
+  "title": "The Decline of Saint Monday",
+  "paras": [
+   "In many English trades of the eighteenth and early nineteenth centuries, workers observed a custom known as Saint Monday. Weavers, shoemakers and cutlers who were paid by the piece often took Monday as a day of leisure, sometimes Tuesday as well, and then worked long hours late in the week to finish their orders before Saturday payment. To employers and moralists, the habit was proof of improvidence; to the workers, it was simply the normal rhythm of work measured by tasks completed rather than by hours spent.",
+   "The historian E. P. Thompson argued that the decline of Saint Monday reflected a deeper transformation. Industrial capitalism, he contended, required not just longer work but a different relationship to time itself. In a factory where many workers tended machines that ran continuously, irregular attendance was intolerable, and employers used fines, bells, clocks and schooling to instil the habit of working steadily by the hour. Thompson drew his evidence from diaries, sermons, factory rules and the complaints of employers about absent hands. On this view, the punctual worker was not a natural type but a product of sustained discipline.",
+   "Later scholars have qualified Thompson's account in two ways. Some have pointed out that the custom persisted well into the nineteenth century in small workshops, and that its eventual decline owed as much to workers' own campaigns for a shorter week, including the Saturday half-holiday, as to employers' pressure. Workers, in other words, did not simply lose Monday; in many trades they traded it for a guaranteed Saturday afternoon. Others have questioned whether pre-industrial work was ever as free of clock time as Thompson implied, noting that church bells and market hours had long structured daily life.",
+   "These criticisms complicate the story without overturning it. Even if the transition was slower and more negotiated than Thompson suggested, the shift from task-oriented to time-oriented work remains one of the clearest examples of how economic change can reshape habits that people experience as entirely personal."
+  ],
+  "questions": [
+   {
+    "id": "rc2-03-q1",
+    "qtype": "structure",
+    "diff": 3,
+    "stem": "Which of the following best describes the organisation of the passage?",
+    "choices": [
+     "A custom is described, two rival explanations for it are compared, and one is rejected in favour of the other.",
+     "A custom is described, an interpretation of its decline is presented, qualifications of that interpretation are noted, and the interpretation's continuing value is assessed.",
+     "A historical claim is stated, evidence against it is presented, and the claim is shown to be false.",
+     "A theory of industrial work is outlined, and examples from several countries are offered in its support.",
+     "A debate among employers is summarised, and the workers' perspective is then introduced as a correction."
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 1 describes Saint Monday, paragraph 2 gives Thompson's interpretation, paragraph 3 says later scholars 'qualified' it, and paragraph 4 concludes that the criticisms 'complicate the story without overturning it'. Nothing is rejected outright, and only England is discussed.",
+    "time": 105
+   },
+   {
+    "id": "rc2-03-q2",
+    "qtype": "detail",
+    "diff": 2,
+    "stem": "According to the passage, some later scholars attributed the decline of Saint Monday partly to",
+    "choices": [
+     "the spread of church bells and market hours in rural areas",
+     "the introduction of piece rates in small workshops",
+     "a fall in demand for the goods made by weavers and cutlers",
+     "campaigns by workers for a shorter week, including a Saturday half-holiday",
+     "laws that prohibited work on Mondays"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 3: the decline 'owed as much to workers' own campaigns for a shorter week, including the Saturday half-holiday, as to employers' pressure'. Church bells appear in a different criticism, about pre-industrial time, not about the decline.",
+    "time": 95
+   },
+   {
+    "id": "rc2-03-q3",
+    "qtype": "inference",
+    "diff": 4,
+    "stem": "It can be inferred from the passage that workers who observed Saint Monday",
+    "choices": [
+     "were usually paid a fixed weekly wage regardless of output",
+     "were mostly employed in large factories with continuously running machines",
+     "regarded the custom as a form of protest against their employers",
+     "did not necessarily complete less work over a whole week than workers who worked evenly",
+     "were unaware of clock time until the arrival of factory bells"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 1 says they 'worked long hours late in the week to finish their orders before Saturday payment', so the leisure was offset later; output need not have been lower. They were 'paid by the piece', not a fixed wage, and worked in trades and small workshops rather than factories. Paragraph 3 doubts that pre-industrial work was ever free of clock time.",
+    "time": 115
+   },
+   {
+    "id": "rc2-03-q4",
+    "qtype": "application",
+    "diff": 4,
+    "stem": "Which of the following situations most closely parallels the process Thompson describes?",
+    "choices": [
+     "A firm that used to pay translators per document converts them to salaried staff and introduces logged hours and penalties for irregular attendance.",
+     "A group of freelance designers negotiates a higher fee for each completed project.",
+     "A union persuades a factory to close on Friday afternoons in exchange for longer shifts earlier in the week.",
+     "A school changes its timetable so that lessons begin an hour later in winter.",
+     "A shop owner decides to stay open on Sundays because local markets have extended their hours."
+    ],
+    "answer": 0,
+    "explanation": "Thompson's argument (paragraph 2) is that employers used 'fines, bells, clocks and schooling' to move workers from task-measured work to 'working steadily by the hour'. The translator case has the same shift from pay per task to disciplined hours. The union case resembles the later scholars' negotiated view in paragraph 3, not Thompson's.",
+    "time": 115
+   }
+  ]
+ },
+ {
+  "id": "rc2-04",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "humanities",
+  "diff": 3,
+  "title": "Reading the Stock Books",
+  "paras": [
+   "Provenance, the documented history of an artwork's ownership, is often treated as a supporting character in questions of attribution, but for many works it carries most of the weight. A painting with an unbroken chain of owners stretching back to the artist's studio is far harder to dispute than one that surfaces from an unnamed private collection, however convincing its brushwork appears. Researchers therefore spend much of their time with sources that seem mundane: auction catalogues, export permits, insurance inventories and the stock books in which dealers recorded what they bought and sold.",
+   "These sources are valuable precisely because they were not written to persuade. A dealer's stock book from the 1920s was kept to track inventory and profit, not to satisfy a future scholar, so its entries are unlikely to have been shaped by later disputes over a work's authenticity or ownership. The same records, however, are frustratingly terse. A description such as \"landscape with figures, oil\" may match dozens of canvases, and dimensions were recorded inconsistently, sometimes with and sometimes without the frame.",
+   "The gaps matter most for works that changed hands in Europe between 1933 and 1945, when forced sales and confiscations were common. For such works, an unexplained interval in the record is not a neutral absence but a question that a responsible museum must try to answer before acquisition."
+  ],
+  "questions": [
+   {
+    "id": "rc2-04-q1",
+    "qtype": "function",
+    "diff": 3,
+    "stem": "The author quotes the entry 'landscape with figures, oil' primarily in order to",
+    "choices": [
+     "show that dealers in the 1920s often misdescribed the works they sold",
+     "illustrate a limitation of a type of record that the author otherwise values",
+     "suggest that most landscapes of the period cannot be attributed",
+     "demonstrate that stock books were written to persuade future buyers",
+     "contrast dealers' records with the more detailed records kept by museums"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 2 first praises stock books because they 'were not written to persuade', then turns with 'however' to say they are 'frustratingly terse'. The quoted entry, which 'may match dozens of canvases', is the example of that terseness. The author does not accuse dealers of misdescription.",
+    "time": 105
+   },
+   {
+    "id": "rc2-04-q2",
+    "qtype": "inference",
+    "diff": 4,
+    "stem": "Based on the passage, the author would most likely regard a letter written by a seller at the time of a sale, describing the painting's distinguished earlier owners, as",
+    "choices": [
+     "more dependable than a stock book, because it gives fuller detail",
+     "conclusive proof of provenance if it names the artist's studio",
+     "irrelevant to provenance research, because it concerns attribution",
+     "equally dependable as a stock book, because both date from the time of sale",
+     "less dependable than a dealer's stock book, because it may have been written to influence the buyer"
+    ],
+    "answer": 4,
+    "explanation": "Paragraph 2 says records are 'valuable precisely because they were not written to persuade'. A seller's letter praising earlier owners is written to persuade, so by the author's reasoning it deserves more caution. Fuller detail does not cure that problem, and the passage never treats any single document as conclusive.",
+    "time": 115
+   },
+   {
+    "id": "rc2-04-q3",
+    "qtype": "main idea",
+    "diff": 3,
+    "stem": "The passage is primarily concerned with",
+    "choices": [
+     "arguing that attribution should depend on brushwork rather than ownership history",
+     "describing how museums returned works confiscated between 1933 and 1945",
+     "criticising dealers for failing to keep accurate records of their sales",
+     "explaining why routine commercial records are central to provenance research and what limits their usefulness",
+     "tracing the history of the art market in Europe during the 1920s"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 1 says provenance 'carries most of the weight' and that researchers rely on mundane sources, paragraph 2 gives their strength and their terseness, and paragraph 3 notes where the gaps matter most. Restitution and market history are mentioned only in passing or not at all.",
+    "time": 105
+   }
+  ]
+ },
+ {
+  "id": "rc2-05",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "business",
+  "diff": 1,
+  "title": "Why Prices End in .99",
+  "paras": [
+   "Retail prices ending in .99 are so common that shoppers rarely notice them, but the practice rests on a measurable quirk of perception. When people compare numbers quickly, they give disproportionate weight to the leftmost digit. A price of 4.99 dollars is therefore felt to be closer to 4 dollars than to 5 dollars, even though it differs from 5 dollars by a single cent. Researchers call this the left-digit effect. Studies of used-car sales have found that cars with odometer readings just under a round number, such as 79,900 miles, sell for noticeably more than cars just over it, with a sharp drop in price at each 10,000-mile threshold.",
+   "The effect is not equally useful to every seller. Because a price ending in .99 can signal a discount, luxury brands often avoid it, preferring round prices that suggest quality and confidence. Some research also suggests that the effect weakens when buyers slow down and calculate, as they may for large or infrequent purchases.",
+   "For most everyday goods, however, the small sacrifice of a cent per item appears to be well repaid. The persistence of the practice across countries and decades suggests that retailers have found it worth keeping, whether or not they could explain why it works."
+  ],
+  "questions": [
+   {
+    "id": "rc2-05-q1",
+    "qtype": "detail",
+    "diff": 1,
+    "stem": "According to the passage, the left-digit effect occurs because people",
+    "choices": [
+     "give too much weight to the first digit when comparing numbers quickly",
+     "prefer prices that suggest quality and confidence",
+     "round all prices up to the nearest whole number",
+     "calculate carefully when making large purchases",
+     "expect prices ending in .99 to be the same in every country"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 1: 'When people compare numbers quickly, they give disproportionate weight to the leftmost digit.' Quality signals concern luxury brands, and careful calculation is described as weakening the effect, not causing it.",
+    "time": 85
+   },
+   {
+    "id": "rc2-05-q2",
+    "qtype": "inference",
+    "diff": 2,
+    "stem": "Which of the following can be inferred from the passage about luxury brands?",
+    "choices": [
+     "Some of them are willing to give up the left-digit effect to avoid appearing discounted.",
+     "They are unaware of the left-digit effect.",
+     "Their customers always calculate prices carefully.",
+     "They earn lower profits than retailers of everyday goods.",
+     "They price used cars below round-number thresholds."
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 2 says a .99 ending 'can signal a discount', so luxury brands 'often avoid it, preferring round prices'. That is a trade-off they choose, not ignorance. 'Always' overstates the passage, and profits are not compared.",
+    "time": 95
+   },
+   {
+    "id": "rc2-05-q3",
+    "qtype": "application",
+    "diff": 2,
+    "stem": "Which of the following pricing decisions is most consistent with the left-digit effect as the passage describes it?",
+    "choices": [
+     "A jeweller prices a watch at 3,000 dollars instead of 2,999 dollars.",
+     "A car dealer advertises a car with 80,100 miles rather than waiting to sell it at 79,900 miles.",
+     "A bakery raises a price from 1.99 dollars to 2.05 dollars.",
+     "A software firm offers a single round price for a product that buyers evaluate for weeks.",
+     "A supermarket prices a box of cereal at 2.99 dollars instead of 3.00 dollars."
+    ],
+    "answer": 4,
+    "explanation": "The effect makes 2.99 dollars feel nearer 2 dollars than 3 dollars (paragraph 1), and paragraph 3 says the cent is 'well repaid' for 'everyday goods'. The jeweller and slow-evaluated software are cases where paragraph 2 says the effect is avoided or weak, and the car and bakery choices cross the threshold in the wrong direction.",
+    "time": 95
+   }
+  ]
+ },
+ {
+  "id": "rc2-06",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "science",
+  "diff": 5,
+  "title": "A Clock in a Test Tube",
+  "paras": [
+   "For decades biologists assumed that bacteria, whose cells often divide more quickly than once a day, had no use for a circadian clock. That assumption collapsed in the 1980s, when researchers found that cyanobacteria, photosynthetic bacteria that depend on sunlight, time activities such as nitrogen fixation to a roughly 24-hour cycle that persists even when the cells are kept in constant light. The clock, it turned out, is passed on intact through cell division, so that daughter cells inherit their parent's sense of the time of day.",
+   "More surprising was the mechanism. In plants, animals and fungi, circadian rhythms arise from transcription-translation feedback loops: clock genes produce proteins that eventually suppress the genes' own activity, and the cycle of production and suppression takes about a day. In the cyanobacterium Synechococcus elongatus, by contrast, the core oscillator consists of just three proteins, KaiA, KaiB and KaiC. In 2005 a Japanese team showed that when these proteins are mixed in a test tube with a supply of ATP, KaiC rhythmically adds and removes phosphate groups with a period close to 24 hours, without any gene being switched on or off. The clock, at its core, is a chemical reaction.",
+   "This finding did not make the cell's genetic machinery irrelevant. In living cells, the protein oscillator drives rhythmic patterns of gene expression, and those patterns feed back on the clock in ways that make it more robust to disturbances such as changes in cell growth. Nor was the test-tube oscillator indifferent to its surroundings. Its period is notably insensitive to temperature, a hallmark of genuine circadian clocks, but its phase can be reset by changes in the ratio of ATP to ADP, which in a photosynthetic cell falls in darkness.",
+   "That sensitivity, which might seem a flaw, is in fact one way the clock stays synchronised with the world. Because the energy state of the cell tracks the presence of light, the oscillator receives a daily signal about dawn and dusk without needing a dedicated light-sensing pathway. The cyanobacterial clock thus suggests that the transcriptional loops of more complex organisms are one way, but not the only way, of building a biological timer."
+  ],
+  "questions": [
+   {
+    "id": "rc2-06-q1",
+    "qtype": "main idea",
+    "diff": 4,
+    "stem": "The passage is primarily concerned with",
+    "choices": [
+     "explaining why bacteria that divide quickly cannot maintain circadian rhythms",
+     "arguing that transcription-translation loops play no role in any circadian clock",
+     "describing a finding that challenges assumptions about how biological clocks must work and considering what it does and does not show",
+     "comparing the accuracy of bacterial clocks with those of plants and animals",
+     "describing the techniques used to measure phosphorylation in a test tube"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 1 overturns the assumption that bacteria lack clocks, paragraph 2 presents the protein-only oscillator ('at its core, is a chemical reaction'), paragraph 3 qualifies what the finding means, and paragraph 4 draws the conclusion that transcriptional loops are 'one way, but not the only way'. The passage never dismisses gene loops entirely or compares accuracy.",
+    "time": 115
+   },
+   {
+    "id": "rc2-06-q2",
+    "qtype": "inference",
+    "diff": 5,
+    "stem": "It can be inferred from the passage that if the ratio of ATP to ADP in a cyanobacterial cell stayed constant regardless of light, the cell's Kai oscillator would most likely",
+    "choices": [
+     "stop cycling altogether, since the ratio drives each phosphorylation step",
+     "continue to cycle but lose one of the signals that keeps it aligned with the actual day and night",
+     "begin to run at a period that varied strongly with temperature",
+     "be passed on to daughter cells in a disrupted form",
+     "switch to a transcription-based mechanism like those of plants"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 3 says the ratio resets the oscillator's phase, and paragraph 4 says that because the energy state 'tracks the presence of light', it gives 'a daily signal about dawn and dusk'. Remove that variation and the cycle (powered by ATP, paragraph 2) need not stop, but that synchronising cue is lost. Temperature insensitivity is a separate property, and no switch of mechanism is suggested.",
+    "time": 125
+   },
+   {
+    "id": "rc2-06-q3",
+    "qtype": "function",
+    "diff": 5,
+    "stem": "The third paragraph serves mainly to",
+    "choices": [
+     "present evidence that the 2005 experiment was flawed and should be repeated",
+     "explain why the protein oscillator cannot function in living cells",
+     "argue that temperature insensitivity makes the bacterial clock superior to others",
+     "introduce a second species of bacterium whose clock works differently",
+     "guard against overstating the 2005 result by noting the continuing role of gene expression and a dependence of the oscillator on cellular conditions"
+    ],
+    "answer": 4,
+    "explanation": "It opens 'This finding did not make the cell's genetic machinery irrelevant' and adds 'Nor was the test-tube oscillator indifferent to its surroundings'. Both sentences limit how far the finding should be taken; neither attacks the experiment. The paragraph says the oscillator 'drives' gene expression in living cells, so it does function there.",
+    "time": 125
+   },
+   {
+    "id": "rc2-06-q4",
+    "qtype": "detail",
+    "diff": 4,
+    "stem": "According to the passage, the insensitivity of the Kai oscillator's period to temperature is noteworthy because",
+    "choices": [
+     "it allows the oscillator to detect dawn and dusk",
+     "it is a characteristic feature of genuine circadian clocks",
+     "it shows that KaiC does not need ATP to cycle",
+     "it explains why the clock is passed on during cell division",
+     "it proves that gene expression is irrelevant to the clock"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 3 calls temperature insensitivity 'a hallmark of genuine circadian clocks'. Detecting dawn and dusk depends on the ATP/ADP ratio, not temperature (paragraph 4), and the oscillator does need ATP (paragraph 2).",
+    "time": 115
+   }
+  ]
+ },
+ {
+  "id": "rc2-07",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "social science",
+  "diff": 4,
+  "title": "Mortgages and the Reach of Monetary Policy",
+  "paras": [
+   "When a central bank raises its policy rate, the effect on household spending depends heavily on how quickly that change reaches the rates households actually pay. Mortgage contracts are a central part of this transmission. In countries where most mortgages carry variable rates or are fixed only for a year or two, as has long been the case in Australia and much of Scandinavia, a rate rise lifts monthly repayments within months, squeezing the budgets of indebted households almost at once. In the United States, by contrast, the dominant 30-year fixed-rate mortgage insulates existing borrowers: their payments do not change unless they move or refinance.",
+   "This does not mean that American monetary policy is ineffective, only that it works through different channels. Higher rates still discourage new borrowing, depress house prices and, by making a new mortgage more expensive than an old one, discourage households from moving. Some economists argue that this last effect, the so-called lock-in of borrowers holding cheap old loans, can itself slow the economy by reducing the movement of workers to where jobs are.",
+   "The asymmetry also matters for rate cuts. Where fixed-rate borrowers can refinance without heavy penalty, lower rates are passed on mainly to those able to refinance, who tend to be households with good credit and stable income, while a rise in rates reaches almost none of the existing borrowers."
+  ],
+  "questions": [
+   {
+    "id": "rc2-07-q1",
+    "qtype": "inference",
+    "diff": 3,
+    "stem": "It can be inferred from the passage that, compared with the same rate rise in the United States, a rate rise in Australia would most likely",
+    "choices": [
+     "have no effect on new borrowing",
+     "cause more households to refinance at lower rates",
+     "reduce the disposable income of existing mortgage holders more quickly",
+     "lead to a larger lock-in of borrowers holding cheap loans",
+     "leave house prices unchanged"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 1: with variable or short-fixed mortgages, 'a rate rise lifts monthly repayments within months, squeezing the budgets of indebted households almost at once', whereas US fixed-rate borrowers are 'insulated'. Lock-in is described as a US effect tied to cheap old fixed loans, which variable-rate borrowers do not hold.",
+    "time": 105
+   },
+   {
+    "id": "rc2-07-q2",
+    "qtype": "function",
+    "diff": 4,
+    "stem": "The author mentions the 'lock-in of borrowers holding cheap old loans' primarily in order to",
+    "choices": [
+     "argue that fixed-rate mortgages should be replaced by variable-rate mortgages",
+     "explain why rate cuts benefit households with poor credit",
+     "show that American monetary policy is ineffective",
+     "identify a channel through which higher rates may affect economic activity even when existing repayments do not change",
+     "describe how Scandinavian households respond to rate rises"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 2 begins 'This does not mean that American monetary policy is ineffective, only that it works through different channels', and lock-in is the last channel listed, one that 'can itself slow the economy'. The author makes no policy recommendation, and the passage says the opposite of the claim that US policy is ineffective.",
+    "time": 115
+   },
+   {
+    "id": "rc2-07-q3",
+    "qtype": "application",
+    "diff": 5,
+    "stem": "Based on the passage, which of the following existing US borrowers would be most likely to see lower monthly payments soon after a rate cut?",
+    "choices": [
+     "A salaried homeowner with a strong credit record and a fixed-rate mortgage that can be refinanced without penalty",
+     "A homeowner with a fixed-rate mortgage whose credit record has recently deteriorated",
+     "A homeowner whose fixed-rate mortgage carries a heavy penalty for early repayment",
+     "A homeowner with irregular income who has a fixed-rate mortgage",
+     "A homeowner who has already repaid a fixed-rate mortgage in full"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 3: where borrowers 'can refinance without heavy penalty', cuts pass 'mainly to those able to refinance, who tend to be households with good credit and stable income'. Only the first borrower meets all three conditions; each distractor fails one of them, and a borrower with no mortgage has no payment to reduce.",
+    "time": 125
+   }
+  ]
+ },
+ {
+  "id": "rc2-08",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "business",
+  "diff": 2,
+  "title": "Profits After the Sale",
+  "paras": [
+   "Many manufacturers earn most of their profit not when they sell a machine but in the years afterwards. Makers of jet engines, elevators and farm equipment often price the original equipment close to cost, sometimes below it, and expect to recover their margin from spare parts, maintenance contracts and upgrades. The logic is simple: a customer who has already bought a long-lived asset will keep buying parts for it, and the manufacturer that designed it is usually best placed to supply them.",
+   "The strategy depends on keeping the aftermarket to oneself. Independent repair shops and parts makers can often service equipment more cheaply, so manufacturers have used a range of tools to limit them: proprietary diagnostic software, parts that are paired electronically with a particular machine, and warranties that are voided if an unauthorised technician opens the casing. Farmers in particular have complained that tractors which once could be fixed in the barn now require a dealer's technician with a laptop, and some have turned to unofficial software to keep their machines running during harvest.",
+   "Such practices have prompted \"right to repair\" campaigns and, increasingly, legislation. Several American states and the European Union have adopted rules requiring manufacturers of certain products to make parts, tools or repair information available to owners and independent shops. Manufacturers argue that unrestricted access raises safety and security risks, and that the low upfront prices customers enjoy are possible only because aftermarket revenue is protected.",
+   "That last argument deserves attention, because it is partly true. If manufacturers lose aftermarket margin, they are likely to raise the price of the original equipment, so customers would pay more at the start and less later. Whether that trade is good for buyers depends on how well they can estimate lifetime costs when they buy. Large airlines, which model the full cost of an engine over decades, may gain little; a small farm that buys on the sticker price may gain a great deal."
+  ],
+  "questions": [
+   {
+    "id": "rc2-08-q1",
+    "qtype": "main idea",
+    "diff": 2,
+    "stem": "The passage is primarily concerned with",
+    "choices": [
+     "arguing that manufacturers should stop selling equipment below cost",
+     "describing the safety risks created by independent repair shops",
+     "comparing repair laws in the United States and the European Union in detail",
+     "explaining a business model that relies on aftermarket revenue and examining the debate over opening that aftermarket to competitors",
+     "explaining how airlines estimate the lifetime cost of jet engines"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 1 explains the model, paragraph 2 how manufacturers protect it, paragraph 3 the right-to-repair response and the manufacturers' reply, and paragraph 4 weighs that reply. Safety risks and airlines are details within that debate, and the two legal systems are not compared in detail.",
+    "time": 95
+   },
+   {
+    "id": "rc2-08-q2",
+    "qtype": "detail",
+    "diff": 2,
+    "stem": "The passage mentions each of the following as a way manufacturers have limited independent repair EXCEPT",
+    "choices": [
+     "diagnostic software that only the manufacturer controls",
+     "parts electronically paired with a particular machine",
+     "warranties voided by unauthorised repairs",
+     "refusing to sell equipment to customers who have used independent shops",
+     "requiring a dealer's technician to carry out repairs"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 2 lists 'proprietary diagnostic software, parts that are paired electronically with a particular machine, and warranties that are voided', and the farmers' complaint describes tractors that 'now require a dealer's technician'. Refusing future sales is never mentioned.",
+    "time": 95
+   },
+   {
+    "id": "rc2-08-q3",
+    "qtype": "inference",
+    "diff": 3,
+    "stem": "The author suggests that the effect of right-to-repair rules on buyers would",
+    "choices": [
+     "be harmful to all buyers because upfront prices would rise",
+     "vary according to how well buyers can anticipate the total cost of equipment over its life",
+     "be beneficial to all buyers because repair costs would fall",
+     "be greatest for large airlines that plan over decades",
+     "have no effect, because manufacturers would not change their prices"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 4: 'Whether that trade is good for buyers depends on how well they can estimate lifetime costs', with airlines gaining 'little' and a small farm possibly gaining 'a great deal'. The author also predicts manufacturers 'are likely to raise the price of the original equipment', so prices would change.",
+    "time": 105
+   },
+   {
+    "id": "rc2-08-q4",
+    "qtype": "tone",
+    "diff": 3,
+    "stem": "The author's attitude toward the manufacturers' argument about low upfront prices is best described as",
+    "choices": [
+     "outright rejection of the argument as self-serving",
+     "a qualified acceptance of its premise combined with doubt that it settles the question",
+     "full agreement that repair rules would harm customers",
+     "indifference, since the argument concerns only manufacturers",
+     "confusion about what the argument claims"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 4 says the argument 'deserves attention, because it is partly true', then shows that the resulting trade-off may still favour some buyers. 'Partly true' rules out both rejection and full agreement.",
+    "time": 105
+   }
+  ]
+ },
+ {
+  "id": "rc2-09",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "science",
+  "diff": 3,
+  "title": "Marine Snow",
+  "paras": [
+   "The surface ocean absorbs a large share of the carbon dioxide that human activity releases, but much of that carbon would return to the atmosphere within years if it stayed near the surface. What keeps some of it away far longer is a process known as the biological carbon pump. Phytoplankton take up carbon as they grow; when they die or are eaten, part of that carbon sinks as \"marine snow,\" a slow drizzle of dead cells, faecal pellets and mucus that clumps into flakes large enough to fall hundreds of metres.",
+   "Only a small fraction of this material reaches the deep sea. Bacteria and small animals consume most of it on the way down, releasing the carbon again as dissolved carbon dioxide at shallower depths. Whether the carbon is stored for decades or for centuries depends largely on how deep it sinks before it is broken down, because water below about 1,000 metres may not return to contact with the atmosphere for hundreds of years.",
+   "This makes the pump hard to quantify. Satellite measurements give a reasonable picture of how much carbon phytoplankton take up at the surface, but the share of sinking particles that survive to great depth varies by region and season, and small changes in that share could alter long-term storage considerably."
+  ],
+  "questions": [
+   {
+    "id": "rc2-09-q1",
+    "qtype": "detail",
+    "diff": 2,
+    "stem": "According to the passage, how long carbon carried by marine snow remains out of contact with the atmosphere depends mainly on",
+    "choices": [
+     "the size of the phytoplankton that first absorbed it",
+     "the amount of carbon dioxide released by human activity",
+     "the depth the material reaches before it is broken down",
+     "whether satellites can detect the sinking particles",
+     "the temperature of the surface ocean"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 2: storage for decades or centuries 'depends largely on how deep it sinks before it is broken down'. Satellites appear in paragraph 3 only as a way to measure surface uptake.",
+    "time": 95
+   },
+   {
+    "id": "rc2-09-q2",
+    "qtype": "inference",
+    "diff": 4,
+    "stem": "It can be inferred from the passage that a change causing marine snow to sink faster, with no other changes, would most likely",
+    "choices": [
+     "increase the share of sinking carbon that is stored for long periods",
+     "reduce the amount of carbon phytoplankton take up at the surface",
+     "make satellite estimates of surface uptake less reliable",
+     "cause more carbon to be released at shallow depths",
+     "have no effect, since storage depends only on surface uptake"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 2 says organisms 'consume most of it on the way down', releasing carbon 'at shallower depths', and that storage time depends on depth reached. Faster sinking leaves less time for consumption on the way down, so more material should reach deep water. Surface uptake is not affected by sinking speed.",
+    "time": 115
+   },
+   {
+    "id": "rc2-09-q3",
+    "qtype": "structure",
+    "diff": 3,
+    "stem": "Which of the following best describes the organisation of the passage?",
+    "choices": [
+     "A theory is proposed, tested against evidence and then rejected.",
+     "Two competing explanations of a process are compared and one is preferred.",
+     "A natural process is introduced, a factor limiting its effect is described, and a resulting difficulty in measuring it is noted.",
+     "A problem is described and a technological solution to it is recommended.",
+     "A historical discovery is recounted and its discoverers are evaluated."
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 1 introduces the biological pump, paragraph 2 explains that 'only a small fraction' reaches the deep sea, and paragraph 3 begins 'This makes the pump hard to quantify'. No theory is rejected and no solution is recommended.",
+    "time": 105
+   }
+  ]
+ },
+ {
+  "id": "rc2-10",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "social science",
+  "diff": 4,
+  "title": "The Puzzle of the Last Recipient",
+  "paras": [
+   "In a rotating savings and credit association, or ROSCA, a group of people meet at regular intervals, each contributes a fixed sum, and the whole pot goes to one member, who is chosen by lot, by agreement or by bidding. The cycle continues until every member has received the pot once. Versions of the arrangement are found on every inhabited continent, from the tontines of West Africa and the hui of Chinese communities to the tandas of Mexico and the họ or hụi of Vietnam.",
+   "To economists, ROSCAs long posed a puzzle. Every member except the last receives the pot earlier than she could have saved the sum alone, so the arrangement is a form of credit for most participants. But the last recipient gains nothing in this respect: she could have saved the same amount in a box under her bed and had it at the same time, without the risk that another member would default after collecting the pot. Why would anyone accept the last position, or join a group knowing she might draw it?",
+   "One answer is that the box under the bed is not as secure as it sounds. Field research in Kenya and elsewhere has found that many participants, especially women, describe the association as a way to protect savings from claims by relatives, spouses or their own temptation to spend. Money that is pledged to a group in public is harder to divert than money kept at home, and the social cost of missing a contribution acts as a commitment device. On this account, even the last member gains something real: a disciplined route to a lump sum she might otherwise never accumulate.",
+   "This explanation fits a pattern that pure credit models struggle to account for. ROSCAs persist, and are often popular, among people who have access to bank accounts. If the associations existed only because formal finance was unavailable, they should fade as banks arrive. That they often do not suggests that they supply something an ordinary savings account does not, namely a social structure that makes saving harder to abandon."
+  ],
+  "questions": [
+   {
+    "id": "rc2-10-q1",
+    "qtype": "function",
+    "diff": 3,
+    "stem": "The question at the end of the second paragraph serves primarily to",
+    "choices": [
+     "introduce evidence that most ROSCA members prefer the last position",
+     "suggest that ROSCAs are irrational and should be discouraged",
+     "summarise the findings of field research in Kenya",
+     "state a puzzle that the remainder of the passage attempts to resolve",
+     "explain how the order of recipients is chosen"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 2 opens 'ROSCAs long posed a puzzle' and ends with the question about the last position; paragraph 3 begins 'One answer is...'. The question frames what follows; it neither reports research nor condemns the practice.",
+    "time": 105
+   },
+   {
+    "id": "rc2-10-q2",
+    "qtype": "inference",
+    "diff": 4,
+    "stem": "The passage implies that an explanation of ROSCAs based purely on access to credit would predict that",
+    "choices": [
+     "the last recipient gains more than earlier recipients",
+     "participation in ROSCAs declines as access to formal banking increases",
+     "women participate in ROSCAs more often than men",
+     "members who default are excluded from future cycles",
+     "ROSCAs choose recipients by bidding rather than by lot"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 4: 'If the associations existed only because formal finance was unavailable, they should fade as banks arrive.' The other choices are not predictions of the credit model; women's participation comes from the commitment explanation in paragraph 3.",
+    "time": 115
+   },
+   {
+    "id": "rc2-10-q3",
+    "qtype": "detail",
+    "diff": 3,
+    "stem": "According to the passage, pledging money publicly to a group helps participants save because",
+    "choices": [
+     "the group pays interest on contributions held until the end of the cycle",
+     "banks will not accept deposits from people without a credit history",
+     "money committed in public is harder to divert, and missing a contribution carries a social cost",
+     "members can bid to receive the pot whenever they wish",
+     "relatives are required to contribute on behalf of members"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 3: 'Money that is pledged to a group in public is harder to divert than money kept at home, and the social cost of missing a contribution acts as a commitment device.' No interest, bank rules or relatives' contributions are mentioned.",
+    "time": 105
+   },
+   {
+    "id": "rc2-10-q4",
+    "qtype": "application",
+    "diff": 5,
+    "stem": "Which of the following findings, if true, would most undermine the explanation offered in the third paragraph?",
+    "choices": [
+     "Members who report no pressure from relatives and no difficulty saving join ROSCAs at the same rate as members who report such pressures.",
+     "ROSCAs in Mexico choose recipients by lot more often than ROSCAs in Kenya.",
+     "Some members of ROSCAs also hold savings accounts at banks.",
+     "Defaults by members who have already received the pot are rare.",
+     "Women make up a majority of ROSCA members in several countries."
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 3 explains membership as a commitment device against relatives' claims and temptation. If people who face neither problem join just as often, that motive cannot explain participation. Holding bank accounts is consistent with paragraph 4, and a female majority is consistent with paragraph 3.",
+    "time": 125
+   }
+  ]
+ },
+ {
+  "id": "rc2-11",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "humanities",
+  "diff": 5,
+  "title": "Where to Hide the Comma",
+  "paras": [
+   "A keyboard tuned so that every interval is acoustically pure is impossible, and the problem is arithmetical. Twelve perfect fifths, each with a frequency ratio of 3:2, should bring a player back to the starting note seven octaves higher, but they overshoot it by a small amount known as the Pythagorean comma, roughly a quarter of a semitone. Any tuning of a twelve-note keyboard must hide this discrepancy somewhere, and the history of temperament is largely a history of decisions about where.",
+   "Renaissance musicians favoured meantone tunings, which narrowed most fifths so that major thirds, the intervals then most prized in harmony, could be pure or nearly so. The cost was concentrated in one badly mistuned fifth, the so-called wolf, and in a handful of keys that sounded harsh enough to be practically unusable. Composers working in meantone simply avoided those keys. Equal temperament, which spreads the comma evenly so that every fifth is slightly narrow and every key is identical in character, solved the problem of remote keys at the price of making every major third noticeably wide.",
+   "Between these lay the \"well-tempered\" systems devised by theorists such as Andreas Werckmeister in the late seventeenth century. These distributed the comma unevenly, so that all twenty-four major and minor keys were usable but not identical: keys with few sharps or flats kept relatively pure thirds, while remote keys sounded more tense. It was long assumed that Bach's Well-Tempered Clavier, with its preludes and fugues in every key, was a demonstration of equal temperament. Most scholars now regard that assumption as anachronistic. The collection shows that every key could be played; it does not show that every key was meant to sound alike.",
+   "The distinction has practical consequences. A performer who plays the cycle on a modern piano in equal temperament hears twenty-four transpositions of a single tonal colour, whereas on an instrument in a well temperament the move from one key to the next also changes the character of the sound. Some writers have claimed to recover Bach's exact tuning from decorative loops on the work's 1722 title page. Those reconstructions remain disputed, but even scholars who reject them generally agree that the purpose of the collection cannot be read from its title alone."
+  ],
+  "questions": [
+   {
+    "id": "rc2-11-q1",
+    "qtype": "main idea",
+    "diff": 4,
+    "stem": "The primary purpose of the passage is to",
+    "choices": [
+     "argue that equal temperament is musically inferior to meantone tuning",
+     "trace Bach's career through the tuning systems he used",
+     "explain a mathematical constraint on keyboard tuning and use it to reassess a common assumption about a well-known work",
+     "show that the Pythagorean comma was discovered in the seventeenth century",
+     "recommend that modern pianos be retuned in well temperaments"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 1 sets out the comma, paragraph 2 contrasts meantone and equal temperament, and paragraphs 3-4 apply this to the assumption that the Well-Tempered Clavier demonstrated equal temperament, now 'regarded as anachronistic'. The author ranks no system and recommends nothing.",
+    "time": 115
+   },
+   {
+    "id": "rc2-11-q2",
+    "qtype": "inference",
+    "diff": 5,
+    "stem": "It can be inferred from the passage that, compared with a major third in meantone tuning, a major third in equal temperament is",
+    "choices": [
+     "closer to acoustic purity",
+     "identical in size, since both systems narrow the fifths",
+     "unusable in remote keys",
+     "further from acoustic purity",
+     "the location of the wolf interval"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 2 says meantone made major thirds 'pure or nearly so', whereas equal temperament made 'every major third noticeably wide'. Narrowing fifths in both systems does not make the thirds equal, since meantone narrows them more. The wolf belongs to meantone, and equal temperament makes all keys usable.",
+    "time": 125
+   },
+   {
+    "id": "rc2-11-q3",
+    "qtype": "function",
+    "diff": 5,
+    "stem": "The sentence 'The collection shows that every key could be played; it does not show that every key was meant to sound alike' functions primarily to",
+    "choices": [
+     "concede that the Well-Tempered Clavier was written for equal temperament",
+     "introduce the evidence of the 1722 title page",
+     "distinguish what the work actually demonstrates from a conclusion that had been drawn from it",
+     "suggest that Bach avoided remote keys in the collection",
+     "explain why meantone tuning was abandoned"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 3: the long-held assumption was that the collection 'was a demonstration of equal temperament'. The sentence separates what the piece shows (all keys playable) from that inference (all keys alike), which supports the claim that the assumption is anachronistic. The title page comes later, in paragraph 4.",
+    "time": 125
+   },
+   {
+    "id": "rc2-11-q4",
+    "qtype": "tone",
+    "diff": 4,
+    "stem": "The author's attitude toward the attempts to reconstruct Bach's tuning from the title page is best described as",
+    "choices": [
+     "enthusiastic, presenting them as proof of the passage's argument",
+     "dismissive, treating them as having been refuted",
+     "hostile, accusing their authors of misrepresenting the evidence",
+     "indifferent, regarding the question of Bach's tuning as unimportant",
+     "reserved, treating them as unresolved while holding that the main argument does not depend on them"
+    ],
+    "answer": 4,
+    "explanation": "Paragraph 4: the reconstructions 'remain disputed', yet 'even scholars who reject them' agree with the broader point. The author neither relies on them nor calls them refuted, and the opening 'The distinction has practical consequences' shows the author cares about the tuning question.",
+    "time": 115
+   }
+  ]
+ },
+ {
+  "id": "rc2-12",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "business",
+  "diff": 5,
+  "title": "The Limits of Arm's Length",
+  "paras": [
+   "When one subsidiary of a multinational sells goods, services or the right to use intellectual property to another, the price it charges determines where the group's profit is recorded and therefore where it is taxed. Tax authorities generally require such transfer prices to follow the arm's-length principle: the price should be the one that unrelated parties would have agreed in comparable circumstances. For a commodity traded on open markets, the principle is easy to apply. For a patent or a brand, it is often close to meaningless, because the asset is valuable precisely to the extent that nothing comparable exists.",
+   "This difficulty is not a technical footnote. A group can place a valuable intangible in a low-tax subsidiary and have operating companies elsewhere pay royalties for its use; if no market comparison is available, the royalty rate becomes a matter of argument rather than observation, and the argument is typically better resourced on the company's side. International guidance has responded by emphasising where the functions that create value are performed, not merely where legal ownership sits. Yet this shift exchanges one contestable question for another, since deciding which employees \"control\" the development of an intangible can be as indeterminate as estimating a hypothetical price.",
+   "Some reformers therefore favour formulas that allocate a group's total profit among countries according to measurable factors such as sales or payroll, accepting cruder outcomes in exchange for fewer disputes."
+  ],
+  "questions": [
+   {
+    "id": "rc2-12-q1",
+    "qtype": "inference",
+    "diff": 5,
+    "stem": "The author would most likely agree that the international guidance emphasising where value-creating functions are performed",
+    "choices": [
+     "has made the arm's-length principle easy to apply to patents",
+     "has eliminated the incentive to place intangibles in low-tax subsidiaries",
+     "does not remove the kind of indeterminacy it was meant to address",
+     "is equivalent to allocating profit by formula",
+     "applies only to commodities traded on open markets"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 2: the shift 'exchanges one contestable question for another', since deciding who 'controls' development 'can be as indeterminate as estimating a hypothetical price'. Formulas are presented in paragraph 3 as a separate reform, not as the same thing.",
+    "time": 125
+   },
+   {
+    "id": "rc2-12-q2",
+    "qtype": "function",
+    "diff": 4,
+    "stem": "The phrase 'the argument is typically better resourced on the company's side' serves mainly to",
+    "choices": [
+     "show that tax authorities usually win transfer-pricing disputes",
+     "explain why commodities are easy to price at arm's length",
+     "imply that companies prefer formula-based allocation",
+     "suggest that the absence of market comparisons tends to favour taxpayers in disputes with authorities",
+     "argue that patents should not be transferable between subsidiaries"
+    ],
+    "answer": 3,
+    "explanation": "In paragraph 2, once the royalty becomes 'a matter of argument rather than observation', the side with more resources has the advantage. That is why the difficulty 'is not a technical footnote'. The passage says nothing about companies preferring formulas or banning transfers.",
+    "time": 115
+   },
+   {
+    "id": "rc2-12-q3",
+    "qtype": "application",
+    "diff": 5,
+    "stem": "Which of the following outcomes would the reformers described in the final paragraph be most likely to accept?",
+    "choices": [
+     "An allocation based on a negotiated royalty rate for each patent",
+     "An allocation that assigns some profit to a country where little research takes place, provided that disputes over the allocation become rarer",
+     "An allocation that depends on identifying which employees control an intangible's development",
+     "An allocation that follows legal ownership of intellectual property",
+     "An allocation that is precise but requires lengthy case-by-case litigation"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 3: the reformers allocate profit by 'sales or payroll', 'accepting cruder outcomes in exchange for fewer disputes'. Profit taxed where sales occur but research does not is exactly such a cruder outcome. The other choices rely on the case-by-case judgements those reformers want to avoid.",
+    "time": 125
+   }
+  ]
+ },
+ {
+  "id": "rc2-13",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "science",
+  "diff": 1,
+  "title": "Lichens and the Air",
+  "paras": [
+   "A lichen looks like a single organism, but it is a partnership between a fungus and a partner that can photosynthesise, usually an alga or a cyanobacterium. The fungus provides structure and shelter, and the partner supplies sugars. Lichens grow on bark, rock and walls in places where few other organisms can survive, and some species live for centuries. Their slow growth, often only a few millimetres a year, means that a lichen on a tree has been exposed to the local air for a long time, which turns out to be useful.",
+   "Lichens have no roots and no protective outer layer like the waxy coating on a leaf. They absorb water and nutrients directly from rain, mist and the air around them. This makes them very good at collecting substances from the atmosphere, including pollutants. Many species are especially sensitive to sulphur dioxide, a gas released by burning coal, which damages the lichen's photosynthetic partner.",
+   "Because of this sensitivity, lichens became one of the first living tools for measuring air pollution. In the nineteenth century, observers noticed that lichens were disappearing from trees in and around growing industrial cities. In the twentieth century, scientists in Britain produced scales that linked the presence of particular species to approximate levels of sulphur dioxide. A survey that recorded which lichens grew on local trees could estimate air quality without expensive equipment. Volunteers and schoolchildren could take part, since the main skill needed was recognising a few common species.",
+   "As sulphur dioxide levels fell after laws limited coal burning, many sensitive lichens returned to cities. However, the story did not simply end there. Some species that thrive on nitrogen, which comes from vehicle exhaust and farming, have spread widely, while species that prefer clean, nitrogen-poor conditions remain rare in many areas. Lichens are therefore still used as indicators, but researchers now read them for signs of nitrogen pollution as well as sulphur. The lichens on a city tree, in other words, record both the old problem and the new one."
+  ],
+  "questions": [
+   {
+    "id": "rc2-13-q1",
+    "qtype": "main idea",
+    "diff": 1,
+    "stem": "The passage is mainly about",
+    "choices": [
+     "how fungi and algae evolved to live together",
+     "why coal burning was limited by law",
+     "the damage that vehicle exhaust causes to trees",
+     "the equipment scientists use to measure sulphur dioxide",
+     "how features of lichens have made them useful indicators of air pollution over time"
+    ],
+    "answer": 4,
+    "explanation": "Paragraph 2 explains why lichens absorb pollutants, paragraph 3 how they became 'living tools for measuring air pollution', and paragraph 4 how they are still used for nitrogen as well as sulphur. The other topics are mentioned briefly or not at all.",
+    "time": 85
+   },
+   {
+    "id": "rc2-13-q2",
+    "qtype": "detail",
+    "diff": 1,
+    "stem": "According to the passage, lichens collect substances from the atmosphere easily because they",
+    "choices": [
+     "grow only on the bark of trees in cities",
+     "live for centuries and therefore build up pollutants slowly",
+     "contain a fungus that feeds on sulphur dioxide",
+     "have a waxy coating that traps particles",
+     "lack roots and a protective outer layer and take in water directly from the air"
+    ],
+    "answer": 4,
+    "explanation": "Paragraph 2: lichens 'have no roots and no protective outer layer' and 'absorb water and nutrients directly from rain, mist and the air'. The waxy coating belongs to leaves, not lichens, and sulphur dioxide damages lichens rather than feeding them.",
+    "time": 85
+   },
+   {
+    "id": "rc2-13-q3",
+    "qtype": "detail",
+    "diff": 2,
+    "stem": "According to the passage, what happened after laws limited coal burning?",
+    "choices": [
+     "All lichen species returned to their nineteenth-century levels.",
+     "Lichens stopped being used as indicators of air quality.",
+     "Nitrogen-loving lichens disappeared from cities.",
+     "Many lichens sensitive to sulphur dioxide returned to cities.",
+     "Scientists in Britain began producing lichen scales."
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 4: 'As sulphur dioxide levels fell after laws limited coal burning, many sensitive lichens returned to cities.' The passage adds that nitrogen-loving species spread and that lichens are 'still used as indicators', which rules out the other choices.",
+    "time": 95
+   },
+   {
+    "id": "rc2-13-q4",
+    "qtype": "inference",
+    "diff": 2,
+    "stem": "A lichen survey finds that nitrogen-loving species are common in a town while species that prefer nitrogen-poor conditions are rare. Based on the passage, this most likely suggests that the town",
+    "choices": [
+     "has very high levels of sulphur dioxide",
+     "has significant nitrogen pollution, perhaps from traffic or farming",
+     "has no air pollution of any kind",
+     "has recently banned all vehicles",
+     "has trees that are too young for lichens to grow on"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 4 links nitrogen-loving species to nitrogen 'from vehicle exhaust and farming' and says researchers now read lichens 'for signs of nitrogen pollution'. A survey dominated by those species points to nitrogen pollution; nothing in it indicates sulphur levels, and it rules out clean air.",
+    "time": 95
+   }
+  ]
+ },
+ {
+  "id": "rc2-14",
+  "sec": "verbal",
+  "type": "rc",
+  "topic": "social science",
+  "diff": 2,
+  "title": "What Remittances Buy",
+  "paras": [
+   "Money sent home by migrant workers is one of the largest financial flows into many developing countries, in some countries larger than foreign aid and foreign direct investment combined. Researchers have long debated what that money does once it arrives. An early view held that remittances were mostly spent on consumption, such as food, clothing and celebrations, and therefore did little to promote long-term development.",
+   "More recent studies have challenged that view. Research in the Philippines found that when exchange-rate movements unexpectedly raised the value of remittances, receiving households increased spending on children's schooling and were more likely to start small businesses. Other work has noted that spending on food and health is itself a form of investment, since better-fed and healthier children tend to learn more and earn more as adults.",
+   "The debate has shifted as a result. Few researchers now ask whether remittances are spent \"productively\" in the narrow sense. Instead, they ask how much difference remittances make to a household's ability to plan. A household that can count on a monthly transfer may take a risk, such as paying school fees in advance or buying a sewing machine, that it would otherwise avoid. Researchers also ask how policies such as cheaper money-transfer services might increase that difference."
+  ],
+  "questions": [
+   {
+    "id": "rc2-14-q1",
+    "qtype": "main idea",
+    "diff": 2,
+    "stem": "The passage is primarily concerned with",
+    "choices": [
+     "describing how research has changed views about the way remittances are used",
+     "arguing that remittances should replace foreign aid",
+     "explaining why exchange rates changed in the Philippines",
+     "showing that migrant workers prefer to send money for celebrations",
+     "comparing remittances with foreign direct investment in detail"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 1 states an 'early view', paragraph 2 says recent studies 'challenged that view', and paragraph 3 says 'the debate has shifted'. The comparison with aid and investment appears only in the first sentence.",
+    "time": 95
+   },
+   {
+    "id": "rc2-14-q2",
+    "qtype": "detail",
+    "diff": 1,
+    "stem": "According to the passage, the research in the Philippines found that when remittances unexpectedly rose in value, receiving households",
+    "choices": [
+     "spent most of the extra money on celebrations",
+     "saved the money in foreign currency",
+     "sent family members abroad to work",
+     "reduced their spending on food and health",
+     "spent more on schooling and were more likely to start small businesses"
+    ],
+    "answer": 4,
+    "explanation": "Paragraph 2: households 'increased spending on children's schooling and were more likely to start small businesses'. None of the other responses is reported.",
+    "time": 85
+   },
+   {
+    "id": "rc2-14-q3",
+    "qtype": "function",
+    "diff": 3,
+    "stem": "The author mentions that spending on food and health 'is itself a form of investment' in order to",
+    "choices": [
+     "challenge the distinction between consumption and investment on which the early view relied",
+     "show that the Philippine study was mistaken",
+     "argue that remittances should be spent only on food",
+     "explain why money-transfer services are expensive",
+     "support the early view that remittances do little for development"
+    ],
+    "answer": 0,
+    "explanation": "The early view (paragraph 1) dismissed remittances because they were 'mostly spent on consumption, such as food'. Paragraph 2 counters that such spending pays off because healthier children 'learn more and earn more', which undermines the line between consumption and investment. The point adds to the Philippine evidence rather than disputing it.",
+    "time": 105
+   }
+  ]
+ }
+]

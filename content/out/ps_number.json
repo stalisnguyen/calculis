@@ -1,0 +1,1202 @@
+[
+ {
+  "id": "ps-np-001",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Divisibility & Factors",
+  "diff": 1,
+  "stem": "Which of the following numbers is divisible by both 3 and 4?",
+  "choices": [
+   "126",
+   "134",
+   "156",
+   "162",
+   "170"
+  ],
+  "answer": 2,
+  "explanation": "A number divisible by both 3 and 4 must be divisible by 12. Test 4 first, using the last two digits: 26, 34, 62 and 70 are not multiples of 4, so 126, 134, 162 and 170 are out. Only 156 remains, and its last two digits, 56, are a multiple of 4. Check 3 with the digit sum: 1 + 5 + 6 = 12, which is a multiple of 3. So 156 = 12 × 13 is divisible by both 3 and 4.",
+  "trap": "126 and 162 have digit sums divisible by 3, but they fail the test for 4, so checking only one divisor leads to a wrong pick.",
+  "time": 90
+ },
+ {
+  "id": "ps-np-002",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Primes",
+  "diff": 1,
+  "stem": "How many prime numbers are greater than 20 and less than 40?",
+  "choices": [
+   "3",
+   "4",
+   "5",
+   "6",
+   "7"
+  ],
+  "answer": 1,
+  "explanation": "List the odd numbers from 21 to 39 and remove the composites. 21 = 3 × 7, 25 = 5 × 5, 27 = 3 × 9, 33 = 3 × 11, 35 = 5 × 7 and 39 = 3 × 13 are composite. The numbers left are 23, 29, 31 and 37, and none of them is divisible by 2, 3 or 5 (checking primes up to √40 ≈ 6.3 is enough). So there are 4 primes in the range.",
+  "trap": "Students often count 39 or 27 as prime because they look \"odd and unfamiliar\", which gives 5 or 6.",
+  "time": 90
+ },
+ {
+  "id": "ps-np-003",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Remainders",
+  "diff": 1,
+  "stem": "What is the remainder when 247 is divided by 9?",
+  "choices": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "answer": 3,
+  "explanation": "A number and its digit sum leave the same remainder when divided by 9. The digit sum of 247 is 2 + 4 + 7 = 13, and 13 divided by 9 leaves remainder 4. Check by direct division: 9 × 27 = 243, and 247 - 243 = 4. The remainder is 4. The same shortcut works for 3, because 3 divides 9.",
+  "trap": "Choosing 13 mod 3 or stopping at the digit sum without reducing it again leads to answers like 1 or 3.",
+  "time": 90
+ },
+ {
+  "id": "ps-np-004",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Odd/Even & Signs",
+  "diff": 1,
+  "stem": "If n is an odd integer, which of the following must be an even integer?",
+  "choices": [
+   "n + 2",
+   "3n",
+   "2n + 1",
+   "n³",
+   "n² + 1"
+  ],
+  "answer": 4,
+  "explanation": "Use the parity rules: odd × odd = odd, odd + odd = even, odd + even = odd. n + 2 is odd + even = odd. 3n is odd × odd = odd. 2n + 1 is even + 1 = odd. n³ is a product of odd numbers, so it is odd. n² is odd, so n² + 1 is odd + odd = even. Picking n = 3 confirms it: 5, 9, 7, 27 and 10, and only n² + 1 is even.",
+  "trap": "2n + 1 looks \"even\" because it contains 2n, but adding 1 to an even number always gives an odd number.",
+  "time": 90
+ },
+ {
+  "id": "ps-np-005",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "LCM/GCD",
+  "diff": 1,
+  "stem": "What is the greatest common divisor of 84 and 120?",
+  "choices": [
+   "12",
+   "14",
+   "21",
+   "24",
+   "28"
+  ],
+  "answer": 0,
+  "explanation": "Write both numbers as prime products: 84 = 2² × 3 × 7 and 120 = 2³ × 3 × 5. The GCD takes each prime the two numbers share, at the lower power: 2² and 3¹. So the GCD is 4 × 3 = 12. Quick check: 84 ÷ 12 = 7 and 120 ÷ 12 = 10, and 7 and 10 share no common factor, so nothing larger works.",
+  "trap": "24 divides 120 but not 84 (84 ÷ 24 = 3.5), so it is a common-looking but wrong choice.",
+  "time": 90
+ },
+ {
+  "id": "ps-np-006",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Units Digits & Cycles",
+  "diff": 1,
+  "stem": "What is the units digit of 3⁵ × 2³?",
+  "choices": [
+   "2",
+   "4",
+   "6",
+   "8",
+   "9"
+  ],
+  "answer": 1,
+  "explanation": "Only units digits matter. 3⁵ = 243, so its units digit is 3. 2³ = 8. Multiply the units digits: 3 × 8 = 24, so the units digit of the product is 4. (The full product is 243 × 8 = 1,944, which agrees.) On test day there is no need to compute the full product; track only the last digit at every step.",
+  "trap": "Adding the units digits (3 + 8 = 11 -> 1) instead of multiplying them is the usual slip; 9 comes from using 3² by mistake.",
+  "time": 90
+ },
+ {
+  "id": "ps-np-007",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Consecutive Integers",
+  "diff": 1,
+  "stem": "The sum of five consecutive integers is 115. What is the largest of the five integers?",
+  "choices": [
+   "21",
+   "22",
+   "23",
+   "24",
+   "25"
+  ],
+  "answer": 4,
+  "explanation": "For an odd number of consecutive integers, the middle one equals the average. The average is 115 ÷ 5 = 23, so 23 is the middle (third) integer. The five integers are 21, 22, 23, 24 and 25, and the largest is 25. Check: 21 + 22 + 23 + 24 + 25 = 115. Equivalently, if the smallest is a, then 5a + 10 = 115, so a = 21 and the largest is a + 4 = 25.",
+  "trap": "23 is the average and the middle term, not the largest; the question asks for the top of the run.",
+  "time": 90
+ },
+ {
+  "id": "ps-np-008",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Exponents of Integers",
+  "diff": 1,
+  "stem": "What is the value of (3⁴ × 3²) ÷ 3³?",
+  "choices": [
+   "3",
+   "9",
+   "27",
+   "81",
+   "243"
+  ],
+  "answer": 2,
+  "explanation": "With the same base, add exponents when multiplying and subtract them when dividing. 3⁴ × 3² = 3⁶. Then 3⁶ ÷ 3³ = 3³ = 27. You can check with numbers: 81 × 9 = 729, and 729 ÷ 27 = 27. In general, aᵐ × aⁿ = aᵐ⁺ⁿ and aᵐ ÷ aⁿ = aᵐ⁻ⁿ when a ≠ 0; the rule (aᵐ)ⁿ = aᵐⁿ applies only to a power raised to another power.",
+  "trap": "Multiplying exponents (4 × 2 = 8, then 8 - 3 = 5) gives 3⁵ = 243, which applies the power-of-a-power rule where it does not belong.",
+  "time": 90
+ },
+ {
+  "id": "ps-np-009",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Divisibility & Factors",
+  "diff": 2,
+  "stem": "How many positive divisors does 72 have?",
+  "choices": [
+   "6",
+   "8",
+   "10",
+   "12",
+   "14"
+  ],
+  "answer": 3,
+  "explanation": "Factor first: 72 = 2³ × 3². A divisor can use 2 to the power 0, 1, 2 or 3 (4 choices) and 3 to the power 0, 1 or 2 (3 choices). The number of divisors is (3 + 1)(2 + 1) = 12. Listing confirms it: 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72.",
+  "trap": "Multiplying the exponents (3 × 2 = 6) forgets that each exponent can also be 0, so 6 is too small.",
+  "time": 105
+ },
+ {
+  "id": "ps-np-010",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Primes",
+  "diff": 2,
+  "stem": "What is the sum of the distinct prime factors of 210?",
+  "choices": [
+   "17",
+   "19",
+   "21",
+   "23",
+   "25"
+  ],
+  "answer": 0,
+  "explanation": "Break 210 down: 210 = 21 × 10 = 3 × 7 × 2 × 5. So the distinct prime factors are 2, 3, 5 and 7, each appearing once. Their sum is 2 + 3 + 5 + 7 = 17. Note that the question asks for distinct prime factors, so even if a prime appeared twice (as 2 does in 60 = 2² × 3 × 5) it would be counted only once.",
+  "trap": "Forgetting that 2 is prime and adding only the odd primes gives 15, and treating 21 as prime gives 28; neither is among the correct steps.",
+  "time": 105
+ },
+ {
+  "id": "ps-np-011",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Remainders",
+  "diff": 2,
+  "stem": "When the positive integer n is divided by 6, the remainder is 4. What is the remainder when 3n is divided by 6?",
+  "choices": [
+   "0",
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": 0,
+  "explanation": "Write n = 6k + 4. Then 3n = 18k + 12 = 6(3k + 2), which is a multiple of 6. So the remainder is 0. Picking a number confirms it: n = 4 gives 3n = 12, and n = 10 gives 3n = 30; both are divisible by 6. Shortcut: multiplying the remainder by 3 gives 12, which reduces to 0 mod 6.",
+  "trap": "Multiplying the remainder by 3 to get 12 and then stopping, or choosing 4 by keeping the old remainder, ignores that 12 itself must be reduced mod 6.",
+  "time": 105
+ },
+ {
+  "id": "ps-np-012",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Odd/Even & Signs",
+  "diff": 2,
+  "stem": "If xy < 0 and yz > 0, which of the following must be true?",
+  "choices": [
+   "x > 0",
+   "z < 0",
+   "xz < 0",
+   "xyz > 0",
+   "x + z = 0"
+  ],
+  "answer": 2,
+  "explanation": "xy < 0 means x and y have opposite signs. yz > 0 means y and z have the same sign. So z has the same sign as y, which is the opposite of x. Two numbers with opposite signs have a negative product, so xz < 0 must be true. The others can fail. With x = 1, y = -1, z = -1, x > 0 and z < 0 hold, but with x = -1, y = 1, z = 1 both fail. For xyz, x = -1, y = 2, z = 3 gives -6, so xyz > 0 is not forced. x + z = 0 fails for x = 1, y = -1, z = -2.",
+  "trap": "x > 0 or z < 0 each works for one sign pattern, but the conditions only fix the relationship between signs, not which variable is positive.",
+  "time": 105
+ },
+ {
+  "id": "ps-np-013",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "LCM/GCD",
+  "diff": 2,
+  "stem": "Bus A leaves a station every 12 minutes and bus B leaves the same station every 18 minutes. If both buses leave together at 8:00 a.m., at what time will they next leave together?",
+  "choices": [
+   "8:30 a.m.",
+   "8:36 a.m.",
+   "8:48 a.m.",
+   "9:00 a.m.",
+   "9:36 a.m."
+  ],
+  "answer": 1,
+  "explanation": "The buses leave together again after a number of minutes that is a multiple of both 12 and 18. The first such time is the least common multiple. 12 = 2² × 3 and 18 = 2 × 3², so LCM = 2² × 3² = 36. The next joint departure is 36 minutes after 8:00 a.m., at 8:36 a.m. Check: 36 = 3 × 12 = 2 × 18.",
+  "trap": "12 × 18 = 216 minutes is a common multiple but not the least one, and 8:30 a.m. comes from a careless averaging of the two intervals.",
+  "time": 105
+ },
+ {
+  "id": "ps-np-014",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Units Digits & Cycles",
+  "diff": 2,
+  "stem": "What is the units digit of 13²⁷?",
+  "choices": [
+   "1",
+   "3",
+   "5",
+   "7",
+   "9"
+  ],
+  "answer": 3,
+  "explanation": "The units digit of 13²⁷ depends only on 3²⁷. Powers of 3 end in the cycle 3, 9, 7, 1, which repeats every 4 powers. 27 = 4 × 6 + 3, so 3²⁷ ends in the same digit as 3³, which is 7. The units digit is 7. The tens digit of the base (the 1 in 13) never affects the units digit of a power.",
+  "trap": "Using the remainder 27 ÷ 4 incorrectly (taking position 4 instead of 3) gives 1, and stopping at 3¹ gives 3.",
+  "time": 105
+ },
+ {
+  "id": "ps-np-015",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Consecutive Integers",
+  "diff": 2,
+  "stem": "What is the sum of all the integers from 11 to 50, inclusive?",
+  "choices": [
+   "1220",
+   "1230",
+   "1240",
+   "1250",
+   "1275"
+  ],
+  "answer": 0,
+  "explanation": "For evenly spaced numbers, sum = (number of terms) × (average of first and last). The count is 50 - 11 + 1 = 40. The average is (11 + 50) ÷ 2 = 30.5. The sum is 40 × 30.5 = 1,220. Alternative: the sum of 1 to 50 is 1,275 and the sum of 1 to 10 is 55, so the answer is 1,275 - 55 = 1,220.",
+  "trap": "1,275 is the sum from 1 to 50; it forgets to remove the integers 1 through 10.",
+  "time": 105
+ },
+ {
+  "id": "ps-np-016",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Exponents of Integers",
+  "diff": 2,
+  "stem": "If 4ˣ = 8ˣ⁻¹, what is the value of x?",
+  "choices": [
+   "-3",
+   "1",
+   "2",
+   "3",
+   "6"
+  ],
+  "answer": 3,
+  "explanation": "Rewrite both sides with base 2: 4ˣ = 2²ˣ and 8ˣ⁻¹ = 2³⁽ˣ⁻¹⁾ = 2³ˣ⁻³. Equal powers of the same base have equal exponents, so 2x = 3x - 3, which gives x = 3. Check: 4³ = 64 and 8² = 64. Picking numbers from the choices works too: only x = 3 makes both sides equal, since x = 2 gives 16 on the left and 8 on the right.",
+  "trap": "Setting 4x = 8(x - 1) treats the exponents as coefficients and gives x = 2, which does not satisfy the original equation.",
+  "time": 105
+ },
+ {
+  "id": "ps-np-017",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Divisibility & Factors",
+  "diff": 2,
+  "stem": "If the positive integer n is divisible by 4, 5 and 6, which of the following must also be a divisor of n?",
+  "choices": [
+   "8",
+   "9",
+   "15",
+   "24",
+   "40"
+  ],
+  "answer": 2,
+  "explanation": "n must be a multiple of LCM(4, 5, 6). 4 = 2², 5 = 5 and 6 = 2 × 3, so the LCM is 2² × 3 × 5 = 60. The smallest possible n is 60, so a \"must\" divisor has to divide 60. 8, 9, 24 and 40 do not divide 60. 15 does (60 = 4 × 15), and since every valid n is a multiple of 60, every valid n is a multiple of 15.",
+  "trap": "4 × 5 × 6 = 120 is divisible by 8, 24 and 40, but n can be 60, which none of those divide.",
+  "time": 105
+ },
+ {
+  "id": "ps-np-018",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Primes",
+  "diff": 2,
+  "stem": "If p and q are different prime numbers, each greater than 2, which of the following must be even?",
+  "choices": [
+   "pq",
+   "pq + 2",
+   "p² + q + 1",
+   "p - q + 1",
+   "p + q"
+  ],
+  "answer": 4,
+  "explanation": "Every prime greater than 2 is odd, so p and q are both odd. pq is odd × odd = odd. pq + 2 is odd + even = odd. p² is odd, so p² + q is even and p² + q + 1 is odd. p - q is even, so p - q + 1 is odd. p + q is odd + odd = even. Check with p = 3 and q = 5: 15, 17, 15, 3 and 8.",
+  "trap": "Forgetting that the primes must be odd and imagining p = 2 makes pq look even, but the question rules out 2.",
+  "time": 105
+ },
+ {
+  "id": "ps-np-019",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Remainders",
+  "diff": 2,
+  "stem": "What is the smallest integer greater than 1 that leaves a remainder of 1 when divided by each of 2, 3, 4 and 5?",
+  "choices": [
+   "31",
+   "41",
+   "61",
+   "91",
+   "121"
+  ],
+  "answer": 2,
+  "explanation": "If n leaves remainder 1 on division by 2, 3, 4 and 5, then n - 1 is divisible by all four numbers, so n - 1 is a multiple of LCM(2, 3, 4, 5) = 60. The smallest positive choice is n - 1 = 60, so n = 61. Check: 61 = 30 × 2 + 1 = 20 × 3 + 1 = 15 × 4 + 1 = 12 × 5 + 1.",
+  "trap": "121 = 120 + 1 also works, but 120 = 2 × 3 × 4 × 5 is not the least common multiple, so 121 is not the smallest.",
+  "time": 105
+ },
+ {
+  "id": "ps-np-020",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "LCM/GCD",
+  "diff": 2,
+  "stem": "A teacher has 48 pens and 72 pencils. She wants to make identical gift bags, each with the same number of pens and the same number of pencils, using every pen and pencil. What is the greatest number of bags she can make?",
+  "choices": [
+   "6",
+   "8",
+   "12",
+   "18",
+   "24"
+  ],
+  "answer": 4,
+  "explanation": "The number of bags must divide both 48 and 72, and we want the largest such number, which is the GCD. 48 = 2⁴ × 3 and 72 = 2³ × 3², so the GCD is 2³ × 3 = 24. Each bag then holds 48 ÷ 24 = 2 pens and 72 ÷ 24 = 3 pencils. Any larger number of bags, such as 36, would not divide 48 evenly.",
+  "trap": "12 is a common divisor and gives valid bags, but it is not the greatest one.",
+  "time": 105
+ },
+ {
+  "id": "ps-np-021",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Divisibility & Factors",
+  "diff": 3,
+  "stem": "If n is a positive integer and n² is divisible by 72, what is the largest positive integer that must divide n?",
+  "choices": [
+   "6",
+   "12",
+   "24",
+   "36",
+   "72"
+  ],
+  "answer": 1,
+  "explanation": "72 = 2³ × 3². In n², every prime exponent is double the exponent in n. For 2³ to divide n², the exponent of 2 in n² must be at least 3 and even, so at least 4; that means n has at least 2². For 3², n needs at least 3¹. So n must be a multiple of 2² × 3 = 12. And n = 12 works (144 = 2 × 72), so nothing larger is forced.",
+  "trap": "6 does divide every such n, but it is not the largest; it misses that n needs 2², not just 2, for n² to contain 2³.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-022",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Primes",
+  "diff": 3,
+  "stem": "How many positive integers less than 50 have exactly three positive divisors?",
+  "choices": [
+   "4",
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "answer": 0,
+  "explanation": "A number has exactly three divisors only when it is the square of a prime p: its divisors are 1, p and p². (If n = p^a × q^b..., the divisor count (a + 1)(b + 1)... equals 3 only when n = p².) The squares of primes below 50 are 4, 9, 25 and 49. The next one, 121, is too large. So there are 4 such integers.",
+  "trap": "Counting all perfect squares below 50 (1, 4, 9, 16, 25, 36, 49) gives 7, but 16 and 36 have more than three divisors and 1 has only one.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-023",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Remainders",
+  "diff": 3,
+  "stem": "When the positive integer x is divided by 7, the remainder is 3. When the positive integer y is divided by 7, the remainder is 5. What is the remainder when x² + y is divided by 7?",
+  "choices": [
+   "0",
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": 0,
+  "explanation": "Remainders can be added and multiplied, then reduced. x² leaves the same remainder as 3² = 9, which is 2 mod 7. Adding y gives 2 + 5 = 7, which is 0 mod 7. So the remainder is 0. Picking numbers: x = 3 and y = 5 give 9 + 5 = 14, which is divisible by 7; x = 10 and y = 12 give 112 = 16 × 7.",
+  "trap": "Stopping at 9 + 5 = 14 and not reducing, or adding 3 + 5 = 8 -> 1 by forgetting to square x, leads to 1.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-024",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Odd/Even & Signs",
+  "diff": 3,
+  "stem": "If m and n are integers and m(n + 1) is odd, which of the following must be true?",
+  "choices": [
+   "mn is odd",
+   "n is odd",
+   "m - n is even",
+   "m + n is odd",
+   "m² + n is even"
+  ],
+  "answer": 3,
+  "explanation": "A product is odd only when every factor is odd. So m is odd and n + 1 is odd, which means n is even. Now test each choice: mn is odd × even = even, so false. n is even, so \"n is odd\" is false. m - n is odd - even = odd, so false. m + n is odd + even = odd, so true. m² + n is odd + even = odd, so false. Picking m = 3 and n = 2 confirms it.",
+  "trap": "Seeing \"odd\" in the condition and concluding that both m and n are odd misses that it is n + 1, not n, that must be odd.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-025",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "LCM/GCD",
+  "diff": 3,
+  "stem": "The greatest common divisor of two positive integers is 6 and their least common multiple is 180. If one of the integers is 36, what is the other?",
+  "choices": [
+   "15",
+   "24",
+   "30",
+   "45",
+   "60"
+  ],
+  "answer": 2,
+  "explanation": "For any two positive integers, GCD × LCM = product of the numbers. So 36 × b = 6 × 180 = 1,080, and b = 30. Check: 36 = 2² × 3² and 30 = 2 × 3 × 5; the GCD is 2 × 3 = 6 and the LCM is 2² × 3² × 5 = 180. The product rule works only for two numbers, so do not extend it to three.",
+  "trap": "60 has LCM 180 with 36 but its GCD with 36 is 12, not 6, so it fails one of the two conditions.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-026",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Units Digits & Cycles",
+  "diff": 3,
+  "stem": "What is the units digit of 2⁴¹ + 3⁴²?",
+  "choices": [
+   "1",
+   "3",
+   "5",
+   "7",
+   "9"
+  ],
+  "answer": 0,
+  "explanation": "Powers of 2 end in the cycle 2, 4, 8, 6 and powers of 3 end in 3, 9, 7, 1; both cycles have length 4. 41 = 4 × 10 + 1, so 2⁴¹ ends like 2¹, in 2. 42 = 4 × 10 + 2, so 3⁴² ends like 3², in 9. The sum ends in the units digit of 2 + 9 = 11, which is 1.",
+  "trap": "Mapping remainder 1 to the last term of the 2-cycle (6) instead of the first gives 6 + 9 = 15, so 5.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-027",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Consecutive Integers",
+  "diff": 3,
+  "stem": "The product of any four consecutive positive integers must be divisible by which of the following?",
+  "choices": [
+   "16",
+   "24",
+   "32",
+   "36",
+   "48"
+  ],
+  "answer": 1,
+  "explanation": "Among any four consecutive integers there is a multiple of 4, another even number and a multiple of 3. So the product contains at least 4 × 2 × 3 = 24. In fact the smallest case, 1 × 2 × 3 × 4, equals 24, so 16, 32, 36 and 48 cannot be forced: 24 is not divisible by any of them. Only 24 must divide every such product.",
+  "trap": "48 and 16 feel safe because these products grow quickly and contain several even factors, but the first case, 1 × 2 × 3 × 4 = 24, is divisible by neither.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-028",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Exponents of Integers",
+  "diff": 3,
+  "stem": "What is the value of (2¹⁰ + 2¹⁰ + 2¹⁰ + 2¹⁰) ÷ 2⁸?",
+  "choices": [
+   "4",
+   "8",
+   "16",
+   "32",
+   "64"
+  ],
+  "answer": 2,
+  "explanation": "Adding four equal terms is the same as multiplying by 4: 2¹⁰ + 2¹⁰ + 2¹⁰ + 2¹⁰ = 4 × 2¹⁰ = 2² × 2¹⁰ = 2¹². Dividing by 2⁸ subtracts exponents: 2¹² ÷ 2⁸ = 2⁴ = 16. Key idea: adding k copies of the same power is multiplication by k, and here k = 4 is itself a power of 2, so the exponents combine neatly.",
+  "trap": "Adding the exponents of the four terms (2⁴⁰) or treating the sum as 2⁴⁰ ÷ 2⁸ gives a huge number; another slip is 2¹¹ ÷ 2⁸ = 8 by doubling only once.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-029",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Divisibility & Factors",
+  "diff": 3,
+  "stem": "How many integers from 100 to 300, inclusive, are multiples of 6 but not multiples of 9?",
+  "choices": [
+   "23",
+   "24",
+   "28",
+   "33",
+   "34"
+  ],
+  "answer": 0,
+  "explanation": "Multiples of 6 in the range run from 102 to 300: (300 - 102) ÷ 6 + 1 = 34 numbers. A multiple of 6 that is also a multiple of 9 is a multiple of LCM(6, 9) = 18. Multiples of 18 in the range run from 108 to 288: (288 - 108) ÷ 18 + 1 = 11 numbers. Remove them: 34 - 11 = 23.",
+  "trap": "Subtracting multiples of 54 (6 × 9) instead of 18 removes too few numbers and gives a larger count.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-030",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Primes",
+  "diff": 3,
+  "stem": "If p is a prime number greater than 3, what is the remainder when p² is divided by 12?",
+  "choices": [
+   "0",
+   "1",
+   "3",
+   "5",
+   "7"
+  ],
+  "answer": 1,
+  "explanation": "A prime greater than 3 is not divisible by 2 or 3, so it leaves remainder 1, 5, 7 or 11 when divided by 12. Square each: 1² = 1, 5² = 25, 7² = 49, 11² = 121, and each of these is 1 more than a multiple of 12. So p² always leaves remainder 1. Quick check: 5² = 25 = 24 + 1 and 13² = 169 = 168 + 1.",
+  "trap": "Choosing 5 or 7 by assuming the remainder of p carries over to p² ignores that the square must be reduced again.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-031",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Remainders",
+  "diff": 3,
+  "stem": "What is the remainder when 2²⁰ is divided by 7?",
+  "choices": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "6"
+  ],
+  "answer": 3,
+  "explanation": "Look for a power of 2 that is 1 mod 7: 2³ = 8 = 7 + 1. So powers of 2 repeat their remainders every 3 steps: 2, 4, 1, 2, 4, 1, ... Since 20 = 3 × 6 + 2, 2²⁰ = (2³)⁶ × 2² leaves the same remainder as 1 × 4 = 4. Check with smaller powers: 2⁵ = 32 = 4 × 7 + 4, and 5 also leaves remainder 2 when divided by 3.",
+  "trap": "Using the cycle position of 20 ÷ 3 incorrectly (remainder 2 mapped to the first term) gives 2.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-032",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Odd/Even & Signs",
+  "diff": 3,
+  "stem": "If a < b < 0 < c, which of the following must be positive?",
+  "choices": [
+   "a + c",
+   "bc",
+   "(a - b)c",
+   "ab - c",
+   "abc"
+  ],
+  "answer": 4,
+  "explanation": "a and b are negative and c is positive. abc is negative × negative × positive = positive, so it must be positive. Check the rest: a + c depends on sizes (a = -5, c = 1 gives -4). bc is negative × positive = negative. a < b means a - b < 0, so (a - b)c is negative. ab - c depends on sizes (a = -2, b = -1, c = 5 gives 2 - 5 = -3).",
+  "trap": "ab - c looks positive because ab is positive, but a large enough c makes it negative.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-033",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "LCM/GCD",
+  "diff": 3,
+  "stem": "How many positive integers n less than 100 satisfy GCD(n, 24) = 8?",
+  "choices": [
+   "8",
+   "9",
+   "10",
+   "11",
+   "12"
+  ],
+  "answer": 0,
+  "explanation": "24 = 2³ × 3. For the GCD to be exactly 8 = 2³, n must be a multiple of 8 but not a multiple of 3 (otherwise the GCD would be 24). Multiples of 8 below 100: 8, 16, ..., 96, which is 12 numbers. Those that are also multiples of 3 are the multiples of 24: 24, 48, 72, 96, which is 4 numbers. So 12 - 4 = 8 values work.",
+  "trap": "12 counts every multiple of 8 and forgets that multiples of 24 have GCD 24 with 24, not 8.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-034",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Consecutive Integers",
+  "diff": 3,
+  "stem": "The sum of eight consecutive odd integers is 256. What is the largest of these integers?",
+  "choices": [
+   "33",
+   "35",
+   "37",
+   "39",
+   "41"
+  ],
+  "answer": 3,
+  "explanation": "The average of the eight integers is 256 ÷ 8 = 32. With an even count, the average lies halfway between the 4th and 5th terms, so those are 31 and 33. Counting up three more odd numbers from 33 gives 35, 37, 39. So the integers are 25, 27, 29, 31, 33, 35, 37, 39, and the largest is 39. Alternatively, if the smallest is a, the sum is 8a + 56 = 256, so a = 25 and the largest is a + 14 = 39.",
+  "trap": "Using a + 7 for the last term (as with consecutive integers) gives 32 or 33 territory; consecutive odd integers step by 2, so the largest is a + 14.",
+  "time": 120
+ },
+ {
+  "id": "ps-np-035",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Divisibility & Factors",
+  "diff": 4,
+  "stem": "How many of the positive divisors of 360 are odd?",
+  "choices": [
+   "4",
+   "6",
+   "8",
+   "12",
+   "24"
+  ],
+  "answer": 1,
+  "explanation": "360 = 2³ × 3² × 5. An odd divisor cannot contain any factor of 2, so it is a divisor of the odd part 3² × 5 = 45. The number of divisors of 45 is (2 + 1)(1 + 1) = 6: they are 1, 3, 5, 9, 15 and 45. The 2³ part adds 3 even versions of each odd divisor, so the 24 total divisors split into 6 odd and 18 even.",
+  "trap": "24 is the total number of divisors of 360; halving it to 12 assumes odd and even divisors are equally common, which is false.",
+  "time": 135
+ },
+ {
+  "id": "ps-np-036",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Exponents of Integers",
+  "diff": 4,
+  "stem": "How many zeros are at the end of the integer 50! (the product of the integers from 1 to 50)?",
+  "choices": [
+   "6",
+   "8",
+   "10",
+   "11",
+   "12"
+  ],
+  "answer": 4,
+  "explanation": "Each trailing zero comes from a factor 10 = 2 × 5, and 50! has far more 2s than 5s, so count the factors of 5. Multiples of 5 up to 50 contribute 50 ÷ 5 = 10 fives. Multiples of 25 (25 and 50) contribute one extra five each: 50 ÷ 25 = 2. Total 10 + 2 = 12 fives, so 50! ends in 12 zeros.",
+  "trap": "10 counts only the multiples of 5 and forgets that 25 and 50 each contain two factors of 5.",
+  "time": 135
+ },
+ {
+  "id": "ps-np-037",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Primes",
+  "diff": 4,
+  "stem": "What is the largest prime factor of 2¹² - 1?",
+  "choices": [
+   "7",
+   "11",
+   "13",
+   "17",
+   "31"
+  ],
+  "answer": 2,
+  "explanation": "Use difference of squares: 2¹² - 1 = (2⁶ - 1)(2⁶ + 1) = 63 × 65. Then 63 = 3² × 7 and 65 = 5 × 13. So 2¹² - 1 = 3² × 5 × 7 × 13, and the largest prime factor is 13. (Check: 2¹² - 1 = 4,095 = 9 × 455 = 9 × 5 × 91.) Since 91 = 7 × 13, the factorisation is confirmed.",
+  "trap": "31 = 2⁵ - 1 looks natural for this kind of expression, but 31 does not divide 4,095 because 5 does not divide 12.",
+  "time": 135
+ },
+ {
+  "id": "ps-np-038",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Remainders",
+  "diff": 4,
+  "stem": "When the positive integer n is divided by 5 the remainder is 3, and when n is divided by 7 the remainder is 5. What is the remainder when n is divided by 35?",
+  "choices": [
+   "8",
+   "12",
+   "18",
+   "23",
+   "33"
+  ],
+  "answer": 4,
+  "explanation": "Notice that in both cases the remainder is 2 less than the divisor: n ≡ -2 mod 5 and n ≡ -2 mod 7. So n + 2 is divisible by both 5 and 7, hence by 35, and n ≡ -2 ≡ 33 mod 35. Check: 33 = 6 × 5 + 3 and 33 = 4 × 7 + 5. Alternative: list numbers that are 5 mod 7 (5, 12, 19, 26, 33) and pick the one that is 3 mod 5.",
+  "trap": "8 (= 3 + 5) adds the two remainders, but 8 leaves remainder 1 when divided by 7, not 5.",
+  "time": 135
+ },
+ {
+  "id": "ps-np-039",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Odd/Even & Signs",
+  "diff": 4,
+  "stem": "If x, y and z are integers, x + y is odd and y + z is even, which of the following must be odd?",
+  "choices": [
+   "xy",
+   "yz",
+   "x + y + z",
+   "x + 2y",
+   "x + z"
+  ],
+  "answer": 4,
+  "explanation": "x + y odd means x and y have different parity. y + z even means y and z have the same parity. So z has the parity of y, which differs from x, and x + z is odd. Fast check: (x + y) + (y + z) = odd + even = odd, and this equals x + z + 2y, so x + z is odd. The others are not forced: with x = 1, y = 2, z = 4, xy = 2 and yz = 8 are even, and with x = 2, y = 1, z = 1, x + y + z = 4 and x + 2y = 4 are even.",
+  "trap": "x + y + z looks like \"odd plus something\", but its parity depends on z, which can be either.",
+  "time": 135
+ },
+ {
+  "id": "ps-np-040",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "LCM/GCD",
+  "diff": 4,
+  "stem": "For how many positive integers n is the least common multiple of n and 12 equal to 60?",
+  "choices": [
+   "3",
+   "4",
+   "5",
+   "6",
+   "8"
+  ],
+  "answer": 3,
+  "explanation": "60 = 2² × 3 × 5 and 12 = 2² × 3. The LCM takes the higher power of each prime. To reach 5¹, n must contain exactly 5¹. For 2 and 3, 12 already supplies 2² and 3¹, so n may contain 2⁰, 2¹ or 2² (3 choices) and 3⁰ or 3¹ (2 choices), but nothing higher. So there are 3 × 2 = 6 values: 5, 10, 15, 20, 30, 60.",
+  "trap": "Counting only the multiples of 5 below 60 that divide 60 but forgetting n = 60 itself, or dropping n = 5, gives 4 or 5.",
+  "time": 135
+ },
+ {
+  "id": "ps-np-041",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Units Digits & Cycles",
+  "diff": 4,
+  "stem": "What is the units digit of 17²³ × 34¹⁵?",
+  "choices": [
+   "0",
+   "2",
+   "4",
+   "6",
+   "8"
+  ],
+  "answer": 1,
+  "explanation": "Work only with the units digits 7 and 4. Powers of 7 end in 7, 9, 3, 1 (cycle of 4). 23 = 4 × 5 + 3, so 17²³ ends in 3. Powers of 4 end in 4, 6, alternating: odd powers end in 4, so 34¹⁵ ends in 4. The product ends in the units digit of 3 × 4 = 12, which is 2.",
+  "trap": "Using 7³ -> 3 but treating 4¹⁵ like an even power (ending in 6) gives 3 × 6 = 18 -> 8.",
+  "time": 135
+ },
+ {
+  "id": "ps-np-042",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Consecutive Integers",
+  "diff": 4,
+  "stem": "Set S consists of 15 consecutive integers. The sum of the 5 smallest integers in S is 155. What is the sum of the 5 largest integers in S?",
+  "choices": [
+   "195",
+   "200",
+   "205",
+   "210",
+   "215"
+  ],
+  "answer": 2,
+  "explanation": "Each of the 5 largest integers is exactly 10 more than the matching integer among the 5 smallest (the 11th is 10 more than the 1st, and so on). So the sum of the 5 largest is 155 + 5 × 10 = 205. Directly: the 5 smallest average 31, so they are 29 to 33; the 5 largest are 39 to 43, and 39 + 40 + 41 + 42 + 43 = 205.",
+  "trap": "Adding 14 to the total (the gap between the first and last term) or 5 × 14 = 70 confuses the shift of each term, which is 10, with the span of the set.",
+  "time": 135
+ },
+ {
+  "id": "ps-np-043",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Exponents of Integers",
+  "diff": 4,
+  "stem": "If 2ᵃ × 3ᵇ = 144³ ÷ 6², where a and b are integers, what is the value of a + b?",
+  "choices": [
+   "14",
+   "16",
+   "18",
+   "20",
+   "22"
+  ],
+  "answer": 0,
+  "explanation": "Write everything in primes. 144 = 2⁴ × 3², so 144³ = 2¹² × 3⁶. 6² = 2² × 3². Dividing: 2¹⁰ × 3⁴. Because prime factorisation is unique, a = 10 and b = 4, so a + b = 14. Working with primes is safer than computing 144³ = 2,985,984 and then dividing by 36, which wastes time and invites arithmetic slips.",
+  "trap": "Treating 144 as 12² = 2² × 3 squared once only, or forgetting to subtract the exponents of 6², gives 18.",
+  "time": 135
+ },
+ {
+  "id": "ps-np-044",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Divisibility & Factors",
+  "diff": 4,
+  "stem": "If n = 2⁴ × 3³ × 5², how many positive divisors of n are multiples of 10?",
+  "choices": [
+   "16",
+   "20",
+   "24",
+   "28",
+   "32"
+  ],
+  "answer": 4,
+  "explanation": "A divisor of n has the form 2ˣ × 3ʸ × 5ᶻ with 0 ≤ x ≤ 4, 0 ≤ y ≤ 3, 0 ≤ z ≤ 2. To be a multiple of 10 it needs x ≥ 1 and z ≥ 1. So x has 4 choices (1 to 4), y has 4 choices (0 to 3) and z has 2 choices (1 or 2): 4 × 4 × 2 = 32. Alternative: divisors that are multiples of 10 match the divisors of n ÷ 10 = 2³ × 3³ × 5, which number 4 × 4 × 2 = 32.",
+  "trap": "60 is the total number of divisors of n; 24 comes from also forcing a factor of 3.",
+  "time": 135
+ },
+ {
+  "id": "ps-np-045",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Primes",
+  "diff": 4,
+  "stem": "How many integers from 1 to 100, inclusive, are divisible by none of 2, 3 and 5?",
+  "choices": [
+   "20",
+   "22",
+   "24",
+   "25",
+   "26"
+  ],
+  "answer": 4,
+  "explanation": "Count those divisible by at least one with inclusion and exclusion. Divisible by 2: 50, by 3: 33, by 5: 20. By 6: 16, by 10: 10, by 15: 6. By 30: 3. At least one: 50 + 33 + 20 - 16 - 10 - 6 + 3 = 74. So 100 - 74 = 26 integers are divisible by none of them (1 is included). Check: in each block of 30 there are 8 such numbers, giving 24 in 1 to 90, plus 91 and 97 = 26.",
+  "trap": "25 counts only the primes below 100, but numbers like 1, 49 and 77 also avoid 2, 3 and 5.",
+  "time": 135
+ },
+ {
+  "id": "ps-np-046",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Remainders",
+  "diff": 4,
+  "stem": "When the positive integer n is divided by 8, the remainder is 5. Which of the following could be the remainder when n is divided by 12?",
+  "choices": [
+   "0",
+   "2",
+   "3",
+   "7",
+   "9"
+  ],
+  "answer": 4,
+  "explanation": "n = 8k + 5 is odd, so its remainder on division by 12 is odd: 0 and 2 are out. List values: 5, 13, 21, 29, 37, 45, ... Their remainders mod 12 are 5, 1, 9, 5, 1, 9, ..., cycling through 5, 1 and 9 (because 8 × 3 = 24 is a multiple of 12). So 9 is possible (n = 21), while 3 and 7 never appear.",
+  "trap": "3 and 7 are odd and pass the parity test, but n ≡ 5 mod 8 also forces n ≡ 1 mod 4, which rules out 3 and 7 (both ≡ 3 mod 4).",
+  "time": 135
+ },
+ {
+  "id": "ps-np-047",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Odd/Even & Signs",
+  "diff": 4,
+  "stem": "If x/y < 0 and x²y > 0, which of the following must be true? I. x - y < 0  II. xy² < 0  III. x + y < 0",
+  "choices": [
+   "I only",
+   "II only",
+   "I and II only",
+   "I and III only",
+   "I, II and III"
+  ],
+  "answer": 2,
+  "explanation": "x²y > 0 tells us x ≠ 0 and, since x² > 0, y > 0. Then x/y < 0 with y positive means x < 0. Statement I: a negative minus a positive is negative, so x - y < 0 is true. Statement II: y² > 0, so xy² has the sign of x, negative; true. Statement III: x + y depends on sizes; x = -1, y = 5 gives 4 > 0, so it need not be true. Answer: I and II only.",
+  "trap": "Statement III looks right because x is negative, but a large positive y can outweigh it.",
+  "time": 135
+ },
+ {
+  "id": "ps-np-048",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Units Digits & Cycles",
+  "diff": 4,
+  "stem": "What is the remainder when 5⁹⁹ is divided by 13?",
+  "choices": [
+   "1",
+   "5",
+   "8",
+   "10",
+   "12"
+  ],
+  "answer": 2,
+  "explanation": "Find a short cycle: 5² = 25 = 26 - 1, so 5² ≡ -1 mod 13 and 5⁴ ≡ 1. Remainders of powers of 5 repeat every 4 steps: 5, 12, 8, 1. 99 = 4 × 24 + 3, so 5⁹⁹ ≡ 5³ = 125. And 125 = 9 × 13 + 8, so the remainder is 8. Alternatively, 5⁹⁹ = (5²)⁴⁹ × 5 ≡ (-1)⁴⁹ × 5 = -5 ≡ 8 mod 13.",
+  "trap": "12 comes from using 5² ≡ -1 and stopping at an odd step; 99 leaves remainder 3 mod 4, so the third term of the cycle, 8, is needed.",
+  "time": 135
+ },
+ {
+  "id": "ps-np-049",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Consecutive Integers",
+  "diff": 5,
+  "stem": "In how many different ways can 45 be written as the sum of two or more consecutive positive integers?",
+  "choices": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "answer": 4,
+  "explanation": "A sum of k consecutive integers starting at a is k(2a + k - 1)/2. Setting this equal to 45 gives k(2a + k - 1) = 90, where the two factors have opposite parity and the second is larger. Factor pairs of 90 with opposite parity and k ≥ 2: (2, 45), (3, 30), (5, 18), (6, 15), (9, 10). These give 22 + 23, 14 + 15 + 16, 7 to 11, 5 to 10 and 1 to 9. So there are 5 ways. Shortcut: the count equals the number of odd divisors of 45 (six: 1, 3, 5, 9, 15, 45) minus 1 for the one-term \"sum\" 45 itself.",
+  "trap": "6 counts the odd divisors of 45 without removing the single-term case, and 3 counts only runs with an odd number of terms.",
+  "time": 150
+ },
+ {
+  "id": "ps-np-050",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Divisibility & Factors",
+  "diff": 5,
+  "stem": "Let n be the smallest positive integer such that 1260n is a perfect cube. How many positive divisors does n have?",
+  "choices": [
+   "18",
+   "24",
+   "27",
+   "36",
+   "48"
+  ],
+  "answer": 3,
+  "explanation": "Factor 1260 = 2² × 3² × 5 × 7. A perfect cube needs every prime exponent to be a multiple of 3, so the smallest n raises each exponent to 3: n = 2¹ × 3¹ × 5² × 7² = 7,350. The number of divisors of n is (1 + 1)(1 + 1)(2 + 1)(2 + 1) = 2 × 2 × 3 × 3 = 36.",
+  "trap": "24 comes from leaving 5 at the first power in n (2 × 3 × 5 × 7² has 2 × 2 × 2 × 3 = 24 divisors), which does not make 1260n a cube.",
+  "time": 150
+ },
+ {
+  "id": "ps-np-051",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Primes",
+  "diff": 5,
+  "stem": "p and q are prime numbers and p² - q² = 72. What is the sum of all possible values of p?",
+  "choices": [
+   "11",
+   "19",
+   "28",
+   "30",
+   "36"
+  ],
+  "answer": 3,
+  "explanation": "Factor: (p - q)(p + q) = 72. If q = 2, then p² = 76, not a square, so both primes are odd and both factors are even. Even pairs with product 72 and p - q < p + q: (2, 36), (4, 18), (6, 12). They give p = 19, q = 17; p = 11, q = 7; and p = 9, q = 3. 9 is not prime, so the third pair fails. The possible values of p are 19 and 11, and their sum is 30.",
+  "trap": "36 comes from also accepting p = 9 from the pair (6, 12) without checking that 9 is prime.",
+  "time": 150
+ },
+ {
+  "id": "ps-np-052",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Exponents of Integers",
+  "diff": 5,
+  "stem": "What is the greatest integer k such that 12ᵏ is a factor of 30!?",
+  "choices": [
+   "12",
+   "13",
+   "14",
+   "15",
+   "26"
+  ],
+  "answer": 1,
+  "explanation": "12ᵏ = 2²ᵏ × 3ᵏ, so count factors of 2 and 3 in 30!. Factors of 2: 30 ÷ 2 = 15, ÷ 4 = 7, ÷ 8 = 3, ÷ 16 = 1, total 26. Factors of 3: 30 ÷ 3 = 10, ÷ 9 = 3, ÷ 27 = 1, total 14. The 2s allow 2k ≤ 26, so k ≤ 13; the 3s allow k ≤ 14. The tighter limit wins: k = 13.",
+  "trap": "14 uses only the count of 3s; each 12 needs two 2s, so the 26 twos run out first at k = 13.",
+  "time": 150
+ },
+ {
+  "id": "ps-np-053",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Odd/Even & Signs",
+  "diff": 5,
+  "stem": "How many ordered pairs of integers (x, y) satisfy x² - y² = 2026?",
+  "choices": [
+   "0",
+   "1",
+   "2",
+   "4",
+   "8"
+  ],
+  "answer": 0,
+  "explanation": "Write x² - y² = (x - y)(x + y). The two factors differ by 2y, so they are both even or both odd. If both are odd, the product is odd; if both are even, the product is a multiple of 4. But 2026 = 2 × 1013 is even and not a multiple of 4, so neither case works. Hence no integer pairs exist. A quick parity check: squares are 0 or 1 mod 4, so x² - y² is 0, 1 or 3 mod 4, never 2, and 2026 ≡ 2 mod 4.",
+  "trap": "4 comes from using the factor pair (2, 1013) and its sign variants, but 2 and 1013 have different parity, so x and y would not be integers.",
+  "time": 150
+ },
+ {
+  "id": "ps-np-054",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "LCM/GCD",
+  "diff": 5,
+  "stem": "Two positive integers a and b, with a < b, have a greatest common divisor of 12 and a least common multiple of 360. How many such pairs (a, b) are there?",
+  "choices": [
+   "4",
+   "6",
+   "8",
+   "10",
+   "12"
+  ],
+  "answer": 0,
+  "explanation": "Write a = 12m and b = 12n with GCD(m, n) = 1. Then LCM(a, b) = 12mn = 360, so mn = 30 = 2 × 3 × 5. Since m and n share no prime, each of the three primes goes entirely to m or to n: 2³ = 8 ordered splits, or 4 unordered ones with m < n: (1, 30), (2, 15), (3, 10), (5, 6). These give (12, 360), (24, 180), (36, 120), (60, 72). So there are 4 pairs.",
+  "trap": "8 counts ordered pairs, but the condition a < b means each split is counted only once.",
+  "time": 150
+ },
+ {
+  "id": "ps-np-055",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Units Digits & Cycles",
+  "diff": 5,
+  "stem": "What is the units digit of 1¹ + 2² + 3³ + 4⁴ + 5⁵ + 6⁶ + 7⁷ + 8⁸ + 9⁹ + 10¹⁰?",
+  "choices": [
+   "1",
+   "3",
+   "5",
+   "7",
+   "9"
+  ],
+  "answer": 3,
+  "explanation": "Find each units digit with its cycle. 1¹ -> 1. 2² -> 4. 3³ = 27 -> 7. 4⁴: even power of 4 -> 6. 5⁵ -> 5. 6⁶ -> 6. 7⁷: cycle 7, 9, 3, 1 and 7 = 4 + 3, so -> 3. 8⁸: cycle 8, 4, 2, 6 and 8 is a multiple of 4, so -> 6. 9⁹: odd power of 9 -> 9. 10¹⁰ -> 0. Sum of units digits: 1 + 4 + 7 + 6 + 5 + 6 + 3 + 6 + 9 + 0 = 47, so the units digit is 7.",
+  "trap": "Treating 7⁷ as ending in 7 or 8⁸ as ending in 8 (assuming kᵏ ends in k) shifts the total and gives 1 or 9.",
+  "time": 150
+ },
+ {
+  "id": "ps-np-056",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Consecutive Integers",
+  "diff": 5,
+  "stem": "If n is an odd integer greater than 1, what is the greatest integer that must be a divisor of n³ - n?",
+  "choices": [
+   "6",
+   "12",
+   "24",
+   "48",
+   "96"
+  ],
+  "answer": 2,
+  "explanation": "Factor: n³ - n = (n - 1)n(n + 1), three consecutive integers, so 3 divides it. Because n is odd, n - 1 and n + 1 are consecutive even numbers, and one of them is a multiple of 4, so their product is a multiple of 8. Hence 24 always divides n³ - n. It cannot be larger: n = 3 gives 27 - 3 = 24. Picking n = 3 and n = 5 (120) and taking their GCD also gives 24.",
+  "trap": "6 is the answer for any integer n; the odd condition adds an extra factor of 4, so stopping at 6 or 12 misses it.",
+  "time": 150
+ },
+ {
+  "id": "ps-np-057",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Exponents of Integers",
+  "diff": 5,
+  "stem": "Which of the following is greatest?",
+  "choices": [
+   "2⁶⁰",
+   "3⁴⁰",
+   "5²⁵",
+   "7²⁰",
+   "10¹⁷"
+  ],
+  "answer": 1,
+  "explanation": "Compare using shared exponents. 2⁶⁰ = (2³)²⁰ = 8²⁰, which beats 7²⁰. 3⁴⁰ = (3²)²⁰ = 9²⁰, which beats 8²⁰. Now compare 9²⁰ with 10¹⁷ and 5²⁵. 9²⁰ = 3⁴⁰ ≈ 1.2 × 10¹⁹ (since 3⁴⁰ = (3¹⁰)⁴ and 3¹⁰ = 59,049 ≈ 5.9 × 10⁴, so 3⁴⁰ ≈ 1,215 × 10¹⁶), which beats 10¹⁷. 5²⁵ = 10²⁵ ÷ 2²⁵ ≈ 10²⁵ ÷ (3.4 × 10⁷) ≈ 3 × 10¹⁷, also smaller. So 3⁴⁰ is greatest.",
+  "trap": "2⁶⁰ has the largest exponent, but rewriting it as 8²⁰ shows it is smaller than 9²⁰ = 3⁴⁰.",
+  "time": 150
+ },
+ {
+  "id": "ps-np-058",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Divisibility & Factors",
+  "diff": 5,
+  "stem": "How many integers from 1 to 1,000, inclusive, are divisible by 6 or by 10 but not by 15?",
+  "choices": [
+   "167",
+   "200",
+   "233",
+   "266",
+   "300"
+  ],
+  "answer": 1,
+  "explanation": "First count multiples of 6 or 10: 166 + 100 - (multiples of 30: 33) = 233. Now remove those also divisible by 15. A multiple of 6 that is divisible by 15 is a multiple of 30, and a multiple of 10 that is divisible by 15 is also a multiple of 30. So the numbers to remove are exactly the 33 multiples of 30. The answer is 233 - 33 = 200.",
+  "trap": "233 counts the union correctly but forgets to remove the multiples of 15, and 167 removes the 66 multiples of 15 even though most of them are not in the union.",
+  "time": 150
+ },
+ {
+  "id": "ps-np-059",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Units Digits & Cycles",
+  "diff": 5,
+  "stem": "What are the last two digits of 7²⁰²⁶?",
+  "choices": [
+   "01",
+   "07",
+   "43",
+   "49",
+   "51"
+  ],
+  "answer": 3,
+  "explanation": "Track 7ⁿ mod 100: 7¹ = 07, 7² = 49, 7³ = 343 -> 43, 7⁴ = 2,401 -> 01. Since 7⁴ ends in 01, the last two digits repeat every 4 powers: 07, 49, 43, 01. 2026 = 4 × 506 + 2, so 7²⁰²⁶ ends like 7², in 49. Only the last two digits of each power matter, so you never need the full numbers.",
+  "trap": "43 comes from mapping a remainder of 2 to the third term of the cycle; 7²⁰²⁶ = (7⁴)⁵⁰⁶ × 7² ends in 01 × 49 = 49.",
+  "time": 150
+ },
+ {
+  "id": "ps-np-060",
+  "sec": "quant",
+  "type": "ps",
+  "topic": "Number Properties",
+  "sub": "Primes",
+  "diff": 5,
+  "stem": "For how many prime numbers p is p² + 2 also a prime number?",
+  "choices": [
+   "None",
+   "Exactly one",
+   "Exactly two",
+   "Exactly three",
+   "Infinitely many"
+  ],
+  "answer": 1,
+  "explanation": "Look at remainders mod 3. If p is a prime other than 3, then p leaves remainder 1 or 2 on division by 3, so p² leaves remainder 1, and p² + 2 leaves remainder 0: it is a multiple of 3 greater than 3, hence not prime. So only p = 3 can work, and 3² + 2 = 11 is prime. Also p = 2 gives 6, not prime. There is exactly one such prime.",
+  "trap": "\"Infinitely many\" is tempting because primes never run out, but the mod 3 argument shows every prime other than 3 fails.",
+  "time": 150
+ }
+]

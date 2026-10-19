@@ -1,0 +1,2562 @@
+[
+ {
+  "id": "fc-001",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "a^m × a^n = ?",
+  "back": "a^(m+n). Same base: add exponents. Example: 2³ × 2^4 = 2^7.",
+  "level": 1
+ },
+ {
+  "id": "fc-002",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "a^m ÷ a^n = ?",
+  "back": "a^(m-n). Same base: subtract exponents. Example: 5^7 ÷ 5^4 = 5³.",
+  "level": 1
+ },
+ {
+  "id": "fc-003",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "(a^m)^n = ?",
+  "back": "a^(mn). Power of a power: multiply exponents. Example: (3²)^4 = 3^8.",
+  "level": 1
+ },
+ {
+  "id": "fc-004",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "a^(-n) = ?",
+  "back": "1/a^n. Example: 2^(-3) = 1/8.",
+  "level": 1
+ },
+ {
+  "id": "fc-005",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "a^(1/n) means?",
+  "back": "The nth root of a. Example: 27^(1/3) = 3.",
+  "level": 2
+ },
+ {
+  "id": "fc-006",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "a^(m/n) = ?",
+  "back": "(nth root of a)^m. Example: 8^(2/3) = 2² = 4.",
+  "level": 2
+ },
+ {
+  "id": "fc-007",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "How do you simplify 2^(x+3) - 2^x?",
+  "back": "Factor out the smallest power: 2^x(2³ - 1) = 7 × 2^x.",
+  "level": 2
+ },
+ {
+  "id": "fc-008",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "What is 3^n + 3^n + 3^n?",
+  "back": "3 × 3^n = 3^(n+1). Adding equal powers multiplies the count, not the exponent.",
+  "level": 2
+ },
+ {
+  "id": "fc-009",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "For 0 < x < 1, order x, x², √x.",
+  "back": "x² < x < √x. Powers of fractions shrink; roots of fractions grow.",
+  "level": 2
+ },
+ {
+  "id": "fc-010",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "(-2)^4 vs -2^4?",
+  "back": "(-2)^4 = 16, but -2^4 = -(2^4) = -16. The exponent applies only to what is directly before it.",
+  "level": 2
+ },
+ {
+  "id": "fc-011",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "Compare 2^30 and 3^20 quickly.",
+  "back": "Match exponents: 2^30 = 8^10 and 3^20 = 9^10, so 3^20 is larger.",
+  "level": 3
+ },
+ {
+  "id": "fc-012",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "√(ab) = ?",
+  "back": "√a × √b. Example: √72 = √36 × √2 = 6√2.",
+  "level": 1
+ },
+ {
+  "id": "fc-013",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "Can you add √2 + √3 into one root?",
+  "back": "No. Only like radicals combine: 2√5 + 3√5 = 5√5, but √2 + √3 stays as is.",
+  "level": 2
+ },
+ {
+  "id": "fc-014",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "√(x²) = ?",
+  "back": "|x|. For example √((-4)²) = 4.",
+  "level": 2
+ },
+ {
+  "id": "fc-015",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "How do you rationalise 1/√3?",
+  "back": "Multiply top and bottom by √3: √3/3.",
+  "level": 2
+ },
+ {
+  "id": "fc-016",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "How do you rationalise 1/(√5 - 2)?",
+  "back": "Multiply by the conjugate (√5 + 2): (√5 + 2)/(5 - 4) = √5 + 2.",
+  "level": 3
+ },
+ {
+  "id": "fc-017",
+  "sec": "quant",
+  "topic": "Exponents & Roots",
+  "front": "Approximate √2, √3 and √5.",
+  "back": "√2 ≈ 1.41, √3 ≈ 1.73, √5 ≈ 2.24.",
+  "level": 1
+ },
+ {
+  "id": "fc-018",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "13² = ?",
+  "back": "169.",
+  "level": 1
+ },
+ {
+  "id": "fc-019",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "14² = ?",
+  "back": "196.",
+  "level": 1
+ },
+ {
+  "id": "fc-020",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "15² = ?",
+  "back": "225.",
+  "level": 1
+ },
+ {
+  "id": "fc-021",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "16² = ?",
+  "back": "256.",
+  "level": 1
+ },
+ {
+  "id": "fc-022",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "17² = ?",
+  "back": "289.",
+  "level": 1
+ },
+ {
+  "id": "fc-023",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "18² = ?",
+  "back": "324.",
+  "level": 1
+ },
+ {
+  "id": "fc-024",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "19² = ?",
+  "back": "361.",
+  "level": 1
+ },
+ {
+  "id": "fc-025",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "25² = ?",
+  "back": "625. Trick for numbers ending in 5: 25² starts with 2 × 3 = 6, then 25.",
+  "level": 1
+ },
+ {
+  "id": "fc-026",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "Quick way to square numbers ending in 5?",
+  "back": "For (10a + 5)², write a(a + 1) then 25. Example: 35²: 3 × 4 = 12, so 1225.",
+  "level": 2
+ },
+ {
+  "id": "fc-027",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "Cubes of 6 through 10?",
+  "back": "6³ = 216, 7³ = 343, 8³ = 512, 9³ = 729, 10³ = 1000.",
+  "level": 1
+ },
+ {
+  "id": "fc-028",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "Powers of 2 from 2^6 to 2^10?",
+  "back": "64, 128, 256, 512, 1024.",
+  "level": 1
+ },
+ {
+  "id": "fc-029",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "Powers of 3 from 3^2 to 3^6?",
+  "back": "9, 27, 81, 243, 729.",
+  "level": 1
+ },
+ {
+  "id": "fc-030",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "Perfect squares end in which units digits?",
+  "back": "0, 1, 4, 5, 6 or 9. A number ending in 2, 3, 7 or 8 is never a perfect square.",
+  "level": 2
+ },
+ {
+  "id": "fc-031",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "Prime factorisation of a perfect square?",
+  "back": "Every exponent is even. Example: 144 = 2^4 × 3².",
+  "level": 2
+ },
+ {
+  "id": "fc-032",
+  "sec": "quant",
+  "topic": "Squares & Cubes",
+  "front": "Prime factorisation of a perfect cube?",
+  "back": "Every exponent is a multiple of 3. Example: 216 = 2³ × 3³.",
+  "level": 3
+ },
+ {
+  "id": "fc-033",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "1/3 as a decimal and percent?",
+  "back": "1/3 = 0.333... = 33⅓%.",
+  "level": 1
+ },
+ {
+  "id": "fc-034",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "2/3 as a decimal and percent?",
+  "back": "2/3 = 0.666... = 66⅔%.",
+  "level": 1
+ },
+ {
+  "id": "fc-035",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "1/6 as a decimal and percent?",
+  "back": "1/6 = 0.1666... = 16⅔%.",
+  "level": 2
+ },
+ {
+  "id": "fc-036",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "5/6 as a decimal and percent?",
+  "back": "5/6 = 0.8333... = 83⅓%.",
+  "level": 2
+ },
+ {
+  "id": "fc-037",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "1/7 as a decimal and percent?",
+  "back": "1/7 = about 0.1429 = about 14.3%.",
+  "level": 2
+ },
+ {
+  "id": "fc-038",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "1/8 as a decimal and percent?",
+  "back": "1/8 = 0.125 = 12.5%.",
+  "level": 2
+ },
+ {
+  "id": "fc-039",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "3/8 as a decimal and percent?",
+  "back": "3/8 = 0.375 = 37.5%.",
+  "level": 2
+ },
+ {
+  "id": "fc-040",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "5/8 as a decimal and percent?",
+  "back": "5/8 = 0.625 = 62.5%.",
+  "level": 2
+ },
+ {
+  "id": "fc-041",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "7/8 as a decimal and percent?",
+  "back": "7/8 = 0.875 = 87.5%.",
+  "level": 2
+ },
+ {
+  "id": "fc-042",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "1/9 as a decimal and percent?",
+  "back": "1/9 = 0.111... = 11.1%.",
+  "level": 2
+ },
+ {
+  "id": "fc-043",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "1/11 as a decimal and percent?",
+  "back": "1/11 = 0.0909... = about 9.1%.",
+  "level": 2
+ },
+ {
+  "id": "fc-044",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "1/12 as a decimal and percent?",
+  "back": "1/12 = 0.08333... = 8⅓%.",
+  "level": 2
+ },
+ {
+  "id": "fc-045",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "1/16 as a decimal and percent?",
+  "back": "1/16 = 0.0625 = 6.25%.",
+  "level": 2
+ },
+ {
+  "id": "fc-046",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "When does a fraction terminate as a decimal?",
+  "back": "When, in lowest terms, its denominator has no prime factors other than 2 and 5. Reduce first: 21/60 = 7/20 terminates.",
+  "level": 2
+ },
+ {
+  "id": "fc-047",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "How do you compare a/b and c/d quickly (all positive)?",
+  "back": "Cross-multiply: a/b > c/d exactly when ad > bc.",
+  "level": 1
+ },
+ {
+  "id": "fc-048",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "Adding the same positive number to the top and bottom of a fraction?",
+  "back": "The fraction moves toward 1. 2/5 -> 3/6 increases; 7/5 -> 8/6 decreases.",
+  "level": 2
+ },
+ {
+  "id": "fc-049",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "Percent change formula?",
+  "back": "(new - old)/old × 100. The base is always the original value.",
+  "level": 2
+ },
+ {
+  "id": "fc-050",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "Successive changes of +a% and -b%?",
+  "back": "Multiply: (1 + a/100)(1 - b/100). +20% then -20% gives 0.96, a 4% loss.",
+  "level": 2
+ },
+ {
+  "id": "fc-051",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "x is 25% more than y. y is what % less than x?",
+  "back": "20%. x = 1.25y, so y = 0.8x.",
+  "level": 2
+ },
+ {
+  "id": "fc-052",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "Reverse a 20% discount: sale price 64. Original?",
+  "back": "64 ÷ 0.8 = 80. Divide by the multiplier, do not add 20% to 64.",
+  "level": 2
+ },
+ {
+  "id": "fc-053",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "Percentage points vs percent change?",
+  "back": "10% to 15% is a rise of 5 percentage points, which is a 50% relative increase.",
+  "level": 2
+ },
+ {
+  "id": "fc-054",
+  "sec": "quant",
+  "topic": "Fractions, Decimals & Percents",
+  "front": "Shortcut: x% of y equals?",
+  "back": "y% of x. So 8% of 50 = 50% of 8 = 4.",
+  "level": 1
+ },
+ {
+  "id": "fc-055",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "Divisible by 3?",
+  "back": "The digit sum is divisible by 3. 471: 4 + 7 + 1 = 12, yes.",
+  "level": 1
+ },
+ {
+  "id": "fc-056",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "Divisible by 4?",
+  "back": "The last two digits form a multiple of 4. 1,316: 16, yes.",
+  "level": 1
+ },
+ {
+  "id": "fc-057",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "Divisible by 8?",
+  "back": "The last three digits form a multiple of 8. 5,128: 128 = 8 × 16, yes.",
+  "level": 2
+ },
+ {
+  "id": "fc-058",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "Divisible by 9?",
+  "back": "The digit sum is divisible by 9. 7,452: 18, yes.",
+  "level": 1
+ },
+ {
+  "id": "fc-059",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "Divisible by 11?",
+  "back": "The alternating digit sum is divisible by 11. 2,728: 2 - 7 + 2 - 8 = -11, yes.",
+  "level": 3
+ },
+ {
+  "id": "fc-060",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "Primes less than 50?",
+  "back": "2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 (15 primes).",
+  "level": 1
+ },
+ {
+  "id": "fc-061",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "Is 1 prime? Which prime is even?",
+  "back": "1 is not prime. 2 is the only even prime.",
+  "level": 1
+ },
+ {
+  "id": "fc-062",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "Number of positive factors of p^a × q^b × r^c?",
+  "back": "(a + 1)(b + 1)(c + 1). 72 = 2³ × 3² has 4 × 3 = 12 factors.",
+  "level": 2
+ },
+ {
+  "id": "fc-063",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "Which integers have an odd number of factors?",
+  "back": "Perfect squares only. 36 has 9 factors.",
+  "level": 2
+ },
+ {
+  "id": "fc-064",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "If n is divisible by 4 and 6, must it be divisible by 24?",
+  "back": "No, only by LCM(4, 6) = 12. Example: n = 12.",
+  "level": 2
+ },
+ {
+  "id": "fc-065",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "Product of k consecutive integers is always divisible by?",
+  "back": "k! (and so by every integer from 1 to k). Three consecutive integers: divisible by 6.",
+  "level": 2
+ },
+ {
+  "id": "fc-066",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "Smallest k so that 2³ × 5 × k is a perfect square?",
+  "back": "Make every exponent even: k = 2 × 5 = 10.",
+  "level": 3
+ },
+ {
+  "id": "fc-067",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "How many trailing zeros does 25! have?",
+  "back": "Count factors of 5: 25/5 = 5 plus 25/25 = 1, so 6 trailing zeros.",
+  "level": 3
+ },
+ {
+  "id": "fc-068",
+  "sec": "quant",
+  "topic": "Divisibility & Primes",
+  "front": "Is n! + 3 divisible by 3 for n ≥ 3?",
+  "back": "Yes. n! contains 3, so n! + 3 = 3(n!/3 + 1).",
+  "level": 3
+ },
+ {
+  "id": "fc-069",
+  "sec": "quant",
+  "topic": "LCM & GCD",
+  "front": "GCD from prime factorisations?",
+  "back": "Take each shared prime with its smallest exponent. GCD(2³ × 3, 2 × 3²) = 2 × 3 = 6.",
+  "level": 1
+ },
+ {
+  "id": "fc-070",
+  "sec": "quant",
+  "topic": "LCM & GCD",
+  "front": "LCM from prime factorisations?",
+  "back": "Take every prime with its largest exponent. LCM(2³ × 3, 2 × 3²) = 2³ × 3² = 72.",
+  "level": 1
+ },
+ {
+  "id": "fc-071",
+  "sec": "quant",
+  "topic": "LCM & GCD",
+  "front": "GCD(a, b) × LCM(a, b) = ?",
+  "back": "a × b, for two positive integers. Not valid for three numbers.",
+  "level": 2
+ },
+ {
+  "id": "fc-072",
+  "sec": "quant",
+  "topic": "LCM & GCD",
+  "front": "LCM or GCD: 'when will events coincide again'?",
+  "back": "LCM. Lights flashing every 8 and 12 seconds coincide every 24 seconds.",
+  "level": 2
+ },
+ {
+  "id": "fc-073",
+  "sec": "quant",
+  "topic": "LCM & GCD",
+  "front": "LCM or GCD: 'largest equal groups with nothing left over'?",
+  "back": "GCD. 36 pens and 60 pencils make at most GCD = 12 identical kits.",
+  "level": 2
+ },
+ {
+  "id": "fc-074",
+  "sec": "quant",
+  "topic": "LCM & GCD",
+  "front": "GCD of two consecutive integers?",
+  "back": "1. Consecutive integers are always coprime.",
+  "level": 2
+ },
+ {
+  "id": "fc-075",
+  "sec": "quant",
+  "topic": "LCM & GCD",
+  "front": "Does knowing GCD and LCM of two numbers determine them?",
+  "back": "No. GCD 4 and LCM 24 fit (4, 24) and (8, 12).",
+  "level": 3
+ },
+ {
+  "id": "fc-076",
+  "sec": "quant",
+  "topic": "Remainders",
+  "front": "Remainder equation?",
+  "back": "n = dq + r with 0 ≤ r < d. 'Remainder 3 when divided by 5' means n = 5q + 3: 3, 8, 13, ...",
+  "level": 1
+ },
+ {
+  "id": "fc-077",
+  "sec": "quant",
+  "topic": "Remainders",
+  "front": "Can remainders be combined?",
+  "back": "Yes for sums and products: if a leaves 2 and b leaves 4 when divided by 5, ab leaves 8, which reduces to 3.",
+  "level": 2
+ },
+ {
+  "id": "fc-078",
+  "sec": "quant",
+  "topic": "Remainders",
+  "front": "x/y = 7.25 and the remainder is 3. Find y.",
+  "back": "Decimal part = r/y: 0.25 = 3/y, so y = 12.",
+  "level": 2
+ },
+ {
+  "id": "fc-079",
+  "sec": "quant",
+  "topic": "Remainders",
+  "front": "Remainder of 3^50 divided by 4?",
+  "back": "3 leaves remainder 3 = -1 (mod 4); (-1)^50 = 1. Remainder 1.",
+  "level": 3
+ },
+ {
+  "id": "fc-080",
+  "sec": "quant",
+  "topic": "Odd, Even & Signs",
+  "front": "Odd × odd? Odd + odd? Even × anything?",
+  "back": "Odd × odd = odd. Odd + odd = even. Even × anything = even.",
+  "level": 1
+ },
+ {
+  "id": "fc-081",
+  "sec": "quant",
+  "topic": "Odd, Even & Signs",
+  "front": "Is 0 even? Positive?",
+  "back": "0 is even, and it is neither positive nor negative.",
+  "level": 1
+ },
+ {
+  "id": "fc-082",
+  "sec": "quant",
+  "topic": "Odd, Even & Signs",
+  "front": "n(n + 1) is always?",
+  "back": "Even, because one of two consecutive integers is even.",
+  "level": 2
+ },
+ {
+  "id": "fc-083",
+  "sec": "quant",
+  "topic": "Odd, Even & Signs",
+  "front": "x²y < 0 tells you?",
+  "back": "y < 0 and x ≠ 0. Nothing about the sign of x.",
+  "level": 2
+ },
+ {
+  "id": "fc-084",
+  "sec": "quant",
+  "topic": "Odd, Even & Signs",
+  "front": "Sign of a product with k negative factors?",
+  "back": "Negative if k is odd, positive if k is even (and no factor is zero).",
+  "level": 2
+ },
+ {
+  "id": "fc-085",
+  "sec": "quant",
+  "topic": "Odd, Even & Signs",
+  "front": "Is there a parity rule for division?",
+  "back": "No. 6/2 = 3 is odd, 8/2 = 4 is even, 6/4 is not an integer.",
+  "level": 2
+ },
+ {
+  "id": "fc-086",
+  "sec": "quant",
+  "topic": "Units Digits",
+  "front": "Units digit cycle of 2?",
+  "back": "2, 4, 8, 6 (period 4).",
+  "level": 2
+ },
+ {
+  "id": "fc-087",
+  "sec": "quant",
+  "topic": "Units Digits",
+  "front": "Units digit cycle of 3?",
+  "back": "3, 9, 7, 1 (period 4).",
+  "level": 2
+ },
+ {
+  "id": "fc-088",
+  "sec": "quant",
+  "topic": "Units Digits",
+  "front": "Units digit cycle of 7?",
+  "back": "7, 9, 3, 1 (period 4).",
+  "level": 2
+ },
+ {
+  "id": "fc-089",
+  "sec": "quant",
+  "topic": "Units Digits",
+  "front": "Units digit cycle of 8?",
+  "back": "8, 4, 2, 6 (period 4).",
+  "level": 2
+ },
+ {
+  "id": "fc-090",
+  "sec": "quant",
+  "topic": "Units Digits",
+  "front": "Units digit cycles of 4 and 9?",
+  "back": "4: 4, 6. 9: 9, 1. Period 2 for both.",
+  "level": 2
+ },
+ {
+  "id": "fc-091",
+  "sec": "quant",
+  "topic": "Units Digits",
+  "front": "Which digits keep the same units digit at every power?",
+  "back": "0, 1, 5 and 6.",
+  "level": 1
+ },
+ {
+  "id": "fc-092",
+  "sec": "quant",
+  "topic": "Units Digits",
+  "front": "If n mod 4 = 0, which cycle position do you use?",
+  "back": "The 4th (last) one. 7^8 ends in 1.",
+  "level": 3
+ },
+ {
+  "id": "fc-093",
+  "sec": "quant",
+  "topic": "Units Digits",
+  "front": "Units digit of n! for n ≥ 5?",
+  "back": "0, because n! contains 2 × 5.",
+  "level": 2
+ },
+ {
+  "id": "fc-094",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "(a + b)² = ?",
+  "back": "a² + 2ab + b².",
+  "level": 1
+ },
+ {
+  "id": "fc-095",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "(a - b)² = ?",
+  "back": "a² - 2ab + b².",
+  "level": 1
+ },
+ {
+  "id": "fc-096",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "a² - b² = ?",
+  "back": "(a + b)(a - b). Example: 51 × 49 = 50² - 1 = 2499.",
+  "level": 1
+ },
+ {
+  "id": "fc-097",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Sum and product of roots of ax² + bx + c = 0?",
+  "back": "Sum = -b/a, product = c/a.",
+  "level": 2
+ },
+ {
+  "id": "fc-098",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Discriminant meaning?",
+  "back": "b² - 4ac > 0: two real roots; = 0: one root; < 0: no real roots.",
+  "level": 2
+ },
+ {
+  "id": "fc-099",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Quadratic formula?",
+  "back": "x = (-b ± √(b² - 4ac))/(2a).",
+  "level": 2
+ },
+ {
+  "id": "fc-100",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Why not divide x² = 3x by x?",
+  "back": "You lose x = 0. Factor instead: x(x - 3) = 0, so x = 0 or 3.",
+  "level": 2
+ },
+ {
+  "id": "fc-101",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "If x + 1/x = k, then x² + 1/x² = ?",
+  "back": "k² - 2. Square both sides and subtract the middle term 2.",
+  "level": 3
+ },
+ {
+  "id": "fc-102",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Two linear equations with no unique solution?",
+  "back": "When one is a multiple of the other (infinitely many) or the left sides are proportional but the right sides are not (none).",
+  "level": 2
+ },
+ {
+  "id": "fc-103",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Fast way to find a + b from 2a + 3b = 17 and 3a + 2b = 13?",
+  "back": "Add the equations: 5a + 5b = 30, so a + b = 6.",
+  "level": 2
+ },
+ {
+  "id": "fc-104",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Inequality rule for multiplying by a negative?",
+  "back": "Flip the sign. -2x > 6 becomes x < -3.",
+  "level": 2
+ },
+ {
+  "id": "fc-105",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Range of x - y when a ≤ x ≤ b and c ≤ y ≤ d?",
+  "back": "From a - d to b - c. Subtract the opposite extremes.",
+  "level": 3
+ },
+ {
+  "id": "fc-106",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Solve (x - 2)(x + 4) > 0.",
+  "back": "Outside the roots: x < -4 or x > 2.",
+  "level": 3
+ },
+ {
+  "id": "fc-107",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "|x - a| < b means?",
+  "back": "a - b < x < a + b: x is within b of a.",
+  "level": 2
+ },
+ {
+  "id": "fc-108",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "|x - a| > b means?",
+  "back": "x < a - b or x > a + b: x is more than b away from a.",
+  "level": 2
+ },
+ {
+  "id": "fc-109",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Arithmetic sequence nth term and sum?",
+  "back": "a_n = a_1 + (n - 1)d. Sum = n(first + last)/2.",
+  "level": 2
+ },
+ {
+  "id": "fc-110",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Geometric sequence nth term?",
+  "back": "a_n = a_1 × r^(n - 1).",
+  "level": 2
+ },
+ {
+  "id": "fc-111",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Sum of 1 to n? Sum of first n odd numbers?",
+  "back": "n(n + 1)/2 and n².",
+  "level": 2
+ },
+ {
+  "id": "fc-112",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Slope between two points?",
+  "back": "(y2 - y1)/(x2 - x1).",
+  "level": 1
+ },
+ {
+  "id": "fc-113",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Slopes of parallel and perpendicular lines?",
+  "back": "Parallel: equal slopes. Perpendicular: product -1, so 3 pairs with -1/3.",
+  "level": 2
+ },
+ {
+  "id": "fc-114",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Slope and y-intercept of ax + by = c?",
+  "back": "Slope -a/b, y-intercept c/b.",
+  "level": 2
+ },
+ {
+  "id": "fc-115",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "How do you find intercepts of a line?",
+  "back": "x-intercept: set y = 0. y-intercept: set x = 0.",
+  "level": 1
+ },
+ {
+  "id": "fc-116",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Midpoint of (x1, y1) and (x2, y2)?",
+  "back": "((x1 + x2)/2, (y1 + y2)/2).",
+  "level": 2
+ },
+ {
+  "id": "fc-117",
+  "sec": "quant",
+  "topic": "Algebra",
+  "front": "Composite f(g(x)): which first?",
+  "back": "g first, then f. Work from the inside out.",
+  "level": 2
+ },
+ {
+  "id": "fc-118",
+  "sec": "quant",
+  "topic": "Rates & Work",
+  "front": "Distance, rate, time relation?",
+  "back": "D = R × T. Convert units first (minutes to hours).",
+  "level": 1
+ },
+ {
+  "id": "fc-119",
+  "sec": "quant",
+  "topic": "Rates & Work",
+  "front": "Average speed for equal distances at a and b?",
+  "back": "2ab/(a + b). 60 and 40 give 48, not 50.",
+  "level": 2
+ },
+ {
+  "id": "fc-120",
+  "sec": "quant",
+  "topic": "Rates & Work",
+  "front": "Relative speed toward each other?",
+  "back": "Add the speeds. 300 km apart at 70 and 80 km/h: they meet in 2 hours.",
+  "level": 1
+ },
+ {
+  "id": "fc-121",
+  "sec": "quant",
+  "topic": "Rates & Work",
+  "front": "Relative speed in the same direction?",
+  "back": "Subtract the speeds. The gap closes at (faster - slower).",
+  "level": 2
+ },
+ {
+  "id": "fc-122",
+  "sec": "quant",
+  "topic": "Rates & Work",
+  "front": "Work rate of someone who finishes a job in t hours?",
+  "back": "1/t job per hour. Rates add when working together.",
+  "level": 1
+ },
+ {
+  "id": "fc-123",
+  "sec": "quant",
+  "topic": "Rates & Work",
+  "front": "Combined time for two workers taking A and B hours?",
+  "back": "AB/(A + B). 6 and 3 hours give 18/9 = 2 hours.",
+  "level": 2
+ },
+ {
+  "id": "fc-124",
+  "sec": "quant",
+  "topic": "Rates & Work",
+  "front": "A alone 12 h, A and B together 4 h. B alone?",
+  "back": "1/4 - 1/12 = 1/6, so 6 hours.",
+  "level": 2
+ },
+ {
+  "id": "fc-125",
+  "sec": "quant",
+  "topic": "Rates & Work",
+  "front": "Pipe fills in 4 h, drain empties in 6 h. Both open?",
+  "back": "1/4 - 1/6 = 1/12, so 12 hours to fill.",
+  "level": 3
+ },
+ {
+  "id": "fc-126",
+  "sec": "quant",
+  "topic": "Rates & Work",
+  "front": "Workers and time on a fixed job?",
+  "back": "Inversely proportional: workers × time is constant. 6 workers × 10 days = 4 workers × 15 days.",
+  "level": 2
+ },
+ {
+  "id": "fc-127",
+  "sec": "quant",
+  "topic": "Interest & Growth",
+  "front": "Simple interest formula?",
+  "back": "I = Prt. 2,000 at 5% for 3 years earns 300.",
+  "level": 1
+ },
+ {
+  "id": "fc-128",
+  "sec": "quant",
+  "topic": "Interest & Growth",
+  "front": "Compound interest formula?",
+  "back": "A = P(1 + r/n)^(nt), with n compounding periods per year.",
+  "level": 2
+ },
+ {
+  "id": "fc-129",
+  "sec": "quant",
+  "topic": "Interest & Growth",
+  "front": "12% per year compounded quarterly means?",
+  "back": "3% per quarter, 4 periods per year.",
+  "level": 2
+ },
+ {
+  "id": "fc-130",
+  "sec": "quant",
+  "topic": "Interest & Growth",
+  "front": "Which earns more: annual or semiannual compounding at the same rate?",
+  "back": "Semiannual, slightly. 10,000 at 10% for 2 years: 12,100 vs about 12,155.",
+  "level": 2
+ },
+ {
+  "id": "fc-131",
+  "sec": "quant",
+  "topic": "Interest & Growth",
+  "front": "Rule of 72?",
+  "back": "Doubling time ≈ 72/r periods at r% per period. At 6%, about 12 years.",
+  "level": 2
+ },
+ {
+  "id": "fc-132",
+  "sec": "quant",
+  "topic": "Interest & Growth",
+  "front": "Growth of 10% a year for 3 years equals?",
+  "back": "1.1³ = 1.331, a 33.1% increase, not 30%.",
+  "level": 2
+ },
+ {
+  "id": "fc-133",
+  "sec": "quant",
+  "topic": "Interest & Growth",
+  "front": "Decay of 20% per year as a multiplier?",
+  "back": "× 0.8 per year. After 2 years, 0.64 of the original remains.",
+  "level": 2
+ },
+ {
+  "id": "fc-134",
+  "sec": "quant",
+  "topic": "Mixtures & Sets",
+  "front": "Alligation ratio for mixing A and B to reach target T?",
+  "back": "A : B = (B - T) : (T - A). The mix sits closer to the larger quantity.",
+  "level": 2
+ },
+ {
+  "id": "fc-135",
+  "sec": "quant",
+  "topic": "Mixtures & Sets",
+  "front": "What stays constant when water evaporates?",
+  "back": "The amount of solute or solid. Set up: solid = new % × new total.",
+  "level": 2
+ },
+ {
+  "id": "fc-136",
+  "sec": "quant",
+  "topic": "Mixtures & Sets",
+  "front": "Two-set formula?",
+  "back": "Total = A + B - Both + Neither.",
+  "level": 2
+ },
+ {
+  "id": "fc-137",
+  "sec": "quant",
+  "topic": "Mixtures & Sets",
+  "front": "Three-set formula with 'exactly two'?",
+  "back": "Total = A + B + C - (exactly two) - 2(all three) + Neither.",
+  "level": 3
+ },
+ {
+  "id": "fc-138",
+  "sec": "quant",
+  "topic": "Mixtures & Sets",
+  "front": "Three-set formula with pairwise overlaps?",
+  "back": "Total = A + B + C - (AB + AC + BC) + ABC + Neither, where each pairwise overlap includes ABC.",
+  "level": 3
+ },
+ {
+  "id": "fc-139",
+  "sec": "quant",
+  "topic": "Mixtures & Sets",
+  "front": "When to use a double-set matrix?",
+  "back": "When each item has two yes/no attributes (such as gender and department). Rows and columns must add up.",
+  "level": 2
+ },
+ {
+  "id": "fc-140",
+  "sec": "quant",
+  "topic": "Mixtures & Sets",
+  "front": "Maximum and minimum overlap of A and B in a total T?",
+  "back": "Max = smaller of A and B. Min = A + B - T (or 0 if that is negative).",
+  "level": 3
+ },
+ {
+  "id": "fc-141",
+  "sec": "quant",
+  "topic": "Statistics",
+  "front": "Sum from mean?",
+  "back": "Sum = mean × count. Use sums whenever items are added or removed.",
+  "level": 1
+ },
+ {
+  "id": "fc-142",
+  "sec": "quant",
+  "topic": "Statistics",
+  "front": "Median of an even number of values?",
+  "back": "The average of the two middle values after sorting.",
+  "level": 1
+ },
+ {
+  "id": "fc-143",
+  "sec": "quant",
+  "topic": "Statistics",
+  "front": "Mean and median of an evenly spaced set?",
+  "back": "Both equal (first + last)/2.",
+  "level": 2
+ },
+ {
+  "id": "fc-144",
+  "sec": "quant",
+  "topic": "Statistics",
+  "front": "Weighted average formula?",
+  "back": "(n1a1 + n2a2)/(n1 + n2). It lies closer to the larger group's average.",
+  "level": 2
+ },
+ {
+  "id": "fc-145",
+  "sec": "quant",
+  "topic": "Statistics",
+  "front": "What does standard deviation measure?",
+  "back": "How spread out the values are around the mean. All equal values: SD = 0.",
+  "level": 1
+ },
+ {
+  "id": "fc-146",
+  "sec": "quant",
+  "topic": "Statistics",
+  "front": "Add the same constant to every value: SD?",
+  "back": "Unchanged. The whole set shifts.",
+  "level": 2
+ },
+ {
+  "id": "fc-147",
+  "sec": "quant",
+  "topic": "Statistics",
+  "front": "Multiply every value by k: SD?",
+  "back": "Multiplied by |k|.",
+  "level": 2
+ },
+ {
+  "id": "fc-148",
+  "sec": "quant",
+  "topic": "Statistics",
+  "front": "Add a value equal to the mean: SD?",
+  "back": "Decreases (same spread, more values). The mean is unchanged.",
+  "level": 2
+ },
+ {
+  "id": "fc-149",
+  "sec": "quant",
+  "topic": "Statistics",
+  "front": "Add a value far from the mean: SD?",
+  "back": "Increases.",
+  "level": 2
+ },
+ {
+  "id": "fc-150",
+  "sec": "quant",
+  "topic": "Statistics",
+  "front": "Variance vs SD?",
+  "back": "Variance = SD². SD = √variance.",
+  "level": 2
+ },
+ {
+  "id": "fc-151",
+  "sec": "quant",
+  "topic": "Statistics",
+  "front": "About what share of a normal distribution lies within 1 SD and 2 SD of the mean?",
+  "back": "About 68% within 1 SD and about 95% within 2 SD.",
+  "level": 3
+ },
+ {
+  "id": "fc-152",
+  "sec": "quant",
+  "topic": "Statistics",
+  "front": "Which has larger SD: {10, 20, 30} or {5, 10, 15}?",
+  "back": "{10, 20, 30}: each value is twice as far from its mean, so SD is doubled.",
+  "level": 3
+ },
+ {
+  "id": "fc-153",
+  "sec": "quant",
+  "topic": "Statistics",
+  "front": "Mean vs median in a right-skewed set?",
+  "back": "Mean > median: large outliers pull the mean up.",
+  "level": 2
+ },
+ {
+  "id": "fc-154",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "Fundamental counting principle?",
+  "back": "Multiply the options for each independent choice. 3 shirts × 4 trousers = 12 outfits.",
+  "level": 1
+ },
+ {
+  "id": "fc-155",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "Permutations nPr?",
+  "back": "n!/(n - r)!. Order matters. Gold, silver, bronze from 8: 8 × 7 × 6 = 336.",
+  "level": 2
+ },
+ {
+  "id": "fc-156",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "Combinations nCr?",
+  "back": "n!/(r!(n - r)!). Order does not matter. Teams of 3 from 8: 56.",
+  "level": 2
+ },
+ {
+  "id": "fc-157",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "Values of 5C2, 6C2, 6C3, 7C3?",
+  "back": "10, 15, 20, 35.",
+  "level": 2
+ },
+ {
+  "id": "fc-158",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "nCr vs nC(n - r)?",
+  "back": "Equal. Choosing 7 of 10 is the same count as leaving out 3: 10C3 = 120.",
+  "level": 2
+ },
+ {
+  "id": "fc-159",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "Arrangements with repeated letters?",
+  "back": "n!/(a! b! ...). BANANA: 6!/(3! × 2!) = 60.",
+  "level": 2
+ },
+ {
+  "id": "fc-160",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "Circular arrangements of n people?",
+  "back": "(n - 1)!. 5 people at a round table: 24.",
+  "level": 2
+ },
+ {
+  "id": "fc-161",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "Arrangements where two people must sit together?",
+  "back": "Glue them: (n - 1)! × 2. For 5 people: 4! × 2 = 48.",
+  "level": 2
+ },
+ {
+  "id": "fc-162",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "Arrangements where two people must not sit together?",
+  "back": "Total minus together: 5! - 48 = 72 for 5 people in a row.",
+  "level": 3
+ },
+ {
+  "id": "fc-163",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "Handshakes among n people?",
+  "back": "nC2 = n(n - 1)/2. 10 people: 45.",
+  "level": 2
+ },
+ {
+  "id": "fc-164",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "Probability basic definition?",
+  "back": "Favourable outcomes ÷ total equally likely outcomes.",
+  "level": 1
+ },
+ {
+  "id": "fc-165",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "P(at least one) = ?",
+  "back": "1 - P(none). At least one head in 3 flips: 1 - 1/8 = 7/8.",
+  "level": 1
+ },
+ {
+  "id": "fc-166",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "P(A or B) = ?",
+  "back": "P(A) + P(B) - P(A and B).",
+  "level": 2
+ },
+ {
+  "id": "fc-167",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "P(A and B) for independent events?",
+  "back": "P(A) × P(B).",
+  "level": 2
+ },
+ {
+  "id": "fc-168",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "Two red from 3 red and 5 blue, without replacement?",
+  "back": "3/8 × 2/7 = 6/56 = 3/28.",
+  "level": 2
+ },
+ {
+  "id": "fc-169",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "Ways to roll each sum with two dice?",
+  "back": "Sum s from 2 to 7 has s - 1 ways; from 7 to 12 has 13 - s ways. 36 outcomes in total.",
+  "level": 2
+ },
+ {
+  "id": "fc-170",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "P(exactly one head in 3 flips)?",
+  "back": "3C1 × (1/2)³ = 3/8. Count every position for the head.",
+  "level": 3
+ },
+ {
+  "id": "fc-171",
+  "sec": "quant",
+  "topic": "Counting & Probability",
+  "front": "Binomial probability formula?",
+  "back": "P(k successes in n trials) = nCk × p^k × (1 - p)^(n - k).",
+  "level": 3
+ },
+ {
+  "id": "fc-172",
+  "sec": "quant",
+  "topic": "Quant Strategy",
+  "front": "When to pick numbers?",
+  "back": "When answer choices have variables, or the stem uses percents or fractions of an unknown. Avoid 0 and 1.",
+  "level": 1
+ },
+ {
+  "id": "fc-173",
+  "sec": "quant",
+  "topic": "Quant Strategy",
+  "front": "Where to start backsolving?",
+  "back": "With the middle choice, C. If it is too big or small, you know which direction to go.",
+  "level": 1
+ },
+ {
+  "id": "fc-174",
+  "sec": "quant",
+  "topic": "Quant Strategy",
+  "front": "Best number to pick for percent problems?",
+  "back": "100. Every percent becomes a count.",
+  "level": 2
+ },
+ {
+  "id": "fc-175",
+  "sec": "quant",
+  "topic": "Quant Strategy",
+  "front": "Two choices match after picking numbers. Now what?",
+  "back": "Pick a new set of numbers and test only those two choices.",
+  "level": 2
+ },
+ {
+  "id": "fc-176",
+  "sec": "quant",
+  "topic": "Quant Strategy",
+  "front": "Comparing large powers like 2^40, 3^30, 5^20?",
+  "back": "Rewrite with a common exponent: 16^10, 27^10, 25^10. 3^30 is largest.",
+  "level": 2
+ },
+ {
+  "id": "fc-177",
+  "sec": "quant",
+  "topic": "Quant Strategy",
+  "front": "Fast check that can eliminate choices instantly?",
+  "back": "Units digit, parity, sign or rough size. Often only one choice survives.",
+  "level": 2
+ },
+ {
+  "id": "fc-178",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Parts of a CR argument?",
+  "back": "Conclusion (main claim), premises (evidence), background (context), and sometimes a counterpoint the author rejects.",
+  "level": 1
+ },
+ {
+  "id": "fc-179",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Conclusion signal words?",
+  "back": "Therefore, thus, so, hence, consequently, clearly, it follows that.",
+  "level": 1
+ },
+ {
+  "id": "fc-180",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Premise signal words?",
+  "back": "Because, since, given that, for, as shown by.",
+  "level": 1
+ },
+ {
+  "id": "fc-181",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Why name the gap before reading choices?",
+  "back": "The correct answer almost always targets the gap. A clear prediction makes attractive wrong answers easier to reject.",
+  "level": 2
+ },
+ {
+  "id": "fc-182",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Gap pattern: correlation to causation?",
+  "back": "Two things occur together, so one is assumed to cause the other. Attack with other causes, reverse causation or coincidence.",
+  "level": 2
+ },
+ {
+  "id": "fc-183",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Gap pattern: sample to group?",
+  "back": "Evidence from a sample is applied to a larger group. Attack by showing the sample is unrepresentative.",
+  "level": 2
+ },
+ {
+  "id": "fc-184",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Gap pattern: plan to result?",
+  "back": "A plan is assumed to achieve its goal. Attack with obstacles, side effects or a wrong diagnosis of the problem.",
+  "level": 2
+ },
+ {
+  "id": "fc-185",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Gap pattern: percent vs number?",
+  "back": "A higher percent is assumed to mean a higher number, or the reverse. The base size may differ.",
+  "level": 2
+ },
+ {
+  "id": "fc-186",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Gap pattern: past to future?",
+  "back": "Past trends are assumed to continue. Attack by showing conditions have changed.",
+  "level": 2
+ },
+ {
+  "id": "fc-187",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Gap pattern: comparison?",
+  "back": "Two things are treated as alike. Attack by showing a relevant difference.",
+  "level": 2
+ },
+ {
+  "id": "fc-188",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "What is an assumption in CR?",
+  "back": "An unstated premise the argument needs. If it were false, the argument would fail.",
+  "level": 1
+ },
+ {
+  "id": "fc-189",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "The negation test?",
+  "back": "Negate the choice. If the argument falls apart, the choice is a necessary assumption.",
+  "level": 2
+ },
+ {
+  "id": "fc-190",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Typical wording of correct necessary assumptions?",
+  "back": "Modest: at least some, not all, does not, is not entirely. They rule out a problem.",
+  "level": 2
+ },
+ {
+  "id": "fc-191",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Assumption trap: strengthener that is not necessary?",
+  "back": "It helps the argument, but the argument could survive without it. Fails the negation test.",
+  "level": 2
+ },
+ {
+  "id": "fc-192",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Assumption trap: too strong?",
+  "back": "The choice says all, always or only when the argument needs only a weaker claim.",
+  "level": 2
+ },
+ {
+  "id": "fc-193",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "What does 'if true' mean in a stem?",
+  "back": "Accept each choice as fact; judge only its effect on the argument.",
+  "level": 1
+ },
+ {
+  "id": "fc-194",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Ways to weaken a causal claim?",
+  "back": "Show another cause, reverse causation, cause without effect, or effect without cause.",
+  "level": 2
+ },
+ {
+  "id": "fc-195",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Ways to strengthen a causal claim?",
+  "back": "Rule out other causes, show cause and effect occur together consistently, or show a control group without the cause lacks the effect.",
+  "level": 2
+ },
+ {
+  "id": "fc-196",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Do strengthen/weaken answers need to prove anything?",
+  "back": "No. They only need to make the conclusion more or less likely.",
+  "level": 2
+ },
+ {
+  "id": "fc-197",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Strengthen/weaken trap: premise booster?",
+  "back": "Supports a premise already accepted as true; does not affect the gap.",
+  "level": 2
+ },
+ {
+  "id": "fc-198",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Strengthen/weaken trap: opposite?",
+  "back": "A weakener offered on a strengthen question, or the reverse. Reread the stem.",
+  "level": 2
+ },
+ {
+  "id": "fc-199",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Strengthen/weaken trap: half-answer?",
+  "back": "Affects only one part of a two-part conclusion, or one of two compared groups.",
+  "level": 3
+ },
+ {
+  "id": "fc-200",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Evaluate question: the two-answer test?",
+  "back": "Imagine two opposite answers to the choice. If one helps and the other hurts the argument, it is the answer.",
+  "level": 2
+ },
+ {
+  "id": "fc-201",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Evaluate trap: interesting but irrelevant?",
+  "back": "Both possible answers leave the conclusion unchanged. Topic match is not enough.",
+  "level": 3
+ },
+ {
+  "id": "fc-202",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Inference: must be true or could be true?",
+  "back": "Must be true (or very strongly supported). No outside information.",
+  "level": 2
+ },
+ {
+  "id": "fc-203",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Inference trap: extreme language?",
+  "back": "Always, never, all, only when the stimulus supports only some or most.",
+  "level": 2
+ },
+ {
+  "id": "fc-204",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Inference with percents but no totals?",
+  "back": "You cannot compare absolute amounts. 20% growth on a small base can be less than 8% on a large one.",
+  "level": 3
+ },
+ {
+  "id": "fc-205",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "What does 'A only if B' mean?",
+  "back": "B is necessary for A: if A happens, B happened. B alone does not guarantee A.",
+  "level": 2
+ },
+ {
+  "id": "fc-206",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Contrapositive of 'If A, then B'?",
+  "back": "If not B, then not A. The converse (if B then A) is not valid.",
+  "level": 3
+ },
+ {
+  "id": "fc-207",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Flaw: necessary vs sufficient?",
+  "back": "Treating a requirement as a guarantee, or a guarantee as a requirement.",
+  "level": 2
+ },
+ {
+  "id": "fc-208",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Flaw: absence of evidence?",
+  "back": "No proof that X is true is treated as proof that X is false.",
+  "level": 2
+ },
+ {
+  "id": "fc-209",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Flaw: circular reasoning?",
+  "back": "The conclusion is assumed in a premise.",
+  "level": 2
+ },
+ {
+  "id": "fc-210",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Flaw: part to whole?",
+  "back": "What is true of each part is assumed true of the whole, or the reverse.",
+  "level": 2
+ },
+ {
+  "id": "fc-211",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Flaw: attack on the source?",
+  "back": "Rejecting a claim because of who made it rather than its merits.",
+  "level": 2
+ },
+ {
+  "id": "fc-212",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Flaw trap: describes a feature, not a flaw?",
+  "back": "The argument does this, but it is not a reasoning error.",
+  "level": 3
+ },
+ {
+  "id": "fc-213",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Boldface: first step?",
+  "back": "Find the author's main conclusion. Every role is defined relative to it.",
+  "level": 2
+ },
+ {
+  "id": "fc-214",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Boldface roles to know?",
+  "back": "Main conclusion, intermediate conclusion, evidence for the conclusion, opposing view, evidence for the opposing view, background.",
+  "level": 2
+ },
+ {
+  "id": "fc-215",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Intermediate conclusion?",
+  "back": "A claim supported by premises that in turn supports the main conclusion.",
+  "level": 3
+ },
+ {
+  "id": "fc-216",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Boldface signal: 'some argue' or 'critics say'?",
+  "back": "Often introduces a view the author will reject, usually after 'however'.",
+  "level": 2
+ },
+ {
+  "id": "fc-217",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Boldface elimination tactic?",
+  "back": "Check the first bold portion's role across all choices first; then compare survivors on the second.",
+  "level": 3
+ },
+ {
+  "id": "fc-218",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Explain the discrepancy: what does the right answer do?",
+  "back": "Allows both facts to be true together. Do not dispute either fact.",
+  "level": 2
+ },
+ {
+  "id": "fc-219",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Common resolution types for paradoxes?",
+  "back": "Group difference, change in another factor, percent vs number, hidden subgroup.",
+  "level": 2
+ },
+ {
+  "id": "fc-220",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Paradox trap: explains one side only?",
+  "back": "Accounts for one fact but leaves the conflict unexplained.",
+  "level": 2
+ },
+ {
+  "id": "fc-221",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Paradox trap: deepens the conflict?",
+  "back": "Makes the two facts seem even more contradictory.",
+  "level": 3
+ },
+ {
+  "id": "fc-222",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Plan question: support the plan?",
+  "back": "Remove an obstacle, show the plan targets the real cause, or rule out an offsetting side effect.",
+  "level": 2
+ },
+ {
+  "id": "fc-223",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Plan question: cast doubt on the plan?",
+  "back": "Show it will not be implemented, targets the wrong cause, or creates costs that cancel the benefit.",
+  "level": 2
+ },
+ {
+  "id": "fc-224",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Complete the argument question?",
+  "back": "Choose the choice that logically fills the blank, usually a premise that supports the stated conclusion ('because ___').",
+  "level": 2
+ },
+ {
+  "id": "fc-225",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Out of scope answer?",
+  "back": "Introduces a new issue the argument does not address. May sound relevant to the topic.",
+  "level": 1
+ },
+ {
+  "id": "fc-226",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Scope words to watch in conclusions?",
+  "back": "All, most, some; will, could, likely; only; more, less. The right answer must match the scope.",
+  "level": 2
+ },
+ {
+  "id": "fc-227",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Approx time per CR question?",
+  "back": "About 1.5 to 2.5 minutes, roughly 2 on average.",
+  "level": 1
+ },
+ {
+  "id": "fc-228",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Read stem first or stimulus first?",
+  "back": "Stem first: it tells you whether to find a gap, attack one, or combine facts.",
+  "level": 2
+ },
+ {
+  "id": "fc-229",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Survey or study argument: key checks?",
+  "back": "Sample representativeness, response honesty, what was measured, and whether a control group existed.",
+  "level": 3
+ },
+ {
+  "id": "fc-230",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Market share vs revenue trap?",
+  "back": "Rising share does not mean rising revenue if the whole market shrank, and the reverse.",
+  "level": 3
+ },
+ {
+  "id": "fc-231",
+  "sec": "verbal",
+  "topic": "Critical Reasoning",
+  "front": "Average vs total trap?",
+  "back": "A higher average per item can coexist with a lower total if the number of items fell.",
+  "level": 3
+ },
+ {
+  "id": "fc-232",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "Three things to track on the first read?",
+  "back": "Main point, purpose of each paragraph, author's attitude.",
+  "level": 1
+ },
+ {
+  "id": "fc-233",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "What is a passage map?",
+  "back": "A few words per paragraph describing its role, used as an index for detail questions.",
+  "level": 1
+ },
+ {
+  "id": "fc-234",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "Contrast keywords in RC?",
+  "back": "However, but, yet, although, nevertheless, despite. They often signal the author's real point.",
+  "level": 2
+ },
+ {
+  "id": "fc-235",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "Attitude keywords in RC?",
+  "back": "Surprisingly, unfortunately, merely, arguably, crucially, may. They reveal tone.",
+  "level": 2
+ },
+ {
+  "id": "fc-236",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "Main idea correct answer must?",
+  "back": "Cover the whole passage, with a verb matching its purpose (describe, argue, challenge, explain).",
+  "level": 2
+ },
+ {
+  "id": "fc-237",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "Detail question approach?",
+  "back": "Return to the text, find the sentence, match the meaning. Do not answer from memory.",
+  "level": 2
+ },
+ {
+  "id": "fc-238",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "RC inference: how far from the text?",
+  "back": "A small step only. The answer must be supported by specific lines.",
+  "level": 2
+ },
+ {
+  "id": "fc-239",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "Function question approach?",
+  "back": "Ask why the author included it: example, support, contrast, qualification. Read the sentences around it.",
+  "level": 2
+ },
+ {
+  "id": "fc-240",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "Typical GMAT author tone?",
+  "back": "Measured: qualified support, cautious optimism, mild scepticism. Rarely extreme.",
+  "level": 2
+ },
+ {
+  "id": "fc-241",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "Application question approach?",
+  "back": "Abstract the logic of the passage, then find a choice with the same structure in a new setting.",
+  "level": 3
+ },
+ {
+  "id": "fc-242",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "RC trap: distortion?",
+  "back": "Uses passage words but changes their meaning, for example 'may contribute' becomes 'is the main cause'.",
+  "level": 2
+ },
+ {
+  "id": "fc-243",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "RC trap: extreme language?",
+  "back": "Always, never, all, only, proves. Needs strong textual support, which it rarely has.",
+  "level": 2
+ },
+ {
+  "id": "fc-244",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "RC trap: out of scope?",
+  "back": "Discusses something the passage never addresses. True in real life is still wrong.",
+  "level": 1
+ },
+ {
+  "id": "fc-245",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "RC trap: wrong part of the passage?",
+  "back": "Accurate about a different paragraph from the one asked about.",
+  "level": 2
+ },
+ {
+  "id": "fc-246",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "RC trap: wrong voice?",
+  "back": "Gives the critics' or another group's view as the author's.",
+  "level": 2
+ },
+ {
+  "id": "fc-247",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "RC trap: reversal?",
+  "back": "States the opposite of the passage, or swaps cause and effect.",
+  "level": 2
+ },
+ {
+  "id": "fc-248",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "RC trap: too narrow (main idea)?",
+  "back": "Describes only one paragraph or one example.",
+  "level": 2
+ },
+ {
+  "id": "fc-249",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "RC trap: too broad (main idea)?",
+  "back": "Covers more than the passage discusses.",
+  "level": 2
+ },
+ {
+  "id": "fc-250",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "RC trap: true but irrelevant?",
+  "back": "Matches the passage but does not answer the question asked.",
+  "level": 2
+ },
+ {
+  "id": "fc-251",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "RC trap: half right, half wrong?",
+  "back": "The first part fits; a later clause does not. Read every choice to the end.",
+  "level": 3
+ },
+ {
+  "id": "fc-252",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "Why predict before reading RC choices?",
+  "back": "A prediction protects you from attractive distortions written to sound like the passage.",
+  "level": 2
+ },
+ {
+  "id": "fc-253",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "Reading time for a long RC passage?",
+  "back": "About 2 to 3 minutes; then about 1 to 1.5 minutes per question.",
+  "level": 2
+ },
+ {
+  "id": "fc-254",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "Passage with several viewpoints: key habit?",
+  "back": "Label who holds each view (author, critics, earlier scholars). Many traps swap voices.",
+  "level": 3
+ },
+ {
+  "id": "fc-255",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "Structure question approach?",
+  "back": "Compare your map to each choice paragraph by paragraph. One wrong step eliminates it.",
+  "level": 3
+ },
+ {
+  "id": "fc-256",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "Example in a passage: what to note?",
+  "back": "The claim the example supports, not every detail of the example.",
+  "level": 2
+ },
+ {
+  "id": "fc-257",
+  "sec": "verbal",
+  "topic": "Reading Comprehension",
+  "front": "'The author would most likely agree' questions?",
+  "back": "Inference about the author's view only, supported by the author's own statements, not others' views.",
+  "level": 3
+ },
+ {
+  "id": "fc-258",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "DS answer A?",
+  "back": "Statement (1) alone is sufficient; (2) alone is not.",
+  "level": 1
+ },
+ {
+  "id": "fc-259",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "DS answer B?",
+  "back": "Statement (2) alone is sufficient; (1) alone is not.",
+  "level": 1
+ },
+ {
+  "id": "fc-260",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "DS answer C?",
+  "back": "Both statements together are sufficient; neither alone is.",
+  "level": 1
+ },
+ {
+  "id": "fc-261",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "DS answer D?",
+  "back": "Each statement alone is sufficient.",
+  "level": 1
+ },
+ {
+  "id": "fc-262",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "DS answer E?",
+  "back": "The statements together are still not sufficient.",
+  "level": 1
+ },
+ {
+  "id": "fc-263",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "AD/BCE grid?",
+  "back": "If (1) is sufficient, the answer is A or D; if not, it is B, C or E. Then judge (2).",
+  "level": 1
+ },
+ {
+  "id": "fc-264",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Statement (1) not sufficient, (2) sufficient. Answer?",
+  "back": "B.",
+  "level": 2
+ },
+ {
+  "id": "fc-265",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Statement (1) sufficient, (2) not sufficient. Answer?",
+  "back": "A.",
+  "level": 2
+ },
+ {
+  "id": "fc-266",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Neither alone, not sufficient together. Answer?",
+  "back": "E.",
+  "level": 2
+ },
+ {
+  "id": "fc-267",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Sufficient for a value question means?",
+  "back": "Exactly one possible value.",
+  "level": 1
+ },
+ {
+  "id": "fc-268",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Sufficient for a yes/no question means?",
+  "back": "Always yes or always no. A definite no is sufficient.",
+  "level": 1
+ },
+ {
+  "id": "fc-269",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Can DS statements contradict each other?",
+  "back": "No. Both are true facts about the same situation.",
+  "level": 2
+ },
+ {
+  "id": "fc-270",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Should you solve the problem fully in DS?",
+  "back": "No. Stop once you know a unique answer exists.",
+  "level": 2
+ },
+ {
+  "id": "fc-271",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Why rephrase the DS question first?",
+  "back": "A simpler target makes sufficiency obvious. 'What is 2a + 4b?' becomes 'What is a + 2b?'.",
+  "level": 2
+ },
+ {
+  "id": "fc-272",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Testing a yes/no statement?",
+  "back": "Try to get both yes and no with values that satisfy the statement. If you can, it is not sufficient.",
+  "level": 2
+ },
+ {
+  "id": "fc-273",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "DS trap: assuming integers?",
+  "back": "Unless stated, variables can be fractions or negatives.",
+  "level": 2
+ },
+ {
+  "id": "fc-274",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "DS trap: assuming positive?",
+  "back": "You cannot divide or multiply an inequality by a variable of unknown sign.",
+  "level": 2
+ },
+ {
+  "id": "fc-275",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Is x² = 16 sufficient to find x?",
+  "back": "No: x = 4 or -4. It is sufficient to find x² or |x|.",
+  "level": 2
+ },
+ {
+  "id": "fc-276",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Two linear equations: always sufficient?",
+  "back": "No. If one is a multiple of the other, they give the same information.",
+  "level": 3
+ },
+ {
+  "id": "fc-277",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "One equation with two unknowns: ever sufficient?",
+  "back": "Yes, if the question asks for a combination it fixes, or if integer constraints leave one solution.",
+  "level": 3
+ },
+ {
+  "id": "fc-278",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "The C trap?",
+  "back": "Each statement gives one piece and C looks automatic, but one statement alone may already suffice. Check each alone.",
+  "level": 3
+ },
+ {
+  "id": "fc-279",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "The E trap?",
+  "back": "Combining statements that look useless can still work, especially with number properties. Combine honestly before choosing E.",
+  "level": 3
+ },
+ {
+  "id": "fc-280",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "DS trap: information leakage?",
+  "back": "Using facts from statement (1) while judging (2) alone.",
+  "level": 2
+ },
+ {
+  "id": "fc-281",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Number picking set for DS yes/no tests?",
+  "back": "Positive, negative, zero, a fraction, and both odd and even integers, as allowed by the stem.",
+  "level": 2
+ },
+ {
+  "id": "fc-282",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Is xy > 0 sufficient to know if x > 0?",
+  "back": "No. Both could be positive or both negative.",
+  "level": 3
+ },
+ {
+  "id": "fc-283",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Ratio statements and actual values?",
+  "back": "A ratio alone gives proportions, not amounts. You need one actual value as well.",
+  "level": 3
+ },
+ {
+  "id": "fc-284",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Should you use the calculator in DS?",
+  "back": "Rarely. Needing it usually means you are solving instead of judging sufficiency.",
+  "level": 2
+ },
+ {
+  "id": "fc-285",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Mean of a set given: sufficient for the sum?",
+  "back": "Only if the number of items is also known.",
+  "level": 3
+ },
+ {
+  "id": "fc-286",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Median given: what does it tell you?",
+  "back": "Only the middle value of the sorted list, nothing about the extremes or the mean.",
+  "level": 3
+ },
+ {
+  "id": "fc-287",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Statement gives 'about' or an estimate?",
+  "back": "Rarely sufficient for an exact value.",
+  "level": 3
+ },
+ {
+  "id": "fc-288",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Time per DS question?",
+  "back": "About 2 minutes.",
+  "level": 2
+ },
+ {
+  "id": "fc-289",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Inequality DS: x > y and question 'Is x² > y²?'",
+  "back": "Not sufficient: 3 > 2 gives yes, but 1 > -5 gives no.",
+  "level": 3
+ },
+ {
+  "id": "fc-290",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Is 'n is divisible by 12' sufficient for 'Is n divisible by 6?'",
+  "back": "Yes. Every multiple of 12 is a multiple of 6.",
+  "level": 3
+ },
+ {
+  "id": "fc-291",
+  "sec": "di",
+  "topic": "Data Sufficiency",
+  "front": "Is 'n is divisible by 3' sufficient for 'Is n divisible by 6?'",
+  "back": "No. n = 6 yes, n = 9 no.",
+  "level": 3
+ },
+ {
+  "id": "fc-292",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Table Analysis scoring?",
+  "back": "All three statements must be correct to earn credit.",
+  "level": 1
+ },
+ {
+  "id": "fc-293",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "First step in Table Analysis?",
+  "back": "Read the title, columns and units for 15 to 20 seconds before reading statements.",
+  "level": 1
+ },
+ {
+  "id": "fc-294",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Table Analysis: finding the median?",
+  "back": "Sort by the column and count to the middle row (average two middle rows if the count is even).",
+  "level": 2
+ },
+ {
+  "id": "fc-295",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Table Analysis trap: sorting?",
+  "back": "After sorting one column, reading values from the wrong column.",
+  "level": 2
+ },
+ {
+  "id": "fc-296",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Table Analysis: correlation statement?",
+  "back": "Sort by one column and see whether the other tends to rise (positive) or fall (negative).",
+  "level": 3
+ },
+ {
+  "id": "fc-297",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Can you add or average a column of percents?",
+  "back": "Only if the bases are equal. Otherwise weight by the bases.",
+  "level": 3
+ },
+ {
+  "id": "fc-298",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "GI: what to read first?",
+  "back": "Title, axes, units, legend and scale.",
+  "level": 1
+ },
+ {
+  "id": "fc-299",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "GI: stacked bar segment value?",
+  "back": "Top of the segment minus the bottom of the segment.",
+  "level": 2
+ },
+ {
+  "id": "fc-300",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "GI: truncated y-axis?",
+  "back": "Exaggerates differences. Read actual values, not bar heights.",
+  "level": 2
+ },
+ {
+  "id": "fc-301",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "GI: two y-axes?",
+  "back": "Read each series against its own axis.",
+  "level": 3
+ },
+ {
+  "id": "fc-302",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "GI: scatter plot positive correlation?",
+  "back": "Points rise from left to right. Strong correlation means they hug a line.",
+  "level": 2
+ },
+ {
+  "id": "fc-303",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "GI: estimate or compute?",
+  "back": "Estimate first; options are usually spread out. Compute only if two are close.",
+  "level": 2
+ },
+ {
+  "id": "fc-304",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "GI: log scale?",
+  "back": "Equal steps mean equal ratios, not equal differences.",
+  "level": 3
+ },
+ {
+  "id": "fc-305",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Two-Part Analysis: can both columns take the same option?",
+  "back": "Yes. Answers may be equal.",
+  "level": 1
+ },
+ {
+  "id": "fc-306",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "TPA first step?",
+  "back": "Write the relationship that links the two columns, such as an equation or two logical roles.",
+  "level": 2
+ },
+ {
+  "id": "fc-307",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "TPA: one part independent?",
+  "back": "Solve that part first, then use it to find the other.",
+  "level": 2
+ },
+ {
+  "id": "fc-308",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "TPA trap?",
+  "back": "Swapping columns or ignoring units in the labels, such as price per unit vs total cost.",
+  "level": 3
+ },
+ {
+  "id": "fc-309",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "MSR first step?",
+  "back": "Skim every tab and write a one-line note for each.",
+  "level": 1
+ },
+ {
+  "id": "fc-310",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "MSR questions usually need?",
+  "back": "Information from two or more tabs, such as a rule plus data.",
+  "level": 2
+ },
+ {
+  "id": "fc-311",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "MSR Yes/No statements?",
+  "back": "Evaluate each independently; all three must be right. Unsettled by the tabs means No.",
+  "level": 2
+ },
+ {
+  "id": "fc-312",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "MSR: tabs disagree?",
+  "back": "Note dates and authority. The question makes clear which source applies.",
+  "level": 3
+ },
+ {
+  "id": "fc-313",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Time for an MSR set of 3 questions?",
+  "back": "About 6 to 7 minutes in total.",
+  "level": 2
+ },
+ {
+  "id": "fc-314",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Is there a calculator in DI?",
+  "back": "Yes, a basic on-screen calculator. None in Quant.",
+  "level": 1
+ },
+ {
+  "id": "fc-315",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Calculator order of operations?",
+  "back": "Basic calculators work in key order. For (a - b)/b, compute a - b first, then divide.",
+  "level": 2
+ },
+ {
+  "id": "fc-316",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Percent change on a calculator?",
+  "back": "new ÷ old, then subtract 1. 63 ÷ 54 ≈ 1.167, so about +16.7%.",
+  "level": 2
+ },
+ {
+  "id": "fc-317",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Why estimate before using the calculator?",
+  "back": "To catch input errors. A result far from the estimate signals a typo.",
+  "level": 2
+ },
+ {
+  "id": "fc-318",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Section format of DI?",
+  "back": "20 questions in 45 minutes: DS, Table Analysis, Graphics Interpretation, Two-Part Analysis, Multi-Source Reasoning.",
+  "level": 2
+ },
+ {
+  "id": "fc-319",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Edit feature in each section?",
+  "back": "After the last question you may review bookmarked questions and change up to 3 answers.",
+  "level": 2
+ },
+ {
+  "id": "fc-320",
+  "sec": "di",
+  "topic": "Data Insights Tactics",
+  "front": "Quant and Verbal section format?",
+  "back": "Quant: 21 Problem Solving questions in 45 minutes, no calculator. Verbal: 23 CR and RC questions in 45 minutes.",
+  "level": 2
+ }
+]

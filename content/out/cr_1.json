@@ -1,0 +1,1602 @@
+[
+ {
+  "id": "cr1-001",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 1,
+  "stimulus": "Harlow Bakery currently closes at 6 p.m. Its owner plans to stay open until 9 p.m. to increase weekly revenue. Several office buildings near the bakery have recently filled with new tenants, and their employees often work late into the evening. The owner therefore concludes that extending the bakery's hours will increase its weekly revenue.",
+  "stem": "Which of the following is an assumption on which the owner's argument depends?",
+  "choices": [
+   "The additional revenue from the evening hours will exceed the cost of staffing the bakery during those hours.",
+   "Some of the employees who work late in the nearby buildings would buy items from the bakery between 6 p.m. and 9 p.m.",
+   "The bakery will charge the same prices in the evening as it does during the day.",
+   "No other bakery near the office buildings stays open after 6 p.m.",
+   "Most of the bakery's current customers work in the nearby office buildings."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: the whole case for higher revenue rests on the late-working employees. If none of them would buy anything between 6 and 9 p.m., the extra hours add no sales and the conclusion collapses. (A) shifts from revenue to profit; the owner claims only that revenue will rise, so staffing costs do not matter. (C) is unnecessary because evening sales at any price add revenue. (D) is too strong; competition might reduce the gain but need not eliminate it. (E) concerns current customers, while the argument depends on new evening customers.",
+  "trap": "(A) is tempting because it sounds like sound business sense, but the conclusion is about revenue, not profit.",
+  "time": 90
+ },
+ {
+  "id": "cr1-002",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 1,
+  "stimulus": "A city health office offered free monthly cooking classes. Six months after the classes began, residents who had attended them reported eating more vegetables than residents who had not attended. The office concluded that the classes caused attendees to eat more vegetables.",
+  "stem": "Which of the following is an assumption on which the argument depends?",
+  "choices": [
+   "The classes were taught by certified nutritionists.",
+   "Eating more vegetables is the most important step residents can take to improve their health.",
+   "The office will offer the classes in more neighborhoods next year.",
+   "Before the classes began, the residents who later attended did not already eat more vegetables than those who did not attend.",
+   "Some residents who did not attend would have done so if the classes had been held on weekends."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: the office compares attendees with non-attendees and credits the classes for the difference. If attendees already ate more vegetables before the classes, the difference would reflect who chose to attend, not the effect of the classes. Negate (D) and the conclusion falls apart. (A) concerns teaching quality, which the argument never relies on. (B) is about the health value of vegetables, not whether the classes changed behavior. (C) concerns future plans. (E) explains attendance patterns but has no bearing on whether the classes caused the change.",
+  "trap": "(A) feels relevant because qualified teachers seem more effective, but the argument works whoever taught the classes.",
+  "time": 90
+ },
+ {
+  "id": "cr1-003",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 2,
+  "stimulus": "Last month the central bank of Country X cut the interest rate it charges commercial banks for loans. The finance minister predicts that businesses in Country X will therefore borrow more this year to fund expansion, reasoning that cheaper loans make expansion projects more attractive to businesses.",
+  "stem": "The finance minister's prediction depends on which of the following assumptions?",
+  "choices": [
+   "Commercial banks in Country X will lower, at least somewhat, the interest rates they charge business borrowers.",
+   "Businesses in Country X have no source of financing other than bank loans.",
+   "The central bank will not raise its rate again for at least five years.",
+   "Consumers in Country X will also increase their borrowing this year.",
+   "Most expansion projects financed by bank loans turn out to be profitable."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: the central bank's cut lowers costs for commercial banks, but businesses borrow from commercial banks. The minister's reasoning needs those banks to pass on at least part of the cut. If business loan rates do not fall at all, loans are not cheaper for businesses and the prediction loses its basis. (B) is too strong; other funding sources can exist and borrowing can still rise. (C) is too strong as well, since the prediction covers only this year. (D) concerns consumers, who are outside the argument. (E) is not needed; businesses can borrow more whether or not projects eventually succeed.",
+  "trap": "(B) looks like it closes a gap, but the argument works even if businesses have other financing options.",
+  "time": 105
+ },
+ {
+  "id": "cr1-004",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 2,
+  "stimulus": "Brightline, a sportswear company, paid a popular tennis player to wear its Velo shoe during a major tournament. In the month after the tournament, sales of the Velo rose 30 percent. Brightline's marketing director concludes that the sponsorship was responsible for the increase in sales.",
+  "stem": "Which of the following is an assumption on which the argument depends?",
+  "choices": [
+   "The tennis player won the tournament.",
+   "Sales of competing tennis shoes fell during the month after the tournament.",
+   "Most people who buy the Velo play tennis regularly.",
+   "The profit from the additional Velo sales exceeded the cost of the sponsorship.",
+   "Brightline did not, during the same period, make some other change, such as a price cut on the Velo, that would by itself account for the increase."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: the director attributes the sales jump to the sponsorship. If another change made at the same time, such as a price cut, fully explained the rise, the sponsorship would not be responsible. The argument therefore needs to rule out such an alternative cause. (A) is not required; exposure can lift sales even if the player lost. (B) is not required either, since Velo sales can rise while rivals also do well. (C) concerns who buys the shoe, not why sales rose. (D) changes the subject to profitability, which the conclusion does not address.",
+  "trap": "(D) is attractive because sponsorships are judged on return, but the director claims only that the sponsorship caused the sales increase.",
+  "time": 105
+ },
+ {
+  "id": "cr1-005",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 2,
+  "stimulus": "To reduce traffic congestion downtown, the city council proposes charging a fee to drive into the downtown zone during weekday rush hours. Supporters argue that the fee will reduce the number of cars entering downtown at those times, because many drivers will choose to travel at other times or switch to public transit.",
+  "stem": "The supporters' argument assumes which of the following?",
+  "choices": [
+   "Public transit into downtown is faster than driving during rush hours.",
+   "Revenue from the fee will be used to expand public transit.",
+   "A substantial number of drivers who now enter downtown during rush hours are able to change their travel times or use public transit.",
+   "Traffic congestion is worse downtown than in any other part of the city.",
+   "Most drivers who enter downtown during rush hours will oppose the fee."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: the supporters' mechanism is that drivers will shift their timing or switch to transit. If almost no rush-hour drivers can do either, they will keep driving and pay the fee, and car numbers will not fall. (A) is too strong; transit need not be faster to attract drivers who want to avoid the fee. (B) concerns how the money is spent, which the argument never mentions. (D) compares downtown with other areas, which is irrelevant to whether the fee will work. (E) is about political opinion, not driving behavior.",
+  "trap": "(A) seems needed because people pick faster options, but the fee alone can push drivers to transit even if it is slower.",
+  "time": 105
+ },
+ {
+  "id": "cr1-006",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 3,
+  "stimulus": "Researchers surveying coral reefs found that a species of grazing fish is more abundant on reefs where a certain seaweed is rare. Because this fish eats the seaweed, the researchers concluded that the fish's grazing is what keeps the seaweed rare on those reefs.",
+  "stem": "The researchers' conclusion depends on which of the following assumptions?",
+  "choices": [
+   "The seaweed is the fish's main source of food.",
+   "The fish are not drawn to these reefs by some condition, such as cooler water, that independently keeps the seaweed scarce.",
+   "The fish eat no other type of seaweed.",
+   "Reefs where the seaweed is abundant have no grazing fish of any species.",
+   "Abundant seaweed harms the health of coral reefs."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: the researchers move from a correlation (more fish, less seaweed) to a cause (fish grazing keeps seaweed rare). If some third factor both attracts the fish and suppresses the seaweed, the fish need not be responsible at all. The argument must assume that no such factor explains the pattern. (A) is not necessary; a fish can control a plant it eats even if that plant is a minor part of its diet. (C) is too strong and beside the point. (D) is too extreme; other grazers can exist where seaweed is abundant. (E) concerns why the seaweed matters, not what keeps it rare.",
+  "trap": "(A) feels essential because heavy grazing seems to require a main food source, but even occasional grazing by an abundant fish could keep the seaweed rare.",
+  "time": 120
+ },
+ {
+  "id": "cr1-007",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 3,
+  "stimulus": "SoftPeak, a software company, plans to cut customer support costs by replacing half of its phone support agents with an automated chat assistant. The assistant can resolve the most common customer questions at a small fraction of the cost per inquiry of a human agent. SoftPeak's managers therefore conclude that the company's total support costs will decline.",
+  "stem": "The managers' conclusion depends on which of the following assumptions?",
+  "choices": [
+   "Most SoftPeak customers prefer chat to phone support.",
+   "The chat assistant can resolve every type of question that customers ask.",
+   "Several of SoftPeak's competitors have cut costs by using chat assistants.",
+   "Inquiries that the assistant cannot resolve will not create enough additional work for the remaining human agents to offset the savings.",
+   "Customer satisfaction with SoftPeak's support will not decline after the change."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: the assistant is cheaper only for the questions it resolves. If its failures produce so many escalations, repeat contacts or longer calls that the remaining agents' costs rise by more than the savings, total costs will not decline. The argument must assume this does not happen. (A) is not required; customers need not prefer chat for costs to fall. (B) is too strong; the assistant needs to handle only enough cases to save money. (C) is about competitors and proves nothing about SoftPeak. (E) shifts from cost to satisfaction, which the conclusion does not address.",
+  "trap": "(E) is tempting because satisfaction matters in support, but the conclusion is strictly about costs.",
+  "time": 120
+ },
+ {
+  "id": "cr1-008",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 3,
+  "stimulus": "Manager of a medical clinic: Missed appointments cost our clinic a significant amount of revenue. When asked why they missed appointments, patients most often say they simply forgot. So if we send patients a text message reminder the day before each appointment, the number of missed appointments will fall.",
+  "stem": "The manager's argument depends on which of the following assumptions?",
+  "choices": [
+   "A significant proportion of the patients who would otherwise forget their appointments would read a text message reminder.",
+   "Text message reminders cost less than reminders made by telephone.",
+   "Patients who miss appointments are, on average, in poorer health than other patients.",
+   "Forgetting is the only reason patients miss appointments.",
+   "Missed appointments cost the clinic more revenue than any other problem."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: the plan works only if the reminders actually reach and are noticed by the forgetful patients. If almost none of them would read a text, the reminders could not reduce forgetting and missed appointments would not fall. (B) compares two reminder methods, but the argument never claims texts are the cheapest option. (C) concerns patients' health, which is irrelevant to whether reminders work. (D) is too strong; the plan needs forgetting to be a major cause, not the only one. (E) ranks the clinic's problems, which does not affect whether the plan reduces missed appointments.",
+  "trap": "(D) is attractive because it strengthens the link between forgetting and missed visits, but the plan can succeed even if other causes exist.",
+  "time": 120
+ },
+ {
+  "id": "cr1-009",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 4,
+  "stimulus": "Economist: Last year the minimum wage in Region Y rose by 15 percent, yet employment in Region Y's restaurants, which employ many minimum-wage workers, also rose. Thus the higher minimum wage did not cause restaurants to employ fewer workers than they otherwise would have.",
+  "stem": "The economist's argument depends on which of the following assumptions?",
+  "choices": [
+   "Most restaurant workers in Region Y earn the minimum wage.",
+   "Restaurants in Region Y did not raise menu prices after the minimum wage increased.",
+   "Restaurant employment in Region Y would not have grown by a greater amount last year if the minimum wage had stayed the same.",
+   "Employment in industries other than restaurants fell in Region Y last year.",
+   "The growth in restaurant employment occurred because the higher wage attracted more job seekers."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: the conclusion is counterfactual. It claims restaurants did not employ fewer workers than they would have without the increase. The premise shows only that employment rose. If employment would have risen even faster without the wage hike, the hike did reduce employment relative to what would otherwise have happened. Negating (C) destroys the argument. (A) is too strong; many workers, not most, is enough. (B) concerns prices, which the argument does not rely on. (D) is about other industries and is irrelevant. (E) proposes a specific mechanism the argument does not need.",
+  "trap": "(B) looks relevant because price increases are a common response to wage costs, but the argument is only about employment levels.",
+  "time": 135
+ },
+ {
+  "id": "cr1-010",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 4,
+  "stimulus": "Officials in Lanford found that neighborhoods with many streetlights have fewer reported nighttime burglaries than neighborhoods with few streetlights. They propose installing additional streetlights in poorly lit neighborhoods and conclude that doing so will reduce nighttime burglaries in those neighborhoods.",
+  "stem": "The officials' conclusion depends on which of the following assumptions?",
+  "choices": [
+   "Streetlights are the most cost-effective way to reduce burglaries.",
+   "Burglars deterred by the new lights will not simply commit burglaries in other neighborhoods instead.",
+   "Residents of poorly lit neighborhoods have asked the city for more streetlights.",
+   "Most nighttime burglaries in Lanford are committed by people who live outside the neighborhoods they target.",
+   "The difference in burglary rates is not due mainly to some other feature of well-lit neighborhoods, such as more frequent police patrols."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: the officials infer from a correlation that lighting reduces burglary. If well-lit neighborhoods have fewer burglaries mainly because of something else they have, such as more patrols, adding lights elsewhere would not produce the same effect. (B) is the scope trap: displacement to other neighborhoods would matter for citywide crime, but the conclusion concerns only the neighborhoods that get the lights, so it can hold even if burglars move. (A) is not needed; a measure can work without being the most cost-effective. (C) concerns residents' wishes, not effectiveness. (D) describes burglars' origins, which the argument does not rely on.",
+  "trap": "(B) is tempting because displacement is a classic objection, but the conclusion is limited to burglaries in the newly lit neighborhoods.",
+  "time": 135
+ },
+ {
+  "id": "cr1-011",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 4,
+  "stimulus": "A grocery chain's data show that customers who use its loyalty app spend 40 percent more per year at the chain than customers who do not. The chain plans to offer a one-time discount to persuade customers who do not use the app to download it, and it expects these customers' annual spending to rise substantially as a result.",
+  "stem": "The chain's expectation depends on which of the following assumptions?",
+  "choices": [
+   "The higher spending of current app users is not entirely explained by the chain's biggest spenders having been the most likely to download the app.",
+   "The cost of the one-time discount will be less than the additional revenue it generates.",
+   "Most of the chain's customers who do not use the app own smartphones.",
+   "App users visit the chain's stores more often than customers who do not use the app.",
+   "Customers who download the app because of the discount will keep using it for at least ten years."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: the chain assumes the app itself drives higher spending. If the gap exists only because heavy spenders were the ones who chose to download the app, getting light spenders to download it would not change their spending. Negating (A) makes the expectation baseless. (B) shifts from spending to profitability; the chain predicts higher spending, not profit. (C) is too strong; spending can rise substantially even if only some non-users own smartphones. (D) describes one possible way spending differs, but app users could spend more per visit instead. (E) is far too strong; benefits could appear within a year.",
+  "trap": "(B) sounds like a sensible business test, but the stated expectation concerns customer spending, not whether the discount pays for itself.",
+  "time": 135
+ },
+ {
+  "id": "cr1-012",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 5,
+  "stimulus": "Paleontologist: At Site Q, all fossils of a small dinosaur species come from rock layers deposited during a single 50,000-year interval. Elsewhere, fossils of this species span a period of 2 million years. Therefore, the species lived in the region around Site Q only during that 50,000-year interval.",
+  "stem": "The paleontologist's conclusion depends on which of the following assumptions?",
+  "choices": [
+   "The species did not migrate between regions during its 2 million years of existence.",
+   "The climate around Site Q during the 50,000-year interval was the most favorable to the species.",
+   "The fossils at Site Q were dated using the same method as fossils of the species found elsewhere.",
+   "If the species had lived around Site Q at other times, rock layers at the site from those times would likely contain its fossils.",
+   "Other dinosaur species found at Site Q also appear only in the layers from the 50,000-year interval."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: the argument treats the absence of fossils in other layers as evidence that the species was absent. That works only if those layers could have preserved such fossils. If layers from other periods are missing or unsuited to preserving small animals, the absence of fossils says nothing. (A) is not needed and even points the wrong way; the conclusion is compatible with migration. (B) offers a reason the species might have been there but is not required. (C) concerns consistency between sites, which the conclusion does not need. (E), if anything, hints at a preservation problem and so is not something the argument assumes.",
+  "trap": "(A) looks like it supports a stable local presence, but the conclusion actually allows the species to have come and gone; what it needs is that other layers could record it.",
+  "time": 150
+ },
+ {
+  "id": "cr1-013",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 5,
+  "stimulus": "Calder Airlines plans to introduce a fee of 30 dollars for each checked bag. Based on the number of bags its passengers checked last year, Calder projects that the fee will bring in about 90 million dollars a year. The airline concludes that its total annual revenue will rise as a result of the fee.",
+  "stem": "The airline's conclusion depends on which of the following assumptions?",
+  "choices": [
+   "Competing airlines do not currently charge fees for checked bags.",
+   "The fee will not cause a loss of ticket revenue, from passengers switching to other airlines, as large as the revenue the fee brings in.",
+   "The number of bags checked per passenger will not fall below last year's level.",
+   "The fee will be higher than the checked-bag fees charged by other airlines.",
+   "Most of Calder's passengers check at least one bag."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: total revenue rises only if the new fee income exceeds any revenue lost elsewhere. If enough passengers switched airlines to cost Calder as much in fares as the fee raises, total revenue would not rise. (C) is the trap: if bag numbers fall, the fee brings in less than 90 million dollars, but even a much smaller amount still raises total revenue, so (C) is too strong. (A) is not required; whether rivals charge fees affects how many passengers might switch, but the argument does not depend on it. (D) is irrelevant to whether revenue rises. (E) is too strong; the fee earns money as long as some passengers check bags.",
+  "trap": "(C) is tempting because the 90 million dollar projection uses last year's bag count, but the conclusion requires only some increase in total revenue, not the full projected amount.",
+  "time": 150
+ },
+ {
+  "id": "cr1-014",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "assumption",
+  "diff": 5,
+  "stimulus": "A government plans to lower the national obesity rate by taxing sugary soft drinks. In regions that adopted similar taxes, purchases of sugary soft drinks fell by about 20 percent. Officials conclude that the national tax will reduce the obesity rate.",
+  "stem": "The officials' conclusion depends on which of the following assumptions?",
+  "choices": [
+   "The national tax will be at least as high as the regional taxes were.",
+   "Sugary soft drinks are the leading cause of obesity in the country.",
+   "Revenue from the tax will be spent on public health programs.",
+   "The fall in purchases in the taxed regions was not partly due to shoppers buying soft drinks in nearby untaxed regions.",
+   "People who buy fewer sugary soft drinks because of the tax will not, as a group, replace those calories with as many or more calories from other foods and drinks."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: buying fewer soft drinks reduces obesity only if total calorie intake falls. If people fully replace the lost calories with other foods or drinks, the tax would not lower obesity. (D) is the trap: cross-border shopping would mean the regional data overstate the drop in consumption, but the negation of (D) says the fall was only partly due to such shopping, so some real decline could remain; and a national tax leaves few untaxed regions anyway. (A) is not required; a lower tax could still reduce purchases somewhat. (B) is too strong; soft drinks need only contribute to obesity. (C) concerns use of revenue, which the argument does not rely on.",
+  "trap": "(D) is tempting because it attacks the evidence, but its negation still leaves room for a real drop in consumption, so the argument does not depend on it.",
+  "time": 150
+ },
+ {
+  "id": "cr1-015",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 1,
+  "stimulus": "An online retailer tested two versions of its checkout page for two weeks. Version B, which displays shipping costs on the first checkout screen rather than the last, had a 10 percent higher purchase completion rate than version A. The retailer concludes that showing shipping costs earlier makes shoppers more likely to complete their purchases.",
+  "stem": "Which of the following, if true, most strengthens the argument?",
+  "choices": [
+   "Version B was designed by a newly hired team of web designers.",
+   "The retailer's shipping costs are lower than those of most competitors.",
+   "Shoppers were randomly assigned to see version A or version B, and the two versions were identical except for where shipping costs appeared.",
+   "Many shoppers abandon online purchases for reasons unrelated to shipping costs.",
+   "The test took place during a two-week holiday sale."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: random assignment and otherwise identical pages rule out the main alternatives, such as different kinds of shoppers seeing each version or some other design difference causing the gap. That leaves the placement of shipping costs as the best explanation. (A) concerns who designed the page, not why it performed better. (B) is about price levels, which were the same in both versions. (D) does not connect to the difference between the versions and slightly suggests other factors matter. (E) affects both versions equally, so it does not help explain the gap.",
+  "trap": "(E) seems relevant because sales affect buying, but a holiday sale would affect both versions alike.",
+  "time": 90
+ },
+ {
+  "id": "cr1-016",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 2,
+  "stimulus": "Back pain is one of the most frequent complaints among people who sit at a desk all day. In a six-month study, office workers who used standing desks reported less back pain at the end of the study than office workers who used ordinary desks. The researchers concluded that using a standing desk reduces back pain.",
+  "stem": "Which of the following, if true, most strengthens the argument?",
+  "choices": [
+   "At the start of the study, the two groups of workers reported similar levels of back pain.",
+   "Standing desks cost more than most ordinary desks.",
+   "Some of the workers with standing desks spent most of each day sitting.",
+   "Back pain is one of the most common reasons office workers miss work.",
+   "Workers chose which type of desk to use based on their own preference."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: if the groups started with similar back pain, the later difference is more likely due to the desks than to pre-existing differences between the groups. (B) concerns cost, which has nothing to do with whether the desks reduce pain. (C) weakens the argument, since workers who did not actually stand could not have benefited from standing. (D) explains why back pain matters but not what reduces it. (E) weakens the argument by suggesting the groups may have differed from the start, for example if people already free of pain preferred standing.",
+  "trap": "(D) is tempting because it makes the study feel important, but importance is not evidence of cause.",
+  "time": 105
+ },
+ {
+  "id": "cr1-017",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 2,
+  "stimulus": "Two years ago the town of Ferris removed the parking meters on its main shopping street and made parking there free. Since then, sales tax receipts from main-street shops have risen 18 percent. The mayor argues that free parking attracted more shoppers to the main street.",
+  "stem": "Which of the following, if true, most strengthens the mayor's argument?",
+  "choices": [
+   "The parking meters cost the town money each year to maintain.",
+   "Several main-street shops raised their prices during the past two years.",
+   "Most main-street shoppers live within walking distance of the street.",
+   "Over the same two years, sales tax receipts from shops elsewhere in Ferris, where parking rules did not change, stayed roughly flat.",
+   "The town's sales tax rate rose during the past two years."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: it provides a comparison group. If shops with unchanged parking saw no rise, a general economic upturn is less likely to explain the main-street increase, and the parking change becomes a stronger explanation. (A) concerns the town's maintenance costs, not shopper numbers. (B) weakens the argument by offering another reason receipts rose: higher prices. (C) weakens it, because shoppers who walk would not be affected by parking rules. (E) also weakens it, since a higher tax rate raises receipts without any new shoppers.",
+  "trap": "(A) gives another reason to like free parking, but saving the town money says nothing about attracting shoppers.",
+  "time": 105
+ },
+ {
+  "id": "cr1-018",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 2,
+  "stimulus": "Researchers have long debated how night-migrating birds keep their bearings when stars are hidden by clouds. A biologist hypothesized that one such species uses Earth's magnetic field to find its direction. When birds of this species were fitted with small magnets that disrupt magnetic sensing, they flew in random directions on overcast nights.",
+  "stem": "Which of the following, if true, most strengthens the biologist's hypothesis?",
+  "choices": [
+   "Many other bird species also migrate at night.",
+   "Birds fitted with brass weights of the same size and mass as the magnets, but with no magnetic properties, flew in their normal direction on overcast nights.",
+   "The magnets used in the experiment were bought from a standard laboratory supplier.",
+   "The species migrates thousands of kilometers each year.",
+   "Birds fitted with the magnets ate less than usual during the experiment."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: it is a control. If equally heavy non-magnetic weights did not disturb the birds, the confusion is due to the magnetism, not to the burden of carrying an object. (A) concerns other species and says nothing about this one. (C) is about the source of the equipment, which has no bearing on the result. (D) shows the birds need good navigation but not that they use magnetism. (E) weakens the hypothesis by suggesting the devices made the birds unwell, offering another reason for their disorientation.",
+  "trap": "(D) is tempting because long migrations require precise navigation, but it does not point to magnetism as the method.",
+  "time": 105
+ },
+ {
+  "id": "cr1-019",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 3,
+  "stimulus": "A company replaced its annual performance reviews with brief monthly check-ins between managers and their employees. In the following year, the share of employees who voluntarily left the company fell from 18 percent to 12 percent. The human resources director concludes that the monthly check-ins reduced employee turnover.",
+  "stem": "Which of the following, if true, most strengthens the director's conclusion?",
+  "choices": [
+   "Other companies in the same industry also saw voluntary turnover fall that year.",
+   "In surveys, many employees said they had preferred the annual reviews.",
+   "The company raised salaries for most employees during the same year.",
+   "Monthly check-ins take less total manager time than the annual reviews did.",
+   "Turnover fell most in the departments whose managers held the check-ins most consistently."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: it shows a dose-response pattern inside the company. Where the check-ins actually happened most often, turnover fell most, which ties the result to the check-ins rather than to a company-wide or industry-wide factor. (A) weakens the conclusion, since an industry trend could explain the drop. (B) weakens it slightly by suggesting employees did not value the change. (C) weakens it by offering another cause: higher pay. (D) is a plausible benefit of the change but says nothing about turnover.",
+  "trap": "(D) sounds like a point in favor of the check-ins, but saving manager time is irrelevant to whether employees stayed.",
+  "time": 120
+ },
+ {
+  "id": "cr1-020",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 3,
+  "stimulus": "To encourage recycling, the city of Avon began charging households for each bag of trash collected, while keeping recycling collection free. Within a year, the weight of material collected for recycling rose 25 percent. City officials credit the pay-per-bag charge for the increase.",
+  "stem": "Which of the following, if true, most strengthens the officials' claim?",
+  "choices": [
+   "Over the same year, the weight of regular trash collected fell by an amount close to the rise in recycling.",
+   "Some residents began dumping trash illegally to avoid the charge.",
+   "Avon also ran an advertising campaign promoting recycling during the same year.",
+   "Recycling material costs the city less than sending it to a landfill.",
+   "Many residents surveyed said they considered the per-bag charge unfair."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: the charge should work by moving material out of paid trash bags and into free recycling. A drop in trash roughly matching the rise in recycling is exactly the pattern that mechanism predicts, and it makes other explanations, such as a simple increase in total consumption, less likely. (B) is about illegal dumping, which does not explain higher recycling. (C) weakens the claim by offering another cause. (D) gives a reason the city wants more recycling but not evidence of what caused it. (E) reports opinions about fairness, not behavior.",
+  "trap": "(D) is tempting because it supports the policy's value, but the question is whether the charge caused the increase.",
+  "time": 120
+ },
+ {
+  "id": "cr1-021",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 3,
+  "stimulus": "Memory tends to decline with age, and researchers are looking for everyday activities that might slow that decline. In a study of adults over 65, those who regularly played a musical instrument scored higher on memory tests than those who did not. A researcher concluded that playing an instrument helps preserve memory in later life.",
+  "stem": "Which of the following, if true, most strengthens the researcher's conclusion?",
+  "choices": [
+   "Many of the instrument players in the study began playing as children.",
+   "Older adults whose memory begins to decline often give up playing instruments because they find it difficult.",
+   "Among the instrument players, those who had played for more years showed smaller memory declines over a decade of testing.",
+   "Adults who play instruments tend to have more years of formal education than adults who do not.",
+   "The memory tests used in the study included both verbal and visual tasks."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: it adds a dose-response link within the group of players. More years of playing went with less memory decline over time, which is what we would expect if playing helps preserve memory. (A) describes when players started but does not link playing to memory. (B) weakens the argument by suggesting reverse causation: memory loss leads people to stop playing. (D) weakens it by offering a confounding factor, education. (E) describes the tests but does not help separate cause from correlation.",
+  "trap": "(A) seems supportive because lifelong practice sounds beneficial, but it gives no evidence about memory outcomes.",
+  "time": 120
+ },
+ {
+  "id": "cr1-022",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 4,
+  "stimulus": "A beverage company launched a new iced tea nationally but ran television ads for it only in its Western region. In the first three months, iced tea sales per store in the West were twice those in the East, where no ads ran. The company concluded that the ads substantially increased sales of the iced tea.",
+  "stem": "Which of the following, if true, most strengthens the company's conclusion?",
+  "choices": [
+   "The company spent more on the iced tea ads than on ads for any of its other products.",
+   "In test markets before the launch, the iced tea had sold about equally well in Western and Eastern stores.",
+   "Many Western customers who bought the iced tea said they had noticed it in stores before seeing any ad.",
+   "Total sales of the iced tea in both regions combined exceeded the company's projections.",
+   "Western stores stocked the iced tea in the same refrigerated displays as other company drinks."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: the biggest threat to the conclusion is that Western shoppers simply like iced tea more. If the drink sold equally well in both regions before any ads ran, regional taste is unlikely to explain the gap, so the ads become the best explanation. (A) concerns ad spending, which does not show the ads worked. (C) slightly weakens the conclusion by suggesting buyers found the tea without the ads. (D) is about combined sales, which cannot reveal the effect of ads in one region. (E) describes Western displays but gives no comparison with the East, so it does not rule anything out.",
+  "trap": "(D) sounds like good news for the product, but strong total sales cannot isolate what the ads did.",
+  "time": 135
+ },
+ {
+  "id": "cr1-023",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 4,
+  "stimulus": "Economist: This year Country Z's currency fell 20 percent against the currencies of its major trading partners, yet Z's exports did not grow. Some analysts conclude that a weaker currency does not help Z's exporters. But I predict that Z's exports will grow substantially next year, because exporters typically need more than a year to win new foreign contracts after their prices fall.",
+  "stem": "Which of the following, if true, most strengthens the economist's prediction?",
+  "choices": [
+   "Imports into Country Z fell this year.",
+   "Country Z's currency fell further than the currency of any other major exporting nation.",
+   "Many of Country Z's exporters rely on imported parts, whose prices have risen with the weaker currency.",
+   "Orders placed this year by foreign buyers for delivery from Country Z next year are well above last year's level.",
+   "In other countries, falls in currency value have raised exports within six months."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: it provides direct evidence that the delayed effect the economist describes is already under way. Contracts are being signed now for delivery next year, so exports should rise when those orders ship. (A) concerns imports, not exports. (B) shows the fall was large but does not show exporters will benefit or when. (C) weakens the prediction, because higher input costs erode the price advantage. (E) weakens the economist's explanation by suggesting the effect usually shows up quickly, which makes this year's flat exports harder to explain away.",
+  "trap": "(B) is tempting because a bigger currency drop seems to mean a bigger advantage, but it gives no evidence that new export business is actually coming.",
+  "time": 135
+ },
+ {
+  "id": "cr1-024",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 4,
+  "stimulus": "Planets around distant stars are usually too faint to be seen directly, so astronomers look for indirect signs of them. Astronomers observed that one distant star dims by about 1 percent for several hours once every 12 days. They hypothesize that a planet orbits the star and passes in front of it, as seen from Earth, once every 12 days.",
+  "stem": "Which of the following, if true, most strengthens the astronomers' hypothesis?",
+  "choices": [
+   "Many stars in the same region of the galaxy are known to have planets.",
+   "The dimming is too small to be detected with amateur telescopes.",
+   "Some stars dim at regular intervals because their outer layers expand and contract.",
+   "The star is roughly the same size as the Sun.",
+   "Measurements of the star's light show it moving slightly toward and away from Earth on a 12-day cycle, as a star does when an orbiting planet pulls on it."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: it is independent evidence that matches the hypothesis exactly. A planet both blocks light and tugs on its star, so a 12-day wobble in the star's motion confirms that something with a 12-day orbit is there. (A) is a general base rate and says little about this particular star. (B) concerns how hard the dimming is to see, not its cause. (C) weakens the hypothesis by offering another cause of regular dimming. (D) describes the star's size, which neither supports nor undermines the planet explanation.",
+  "trap": "(A) is tempting because it makes planets seem likely, but a general statistic is far weaker than evidence about this specific star.",
+  "time": 135
+ },
+ {
+  "id": "cr1-025",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 5,
+  "stimulus": "Two years ago Region M began offering tax credits to companies that hire workers who have been unemployed for more than a year. Since then, the number of long-term unemployed people in Region M has fallen by 30 percent. Officials conclude that the credits helped long-term unemployed people find jobs.",
+  "stem": "Which of the following, if true, most strengthens the officials' conclusion?",
+  "choices": [
+   "Over the past two years, the number of people in Region M who stopped looking for work altogether did not increase.",
+   "Companies that claimed the credits hired a large number of workers in total.",
+   "The tax credits cost the region less than it saved on unemployment benefits.",
+   "Many long-term unemployed people in Region M lack the skills that employers say they need.",
+   "Neighboring regions without such credits also saw long-term unemployment fall."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: people stop being counted as unemployed if they give up looking for work. If the fall came from people leaving the labor force, it would not mean they found jobs. Ruling this out makes job-finding the more likely explanation. (B) is attractive but vague: the companies' total hiring could include many workers who were never long-term unemployed. (C) addresses the program's budget, not whether people found jobs. (D) suggests barriers to employment, which slightly weakens the conclusion. (E) weakens it by showing a similar trend without the credits.",
+  "trap": "(B) looks like proof that the credits created jobs, but total hiring by those firms says nothing about how many long-term unemployed people were hired.",
+  "time": 150
+ },
+ {
+  "id": "cr1-026",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "strengthen",
+  "diff": 5,
+  "stimulus": "In a randomized, double-blind trial, patients with high cholesterol who took Drug K had 30 percent fewer heart attacks over five years than patients who took a placebo. Drug K lowers cholesterol. The researchers conclude that lowering cholesterol reduces the risk of heart attack.",
+  "stem": "Which of the following, if true, most strengthens the researchers' conclusion?",
+  "choices": [
+   "Drug K also reduces inflammation in blood vessels, a condition linked to heart attacks.",
+   "Among patients taking Drug K, those whose cholesterol fell the most had about the same reduction in heart attacks as those whose cholesterol fell the least.",
+   "Drug L, which lowers cholesterol by a different biological mechanism from Drug K's, produced a similar reduction in heart attacks in a separate trial.",
+   "Drug K causes few side effects in most patients.",
+   "Heart attacks are among the leading causes of death in patients with high cholesterol."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: the trial already shows Drug K reduces heart attacks; the open question is whether it does so by lowering cholesterol. If a drug that shares only the cholesterol-lowering effect, not Drug K's mechanism, gives the same benefit, cholesterol reduction is the likely common cause. (A) weakens the conclusion by offering another way Drug K might work. (B) weakens it too, since the benefit did not track the size of the cholesterol drop. (D) concerns tolerability, not how the drug works. (E) shows heart attacks matter but not what prevents them.",
+  "trap": "(A) can look like supporting detail about Drug K, but it actually supplies an alternative pathway that undercuts the cholesterol explanation.",
+  "time": 150
+ },
+ {
+  "id": "cr1-027",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 1,
+  "stimulus": "A coffee chain operates about 200 stores, roughly a third of which have outdoor seating. The chain found that its stores with outdoor seating earn 25 percent more revenue on average than its stores without outdoor seating. The chain concludes that adding outdoor seating to its other stores would increase their revenue.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "Outdoor seating is especially popular in summer.",
+   "Some customers prefer to sit indoors even in good weather.",
+   "Adding outdoor seating requires a city permit, which is usually granted within a month.",
+   "The stores with outdoor seating are mostly in busy downtown areas, while the stores without it are mostly in quiet suburbs.",
+   "Many of the chain's competitors also offer outdoor seating."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: it offers another explanation for the revenue gap. Downtown stores get far more foot traffic, so they would likely earn more with or without outdoor seating, and adding seats to suburban stores may not help. (A) is consistent with outdoor seating raising revenue, at least seasonally. (B) is too weak; some customers preferring indoor seats does not stop outdoor seats from adding revenue. (C) suggests the plan is easy to carry out, which if anything supports it. (E) is about competitors, which does not explain the difference within the chain.",
+  "trap": "(B) looks like an objection, but a minority who prefer indoor seating cannot explain a 25 percent revenue gap.",
+  "time": 90
+ },
+ {
+  "id": "cr1-028",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 1,
+  "stimulus": "A sunscreen maker claims that its new lotion prevents sunburn better than competing products. As evidence, it cites a survey in which 90 percent of the lotion's users said they did not get sunburned while using it. The maker plans to feature this figure prominently in its next advertising campaign.",
+  "stem": "Which of the following, if true, most seriously weakens the maker's claim?",
+  "choices": [
+   "The new lotion costs more than most competing products.",
+   "Most of the survey respondents used the lotion mainly during the winter months, when the risk of sunburn is low.",
+   "The survey was conducted online.",
+   "Competing sunscreen makers also survey their customers.",
+   "Repeated sunburn increases the risk of skin cancer."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: if respondents used the lotion mostly when sunburn was unlikely anyway, their lack of sunburn says little about the lotion's effectiveness, let alone that it beats competitors. (A) concerns price, not effectiveness. (C) describes the survey method but gives no specific reason the results are biased. (D) is irrelevant unless we know what those surveys found. (E) explains why sunburn matters but has no bearing on which lotion prevents it best.",
+  "trap": "(C) is tempting because online surveys can be unreliable, but nothing in the choice shows how that would distort these particular results.",
+  "time": 90
+ },
+ {
+  "id": "cr1-029",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 2,
+  "stimulus": "Housing analyst: Home prices in Bayview rose 15 percent last year, one of the largest annual increases in the region. During that year, the city did not approve a single new housing construction project. Therefore, the rise in prices must have resulted from the lack of new housing supply.",
+  "stem": "Which of the following, if true, most seriously weakens the analyst's argument?",
+  "choices": [
+   "Last year a large technology company opened offices in Bayview and hired several thousand workers who moved there from other cities.",
+   "Home prices in Bayview have risen in most of the past ten years.",
+   "Rents in Bayview also rose last year.",
+   "Some Bayview residents have opposed new housing construction.",
+   "Mortgage interest rates were unchanged last year."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: it offers a strong alternative cause on the demand side. A sudden inflow of several thousand new workers would push prices up even if supply had grown normally. The analyst's claim that the price rise must have come from limited supply is undermined. (B) is consistent with the analyst's view and does not identify another cause. (C) is consistent with tight housing markets of any cause. (D) explains why construction may be limited, which fits the analyst's view. (E) removes one alternative explanation (cheaper borrowing), which slightly strengthens the argument.",
+  "trap": "(E) looks like a relevant economic fact, but unchanged mortgage rates eliminate an alternative cause and so help the analyst.",
+  "time": 105
+ },
+ {
+  "id": "cr1-030",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 2,
+  "stimulus": "A cosmetics brand plans to stop advertising in print magazines and move its entire advertising budget to social media. It reasons that its survey shows customers under 30 spend far more time on social media than reading magazines, so the change will make its advertising more effective at driving sales.",
+  "stem": "Which of the following, if true, most seriously weakens the brand's reasoning?",
+  "choices": [
+   "Advertisements on social media cost less per view than print advertisements.",
+   "Some print magazines also publish online editions.",
+   "Customers under 30 are more likely than older customers to try new cosmetics brands.",
+   "The survey was carried out by a reputable market research firm.",
+   "Customers over 45, who rarely use social media, account for most of the brand's sales."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: the brand's evidence concerns only customers under 30. If most sales come from older customers who rarely use social media, dropping print ads could cut off the audience that buys the most. (A) strengthens the plan by making social media ads cheaper. (B) is irrelevant unless the brand would advertise in those online editions, which the plan does not mention. (C) strengthens the plan by making the younger audience more valuable. (D) strengthens the plan by supporting the survey's reliability.",
+  "trap": "(B) is tempting because it blurs the line between print and online, but it says nothing about whom the brand's ads need to reach.",
+  "time": 105
+ },
+ {
+  "id": "cr1-031",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 2,
+  "stimulus": "Province L has one of the highest teenage smoking rates in the country. To reduce smoking among teenagers, Province L raised the legal age for buying cigarettes from 18 to 21. Officials predict that teenage smoking will fall, since fewer teenagers will be able to buy cigarettes legally.",
+  "stem": "Which of the following, if true, most seriously casts doubt on the officials' prediction?",
+  "choices": [
+   "Smoking rates among adults in Province L have been falling for a decade.",
+   "Teenagers who start smoking often continue to smoke as adults.",
+   "Most teenage smokers in Province L get their cigarettes from friends or relatives who are 21 or older.",
+   "Retailers in Province L who sell cigarettes to underage buyers face large fines.",
+   "Cigarette prices in Province L have risen in recent years."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: if most teenage smokers already get cigarettes from people aged 21 or older, raising the purchase age does not cut off their supply, so smoking may not fall. (A) concerns adults and is unrelated to the new rule's effect on teens. (B) shows why reducing teenage smoking matters but not whether this policy will do it. (D) strengthens the prediction, since strong enforcement makes the age limit more effective. (E) describes a general trend that applies whether or not the law changes.",
+  "trap": "(B) sounds relevant to teen smoking, but it explains the stakes, not whether the policy will work.",
+  "time": 105
+ },
+ {
+  "id": "cr1-032",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 3,
+  "stimulus": "Over the past ten years, the number of wildflower species in Hollin Meadow has declined steadily while the local deer population has doubled. A plant ecologist concluded that grazing by the growing deer population caused the decline in wildflower diversity.",
+  "stem": "Which of the following, if true, most seriously weakens the ecologist's conclusion?",
+  "choices": [
+   "Deer populations in areas surrounding Hollin Meadow also grew during the decade.",
+   "A fenced section of the meadow from which deer were excluded for the whole decade lost wildflower species at the same rate as the rest of the meadow.",
+   "The ecologist counted wildflower species each spring using the same method.",
+   "Wildflower diversity is important for the survival of many pollinating insects.",
+   "Some of the wildflower species in Hollin Meadow are toxic to deer."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: the fenced plot is a natural control. If wildflowers declined just as fast where deer could not graze, deer cannot be the main cause. (A) concerns other areas and does not affect the link within the meadow. (C) strengthens the argument by suggesting the counts are reliable. (D) explains why the decline matters, not what caused it. (E) is consistent with deer grazing on other species; deer avoiding a few toxic plants does not show they did not cause the decline.",
+  "trap": "(E) seems to weaken the deer explanation, but deer avoiding some species is compatible with heavy grazing on the rest.",
+  "time": 120
+ },
+ {
+  "id": "cr1-033",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 3,
+  "stimulus": "Last year Trenton Motors cut the prices of all its sedan models by 10 percent, and the number of sedans it sold rose by 15 percent compared with the year before. Trenton's sales director concludes that the price cut increased the company's profits from sedans.",
+  "stem": "Which of the following, if true, most seriously weakens the director's conclusion?",
+  "choices": [
+   "Total revenue from Trenton's sedans rose last year.",
+   "Several of Trenton's competitors also lowered their sedan prices last year.",
+   "Sales of Trenton's sport utility vehicles fell last year.",
+   "Many buyers said the lower price was the main reason they chose a Trenton sedan.",
+   "Before the price cut, Trenton's profit on each sedan was less than 10 percent of the sedan's price."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: if the profit on each sedan was less than 10 percent of its price, a 10 percent price cut wipes out the profit and creates a loss on every sale. Selling 15 percent more sedans would then increase losses, not profits. (A) concerns revenue, which can rise while profit falls, so it does not weaken the claim and may seem to support it. (B) does not change Trenton's own sales and margins. (C) concerns a different product line; the conclusion is limited to sedans. (D) supports the idea that the cut drove sales, which is not in dispute.",
+  "trap": "(A) is tempting because rising revenue sounds like success, but revenue and profit are different measures.",
+  "time": 120
+ },
+ {
+  "id": "cr1-034",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 3,
+  "stimulus": "Last year the Oakdale school district added a daily 20-minute physical activity break for all students in grades three through eight. That year, students' average scores on the state's standardized math test rose noticeably compared with the year before. The district credits the activity breaks for the improvement.",
+  "stem": "Which of the following, if true, most seriously weakens the argument?",
+  "choices": [
+   "Last year the state replaced its math test with a new version, and average scores rose across the state.",
+   "Most teachers in the district supported adding the activity breaks.",
+   "Some students used the break to talk with friends rather than exercise.",
+   "Several other districts are considering adding similar breaks.",
+   "Students in the district were more physically fit at the end of the year than at the beginning."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: if the test itself changed and scores rose statewide, the district's gain can be explained by the easier test rather than by the breaks. (B) concerns teachers' opinions, not results. (C) is a minor point; even if some students did not exercise, others did, so it barely affects the argument. (D) is about other districts' plans and says nothing about whether the breaks worked. (E) shows the breaks had a physical effect, which if anything makes a link to learning more plausible.",
+  "trap": "(C) is tempting because it questions whether the breaks were used as intended, but partial use does not explain away the score increase.",
+  "time": 120
+ },
+ {
+  "id": "cr1-035",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 3,
+  "stimulus": "Country P has imposed a 25 percent tariff on imported steel in order to protect jobs in its steel industry. A government report concludes that, because domestic steelmakers will now face less foreign competition, the tariff will increase total manufacturing employment in Country P.",
+  "stem": "Which of the following, if true, most seriously weakens the report's conclusion?",
+  "choices": [
+   "Domestic steel producers have announced plans to hire additional workers.",
+   "Several other countries have also imposed tariffs on steel in recent years.",
+   "Steel imports into Country P had been rising for five years before the tariff.",
+   "Manufacturers in Country P that use steel, such as car and appliance makers, employ many times more workers than steel producers and will face higher steel costs.",
+   "The tariff will raise substantial revenue for the government of Country P."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: the report considers only steel producers. If steel-using manufacturers employ far more people and now face higher costs, job losses among them could outweigh steel-industry gains, so total manufacturing employment could fall. (A) strengthens the report. (B) concerns other countries' policies and does not show how employment in Country P will change. (C) explains why the tariff was imposed but not its effect on total jobs. (E) concerns government revenue, which is irrelevant to manufacturing employment.",
+  "trap": "(B) is tempting because it hints at trade retaliation, but it describes past tariffs elsewhere, not any reaction that would cost Country P jobs.",
+  "time": 120
+ },
+ {
+  "id": "cr1-036",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 4,
+  "stimulus": "A streaming service found that subscribers who use its watch-party feature, which lets friends watch a show together online, cancel their subscriptions at half the rate of other subscribers. The service plans to promote the feature heavily, expecting this to reduce its overall cancellation rate.",
+  "stem": "Which of the following, if true, most seriously weakens the service's expectation?",
+  "choices": [
+   "Running watch parties requires substantial computing resources.",
+   "Some competing streaming services offer similar features.",
+   "Subscribers who use the watch-party feature tend to be the service's most enthusiastic viewers, who were already the least likely to cancel before the feature existed.",
+   "Most subscribers have never heard of the watch-party feature.",
+   "Watch parties are most popular on weekend evenings."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: it suggests the low cancellation rate reflects who uses the feature, not what the feature does. Promoting it to less committed subscribers may therefore not reduce their cancellations. (A) concerns cost, not whether cancellations fall. (B) is about competitors and does not affect whether the feature keeps this service's customers. (D) strengthens the plan, since many subscribers could still be reached by promotion. (E) describes usage timing, which is irrelevant to the expected effect.",
+  "trap": "(D) can look like a problem for the feature, but low awareness is exactly what a promotion campaign could fix, so it supports the plan.",
+  "time": 135
+ },
+ {
+  "id": "cr1-037",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 4,
+  "stimulus": "In the five years since Westbrook installed red-light cameras at 20 intersections, the annual number of collisions at those intersections has fallen by 30 percent. The city council concludes that installing red-light cameras at the city's other intersections would reduce collisions there as well.",
+  "stem": "Which of the following, if true, most seriously weakens the council's conclusion?",
+  "choices": [
+   "At the camera intersections, rear-end collisions rose slightly while side-impact collisions fell sharply.",
+   "The 20 intersections were chosen for cameras because they had unusually high numbers of collisions in the year before installation.",
+   "Fines from the cameras have produced substantial revenue for the city.",
+   "Most Westbrook drivers say they support the use of red-light cameras.",
+   "Several other cities in the region have also installed red-light cameras."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: intersections picked because of an unusually bad year would tend to see fewer collisions afterward even without cameras, since unusually high numbers usually move back toward normal. The 30 percent drop may therefore overstate the cameras' effect, and ordinary intersections, which are not starting from a spike, may see little change. (A) is a common objection, but the stated 30 percent drop already counts all collisions, so the shift in type does not undo it. (C) concerns revenue, not safety. (D) reports opinions, not effects. (E) describes other cities without giving their results.",
+  "trap": "(A) is tempting because rear-end collisions are a well-known side effect of cameras, but the overall total still fell by 30 percent.",
+  "time": 135
+ },
+ {
+  "id": "cr1-038",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 4,
+  "stimulus": "In a laboratory study, mice fed a diet containing compound R lived 15 percent longer on average than mice fed the same diet without compound R. A supplement company that sells compound R in pill form concludes that taking compound R will extend human lifespans.",
+  "stem": "Which of the following, if true, most seriously weakens the company's conclusion?",
+  "choices": [
+   "Compound R is expensive to produce in large quantities.",
+   "Many supplements that work in mice have never been tested in humans.",
+   "A few of the mice given compound R developed minor skin irritation.",
+   "Both groups of mice were kept in identical cages under identical conditions.",
+   "Compound R made the food taste bitter, so the mice given it ate about 20 percent less, and eating less food alone is known to lengthen the lives of mice."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: it gives another explanation for the result. The longer lives may come from eating less, not from compound R itself, so people taking R in a pill would not get the benefit. (A) concerns cost, not effectiveness. (B) points out a general gap in testing, but untested is not the same as ineffective, so it weakens far less than (E). (C) describes a minor side effect unrelated to lifespan. (D) strengthens the study by ruling out differences in living conditions.",
+  "trap": "(B) is tempting because it questions the mouse-to-human leap, but it is a general caution that gives no reason to think compound R in particular would fail.",
+  "time": 135
+ },
+ {
+  "id": "cr1-039",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 4,
+  "stimulus": "A consulting firm studied 500 companies of various sizes and found that those with a chief sustainability officer (CSO) had higher average profit margins than those without one. The firm advises companies that want higher profit margins to appoint a CSO.",
+  "stem": "Which of the following, if true, most seriously weakens the firm's advice?",
+  "choices": [
+   "CSOs are generally paid less than other senior executives.",
+   "Some companies with a CSO had low profit margins.",
+   "The study included companies from a wide range of industries.",
+   "Companies usually create a CSO position only after they become profitable enough to afford senior roles not tied directly to revenue.",
+   "Investors increasingly favor companies with strong sustainability programs."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: it reverses the causal direction. If high profits lead companies to hire a CSO, the CSO is a result of profitability, not a cause, and appointing one will not raise margins. (A) concerns salary levels and does not address the causal link. (B) is expected with averages; some exceptions do not undo the overall pattern. (C) makes the study broader, which if anything strengthens it. (E) suggests a way a CSO could help a company, which supports the advice.",
+  "trap": "(B) is tempting because it offers counterexamples, but an average can be higher even when some companies in the group perform poorly.",
+  "time": 135
+ },
+ {
+  "id": "cr1-040",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 5,
+  "stimulus": "Over the past decade, average household income in Corvia rose 20 percent after adjusting for inflation, according to official statistics. A columnist concludes from these figures that the typical Corvian household is now considerably better off financially than it was a decade ago.",
+  "stem": "Which of the following, if true, most seriously weakens the columnist's conclusion?",
+  "choices": [
+   "Corvia's population grew during the decade.",
+   "Household savings rates in Corvia stayed about the same over the decade.",
+   "Nearly all of the increase in average household income went to the highest-earning 5 percent of households.",
+   "Average household income in neighboring countries rose more than 20 percent over the decade.",
+   "In surveys, most Corvians said they felt better off than they had a decade earlier."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: an average can rise sharply because of gains at the top while the typical, middle household sees little change. If almost all of the gain went to the top 5 percent, the typical household may not be better off at all. (A) does not show how income is distributed; the figures are already per household. (B) suggests no change in saving behavior, which neither supports nor undermines the claim. (D) compares Corvia with other countries, but the conclusion concerns Corvians then versus now. (E) supports the columnist.",
+  "trap": "(D) is tempting because it makes Corvia's gain look modest, but being outpaced by neighbors does not mean the typical Corvian household is no better off.",
+  "time": 150
+ },
+ {
+  "id": "cr1-041",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 5,
+  "stimulus": "Hospital administrator: Our new triage system has cut the average time patients wait before seeing a doctor in our emergency department from 90 minutes to 50 minutes. Shorter waits mean earlier treatment, so the new system has improved outcomes for our emergency patients.",
+  "stem": "Which of the following, if true, most seriously weakens the administrator's argument?",
+  "choices": [
+   "The new triage system cost more to put in place than the previous system.",
+   "Under the new system, patients with the most serious conditions wait longer than before, while patients with minor problems are seen much faster.",
+   "Patient satisfaction scores in the emergency department rose after the change.",
+   "Average waiting times at other hospitals in the region also fell over the same period.",
+   "Some patients still waited more than two hours to see a doctor."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: an average can fall while the patients who most need fast care are seen later. Outcomes depend most on how quickly seriously ill patients are treated, so if their waits got longer, outcomes may have worsened even as the average improved. (A) concerns cost, not outcomes. (C) is about satisfaction, which if anything supports the administrator. (D) concerns other hospitals; the premise already credits this hospital's drop to its own system. (E) is expected with any average and does not show that outcomes failed to improve.",
+  "trap": "(E) is tempting because long individual waits sound bad, but a few outliers are consistent with a lower average and better overall outcomes.",
+  "time": 150
+ },
+ {
+  "id": "cr1-042",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "weaken",
+  "diff": 5,
+  "stimulus": "A software company surveyed its customers and found that those who had contacted its customer support team at least once in the past year rated their overall satisfaction lower than customers who had never contacted support. The company concludes that its support team is lowering customer satisfaction and plans to retrain the team.",
+  "stem": "Which of the following, if true, most seriously weakens the company's conclusion?",
+  "choices": [
+   "Customers generally contact support only after running into a problem with the software, and such problems themselves lower satisfaction.",
+   "Customers who contacted support more than five times gave the lowest satisfaction ratings of all.",
+   "Retraining the support team would cost relatively little.",
+   "Customers of competing software companies give their support teams similar ratings.",
+   "Response rates to the survey were about the same for customers who had and had not contacted support."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: it provides an alternative explanation. The customers who contact support are the ones who had problems, and the problems, not the support team, may account for their lower satisfaction. (B) fits the company's view and the alternative equally well, so it does not weaken the conclusion. (C) concerns the cost of the plan, not whether the diagnosis is right. (D) is about other companies and does not explain the gap within this company's customers. (E) rules out a survey bias, which slightly strengthens the conclusion.",
+  "trap": "(B) can seem to point away from the support team, but frequent contact going with low ratings is just as consistent with poor support as with software problems.",
+  "time": 150
+ },
+ {
+  "id": "cr1-043",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 1,
+  "stimulus": "Book sales at an independent bookstore have been flat for several years. The owner plans to open a small cafe inside the store. She expects that customers will stay in the store longer and, as a result, buy more books, which will increase the store's book sales.",
+  "stem": "Which of the following would it be most useful to know in order to evaluate the owner's expectation?",
+  "choices": [
+   "Whether the cafe will serve coffee as well as tea",
+   "How many books the store currently has in stock",
+   "Whether customers at bookstores with cafes spend more on books than customers at similar bookstores without cafes",
+   "What the most popular book genre in the store is",
+   "Whether the cafe's prices will be lower than those of a cafe down the street"
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: the owner's expectation is that a cafe will lead to more book purchases. Evidence from comparable stores would show directly whether cafes tend to raise book spending: a yes supports the plan, a no undermines it. (A) concerns the menu, which does not tell us whether book sales rise. (B) is about inventory size, not customer behavior. (D) concerns which books sell, not whether a cafe increases sales. (E) compares cafe prices with a competitor, which bears on cafe sales, not book sales.",
+  "trap": "(E) is tempting because competition affects the cafe, but the owner's goal is more book sales, not a profitable cafe.",
+  "time": 90
+ },
+ {
+  "id": "cr1-044",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 2,
+  "stimulus": "A company began offering free flu vaccinations to its employees at work. During the following flu season, employees took 20 percent fewer sick days than during the previous flu season. Management concludes that the vaccinations reduced the number of sick days taken.",
+  "stem": "Which of the following would it be most useful to determine in order to evaluate management's conclusion?",
+  "choices": [
+   "Whether employees found the on-site vaccinations convenient",
+   "How much the company spent on the vaccination program",
+   "Whether flu vaccines are also available at local pharmacies",
+   "Whether employees took more vacation days during the flu season",
+   "Whether the flu season was less severe in the region than the season before"
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: if the flu season was much milder, sick days could have fallen without the vaccinations. If the season was as severe or worse, the vaccinations become a more convincing explanation. Either answer changes how we judge the argument. (A) concerns convenience, which might affect uptake but not whether the drop came from vaccination. (B) concerns cost, which is irrelevant to the cause of the drop. (C) is about other places to get vaccinated and does not explain the change. (D) concerns vacation days, which are counted separately from sick days.",
+  "trap": "(A) seems relevant because convenience affects how many people get vaccinated, but it does not test whether the vaccinations caused the drop.",
+  "time": 105
+ },
+ {
+  "id": "cr1-045",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 3,
+  "stimulus": "The city of Grantley wants to reverse a slow decline in its population. It plans to attract new residents by cutting property taxes by 10 percent. City officials argue that lower property taxes make owning a home in Grantley more affordable, so more families will choose to move there.",
+  "stem": "Which of the following would it be most useful to know in order to evaluate the officials' argument?",
+  "choices": [
+   "Whether the tax cut will force reductions in public services, such as schools, that families consider when choosing where to live",
+   "Whether a majority of current Grantley residents support the tax cut",
+   "What property tax rates are in other countries",
+   "Whether Grantley's population has grown over the past several decades",
+   "Whether property taxes in Grantley are paid once or twice a year"
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: a tax cut makes homes cheaper to own, but if it leads to worse schools and services, families may find Grantley less attractive overall. Knowing whether such cuts will follow is central to judging whether more families will move in. (B) concerns current residents' opinions, not the choices of potential newcomers. (C) involves other countries, which are not relevant to families choosing among nearby places. (D) describes past growth, which does not show how this policy will work. (E) is a payment detail that does not change affordability.",
+  "trap": "(D) is tempting because past growth seems to predict future growth, but it says nothing about the effect of the tax cut.",
+  "time": 120
+ },
+ {
+  "id": "cr1-046",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 3,
+  "stimulus": "Regulators banned commercial cod fishing in the coastal waters off Merrin for five years to allow the cod population to recover. At the end of the five years, the cod population there was still well below its historical level. Some fishing groups argue that the ban failed and should be lifted.",
+  "stem": "Which of the following would it be most useful to know in order to evaluate the fishing groups' argument?",
+  "choices": [
+   "Whether recreational anglers in Merrin support lifting the ban",
+   "How the price of cod changed during the five years",
+   "Whether cod is the most commercially valuable fish caught off Merrin",
+   "Whether cod populations in comparable waters that stayed open to fishing declined further during the same period",
+   "How many fishing boats are registered in Merrin"
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: the groups judge the ban only by whether cod returned to historical levels. The right question is how cod would have fared without the ban. If populations in similar open waters fell further, the ban protected cod and lifting it could cause harm. If they did just as well, the ban may indeed have achieved little. (A) is about opinions, not effects. (B) concerns prices, which do not show whether the population recovered because of the ban. (C) explains why cod matters economically, not whether the ban worked. (E) describes the fleet's size, not the ban's effect.",
+  "trap": "(C) is tempting because economic stakes drive the debate, but value does not tell us whether the ban helped the cod population.",
+  "time": 120
+ },
+ {
+  "id": "cr1-047",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 4,
+  "stimulus": "A restaurant chain plans to increase its profits by adding a premium steak dish priced 50 percent above its usual main courses. The chain expects many customers to order the dish, since its surveys show that customers want higher-quality options on the menu.",
+  "stem": "Which of the following would it be most useful to know in order to evaluate the chain's plan?",
+  "choices": [
+   "Whether competing restaurant chains offer premium dishes",
+   "Whether customers who would order the premium dish would otherwise have ordered a standard main course that earns the chain more profit per plate",
+   "Whether the survey asked customers about their household incomes",
+   "Whether the premium dish will use beef from local farms",
+   "Whether customers rated the existing menu favorably"
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: the goal is higher profit, not merely sales of the new dish. If most premium orders replace standard orders that earn more per plate, profits could fall even if the dish is popular. Knowing this tells us whether the plan meets its goal. (A) concerns competitors and does not show what this chain's customers will do. (C) is a survey detail that would help only indirectly. (D) concerns sourcing, which may affect quality but not the profit question directly. (E) is about the existing menu's reputation, which does not reveal the effect of the new dish.",
+  "trap": "(E) is tempting because satisfaction with the current menu seems related, but it does not tell us how the new dish affects profit.",
+  "time": 135
+ },
+ {
+  "id": "cr1-048",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 4,
+  "stimulus": "Cars are one of the largest sources of air pollution in the country. To cut this pollution, the national government will offer a rebate of 5,000 dollars to anyone who buys a new electric car. Officials predict that the rebate will substantially reduce national car emissions within five years.",
+  "stem": "Which of the following would it be most useful to know in order to evaluate the officials' prediction?",
+  "choices": [
+   "Whether electric cars are quieter than gasoline cars",
+   "Whether most electric cars sold in the country are made by domestic manufacturers",
+   "How the rebate compares in size with government rebates for home solar panels",
+   "Whether electric cars need less maintenance than gasoline cars",
+   "What proportion of the rebates would go to buyers who would have bought an electric car even without the rebate"
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: the rebate reduces emissions only if it changes behavior. If most rebates go to people who would have bought electric cars anyway, few gasoline cars are replaced and emissions fall little. If most go to people persuaded by the rebate, the prediction is more plausible. (A) concerns noise, not emissions. (B) is about where the cars are made, which matters to industry policy, not to emissions. (C) compares two programs without telling us whether this one works. (D) concerns maintenance costs, which affect buyers' budgets but say nothing about how much the rebate changes buying.",
+  "trap": "(D) is tempting because lower costs might attract buyers, but it does not measure how much the rebate itself changes buying decisions.",
+  "time": 135
+ },
+ {
+  "id": "cr1-049",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 5,
+  "stimulus": "CEO of a clothing retailer: This year our online sales grew 40 percent while our in-store sales fell 5 percent. To maximize total profit, we should close a third of our stores and invest the money we save in improving our website.",
+  "stem": "Which of the following would it be most useful to know in order to evaluate the CEO's plan?",
+  "choices": [
+   "Whether online sales grew faster in the first half of the year than in the second half",
+   "Whether competing retailers have closed stores in the past year",
+   "To what extent online customers first visit the retailer's stores to see or try on items before buying them online",
+   "What percentage of the retailer's employees work in its stores",
+   "Whether the retailer's website was redesigned during the year"
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: the plan treats stores and the website as separate channels. If many online buyers first visit stores to see or try on clothes, closing stores could reduce online sales too, undermining the expected profit gain. If few do, the plan is more sensible. (A) concerns timing within the year and says little about the plan's effect on profit. (B) describes what competitors did, which does not show whether closing stores is right for this retailer. (D) describes staffing but does not show how closings affect profit. (E) is past history and does not show how additional investment will pay off.",
+  "trap": "(B) is tempting because industry trends feel informative, but competitors' choices do not reveal how this retailer's sales channels depend on each other.",
+  "time": 150
+ },
+ {
+  "id": "cr1-050",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "evaluate",
+  "diff": 5,
+  "stimulus": "Several studies have found that people who take vitamin D supplements have lower rates of a certain respiratory infection than people who do not. A national health agency therefore proposes recommending that every adult take a daily vitamin D supplement in order to reduce infection rates.",
+  "stem": "Which of the following would it be most useful to know in order to evaluate the agency's proposal?",
+  "choices": [
+   "Whether the lower infection rates were found mainly among people who had been low in vitamin D before taking supplements",
+   "Whether the body can make vitamin D from sunlight",
+   "Whether vitamin D supplements are sold without a prescription",
+   "Whether the infection is more common in winter than in summer",
+   "Whether other vitamins have been studied for their effect on the infection"
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: the proposal targets every adult. If the benefit appears only among people who were deficient, supplements would do little for the many adults who already have enough vitamin D, and a narrower recommendation might make more sense. If the benefit is broad, the universal plan is better supported. (B) is a fact about vitamin D, but by itself it does not show who would benefit from supplements. (C) concerns availability, not effectiveness. (D) describes the seasonal pattern of the infection without showing whether supplements reduce it. (E) concerns other vitamins, which are outside the proposal.",
+  "trap": "(B) is tempting because sunlight suggests some people need no supplement, but on its own it does not show how the supplement's benefit is distributed across adults.",
+  "time": 150
+ },
+ {
+  "id": "cr1-051",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 1,
+  "stimulus": "Factory F makes a single product. In 2025, Factory F produced 10,000 units of its product at a total cost of 500,000 dollars. In 2026, Factory F produced 12,000 units of the same product at a total cost of 540,000 dollars. The factory made no other products in either year.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "Factory F's revenue was higher in 2026 than in 2025.",
+   "Factory F's average cost per unit was lower in 2026 than in 2025.",
+   "Factory F employed more workers in 2026 than in 2025.",
+   "Factory F charged a lower price per unit in 2026 than in 2025.",
+   "Factory F's total cost rose by more than 10 percent from 2025 to 2026."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: average cost per unit was 500,000 / 10,000 = 50 dollars in 2025 and 540,000 / 12,000 = 45 dollars in 2026, so it fell. (A) cannot be determined because no information is given about prices or sales. (C) cannot be determined; output could rise without more workers. (D) is unknown, since prices are never mentioned. (E) is false: total cost rose by 40,000 / 500,000 = 8 percent.",
+  "trap": "(A) is tempting because output rose, but producing more units says nothing about how many were sold or at what price.",
+  "time": 90
+ },
+ {
+  "id": "cr1-052",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 2,
+  "stimulus": "The Linwood Clinic runs several programs for its patients. Everyone enrolled in the clinic's diabetes program attends the clinic's weekly nutrition sessions. No one who attends the weekly nutrition sessions smokes. Some members of the clinic's walking group are enrolled in the diabetes program.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "No member of the walking group smokes.",
+   "Everyone who attends the weekly nutrition sessions is enrolled in the diabetes program.",
+   "Some people enrolled in the diabetes program are not in the walking group.",
+   "Some members of the walking group do not smoke.",
+   "Everyone in the walking group attends the weekly nutrition sessions."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: some walking group members are in the diabetes program; everyone in the program attends the nutrition sessions; and no one who attends the sessions smokes. So those walking group members do not smoke. (A) goes too far; walking group members outside the program could smoke. (B) reverses the first statement; session attendees need not all be in the program. (C) cannot be determined; every program member might be in the walking group. (E) also overreaches, since only some walking group members are known to attend.",
+  "trap": "(A) is tempting because the chain of statements links the walking group to non-smoking, but it covers only some members.",
+  "time": 105
+ },
+ {
+  "id": "cr1-053",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 2,
+  "stimulus": "Several companies compete in the national market for tablet computers. Over the past year, Company G's share of that market, measured by the number of units sold, rose from 20 percent to 25 percent. During the same period, the total number of tablet computers sold nationally fell.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "Company G's competitors, taken together, sold fewer tablets than they had the year before.",
+   "Company G sold more tablets than it had the year before.",
+   "Company G's revenue from tablets increased.",
+   "Company G's tablets are cheaper than most competing tablets.",
+   "Every one of Company G's competitors sold fewer tablets than the year before."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: competitors' combined share fell from 80 percent to 75 percent of a market that also shrank. A smaller share of a smaller total must be a smaller number. (B) is not certain: if the market shrank by more than 20 percent, 25 percent of the new total could be less than 20 percent of the old one. (C) cannot be determined without price information. (D) is unsupported; no prices are given. (E) is too strong; the competitors as a group sold fewer, but one competitor could still have grown.",
+  "trap": "(B) is tempting because a higher share sounds like more sales, but share can rise even as unit sales fall in a shrinking market.",
+  "time": 105
+ },
+ {
+  "id": "cr1-054",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 3,
+  "stimulus": "Whenever the water temperature in Lake Avira is above 22°C and the concentration of phosphorus in its water is above 30 micrograms per liter, an algae bloom occurs in the lake. Throughout July and August of last year, the lake's water temperature was above 22°C, but no algae bloom occurred.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "If phosphorus levels in Lake Avira are kept below 30 micrograms per liter, algae blooms will never occur there.",
+   "The phosphorus concentration in Lake Avira was above 30 micrograms per liter in June of last year.",
+   "Water temperature has a greater effect on algae blooms in Lake Avira than phosphorus does.",
+   "If the water temperature next summer is higher than last summer's, an algae bloom will occur.",
+   "At no time during July and August of last year was the phosphorus concentration in Lake Avira above 30 micrograms per liter."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: high temperature together with high phosphorus guarantees a bloom. Temperature was high throughout July and August, so if phosphorus had been above 30 at any point then, a bloom would have occurred. Since none did, phosphorus stayed at or below 30 the whole time. (A) treats the two conditions as necessary when the passage says only that together they are sufficient; blooms might occur in other ways. (B) concerns June, about which nothing is said. (C) compares the factors' influence, which the passage does not address. (D) ignores phosphorus; heat alone is not stated to cause a bloom.",
+  "trap": "(A) is tempting because phosphorus seems to be the key, but 'whenever' makes the two conditions sufficient for a bloom, not required for one.",
+  "time": 120
+ },
+ {
+  "id": "cr1-055",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 3,
+  "stimulus": "In Province Q, only households with annual incomes below 40,000 dollars are eligible for the housing subsidy, and every household receiving the subsidy is eligible. Last year, the number of households receiving the subsidy rose, while the number of households in the province with incomes below 40,000 dollars fell.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "Average household income in Province Q rose last year.",
+   "The rules for receiving the housing subsidy were changed last year.",
+   "The proportion of households with incomes below 40,000 dollars that receive the subsidy rose last year.",
+   "Total spending on the housing subsidy rose last year.",
+   "Some households with incomes above 40,000 dollars received the subsidy last year."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: all recipients have incomes below 40,000 dollars, so recipients are a subset of that group. The number of recipients rose while the size of the group fell, so the share of low-income households receiving the subsidy must have risen. (A) is not certain; fewer low-income households does not guarantee a higher average, since other incomes could fall. (B) is a possible explanation, but more eligible households might simply have applied. (D) is unknown because the amount per household could have dropped. (E) contradicts the statement that every recipient is eligible.",
+  "trap": "(B) is tempting because a rule change is the most natural explanation, but it does not have to be true.",
+  "time": 120
+ },
+ {
+  "id": "cr1-056",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 3,
+  "stimulus": "The Northside Fitness Club offers members a swimming pool, group exercise classes and a weight room. A survey of all of the club's members found that 60 percent of members use the club's swimming pool and 50 percent attend its group exercise classes. Every member answered the survey.",
+  "stem": "If the survey results are accurate, which of the following must be true of the club's members?",
+  "choices": [
+   "Exactly 10 percent of members both use the pool and attend group classes.",
+   "At least 10 percent of members both use the pool and attend group classes.",
+   "Most members who attend group classes also use the pool.",
+   "At least 40 percent of members neither use the pool nor attend group classes.",
+   "Some members neither use the pool nor attend group classes."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: 60 percent plus 50 percent is 110 percent, so at least 10 percent must be counted in both groups. (A) is too precise; the overlap could be anywhere from 10 to 50 percent. (C) is not certain: with a 10 percent overlap, only 10 of the 50 percent in classes use the pool, which is 20 percent of class attendees. (D) is false as a requirement; at most 40 percent can use neither, and the share could be as low as 0. (E) is not certain either; with a 10 percent overlap, every member uses at least one facility.",
+  "trap": "(A) is tempting because 110 minus 100 gives exactly 10, but that number is only the minimum possible overlap.",
+  "time": 120
+ },
+ {
+  "id": "cr1-057",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 4,
+  "stimulus": "Over the past decade in Nation V, the average wage of workers without a college degree rose 10 percent after adjusting for inflation, while the average wage of workers with a college degree rose 25 percent after adjusting for inflation. During the same period, the share of workers with a college degree rose from 30 percent to 40 percent.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "The average inflation-adjusted wage of all workers in Nation V rose by more than 10 percent.",
+   "The number of workers without a college degree in Nation V decreased.",
+   "More workers in Nation V held college degrees at the end of the decade than at the start.",
+   "The ratio of the average inflation-adjusted wage of degree holders to that of workers without degrees increased.",
+   "Employers in Nation V value college degrees more than they did a decade ago."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: if the degree holders' average wage is multiplied by 1.25 and the other group's by 1.10, the ratio between them is multiplied by 1.25 / 1.10, which is greater than 1. (A) is the trap: it would follow if degree holders earned at least as much as non-degree holders, but the passage never compares their wage levels. If degree holders earned far less, the shift toward them could even pull the overall average down. (B) and (C) concern numbers of workers, but only shares are given; the workforce could have grown or shrunk. (E) is an explanation the data do not establish.",
+  "trap": "(A) feels certain because both groups gained at least 10 percent, but a change in the mix of workers can move the overall average in either direction.",
+  "time": 135
+ },
+ {
+  "id": "cr1-058",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 4,
+  "stimulus": "In a study of 1,000 adults who were deliberately exposed to a common cold virus, participants who usually slept fewer than six hours a night were twice as likely to develop a cold as participants who usually slept more than seven hours a night.",
+  "stem": "Which of the following is most strongly supported by the information above?",
+  "choices": [
+   "Among the participants who slept more than seven hours, the proportion who developed a cold was half the proportion among those who slept fewer than six hours.",
+   "Most of the participants who developed a cold usually slept fewer than six hours a night.",
+   "Sleeping more than seven hours a night protects people from catching colds.",
+   "Participants who slept between six and seven hours had a risk of catching a cold between those of the other two groups.",
+   "If a person who sleeps fewer than six hours begins sleeping more than seven, that person's risk of catching a cold will be cut in half."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: 'twice as likely' compares the proportions of each group that got sick, so the longer sleepers' rate was half the shorter sleepers' rate. This simply restates the finding in another form. (B) is unsupported because the sizes of the groups are not given; if few participants slept under six hours, they could account for a minority of the colds. (C) and (E) draw causal conclusions from an association. (D) concerns a group the passage says nothing about.",
+  "trap": "(B) is tempting because a higher likelihood sounds like more cases, but without group sizes we cannot tell which group produced most of the colds.",
+  "time": 135
+ },
+ {
+  "id": "cr1-059",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 4,
+  "stimulus": "Lumen Corporation's revenue rose 8 percent last year compared with the year before, but its net profit fell. Lumen's spending on raw materials was exactly the same as in the previous year, and it paid no more in taxes than in the previous year.",
+  "stem": "Which of the following is most strongly supported by the statements above?",
+  "choices": [
+   "Lumen's labor costs rose last year.",
+   "Lumen sold more units of its products last year than the year before.",
+   "Lumen's net profit last year was negative.",
+   "Lumen raised the prices of its products last year.",
+   "At least some of Lumen's costs other than raw materials and taxes increased last year."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: net profit is revenue minus all costs. Revenue rose, raw material spending was unchanged and taxes did not increase, yet profit fell. The only way this can happen is if some other cost rose by more than the revenue gain. (A) names one specific cost, but the increase could have come from marketing, interest or something else. (B) and (D) are each possible sources of higher revenue, but neither is required, since revenue could rise through either. (C) is unsupported; profit fell, but it may still be positive.",
+  "trap": "(A) is tempting because labor is a familiar cost, but the passage supports only that some other cost rose, not which one.",
+  "time": 135
+ },
+ {
+  "id": "cr1-060",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 5,
+  "stimulus": "Biologists have catalogued dozens of species in the beetle genus Carabis. Every known species of Carabis is either nocturnal or lives in caves. No cave-dwelling Carabis species has functional wings. Several Carabis species recently found and catalogued on Island T have functional wings.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "No Carabis species on Island T lives in caves.",
+   "All nocturnal Carabis species have functional wings.",
+   "Some Carabis species on Island T are nocturnal.",
+   "Some cave-dwelling Carabis species are also nocturnal.",
+   "Every Carabis species on Island T is nocturnal."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: the winged species on Island T are now known species, so each is either nocturnal or cave-dwelling. Having wings rules out cave-dwelling, so those species must be nocturnal. (A) is the trap: the winged species do not live in caves, but other, wingless Carabis species on the island might. (B) reverses the logic; nocturnal species may or may not have wings. (D) cannot be determined, since the passage does not say whether a species can be both. (E) overreaches for the same reason as (A): wingless island species could be cave-dwellers that are not nocturnal.",
+  "trap": "(A) is tempting because winged species cannot live in caves, but the statements say nothing about the island's other Carabis species.",
+  "time": 150
+ },
+ {
+  "id": "cr1-061",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 5,
+  "stimulus": "The government of Country R spent 18 percent of its total budget on health care in 2020 and 22 percent of its total budget on health care in 2025. Over the same period, Country R's total budget, adjusted for inflation, decreased. The budget covers all of the government's spending.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "Country R's inflation-adjusted spending on health care rose from 2020 to 2025.",
+   "Country R's inflation-adjusted spending on everything other than health care, taken together, was lower in 2025 than in 2020.",
+   "Health care costs in Country R rose faster than the general rate of inflation.",
+   "Country R spent less on defense in 2025 than in 2020, after adjusting for inflation.",
+   "Country R's inflation-adjusted total budget fell by less than 18 percent."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: spending other than health care was 82 percent of the 2020 budget and 78 percent of a smaller 2025 budget. A smaller share of a smaller total must be a smaller amount. (A) is the trap: 22 percent of a smaller budget may or may not exceed 18 percent of the larger one, depending on how much the budget fell. (C) is unsupported; the passage says nothing about costs, only spending. (D) concerns one category; non-health spending fell as a whole, but defense in particular could have risen. (E) is not given; the size of the decline is unknown.",
+  "trap": "(A) is tempting because health care's share grew, but a larger share of a shrinking budget is not necessarily a larger amount.",
+  "time": 150
+ },
+ {
+  "id": "cr1-062",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "inference",
+  "diff": 5,
+  "stimulus": "Last year every customer who bought Pixa's premium camera also bought Pixa's extended warranty, which is sold for all of Pixa's products. Fewer than half of the customers who bought the extended warranty bought the premium camera. Pixa sold the premium camera to 4,000 customers last year.",
+  "stem": "If the statements above are true, which of the following must also be true?",
+  "choices": [
+   "Pixa sold more of its other cameras than of its premium camera last year.",
+   "Most customers who bought the extended warranty bought it with a camera other than the premium camera.",
+   "Fewer than half of Pixa's customers bought the extended warranty last year.",
+   "Pixa sold the extended warranty to more than 8,000 customers last year.",
+   "Revenue from the extended warranty exceeded revenue from the premium camera last year."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: all 4,000 premium camera buyers bought the warranty, and they make up fewer than half of warranty buyers. So warranty buyers number more than 2 x 4,000 = 8,000. (B) is the trap: most warranty buyers did not buy the premium camera, but the warranty is sold for all Pixa products, so many may have bought it with a printer, lens or other item rather than another camera. (A) is unsupported, for the same reason. (C) cannot be determined because the total number of Pixa customers is not given. (E) cannot be determined without price information.",
+  "trap": "(B) is tempting because Pixa is known for cameras, but the warranty is sold with all its products, so other buyers need not have bought cameras.",
+  "time": 150
+ },
+ {
+  "id": "cr1-063",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "flaw",
+  "diff": 1,
+  "stimulus": "Pine Hardware hired a new store manager in March after the previous manager retired. In April, the store's sales were the highest of any month in its 30-year history. The owner concludes that the new manager's leadership caused the record sales.",
+  "stem": "Which of the following most accurately describes a flaw in the owner's reasoning?",
+  "choices": [
+   "It draws a conclusion about all hardware stores from evidence about a single store.",
+   "It criticizes the previous manager rather than evaluating the new manager's work.",
+   "It assumes that because one event was followed by another, the first event caused the second.",
+   "It assumes that what is true of the store as a whole must be true of each department in it.",
+   "It treats a condition that is necessary for record sales as if it were enough to guarantee them."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: the only evidence is timing. Sales hit a record the month after the manager arrived, but the owner ignores other possible causes, such as seasonal spring demand, a local building boom or a promotion. (A) is wrong because the conclusion is about this store only. (B) is wrong because the previous manager is never mentioned. (D) describes a part-whole error that the argument does not make. (E) describes a necessary/sufficient confusion, but no necessary condition is discussed.",
+  "trap": "(A) is tempting because a single month at a single store is thin evidence, but the owner never generalizes beyond this store.",
+  "time": 90
+ },
+ {
+  "id": "cr1-064",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "flaw",
+  "diff": 1,
+  "stimulus": "Fitness blogger: Many of my readers have asked whether they should try the FreshStart diet, which has become popular this year. My answer is that the FreshStart diet cannot be effective. After all, the doctor who created it was once fined for misleading advertising about an unrelated vitamin product.",
+  "stem": "Which of the following most accurately describes a flaw in the blogger's reasoning?",
+  "choices": [
+   "It assumes that because two events happened together, one caused the other.",
+   "It relies on the results of a study with too few participants.",
+   "It assumes what it sets out to prove.",
+   "It generalizes from a few dieters' experiences to all dieters.",
+   "It rejects a claim by attacking the person behind it rather than examining evidence about the claim itself."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: the blogger dismisses the diet because of its creator's past conduct with an unrelated product, without looking at any evidence about whether the diet works. (A) is wrong because no correlation between two events is used as evidence. (B) and (D) are wrong because the blogger cites no study or dieters' experiences at all. (C) is wrong because the conclusion is supported by a separate premise, however weak, rather than by restating itself.",
+  "trap": "(C) is tempting because the argument feels unsupported, but it does offer a premise; the problem is that the premise is about the person, not the diet.",
+  "time": 90
+ },
+ {
+  "id": "cr1-065",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "flaw",
+  "diff": 2,
+  "stimulus": "Marketing director: Last month, a survey posted on our company's website asked visitors which brand of running shoes they prefer. Of the respondents, 85 percent said they prefer our brand to any competing brand. Clearly, most runners in the country prefer our brand.",
+  "stem": "The director's reasoning is flawed because it",
+  "choices": [
+   "draws a conclusion about runners in general from a sample that is unlikely to be representative of them",
+   "assumes that runners who prefer a brand will always buy it",
+   "confuses the cause of a preference with its effect",
+   "relies on the opinion of an expert outside his field",
+   "fails to define the term 'competing brand'"
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: people who visit a company's website and answer its survey are likely to be existing fans of the brand, so their views probably do not reflect runners in general. (B) is wrong because the argument concerns preference, not purchasing. (C) is wrong because no cause-and-effect claim is made. (D) is wrong because no expert opinion is cited. (E) points to vagueness, but the meaning of 'competing brand' is clear enough and is not what weakens the argument.",
+  "trap": "(B) is tempting because preference and purchase are easy to mix up, but the director's conclusion is only about preference.",
+  "time": 105
+ },
+ {
+  "id": "cr1-066",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "flaw",
+  "diff": 2,
+  "stimulus": "Business association spokesperson: The government has proposed twelve new workplace rules covering matters such as record keeping and signage. Each of the twelve rules is inexpensive for a business to comply with. So the rules as a whole would impose only a small burden on businesses.",
+  "stem": "Which of the following most accurately describes a flaw in the spokesperson's reasoning?",
+  "choices": [
+   "It assumes that all businesses are the same size.",
+   "It relies on the government's own estimate of compliance costs.",
+   "It ignores the possibility that some businesses already follow the rules.",
+   "It assumes that because each part has a certain property, the whole must have that property as well.",
+   "It treats an increase in costs as if it were a decrease."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: twelve inexpensive rules can add up to a substantial combined cost, and the rules may interact in ways that raise costs further. The spokesperson assumes the whole shares the property of its parts. (A) is wrong because the argument does not depend on business size. (B) is wrong because no source for cost estimates is mentioned. (C) would, if anything, make the burden smaller, so ignoring it does not undermine the conclusion. (E) misdescribes the argument, which never claims costs fall.",
+  "trap": "(C) is tempting because it names an overlooked possibility, but that possibility supports, rather than undercuts, the spokesperson's conclusion.",
+  "time": 105
+ },
+ {
+  "id": "cr1-067",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "flaw",
+  "diff": 3,
+  "stimulus": "Opponent of a proposed bike lane network: Supporters claim that bike lanes make cycling safer. But after the city of Marlow built a network of bike lanes, the number of accidents involving cyclists there increased. So bike lanes do not make cycling safer.",
+  "stem": "The opponent's reasoning is most vulnerable to criticism on the grounds that it",
+  "choices": [
+   "relies on evidence from a single city to draw a general conclusion",
+   "fails to consider that the number of people cycling in Marlow may have risen sharply after the lanes were built",
+   "assumes that supporters of bike lanes have a financial interest in them",
+   "treats the absence of evidence for a claim as evidence against it",
+   "fails to say how many bike lanes Marlow built"
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: safety is about the risk per cyclist or per trip, not the total number of accidents. If many more people started cycling, accidents could rise even while each cyclist became safer. (A) is a reasonable concern, but one counterexample can be valid evidence; the deeper problem is using raw totals. (C) is wrong because the opponent does not mention supporters' motives. (D) is wrong because the opponent offers evidence, not a lack of it. (E) points to a missing detail that would not repair the argument's central gap.",
+  "trap": "(A) is tempting because one city seems a small sample, but even a large sample of raw accident totals would have the same problem.",
+  "time": 120
+ },
+ {
+  "id": "cr1-068",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "flaw",
+  "diff": 3,
+  "stimulus": "Agricultural scientist: Twelve separate studies have examined whether the pesticide Florazine harms honeybees, and none of them found statistically significant harm to the bees. Therefore Florazine is safe for honeybees, and the concerns that beekeepers have raised about it are unfounded.",
+  "stem": "Which of the following most accurately describes a flaw in the scientist's reasoning?",
+  "choices": [
+   "It relies on studies that were funded by the manufacturer of the pesticide.",
+   "It assumes that honeybees are the only insects affected by pesticides.",
+   "It treats the failure to find evidence of harm as proof that there is no harm.",
+   "It ignores the economic benefits of using Florazine.",
+   "It uses the term 'safe' in two different senses."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: studies that fail to detect significant harm do not prove safety. They may have been too short, too small or designed to measure the wrong effects. The scientist moves from 'no harm was found' to 'there is no harm'. (A) introduces funding, which the argument never mentions. (B) is wrong because the conclusion concerns only honeybees. (D) would be irrelevant even if true, since benefits do not bear on safety. (E) is wrong because 'safe' is used only once.",
+  "trap": "(A) is tempting because industry funding is a familiar source of bias, but nothing in the argument says who paid for the studies.",
+  "time": 120
+ },
+ {
+  "id": "cr1-069",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "flaw",
+  "diff": 3,
+  "stimulus": "Sales director: Most of the salespeople who rank among our top performers each year have MBA degrees. Therefore, if we change our hiring policy so that we hire only candidates who hold MBA degrees, most of the new salespeople we hire will become top performers.",
+  "stem": "The director's reasoning is flawed because it",
+  "choices": [
+   "fails to consider that MBA programs differ in quality",
+   "assumes that top performers would perform equally well at other companies",
+   "relies on a definition of 'top performer' that is too narrow",
+   "ignores the cost of hiring candidates with MBA degrees",
+   "treats evidence that most top performers have MBAs as if it showed that most people with MBAs are top performers"
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: the fact that most top performers have MBAs says nothing about what share of MBA holders become top performers. If most salespeople at the company have MBAs, top performers will too, even if most MBA holders perform only averagely. (A) is a possible concern, but the argument would fail even if all programs were equal. (B) is irrelevant because the argument concerns only this company. (C) is wrong; no definition is given or relied on. (D) shifts to cost, which is not the reasoning error.",
+  "trap": "(A) is tempting because it questions MBAs, but the core error is reversing the direction of the percentages.",
+  "time": 120
+ },
+ {
+  "id": "cr1-070",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "flaw",
+  "diff": 4,
+  "stimulus": "Health official: Five years ago, 20 percent of the flu cases reported in our city occurred among people who had been vaccinated against the flu. This year, the figure was 35 percent. This shows that the flu vaccine has become less effective at preventing the flu.",
+  "stem": "Which of the following most accurately describes a flaw in the official's reasoning?",
+  "choices": [
+   "It assumes that the flu virus is the same from year to year.",
+   "It fails to consider that a much larger share of the city's population may have been vaccinated this year than five years ago.",
+   "It ignores the possibility that some flu cases were never reported.",
+   "It relies on data from only two years.",
+   "It assumes that people who get vaccinated are healthier than people who do not."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: if far more people are vaccinated, vaccinated people will make up a larger share of flu cases even if the vaccine works just as well. With nearly everyone vaccinated, almost all cases would occur among the vaccinated. The official needs infection rates within each group, not the share of cases. (A) is an assumption the official need not make, since the claim concerns the vaccine's results. (D) is a weakness, but more years of the same statistic would not fix the error. (C) is unlikely to explain the change unless reporting differs by vaccination status. (E) is not assumed anywhere.",
+  "trap": "(D) is tempting because two data points seem thin, but adding years of the same misleading percentage would not repair the argument.",
+  "time": 135
+ },
+ {
+  "id": "cr1-071",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "flaw",
+  "diff": 5,
+  "stimulus": "Editorial: The school board is considering a new after-school tutoring program for the district's lowest-performing schools. But the program will not by itself close the achievement gap between those schools and the rest of the district, because the gap also results from differences in funding and family income. So the board should not adopt the program.",
+  "stem": "The editorial's reasoning is most vulnerable to criticism on the grounds that it",
+  "choices": [
+   "treats the fact that a measure will not fully solve a problem as showing that the measure should not be adopted",
+   "assumes that the achievement gap has only one cause",
+   "fails to consider how much the tutoring program would cost",
+   "presumes without justification that differences in funding cannot be reduced",
+   "relies on a vague, undefined term, 'achievement gap'"
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: the editorial argues that because the program cannot close the gap on its own, it should be rejected. But a measure can be worthwhile if it narrows the gap, even if other measures are also needed. (B) is wrong; the editorial explicitly says the gap has several causes. (C) names a real consideration, but the editorial's conclusion does not rest on cost, so the omission is not its flaw. (D) is wrong because the editorial never claims funding gaps are permanent. (E) is wrong because the term is used clearly enough and the argument does not turn on its meaning.",
+  "trap": "(C) is tempting because cost would matter to a real decision, but the editorial's stated reasoning fails even if the program were free.",
+  "time": 150
+ },
+ {
+  "id": "cr1-072",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "flaw",
+  "diff": 5,
+  "stimulus": "Marketing vice president: Last quarter we emailed a discount offer only to customers who had made a purchase in the previous 30 days. During the quarter, customers who received the email bought an average of three more items than customers who did not. The email campaign clearly increased purchases, so we should send such offers more often.",
+  "stem": "Which of the following most accurately describes a flaw in the vice president's reasoning?",
+  "choices": [
+   "It fails to establish that the additional purchases were profitable once the discount was taken into account.",
+   "It assumes that every customer who received the email read it.",
+   "It compares two groups that differed, apart from receiving the email, in a way likely to be related to how much they buy.",
+   "It overlooks the possibility that some customers who did not receive the email bought many items.",
+   "It draws a conclusion from a single quarter of data."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: the email went only to recent buyers, who are likely to buy more than other customers whether or not they receive an offer. The difference in purchases may reflect who got the email rather than what it did. (A) raises profitability, but the vice president's central claim is that the email increased purchases; that claim is flawed even if the extra sales were profitable. (B) is not assumed; an average effect can arise even if only some recipients read the email. (D) does not affect a comparison of averages. (E) is a minor concern compared with the built-in difference between the groups.",
+  "trap": "(A) is tempting because discounts can erode margins, but the main inference, that the email caused more purchases, is undermined by how the groups were chosen.",
+  "time": 150
+ },
+ {
+  "id": "cr1-073",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "explain",
+  "diff": 1,
+  "stimulus": "An online home goods shop tracks both the number of visitors to its website and its total sales each month. Last month the number of visitors rose 20 percent compared with the month before, yet the shop's total sales for the month fell.",
+  "stem": "Which of the following, if true, most helps to explain the situation described above?",
+  "choices": [
+   "The shop added several new product lines last month.",
+   "A technical fault made the shop's checkout page unavailable for ten days last month.",
+   "Most of the shop's visitors arrive by searching for products on a search engine.",
+   "The shop's sales usually rise during the months before major holidays.",
+   "The shop lowered its shipping charges last month."
+  ],
+  "answer": 1,
+  "explanation": "(B) is correct: if customers could not complete purchases for ten days, sales could fall even as more people visited the site. (A) would, if anything, be expected to increase sales. (C) describes how visitors arrive, which does not explain why more visitors bought less. (D) would make the drop harder to explain, unless we knew last month was not before a holiday. (E) should make buying more attractive and so deepens the puzzle.",
+  "trap": "(A) is tempting because new products change the shop, but more products would normally raise sales, not lower them.",
+  "time": 90
+ },
+ {
+  "id": "cr1-074",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "explain",
+  "diff": 2,
+  "stimulus": "Country H keeps national records of cancer diagnoses and deaths. Over the past 20 years, the number of reported cases of a certain cancer in Country H has doubled. Over the same period, the rate of death from this cancer, measured per 100,000 people, has fallen substantially.",
+  "stem": "Which of the following, if true, most helps to resolve the apparent discrepancy described above?",
+  "choices": [
+   "The population of Country H has grown slowly over the past 20 years.",
+   "Treatments for many other types of cancer have also improved in recent decades.",
+   "People in Country H now smoke less than they did 20 years ago.",
+   "The cancer is more common among older people than among younger people.",
+   "A screening test introduced 20 years ago detects the cancer at an early, highly treatable stage, including many small tumors that previously would have gone unnoticed."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: better screening explains both trends. Many more cases are found, including small ones that once went undetected, and finding them early makes them easier to treat, so fewer people die. (A) suggests slow population growth, which does not explain a doubling of cases. (B) concerns other cancers. (C) would tend to reduce both cases and deaths, so it does not explain why cases rose. (D) helps explain more cases in an aging population, but not why deaths fell.",
+  "trap": "(D) is tempting because an aging population can raise case numbers, but it does nothing to explain the falling death rate.",
+  "time": 105
+ },
+ {
+  "id": "cr1-075",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "explain",
+  "diff": 2,
+  "stimulus": "When gasoline prices rose sharply in Country K last year, sales of large, fuel-hungry new cars fell compared with the year before. Yet the total number of new cars of all kinds sold in Country K last year rose compared with the year before.",
+  "stem": "Which of the following, if true, most helps to explain the situation described above?",
+  "choices": [
+   "Car manufacturers raised the prices of large cars last year.",
+   "Many people use public transit when gasoline prices are high.",
+   "The high fuel prices led many owners of older large cars to replace them sooner than they had planned with smaller, fuel-efficient new cars.",
+   "Most car buyers in Country K finance their purchases with loans.",
+   "Gasoline prices in Country K are higher than in most neighboring countries."
+  ],
+  "answer": 2,
+  "explanation": "(C) is correct: high fuel prices made it costly to keep driving large cars, so many owners replaced them earlier than planned with small cars. That reduces large-car sales and increases total sales at the same time. (A) explains why large-car sales fell but not why total sales rose. (B) would reduce the demand for cars, deepening the puzzle. (D) describes how cars are paid for, which is unrelated to the change. (E) compares Country K with its neighbors, which does not explain last year's change.",
+  "trap": "(A) is tempting because it explains the drop in large-car sales, but it leaves the rise in total sales unexplained.",
+  "time": 105
+ },
+ {
+  "id": "cr1-076",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "explain",
+  "diff": 3,
+  "stimulus": "The city of Dunmore hoped that free public transport would reduce traffic on its roads. After the city made its buses free to ride, bus ridership rose 40 percent within a year. Yet traffic congestion on Dunmore's roads did not decrease.",
+  "stem": "Which of the following, if true, most helps to explain why congestion did not decrease?",
+  "choices": [
+   "The wages of Dunmore's bus drivers rose during the year.",
+   "The free bus service is funded through a city sales tax.",
+   "Car ownership in Dunmore fell slightly during the year.",
+   "Most of the new bus riders had previously walked or cycled rather than driven.",
+   "The city did not change any bus routes during the year."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: if the new riders were mostly former walkers and cyclists, few cars left the roads, so congestion would not drop despite the rise in ridership. (A) concerns drivers' pay, which has nothing to do with traffic. (B) explains how the service is paid for, not its effect on traffic. (C) would be expected to reduce congestion, so it deepens the puzzle. (E) is too vague; unchanged routes do not by themselves explain why more riders did not mean fewer cars.",
+  "trap": "(E) is tempting because route design affects whether drivers switch, but it does not explain why a 40 percent rise in riders took no cars off the road.",
+  "time": 120
+ },
+ {
+  "id": "cr1-077",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "explain",
+  "diff": 3,
+  "stimulus": "When farmers in a region began planting a corn variety engineered to resist its main insect pest, their use of insecticides fell sharply. Within a few years, however, insecticide use on these farms had returned to nearly its former level, even though the main pest had not developed resistance to the engineered corn.",
+  "stem": "Which of the following, if true, most helps to explain the situation described above?",
+  "choices": [
+   "Once the main pest declined, populations of other insect pests not affected by the engineered corn grew, and farmers sprayed insecticides to control them.",
+   "The engineered corn costs more to plant than conventional corn.",
+   "Some farmers in the region continued to plant conventional corn.",
+   "Insecticide prices fell during the period.",
+   "The engineered corn produces yields similar to those of conventional corn."
+  ],
+  "answer": 0,
+  "explanation": "(A) is correct: the engineered corn controls only its main pest. If other pests then flourished, farmers would need insecticides again, explaining the rebound without any resistance in the main pest. (B) concerns seed costs, which do not affect how much insecticide is needed. (C) is irrelevant because the stimulus describes farms that planted the engineered corn. (D) might encourage slightly more spraying but cannot explain a return to near former levels on its own. (E) concerns yields, not pests.",
+  "trap": "(D) is tempting because cheaper insecticide could raise use, but a price drop alone does not explain why farmers needed to spray again.",
+  "time": 120
+ },
+ {
+  "id": "cr1-078",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "explain",
+  "diff": 4,
+  "stimulus": "A supermarket chain cut the prices of all its store-brand products by 15 percent. Afterward, the chain sold more store-brand items, but the profit it earned on each store-brand item fell. Nevertheless, the chain's overall profits for the period rose compared with the period before.",
+  "stem": "Which of the following, if true, most helps to explain the situation described above?",
+  "choices": [
+   "The chain spent heavily on advertising the price cuts.",
+   "Competing supermarkets also lowered the prices of their store brands.",
+   "Store-brand sales rose most in the chain's urban stores.",
+   "Shoppers drawn by the cheaper store-brand items also bought more higher-margin products, such as fresh bakery and deli items, during their visits.",
+   "The chain's store-brand products are made by some of the same manufacturers that make name-brand products."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: if the cheaper store brands brought in shoppers who also bought high-margin items, the extra profit from those items could more than offset the lower profit on store brands. (A) increases costs and so deepens the puzzle. (B) would reduce the chain's advantage and also deepens it. (C) describes where sales rose but not how profits could rise. (E) describes how the products are made, which does not explain the change in profit.",
+  "trap": "(C) is tempting because it shows sales did rise somewhere, but where the extra sales happened does not explain how profits went up while margins fell.",
+  "time": 135
+ },
+ {
+  "id": "cr1-079",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "explain",
+  "diff": 4,
+  "stimulus": "Country S publishes official labor statistics every month. Over the past two years, the official unemployment rate in Country S fell from 7 percent to 5 percent. Yet over the same two years, the number of people in Country S who have jobs did not increase.",
+  "stem": "Which of the following, if true, most helps to explain the facts above?",
+  "choices": [
+   "Many workers in Country S moved from full-time to part-time jobs.",
+   "The population of Country S grew during the two years.",
+   "Average wages in Country S rose during the two years.",
+   "Several large companies in Country S laid off workers during the two years.",
+   "Many unemployed people in Country S stopped looking for work and so were no longer counted as unemployed."
+  ],
+  "answer": 4,
+  "explanation": "(E) is correct: the unemployment rate counts only people looking for work. If many jobless people gave up searching, they left the count, and the rate fell even though no one gained a job. (A) changes the type of jobs but not the number of people employed or unemployed. (B) would tend to raise the number of job seekers, deepening the puzzle. (C) concerns wages, not the number of people working. (D) would increase unemployment, which makes the falling rate harder to explain.",
+  "trap": "(A) is tempting because it describes a change in the job market, but people working part-time still count as employed, so the numbers do not change.",
+  "time": 135
+ },
+ {
+  "id": "cr1-080",
+  "sec": "verbal",
+  "type": "cr",
+  "qtype": "explain",
+  "diff": 5,
+  "stimulus": "The death rate among heart surgery patients at Regional Hospital is higher than at Lakeside Clinic, a nearby specialty clinic. Yet cardiologists in the area who are familiar with both institutions consistently refer their own heart surgery patients to Regional Hospital rather than to Lakeside Clinic.",
+  "stem": "Which of the following, if true, most helps to explain the cardiologists' behavior?",
+  "choices": [
+   "Regional Hospital performs more heart surgeries each year than Lakeside Clinic does.",
+   "Patients often prefer Regional Hospital's newer facilities.",
+   "Lakeside Clinic's death rate has risen slightly over the past few years.",
+   "Within each risk category of patients, Regional Hospital's survival rate is better than Lakeside's, but most of Regional's patients are in the highest-risk category.",
+   "Regional Hospital publishes its death rates, but Lakeside Clinic does not."
+  ],
+  "answer": 3,
+  "explanation": "(D) is correct: it explains the paradox through patient mix. Regional does better than Lakeside for every type of patient, but because it treats mostly high-risk cases, its overall death rate is higher. Informed cardiologists would rightly prefer it. (A) is tempting, since experience can improve quality, but on its own it does not explain why the higher-volume hospital has more deaths. (B) concerns patients' preferences, while the puzzle is about cardiologists' referrals. (C) is a small change that leaves Lakeside's rate still lower. (E) explains what is known about each institution but not why cardiologists would favor the one with the worse record.",
+  "trap": "(A) is tempting because high volume often signals expertise, but it does not reconcile the referrals with Regional's higher death rate.",
+  "time": 150
+ }
+]

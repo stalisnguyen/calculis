@@ -1,0 +1,5 @@
+{
+  "name": "calculis",
+  "private": true,
+  "description": "Calculis - Stalis's GMAT. Static app plus Vercel functions in api/."
+}
