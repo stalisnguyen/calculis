@@ -1,7 +1,7 @@
 /* ================= INVITE CODE (REF) =================
    New people unlock AI and sync with a shared invite code (limited places, see api/ref.js) instead of the group password.
    The password box accepts either: an invite code is exchanged for a personal access key, anything else is kept as the password.
-   Whoever holds the group password sees an admin panel in Settings to set the code and the number of places. */
+   Only the owner (device key = ADMIN_PASSWORD, which also unlocks everything) sees the admin panel in Settings. */
 const REF_T={ok:(n,m)=>`Unlocked. You are number ${n} of ${m} on this invite code.`,full:m=>`This code has reached its ${m} places. Ask the person who shared it for a new one.`,slow:'Too many tries. Wait a little and try again.',
   title:'Invite code for new people',note:'New people enter this code instead of the group password. Each gets a personal key, and the code closes when the places run out. People already using the group password are not affected. A new code starts counting from 0.',
   used:(u,m)=>`${u}/${m} places used`,copy:'Copy invite',none:'No invite code yet. Set one below (4 to 24 letters, digits or dashes).',ph:'e.g. STALIS50',save:'Save code',
