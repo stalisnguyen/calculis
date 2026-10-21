@@ -184,7 +184,7 @@ VIEWS.settings=el=>{
    <div class="panel"><h3>Display and sound</h3><div class="tg-list">${uiToggleHTML()}</div></div>
    <div class="panel"><h3>Sync and AI tutor</h3>
      <div class="kv"><span>Progress sync</span><b>${syTxt}</b></div><div class="kv"><span>AI tutor</span><b>${aiTxt}</b></div>
-     ${WEB&&(!getKey()||syncState==='off')?'<button class="btn primary sm" id="stKey" style="align-self:flex-start">Enter group password</button>':''}
+     ${WEB&&(!getKey()||syncState==='off')?'<button class="btn primary sm" id="stKey" style="align-self:flex-start">Enter invite code or group password</button>':''}
      ${WEB&&getKey()?'<button class="btn ghost sm" id="stOut" style="align-self:flex-start">Forget the password on this device</button>':''}
      <details class="adv"><summary>Advanced</summary><p class="note">The AI tutor runs on Groq and sync on Upstash Redis, configured with Vercel environment variables: APP_PASSWORD, GROQ_API_KEY, KV_REST_API_URL, KV_REST_API_TOKEN.</p></details></div>
    <div class="panel"><h3>About</h3><div class="row"><button class="btn sm" id="stHi">Meet Max again</button><button class="btn sm" id="stReset">Reset my progress</button></div>

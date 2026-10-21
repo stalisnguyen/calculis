@@ -1211,11 +1211,11 @@ async function initPlatform(){
 }
 function askPassword(wrong){
   return new Promise(res=>{
-    const m=modal(`<h2>Group password</h2>
-      <p class="note">${wrong?'That password did not work. Try again.':'Enter the group password to unlock the AI tutor and sync your progress across devices. Each device asks only once.'}</p>
-      <form id="pwF" class="row"><input type="password" id="pwI" autocomplete="current-password" placeholder="Password" style="flex:1 1 200px"><button class="btn primary" type="submit">Unlock</button></form>`);
+    const m=modal(`<h2>Invite code or group password</h2>
+      <p class="note">${wrong?'That password did not work. Try again.':'Enter your invite code or the group password to unlock the AI tutor and sync your progress across devices. Each device asks only once.'}</p>
+      <form id="pwF" class="row"><input type="password" id="pwI" autocomplete="current-password" placeholder="Invite code or password" style="flex:1 1 200px"><button class="btn primary" type="submit">Unlock</button></form><p class="small" id="pwMsg" style="color:var(--bad,#c33)"></p>`);
     let done=false; const fin=v=>{if(done)return;done=true;res(v);};
-    $('#pwF',m.el).onsubmit=e=>{e.preventDefault();const v=$('#pwI',m.el).value.trim();if(!v)return;setKey(v);m.close();fin(true);};
+    $('#pwF',m.el).onsubmit=async e=>{e.preventDefault();const v=$('#pwI',m.el).value.trim();if(!v)return;if(await refSubmit(v,m)){m.close();fin(true);}};
     const obs=new MutationObserver(()=>{if(!document.body.contains(m.el)){obs.disconnect();fin(false);}});obs.observe(document.body,{childList:true});
     setTimeout(()=>$('#pwI',m.el).focus(),50);
   });
@@ -2499,7 +2499,7 @@ VIEWS.settings=el=>{
    <div class="panel"><h3>Display and sound</h3><div class="tg-list">${uiToggleHTML()}</div></div>
    <div class="panel"><h3>Sync and AI tutor</h3>
      <div class="kv"><span>Progress sync</span><b>${syTxt}</b></div><div class="kv"><span>AI tutor</span><b>${aiTxt}</b></div>
-     ${WEB&&(!getKey()||syncState==='off')?'<button class="btn primary sm" id="stKey" style="align-self:flex-start">Enter group password</button>':''}
+     ${WEB&&(!getKey()||syncState==='off')?'<button class="btn primary sm" id="stKey" style="align-self:flex-start">Enter invite code or group password</button>':''}
      ${WEB&&getKey()?'<button class="btn ghost sm" id="stOut" style="align-self:flex-start">Forget the password on this device</button>':''}
      <details class="adv"><summary>Advanced</summary><p class="note">The AI tutor runs on Groq and sync on Upstash Redis, configured with Vercel environment variables: APP_PASSWORD, GROQ_API_KEY, KV_REST_API_URL, KV_REST_API_TOKEN.</p></details></div>
    <div class="panel"><h3>About</h3><div class="row"><button class="btn sm" id="stHi">Meet Max again</button><button class="btn sm" id="stReset">Reset my progress</button></div>
@@ -2681,6 +2681,47 @@ async function uiFriendsCard(){
   side.insertAdjacentHTML('beforeend',`<button class="panel fr-mini" id="hmFr"><span class="label">Study group this week</span>${rows.map((x,i)=>`<span class="fr-r ${x.slug===me?'me':''}"><span class="num">${i+1}</span><span class="fr-mc">${foxSVG('calm',30,x.rank||0)}</span><b>${esc(x.name)}</b><span class="num muted">${x.wxp} XP</span></span>`).join('')}</button>`);
   $('#hmFr').onclick=()=>go('friends');
 }
+
+/* ================= INVITE CODE (REF) =================
+   New people unlock AI and sync with a shared invite code (limited places, see api/ref.js) instead of the group password.
+   The password box accepts either: an invite code is exchanged for a personal access key, anything else is kept as the password.
+   Whoever holds the group password sees an admin panel in Settings to set the code and the number of places. */
+const REF_T={ok:(n,m)=>`Unlocked. You are number ${n} of ${m} on this invite code.`,full:m=>`This code has reached its ${m} places. Ask the person who shared it for a new one.`,slow:'Too many tries. Wait a little and try again.',
+  title:'Invite code for new people',note:'New people enter this code instead of the group password. Each gets a personal key, and the code closes when the places run out. People already using the group password are not affected. A new code starts counting from 0.',
+  used:(u,m)=>`${u}/${m} places used`,copy:'Copy invite',none:'No invite code yet. Set one below (4 to 24 letters, digits or dashes).',ph:'e.g. STALIS50',save:'Save code',
+  total:n=>`Personal keys issued so far: ${n}.`,share:(u,c)=>`Link: ${u}\nInvite code: ${c}\nTap the AI tutor or the "Enter invite code" button in Settings, then paste the code.`,copied:'Invite copied.',saved:'Invite code saved.',bad:'Could not save. Use 4 to 24 letters, digits or dashes.'};
+async function refRedeem(code){
+  try{const r=await fetch('api/ref',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'redeem',code})});
+    const j=await r.json().catch(()=>({}));
+    if(r.ok&&j.token)return j; if(r.status===410)return {full:true,max:j.max}; if(r.status===429)return {slow:true};
+    return {invalid:true};}catch(e){return {invalid:true};}
+}
+/* used by askPassword: returns true when the modal may close */
+async function refSubmit(v,m){
+  const msg=$('#pwMsg',m.el), btn=$('#pwF button',m.el); if(btn)btn.disabled=true;
+  const r=await refRedeem(v); if(btn)btn.disabled=false;
+  if(r.token){setKey(r.token);toast(REF_T.ok(r.n,r.max),4500);return true;}
+  if(r.full){if(msg)msg.textContent=REF_T.full(r.max);return false;}
+  if(r.slow){if(msg)msg.textContent=REF_T.slow;return false;}
+  setKey(v);return true;
+}
+async function refAdmin(el){
+  if(!getKey()||/^[a-f0-9]{40}$/.test(getKey()))return;
+  let s;try{const r=await fetch('api/ref',{method:'POST',headers:{'content-type':'application/json','x-app-key':getKey()},body:JSON.stringify({action:'status'})});if(!r.ok)return;s=await r.json();}catch(e){return;}
+  const host=$('.view',el)||el; if(!document.body.contains(host)||$('#refAdm',host))return;
+  const box=document.createElement('div');box.className='panel';box.id='refAdm';
+  const draw=()=>{box.innerHTML=`<h3>${REF_T.title}</h3><p class="note">${REF_T.note}</p>
+    ${s.code?`<div class="row" style="align-items:center;gap:10px"><b style="font-size:22px;letter-spacing:.06em">${esc(s.code)}</b><span class="pill">${REF_T.used(s.used,s.max)}</span><button class="btn sm" id="refCp">${REF_T.copy}</button></div>`:`<p class="small">${REF_T.none}</p>`}
+    <form class="row" id="refF" style="margin-top:8px"><input type="text" id="refC" value="${esc(s.code||'')}" placeholder="${REF_T.ph}" maxlength="24" style="flex:1 1 160px;text-transform:uppercase"><input type="number" id="refM" value="${s.max||50}" min="1" max="1000" style="width:90px"><button class="btn primary" type="submit">${REF_T.save}</button></form>
+    <p class="small muted" id="refMsg">${REF_T.total(s.issued)}</p>`;
+    const cp=$('#refCp',box);if(cp)cp.onclick=()=>{const t=REF_T.share(location.origin,s.code);try{navigator.clipboard.writeText(t);toast(REF_T.copied);}catch(e){prompt('',t);}};
+    $('#refF',box).onsubmit=async e=>{e.preventDefault();const code=$('#refC',box).value.trim(),max=+$('#refM',box).value||50;
+      try{const r=await fetch('api/ref',{method:'POST',headers:{'content-type':'application/json','x-app-key':getKey()},body:JSON.stringify({action:'set',code,max})});
+        if(!r.ok){$('#refMsg',box).textContent=REF_T.bad;return;}s=await r.json();draw();toast(REF_T.saved);}catch(err){$('#refMsg',box).textContent=REF_T.bad;}};
+  };
+  draw();host.appendChild(box);
+}
+{const _set=VIEWS.settings;VIEWS.settings=function(el){const r=_set.apply(this,arguments);Promise.resolve(r).then(()=>refAdmin(el));return r;};}
 
 /* ================= boot ================= */
 async function boot(){
