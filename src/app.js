@@ -183,7 +183,7 @@ async function api(path,{method='POST',body}={}){
     try{r=await fetch(path,{method,headers:hd,body:body?JSON.stringify(body):undefined});}catch(e){throw {code:'network'};}
     if(r.status===401){setKey('');const ok=await askPassword(true);if(!ok)throw {code:'not_granted'};continue;}
     if(r.status===402){if(path.includes('sync'))throw {code:'inactive'};const ok=await askPassword(false);if(!ok)throw {code:'not_granted'};continue;}
-    if(r.status===429)throw {code:'rate_limited'};
+    if(r.status===429){const j=await r.json().catch(()=>({}));throw {code:j.error==='daily_limit'?'daily_limit':'rate_limited',data:j};}
     if(r.status===403||(r.status===400&&path.includes('sync'))){const ok=await askPin(r.status===403&&WHO&&WHO.pin);if(!ok)throw {code:'not_granted'};continue;}
     const j=await r.json().catch(()=>({}));
     if(!r.ok)throw {code:j.error||'upstream',data:j.data};
@@ -218,6 +218,8 @@ function aiError(e){
   const c=e&&e.code;
   if(c==='no_ai')return 'The AI tutor is not switched on on the server yet (needs APP_PASSWORD and GROQ_API_KEY in Vercel).';
   if(c==='not_granted')return 'Enter the group password to use this.';
+  if(c==='daily_limit')return `You have used today's ${(e.data&&e.data.limit)||50} AI turns. New turns open at midnight (Vietnam time).`;
+  if(c==='inactive')return 'This account does not have AI access right now.';
   if(c==='rate_limited')return 'The free AI quota is used up for the moment. Try again in a little while.';
   if(c==='no_key')return 'No AI key on the server yet (GROQ_API_KEY).';
   if(c==='no_password')return 'No group password on the server yet (APP_PASSWORD).';

@@ -8,7 +8,8 @@ const AUTH_T={loc:"en",
   or:"or enter an invite code or the group password",
   needCode:"This account has not unlocked the AI tutor and sync yet. Enter an invite code (or the group password) once, then sign in on any device.",
   access:"Access",
-  beta:"Beta member, full access",
+  owner:"Owner, unlimited",
+  betaEnded:"The free beta has ended",
   none:"AI tutor and sync not unlocked",
   ended:"Trial ended",
   enterCode:"Enter invite code",
@@ -23,12 +24,15 @@ const AUTH_T={loc:"en",
   noGis:"Could not load the Google sign-in button. Check your connection or ad blocker, then reload the page.",
   adm:"Google accounts",
   admTrial:"Free trial days for new accounts (0 = off, keep 0 during the beta)",
+  admLimit:"AI turns per person per day",
+  admBeta:"Last free day of the beta",
   admSave:"Save",
   admSaved:"Saved.",
   hi:n=>`Hi ${n}, you are signed in.`,
   trial:d=>`Free trial until ${d}`,
   paid:d=>`Paid, until ${d}`,
-  admN:n=>`${n} accounts have signed in.`};
+  admN:n=>`${n} accounts have signed in.`,
+  beta:d=>`Beta member, free until ${d}`};
 const AUTH_CID='764861746953-4nsjobj6ca8cm8tpt5srgo03u18hpjs2.apps.googleusercontent.com';
 const acctGet=()=>{try{const a=JSON.parse(localStorage.getItem('calculis-acct')||'null');return a&&getKey()&&a.k===getKey().slice(0,8)?a:null;}catch(e){return null;}};
 const acctSet=a=>{try{a?localStorage.setItem('calculis-acct',JSON.stringify(Object.assign({},a,{k:getKey().slice(0,8)}))):localStorage.removeItem('calculis-acct');}catch(e){}};
@@ -59,11 +63,13 @@ async function authButton(box,onAcct,onErr){
   box.innerHTML='';
   google.accounts.id.renderButton(box,{theme:'outline',size:'large',text:'signin_with',shape:'pill',locale:AUTH_T.loc,width:250});
 }
-const authDate=t=>new Date(t).toLocaleDateString(AUTH_T.loc==='vi'?'vi-VN':'en-GB',{day:'numeric',month:'numeric',year:'numeric'});
+const authDate=t=>new Date(t).toLocaleDateString(AUTH_T.loc==='vi'?'vi-VN':'en-GB',{day:'numeric',month:'numeric',year:'numeric',timeZone:'Asia/Ho_Chi_Minh'});
 function acctLine(a){
-  if(a.beta)return AUTH_T.beta;
+  if(a.owner)return AUTH_T.owner;
+  if(a.beta&&a.betaUntil>Date.now())return AUTH_T.beta(authDate(a.betaUntil-1));
   if(a.paidUntil>Date.now())return AUTH_T.paid(authDate(a.paidUntil));
   if(a.trialEnd>Date.now())return AUTH_T.trial(authDate(a.trialEnd));
+  if(a.beta)return AUTH_T.betaEnded;
   return a.trialEnd?AUTH_T.ended:AUTH_T.none;
 }
 const acctFace=a=>`<div class="acct-row">${a.pic?`<img src="${esc(a.pic)}" alt="" referrerpolicy="no-referrer">`:''}<div><b>${esc(a.name||a.email)}</b><div class="small muted">${esc(a.email)}</div></div></div>`;
@@ -119,10 +125,16 @@ async function authAdmin(host){
   let s;try{const r=await fetch('api/ref',{method:'POST',headers:{'content-type':'application/json','x-app-key':getKey()},body:JSON.stringify({action:'status'})});if(!r.ok)return;s=await r.json();}catch(e){return;}
   if(!document.body.contains(host)||$('#acAdm',host))return;
   const b=document.createElement('div');b.className='panel';b.id='acAdm';
+  const day=t=>{const d=new Date(t-1+7*36e5);return d.toISOString().slice(0,10);};
   b.innerHTML=`<h3>${AUTH_T.adm}</h3><p class="small">${AUTH_T.admN(s.accounts||0)}</p>
-    <form class="row" id="acTF"><label class="small" style="flex:1 1 220px">${AUTH_T.admTrial}</label><input type="number" id="acT" min="0" max="30" value="${s.trial||0}" style="width:80px"><button class="btn sm" type="submit">${AUTH_T.admSave}</button></form>`;
+    <form id="acTF" style="display:grid;gap:8px">
+      <label class="row small" style="justify-content:space-between">${AUTH_T.admLimit}<input type="number" id="acL" min="1" max="500" value="${s.ailimit||50}" style="width:90px"></label>
+      <label class="row small" style="justify-content:space-between">${AUTH_T.admBeta}<input type="date" id="acB" value="${day(s.betaUntil)}" style="width:160px"></label>
+      <label class="row small" style="justify-content:space-between">${AUTH_T.admTrial}<input type="number" id="acT" min="0" max="30" value="${s.trial||0}" style="width:90px"></label>
+      <button class="btn sm" type="submit" style="justify-self:start">${AUTH_T.admSave}</button></form>`;
   $('#acTF',b).onsubmit=async e=>{e.preventDefault();
-    try{const r=await fetch('api/ref',{method:'POST',headers:{'content-type':'application/json','x-app-key':getKey()},body:JSON.stringify({action:'set',trial:+$('#acT',b).value||0})});
+    const body={action:'set',trial:+$('#acT',b).value||0,ailimit:+$('#acL',b).value||50,betaLast:$('#acB',b).value};
+    try{const r=await fetch('api/ref',{method:'POST',headers:{'content-type':'application/json','x-app-key':getKey()},body:JSON.stringify(body)});
       toast(r.ok?AUTH_T.admSaved:REF_T.bad);}catch(err){toast(REF_T.bad);}};
   host.appendChild(b);
 }
