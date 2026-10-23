@@ -2501,7 +2501,7 @@ VIEWS.settings=el=>{
    <div class="panel"><h3>Sync and AI tutor</h3>
      <div class="kv"><span>Progress sync</span><b>${syTxt}</b></div><div class="kv"><span>AI tutor</span><b>${aiTxt}</b></div>
      ${WEB&&(!getKey()||syncState==='off')?'<button class="btn primary sm" id="stKey" style="align-self:flex-start">Enter invite code or group password</button>':''}
-     ${WEB&&getKey()?'<button class="btn ghost sm" id="stOut" style="align-self:flex-start">Forget the password on this device</button>':''}
+     ${WEB&&getKey()?'<div class="row" style="gap:8px"><button class="btn sm" id="stChg">Change password or code on this device</button><button class="btn ghost sm" id="stOut">Remove the password from this device</button></div>':''}
      <details class="adv"><summary>Advanced</summary><p class="note">The AI tutor runs on Groq and sync on Upstash Redis, configured with Vercel environment variables: APP_PASSWORD, GROQ_API_KEY, KV_REST_API_URL, KV_REST_API_TOKEN.</p></details></div>
    <div class="panel"><h3>About</h3><div class="row"><button class="btn sm" id="stHi">Meet Max again</button><button class="btn sm" id="stReset">Reset my progress</button></div>
      <p class="note">Calculis, Stalis's GMAT. All questions, passages, lessons and explanations are original practice material written in the GMAT Focus Edition format; they are not official GMAT questions. Scores are estimates. GMAT is a trademark of GMAC, which is not affiliated with this app.</p></div>
@@ -2510,7 +2510,8 @@ VIEWS.settings=el=>{
   $('#stPlan').onclick=plSettings;$('#stWho').onclick=switchProfile;
   uiToggles(el);
   const k=$('#stKey');if(k)k.onclick=async()=>{const ok=await askPassword(false);if(ok){await initPlatform();VIEWS.settings(el);}};
-  const o=$('#stOut');if(o)o.onclick=()=>{setKey('');toast('Password removed from this device.');VIEWS.settings(el);};
+  const ch=$('#stChg');if(ch)ch.onclick=async()=>{const ok=await askPassword(false);if(ok){await initPlatform();VIEWS.settings(el);toast('Changed. This device now uses the new password or code.');}};
+  const o=$('#stOut');if(o)o.onclick=()=>{if(!confirm('This device will lose the AI tutor and sync until you enter a password or code again. Progress saved on this device stays. Remove?'))return;setKey('');toast('Password removed from this device.');VIEWS.settings(el);};
   $('#stHi').onclick=()=>uiIntro(true);
   $('#stReset').onclick=async()=>{if(!await confirmBox('Reset all progress?','This clears your answers, error log, mocks, flashcards and XP for '+esc(uiName())+' on every device. It cannot be undone.','Reset everything','Keep my progress'))return;
     const keep={settings:P.settings,plan:P.plan};P=Object.assign(structuredClone(DEFAULT),keep);P.upd=Date.now();P.reset=Date.now();store.set(PKEY(),P);
