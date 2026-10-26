@@ -1,5 +1,5 @@
 /* ================= PROFILES + STUDY GROUP =================
-   Each learner: name + slug + personal PIN (web sync). Group password (APP_PASSWORD) is shared.
+   Each learner: name + slug + the account they sign in with (web sync). Older devices may still hold a group password + PIN.
    Board: api/board returns everyone's weekly XP, streak, rank and score estimate. */
 function uiName(){return WHO&&WHO.name?WHO.name:'there';}
 function uiMonday(){const t=today();return ymd(t-((new Date(t).getDay()+6)%7)*DAY);}
@@ -37,22 +37,23 @@ async function setProfile(name,pin,key){
   route();return true;
 }
 function profileForm(fresh){
-  return `<div class="pf"><label class="pf-l">Your name<input type="text" id="pfN" maxlength="30" placeholder="e.g. Stalis" value="${fresh?'':esc(WHO?WHO.name:'')}"></label>
-    <label class="pf-l">Personal PIN (4 to 6 digits)<input type="password" inputmode="numeric" id="pfP" maxlength="6" placeholder="Keeps your progress yours"></label>
-    ${getKey()?'':`<label class="pf-l">Group password (to sync across devices)<input type="password" id="pfK" autocomplete="current-password" placeholder="Shared by the group"></label>`}
-    <p class="pf-n">Sign in with the same Google account on another device to pick up exactly where you left off.</p></div>`;
+  return `<div class="pf"><label class="pf-l">Your name<input type="text" id="pfN" maxlength="30" placeholder="e.g. Alex" value="${fresh?'':esc(WHO?WHO.name:'')}"></label></div>`;
 }
 function switchProfile(){
-  const m=modal(`<h2>Switch learner</h2><p class="note">Sharing a device? Each person enters their own name and PIN. Progress is kept separately.</p>${profileForm(true)}<div class="row"><button class="btn primary" id="pfGo">Continue</button></div>`);
-  $('#pfGo',m.el).onclick=async()=>{const n=$('#pfN',m.el).value.trim(),p=$('#pfP',m.el).value.trim();if(!slugOf(n)){toast('Type a name first.');return;}if(p&&p.length<4){toast('The PIN needs 4 to 6 digits.');return;}const k=$('#pfK',m.el);m.close();await setProfile(n,p,k&&k.value.trim());toast('Hi '+n+'!');};
+  const a=typeof acctGet==='function'&&acctGet();
+  if(a){const m=modal(`<h2>Switch learner</h2><p class="note">This device is signed in as <b>${esc(a.email||a.name||'')}</b>. To let someone else study here, sign out, then type their name. They sign in with their own Google account to keep their own progress.</p><div class="row"><button class="btn primary" id="pfOut">Sign out and switch</button><button class="btn ghost" id="pfNo">Cancel</button></div>`);
+    $('#pfNo',m.el).onclick=()=>m.close();
+    $('#pfOut',m.el).onclick=async()=>{m.close();await authLogout();await initPlatform();switchProfile();};return;}
+  const m=modal(`<h2>Switch learner</h2><p class="note">Sharing a device? Each person types their own name and their progress is kept separately on this device. Sign in with Google to continue on other devices.</p>${profileForm(true)}<div class="row"><button class="btn primary" id="pfGo">Start</button></div>`);
+  $('#pfGo',m.el).onclick=async()=>{const n=$('#pfN',m.el).value.trim();if(!slugOf(n)){toast('Type a name first.');return;}m.close();await setProfile(n,'');toast('Hi '+n+'!');};
 }
 
 /* ---------- study group view ---------- */
-let BOARD=null, BOARD_AT=0;
+let BOARD=null, BOARD_AT=0, BOARD_ME='';
 async function boardLoad(force){
   if(!WEB||!WEB.sync||!getKey())return null;
   if(!force&&BOARD&&Date.now()-BOARD_AT<60000)return BOARD;
-  try{const j=await api('api/board',{method:'GET'});BOARD=(j.list||[]);BOARD_AT=Date.now();}catch(e){return BOARD;}
+  try{const j=await api('api/board',{method:'GET'});BOARD=(j.list||[]);BOARD_ME=j.me||'';BOARD_AT=Date.now();}catch(e){return BOARD;}
   return BOARD;
 }
 function boardRows(list){
@@ -63,14 +64,14 @@ function boardRows(list){
 VIEWS.friends=async el=>{
   const link=location.origin&&location.protocol.startsWith('http')?location.origin:'https://calculis.vercel.app';
   const invite=`<div class="panel"><h3>Invite a friend</h3>
-    <ol class="inv"><li>Send them <b>${esc(link.replace(/^https?:\/\//,''))}</b> and an invite code (or the group password). They sign in with Google and enter it once.</li><li>They open the link, Max asks for a name and they choose a personal PIN.</li><li>One group password per device unlocks sync, the AI tutor and this board.</li></ol>
+    <ol class="inv"><li>Send them <b>${esc(link.replace(/^https?:\/\//,''))}</b>.</li><li>They open it, type their name and sign in with Google.</li><li>After their first lesson they show up on this board.</li></ol>
     <div class="row"><button class="btn sm" id="frCopy">${ic('repeat')} Copy invite</button><button class="btn ghost sm" id="frSw">Switch learner on this device</button></div></div>`;
   if(!WEB||!WEB.sync){el.innerHTML=`<div class="view">${mcSay('idea','The study group board needs sync on the server. Once it is on, everyone shows up here.',64)}${invite}</div>`;bindInv();return;}
   if(!getKey()){el.innerHTML=`<div class="view">${mcSay('hi','Sign in with Google (or enter an invite code) to see how everyone is doing.',64)}<button class="btn primary" id="frKey" style="align-self:flex-start">Sign in or enter a code</button>${invite}</div>`;
     $('#frKey').onclick=async()=>{if(await askPassword(false)){await initPlatform();VIEWS.friends(el);}};bindInv();return;}
   el.innerHTML='<div class="view"><p class="note">Loading the board...</p></div>';
   const list=boardRows((await boardLoad(true))||[]);
-  const me=WHO?WHO.slug:'';
+  const me=BOARD_ME||(WHO?WHO.slug:'');
   el.innerHTML=`<div class="view">
     <div class="spread"><h2>This week</h2><span class="note">Ranked by XP since Monday</span></div>
     ${list.length?`<div class="board">${list.map((x,i)=>`<div class="bd-row ${x.slug===me?'me':''}"><span class="bd-pos num">${i+1}</span><span class="bd-mc">${foxSVG(x.today?'hi':'zzz',48,x.rank||0)}</span>
@@ -81,7 +82,7 @@ VIEWS.friends=async el=>{
     ${invite}</div>`;
   bindInv();
   function bindInv(){
-    const c=$('#frCopy');if(c)c.onclick=()=>{const t=`Prep for the GMAT with me on Calculis: ${link}\nOpen the link, enter your name and sign in with Google. I will send you an invite code separately.`;
+    const c=$('#frCopy');if(c)c.onclick=()=>{const t=`Prep for the GMAT with me on Calculis: ${link}\nOpen the link, type your name and sign in with Google.`;
       (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Invite copied.')).catch(()=>toast(t,6000));};
     const s=$('#frSw');if(s)s.onclick=switchProfile;
   }
@@ -89,7 +90,7 @@ VIEWS.friends=async el=>{
 async function uiFriendsCard(){
   const side=$('.hm-side');if(!side)return;
   const list=await boardLoad(false);if(!list||list.length<2||current!=='home')return;
-  const rows=boardRows(list).slice(0,3),me=WHO?WHO.slug:'';
+  const rows=boardRows(list).slice(0,3),me=BOARD_ME||(WHO?WHO.slug:'');
   if($('#hmFr'))return;
   side.insertAdjacentHTML('beforeend',`<button class="panel fr-mini" id="hmFr"><span class="label">Study group this week</span>${rows.map((x,i)=>`<span class="fr-r ${x.slug===me?'me':''}"><span class="num">${i+1}</span><span class="fr-mc">${foxSVG('calm',30,x.rank||0)}</span><b>${esc(x.name)}</b><span class="num muted">${x.wxp} XP</span></span>`).join('')}</button>`);
   $('#hmFr').onclick=()=>go('friends');

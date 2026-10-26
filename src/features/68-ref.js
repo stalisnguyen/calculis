@@ -2,7 +2,7 @@
    New people unlock AI and sync with a shared invite code (limited places, see api/ref.js) instead of the group password.
    The password box accepts either: an invite code is exchanged for a personal access key, anything else is kept as the password.
    Whoever holds the group password sees an admin panel in Settings to set the code and the number of places. */
-const REF_T={wrong:'That invite code or password did not work. If you got the code from a post, it may not be open yet or may have changed. Ask whoever shared it for a new one.',
+const REF_T={wrong:'That invite code did not work. If you got the code from a post, it may not be open yet or may have changed. Ask whoever shared it for a new one.',
   st:{title:'Beta numbers',today:'Active today',week:'Active, last 7 days',fresh7:'New devices, 7 days',learners:'Learners with synced progress',ai7:'AI calls, 7 days',aiu:'AI users today',ret:'Came back after',retNote:'Counted per device, not per person: one person on two devices counts twice. In brackets: devices that came back over new devices on days old enough.',day:'Day',active:'Active',new:'New'},
   ok:(n,m)=>`Unlocked. You are number ${n} of ${m} on this invite code.`,full:m=>`This code has reached its ${m} places. Ask the person who shared it for a new one.`,slow:'Too many tries. Wait a little and try again.',
   title:'Invite code for new people',note:'New people enter this code instead of the group password. Each gets a personal key, and the code closes when the places run out. People already using the group password are not affected. A new code starts counting from 0.',

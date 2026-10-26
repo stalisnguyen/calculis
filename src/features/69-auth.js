@@ -4,27 +4,30 @@
    While signed in, an invite code typed in the password box unlocks the account instead of only this device. */
 const AUTH_T={loc:"en",
   title:"Account",
-  why:"Sign in with Google to keep AI tutor and sync access on every device, without typing the code again. The app only receives your name, email and profile picture.",
-  or:"or enter an invite code or the group password",
-  needCode:"This account has not unlocked the AI tutor and sync yet. Enter an invite code (or the group password) once, then sign in on any device.",
+  why:"Sign in with Google to save your progress, pick up on any device and keep AI tutor access. The app only receives your name, email and profile picture.",
+  or:"or enter an invite code",
+  needCode:"Signed in, and your progress is saved to your account. The AI tutor needs an invite code: enter it once, then sign in on any device.",
   access:"Access",
   owner:"Owner, unlimited",
   betaEnded:"The free beta has ended",
-  none:"AI tutor and sync not unlocked",
+  none:"AI tutor not unlocked",
   ended:"Trial ended",
   enterCode:"Enter invite code",
   out:"Sign out on this device",
   outQ:"Sign out on this device? Your progress on this device stays.",
   outDone:"Signed out.",
-  unlocked:"AI tutor and sync are unlocked for this account.",
-  signedNeed:"Signed in. Enter an invite code to unlock the AI tutor and sync.",
+  unlocked:"The AI tutor is unlocked for this account.",
+  signedNeed:"Signed in, your progress is saved to your account. Enter an invite code to unlock the AI tutor.",
   fail:"Could not sign in. Please try again in a few minutes.",
   slow:"Too many tries. Wait a while and try again.",
   again:"Your session has ended. Close this box and sign in again.",
   noGis:"Could not load the Google sign-in button. Check your connection or ad blocker, then reload the page.",
   nudgeTitle:"Sign in to keep your access everywhere",
-  nudgeText:"Keep AI tutor access and sync your progress across devices. The free parts work without signing in.",
+  nudgeText:"Save your progress to your account, pick up on any device and unlock the AI tutor. The free parts work without signing in.",
   later:"Later",
+  inTitle:"Keep your progress",
+  inText:"Sign in with Google so you never lose your progress and can pick up on your phone or computer. The AI tutor also needs sign-in. Not now? Your progress stays on this device.",
+  inSkip:"Not now, start learning",
   inAppTitle:"Google sign-in does not work inside the Facebook, Messenger or Zalo browser.",
   inAppSteps:"Tap the three dots in the corner, choose \"Open in browser\" (or Safari, Chrome) and sign in there. Or copy the link and paste it into your browser.",
   copyLink:"Copy link",
@@ -133,6 +136,13 @@ function authPanel(el,host){
   if(a){[ '#stChg','#stOut','#stKey'].forEach(s=>{const b=$(s,host);if(b)b.remove();});
     authPost('me').then(r=>{if(r.ok){acctSet(r.j.acct);if(document.body.contains(p))draw(acctGet());}else if(r.status===401){setKey('');acctSet(null);VIEWS.settings(el);}}).catch(()=>{});}
 }
+/* onboarding step right after the name: optional Google sign-in (next() continues the intro) */
+function introSignIn(box,next){
+  box.innerHTML=`<div class="cele-mc">${mascot('idea',96)}</div><h2>${AUTH_T.inTitle}</h2><p>${AUTH_T.inText}</p><div id="inG" class="in-g"></div><p class="small" id="inMsg"></p><button class="in-skip" type="button" id="inSkip">${AUTH_T.inSkip}</button>`;
+  $('#inSkip',box).onclick=next;
+  authButton($('#inG',box),async acct=>{toast(acct.active?AUTH_T.hi(acct.name||acct.email):AUTH_T.signedNeed,4000);const nn=$('#acNudge');if(nn)nn.remove();await initPlatform();next();},e=>{$('#inMsg',box).textContent=e;});
+}
+const introAuthWanted=()=>!!(WEB&&WEB.sync)&&!acctGet();
 /* owner only: how many accounts, and the free trial for new accounts (0 while the beta runs on invite codes) */
 async function authAdmin(host){
   if(!getKey()||$('#acAdm',host))return;

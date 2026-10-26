@@ -861,6 +861,11 @@ mark{background:var(--orange-soft);color:inherit;border-radius:4px;padding:0 2px
 .ac-nudge #acNG{min-height:40px;display:flex;align-items:center}
 .g-inapp{border:1px dashed var(--line,#ccc);border-radius:12px;padding:10px 12px;text-align:left}.g-inapp p{margin:0 0 6px}
 
+.in-g{display:flex;justify-content:center;min-height:44px;margin:6px 0}
+.in-g .g-inapp{text-align:left}
+.in-skip,.cele-in .in-skip{display:block;width:auto!important;min-width:0!important;background:none!important;border:0!important;box-shadow:none!important;color:inherit!important;margin:6px auto 0;background:none;border:0;color:inherit;font:inherit;font-weight:600;text-decoration:underline;text-underline-offset:3px;opacity:.9;padding:10px 14px;cursor:pointer}
+.in-skip:hover{opacity:1}
+
 /* ===== Calculis: question screens, charts, tables, calculator, mocks, lessons, cards, tutor ===== */
 .bf{background:var(--orange-soft);color:var(--orange-ink);font-weight:700;border-radius:4px;padding:0 3px}
 .sec-hero,.sc-hero{display:flex;gap:16px;align-items:center;justify-content:space-between;background:linear-gradient(155deg,#7A2D6B,#5A1F4E 55%,#3A1233);color:#fff;border-radius:24px;padding:18px 20px}
@@ -1252,9 +1257,9 @@ async function initPlatform(){
 function askPassword(wrong){
   return new Promise(res=>{
     const m=modal(`<h2>Sign in to unlock AI and sync</h2>
-      <p class="note">${wrong?'That password did not work. Try again.':'Sign in with Google, then enter your invite code (or the group password) to unlock the AI tutor and sync your progress across devices. Each device asks only once.'}</p>
+      <p class="note">${wrong?'That code did not work. Please check it.':'Sign in with Google to save your progress, pick up on any device and use the AI tutor. Have an invite code? Enter it below.'}</p>
       <div id="gIn"></div><p class="small muted" id="gOr"></p>
-      <form id="pwF" class="row"><input type="password" id="pwI" autocomplete="current-password" placeholder="Invite code or password" style="flex:1 1 200px"><button class="btn primary" type="submit">Unlock</button></form><p class="small" id="pwMsg" style="color:var(--bad,#c33)"></p>`);
+      <form id="pwF" class="row"><input type="text" id="pwI" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="Invite code" style="flex:1 1 200px"><button class="btn primary" type="submit">Unlock</button></form><p class="small" id="pwMsg" style="color:var(--bad,#c33)"></p>`);
     let done=false; const fin=v=>{if(done)return;done=true;res(v);};
     if(typeof authMount==='function')authMount(m,()=>{m.close();fin(true);});
     $('#pwF',m.el).onsubmit=async e=>{e.preventDefault();const v=$('#pwI',m.el).value.trim();if(!v)return;if(await refSubmit(v,m)){m.close();fin(true);}};
@@ -2544,7 +2549,7 @@ VIEWS.settings=el=>{
    <div class="panel"><h3>Display and sound</h3><div class="tg-list">${uiToggleHTML()}</div></div>
    <div class="panel"><h3>Sync and AI tutor</h3>
      <div class="kv"><span>Progress sync</span><b>${syTxt}</b></div><div class="kv"><span>AI tutor</span><b>${aiTxt}</b></div>
-     ${WEB&&(!getKey()||syncState==='off')?'<button class="btn primary sm" id="stKey" style="align-self:flex-start">Enter invite code or group password</button>':''}
+     ${WEB&&(!getKey()||syncState==='off')?'<button class="btn primary sm" id="stKey" style="align-self:flex-start">Enter an invite code</button>':''}
      ${WEB&&getKey()?'<div class="row" style="gap:8px"><button class="btn sm" id="stChg">Change password or code on this device</button><button class="btn ghost sm" id="stOut">Remove the password from this device</button></div>':''}
      <details class="adv"><summary>Advanced</summary><p class="note">The AI tutor runs on Groq and sync on Upstash Redis, configured with Vercel environment variables: APP_PASSWORD, GROQ_API_KEY, KV_REST_API_URL, KV_REST_API_TOKEN.</p></details></div>
    <div class="panel"><h3>About</h3><div class="row"><button class="btn sm" id="stHi">Meet Max again</button><button class="btn sm" id="stReset">Reset my progress</button></div>
@@ -2613,7 +2618,7 @@ function uiIntro(force){
   if(!force&&store.get('calculis-intro',0)&&WHO)return;
   const noName=!WHO;
   const steps=[
-    ()=>`<div class="cele-mc">${mascot('hi',120)}</div><h2>Hi, I am Max</h2><p>This is <b>Calculis</b>, where the group prepares for the GMAT together. Calculus + Stalis: a bit of maths, a bit of style. I am a fox, so I know a thing or two about clever shortcuts.</p>${profileForm(true)}<button class="btn cele-btn" id="inName">Next</button>`,
+    ()=>`<div class="cele-mc">${mascot('hi',120)}</div><h2>Hi, I am Max</h2><p>This is <b>Calculis</b>, where you prepare for the GMAT a little every day. Calculus + Stalis: a bit of maths, a bit of style. I am a fox, so I know a thing or two about clever shortcuts.</p>${profileForm(true)}<button class="btn cele-btn" id="inName">Next</button>`,
     ()=>`<div class="cele-mc">${mascot('hi',130)}</div><h2>Nice to meet you, ${esc(uiName())}!</h2><p>I climb the career ladder with you, from Intern to CEO. Every new title gets me some new office gear.</p>
       <div class="hats">${[0,1,2,3,4,7].map(i=>foxSVG('calm',52,i)).join('')}</div><button class="btn cele-btn" id="inNext">Next</button>`,
     ()=>{const c=plCfg();return `<div class="cele-mc">${mascot('idea',96)}</div><h2>Your target score?</h2><div class="row" style="justify-content:center">${[555,605,655,705,755,805].map(n=>`<button class="chip big" data-tg="${n}" aria-pressed="${c.target===n}">${n}</button>`).join('')}</div>
@@ -2621,9 +2626,9 @@ function uiIntro(force){
       <h2 style="margin-top:8px">How do you want to start?</h2><div class="in-opts"><button class="btn" data-st="start">I am new to the GMAT: follow the Start here path</button><button class="btn" data-st="diag">I have studied before: take the 25-minute diagnostic</button><button class="btn" data-st="quant">Jump straight into practice</button></div>`;},
   ];
   let i=noName?0:1; const m=uiCele('','intro'+(noName?' locked':''));const box=$('.cele-in',m.el);
-  const draw=()=>{box.innerHTML=steps[i]();
-    const nm=$('#inName',box);if(nm)nm.onclick=async()=>{const n=$('#pfN',box).value.trim(),p=$('#pfP',box).value.trim();if(!slugOf(n)){toast('Type your name first.');return;}if(p&&p.length<4){toast('The PIN needs 4 to 6 digits.');return;}
-      const k=$('#pfK',box);await setProfile(n,p,k&&k.value.trim());m.el.classList.remove('locked');i=1;draw();};
+  const draw=()=>{if(i==='g'){introSignIn(box,()=>{i=1;draw();});return;}box.innerHTML=steps[i]();
+    const nm=$('#inName',box);if(nm)nm.onclick=async()=>{const n=$('#pfN',box).value.trim();if(!slugOf(n)){toast('Type your name first.');return;}
+      await setProfile(n,'');m.el.classList.remove('locked');i=typeof introAuthWanted==='function'&&introAuthWanted()?'g':1;draw();};
     const n=$('#inNext',box);if(n)n.onclick=()=>{i=2;draw();};
     $$('[data-tg]',box).forEach(b=>b.onclick=()=>{plCfg().target=+b.dataset.tg;touch('main');$$('[data-tg]',box).forEach(x=>x.setAttribute('aria-pressed',x===b));});
     $$('[data-mn]',box).forEach(b=>b.onclick=()=>{plCfg().minutes=+b.dataset.mn;touch('main');$$('[data-mn]',box).forEach(x=>x.setAttribute('aria-pressed',x===b));});
@@ -2632,7 +2637,7 @@ function uiIntro(force){
 }
 
 /* ================= PROFILES + STUDY GROUP =================
-   Each learner: name + slug + personal PIN (web sync). Group password (APP_PASSWORD) is shared.
+   Each learner: name + slug + the account they sign in with (web sync). Older devices may still hold a group password + PIN.
    Board: api/board returns everyone's weekly XP, streak, rank and score estimate. */
 function uiName(){return WHO&&WHO.name?WHO.name:'there';}
 function uiMonday(){const t=today();return ymd(t-((new Date(t).getDay()+6)%7)*DAY);}
@@ -2670,22 +2675,23 @@ async function setProfile(name,pin,key){
   route();return true;
 }
 function profileForm(fresh){
-  return `<div class="pf"><label class="pf-l">Your name<input type="text" id="pfN" maxlength="30" placeholder="e.g. Stalis" value="${fresh?'':esc(WHO?WHO.name:'')}"></label>
-    <label class="pf-l">Personal PIN (4 to 6 digits)<input type="password" inputmode="numeric" id="pfP" maxlength="6" placeholder="Keeps your progress yours"></label>
-    ${getKey()?'':`<label class="pf-l">Group password (to sync across devices)<input type="password" id="pfK" autocomplete="current-password" placeholder="Shared by the group"></label>`}
-    <p class="pf-n">Sign in with the same Google account on another device to pick up exactly where you left off.</p></div>`;
+  return `<div class="pf"><label class="pf-l">Your name<input type="text" id="pfN" maxlength="30" placeholder="e.g. Alex" value="${fresh?'':esc(WHO?WHO.name:'')}"></label></div>`;
 }
 function switchProfile(){
-  const m=modal(`<h2>Switch learner</h2><p class="note">Sharing a device? Each person enters their own name and PIN. Progress is kept separately.</p>${profileForm(true)}<div class="row"><button class="btn primary" id="pfGo">Continue</button></div>`);
-  $('#pfGo',m.el).onclick=async()=>{const n=$('#pfN',m.el).value.trim(),p=$('#pfP',m.el).value.trim();if(!slugOf(n)){toast('Type a name first.');return;}if(p&&p.length<4){toast('The PIN needs 4 to 6 digits.');return;}const k=$('#pfK',m.el);m.close();await setProfile(n,p,k&&k.value.trim());toast('Hi '+n+'!');};
+  const a=typeof acctGet==='function'&&acctGet();
+  if(a){const m=modal(`<h2>Switch learner</h2><p class="note">This device is signed in as <b>${esc(a.email||a.name||'')}</b>. To let someone else study here, sign out, then type their name. They sign in with their own Google account to keep their own progress.</p><div class="row"><button class="btn primary" id="pfOut">Sign out and switch</button><button class="btn ghost" id="pfNo">Cancel</button></div>`);
+    $('#pfNo',m.el).onclick=()=>m.close();
+    $('#pfOut',m.el).onclick=async()=>{m.close();await authLogout();await initPlatform();switchProfile();};return;}
+  const m=modal(`<h2>Switch learner</h2><p class="note">Sharing a device? Each person types their own name and their progress is kept separately on this device. Sign in with Google to continue on other devices.</p>${profileForm(true)}<div class="row"><button class="btn primary" id="pfGo">Start</button></div>`);
+  $('#pfGo',m.el).onclick=async()=>{const n=$('#pfN',m.el).value.trim();if(!slugOf(n)){toast('Type a name first.');return;}m.close();await setProfile(n,'');toast('Hi '+n+'!');};
 }
 
 /* ---------- study group view ---------- */
-let BOARD=null, BOARD_AT=0;
+let BOARD=null, BOARD_AT=0, BOARD_ME='';
 async function boardLoad(force){
   if(!WEB||!WEB.sync||!getKey())return null;
   if(!force&&BOARD&&Date.now()-BOARD_AT<60000)return BOARD;
-  try{const j=await api('api/board',{method:'GET'});BOARD=(j.list||[]);BOARD_AT=Date.now();}catch(e){return BOARD;}
+  try{const j=await api('api/board',{method:'GET'});BOARD=(j.list||[]);BOARD_ME=j.me||'';BOARD_AT=Date.now();}catch(e){return BOARD;}
   return BOARD;
 }
 function boardRows(list){
@@ -2696,14 +2702,14 @@ function boardRows(list){
 VIEWS.friends=async el=>{
   const link=location.origin&&location.protocol.startsWith('http')?location.origin:'https://calculis.vercel.app';
   const invite=`<div class="panel"><h3>Invite a friend</h3>
-    <ol class="inv"><li>Send them <b>${esc(link.replace(/^https?:\/\//,''))}</b> and an invite code (or the group password). They sign in with Google and enter it once.</li><li>They open the link, Max asks for a name and they choose a personal PIN.</li><li>One group password per device unlocks sync, the AI tutor and this board.</li></ol>
+    <ol class="inv"><li>Send them <b>${esc(link.replace(/^https?:\/\//,''))}</b>.</li><li>They open it, type their name and sign in with Google.</li><li>After their first lesson they show up on this board.</li></ol>
     <div class="row"><button class="btn sm" id="frCopy">${ic('repeat')} Copy invite</button><button class="btn ghost sm" id="frSw">Switch learner on this device</button></div></div>`;
   if(!WEB||!WEB.sync){el.innerHTML=`<div class="view">${mcSay('idea','The study group board needs sync on the server. Once it is on, everyone shows up here.',64)}${invite}</div>`;bindInv();return;}
   if(!getKey()){el.innerHTML=`<div class="view">${mcSay('hi','Sign in with Google (or enter an invite code) to see how everyone is doing.',64)}<button class="btn primary" id="frKey" style="align-self:flex-start">Sign in or enter a code</button>${invite}</div>`;
     $('#frKey').onclick=async()=>{if(await askPassword(false)){await initPlatform();VIEWS.friends(el);}};bindInv();return;}
   el.innerHTML='<div class="view"><p class="note">Loading the board...</p></div>';
   const list=boardRows((await boardLoad(true))||[]);
-  const me=WHO?WHO.slug:'';
+  const me=BOARD_ME||(WHO?WHO.slug:'');
   el.innerHTML=`<div class="view">
     <div class="spread"><h2>This week</h2><span class="note">Ranked by XP since Monday</span></div>
     ${list.length?`<div class="board">${list.map((x,i)=>`<div class="bd-row ${x.slug===me?'me':''}"><span class="bd-pos num">${i+1}</span><span class="bd-mc">${foxSVG(x.today?'hi':'zzz',48,x.rank||0)}</span>
@@ -2714,7 +2720,7 @@ VIEWS.friends=async el=>{
     ${invite}</div>`;
   bindInv();
   function bindInv(){
-    const c=$('#frCopy');if(c)c.onclick=()=>{const t=`Prep for the GMAT with me on Calculis: ${link}\nOpen the link, enter your name and sign in with Google. I will send you an invite code separately.`;
+    const c=$('#frCopy');if(c)c.onclick=()=>{const t=`Prep for the GMAT with me on Calculis: ${link}\nOpen the link, type your name and sign in with Google.`;
       (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Invite copied.')).catch(()=>toast(t,6000));};
     const s=$('#frSw');if(s)s.onclick=switchProfile;
   }
@@ -2722,7 +2728,7 @@ VIEWS.friends=async el=>{
 async function uiFriendsCard(){
   const side=$('.hm-side');if(!side)return;
   const list=await boardLoad(false);if(!list||list.length<2||current!=='home')return;
-  const rows=boardRows(list).slice(0,3),me=WHO?WHO.slug:'';
+  const rows=boardRows(list).slice(0,3),me=BOARD_ME||(WHO?WHO.slug:'');
   if($('#hmFr'))return;
   side.insertAdjacentHTML('beforeend',`<button class="panel fr-mini" id="hmFr"><span class="label">Study group this week</span>${rows.map((x,i)=>`<span class="fr-r ${x.slug===me?'me':''}"><span class="num">${i+1}</span><span class="fr-mc">${foxSVG('calm',30,x.rank||0)}</span><b>${esc(x.name)}</b><span class="num muted">${x.wxp} XP</span></span>`).join('')}</button>`);
   $('#hmFr').onclick=()=>go('friends');
@@ -2732,7 +2738,7 @@ async function uiFriendsCard(){
    New people unlock AI and sync with a shared invite code (limited places, see api/ref.js) instead of the group password.
    The password box accepts either: an invite code is exchanged for a personal access key, anything else is kept as the password.
    Whoever holds the group password sees an admin panel in Settings to set the code and the number of places. */
-const REF_T={wrong:'That invite code or password did not work. If you got the code from a post, it may not be open yet or may have changed. Ask whoever shared it for a new one.',
+const REF_T={wrong:'That invite code did not work. If you got the code from a post, it may not be open yet or may have changed. Ask whoever shared it for a new one.',
   st:{title:'Beta numbers',today:'Active today',week:'Active, last 7 days',fresh7:'New devices, 7 days',learners:'Learners with synced progress',ai7:'AI calls, 7 days',aiu:'AI users today',ret:'Came back after',retNote:'Counted per device, not per person: one person on two devices counts twice. In brackets: devices that came back over new devices on days old enough.',day:'Day',active:'Active',new:'New'},
   ok:(n,m)=>`Unlocked. You are number ${n} of ${m} on this invite code.`,full:m=>`This code has reached its ${m} places. Ask the person who shared it for a new one.`,slow:'Too many tries. Wait a little and try again.',
   title:'Invite code for new people',note:'New people enter this code instead of the group password. Each gets a personal key, and the code closes when the places run out. People already using the group password are not affected. A new code starts counting from 0.',
@@ -2851,27 +2857,30 @@ async function refAdmin(el){
    While signed in, an invite code typed in the password box unlocks the account instead of only this device. */
 const AUTH_T={loc:"en",
   title:"Account",
-  why:"Sign in with Google to keep AI tutor and sync access on every device, without typing the code again. The app only receives your name, email and profile picture.",
-  or:"or enter an invite code or the group password",
-  needCode:"This account has not unlocked the AI tutor and sync yet. Enter an invite code (or the group password) once, then sign in on any device.",
+  why:"Sign in with Google to save your progress, pick up on any device and keep AI tutor access. The app only receives your name, email and profile picture.",
+  or:"or enter an invite code",
+  needCode:"Signed in, and your progress is saved to your account. The AI tutor needs an invite code: enter it once, then sign in on any device.",
   access:"Access",
   owner:"Owner, unlimited",
   betaEnded:"The free beta has ended",
-  none:"AI tutor and sync not unlocked",
+  none:"AI tutor not unlocked",
   ended:"Trial ended",
   enterCode:"Enter invite code",
   out:"Sign out on this device",
   outQ:"Sign out on this device? Your progress on this device stays.",
   outDone:"Signed out.",
-  unlocked:"AI tutor and sync are unlocked for this account.",
-  signedNeed:"Signed in. Enter an invite code to unlock the AI tutor and sync.",
+  unlocked:"The AI tutor is unlocked for this account.",
+  signedNeed:"Signed in, your progress is saved to your account. Enter an invite code to unlock the AI tutor.",
   fail:"Could not sign in. Please try again in a few minutes.",
   slow:"Too many tries. Wait a while and try again.",
   again:"Your session has ended. Close this box and sign in again.",
   noGis:"Could not load the Google sign-in button. Check your connection or ad blocker, then reload the page.",
   nudgeTitle:"Sign in to keep your access everywhere",
-  nudgeText:"Keep AI tutor access and sync your progress across devices. The free parts work without signing in.",
+  nudgeText:"Save your progress to your account, pick up on any device and unlock the AI tutor. The free parts work without signing in.",
   later:"Later",
+  inTitle:"Keep your progress",
+  inText:"Sign in with Google so you never lose your progress and can pick up on your phone or computer. The AI tutor also needs sign-in. Not now? Your progress stays on this device.",
+  inSkip:"Not now, start learning",
   inAppTitle:"Google sign-in does not work inside the Facebook, Messenger or Zalo browser.",
   inAppSteps:"Tap the three dots in the corner, choose \"Open in browser\" (or Safari, Chrome) and sign in there. Or copy the link and paste it into your browser.",
   copyLink:"Copy link",
@@ -2980,6 +2989,13 @@ function authPanel(el,host){
   if(a){[ '#stChg','#stOut','#stKey'].forEach(s=>{const b=$(s,host);if(b)b.remove();});
     authPost('me').then(r=>{if(r.ok){acctSet(r.j.acct);if(document.body.contains(p))draw(acctGet());}else if(r.status===401){setKey('');acctSet(null);VIEWS.settings(el);}}).catch(()=>{});}
 }
+/* onboarding step right after the name: optional Google sign-in (next() continues the intro) */
+function introSignIn(box,next){
+  box.innerHTML=`<div class="cele-mc">${mascot('idea',96)}</div><h2>${AUTH_T.inTitle}</h2><p>${AUTH_T.inText}</p><div id="inG" class="in-g"></div><p class="small" id="inMsg"></p><button class="in-skip" type="button" id="inSkip">${AUTH_T.inSkip}</button>`;
+  $('#inSkip',box).onclick=next;
+  authButton($('#inG',box),async acct=>{toast(acct.active?AUTH_T.hi(acct.name||acct.email):AUTH_T.signedNeed,4000);const nn=$('#acNudge');if(nn)nn.remove();await initPlatform();next();},e=>{$('#inMsg',box).textContent=e;});
+}
+const introAuthWanted=()=>!!(WEB&&WEB.sync)&&!acctGet();
 /* owner only: how many accounts, and the free trial for new accounts (0 while the beta runs on invite codes) */
 async function authAdmin(host){
   if(!getKey()||$('#acAdm',host))return;

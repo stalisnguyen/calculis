@@ -165,9 +165,9 @@ async function initPlatform(){
 function askPassword(wrong){
   return new Promise(res=>{
     const m=modal(`<h2>Sign in to unlock AI and sync</h2>
-      <p class="note">${wrong?'That password did not work. Try again.':'Sign in with Google, then enter your invite code (or the group password) to unlock the AI tutor and sync your progress across devices. Each device asks only once.'}</p>
+      <p class="note">${wrong?'That code did not work. Please check it.':'Sign in with Google to save your progress, pick up on any device and use the AI tutor. Have an invite code? Enter it below.'}</p>
       <div id="gIn"></div><p class="small muted" id="gOr"></p>
-      <form id="pwF" class="row"><input type="password" id="pwI" autocomplete="current-password" placeholder="Invite code or password" style="flex:1 1 200px"><button class="btn primary" type="submit">Unlock</button></form><p class="small" id="pwMsg" style="color:var(--bad,#c33)"></p>`);
+      <form id="pwF" class="row"><input type="text" id="pwI" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="Invite code" style="flex:1 1 200px"><button class="btn primary" type="submit">Unlock</button></form><p class="small" id="pwMsg" style="color:var(--bad,#c33)"></p>`);
     let done=false; const fin=v=>{if(done)return;done=true;res(v);};
     if(typeof authMount==='function')authMount(m,()=>{m.close();fin(true);});
     $('#pwF',m.el).onsubmit=async e=>{e.preventDefault();const v=$('#pwI',m.el).value.trim();if(!v)return;if(await refSubmit(v,m)){m.close();fin(true);}};

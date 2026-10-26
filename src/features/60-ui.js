@@ -184,7 +184,7 @@ VIEWS.settings=el=>{
    <div class="panel"><h3>Display and sound</h3><div class="tg-list">${uiToggleHTML()}</div></div>
    <div class="panel"><h3>Sync and AI tutor</h3>
      <div class="kv"><span>Progress sync</span><b>${syTxt}</b></div><div class="kv"><span>AI tutor</span><b>${aiTxt}</b></div>
-     ${WEB&&(!getKey()||syncState==='off')?'<button class="btn primary sm" id="stKey" style="align-self:flex-start">Enter invite code or group password</button>':''}
+     ${WEB&&(!getKey()||syncState==='off')?'<button class="btn primary sm" id="stKey" style="align-self:flex-start">Enter an invite code</button>':''}
      ${WEB&&getKey()?'<div class="row" style="gap:8px"><button class="btn sm" id="stChg">Change password or code on this device</button><button class="btn ghost sm" id="stOut">Remove the password from this device</button></div>':''}
      <details class="adv"><summary>Advanced</summary><p class="note">The AI tutor runs on Groq and sync on Upstash Redis, configured with Vercel environment variables: APP_PASSWORD, GROQ_API_KEY, KV_REST_API_URL, KV_REST_API_TOKEN.</p></details></div>
    <div class="panel"><h3>About</h3><div class="row"><button class="btn sm" id="stHi">Meet Max again</button><button class="btn sm" id="stReset">Reset my progress</button></div>
@@ -253,7 +253,7 @@ function uiIntro(force){
   if(!force&&store.get('calculis-intro',0)&&WHO)return;
   const noName=!WHO;
   const steps=[
-    ()=>`<div class="cele-mc">${mascot('hi',120)}</div><h2>Hi, I am Max</h2><p>This is <b>Calculis</b>, where the group prepares for the GMAT together. Calculus + Stalis: a bit of maths, a bit of style. I am a fox, so I know a thing or two about clever shortcuts.</p>${profileForm(true)}<button class="btn cele-btn" id="inName">Next</button>`,
+    ()=>`<div class="cele-mc">${mascot('hi',120)}</div><h2>Hi, I am Max</h2><p>This is <b>Calculis</b>, where you prepare for the GMAT a little every day. Calculus + Stalis: a bit of maths, a bit of style. I am a fox, so I know a thing or two about clever shortcuts.</p>${profileForm(true)}<button class="btn cele-btn" id="inName">Next</button>`,
     ()=>`<div class="cele-mc">${mascot('hi',130)}</div><h2>Nice to meet you, ${esc(uiName())}!</h2><p>I climb the career ladder with you, from Intern to CEO. Every new title gets me some new office gear.</p>
       <div class="hats">${[0,1,2,3,4,7].map(i=>foxSVG('calm',52,i)).join('')}</div><button class="btn cele-btn" id="inNext">Next</button>`,
     ()=>{const c=plCfg();return `<div class="cele-mc">${mascot('idea',96)}</div><h2>Your target score?</h2><div class="row" style="justify-content:center">${[555,605,655,705,755,805].map(n=>`<button class="chip big" data-tg="${n}" aria-pressed="${c.target===n}">${n}</button>`).join('')}</div>
@@ -261,9 +261,9 @@ function uiIntro(force){
       <h2 style="margin-top:8px">How do you want to start?</h2><div class="in-opts"><button class="btn" data-st="start">I am new to the GMAT: follow the Start here path</button><button class="btn" data-st="diag">I have studied before: take the 25-minute diagnostic</button><button class="btn" data-st="quant">Jump straight into practice</button></div>`;},
   ];
   let i=noName?0:1; const m=uiCele('','intro'+(noName?' locked':''));const box=$('.cele-in',m.el);
-  const draw=()=>{box.innerHTML=steps[i]();
-    const nm=$('#inName',box);if(nm)nm.onclick=async()=>{const n=$('#pfN',box).value.trim(),p=$('#pfP',box).value.trim();if(!slugOf(n)){toast('Type your name first.');return;}if(p&&p.length<4){toast('The PIN needs 4 to 6 digits.');return;}
-      const k=$('#pfK',box);await setProfile(n,p,k&&k.value.trim());m.el.classList.remove('locked');i=1;draw();};
+  const draw=()=>{if(i==='g'){introSignIn(box,()=>{i=1;draw();});return;}box.innerHTML=steps[i]();
+    const nm=$('#inName',box);if(nm)nm.onclick=async()=>{const n=$('#pfN',box).value.trim();if(!slugOf(n)){toast('Type your name first.');return;}
+      await setProfile(n,'');m.el.classList.remove('locked');i=typeof introAuthWanted==='function'&&introAuthWanted()?'g':1;draw();};
     const n=$('#inNext',box);if(n)n.onclick=()=>{i=2;draw();};
     $$('[data-tg]',box).forEach(b=>b.onclick=()=>{plCfg().target=+b.dataset.tg;touch('main');$$('[data-tg]',box).forEach(x=>x.setAttribute('aria-pressed',x===b));});
     $$('[data-mn]',box).forEach(b=>b.onclick=()=>{plCfg().minutes=+b.dataset.mn;touch('main');$$('[data-mn]',box).forEach(x=>x.setAttribute('aria-pressed',x===b));});
