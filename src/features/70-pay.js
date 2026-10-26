@@ -34,18 +34,26 @@ const PAY_T={title:"Upgrade Calculis",
   upgrade:"Upgrade",
   extend:"Add time",
   seePlans:"See paid plans",
+  ownerSee:"Preview the upgrade page",
+  nbBtn:"See plans",
+  endTitle:"The free beta has ended",
+  endText:"Get a plan to keep using the AI tutor. Your progress and the free lessons stay as they are.",
   admTitle:"Sales (SePay)",
   admReady:"SePay is connected.",
   admNotReady:"SePay is not connected yet (SEPAY_API_KEY, SEPAY_BANK, SEPAY_ACCOUNT in Vercel).",
   admRev:"Revenue",
   admHook:"Webhook address for SePay:",
-  perks:["AI tutor: explanations, step-by-step solutions and feedback, 50 turns a day", "Progress sync across all your devices", "Everything in the free version"],
+  perks:["AI tutor: explanations, step-by-step solutions and feedback, 50 turns a day", "Everything in the free version stays free, including progress sync"],
   mustContent:c=>`Keep the transfer content exactly <b>${c}</b>, it is how your payment is matched to your account.`,
   money:n=>Number(n).toLocaleString('en-US')+' VND',
   best:s=>`Save ${s}%`,
   perYear:m=>`365 days, about ${m} a month`,
   thanks:d=>`Payment received, thank you! Full access until ${d}.`,
-  admHookOk:u=>`Webhook registered: ${u}`};
+  admHookOk:u=>`Webhook registered: ${u}`,
+  preBeta:d=>`Buy early and your plan starts when the beta ends, so you lose no free days.`,
+  hint:d=>`After that the AI tutor is a paid plan, from ${payMoney(49000)} a month. Lessons and sync stay free.`,
+  nbTitle:n=>`${n} day${n>1?'s':''} left in the free beta`,
+  nbText:d=>`After ${d} the AI tutor needs a paid plan; lessons and sync stay free. Buy early and the plan starts when the beta ends.`};
 const payLast={get(){try{return JSON.parse(localStorage.getItem('calculis-order')||'null');}catch(e){return null;}},
   set(v){try{v?localStorage.setItem('calculis-order',JSON.stringify(v)):localStorage.removeItem('calculis-order');}catch(e){}}};
 const payMoney=n=>PAY_T.money(n);
@@ -89,7 +97,7 @@ VIEWS.upgrade=async el=>{
   const a=acctGet(), box=$('#upAcct',el);
   if(!a){box.innerHTML=`<p class="small">${PAY_T.needSign}</p><div id="upG" style="min-height:44px"></div><p class="small" id="upMsg"></p>`;
     authButton($('#upG',el),async()=>{await initPlatform();if(current==='upgrade')VIEWS.upgrade(el);},e=>{$('#upMsg',el).textContent=e;});}
-  else box.innerHTML=`${acctFace(a)}<div class="kv"><span>${AUTH_T.access}</span><b>${acctLine(a)}</b></div>`;
+  else box.innerHTML=`${acctFace(a)}<div class="kv"><span>${AUTH_T.access}</span><b>${acctLine(a)}</b></div>${!a.owner&&!(a.paidUntil>Date.now())&&a.betaUntil>Date.now()?`<p class="small">${PAY_T.preBeta(authDate(a.betaUntil-1))}</p>`:''}`;
   let info={ready:false,plans:{month:{amount:49000,days:30},year:{amount:399000,days:365}}};
   try{const r=await payPost('info');if(r.ok)info=r.j;}catch(e){}
   const m=info.plans.month,y=info.plans.year,save=Math.round((1-y.amount/(m.amount*12))*100);
@@ -123,8 +131,28 @@ async function payAdmin(host){
     <p class="small muted">${PAY_T.admHook} <code>${esc(s.hook)}</code></p>`;
   host.appendChild(b);
 }
-function payBtn(a){return a.owner?'':`<button class="btn ${a.active?'':'primary'} sm" id="acUp">${a.paidUntil>Date.now()?PAY_T.extend:PAY_T.upgrade}</button>`;}
+function payBtn(a){return a.owner?`<button class="btn ghost sm" id="acUp">${PAY_T.ownerSee}</button>`:`<button class="btn ${a.active?'':'primary'} sm" id="acUp">${a.paidUntil>Date.now()?PAY_T.extend:PAY_T.upgrade}</button>`;}
+/* under "Quyền dùng" in Settings: what happens after the free beta */
+function payHint(a){return !a.owner&&!(a.paidUntil>Date.now())&&a.betaUntil>Date.now()?`<p class="small muted">${PAY_T.hint(authDate(a.betaUntil-1))}</p>`:'';}
+/* Today: a reminder in the last 7 days of the beta, and after it ends for accounts without a plan */
+async function payNudge(el){
+  if(!WEB||!acctGet()||!document.body.contains(el))return;
+  let a=acctGet();try{const r=await authPost('me');if(r.ok){acctSet(r.j.acct);a=acctGet();}}catch(e){}
+  if(!a||a.owner||a.paidUntil>Date.now()||a.trialEnd>Date.now())return;
+  const now=Date.now(),inBeta=a.betaUntil>now,left=Math.ceil((a.betaUntil-now)/864e5);
+  if(inBeta?left>7:a.active)return;
+  const host=$('.view',el)||el;if($('#payNudge',host)||!document.body.contains(el))return;
+  let until=0;try{until=+localStorage.getItem('calculis-paynudge')||0;}catch(e){}
+  if(now<until)return;
+  const p=document.createElement('div');p.className='panel ac-nudge';p.id='payNudge';
+  p.innerHTML=`<div class="ac-nudge-t"><b>${inBeta?PAY_T.nbTitle(left):PAY_T.endTitle}</b><p class="small">${inBeta?PAY_T.nbText(authDate(a.betaUntil-1)):PAY_T.endText}</p></div><div class="ac-row"><button class="btn primary sm" type="button" id="pnGo">${PAY_T.nbBtn}</button><button class="btn ghost sm" type="button" id="pnL">${PAY_T.later}</button></div>`;
+  host.insertBefore(p,host.firstChild);
+  $('#pnGo',p).onclick=()=>go('upgrade');
+  $('#pnL',p).onclick=()=>{try{localStorage.setItem('calculis-paynudge',String(Date.now()+2*864e5));}catch(e){}p.remove();};
+}
+{const _home=VIEWS.home;VIEWS.home=function(el){const r=_home.apply(this,arguments);
+  Promise.resolve(r).then(async()=>{for(let i=0;i<40&&WEB===null;i++)await new Promise(z=>setTimeout(z,150));payNudge(el);});return r;};}
 {const _ap=authPanel;authPanel=function(el,host){_ap(el,host);payAdmin(host);};}
 {const _am=authMount;authMount=function(m,done){_am(m,done);const a=acctGet();
-  if(a&&!a.active&&!$('#upGo',m.el)){const f=$('#pwF',m.el);if(f)f.insertAdjacentHTML('afterend',`<button class="btn sm" id="upGo" style="margin-top:8px">${PAY_T.seePlans}</button>`);
+  if(a&&!a.active&&!$('#upGo',m.el)){const f=$('#pwF',m.el);if(f)f.insertAdjacentHTML('beforebegin',`<button class="btn primary" id="upGo" style="align-self:flex-start;margin-bottom:10px">${PAY_T.seePlans}</button>`);
     const g=$('#upGo',m.el);if(g)g.onclick=()=>{m.close();go('upgrade');};}};}

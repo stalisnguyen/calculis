@@ -6,18 +6,18 @@ const AUTH_T={loc:"en",
   title:"Account",
   why:"Sign in with Google to save your progress, pick up on any device and keep AI tutor access. The app only receives your name, email and profile picture.",
   or:"or enter an invite code",
-  needCode:"Signed in, and your progress is saved to your account. The AI tutor needs an invite code: enter it once, then sign in on any device.",
+  needCode:"This account has no active plan. Get a plan to keep using the AI tutor; your progress is still saved. Have an invite code? Enter it below.",
   access:"Access",
   owner:"Owner, unlimited",
   betaEnded:"The free beta has ended",
-  none:"AI tutor not unlocked",
+  none:"No plan yet",
   ended:"Trial ended",
   enterCode:"Enter invite code",
   out:"Sign out on this device",
   outQ:"Sign out on this device? Your progress on this device stays.",
   outDone:"Signed out.",
   unlocked:"The AI tutor is unlocked for this account.",
-  signedNeed:"Signed in, your progress is saved to your account. Enter an invite code to unlock the AI tutor.",
+  signedNeed:"Signed in, your progress is saved to your account. The AI tutor needs a paid plan.",
   fail:"Could not sign in. Please try again in a few minutes.",
   slow:"Too many tries. Wait a while and try again.",
   again:"Your session has ended. Close this box and sign in again.",
@@ -42,7 +42,7 @@ const AUTH_T={loc:"en",
   trial:d=>`Free trial until ${d}`,
   paid:d=>`Paid, until ${d}`,
   admN:n=>`${n} accounts have signed in.`,
-  beta:d=>`Beta member, free until ${d}`};
+  beta:d=>`Free beta until ${d}`};
 const AUTH_CID='764861746953-4nsjobj6ca8cm8tpt5srgo03u18hpjs2.apps.googleusercontent.com';
 const acctGet=()=>{try{const a=JSON.parse(localStorage.getItem('calculis-acct')||'null');return a&&getKey()&&a.k===getKey().slice(0,8)?a:null;}catch(e){return null;}};
 const acctSet=a=>{try{a?localStorage.setItem('calculis-acct',JSON.stringify(Object.assign({},a,{k:getKey().slice(0,8)}))):localStorage.removeItem('calculis-acct');}catch(e){}};
@@ -121,7 +121,7 @@ function authPanel(el,host){
   const p=document.createElement('div');p.className='panel';p.id='acctP';
   const a=acctGet();
   const draw=a=>{
-    if(a){p.innerHTML=`<h3>${AUTH_T.title}</h3>${acctFace(a)}<div class="kv"><span>${AUTH_T.access}</span><b>${acctLine(a)}</b></div>
+    if(a){p.innerHTML=`<h3>${AUTH_T.title}</h3>${acctFace(a)}<div class="kv"><span>${AUTH_T.access}</span><b>${acctLine(a)}</b></div>${typeof payHint==='function'?payHint(a):''}
       <div class="row" style="gap:8px">${typeof payBtn==='function'?payBtn(a):''}${a.active?'':`<button class="btn sm" id="acCode">${AUTH_T.enterCode}</button>`}<button class="btn ghost sm" id="acOut">${AUTH_T.out}</button></div>`;
       const up=$('#acUp',p);if(up)up.onclick=()=>go('upgrade');
       const c=$('#acCode',p);if(c)c.onclick=async()=>{if(await askPassword(false)){await initPlatform();VIEWS.settings(el);}};
@@ -131,8 +131,9 @@ function authPanel(el,host){
     }
   };
   draw(a);
-  const key=[...$$('.panel',host)].find(x=>x.querySelector('#stKey,#stChg,#stOut'));
-  host.insertBefore(p,key||null);
+  /* first card in Settings, so the account and the paid plan are easy to find */
+  const first=[...host.children].find(x=>x.classList&&x.classList.contains('panel'));
+  host.insertBefore(p,first||null);
   if(a){[ '#stChg','#stOut','#stKey'].forEach(s=>{const b=$(s,host);if(b)b.remove();});
     authPost('me').then(r=>{if(r.ok){acctSet(r.j.acct);if(document.body.contains(p))draw(acctGet());}else if(r.status===401){setKey('');acctSet(null);VIEWS.settings(el);}}).catch(()=>{});}
 }
