@@ -40,7 +40,7 @@ function profileForm(fresh){
   return `<div class="pf"><label class="pf-l">Your name<input type="text" id="pfN" maxlength="30" placeholder="e.g. Stalis" value="${fresh?'':esc(WHO?WHO.name:'')}"></label>
     <label class="pf-l">Personal PIN (4 to 6 digits)<input type="password" inputmode="numeric" id="pfP" maxlength="6" placeholder="Keeps your progress yours"></label>
     ${getKey()?'':`<label class="pf-l">Group password (to sync across devices)<input type="password" id="pfK" autocomplete="current-password" placeholder="Shared by the group"></label>`}
-    <p class="pf-n">Use the same name, PIN and group password on another device to pick up exactly where you left off.</p></div>`;
+    <p class="pf-n">Sign in with the same Google account on another device to pick up exactly where you left off.</p></div>`;
 }
 function switchProfile(){
   const m=modal(`<h2>Switch learner</h2><p class="note">Sharing a device? Each person enters their own name and PIN. Progress is kept separately.</p>${profileForm(true)}<div class="row"><button class="btn primary" id="pfGo">Continue</button></div>`);
@@ -63,10 +63,10 @@ function boardRows(list){
 VIEWS.friends=async el=>{
   const link=location.origin&&location.protocol.startsWith('http')?location.origin:'https://calculis.vercel.app';
   const invite=`<div class="panel"><h3>Invite a friend</h3>
-    <ol class="inv"><li>Send them <b>${esc(link.replace(/^https?:\/\//,''))}</b> and the group password.</li><li>They open the link, Max asks for a name and they choose a personal PIN.</li><li>One group password per device unlocks sync, the AI tutor and this board.</li></ol>
+    <ol class="inv"><li>Send them <b>${esc(link.replace(/^https?:\/\//,''))}</b> and an invite code (or the group password). They sign in with Google and enter it once.</li><li>They open the link, Max asks for a name and they choose a personal PIN.</li><li>One group password per device unlocks sync, the AI tutor and this board.</li></ol>
     <div class="row"><button class="btn sm" id="frCopy">${ic('repeat')} Copy invite</button><button class="btn ghost sm" id="frSw">Switch learner on this device</button></div></div>`;
   if(!WEB||!WEB.sync){el.innerHTML=`<div class="view">${mcSay('idea','The study group board needs sync on the server. Once it is on, everyone shows up here.',64)}${invite}</div>`;bindInv();return;}
-  if(!getKey()){el.innerHTML=`<div class="view">${mcSay('hi','Enter the group password to see how everyone is doing.',64)}<button class="btn primary" id="frKey" style="align-self:flex-start">Enter group password</button>${invite}</div>`;
+  if(!getKey()){el.innerHTML=`<div class="view">${mcSay('hi','Sign in with Google (or enter an invite code) to see how everyone is doing.',64)}<button class="btn primary" id="frKey" style="align-self:flex-start">Sign in or enter a code</button>${invite}</div>`;
     $('#frKey').onclick=async()=>{if(await askPassword(false)){await initPlatform();VIEWS.friends(el);}};bindInv();return;}
   el.innerHTML='<div class="view"><p class="note">Loading the board...</p></div>';
   const list=boardRows((await boardLoad(true))||[]);
@@ -81,7 +81,7 @@ VIEWS.friends=async el=>{
     ${invite}</div>`;
   bindInv();
   function bindInv(){
-    const c=$('#frCopy');if(c)c.onclick=()=>{const t=`Prep for the GMAT with me on Calculis: ${link}\nOpen the link, enter your name and pick a personal PIN. I will send you the group password separately.`;
+    const c=$('#frCopy');if(c)c.onclick=()=>{const t=`Prep for the GMAT with me on Calculis: ${link}\nOpen the link, enter your name and sign in with Google. I will send you an invite code separately.`;
       (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Invite copied.')).catch(()=>toast(t,6000));};
     const s=$('#frSw');if(s)s.onclick=switchProfile;
   }

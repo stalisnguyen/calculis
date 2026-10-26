@@ -88,7 +88,7 @@ VIEWS.home=el=>{
   const err=QS.length?errOpen().length:0;
   el.innerHTML=`<div class="view home2">
    <div class="hm-hello">${mascot(doneN===tasks.length?'yay':'hi',64)}<div><h2 class="hm-greet">${uiGreet()}, ${esc(uiName())}</h2><p class="note">${doneN===tasks.length?'Everything done for today. Max is proud of you.':doneN?`${doneN}/${tasks.length} tasks done today. Keep going.`:'A little every day adds up to a big score. Let us go.'}</p></div></div>
-   ${SYNC==='web'&&syncState==='off'?`<div class="vbanner">${mcSay('hmm','Your progress is only saved on this device. Enter the group password to sync across devices and appear on the study group board.',48)}<div class="row"><button class="btn primary sm" id="hmSync">Enter group password</button></div></div>`:''}
+   ${SYNC==='web'&&syncState==='off'?`<div class="vbanner">${mcSay('hmm','Your progress is only saved on this device. Sign in with Google (or enter an invite code) to sync across devices and appear on the study group board.',48)}<div class="row"><button class="btn primary sm" id="hmSync">Sign in or enter a code</button></div></div>`:''}
    ${uiWeek()}
    <div class="hm-grid">
     <div class="hm-main">
@@ -175,8 +175,8 @@ function uiAaSheet(){
 }
 VIEWS.settings=el=>{
   const c=plCfg();
-  const aiTxt=AI?'On':WEB?(WEB.ai?'Needs the group password':'Not set up on the server'):'Cannot reach the server';
-  const syTxt=syncState==='on'?'Synced':syncState==='err'?'Sync error, saved on this device':syncState==='off'?'Off (needs the group password)':'Saved on this device only';
+  const aiTxt=AI?'On':WEB?(WEB.ai?'Needs sign-in':'Not set up on the server'):'Cannot reach the server';
+  const syTxt=syncState==='on'?'Synced':syncState==='err'?'Sync error, saved on this device':syncState==='off'?'Off (needs sign-in)':'Saved on this device only';
   el.innerHTML=`<div class="view set">
    <div class="panel"><div class="spread"><h3>Learner</h3><button class="btn sm" id="stWho">Switch learner</button></div><div class="kv"><span>Studying as</span><b>${esc(uiName())}</b></div></div>
    <div class="panel"><h3>Plan</h3><p class="small" style="margin:0">Target <b>${c.target}</b>, <b>${c.minutes} minutes</b> a day${c.date?`, exam on <b>${new Date(c.date).toLocaleDateString('en-GB')}</b>`:''}.</p>

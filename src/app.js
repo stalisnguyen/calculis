@@ -164,8 +164,8 @@ async function initPlatform(){
 }
 function askPassword(wrong){
   return new Promise(res=>{
-    const m=modal(`<h2>Invite code or group password</h2>
-      <p class="note">${wrong?'That password did not work. Try again.':'Enter your invite code or the group password to unlock the AI tutor and sync your progress across devices. Each device asks only once.'}</p>
+    const m=modal(`<h2>Sign in to unlock AI and sync</h2>
+      <p class="note">${wrong?'That password did not work. Try again.':'Sign in with Google, then enter your invite code (or the group password) to unlock the AI tutor and sync your progress across devices. Each device asks only once.'}</p>
       <div id="gIn"></div><p class="small muted" id="gOr"></p>
       <form id="pwF" class="row"><input type="password" id="pwI" autocomplete="current-password" placeholder="Invite code or password" style="flex:1 1 200px"><button class="btn primary" type="submit">Unlock</button></form><p class="small" id="pwMsg" style="color:var(--bad,#c33)"></p>`);
     let done=false; const fin=v=>{if(done)return;done=true;res(v);};
@@ -217,7 +217,7 @@ async function askJSON(prompt,opts={}){ if(!AI)throw {code:'no_ai'}; return AI.j
 function aiError(e){
   const c=e&&e.code;
   if(c==='no_ai')return 'The AI tutor is not switched on on the server yet (needs APP_PASSWORD and GROQ_API_KEY in Vercel).';
-  if(c==='not_granted')return 'Enter the group password to use this.';
+  if(c==='not_granted')return 'Sign in (or enter an invite code) to use this.';
   if(c==='daily_limit')return `You have used today's ${(e.data&&e.data.limit)||50} AI turns. New turns open at midnight (Vietnam time).`;
   if(c==='inactive')return 'This account does not have AI access right now.';
   if(c==='rate_limited')return 'The free AI quota is used up for the moment. Try again in a little while.';

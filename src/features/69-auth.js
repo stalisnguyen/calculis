@@ -22,6 +22,13 @@ const AUTH_T={loc:"en",
   slow:"Too many tries. Wait a while and try again.",
   again:"Your session has ended. Close this box and sign in again.",
   noGis:"Could not load the Google sign-in button. Check your connection or ad blocker, then reload the page.",
+  nudgeTitle:"Sign in to keep your access everywhere",
+  nudgeText:"Keep AI tutor access and sync your progress across devices. The free parts work without signing in.",
+  later:"Later",
+  inAppTitle:"Google sign-in does not work inside the Facebook, Messenger or Zalo browser.",
+  inAppSteps:"Tap the three dots in the corner, choose \"Open in browser\" (or Safari, Chrome) and sign in there. Or copy the link and paste it into your browser.",
+  copyLink:"Copy link",
+  linkCopied:"Link copied. Paste it into Safari or Chrome.",
   adm:"Google accounts",
   admTrial:"Free trial days for new accounts (0 = off, keep 0 during the beta)",
   admLimit:"AI turns per person per day",
@@ -49,7 +56,13 @@ async function authPost(action,extra){
   return {ok:r.ok,status:r.status,j:await r.json().catch(()=>({}))};
 }
 /* Google button in box; onAcct(acct) once the server has accepted the sign-in */
+/* Facebook, Messenger, Instagram, Zalo, Line... open links in their own browser, where Google refuses to sign in */
+const authInApp=()=>/FBAN|FBAV|FB_IAB|FBIOS|Messenger|Instagram|Zalo|Line\/|MicroMessenger|TikTok|musical_ly|BytedanceWebview/i.test(navigator.userAgent||'');
+function authInAppHTML(){return `<div class="g-inapp"><p class="small"><b>${AUTH_T.inAppTitle}</b></p><p class="small">${AUTH_T.inAppSteps}</p>
+  <button class="btn sm" type="button" data-cplink>${AUTH_T.copyLink}</button></div>`;}
 async function authButton(box,onAcct,onErr){
+  if(authInApp()){box.innerHTML=authInAppHTML();const b=$('[data-cplink]',box);if(b)b.onclick=()=>{const u=location.origin+location.pathname;
+    try{navigator.clipboard.writeText(u);toast(AUTH_T.linkCopied);}catch(e){prompt('',u);}};return;}
   try{await loadGIS();}catch(e){box.innerHTML=`<p class="small">${AUTH_T.noGis}</p>`;return;}
   /* phones and home-screen apps: full-page redirect, because the popup window cannot report back there */
   const redirect=navigator.standalone===true||matchMedia('(display-mode: standalone)').matches||matchMedia('(pointer: coarse)').matches;
@@ -149,5 +162,19 @@ async function authAdmin(host){
       if(!r.ok||!r.j.token){toast(r.status===429?AUTH_T.slow:AUTH_T.fail,5000);return;}
       setKey(r.j.token);acctSet(r.j.acct);toast(r.j.acct.active?AUTH_T.hi(r.j.acct.name||r.j.acct.email):AUTH_T.signedNeed,4500);
       await initPlatform();go('settings');},300);}}
+/* Home: a gentle invitation to sign in (not required for the free parts). "Later" hides it for 7 days. */
+function authNudge(el){
+  if(!WEB||acctGet()||!document.body.contains(el))return;
+  const host=$('.view',el)||el;if($('#acNudge',host))return;
+  let until=0;try{until=+localStorage.getItem('calculis-nudge')||0;}catch(e){}
+  if(Date.now()<until)return;
+  const p=document.createElement('div');p.className='panel ac-nudge';p.id='acNudge';
+  p.innerHTML=`<div class="ac-nudge-t"><b>${AUTH_T.nudgeTitle}</b><p class="small">${AUTH_T.nudgeText}</p></div><div class="ac-row"><div id="acNG"></div><button class="btn ghost sm" type="button" id="acNL">${AUTH_T.later}</button></div>`;
+  host.insertBefore(p,host.firstChild);
+  $('#acNL',p).onclick=()=>{try{localStorage.setItem('calculis-nudge',String(Date.now()+7*864e5));}catch(e){}p.remove();};
+  authButton($('#acNG',p),async acct=>{toast(acct.active?AUTH_T.hi(acct.name||acct.email):AUTH_T.signedNeed,4000);p.remove();await initPlatform();if(current==='home')route();},e=>toast(e,4000));
+}
+{const _home=VIEWS.home;VIEWS.home=function(el){const r=_home.apply(this,arguments);
+  Promise.resolve(r).then(async()=>{for(let i=0;i<40&&WEB===null;i++)await new Promise(z=>setTimeout(z,150));authNudge(el);});return r;};}
 {const _set=VIEWS.settings;VIEWS.settings=function(el){const r=_set.apply(this,arguments);
   Promise.resolve(r).then(()=>{const host=$('.view',el)||el;authPanel(el,host);authAdmin(host);});return r;};}

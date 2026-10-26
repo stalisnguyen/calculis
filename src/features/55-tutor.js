@@ -62,7 +62,7 @@ VIEWS.tutor=el=>{
   TU=TU||store.get(tutorKey(),[]);
   const draw=()=>{
     el.innerHTML=`<div class="view tutor">
-      ${!AI?mcSay('hmm',WEB&&WEB.ai?'Enter the group password to talk to Max.':'The AI tutor is not switched on on the server yet (needs GROQ_API_KEY and APP_PASSWORD in Vercel).',56)+(WEB&&WEB.ai?'<button class="btn primary" id="tuKey" style="align-self:flex-start">Enter group password</button>':''):''}
+      ${!AI?mcSay('hmm',WEB&&WEB.ai?'Sign in with Google (or enter an invite code) to talk to Max.':'The AI tutor is not switched on on the server yet (needs GROQ_API_KEY and APP_PASSWORD in Vercel).',56)+(WEB&&WEB.ai?'<button class="btn primary" id="tuKey" style="align-self:flex-start">Sign in or enter a code</button>':''):''}
       <div class="chat-box big" id="tuBox">${TU.length?TU.map(m=>`<div class="cm ${m.role==='assistant'?'max':'me'}">${m.role==='assistant'?`<span class="cm-av">${foxSVG('calm',30,mcRankIdx())}</span>`:''}<div class="cm-b">${m.role==='assistant'?mdHTML(m.content):esc(m.content)}</div></div>`).join(''):mcSay('hi','Hi, I am Max. Ask me anything about the GMAT: a concept, a strategy, a question you saw somewhere, or a plan for the weeks before your exam.',60)}</div>
       <div class="row am-q">${['Make me a 4-week plan from my scores','How do I stop running out of time in Quant?','Explain the AD/BCE method for Data Sufficiency','Give me a hard Critical Reasoning question','Which topics should I fix first?'].map(t=>`<button class="chip sm" data-p="${esc(t)}">${t}</button>`).join('')}</div>
       <form class="row composer" id="tuF"><textarea id="tuI" rows="2" placeholder="Ask Max" style="flex:1 1 220px"></textarea><button class="btn primary" aria-label="Send">${ic('send')}</button></form>
