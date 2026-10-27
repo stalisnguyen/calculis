@@ -23,8 +23,9 @@ const AUTH_T={loc:"en",
   again:"Your session has ended. Close this box and sign in again.",
   noGis:"Could not load the Google sign-in button. Check your connection or ad blocker, then reload the page.",
   nudgeTitle:"Sign in to keep your access everywhere",
+  needTitle:"No active plan",
   nudgeText:"Save your progress to your account, pick up on any device and unlock the AI tutor. The free parts work without signing in.",
-  later:"Later",
+  later:"Not now",
   inTitle:"Keep your progress",
   inText:"Sign in with Google so you never lose your progress and can pick up on your phone or computer. The AI tutor also needs sign-in. Not now? Your progress stays on this device.",
   inSkip:"Not now, start learning",
@@ -83,8 +84,8 @@ async function authButton(box,onAcct,onErr){
 const authDate=t=>new Date(t).toLocaleDateString(AUTH_T.loc==='vi'?'vi-VN':'en-GB',{day:'numeric',month:'numeric',year:'numeric',timeZone:'Asia/Ho_Chi_Minh'});
 function acctLine(a){
   if(a.owner)return AUTH_T.owner;
-  if(a.beta&&a.betaUntil>Date.now())return AUTH_T.beta(authDate(a.betaUntil-1));
   if(a.paidUntil>Date.now())return AUTH_T.paid(authDate(a.paidUntil));
+  if(a.beta&&a.betaUntil>Date.now())return AUTH_T.beta(authDate(a.betaUntil-1));
   if(a.trialEnd>Date.now())return AUTH_T.trial(authDate(a.trialEnd));
   if(a.beta)return AUTH_T.betaEnded;
   return a.trialEnd?AUTH_T.ended:AUTH_T.none;
@@ -94,7 +95,7 @@ const acctFace=a=>`<div class="acct-row">${a.pic?`<img src="${esc(a.pic)}" alt="
 function authMount(m,done){
   const box=$('#gIn',m.el),or=$('#gOr',m.el);if(!box||!WEB)return;
   const msg=$('#pwMsg',m.el),note=$('.note',m.el);
-  const signed=a=>{box.innerHTML=acctFace(a);if(or)or.hidden=true;if(note)note.textContent=AUTH_T.needCode;};
+  const signed=a=>{box.innerHTML=acctFace(a);if(or)or.hidden=true;if(note)note.textContent=AUTH_T.needCode;const h=$('h2',m.el);if(h)h.textContent=AUTH_T.needTitle;};
   const a=acctGet();
   if(a){signed(a);authPost('me').then(r=>{if(r.ok){acctSet(r.j.acct);if(r.j.acct.active)done();}}).catch(()=>{});return;}
   if(or)or.textContent=AUTH_T.or;
